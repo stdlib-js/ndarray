@@ -251,11 +251,11 @@ str = JSON.stringify( arr.toJSON() );
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
-[@stdlib/array/generic]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/generic
+[@stdlib/array/generic]: https://github.com/stdlib-js/array-generic
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/typed
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/buffer/ctor
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
 </section>
 

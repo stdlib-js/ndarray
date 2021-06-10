@@ -301,13 +301,16 @@ for ( i = 0; i < 20; i++ ) {
 #include "stdlib/ndarray/base/ind2sub.h"
 ```
 
-#### stdlib_ndarray_ind2sub( ndims, \*shape, strides, offset, order, idx, mode, \*out )
+<!-- lint disable maximum-heading-length -->
+
+#### stdlib_ndarray_ind2sub( ndims, \*shape, \*strides, offset, order, idx, mode, \*out )
 
 Computes the minimum and maximum linear indices in an underlying data buffer accessible to an array view.
 
 ```c
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
+#include <stdint.h>
 
 int64_t ndims = 2;
 int64_t shape[] = { 3, 3 };
@@ -359,6 +362,7 @@ int8_t stdlib_ndarray_ind2sub( int64_t ndims, int64_t *shape, int64_t *strides, 
 #include "stdlib/ndarray/base/ind2sub.h"
 #include "stdlib/ndarray/index_modes.h"
 #include "stdlib/ndarray/orders.h"
+#include <stdint.h>
 #include <stdio.h>
 
 int main() {

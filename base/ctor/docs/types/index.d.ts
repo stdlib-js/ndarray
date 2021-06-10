@@ -19,36 +19,119 @@
 // TypeScript Version: 2.0
 
 /// <reference types="@stdlib/types"/>
-/// <reference types="node"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { ndarray, Order } from '@stdlib/types/ndarray';
+import { ndarray, DataType, Order } from '@stdlib/types/ndarray';
 import { Buffer } from 'buffer';
 
+/**
+* Interface defining a ndarray constructor which is both "newable" and "callable".
+*/
+interface Constructor {
+	/**
+	* ndarray constructor.
+	*
+	* ## Notes
+	*
+	* -   To create a zero-dimensional array,
+	*
+	*     ```javascript
+	*     var buffer = [ 1 ];
+	*     var shape = [];
+	*     var strides = [ 0 ];
+	*     var offset = 0;
+	*
+	*     var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	*     ```
+	*
+	* @param dtype - data type
+	* @param buffer - data buffer
+	* @param shape - array shape
+	* @param strides - array strides
+	* @param offset - index offset
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns ndarray instance
+	*
+	* @example
+	* var buffer = [ 1, 2, 3, 4, 5, 6 ];
+	* var shape = [ 3, 2 ];
+	* var strides = [ 2, 1 ];
+	* var offset = 0;
+	*
+	* var out = new ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	*/
+	new( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order ): ndarray; // tslint-disable-line max-line-length
+
+	/**
+	* ndarray constructor.
+	*
+	* ## Notes
+	*
+	* -   To create a zero-dimensional array,
+	*
+	*     ```javascript
+	*     var buffer = [ 1 ];
+	*     var shape = [];
+	*     var strides = [ 0 ];
+	*     var offset = 0;
+	*
+	*     var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	*     ```
+	*
+	* @param dtype - data type
+	* @param buffer - data buffer
+	* @param shape - array shape
+	* @param strides - array strides
+	* @param offset - index offset
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns ndarray instance
+	*
+	* @example
+	* var buffer = [ 1, 2, 3, 4, 5, 6 ];
+	* var shape = [ 3, 2 ];
+	* var strides = [ 2, 1 ];
+	* var offset = 0;
+	*
+	* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	*/
+	( dtype: DataType, buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order ): ndarray; // tslint-disable-line max-line-length
+}
 
 /**
-* Converts an ndarray buffer to a generic array (which may include nested arrays).
+* ndarray constructor.
 *
+* ## Notes
+*
+* -   To create a zero-dimensional array,
+*
+*     ```javascript
+*     var buffer = [ 1 ];
+*     var shape = [];
+*     var strides = [ 0 ];
+*     var offset = 0;
+*
+*     var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+*     ```
+*
+* @param dtype - data type
 * @param buffer - data buffer
 * @param shape - array shape
 * @param strides - array strides
 * @param offset - index offset
 * @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
-* @returns array (which may include nested arrays)
+* @returns ndarray instance
 *
 * @example
-* var buffer = [ 1, 2, 3, 4 ];
-* var shape = [ 2, 2 ];
-* var order = 'row-major';
+* var buffer = [ 1, 2, 3, 4, 5, 6 ];
+* var shape = [ 3, 2 ];
 * var strides = [ 2, 1 ];
 * var offset = 0;
 *
-* var out = ndarray2array( buffer, shape, strides, offset, order );
-* // returns [ [ 1, 2 ], [ 3, 4 ] ]
+* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 */
-declare function ndarray2array( buffer: ArrayLike<any> | Buffer, shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number, order: Order ): Array<any>; // tslint-disable-line max-line-length
+declare var ctor: Constructor;
 
 
 // EXPORTS //
 
-export = ndarray2array;
+export = ctor;

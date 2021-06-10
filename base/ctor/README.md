@@ -647,9 +647,9 @@ str = JSON.stringify( arr.toJSON() );
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/complex128
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 </section>
 
