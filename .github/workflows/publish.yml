@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --local user.email "noreply@stdlib.io"
           git config --local user.name "stdlib-bot"
-          npm version prerelease --preid=alpha
+          npm version patch
       - name: Publish package to npm
         uses: JS-DevTools/npm-publish@v1
         with:
