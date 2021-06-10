@@ -42,8 +42,8 @@ workshops/
 !/deps/test/
 
 # Ignore top-level tools directory, except for scripts:
-/tools/*
-!/tools/scripts/
+# /tools/**
+# !# /tools/*scripts/
 
 # Only top-level directories:
 /etc/
