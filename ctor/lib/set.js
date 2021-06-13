@@ -23,7 +23,7 @@
 // MODULES //
 
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var getIndex = require( '@stdlib/ndarray/base/ind' );
+var getIndex = require( './../../base/ind' );
 
 
 // MAIN //

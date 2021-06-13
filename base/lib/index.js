@@ -43,7 +43,7 @@ var ns = {};
 * @type {Namespace}
 * @see {@link module:@stdlib/ndarray/base/assert}
 */
-setReadOnly( ns, 'assert', require( '@stdlib/ndarray/base/assert' ) );
+setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
 * @name bind2vind
@@ -52,7 +52,7 @@ setReadOnly( ns, 'assert', require( '@stdlib/ndarray/base/assert' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/bind2vind}
 */
-setReadOnly( ns, 'bind2vind', require( '@stdlib/ndarray/base/bind2vind' ) );
+setReadOnly( ns, 'bind2vind', require( './../../base/bind2vind' ) );
 
 /**
 * @name broadcastShapes
@@ -61,7 +61,7 @@ setReadOnly( ns, 'bind2vind', require( '@stdlib/ndarray/base/bind2vind' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/broadcast-shapes}
 */
-setReadOnly( ns, 'broadcastShapes', require( '@stdlib/ndarray/base/broadcast-shapes' ) );
+setReadOnly( ns, 'broadcastShapes', require( './../../base/broadcast-shapes' ) );
 
 /**
 * @name buffer
@@ -70,7 +70,7 @@ setReadOnly( ns, 'broadcastShapes', require( '@stdlib/ndarray/base/broadcast-sha
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/buffer}
 */
-setReadOnly( ns, 'buffer', require( '@stdlib/ndarray/base/buffer' ) );
+setReadOnly( ns, 'buffer', require( './../../base/buffer' ) );
 
 /**
 * @name bufferCtors
@@ -79,7 +79,7 @@ setReadOnly( ns, 'buffer', require( '@stdlib/ndarray/base/buffer' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/buffer-ctors}
 */
-setReadOnly( ns, 'bufferCtors', require( '@stdlib/ndarray/base/buffer-ctors' ) );
+setReadOnly( ns, 'bufferCtors', require( './../../base/buffer-ctors' ) );
 
 /**
 * @name bufferDataType
@@ -88,7 +88,7 @@ setReadOnly( ns, 'bufferCtors', require( '@stdlib/ndarray/base/buffer-ctors' ) )
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/buffer-dtype}
 */
-setReadOnly( ns, 'bufferDataType', require( '@stdlib/ndarray/base/buffer-dtype' ) );
+setReadOnly( ns, 'bufferDataType', require( './../../base/buffer-dtype' ) );
 
 /**
 * @name bufferDataTypeEnum
@@ -97,7 +97,7 @@ setReadOnly( ns, 'bufferDataType', require( '@stdlib/ndarray/base/buffer-dtype' 
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/buffer-dtype-enum}
 */
-setReadOnly( ns, 'bufferDataTypeEnum', require( '@stdlib/ndarray/base/buffer-dtype-enum' ) );
+setReadOnly( ns, 'bufferDataTypeEnum', require( './../../base/buffer-dtype-enum' ) );
 
 /**
 * @name bytesPerElement
@@ -106,7 +106,7 @@ setReadOnly( ns, 'bufferDataTypeEnum', require( '@stdlib/ndarray/base/buffer-dty
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/bytes-per-element}
 */
-setReadOnly( ns, 'bytesPerElement', require( '@stdlib/ndarray/base/bytes-per-element' ) );
+setReadOnly( ns, 'bytesPerElement', require( './../../base/bytes-per-element' ) );
 
 /**
 * @name clampIndex
@@ -115,7 +115,7 @@ setReadOnly( ns, 'bytesPerElement', require( '@stdlib/ndarray/base/bytes-per-ele
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/clamp-index}
 */
-setReadOnly( ns, 'clampIndex', require( '@stdlib/ndarray/base/clamp-index' ) );
+setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
 * @name ndarray
@@ -124,7 +124,7 @@ setReadOnly( ns, 'clampIndex', require( '@stdlib/ndarray/base/clamp-index' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/ctor}
 */
-setReadOnly( ns, 'ndarray', require( '@stdlib/ndarray/base/ctor' ) );
+setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 
 /**
 * @name dtypeChar
@@ -133,7 +133,7 @@ setReadOnly( ns, 'ndarray', require( '@stdlib/ndarray/base/ctor' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/dtype-char}
 */
-setReadOnly( ns, 'dtypeChar', require( '@stdlib/ndarray/base/dtype-char' ) );
+setReadOnly( ns, 'dtypeChar', require( './../../base/dtype-char' ) );
 
 /**
 * @name dtypes2signatures
@@ -142,7 +142,7 @@ setReadOnly( ns, 'dtypeChar', require( '@stdlib/ndarray/base/dtype-char' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/dtypes2signatures}
 */
-setReadOnly( ns, 'dtypes2signatures', require( '@stdlib/ndarray/base/dtypes2signatures' ) );
+setReadOnly( ns, 'dtypes2signatures', require( './../../base/dtypes2signatures' ) );
 
 /**
 * @name ind
@@ -151,7 +151,7 @@ setReadOnly( ns, 'dtypes2signatures', require( '@stdlib/ndarray/base/dtypes2sign
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/ind}
 */
-setReadOnly( ns, 'ind', require( '@stdlib/ndarray/base/ind' ) );
+setReadOnly( ns, 'ind', require( './../../base/ind' ) );
 
 /**
 * @name ind2sub
@@ -160,7 +160,7 @@ setReadOnly( ns, 'ind', require( '@stdlib/ndarray/base/ind' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/ind2sub}
 */
-setReadOnly( ns, 'ind2sub', require( '@stdlib/ndarray/base/ind2sub' ) );
+setReadOnly( ns, 'ind2sub', require( './../../base/ind2sub' ) );
 
 /**
 * @name iterationOrder
@@ -169,7 +169,7 @@ setReadOnly( ns, 'ind2sub', require( '@stdlib/ndarray/base/ind2sub' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/iteration-order}
 */
-setReadOnly( ns, 'iterationOrder', require( '@stdlib/ndarray/base/iteration-order' ) );
+setReadOnly( ns, 'iterationOrder', require( './../../base/iteration-order' ) );
 
 /**
 * @name maxViewBufferIndex
@@ -178,7 +178,7 @@ setReadOnly( ns, 'iterationOrder', require( '@stdlib/ndarray/base/iteration-orde
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/max-view-buffer-index}
 */
-setReadOnly( ns, 'maxViewBufferIndex', require( '@stdlib/ndarray/base/max-view-buffer-index' ) );
+setReadOnly( ns, 'maxViewBufferIndex', require( './../../base/max-view-buffer-index' ) );
 
 /**
 * @name minViewBufferIndex
@@ -187,7 +187,7 @@ setReadOnly( ns, 'maxViewBufferIndex', require( '@stdlib/ndarray/base/max-view-b
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/min-view-buffer-index}
 */
-setReadOnly( ns, 'minViewBufferIndex', require( '@stdlib/ndarray/base/min-view-buffer-index' ) );
+setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-index' ) );
 
 /**
 * @name minmaxViewBufferIndex
@@ -196,7 +196,7 @@ setReadOnly( ns, 'minViewBufferIndex', require( '@stdlib/ndarray/base/min-view-b
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/minmax-view-buffer-index}
 */
-setReadOnly( ns, 'minmaxViewBufferIndex', require( '@stdlib/ndarray/base/minmax-view-buffer-index' ) );
+setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buffer-index' ) );
 
 /**
 * @name nonsingletonDimensions
@@ -205,7 +205,7 @@ setReadOnly( ns, 'minmaxViewBufferIndex', require( '@stdlib/ndarray/base/minmax-
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/nonsingleton-dimensions}
 */
-setReadOnly( ns, 'nonsingletonDimensions', require( '@stdlib/ndarray/base/nonsingleton-dimensions' ) );
+setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-dimensions' ) );
 
 /**
 * @name numel
@@ -214,7 +214,7 @@ setReadOnly( ns, 'nonsingletonDimensions', require( '@stdlib/ndarray/base/nonsin
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/numel}
 */
-setReadOnly( ns, 'numel', require( '@stdlib/ndarray/base/numel' ) );
+setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
 * @name serializeMetaData
@@ -223,7 +223,7 @@ setReadOnly( ns, 'numel', require( '@stdlib/ndarray/base/numel' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/serialize-meta-data}
 */
-setReadOnly( ns, 'serializeMetaData', require( '@stdlib/ndarray/base/serialize-meta-data' ) );
+setReadOnly( ns, 'serializeMetaData', require( './../../base/serialize-meta-data' ) );
 
 /**
 * @name shape2strides
@@ -232,7 +232,7 @@ setReadOnly( ns, 'serializeMetaData', require( '@stdlib/ndarray/base/serialize-m
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/shape2strides}
 */
-setReadOnly( ns, 'shape2strides', require( '@stdlib/ndarray/base/shape2strides' ) );
+setReadOnly( ns, 'shape2strides', require( './../../base/shape2strides' ) );
 
 /**
 * @name singletonDimensions
@@ -241,7 +241,7 @@ setReadOnly( ns, 'shape2strides', require( '@stdlib/ndarray/base/shape2strides' 
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/singleton-dimensions}
 */
-setReadOnly( ns, 'singletonDimensions', require( '@stdlib/ndarray/base/singleton-dimensions' ) );
+setReadOnly( ns, 'singletonDimensions', require( './../../base/singleton-dimensions' ) );
 
 /**
 * @name strides2offset
@@ -250,7 +250,7 @@ setReadOnly( ns, 'singletonDimensions', require( '@stdlib/ndarray/base/singleton
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/strides2offset}
 */
-setReadOnly( ns, 'strides2offset', require( '@stdlib/ndarray/base/strides2offset' ) );
+setReadOnly( ns, 'strides2offset', require( './../../base/strides2offset' ) );
 
 /**
 * @name strides2order
@@ -259,7 +259,7 @@ setReadOnly( ns, 'strides2offset', require( '@stdlib/ndarray/base/strides2offset
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/strides2order}
 */
-setReadOnly( ns, 'strides2order', require( '@stdlib/ndarray/base/strides2order' ) );
+setReadOnly( ns, 'strides2order', require( './../../base/strides2order' ) );
 
 /**
 * @name sub2ind
@@ -268,7 +268,7 @@ setReadOnly( ns, 'strides2order', require( '@stdlib/ndarray/base/strides2order' 
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/sub2ind}
 */
-setReadOnly( ns, 'sub2ind', require( '@stdlib/ndarray/base/sub2ind' ) );
+setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 
 /**
 * @name ndarray2array
@@ -277,7 +277,7 @@ setReadOnly( ns, 'sub2ind', require( '@stdlib/ndarray/base/sub2ind' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/to-array}
 */
-setReadOnly( ns, 'ndarray2array', require( '@stdlib/ndarray/base/to-array' ) );
+setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
 
 /**
 * @name vind2bind
@@ -286,7 +286,7 @@ setReadOnly( ns, 'ndarray2array', require( '@stdlib/ndarray/base/to-array' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/vind2bind}
 */
-setReadOnly( ns, 'vind2bind', require( '@stdlib/ndarray/base/vind2bind' ) );
+setReadOnly( ns, 'vind2bind', require( './../../base/vind2bind' ) );
 
 /**
 * @name wrapIndex
@@ -295,7 +295,7 @@ setReadOnly( ns, 'vind2bind', require( '@stdlib/ndarray/base/vind2bind' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/wrap-index}
 */
-setReadOnly( ns, 'wrapIndex', require( '@stdlib/ndarray/base/wrap-index' ) );
+setReadOnly( ns, 'wrapIndex', require( './../../base/wrap-index' ) );
 
 
 // EXPORTS //

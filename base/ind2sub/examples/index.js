@@ -19,9 +19,9 @@
 'use strict';
 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
-var numel = require( '@stdlib/ndarray/base/numel' );
+var shape2strides = require( './../../../base/shape2strides' );
+var strides2offset = require( './../../../base/strides2offset' );
+var numel = require( './../../../base/numel' );
 var randu = require( '@stdlib/random/base/randu' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var ind2sub = require( './../lib' );

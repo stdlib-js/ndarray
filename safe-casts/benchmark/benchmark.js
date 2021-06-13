@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../dtypes' );
 var pkg = require( './../package.json' ).name;
 var safeCasts = require( './../lib' );
 

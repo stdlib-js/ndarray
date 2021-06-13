@@ -43,7 +43,7 @@ var ns = {};
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-allowed-data-type-cast}
 */
-setReadOnly( ns, 'isAllowedDataTypeCast', require( '@stdlib/ndarray/base/assert/is-allowed-data-type-cast' ) );
+setReadOnly( ns, 'isAllowedDataTypeCast', require( './../../../base/assert/is-allowed-data-type-cast' ) );
 
 /**
 * @name isBufferLengthCompatible
@@ -52,7 +52,7 @@ setReadOnly( ns, 'isAllowedDataTypeCast', require( '@stdlib/ndarray/base/assert/
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-buffer-length-compatible}
 */
-setReadOnly( ns, 'isBufferLengthCompatible', require( '@stdlib/ndarray/base/assert/is-buffer-length-compatible' ) );
+setReadOnly( ns, 'isBufferLengthCompatible', require( './../../../base/assert/is-buffer-length-compatible' ) );
 
 /**
 * @name isBufferLengthCompatibleShape
@@ -61,7 +61,7 @@ setReadOnly( ns, 'isBufferLengthCompatible', require( '@stdlib/ndarray/base/asse
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-buffer-length-compatible-shape}
 */
-setReadOnly( ns, 'isBufferLengthCompatibleShape', require( '@stdlib/ndarray/base/assert/is-buffer-length-compatible-shape' ) );
+setReadOnly( ns, 'isBufferLengthCompatibleShape', require( './../../../base/assert/is-buffer-length-compatible-shape' ) );
 
 /**
 * @name isCastingMode
@@ -70,7 +70,7 @@ setReadOnly( ns, 'isBufferLengthCompatibleShape', require( '@stdlib/ndarray/base
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-casting-mode}
 */
-setReadOnly( ns, 'isCastingMode', require( '@stdlib/ndarray/base/assert/is-casting-mode' ) );
+setReadOnly( ns, 'isCastingMode', require( './../../../base/assert/is-casting-mode' ) );
 
 /**
 * @name isColumnMajor
@@ -79,7 +79,7 @@ setReadOnly( ns, 'isCastingMode', require( '@stdlib/ndarray/base/assert/is-casti
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-column-major}
 */
-setReadOnly( ns, 'isColumnMajor', require( '@stdlib/ndarray/base/assert/is-column-major' ) );
+setReadOnly( ns, 'isColumnMajor', require( './../../../base/assert/is-column-major' ) );
 
 /**
 * @name isColumnMajorContiguous
@@ -88,7 +88,7 @@ setReadOnly( ns, 'isColumnMajor', require( '@stdlib/ndarray/base/assert/is-colum
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-column-major-contiguous}
 */
-setReadOnly( ns, 'isColumnMajorContiguous', require( '@stdlib/ndarray/base/assert/is-column-major-contiguous' ) );
+setReadOnly( ns, 'isColumnMajorContiguous', require( './../../../base/assert/is-column-major-contiguous' ) );
 
 /**
 * @name isContiguous
@@ -97,7 +97,7 @@ setReadOnly( ns, 'isColumnMajorContiguous', require( '@stdlib/ndarray/base/asser
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-contiguous}
 */
-setReadOnly( ns, 'isContiguous', require( '@stdlib/ndarray/base/assert/is-contiguous' ) );
+setReadOnly( ns, 'isContiguous', require( './../../../base/assert/is-contiguous' ) );
 
 /**
 * @name isDataType
@@ -106,7 +106,7 @@ setReadOnly( ns, 'isContiguous', require( '@stdlib/ndarray/base/assert/is-contig
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-data-type}
 */
-setReadOnly( ns, 'isDataType', require( '@stdlib/ndarray/base/assert/is-data-type' ) );
+setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) );
 
 /**
 * @name isIndexMode
@@ -115,7 +115,7 @@ setReadOnly( ns, 'isDataType', require( '@stdlib/ndarray/base/assert/is-data-typ
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-index-mode}
 */
-setReadOnly( ns, 'isIndexMode', require( '@stdlib/ndarray/base/assert/is-index-mode' ) );
+setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' ) );
 
 /**
 * @name isOrder
@@ -124,7 +124,7 @@ setReadOnly( ns, 'isIndexMode', require( '@stdlib/ndarray/base/assert/is-index-m
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-order}
 */
-setReadOnly( ns, 'isOrder', require( '@stdlib/ndarray/base/assert/is-order' ) );
+setReadOnly( ns, 'isOrder', require( './../../../base/assert/is-order' ) );
 
 /**
 * @name isRowMajor
@@ -133,7 +133,7 @@ setReadOnly( ns, 'isOrder', require( '@stdlib/ndarray/base/assert/is-order' ) );
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-row-major}
 */
-setReadOnly( ns, 'isRowMajor', require( '@stdlib/ndarray/base/assert/is-row-major' ) );
+setReadOnly( ns, 'isRowMajor', require( './../../../base/assert/is-row-major' ) );
 
 /**
 * @name isRowMajorContiguous
@@ -142,7 +142,7 @@ setReadOnly( ns, 'isRowMajor', require( '@stdlib/ndarray/base/assert/is-row-majo
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-row-major-contiguous}
 */
-setReadOnly( ns, 'isRowMajorContiguous', require( '@stdlib/ndarray/base/assert/is-row-major-contiguous' ) );
+setReadOnly( ns, 'isRowMajorContiguous', require( './../../../base/assert/is-row-major-contiguous' ) );
 
 /**
 * @name isSafeDataTypeCast
@@ -151,7 +151,7 @@ setReadOnly( ns, 'isRowMajorContiguous', require( '@stdlib/ndarray/base/assert/i
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-safe-data-type-cast}
 */
-setReadOnly( ns, 'isSafeDataTypeCast', require( '@stdlib/ndarray/base/assert/is-safe-data-type-cast' ) );
+setReadOnly( ns, 'isSafeDataTypeCast', require( './../../../base/assert/is-safe-data-type-cast' ) );
 
 /**
 * @name isSameKindDataTypeCast
@@ -160,7 +160,7 @@ setReadOnly( ns, 'isSafeDataTypeCast', require( '@stdlib/ndarray/base/assert/is-
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-same-kind-data-type-cast}
 */
-setReadOnly( ns, 'isSameKindDataTypeCast', require( '@stdlib/ndarray/base/assert/is-same-kind-data-type-cast' ) );
+setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-same-kind-data-type-cast' ) );
 
 /**
 * @name isSingleSegmentCompatible
@@ -169,7 +169,7 @@ setReadOnly( ns, 'isSameKindDataTypeCast', require( '@stdlib/ndarray/base/assert
 * @type {Function}
 * @see {@link module:@stdlib/ndarray/base/assert/is-single-segment-compatible}
 */
-setReadOnly( ns, 'isSingleSegmentCompatible', require( '@stdlib/ndarray/base/assert/is-single-segment-compatible' ) );
+setReadOnly( ns, 'isSingleSegmentCompatible', require( './../../../base/assert/is-single-segment-compatible' ) );
 
 
 // EXPORTS //

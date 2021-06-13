@@ -21,35 +21,35 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import assert = require( '@stdlib/ndarray/base/assert' );
-import bind2vind = require( '@stdlib/ndarray/base/bind2vind' );
-import broadcastShapes = require( '@stdlib/ndarray/base/broadcast-shapes' );
-import buffer = require( '@stdlib/ndarray/base/buffer' );
-import bufferCtors = require( '@stdlib/ndarray/base/buffer-ctors' );
-import bufferDataType = require( '@stdlib/ndarray/base/buffer-dtype' );
-import bufferDataTypeEnum = require( '@stdlib/ndarray/base/buffer-dtype-enum' );
-import bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
-import clampIndex = require( '@stdlib/ndarray/base/clamp-index' );
-import ndarray = require( '@stdlib/ndarray/base/ctor' );
-import dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
-import dtypes2signatures = require( '@stdlib/ndarray/base/dtypes2signatures' );
-import ind = require( '@stdlib/ndarray/base/ind' );
-import ind2sub = require( '@stdlib/ndarray/base/ind2sub' );
-import iterationOrder = require( '@stdlib/ndarray/base/iteration-order' );
-import maxViewBufferIndex = require( '@stdlib/ndarray/base/max-view-buffer-index' );
-import minViewBufferIndex = require( '@stdlib/ndarray/base/min-view-buffer-index' );
-import minmaxViewBufferIndex = require( '@stdlib/ndarray/base/minmax-view-buffer-index' );
-import nonsingletonDimensions = require( '@stdlib/ndarray/base/nonsingleton-dimensions' );
-import numel = require( '@stdlib/ndarray/base/numel' );
-import serializeMetaData = require( '@stdlib/ndarray/base/serialize-meta-data' );
-import shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-import singletonDimensions = require( '@stdlib/ndarray/base/singleton-dimensions' );
-import strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
-import strides2order = require( '@stdlib/ndarray/base/strides2order' );
-import sub2ind = require( '@stdlib/ndarray/base/sub2ind' );
-import ndarray2array = require( '@stdlib/ndarray/base/to-array' );
-import vind2bind = require( '@stdlib/ndarray/base/vind2bind' );
-import wrapIndex = require( '@stdlib/ndarray/base/wrap-index' );
+import assert = require( './../../../base/assert' );
+import bind2vind = require( './../../../base/bind2vind' );
+import broadcastShapes = require( './../../../base/broadcast-shapes' );
+import buffer = require( './../../../base/buffer' );
+import bufferCtors = require( './../../../base/buffer-ctors' );
+import bufferDataType = require( './../../../base/buffer-dtype' );
+import bufferDataTypeEnum = require( './../../../base/buffer-dtype-enum' );
+import bytesPerElement = require( './../../../base/bytes-per-element' );
+import clampIndex = require( './../../../base/clamp-index' );
+import ndarray = require( './../../../base/ctor' );
+import dtypeChar = require( './../../../base/dtype-char' );
+import dtypes2signatures = require( './../../../base/dtypes2signatures' );
+import ind = require( './../../../base/ind' );
+import ind2sub = require( './../../../base/ind2sub' );
+import iterationOrder = require( './../../../base/iteration-order' );
+import maxViewBufferIndex = require( './../../../base/max-view-buffer-index' );
+import minViewBufferIndex = require( './../../../base/min-view-buffer-index' );
+import minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
+import nonsingletonDimensions = require( './../../../base/nonsingleton-dimensions' );
+import numel = require( './../../../base/numel' );
+import serializeMetaData = require( './../../../base/serialize-meta-data' );
+import shape2strides = require( './../../../base/shape2strides' );
+import singletonDimensions = require( './../../../base/singleton-dimensions' );
+import strides2offset = require( './../../../base/strides2offset' );
+import strides2order = require( './../../../base/strides2order' );
+import sub2ind = require( './../../../base/sub2ind' );
+import ndarray2array = require( './../../../base/to-array' );
+import vind2bind = require( './../../../base/vind2bind' );
+import wrapIndex = require( './../../../base/wrap-index' );
 
 /**
 * Interface describing the `base` namespace.

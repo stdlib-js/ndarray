@@ -24,7 +24,7 @@ var resolve = require( 'path' ).resolve;
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray = require( './../../../../ctor' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var pkg = require( './../package.json' ).name;
 

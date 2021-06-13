@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var unary = require( '@stdlib/ndarray/base/unary' );
+var unary = require( './../../base/unary' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var pkg = require( './../package.json' ).name;
 var dispatch = require( './../lib' );

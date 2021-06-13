@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var randu = require( '@stdlib/random/base/randu' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var shape2strides = require( './../../../base/shape2strides' );
 var pkg = require( './../package.json' ).name;
 var iterationOrder = require( './../lib' );
 

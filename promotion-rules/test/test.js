@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../dtypes' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var promotionRules = require( './../lib' );
 

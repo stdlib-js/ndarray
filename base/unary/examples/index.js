@@ -21,8 +21,8 @@
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var filledarray = require( '@stdlib/array/filled' );
 var gfillBy = require( '@stdlib/blas/ext/base/gfill-by' );
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
+var shape2strides = require( './../../../base/shape2strides' );
+var ndarray2array = require( './../../../base/to-array' );
 var unary = require( './../lib' );
 
 function scale( x ) {

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var safeCasts = require( '@stdlib/ndarray/safe-casts' );
+var safeCasts = require( './../../../../safe-casts' );
 
 
 // VARIABLES //

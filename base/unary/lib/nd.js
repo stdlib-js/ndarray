@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var numel = require( '@stdlib/ndarray/base/numel' );
-var vind2bind = require( '@stdlib/ndarray/base/vind2bind' );
+var numel = require( './../../../base/numel' );
+var vind2bind = require( './../../../base/vind2bind' );
 
 
 // VARIABLES //

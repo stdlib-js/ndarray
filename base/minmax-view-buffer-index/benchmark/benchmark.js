@@ -24,9 +24,9 @@ var bench = require( '@stdlib/bench' );
 var randu = require( '@stdlib/random/base/randu' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var minViewBufferIndex = require( '@stdlib/ndarray/base/min-view-buffer-index' );
-var maxViewBufferIndex = require( '@stdlib/ndarray/base/max-view-buffer-index' );
+var shape2strides = require( './../../../base/shape2strides' );
+var minViewBufferIndex = require( './../../../base/min-view-buffer-index' );
+var maxViewBufferIndex = require( './../../../base/max-view-buffer-index' );
 var pkg = require( './../package.json' ).name;
 var minmaxViewBufferIndex = require( './../lib' );
 

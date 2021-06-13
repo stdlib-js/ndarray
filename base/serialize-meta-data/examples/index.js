@@ -19,7 +19,7 @@
 'use strict';
 
 var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
-var array = require( '@stdlib/ndarray/array' );
+var array = require( './../../../array' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var fromInt64Bytes = require( '@stdlib/number/float64/base/from-int64-bytes' );
 var serialize = require( './../lib' );

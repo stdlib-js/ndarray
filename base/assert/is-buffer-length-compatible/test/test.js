@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
+var strides2offset = require( './../../../../base/strides2offset' );
 var isBufferLengthCompatible = require( './../lib' );
 
 

@@ -24,7 +24,7 @@ var resolve = require( 'path' ).resolve;
 var tape = require( 'tape' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var Float64Array = require( '@stdlib/array/float64' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray = require( './../../../../ctor' );
 
 
 // VARIABLES //

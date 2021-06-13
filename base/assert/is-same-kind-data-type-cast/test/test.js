@@ -21,8 +21,8 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
-var sameKindCasts = require( '@stdlib/ndarray/same-kind-casts' );
+var dtypes = require( './../../../../dtypes' );
+var sameKindCasts = require( './../../../../same-kind-casts' );
 var isSameKindCast = require( './../lib' );
 
 

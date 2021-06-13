@@ -18,8 +18,8 @@
 
 'use strict';
 
-var unary = require( '@stdlib/ndarray/base/unary' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var unary = require( './../../base/unary' );
+var ndarray = require( './../../ctor' );
 var Float64Array = require( '@stdlib/array/float64' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var dispatch = require( './../lib' );

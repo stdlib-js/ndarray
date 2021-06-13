@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var orders = require( '@stdlib/ndarray/orders' );
+var orders = require( './../../../../orders' );
 
 
 // VARIABLES //

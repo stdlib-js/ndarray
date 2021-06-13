@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../dtypes' );
 var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 var safeCasts = require( './../lib' );
 

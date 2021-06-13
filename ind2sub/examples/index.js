@@ -18,7 +18,7 @@
 
 'use strict';
 
-var numel = require( '@stdlib/ndarray/base/numel' );
+var numel = require( './../../base/numel' );
 var ind2sub = require( './../lib' );
 
 var shape = [ 3, 3, 3 ];

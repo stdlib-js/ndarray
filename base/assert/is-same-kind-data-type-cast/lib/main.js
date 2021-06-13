@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var sameKindCasts = require( '@stdlib/ndarray/same-kind-casts' );
+var sameKindCasts = require( './../../../../same-kind-casts' );
 
 
 // VARIABLES //

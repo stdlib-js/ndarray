@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-import maxViewBufferIndex = require( '@stdlib/ndarray/base/assert/is-contiguous/docs/types' );
+import maxViewBufferIndex = require( './../../../../../base/assert/is-contiguous/docs/types' );
 
 
 // TESTS //

@@ -23,14 +23,14 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var unary = require( '@stdlib/ndarray/base/unary' );
+var unary = require( './../../base/unary' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Int32Array = require( '@stdlib/array/int32' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var dtype = require( '@stdlib/ndarray/base/buffer-dtype' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
+var dtype = require( './../../base/buffer-dtype' );
+var ndarray = require( './../../ctor' );
 var dispatch = require( './../lib' );
 
 

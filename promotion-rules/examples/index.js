@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../dtypes' );
 var promotionRules = require( './../lib' );
 
 var DTYPES;

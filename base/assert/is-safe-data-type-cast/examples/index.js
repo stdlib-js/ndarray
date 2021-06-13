@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../../../dtypes' );
 var isSafeCast = require( './../lib' );
 
 var DTYPES;

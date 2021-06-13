@@ -23,8 +23,8 @@
 // METHODS //
 
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var getIndex = require( '@stdlib/ndarray/base/ind' );
-var parent = require( '@stdlib/ndarray/base/ctor' ); // eslint-disable-line stdlib/no-redeclare
+var getIndex = require( './../../base/ind' );
+var parent = require( './../../base/ctor' ); // eslint-disable-line stdlib/no-redeclare
 
 
 // VARIABLES //

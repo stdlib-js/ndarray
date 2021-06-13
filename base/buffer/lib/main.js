@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bufferCtors = require( '@stdlib/ndarray/base/buffer-ctors' );
+var bufferCtors = require( './../../../base/buffer-ctors' );
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
 var zeros = require( './zeros.js' );
 

@@ -18,8 +18,8 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/ndarray/dtypes' );
-var bufferCtors = require( '@stdlib/ndarray/base/buffer-ctors' );
+var dtypes = require( './../../../dtypes' );
+var bufferCtors = require( './../../../base/buffer-ctors' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var dtype = require( './../lib' );
 

@@ -22,8 +22,8 @@
 
 var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var getIndex = require( '@stdlib/ndarray/base/sub2ind' );
+var shape2strides = require( './../../base/shape2strides' );
+var getIndex = require( './../../base/sub2ind' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 

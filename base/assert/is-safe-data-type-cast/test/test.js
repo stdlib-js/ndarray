@@ -21,8 +21,8 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
-var safeCasts = require( '@stdlib/ndarray/safe-casts' );
+var dtypes = require( './../../../../dtypes' );
+var safeCasts = require( './../../../../safe-casts' );
 var isSafeCast = require( './../lib' );
 
 

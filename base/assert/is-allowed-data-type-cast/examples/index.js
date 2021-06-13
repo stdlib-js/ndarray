@@ -18,8 +18,8 @@
 
 'use strict';
 
-var dtypes = require( '@stdlib/ndarray/dtypes' );
-var modes = require( '@stdlib/ndarray/casting-modes' );
+var dtypes = require( './../../../../dtypes' );
+var modes = require( './../../../../casting-modes' );
 var isAllowedCast = require( './../lib' );
 
 var DTYPES;

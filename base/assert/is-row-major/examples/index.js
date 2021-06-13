@@ -18,7 +18,7 @@
 
 'use strict';
 
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var shape2strides = require( './../../../../base/shape2strides' );
 var isRowMajor = require( './../lib' );
 
 var shape = [ 10, 10, 10 ];

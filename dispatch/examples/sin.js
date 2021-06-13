@@ -24,9 +24,9 @@ var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Int8Array = require( '@stdlib/array/int8' );
 var sin = require( '@stdlib/math/base/special/sin' );
-var ind2sub = require( '@stdlib/ndarray/ind2sub' );
-var ndarray = require( '@stdlib/ndarray/ctor' );
-var numel = require( '@stdlib/ndarray/base/numel' );
+var ind2sub = require( './../../ind2sub' );
+var ndarray = require( './../../ctor' );
+var numel = require( './../../base/numel' );
 var dispatch = require( './../lib' );
 
 function apply( arrays, fcn ) {

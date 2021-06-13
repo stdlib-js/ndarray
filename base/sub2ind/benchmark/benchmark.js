@@ -25,8 +25,8 @@ var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
-var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
+var shape2strides = require( './../../../base/shape2strides' );
+var strides2offset = require( './../../../base/strides2offset' );
 var pkg = require( './../package.json' ).name;
 var sub2ind = require( './../lib' );
 

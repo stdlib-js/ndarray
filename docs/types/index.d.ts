@@ -21,20 +21,20 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
-import array = require( '@stdlib/ndarray/array' );
-import base = require( '@stdlib/ndarray/base' );
-import ndarrayCastingModes = require( '@stdlib/ndarray/casting-modes' );
-import ndarray = require( '@stdlib/ndarray/ctor' );
-import ndarrayDataTypes = require( '@stdlib/ndarray/dtypes' );
-import ind2sub = require( '@stdlib/ndarray/ind2sub' );
-import ndarrayIndexModes = require( '@stdlib/ndarray/index-modes' );
-import ndarrayMinDataType = require( '@stdlib/ndarray/min-dtype' );
-import ndarrayNextDataType = require( '@stdlib/ndarray/next-dtype' );
-import ndarrayOrders = require( '@stdlib/ndarray/orders' );
-import ndarrayPromotionRules = require( '@stdlib/ndarray/promotion-rules' );
-import ndarraySafeCasts = require( '@stdlib/ndarray/safe-casts' );
-import ndarraySameKindCasts = require( '@stdlib/ndarray/same-kind-casts' );
-import sub2ind = require( '@stdlib/ndarray/sub2ind' );
+import array = require( './../../array' );
+import base = require( './../../base' );
+import ndarrayCastingModes = require( './../../casting-modes' );
+import ndarray = require( './../../ctor' );
+import ndarrayDataTypes = require( './../../dtypes' );
+import ind2sub = require( './../../ind2sub' );
+import ndarrayIndexModes = require( './../../index-modes' );
+import ndarrayMinDataType = require( './../../min-dtype' );
+import ndarrayNextDataType = require( './../../next-dtype' );
+import ndarrayOrders = require( './../../orders' );
+import ndarrayPromotionRules = require( './../../promotion-rules' );
+import ndarraySafeCasts = require( './../../safe-casts' );
+import ndarraySameKindCasts = require( './../../same-kind-casts' );
+import sub2ind = require( './../../sub2ind' );
 
 /**
 * Interface describing the `ndarray` namespace.

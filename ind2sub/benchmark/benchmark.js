@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var randu = require( '@stdlib/random/base/randu' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
-var numel = require( '@stdlib/ndarray/base/numel' );
+var numel = require( './../../base/numel' );
 var pkg = require( './../package.json' ).name;
 var ind2sub = require( './../lib' );
 

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var serialize = require( '@stdlib/ndarray/base/serialize-meta-data' );
+var serialize = require( './../../../../base/serialize-meta-data' );
 var addon = require( './../src/addon.node' );
 
 

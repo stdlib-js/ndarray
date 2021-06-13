@@ -25,10 +25,10 @@ var float64ToInt64Bytes = require( '@stdlib/number/float64/base/to-int64-bytes' 
 var ArrayBuffer = require( '@stdlib/array/buffer' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var DataView = require( '@stdlib/array/dataview' );
-var bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
-var dtypes = require( '@stdlib/ndarray/dtypes' ).enum;
-var orders = require( '@stdlib/ndarray/orders' ).enum;
-var modes = require( '@stdlib/ndarray/index-modes' ).enum;
+var bytesPerElement = require( './../../../base/bytes-per-element' );
+var dtypes = require( './../../../dtypes' ).enum;
+var orders = require( './../../../orders' ).enum;
+var modes = require( './../../../index-modes' ).enum;
 
 
 // VARIABLES //

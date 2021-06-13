@@ -19,7 +19,7 @@
 'use strict';
 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var shape2strides = require( './../../../base/shape2strides' );
 var randu = require( '@stdlib/random/base/randu' );
 var strides2order = require( './../lib' );
 

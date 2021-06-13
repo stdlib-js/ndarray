@@ -25,9 +25,9 @@
 var hasBigIntSupport = require( '@stdlib/assert/has-bigint-support' );
 var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
 var setReadOnlyAccessor = require( '@stdlib/utils/define-nonenumerable-read-only-accessor' );
-var bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
-var iterationOrder = require( '@stdlib/ndarray/base/iteration-order' );
-var strides2order = require( '@stdlib/ndarray/base/strides2order' );
+var bytesPerElement = require( './../../../base/bytes-per-element' );
+var iterationOrder = require( './../../../base/iteration-order' );
+var strides2order = require( './../../../base/strides2order' );
 var isColumnMajorContiguous = require( './is_column_major_contiguous.js' );
 var isRowMajorContiguous = require( './is_row_major_contiguous.js' );
 var isContiguous = require( './is_contiguous.js' );

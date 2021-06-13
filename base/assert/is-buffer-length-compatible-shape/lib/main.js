@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var numel = require( '@stdlib/ndarray/base/numel' );
+var numel = require( './../../../../base/numel' );
 
 
 // MAIN //

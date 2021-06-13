@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var dtypes = require( '@stdlib/ndarray/dtypes' ).enum;
-var dtype = require( '@stdlib/ndarray/base/buffer-dtype' );
+var dtypes = require( './../../../dtypes' ).enum;
+var dtype = require( './../../../base/buffer-dtype' );
 
 
 // VARIABLES //

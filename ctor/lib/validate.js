@@ -23,7 +23,7 @@
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArray = require( '@stdlib/assert/is-array' );
-var isIndexMode = require( '@stdlib/ndarray/base/assert/is-index-mode' );
+var isIndexMode = require( './../../base/assert/is-index-mode' );
 
 
 // MAIN //

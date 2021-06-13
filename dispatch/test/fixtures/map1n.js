@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var ind2sub = require( '@stdlib/ndarray/ind2sub' );
-var numel = require( '@stdlib/ndarray/base/numel' );
+var ind2sub = require( './../../../ind2sub' );
+var numel = require( './../../../base/numel' );
 
 
 // MAIN //

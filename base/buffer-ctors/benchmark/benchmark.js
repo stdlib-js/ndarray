@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../../dtypes' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var pkg = require( './../package.json' ).name;
 var ctors = require( './../lib' );

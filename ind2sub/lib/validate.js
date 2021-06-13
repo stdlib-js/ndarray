@@ -22,8 +22,8 @@
 
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var isOrder = require( '@stdlib/ndarray/base/assert/is-order' );
-var isIndexMode = require( '@stdlib/ndarray/base/assert/is-index-mode' );
+var isOrder = require( './../../base/assert/is-order' );
+var isIndexMode = require( './../../base/assert/is-index-mode' );
 
 
 // MAIN //

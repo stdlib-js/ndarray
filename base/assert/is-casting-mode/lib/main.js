@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var modes = require( '@stdlib/ndarray/casting-modes' );
+var modes = require( './../../../../casting-modes' );
 
 
 // VARIABLES //

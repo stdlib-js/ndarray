@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
+var bytesPerElement = require( './../../../base/bytes-per-element' );
 var range = require( './range.js' );
 var sort2ins = require( './sort2ins.js' );
 var copy = require( './copy_array.js' );

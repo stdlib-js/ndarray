@@ -25,7 +25,7 @@ var tape = require( 'tape' );
 var tryRequire = require( '@stdlib/utils/try-require' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
+var ndarray = require( './../../../../base/ctor' );
 
 
 // VARIABLES //

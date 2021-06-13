@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var numel = require( '@stdlib/ndarray/base/numel' );
-var minmax = require( '@stdlib/ndarray/base/minmax-view-buffer-index' );
+var numel = require( './../../../../base/numel' );
+var minmax = require( './../../../../base/minmax-view-buffer-index' );
 
 
 // MAIN //

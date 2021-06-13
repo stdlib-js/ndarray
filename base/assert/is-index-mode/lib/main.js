@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var modes = require( '@stdlib/ndarray/index-modes' );
+var modes = require( './../../../../index-modes' );
 
 
 // VARIABLES //

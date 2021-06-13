@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray/dtypes' );
+var dtypes = require( './../../../dtypes' );
 var Buffer = require( '@stdlib/buffer/ctor' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Float32Array = require( '@stdlib/array/float32' );

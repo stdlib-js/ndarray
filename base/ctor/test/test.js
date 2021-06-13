@@ -39,9 +39,9 @@ var isDataView = require( '@stdlib/assert/is-dataview' );
 var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
 var real = require( '@stdlib/complex/real' );
 var imag = require( '@stdlib/complex/imag' );
-var dtypes = require( '@stdlib/ndarray/dtypes' ).enum;
-var modes = require( '@stdlib/ndarray/index-modes' ).enum;
-var orders = require( '@stdlib/ndarray/orders' ).enum;
+var dtypes = require( './../../../dtypes' ).enum;
+var modes = require( './../../../index-modes' ).enum;
+var orders = require( './../../../orders' ).enum;
 var ndarray = require( './../lib' );
 
 

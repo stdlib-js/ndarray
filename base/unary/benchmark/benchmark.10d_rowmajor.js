@@ -28,7 +28,7 @@ var floor = require( '@stdlib/math/base/special/floor' );
 var round = require( '@stdlib/math/base/special/round' );
 var identity = require( '@stdlib/math/base/special/identity' );
 var filledarray = require( '@stdlib/array/filled' );
-var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
+var shape2strides = require( './../../../base/shape2strides' );
 var pkg = require( './../package.json' ).name;
 var unary = require( './../lib/10d.js' );
 

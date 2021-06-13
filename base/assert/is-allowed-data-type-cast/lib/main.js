@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var isSafeCast = require( '@stdlib/ndarray/base/assert/is-safe-data-type-cast' );
-var isSameKindCast = require( '@stdlib/ndarray/base/assert/is-same-kind-data-type-cast' );
+var isSafeCast = require( './../../../../base/assert/is-safe-data-type-cast' );
+var isSameKindCast = require( './../../../../base/assert/is-same-kind-data-type-cast' );
 
 
 // MAIN //

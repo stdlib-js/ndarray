@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var minmaxViewBufferIndex = require( '@stdlib/ndarray/base/minmax-view-buffer-index' );
+var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
 
 
 // MAIN //

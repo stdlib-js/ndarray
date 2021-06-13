@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var unary = require( '@stdlib/ndarray/base/unary' );
+var unary = require( './../../base/unary' );
 var abs = require( '@stdlib/math/base/special/abs' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var dispatch = require( './../lib' );

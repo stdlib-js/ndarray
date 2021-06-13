@@ -20,9 +20,9 @@
 
 // MODULES //
 
-var isSingleSegmentCompatible = require( '@stdlib/ndarray/base/assert/is-single-segment-compatible' );
-var iterationOrder = require( '@stdlib/ndarray/base/iteration-order' );
-var isRowMajor = require( '@stdlib/ndarray/base/assert/is-row-major' );
+var isSingleSegmentCompatible = require( './../../../../base/assert/is-single-segment-compatible' );
+var iterationOrder = require( './../../../../base/iteration-order' );
+var isRowMajor = require( './../../../../base/assert/is-row-major' );
 
 
 // MAIN //

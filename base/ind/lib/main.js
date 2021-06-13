@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var clampIndex = require( '@stdlib/ndarray/base/clamp-index' );
-var wrapIndex = require( '@stdlib/ndarray/base/wrap-index' );
+var clampIndex = require( './../../../base/clamp-index' );
+var wrapIndex = require( './../../../base/wrap-index' );
 
 
 // MAIN //

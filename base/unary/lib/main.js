@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var iterationOrder = require( '@stdlib/ndarray/base/iteration-order' );
-var minmaxViewBufferIndex = require( '@stdlib/ndarray/base/minmax-view-buffer-index' );
+var iterationOrder = require( './../../../base/iteration-order' );
+var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
 var copy = require( './copy_ndarray.js' );
 var blockedaccessorunary2d = require( './2d_blocked_accessors.js' );
 var blockedaccessorunary3d = require( './3d_blocked_accessors.js' );

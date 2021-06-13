@@ -25,11 +25,11 @@ var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
 var isDataView = require( '@stdlib/assert/is-dataview' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
-var ndarray = require( '@stdlib/ndarray/base/ctor' );
-var bytesPerElement = require( '@stdlib/ndarray/base/bytes-per-element' );
-var dtypes = require( '@stdlib/ndarray/dtypes' ).enum;
-var modes = require( '@stdlib/ndarray/index-modes' ).enum;
-var orders = require( '@stdlib/ndarray/orders' ).enum;
+var ndarray = require( './../../../base/ctor' );
+var bytesPerElement = require( './../../../base/bytes-per-element' );
+var dtypes = require( './../../../dtypes' ).enum;
+var modes = require( './../../../index-modes' ).enum;
+var orders = require( './../../../orders' ).enum;
 var serialize = require( './../lib/polyfill.js' );
 
 
