@@ -22,7 +22,8 @@
   "scripts": {
     "test": "make test",
     "test-cov": "make test-cov",
-    "examples": "make examples"
+    "examples": "make examples",
+    "benchmark": "make benchmark"
   },
   "homepage": "https://github.com/stdlib-js/stdlib",
   "repository": {

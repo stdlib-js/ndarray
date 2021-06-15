@@ -1,10 +1,10 @@
-name: examples
+name: benchmark
 
 on:
   workflow_dispatch:
 
 jobs:
-  examples:
+  benchmark:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,6 +14,6 @@ jobs:
       - name: Install production and development dependencies
         run: |
           npm install
-      - name: Run examples
+      - name: Run benchmarks
         run: |
-          npm run examples
+          npm run benchmark
