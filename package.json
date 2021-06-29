@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Multidimensional arrays.",
   "license": "Apache-2.0",
   "author": {
