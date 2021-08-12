@@ -15,6 +15,8 @@
   ],
   "main": "./lib",
   "directories": {
+    "doc": "./docs",
+    "example": "./examples",
     "lib": "./lib",
     "test": "./test"
   },
@@ -34,22 +36,22 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array": "^0.0.x",
-    "@stdlib/assert": "^0.0.x",
-    "@stdlib/bigint": "^0.0.x",
-    "@stdlib/buffer": "^0.0.x",
-    "@stdlib/complex": "^0.0.x",
-    "@stdlib/constants": "^0.0.x",
-    "@stdlib/math": "^0.0.x",
-    "@stdlib/number": "^0.0.x",
-    "@stdlib/string": "^0.0.x",
-    "@stdlib/types": "^0.0.x",
-    "@stdlib/utils": "^0.0.x"
+    "@stdlib/array": "github:stdlib-js/array",
+    "@stdlib/assert": "github:stdlib-js/assert",
+    "@stdlib/bigint": "github:stdlib-js/bigint",
+    "@stdlib/buffer": "github:stdlib-js/buffer",
+    "@stdlib/complex": "github:stdlib-js/complex",
+    "@stdlib/constants": "github:stdlib-js/constants",
+    "@stdlib/math": "github:stdlib-js/math",
+    "@stdlib/number": "github:stdlib-js/number",
+    "@stdlib/string": "github:stdlib-js/string",
+    "@stdlib/types": "github:stdlib-js/types",
+    "@stdlib/utils": "github:stdlib-js/utils"
   },
   "devDependencies": {
-    "@stdlib/bench": "^0.0.x",
-    "@stdlib/blas": "^0.0.x",
-    "@stdlib/random": "^0.0.x",
+    "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/blas": "github:stdlib-js/blas",
+    "@stdlib/random": "github:stdlib-js/random",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
