@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Multidimensional arrays.",
   "license": "Apache-2.0",
   "author": {
@@ -36,17 +36,17 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array": "github:stdlib-js/array",
-    "@stdlib/assert": "github:stdlib-js/assert",
-    "@stdlib/bigint": "github:stdlib-js/bigint",
-    "@stdlib/buffer": "github:stdlib-js/buffer",
-    "@stdlib/complex": "github:stdlib-js/complex",
-    "@stdlib/constants": "github:stdlib-js/constants",
-    "@stdlib/math": "github:stdlib-js/math",
-    "@stdlib/number": "github:stdlib-js/number",
-    "@stdlib/string": "github:stdlib-js/string",
-    "@stdlib/types": "github:stdlib-js/types",
-    "@stdlib/utils": "github:stdlib-js/utils"
+    "@stdlib/array": "github:stdlib-js/array#main",
+    "@stdlib/assert": "github:stdlib-js/assert#main",
+    "@stdlib/bigint": "github:stdlib-js/bigint#main",
+    "@stdlib/buffer": "github:stdlib-js/buffer#main",
+    "@stdlib/complex": "github:stdlib-js/complex#main",
+    "@stdlib/constants": "github:stdlib-js/constants#main",
+    "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/number": "github:stdlib-js/number#main",
+    "@stdlib/string": "github:stdlib-js/string#main",
+    "@stdlib/types": "github:stdlib-js/types#main",
+    "@stdlib/utils": "github:stdlib-js/utils#main"
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",

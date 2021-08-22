@@ -31,10 +31,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
+          node-version: 16
+        timeout-minutes: 5
       - name: Install production and development dependencies
         run: |
           npm install || npm install || npm install
+        timeout-minutes: 15
       - name: Run benchmarks
         run: |
           npm run benchmark
