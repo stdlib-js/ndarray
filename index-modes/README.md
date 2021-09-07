@@ -118,6 +118,13 @@ bool = isMode( 'beep' );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/ndarray/array`][@stdlib/ndarray/array]: multidimensional arrays.
+-   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
+
 </section>
 
 <!-- /.related -->
@@ -125,6 +132,14 @@ bool = isMode( 'beep' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
+
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
+
+<!-- </related-links> -->
 
 </section>
 

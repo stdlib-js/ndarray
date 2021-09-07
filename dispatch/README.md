@@ -251,6 +251,13 @@ console.log( ybuf );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/ndarray/array`][@stdlib/ndarray/array]: multidimensional arrays.
+-   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
+
 </section>
 
 <!-- /.related -->
@@ -259,7 +266,13 @@ console.log( ybuf );
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
+
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
+
+<!-- </related-links> -->
 
 </section>
 

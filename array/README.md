@@ -247,6 +247,12 @@ str = JSON.stringify( arr.toJSON() );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]: multidimensional array constructor.
+
 </section>
 
 <!-- /.related -->
@@ -257,13 +263,17 @@ str = JSON.stringify( arr.toJSON() );
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
-
 [@stdlib/array/generic]: https://github.com/stdlib-js/array-generic
 
 [@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
 [@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
+
+<!-- </related-links> -->
 
 </section>
 

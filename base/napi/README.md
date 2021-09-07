@@ -96,9 +96,9 @@ This package exposes various C APIs to facilitate the creation of Node-API ndarr
 
 <!-- NOTE: please keep in alphabetical order -->
 
--   [`@stdlib/ndarray/base/napi/unary`][@stdlib/ndarray/base/napi/unary]: https://github.com/stdlib-js/ndarray/tree/main/base/napi/unary`][@stdlib/ndarray/base/napi/unary
--   [`@stdlib/ndarray/base/unary`][@stdlib/ndarray/base/unary]: https://github.com/stdlib-js/ndarray/tree/main/base/unary`][@stdlib/ndarray/base/unary
--   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes`][@stdlib/ndarray/dtypes
+-   [`@stdlib/ndarray/base/napi/unary`][@stdlib/ndarray/base/napi/unary]: Node-API interfaces and macros for registering one or more [`@stdlib/ndarray/base/unary`][@stdlib/ndarray/base/unary] interfaces with support for multiple dispatch.
+-   [`@stdlib/ndarray/base/unary`][@stdlib/ndarray/base/unary]: ndarray loops for operating on a single input ndarray and one or more output ndarrays.
+-   [`@stdlib/ndarray/dtypes`][@stdlib/ndarray/dtypes]: supported ndarray data types.
 
 For API documentation, consult the individual packages.
 
