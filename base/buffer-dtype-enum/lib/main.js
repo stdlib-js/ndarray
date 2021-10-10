@@ -20,13 +20,8 @@
 
 // MODULES //
 
-var dtypes = require( './../../../dtypes' ).enum;
+var enumerate = require( './../../../dtypes' ).enumerate;
 var dtype = require( './../../../base/buffer-dtype' );
-
-
-// VARIABLES //
-
-var table = dtypes();
 
 
 // MAIN //
@@ -48,7 +43,7 @@ var table = dtypes();
 function dtypeEnum( arr ) {
 	var dt = dtype( arr );
 	if ( dt ) {
-		return table[ dt ];
+		return enumerate( dt );
 	}
 	return null;
 }
