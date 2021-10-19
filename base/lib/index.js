@@ -145,6 +145,33 @@ setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 setReadOnly( ns, 'dtypeChar', require( './../../base/dtype-char' ) );
 
 /**
+* @name dtypeEnum2Str
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-enum2str}
+*/
+setReadOnly( ns, 'dtypeEnum2Str', require( './../../base/dtype-enum2str' ) );
+
+/**
+* @name dtypeResolveEnum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-resolve-enum}
+*/
+setReadOnly( ns, 'dtypeResolveEnum', require( './../../base/dtype-resolve-enum' ) );
+
+/**
+* @name dtypeStr2Enum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-str2enum}
+*/
+setReadOnly( ns, 'dtypeStr2Enum', require( './../../base/dtype-str2enum' ) );
+
+/**
 * @name dtypes2signatures
 * @memberof ns
 * @readonly
@@ -188,6 +215,15 @@ setReadOnly( ns, 'iterationOrder', require( './../../base/iteration-order' ) );
 * @see {@link module:@stdlib/ndarray/base/max-view-buffer-index}
 */
 setReadOnly( ns, 'maxViewBufferIndex', require( './../../base/max-view-buffer-index' ) );
+
+/**
+* @name metaDataProps
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/meta-data-props}
+*/
+setReadOnly( ns, 'metaDataProps', require( './../../base/meta-data-props' ) );
 
 /**
 * @name minViewBufferIndex

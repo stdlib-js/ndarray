@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2021 The Stdlib Authors.
@@ -16,40 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
-
-// MODULES //
-
-var dtypes = require( './enum.js' );
-
-
-// VARIABLES //
-
-var dt = dtypes();
-
-
-// MAIN //
+// TypeScript Version: 2.0
 
 /**
-* Returns the integer value associated with a supported dtype for purposes of C inter-operation.
+* Returns the enumeration constant associated with a ndarray data type string.
 *
 * ## Notes
 *
 * -   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
-* -   The main purpose of this function is JavaScript and C inter-operation of ndarray objects. While certain dtypes, such as "generic" and "binary", have special behavior in JavaScript, they do not have a direct complement in C.
 *
-* @param {string} dtype - data type
-* @returns {(integer|void)} integer value or undefined
+* @param dtype - data type string
+* @returns enumeration constant
 *
 * @example
-* var v = enumerate( 'int8' );
+* var v = str2enum( 'float64' );
 * // returns <number>
 */
-function enumerate( dtype ) {
-	return dt[ dtype ];
-}
+declare function str2enum( dtype: string ): number | null;
 
 
 // EXPORTS //
 
-module.exports = enumerate;
+export = str2enum;
