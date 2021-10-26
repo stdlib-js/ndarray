@@ -20,7 +20,7 @@ limitations under the License.
 
 # resolve
 
-> Return the enumeration constant associated with a supported ndarray data type value.
+> Return the data type string associated with a supported ndarray data type value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,24 +37,24 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var resolve = require( '@stdlib/ndarray/base/dtype-resolve-str' );
 ```
 
 #### resolve( dtype )
 
-Returns the enumeration constant associated with an ndarray data type value.
+Returns the data type string associated with an ndarray data type value.
 
 ```javascript
 var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
 
 var v = resolve( 'float64' );
-// returns <number>
+// returns 'float64'
 
 v = resolve( str2enum( 'float64' ) );
-// returns <number>
+// returns 'float64'
 ```
 
-If unable to resolve an enumeration constant, the function returns `null`.
+If unable to resolve a data type string, the function returns `null`.
 
 ```javascript
 var v = resolve( 'beep' );
@@ -69,10 +69,6 @@ var v = resolve( 'beep' );
 
 <section class="notes">
 
-## Notes
-
--   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
-
 </section>
 
 <!-- /.notes -->
@@ -86,31 +82,32 @@ var v = resolve( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
+var resolve = require( '@stdlib/ndarray/base/dtype-resolve-str' );
 
-var v = resolve( 'float64' );
-// returns <number>
+var v = resolve( str2enum( 'float64' ) );
+// returns 'float64'
 
-v = resolve( 'float32' );
-// returns <number>
+v = resolve( str2enum( 'float32' ) );
+// returns 'float32'
 
-v = resolve( 'int32' );
-// returns <number>
+v = resolve( str2enum( 'int32' ) );
+// returns 'int32'
 
-v = resolve( 'int16' );
-// returns <number>
+v = resolve( str2enum( 'int16' ) );
+// returns 'int16'
 
-v = resolve( 'int8' );
-// returns <number>
+v = resolve( str2enum( 'int8' ) );
+// returns 'int8'
 
-v = resolve( 'uint32' );
-// returns <number>
+v = resolve( str2enum( 'uint32' ) );
+// returns 'uint32'
 
-v = resolve( 'uint16' );
-// returns <number>
+v = resolve( str2enum( 'uint16' ) );
+// returns 'uint16'
 
-v = resolve( 'uint8' );
-// returns <number>
+v = resolve( str2enum( 'uint8' ) );
+// returns 'uint8'
 ```
 
 </section>

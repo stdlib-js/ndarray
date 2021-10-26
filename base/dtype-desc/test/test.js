@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,7 +21,8 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypeChar = require( './../lib' );
+var table = require( './../lib/table.js' );
+var dtypeDesc = require( './../lib' );
 
 
 // VARIABLES //
@@ -43,79 +44,47 @@ var DTYPES = [
 	'complex64',
 	'complex128'
 ];
+var DESC = table();
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof dtypeChar, 'function', 'main export is a function' );
+	t.strictEqual( typeof dtypeDesc, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function returns an object mapping data type strings to single letter character abbreviations if not provided an argument', function test( t ) {
+tape( 'the function returns an object mapping data type strings to descriptions if not provided an argument', function test( t ) {
 	var expected;
 	var obj;
-	var ch;
+	var v;
 	var i;
 
-	expected = [
-		'd',
-		'f',
-		's',
-		'b',
-		'a',
-		'k',
-		't',
-		'i',
-		'u',
-		'l',
-		'v',
-		'r',
-		'o',
-		'c',
-		'z'
-	];
-
-	obj = dtypeChar();
+	obj = dtypeDesc();
 	for ( i = 0; i < DTYPES.length; i++ ) {
-		ch = obj[ DTYPES[ i ] ];
-		t.strictEqual( ch, expected[ i ], 'returns '+expected[i]+' when provided '+DTYPES[i] );
+		v = obj[ DTYPES[ i ] ];
+		expected = DESC[ DTYPES[ i ] ] || null;
+		t.strictEqual( v, expected, 'returns '+expected+' when provided '+DTYPES[i] );
 	}
 	t.end();
 });
 
-tape( 'the function returns the single letter character abbreviation for an underlying array data type', function test( t ) {
+tape( 'the function returns the description for a specified data type', function test( t ) {
 	var expected;
-	var ch;
+	var v;
 	var i;
 
-	expected = [
-		'd',
-		'f',
-		's',
-		'b',
-		'a',
-		'k',
-		't',
-		'i',
-		'u',
-		'l',
-		'v',
-		'r',
-		'o',
-		'c',
-		'z'
-	];
 	for ( i = 0; i < DTYPES.length; i++ ) {
-		ch = dtypeChar( DTYPES[ i ] );
-		t.strictEqual( ch, expected[ i ], 'returns '+expected[i]+' when provided '+DTYPES[i] );
+		v = dtypeDesc( DTYPES[ i ] );
+		expected = DESC[ DTYPES[ i ] ] || null;
+		t.strictEqual( v, expected, 'returns '+expected+' when provided '+DTYPES[i] );
 	}
 	t.end();
 });
 
 tape( 'the function returns `null` if provided an unknown/unsupported data type', function test( t ) {
-	var ch = dtypeChar( 'foobar' );
-	t.strictEqual( ch, null, 'returns expected value' );
+	var v = dtypeDesc( 'foobar' );
+	t.strictEqual( v, null, 'returns expected value' );
 	t.end();
 });

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# resolve
+# dtypeDesc
 
-> Return the enumeration constant associated with a supported ndarray data type value.
+> Return the description for a specified [data type][@stdlib/ndarray/dtypes].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,28 +37,33 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var dtypeDesc = require( '@stdlib/ndarray/base/dtype-desc' );
 ```
 
-#### resolve( dtype )
+#### dtypeDesc( \[dtype] )
 
-Returns the enumeration constant associated with an ndarray data type value.
+Returns the description for a specified [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
+var desc = dtypeDesc( 'float64' );
+// returns '...'
 
-var v = resolve( 'float64' );
-// returns <number>
-
-v = resolve( str2enum( 'float64' ) );
-// returns <number>
+desc = dtypeDesc( 'generic' );
+// returns '...'
 ```
 
-If unable to resolve an enumeration constant, the function returns `null`.
+If provided an unknown or unsupported data type, the function returns `null`.
 
 ```javascript
-var v = resolve( 'beep' );
+var desc = dtypeDesc( 'foobar' );
 // returns null
+```
+
+If not provided a [data type][@stdlib/ndarray/dtypes] string, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to descriptions.
+
+```javascript
+var obj = dtypeDesc();
+// returns {...}
 ```
 
 </section>
@@ -68,10 +73,6 @@ var v = resolve( 'beep' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
 
 </section>
 
@@ -86,31 +87,31 @@ var v = resolve( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var dtypeDesc = require( '@stdlib/ndarray/base/dtype-desc' );
 
-var v = resolve( 'float64' );
-// returns <number>
+var dtypes;
+var desc;
+var i;
 
-v = resolve( 'float32' );
-// returns <number>
+dtypes = [
+    'float64',
+    'float32',
+    'int8',
+    'uint8',
+    'uint8c',
+    'int16',
+    'uint16',
+    'int32',
+    'uint32',
+    'binary',
+    'generic',
+    'foobar'
+];
 
-v = resolve( 'int32' );
-// returns <number>
-
-v = resolve( 'int16' );
-// returns <number>
-
-v = resolve( 'int8' );
-// returns <number>
-
-v = resolve( 'uint32' );
-// returns <number>
-
-v = resolve( 'uint16' );
-// returns <number>
-
-v = resolve( 'uint8' );
-// returns <number>
+for ( i = 0; i < dtypes.length; i++ ) {
+    desc = dtypeDesc( dtypes[ i ] );
+    console.log( '%s: %s', dtypes[ i ], desc );
+}
 ```
 
 </section>
@@ -136,6 +137,8 @@ v = resolve( 'uint8' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
 </section>
 

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# resolve
+# char2dtype
 
-> Return the enumeration constant associated with a supported ndarray data type value.
+> Return the [data type][@stdlib/ndarray/dtypes] string associated with a provided [single letter character abbreviation][@stdlib/ndarray/base/dtype-char].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,28 +37,33 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var char2dtype = require( '@stdlib/ndarray/base/char2dtype' );
 ```
 
-#### resolve( dtype )
+#### char2dtype( \[dtype] )
 
-Returns the enumeration constant associated with an ndarray data type value.
+Returns the [data type][@stdlib/ndarray/dtypes] string associated with a provided [single letter character abbreviation][@stdlib/ndarray/base/dtype-char].
 
 ```javascript
-var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
+var out = char2dtype( 'd' );
+// returns 'float64'
 
-var v = resolve( 'float64' );
-// returns <number>
-
-v = resolve( str2enum( 'float64' ) );
-// returns <number>
+out = char2dtype( 'i' );
+// returns 'int32'
 ```
 
-If unable to resolve an enumeration constant, the function returns `null`.
+If provided an unknown or unsupported [single letter character abbreviation][@stdlib/ndarray/base/dtype-char], the function returns `null`.
 
 ```javascript
-var v = resolve( 'beep' );
+var out = char2dtype( '(' );
 // returns null
+```
+
+If not provided a [data type][@stdlib/ndarray/dtypes] string, the function returns an object mapping [single letter character abbreviations][@stdlib/ndarray/base/dtype-char] to [data type][@stdlib/ndarray/dtypes] strings.
+
+```javascript
+var out = char2dtype();
+// returns {...}
 ```
 
 </section>
@@ -68,10 +73,6 @@ var v = resolve( 'beep' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
 
 </section>
 
@@ -86,31 +87,32 @@ var v = resolve( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
+var char2dtype = require( '@stdlib/ndarray/base/char2dtype' );
 
-var v = resolve( 'float64' );
-// returns <number>
+var chars;
+var out;
+var i;
 
-v = resolve( 'float32' );
-// returns <number>
+chars = [
+    dtypeChar( 'float64' ),
+    dtypeChar( 'float32' ),
+    dtypeChar( 'int8' ),
+    dtypeChar( 'uint8' ),
+    dtypeChar( 'uint8c' ),
+    dtypeChar( 'int16' ),
+    dtypeChar( 'uint16' ),
+    dtypeChar( 'int32' ),
+    dtypeChar( 'uint32' ),
+    dtypeChar( 'binary' ),
+    dtypeChar( 'generic' ),
+    '('
+];
 
-v = resolve( 'int32' );
-// returns <number>
-
-v = resolve( 'int16' );
-// returns <number>
-
-v = resolve( 'int8' );
-// returns <number>
-
-v = resolve( 'uint32' );
-// returns <number>
-
-v = resolve( 'uint16' );
-// returns <number>
-
-v = resolve( 'uint8' );
-// returns <number>
+for ( i = 0; i < chars.length; i++ ) {
+    out = char2dtype( chars[ i ] );
+    console.log( '%s => %s', chars[ i ], out );
+}
 ```
 
 </section>
@@ -136,6 +138,10 @@ v = resolve( 'uint8' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
+
+[@stdlib/ndarray/base/dtype-char]: https://github.com/stdlib-js/ndarray/tree/main/base/dtype-char
 
 </section>
 

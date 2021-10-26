@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,34 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
 /**
-* Return the single letter character abbreviation for an underlying array data type.
+* Returns the data type string associated with an ndarray data type value.
 *
-* @module @stdlib/ndarray/base/dtype-char
-*
-* @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
-*
-* var ch = dtypeChar( 'float64' );
-* // returns 'd'
-*
-* ch = dtypeChar( 'generic' );
-* // returns 'o'
+* @param dtype - data type value
+* @returns data type string
 *
 * @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
+* var str2enum = require( `@stdlib/ndarray/base/dtype-str2enum` );
 *
-* var obj = dtypeChar();
-* // returns {...}
+* var v = resolve( str2enum( 'float64' ) );
+* // returns 'float64'
 */
-
-// MODULES //
-
-var dtypeChar = require( './main.js' );
+declare function resolve( dtype: any ): string | null;
 
 
 // EXPORTS //
 
-module.exports = dtypeChar;
+export = resolve;

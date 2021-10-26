@@ -16,30 +16,30 @@
 * limitations under the License.
 */
 
-import dtypeChar = require( './index' );
+import char2dtype = require( './index' );
 
 
 // TESTS //
 
-// The function returns a table if not provided a data type string...
+// The function returns a table if not provided an argument...
 {
-	dtypeChar(); // $ExpectType Table
+	char2dtype(); // $ExpectType Table
 }
 
-// The function returns string or null if provided a data type string...
+// The function returns a string or null if provided an argument...
 {
-	dtypeChar( 'float64' ); // $ExpectType string | null
-	dtypeChar( 'generic' ); // $ExpectType string | null
+	char2dtype( 'd' ); // $ExpectType string | null
+	char2dtype( 'f' ); // $ExpectType string | null
 }
 
 // The function does not compile if provided a value other than a string...
 {
-	dtypeChar( true ); // $ExpectError
-	dtypeChar( false ); // $ExpectError
-	dtypeChar( null ); // $ExpectError
-	dtypeChar( undefined ); // $ExpectError
-	dtypeChar( 5 ); // $ExpectError
-	dtypeChar( [] ); // $ExpectError
-	dtypeChar( {} ); // $ExpectError
-	dtypeChar( ( x: number ): number => x ); // $ExpectError
+	char2dtype( true ); // $ExpectError
+	char2dtype( false ); // $ExpectError
+	char2dtype( null ); // $ExpectError
+	char2dtype( undefined ); // $ExpectError
+	char2dtype( 5 ); // $ExpectError
+	char2dtype( [] ); // $ExpectError
+	char2dtype( {} ); // $ExpectError
+	char2dtype( ( x: number ): number => x ); // $ExpectError
 }

@@ -19,7 +19,7 @@
 // TypeScript Version: 2.0
 
 /**
-* Interface describing an object mapping data type strings to single letter character abbreviations.
+* Interface describing an object mapping data type strings to descriptions.
 */
 interface Table {
 	// Table properties:
@@ -27,32 +27,32 @@ interface Table {
 }
 
 /**
-* Returns the single letter character abbreviation for an underlying array data type.
+* Returns the description for a provided data type.
 *
 * @param dtype - data type
-* @returns single letter character abbreviation
+* @returns data type description
 *
 * @example
-* var ch = dtypeChar( 'float64' );
-* // returns 'd'
+* var desc = dtypeDesc( 'float64' );
+* // returns '...'
 *
-* ch = dtypeChar( 'generic' );
-* // returns 'o'
+* desc = dtypeDesc( 'generic' );
+* // returns '...'
 */
-declare function dtypeChar( dtype: string ): string | null;
+declare function dtypeDesc( dtype: string ): string | null;
 
 /**
-* Returns an object mapping data type strings to single letter character abbreviations.
+* Returns an object mapping data type strings to descriptions.
 *
-* @returns object mapping data type strings to single letter character abbreviations
+* @returns object mapping data type strings to descriptions
 *
 * @example
-* var obj = dtypeChar();
+* var obj = dtypeDesc();
 * // returns {...}
 */
-declare function dtypeChar(): Table;
+declare function dtypeDesc(): Table;
 
 
 // EXPORTS //
 
-export = dtypeChar;
+export = dtypeDesc;

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# resolve
+# dtype2c
 
-> Return the enumeration constant associated with a supported ndarray data type value.
+> Return the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] string.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,27 +37,25 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var dtype2c = require( '@stdlib/ndarray/base/dtype2c' );
 ```
 
-#### resolve( dtype )
+#### dtype2c( dtype )
 
-Returns the enumeration constant associated with an ndarray data type value.
+Returns the C data type associated with a provided [data type][@stdlib/ndarray/dtypes] string.
 
 ```javascript
-var str2enum = require( '@stdlib/ndarray/base/dtype-str2enum' );
+var out = dtype2c( 'float64' );
+// returns 'double'
 
-var v = resolve( 'float64' );
-// returns <number>
-
-v = resolve( str2enum( 'float64' ) );
-// returns <number>
+out = dtype2c( 'int8' );
+// returns 'int8_t'
 ```
 
-If unable to resolve an enumeration constant, the function returns `null`.
+If provided an unknown or unsupported data type, the function returns `null`.
 
 ```javascript
-var v = resolve( 'beep' );
+var out = dtype2c( 'foobar' );
 // returns null
 ```
 
@@ -68,10 +66,6 @@ var v = resolve( 'beep' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   Downstream consumers of this function should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the function should be used in an opaque manner.
 
 </section>
 
@@ -86,31 +80,31 @@ var v = resolve( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/dtype-resolve-enum' );
+var dtype2c = require( '@stdlib/ndarray/base/dtype2c' );
 
-var v = resolve( 'float64' );
-// returns <number>
+var dtypes;
+var out;
+var i;
 
-v = resolve( 'float32' );
-// returns <number>
+dtypes = [
+    'float64',
+    'float32',
+    'int8',
+    'uint8',
+    'uint8c',
+    'int16',
+    'uint16',
+    'int32',
+    'uint32',
+    'binary',
+    'generic',
+    'foobar'
+];
 
-v = resolve( 'int32' );
-// returns <number>
-
-v = resolve( 'int16' );
-// returns <number>
-
-v = resolve( 'int8' );
-// returns <number>
-
-v = resolve( 'uint32' );
-// returns <number>
-
-v = resolve( 'uint16' );
-// returns <number>
-
-v = resolve( 'uint8' );
-// returns <number>
+for ( i = 0; i < dtypes.length; i++ ) {
+    out = dtype2c( dtypes[ i ] );
+    console.log( '%s => %s', dtypes[ i ], out );
+}
 ```
 
 </section>
@@ -136,6 +130,8 @@ v = resolve( 'uint8' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
 </section>
 

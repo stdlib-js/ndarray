@@ -118,6 +118,15 @@ setReadOnly( ns, 'bufferDataTypeEnum', require( './../../base/buffer-dtype-enum'
 setReadOnly( ns, 'bytesPerElement', require( './../../base/bytes-per-element' ) );
 
 /**
+* @name char2dtype
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/char2dtype}
+*/
+setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
+
+/**
 * @name clampIndex
 * @memberof ns
 * @readonly
@@ -145,6 +154,15 @@ setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 setReadOnly( ns, 'dtypeChar', require( './../../base/dtype-char' ) );
 
 /**
+* @name dtypeDesc
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-desc}
+*/
+setReadOnly( ns, 'dtypeDesc', require( './../../base/dtype-desc' ) );
+
+/**
 * @name dtypeEnum2Str
 * @memberof ns
 * @readonly
@@ -163,6 +181,15 @@ setReadOnly( ns, 'dtypeEnum2Str', require( './../../base/dtype-enum2str' ) );
 setReadOnly( ns, 'dtypeResolveEnum', require( './../../base/dtype-resolve-enum' ) );
 
 /**
+* @name dtypeResolveStr
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-resolve-str}
+*/
+setReadOnly( ns, 'dtypeResolveStr', require( './../../base/dtype-resolve-str' ) );
+
+/**
 * @name dtypeStr2Enum
 * @memberof ns
 * @readonly
@@ -170,6 +197,15 @@ setReadOnly( ns, 'dtypeResolveEnum', require( './../../base/dtype-resolve-enum' 
 * @see {@link module:@stdlib/ndarray/base/dtype-str2enum}
 */
 setReadOnly( ns, 'dtypeStr2Enum', require( './../../base/dtype-str2enum' ) );
+
+/**
+* @name dtype2c
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype2c}
+*/
+setReadOnly( ns, 'dtype2c', require( './../../base/dtype2c' ) );
 
 /**
 * @name dtypes2signatures

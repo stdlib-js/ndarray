@@ -18,32 +18,46 @@
 
 'use strict';
 
-/**
-* Return the single letter character abbreviation for an underlying array data type.
-*
-* @module @stdlib/ndarray/base/dtype-char
-*
-* @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
-*
-* var ch = dtypeChar( 'float64' );
-* // returns 'd'
-*
-* ch = dtypeChar( 'generic' );
-* // returns 'o'
-*
-* @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
-*
-* var obj = dtypeChar();
-* // returns {...}
-*/
-
 // MODULES //
 
-var dtypeChar = require( './main.js' );
+var table = require( './table.js' );
+
+
+// VARIABLES //
+
+var TABLE;
+
+
+// MAIN //
+
+/**
+* Returns the description for a provided data type.
+*
+* @param {string} [dtype] - data type
+* @returns {(Object|string|null)} description(s)
+*
+* @example
+* var obj = dtypeDesc();
+* // returns {...}
+*
+* @example
+* var desc = dtypeDesc( 'float64' );
+* // returns '...'
+*
+* desc = dtypeDesc( 'generic' );
+* // returns '...'
+*/
+function dtypeDesc( dtype ) {
+	if ( arguments.length === 0 ) {
+		return table();
+	}
+	if ( TABLE === void 0 ) {
+		TABLE = table();
+	}
+	return TABLE[ dtype ] || null;
+}
 
 
 // EXPORTS //
 
-module.exports = dtypeChar;
+module.exports = dtypeDesc;

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,8 @@
 
 // MODULES //
 
-var table = require( './table.js' );
+var objectInverse = require( '@stdlib/utils/object-inverse' );
+var dtypeChar = require( './../../../base/dtype-char' );
 
 
 // VARIABLES //
@@ -31,33 +32,33 @@ var TABLE;
 // MAIN //
 
 /**
-* Returns the single letter character abbreviation for an underlying array data type.
+* Returns the data type string associated with a provided single letter abbreviation.
 *
-* @param {string} [dtype] - data type
-* @returns {(Object|string|null)} single letter character abbreviation(s)
+* @param {string} ch - single letter character abbreviation
+* @returns {(Object|string|null)} data type string
 *
 * @example
-* var obj = dtypeChar();
+* var obj = char2dtype();
 * // returns {...}
 *
 * @example
-* var ch = dtypeChar( 'float64' );
-* // returns 'd'
+* var out = char2dtype( 'd' );
+* // returns 'float64'
 *
-* ch = dtypeChar( 'generic' );
-* // returns 'o'
+* out = char2dtype( '(' );
+* // returns null
 */
-function dtypeChar( dtype ) {
+function char2dtype( ch ) {
 	if ( arguments.length === 0 ) {
-		return table();
+		return objectInverse( dtypeChar() );
 	}
 	if ( TABLE === void 0 ) {
-		TABLE = table();
+		TABLE = objectInverse( dtypeChar() );
 	}
-	return TABLE[ dtype ] || null;
+	return TABLE[ ch ] || null;
 }
 
 
 // EXPORTS //
 
-module.exports = dtypeChar;
+module.exports = char2dtype;

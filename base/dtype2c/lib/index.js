@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,31 +19,25 @@
 'use strict';
 
 /**
-* Return the single letter character abbreviation for an underlying array data type.
+* Return the C data type associated with a provided data type string.
 *
-* @module @stdlib/ndarray/base/dtype-char
-*
-* @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
-*
-* var ch = dtypeChar( 'float64' );
-* // returns 'd'
-*
-* ch = dtypeChar( 'generic' );
-* // returns 'o'
+* @module @stdlib/ndarray/base/dtype2c
 *
 * @example
-* var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
+* var dtype2c = require( '@stdlib/ndarray/base/dtype2c' );
 *
-* var obj = dtypeChar();
-* // returns {...}
+* var out = dtype2c( 'float64' );
+* // returns 'double'
+*
+* out = dtype2c( 'generic' );
+* // returns null
 */
 
 // MODULES //
 
-var dtypeChar = require( './main.js' );
+var dtype2c = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = dtypeChar;
+module.exports = dtype2c;
