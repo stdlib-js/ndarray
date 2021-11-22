@@ -53,7 +53,8 @@ jobs:
         id: tests
         run: |
           npm test || npm test || npm test
-      - uses: act10ns/slack@v1
+      - name: Send status to Slack channel in case of failure
+        uses: act10ns/slack@v1
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
