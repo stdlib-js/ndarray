@@ -280,6 +280,15 @@ setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-in
 setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buffer-index' ) );
 
 /**
+* @name ndarraylike2object
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ndarraylike2object}
+*/
+setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object' ) );
+
+/**
 * @name nonsingletonDimensions
 * @memberof ns
 * @readonly
