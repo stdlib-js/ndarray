@@ -23,12 +23,14 @@
 import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, DataType } from '@stdlib/types/ndarray';
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -50,12 +52,14 @@ import { ndarray, typedndarray, float64ndarray, float32ndarray, int32ndarray, in
 declare function zerosLike( x: float64ndarray ): float64ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'float32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -77,12 +81,14 @@ declare function zerosLike( x: float64ndarray ): float64ndarray;
 declare function zerosLike( x: float32ndarray ): float32ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'complex128', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -104,12 +110,14 @@ declare function zerosLike( x: float32ndarray ): float32ndarray;
 declare function zerosLike( x: complex128ndarray ): complex128ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'complex64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -131,12 +139,14 @@ declare function zerosLike( x: complex128ndarray ): complex128ndarray;
 declare function zerosLike( x: complex64ndarray ): complex64ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'int32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -158,12 +168,14 @@ declare function zerosLike( x: complex64ndarray ): complex64ndarray;
 declare function zerosLike( x: int32ndarray ): int32ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'int16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -185,12 +197,14 @@ declare function zerosLike( x: int32ndarray ): int32ndarray;
 declare function zerosLike( x: int16ndarray ): int16ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'int8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -212,12 +226,14 @@ declare function zerosLike( x: int16ndarray ): int16ndarray;
 declare function zerosLike( x: int8ndarray ): int8ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'uint32', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -239,12 +255,14 @@ declare function zerosLike( x: int8ndarray ): int8ndarray;
 declare function zerosLike( x: uint32ndarray ): uint32ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'uint16', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -266,12 +284,14 @@ declare function zerosLike( x: uint32ndarray ): uint32ndarray;
 declare function zerosLike( x: uint16ndarray ): uint16ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'uint8', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -293,12 +313,14 @@ declare function zerosLike( x: uint16ndarray ): uint16ndarray;
 declare function zerosLike( x: uint8ndarray ): uint8ndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'uint8c', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
@@ -320,12 +342,14 @@ declare function zerosLike( x: uint8ndarray ): uint8ndarray;
 declare function zerosLike( x: uint8cndarray ): uint8cndarray;
 
 /**
-* Creates a zero-filled array the same shape and data type as a provided input ndarray.
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
 *
 * @param x - input array
 * @returns zero-filled array
 *
 * @example
+* var zeros = require( `@stdlib/ndarray/base/zeros` );
+*
 * var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
