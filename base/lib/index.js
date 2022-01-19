@@ -387,6 +387,24 @@ setReadOnly( ns, 'vind2bind', require( './../../base/vind2bind' ) );
 */
 setReadOnly( ns, 'wrapIndex', require( './../../base/wrap-index' ) );
 
+/**
+* @name zeros
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/zeros}
+*/
+setReadOnly( ns, 'zeros', require( './../../base/zeros' ) );
+
+/**
+* @name zerosLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/zeros-like}
+*/
+setReadOnly( ns, 'zerosLike', require( './../../base/zeros-like' ) );
+
 
 // EXPORTS //
 
