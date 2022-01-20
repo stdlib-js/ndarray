@@ -22,6 +22,7 @@
 
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isPlainObject = require( '@stdlib/assert/is-plain-object' );
+var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var shape2strides = require( './../../base/shape2strides' );
 var strides2offset = require( './../../base/strides2offset' );
@@ -64,8 +65,10 @@ var ndarray = require( './../../ctor' );
 */
 function zerosLike( x ) {
 	var options;
+	var ndims;
 	var opts;
 	var buf;
+	var len;
 	var st;
 
 	if ( !isndarrayLike( x ) ) {
@@ -87,6 +90,9 @@ function zerosLike( x ) {
 			if ( typeof opts.shape === 'number' ) {
 				opts.shape = [ opts.shape ];
 			}
+			if ( !isNonNegativeIntegerArray( opts.shape ) ) {
+				throw new TypeError( 'invalid option. `shape` option must either be a nonnegative integer or an array of nonnegative integers. Option: `' + opts.shape + '`.' );
+			}
 		} else {
 			opts.shape = x.shape;
 		}
@@ -100,11 +106,22 @@ function zerosLike( x ) {
 		opts.shape = x.shape;
 		opts.order = x.order;
 	}
-	buf = buffer( opts.dtype, numel( opts.shape ) );
+	ndims = opts.shape.length;
+	if ( ndims > 0 ) {
+		len = numel( opts.shape );
+		if ( len < 0 ) {
+			len = 0; // note: we should only get here if an inferred shape is invalid (i.e., contains negative dimension sizes)
+		}
+		st = shape2strides( opts.shape, opts.order );
+	} else {
+		// For 0-dimensional arrays, the buffer should contain a single element...
+		len = 1;
+		st = [ 0 ];
+	}
+	buf = buffer( opts.dtype, len );
 	if ( buf === null ) {
 		throw new TypeError( 'invalid argument. First argument must have a recognized data type. Value: `' + opts.dtype + '`.' );
 	}
-	st = shape2strides( opts.shape, opts.order );
 	return new ndarray( opts.dtype, buf, opts.shape, st, strides2offset( opts.shape, st ), opts.order ); // eslint-disable-line max-len
 }
 

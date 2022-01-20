@@ -203,6 +203,7 @@ tape( 'the function throws an error if provided a `shape` option which is not a 
 
 	values = [
 		'5',
+		-1,
 		true,
 		false,
 		null,
@@ -243,7 +244,7 @@ tape( 'the function returns a zero-filled array (dtype=float64, inferred)', func
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Float64Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -267,7 +268,7 @@ tape( 'the function returns a zero-filled array (dtype=float64, options)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Float64Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -291,7 +292,7 @@ tape( 'the function returns a zero-filled array (dtype=float64, options, integer
 	t.deepEqual( arr.shape, [ 4 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Float64Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -311,7 +312,7 @@ tape( 'the function returns a zero-filled array (dtype=float32, inferred)', func
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Float32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -335,7 +336,7 @@ tape( 'the function returns a zero-filled array (dtype=float32, options)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Float32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -355,7 +356,7 @@ tape( 'the function returns a zero-filled array (dtype=int32, inferred)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -379,7 +380,7 @@ tape( 'the function returns a zero-filled array (dtype=int32, options)', functio
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -399,7 +400,7 @@ tape( 'the function returns a zero-filled array (dtype=int16, inferred)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int16Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -423,7 +424,7 @@ tape( 'the function returns a zero-filled array (dtype=int16, options)', functio
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int16Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -443,7 +444,7 @@ tape( 'the function returns a zero-filled array (dtype=int8, inferred)', functio
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int8Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -467,7 +468,7 @@ tape( 'the function returns a zero-filled array (dtype=int8, options)', function
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Int8Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -487,7 +488,7 @@ tape( 'the function returns a zero-filled array (dtype=uint32, inferred)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -511,7 +512,7 @@ tape( 'the function returns a zero-filled array (dtype=uint32, options)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint32Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -531,7 +532,7 @@ tape( 'the function returns a zero-filled array (dtype=uint16, inferred)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint16Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -555,7 +556,7 @@ tape( 'the function returns a zero-filled array (dtype=uint16, options)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint16Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -575,7 +576,7 @@ tape( 'the function returns a zero-filled array (dtype=uint8, inferred)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint8Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -599,7 +600,7 @@ tape( 'the function returns a zero-filled array (dtype=uint8, options)', functio
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint8Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -619,7 +620,7 @@ tape( 'the function returns a zero-filled array (dtype=uint8c, inferred)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint8ClampedArray ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -643,7 +644,7 @@ tape( 'the function returns a zero-filled array (dtype=uint8c, options)', functi
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Uint8ClampedArray ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -663,7 +664,7 @@ tape( 'the function returns a zero-filled array (dtype=complex128, inferred)', f
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Complex128Array ), true, 'returns expected value' );
 	t.deepEqual( reinterpret128( arr.data, 0 ), expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -687,7 +688,7 @@ tape( 'the function returns a zero-filled array (dtype=complex128, options)', fu
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Complex128Array ), true, 'returns expected value' );
 	t.deepEqual( reinterpret128( arr.data, 0 ), expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -707,7 +708,7 @@ tape( 'the function returns a zero-filled array (dtype=complex64, inferred)', fu
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Complex64Array ), true, 'returns expected value' );
 	t.deepEqual( reinterpret64( arr.data, 0 ), expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -731,7 +732,7 @@ tape( 'the function returns a zero-filled array (dtype=complex64, options)', fun
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Complex64Array ), true, 'returns expected value' );
 	t.deepEqual( reinterpret64( arr.data, 0 ), expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
 });
@@ -751,7 +752,7 @@ tape( 'the function returns a zero-filled array (dtype=generic, inferred)', func
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'row-major' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
 
 	t.end();
 });
@@ -775,7 +776,100 @@ tape( 'the function returns a zero-filled array (dtype=generic, options)', funct
 	t.deepEqual( arr.shape, [ 2, 2 ], 'returns expected value' );
 	t.strictEqual( instanceOf( arr.data, Array ), true, 'returns expected value' );
 	t.deepEqual( arr.data, expected, 'returns expected value' );
-	t.strictEqual( arr.order, 'column-major' );
+	t.strictEqual( arr.order, 'column-major', 'returns expected value' );
 
 	t.end();
+});
+
+tape( 'the function guards against array having shapes containing negative dimension sizes', function test( t ) {
+	var x = {
+		'data': [ 1, 2, 3, 4 ],
+		'ndims': 3,
+		'shape': [ 2, -1, 2 ],
+		'strides': [ -2, 2, 1 ],
+		'offset': 0,
+		'order': 'row-major',
+		'dtype': 'generic',
+		'length': 0,
+		'flags': {},
+		'get': noop,
+		'set': noop
+	};
+	t.throws( badValue, Error, 'throws an error' );
+
+	t.end();
+
+	function badValue() {
+		return zerosLike( x );
+	}
+
+	function noop() {}
+});
+
+tape( 'the function supports zero-dimensional arrays', function test( t ) {
+	var expected;
+	var arr;
+	var x;
+
+	expected = [ 0 ];
+
+	x = {
+		'dtype': 'generic',
+		'ndims': 0,
+		'length': 0,
+		'data': [ 0 ],
+		'shape': [],
+		'strides': [ 0 ],
+		'offset': 0,
+		'order': 'row-major',
+		'flags': {},
+		'get': noop,
+		'set': noop
+	};
+	arr = zerosLike( x );
+
+	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
+	t.strictEqual( arr.dtype, 'generic', 'returns expected value' );
+	t.deepEqual( arr.shape, [], 'returns expected value' );
+	t.strictEqual( instanceOf( arr.data, Array ), true, 'returns expected value' );
+	t.deepEqual( arr.data, expected, 'returns expected value' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
+
+	t.end();
+
+	function noop() {}
+});
+
+tape( 'the function supports empty arrays', function test( t ) {
+	var expected;
+	var arr;
+	var x;
+
+	expected = [];
+
+	x = {
+		'dtype': 'generic',
+		'ndims': 3,
+		'length': 0,
+		'data': [],
+		'shape': [ 2, 0, 2 ],
+		'strides': [ 0, 2, 1 ],
+		'offset': 0,
+		'order': 'row-major',
+		'flags': {},
+		'get': noop,
+		'set': noop
+	};
+	arr = zerosLike( x );
+
+	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
+	t.strictEqual( arr.dtype, 'generic', 'returns expected value' );
+	t.deepEqual( arr.shape, [ 2, 0, 2 ], 'returns expected value' );
+	t.strictEqual( instanceOf( arr.data, Array ), true, 'returns expected value' );
+	t.deepEqual( arr.data, expected, 'returns expected value' );
+	t.strictEqual( arr.order, 'row-major', 'returns expected value' );
+
+	t.end();
+
+	function noop() {}
 });
