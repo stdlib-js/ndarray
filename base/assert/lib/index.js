@@ -127,6 +127,15 @@ setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' 
 setReadOnly( ns, 'isOrder', require( './../../../base/assert/is-order' ) );
 
 /**
+* @name isReadOnly
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-read-only}
+*/
+setReadOnly( ns, 'isReadOnly', require( './../../../base/assert/is-read-only' ) );
+
+/**
 * @name isRowMajor
 * @memberof ns
 * @readonly

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,24 +18,24 @@
 
 'use strict';
 
-// MAIN //
+var array = require( './../../../../array' );
+var isReadOnly = require( './../lib' );
 
-/**
-* Copies ndarray flags.
-*
-* @private
-* @param {Object} flags - flags
-* @returns {Object} copy of input object
-*/
-function copyFlags( flags ) {
-	return {
-		'ROW_MAJOR_CONTIGUOUS': flags.ROW_MAJOR_CONTIGUOUS,
-		'COLUMN_MAJOR_CONTIGUOUS': flags.COLUMN_MAJOR_CONTIGUOUS,
-		'READONLY': flags.READONLY
-	};
-}
+var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
+	'readonly': true
+});
+var bool = isReadOnly( x );
+console.log( bool );
+// => true
 
+x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
+	'readonly': false
+});
+bool = isReadOnly( x );
+console.log( bool );
+// => false
 
-// EXPORTS //
-
-module.exports = copyFlags;
+x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+bool = isReadOnly( x );
+console.log( bool );
+// => false

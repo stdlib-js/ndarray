@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,24 +18,31 @@
 
 'use strict';
 
-// MAIN //
-
 /**
-* Copies ndarray flags.
+* Test whether an ndarray is read-only.
 *
-* @private
-* @param {Object} flags - flags
-* @returns {Object} copy of input object
+* @module @stdlib/ndarray/base/assert/is-read-only
+*
+* @example
+* var array = require( '@stdlib/ndarray/array' );
+* var isReadOnly = require( '@stdlib/ndarray/base/assert/is-read-only' );
+*
+* var x = array( [ 1, 2, 3, 4 ], {
+*     'readonly': true
+* });
+* var bool = isReadOnly( x );
+* // returns true
+*
+* x = array( [ 1, 2, 3, 4 ] );
+* bool = isReadOnly( x );
+* // returns false
 */
-function copyFlags( flags ) {
-	return {
-		'ROW_MAJOR_CONTIGUOUS': flags.ROW_MAJOR_CONTIGUOUS,
-		'COLUMN_MAJOR_CONTIGUOUS': flags.COLUMN_MAJOR_CONTIGUOUS,
-		'READONLY': flags.READONLY
-	};
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = copyFlags;
+module.exports = main;
