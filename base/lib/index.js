@@ -217,6 +217,15 @@ setReadOnly( ns, 'dtype2c', require( './../../base/dtype2c' ) );
 setReadOnly( ns, 'dtypes2signatures', require( './../../base/dtypes2signatures' ) );
 
 /**
+* @name scalar2ndarray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/from-scalar}
+*/
+setReadOnly( ns, 'scalar2ndarray', require( './../../base/from-scalar' ) );
+
+/**
 * @name ind
 * @memberof ns
 * @readonly
@@ -251,6 +260,15 @@ setReadOnly( ns, 'iterationOrder', require( './../../base/iteration-order' ) );
 * @see {@link module:@stdlib/ndarray/base/max-view-buffer-index}
 */
 setReadOnly( ns, 'maxViewBufferIndex', require( './../../base/max-view-buffer-index' ) );
+
+/**
+* @name maybeBroadcastArray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/maybe-broadcast-array}
+*/
+setReadOnly( ns, 'maybeBroadcastArray', require( './../../base/maybe-broadcast-array' ) );
 
 /**
 * @name metaDataProps
@@ -368,6 +386,15 @@ setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 * @see {@link module:@stdlib/ndarray/base/to-array}
 */
 setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
+
+/**
+* @name transpose
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/transpose}
+*/
+setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
 
 /**
 * @name vind2bind
