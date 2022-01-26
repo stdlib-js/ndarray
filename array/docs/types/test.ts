@@ -23,8 +23,10 @@ import array = require( './index' );
 
 // The function returns an ndarray...
 {
-	array( ( [ [ 1, 2 ], [ 3, 4 ] ] ) ); // $ExpectType ndarray
+	array( [ [ 1, 2 ], [ 3, 4 ] ] ); // $ExpectType ndarray
 	array( new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ), { 'shape': [ 2, 2 ] } ); // $ExpectType ndarray
+	array( { 'shape': [ 2, 2 ] } ); // $ExpectType ndarray
+	array( { 'buffer': [ [ 1, 2 ], [ 3, 4 ] ] } ); // $ExpectType ndarray
 }
 
 // The function does not compile if provided a first argument which is not an array, buffer, or options object...
@@ -32,8 +34,8 @@ import array = require( './index' );
 	array( true ); // $ExpectError
 	array( false ); // $ExpectError
 	array( undefined ); // $ExpectError
-	array( '5' ); // $ExpectError
-	array( ( x: number ): number => x ); // $ExpectError
+	array( 5 ); // $ExpectError
+	array( null ); // $ExpectError
 }
 
 // The function does not compile if provided a second argument which is not an options object...
@@ -227,6 +229,24 @@ import array = require( './index' );
 	array( { 'casting': [] } ); // $ExpectError
 	array( { 'casting': {} } ); // $ExpectError
 	array( { 'casting': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `readonly` option which is not a boolean...
+{
+	const buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] );
+	array( buffer, { 'readonly': 'abc' } ); // $ExpectError
+	array( buffer, { 'readonly': 123 } ); // $ExpectError
+	array( buffer, { 'readonly': null } ); // $ExpectError
+	array( buffer, { 'readonly': [] } ); // $ExpectError
+	array( buffer, { 'readonly': {} } ); // $ExpectError
+	array( buffer, { 'readonly': ( x: number ): number => x } ); // $ExpectError
+
+	array( { 'readonly': 'abc' } ); // $ExpectError
+	array( { 'readonly': 123 } ); // $ExpectError
+	array( { 'readonly': null } ); // $ExpectError
+	array( { 'readonly': [] } ); // $ExpectError
+	array( { 'readonly': {} } ); // $ExpectError
+	array( { 'readonly': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The function does not compile if provided an invalid number of arguments...

@@ -19,11 +19,9 @@
 // TypeScript Version: 2.0
 
 /// <reference types="@stdlib/types"/>
-/// <reference types="node"/>
 
-import { Buffer } from 'buffer';
-import { ArrayLike, TypedArray } from '@stdlib/types/array';
-import { DataType, ndarray, Mode, Order } from '@stdlib/types/ndarray';
+import { ArrayLike } from '@stdlib/types/array';
+import { DataType, ndarray, Mode, Order, Shape } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -38,11 +36,6 @@ interface Options {
 	* Specifies the memory layout of the array as either row-major (C-style) or column-major (Fortran-style) (default: 'row-major').
 	*/
 	order?: Order;
-
-	/**
-	* Array shape.
-	*/
-	shape?: ArrayLike<number>;
 
 	/**
 	* Specifies how to handle indices which exceed array dimensions (default: 'throw').
@@ -73,12 +66,69 @@ interface Options {
 	* Casting rule used to determine what constitutes an acceptable cast (default: 'safe').
 	*/
 	casting?: string;
+
+	/**
+	* Boolean indicating if an array should be read-only (default: false).
+	*/
+	readonly?: boolean;
 }
 
 /**
-* Array or typed array.
+* Interface describing function options.
 */
-type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | Buffer | null;
+interface OptionsWithShape extends Options {
+	/**
+	* Array shape.
+	*/
+	shape: Shape;
+
+	/**
+	* Data source.
+	*
+	* ## Notes
+	*
+	* -    If provided along with a `buffer` argument, the argument takes precedence.
+	*/
+	buffer?: ArrayLike<any>;
+}
+
+/**
+* Interface describing function options.
+*/
+interface OptionsWithBuffer extends Options {
+	/**
+	* Array shape.
+	*/
+	shape?: Shape;
+
+	/**
+	* Data source.
+	*
+	* ## Notes
+	*
+	* -    If provided along with a `buffer` argument, the argument takes precedence.
+	*/
+	buffer: ArrayLike<any>;
+}
+
+/**
+* Interface describing function options.
+*/
+interface ExtendedOptions extends Options {
+	/**
+	* Array shape.
+	*/
+	shape?: Shape;
+
+	/**
+	* Data source.
+	*
+	* ## Notes
+	*
+	* -    If provided along with a `buffer` argument, the argument takes precedence.
+	*/
+	buffer?: ArrayLike<any>;
+}
 
 /**
 * Returns a multidimensional array.
@@ -94,6 +144,7 @@ type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | Buffer | null;
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)
 * @param options.casting - casting rule used to determine what constitutes an acceptable cast (default: 'safe')
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @throws must provide valid options
 * @throws must provide either an array shape, data source, or both
 * @throws invalid cast
@@ -113,7 +164,7 @@ type ArrayOrBufferOrTypedArray = Array<any> | TypedArray | Buffer | null;
 * var v = arr.get( 0 );
 * // returns [ 1, 2 ]
 */
-declare function array( options: Options ): ndarray;
+declare function array( options: OptionsWithShape | OptionsWithBuffer ): ndarray; // tslint:disable-line:max-line-length
 
 /**
 * Returns a multidimensional array.
@@ -130,6 +181,7 @@ declare function array( options: Options ): ndarray;
 * @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 * @param options.ndmin - minimum number of dimensions (default: 0)
 * @param options.casting - casting rule used to determine what constitutes an acceptable cast (default: 'safe')
+* @param options.readonly - boolean indicating whether an array should be read-only
 * @throws must provide valid options
 * @throws must provide either an array shape, data source, or both
 * @throws invalid cast
@@ -168,7 +220,7 @@ declare function array( options: Options ): ndarray;
 * var v = arr.get( 0, 0 );
 * // returns 1.0
 */
-declare function array( buffer: ArrayOrBufferOrTypedArray, options?: Options ): ndarray; // tslint-disable-line max-line-length
+declare function array( buffer: ArrayLike<any>, options?: ExtendedOptions ): ndarray; // tslint:disable-line:max-line-length
 
 
 // EXPORTS //
