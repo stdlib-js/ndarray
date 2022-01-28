@@ -325,6 +325,15 @@ setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-d
 setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
+* @name removeSingletonDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/remove-singleton-dimensions}
+*/
+setReadOnly( ns, 'removeSingletonDimensions', require( './../../base/remove-singleton-dimensions' ) );
+
+/**
 * @name serializeMetaData
 * @memberof ns
 * @readonly

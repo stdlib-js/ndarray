@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -24,14 +24,55 @@ var bench = require( '@stdlib/bench' );
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarrayBase = require( './../../../base/ctor' );
 var ndarray = require( './../../../ctor' );
-var isDataView = require( '@stdlib/assert/is-dataview' );
+var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var pkg = require( './../package.json' ).name;
-var serialize = require( './../lib' );
+var removeSingletonDimensions = require( './../lib' );
 
 
 // MAIN //
 
 bench( pkg+'::base_ndarray,2d', function benchmark( b ) {
+	var strides;
+	var values;
+	var buffer;
+	var offset;
+	var dtype;
+	var shape;
+	var order;
+	var out;
+	var i;
+
+	dtype = 'float64';
+	buffer = new Float64Array( 2 );
+	shape = [ 1, 2 ];
+	strides = [ 2, 1 ];
+	offset = 0;
+	order = 'row-major';
+
+	values = [
+		ndarrayBase( dtype, buffer, shape, strides, offset, order ),
+		ndarrayBase( dtype, buffer, shape, strides, offset, order ),
+		ndarrayBase( dtype, buffer, shape, strides, offset, order ),
+		ndarrayBase( dtype, buffer, shape, strides, offset, order ),
+		ndarrayBase( dtype, buffer, shape, strides, offset, order )
+	];
+
+	b.tic();
+	for ( i = 0; i < b.iterations; i++ ) {
+		out = removeSingletonDimensions( values[ i%values.length ] );
+		if ( typeof out !== 'object' ) {
+			b.fail( 'should return an object' );
+		}
+	}
+	b.toc();
+	if ( !isndarrayLike( out ) ) {
+		b.fail( 'should return an ndarray' );
+	}
+	b.pass( 'benchmark finished' );
+	b.end();
+});
+
+bench( pkg+'::base_ndarray,2d,no_singleton_dimensions', function benchmark( b ) {
 	var strides;
 	var values;
 	var buffer;
@@ -59,14 +100,14 @@ bench( pkg+'::base_ndarray,2d', function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = serialize( values[ i%values.length ] );
+		out = removeSingletonDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( !isDataView( out ) ) {
-		b.fail( 'should return a DataView' );
+	if ( !isndarrayLike( out ) ) {
+		b.fail( 'should return an ndarray' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
@@ -80,45 +121,40 @@ bench( pkg+'::ndarray,2d', function benchmark( b ) {
 	var dtype;
 	var shape;
 	var order;
-	var opts;
 	var out;
 	var i;
 
 	dtype = 'float64';
-	buffer = new Float64Array( 4 );
-	shape = [ 2, 2 ];
+	buffer = new Float64Array( 2 );
+	shape = [ 1, 2 ];
 	strides = [ 2, 1 ];
 	offset = 0;
 	order = 'row-major';
 
-	opts = {
-		'readonly': true
-	};
-
 	values = [
 		ndarray( dtype, buffer, shape, strides, offset, order ),
-		ndarray( dtype, buffer, shape, strides, offset, order, opts ),
 		ndarray( dtype, buffer, shape, strides, offset, order ),
-		ndarray( dtype, buffer, shape, strides, offset, order, opts ),
+		ndarray( dtype, buffer, shape, strides, offset, order ),
+		ndarray( dtype, buffer, shape, strides, offset, order ),
 		ndarray( dtype, buffer, shape, strides, offset, order )
 	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = serialize( values[ i%values.length ] );
+		out = removeSingletonDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( !isDataView( out ) ) {
-		b.fail( 'should return a DataView' );
+	if ( !isndarrayLike( out ) ) {
+		b.fail( 'should return an ndarray' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
 });
 
-bench( pkg+'::ndarray_like,2d', function benchmark( b ) {
+bench( pkg+'::ndarray,2d,no_singleton_dimensions', function benchmark( b ) {
 	var strides;
 	var values;
 	var buffer;
@@ -127,7 +163,6 @@ bench( pkg+'::ndarray_like,2d', function benchmark( b ) {
 	var shape;
 	var order;
 	var out;
-	var obj;
 	var i;
 
 	dtype = 'float64';
@@ -137,29 +172,24 @@ bench( pkg+'::ndarray_like,2d', function benchmark( b ) {
 	offset = 0;
 	order = 'row-major';
 
-	values = [];
-	for ( i = 0; i < 5; i++ ) {
-		obj = {
-			'dtype': dtype,
-			'data': buffer,
-			'shape': shape,
-			'strides': strides,
-			'offset': offset,
-			'order': order
-		};
-		values.push( obj );
-	}
+	values = [
+		ndarray( dtype, buffer, shape, strides, offset, order ),
+		ndarray( dtype, buffer, shape, strides, offset, order ),
+		ndarray( dtype, buffer, shape, strides, offset, order ),
+		ndarray( dtype, buffer, shape, strides, offset, order ),
+		ndarray( dtype, buffer, shape, strides, offset, order )
+	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		out = serialize( values[ i%values.length ] );
+		out = removeSingletonDimensions( values[ i%values.length ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( !isDataView( out ) ) {
-		b.fail( 'should return a DataView' );
+	if ( !isndarrayLike( out ) ) {
+		b.fail( 'should return an ndarray' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
