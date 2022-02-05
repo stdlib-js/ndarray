@@ -24,7 +24,7 @@ var bench = require( '@stdlib/bench' );
 var array = require( './../../../array' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var pkg = require( './../package.json' ).name;
-var removeSingletonDimensions = require( './../lib' );
+var prependSingletonDimensions = require( './../lib' ); // eslint-disable-line id-length
 
 
 // FUNCTIONS //
@@ -37,9 +37,7 @@ var removeSingletonDimensions = require( './../lib' );
 * @returns {Function} benchmark function
 */
 function createBenchmark( ndims ) {
-	var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
-		'ndmin': ndims + 2
-	});
+	var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 	return benchmark;
 
 	/**
@@ -54,7 +52,7 @@ function createBenchmark( ndims ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			out = removeSingletonDimensions( x );
+			out = prependSingletonDimensions( x, ndims );
 			if ( typeof out !== 'object' ) {
 				b.fail( 'should return an object' );
 			}
@@ -82,7 +80,7 @@ function main() {
 	var f;
 	var i;
 
-	min = 2;
+	min = 1;
 	max = 10;
 
 	for ( i = min; i <= max; i++ ) {

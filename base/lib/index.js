@@ -325,6 +325,15 @@ setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-d
 setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
+* @name prependSingletonDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/prepend-singleton-dimensions}
+*/
+setReadOnly( ns, 'prependSingletonDimensions', require( './../../base/prepend-singleton-dimensions' ) );
+
+/**
 * @name removeSingletonDimensions
 * @memberof ns
 * @readonly
