@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2022 The Stdlib Authors.
@@ -16,21 +16,16 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
-
-/// <reference types="@stdlib/types"/>
-
-import { ndarray } from '@stdlib/types/ndarray';
+'use strict';
 
 /**
-* Returns an array with a specified number of prepended singleton dimensions.
+* Expand the shape of an array by inserting a new dimension of size one at a specified axis.
 *
-* @param x - input array
-* @param n - number of singleton dimensions to prepend
-* @returns output array
+* @module @stdlib/ndarray/base/expand-dimensions
 *
 * @example
-* var array = require( `@stdlib/ndarray/array` );
+* var array = require( '@stdlib/ndarray/array' );
+* var expandDimensions = require( '@stdlib/ndarray/base/expand-dimensions' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * // returns <ndarray>
@@ -38,27 +33,30 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var shx = x.shape;
 * // returns [ 2, 2 ]
 *
-* var y = prependSingletonDimensions( x, 3 );
+* var y = expandDimensions( x, 1 );
 * // returns <ndarray>
 *
 * var shy = y.shape;
-* // returns [ 1, 1, 1, 2, 2 ]
+* // returns [ 2, 1, 2 ]
 *
-* var v = y.get( 0, 0, 0, 0, 0 );
+* var v = y.get( 0, 0, 0 );
 * // returns 1
 *
-* v = y.get( 0, 0, 0, 0, 1 );
+* v = y.get( 0, 0, 1 );
 * // returns 2
 *
-* v = y.get( 0, 0, 0, 1, 0 );
+* v = y.get( 1, 0, 0 );
 * // returns 3
 *
-* v = y.get( 0, 0, 0, 1, 1 );
+* v = y.get( 1, 0, 1 );
 * // returns 4
 */
-declare function prependSingletonDimensions( x: ndarray, n: number ): ndarray;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = prependSingletonDimensions;
+module.exports = main;

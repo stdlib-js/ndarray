@@ -23,10 +23,14 @@
 import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Returns an array with a specified number of prepended singleton dimensions.
+* Expands the shape of an array by inserting a new dimension of size one at a specified axis.
+*
+* ## Notes
+*
+* -   A provided axis must reside on the interval `[-N-1, N]`, where `N` is the rank (i.e., number of dimensions) of the provided input array. If provided a negative `axis`, the axis position at which to insert a singleton dimension is computed as `N + axis + 1`. Hence, if provided `-1`, the resolved axis position is `N` (i.e., a singleton dimension is appended to the input array).
 *
 * @param x - input array
-* @param n - number of singleton dimensions to prepend
+* @param axis - axis at which to insert a singleton dimension
 * @returns output array
 *
 * @example
@@ -38,27 +42,27 @@ import { ndarray } from '@stdlib/types/ndarray';
 * var shx = x.shape;
 * // returns [ 2, 2 ]
 *
-* var y = prependSingletonDimensions( x, 3 );
+* var y = expandDimensions( x, 1 );
 * // returns <ndarray>
 *
 * var shy = y.shape;
-* // returns [ 1, 1, 1, 2, 2 ]
+* // returns [ 2, 1, 2 ]
 *
-* var v = y.get( 0, 0, 0, 0, 0 );
+* var v = y.get( 0, 0, 0 );
 * // returns 1
 *
-* v = y.get( 0, 0, 0, 0, 1 );
+* v = y.get( 0, 0, 1 );
 * // returns 2
 *
-* v = y.get( 0, 0, 0, 1, 0 );
+* v = y.get( 1, 0, 0 );
 * // returns 3
 *
-* v = y.get( 0, 0, 0, 1, 1 );
+* v = y.get( 1, 0, 1 );
 * // returns 4
 */
-declare function prependSingletonDimensions( x: ndarray, n: number ): ndarray;
+declare function expandDimensions( x: ndarray, axis: number ): ndarray;
 
 
 // EXPORTS //
 
-export = prependSingletonDimensions;
+export = expandDimensions;

@@ -217,6 +217,15 @@ setReadOnly( ns, 'dtype2c', require( './../../base/dtype2c' ) );
 setReadOnly( ns, 'dtypes2signatures', require( './../../base/dtypes2signatures' ) );
 
 /**
+* @name expandDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/expand-dimensions}
+*/
+setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' ) );
+
+/**
 * @name scalar2ndarray
 * @memberof ns
 * @readonly
