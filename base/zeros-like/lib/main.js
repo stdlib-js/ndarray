@@ -23,6 +23,7 @@
 var shape2strides = require( './../../../base/shape2strides' );
 var strides2offset = require( './../../../base/strides2offset' );
 var buffer = require( './../../../base/buffer' );
+var format = require( '@stdlib/string/format' );
 var numel = require( './../../../base/numel' );
 
 
@@ -74,7 +75,7 @@ function zerosLike( x ) {
 	}
 	buf = buffer( dt, len );
 	if ( buf === null ) {
-		throw new TypeError( 'invalid argument. First argument must have a recognized data type. Value: `' + dt + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must have a recognized data type. Value: `%s`.', dt ) );
 	}
 	return new x.constructor( dt, buf, sh, st, strides2offset( sh, st ), ord );
 }

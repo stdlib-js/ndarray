@@ -23,6 +23,7 @@
 var shape2strides = require( './../../../base/shape2strides' );
 var strides2offset = require( './../../../base/strides2offset' );
 var buffer = require( './../../../base/buffer' );
+var format = require( '@stdlib/string/format' );
 var ndarray = require( './../../../base/ctor' );
 var numel = require( './../../../base/numel' );
 
@@ -65,7 +66,7 @@ function zeros( dtype, shape, order ) {
 	}
 	buf = buffer( dtype, len );
 	if ( buf === null ) {
-		throw new TypeError( 'invalid argument. First argument must be a recognized data type. Value: `' + dtype + '`.' );
+		throw new TypeError( format( 'invalid argument. First argument must be a recognized data type. Value: `%s`.', dtype ) );
 	}
 
 	return new ndarray( dtype, buf, shape, st, strides2offset( shape, st ), order ); // eslint-disable-line max-len
