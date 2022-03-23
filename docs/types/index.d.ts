@@ -26,6 +26,7 @@ import base = require( './../../base' );
 import ndarrayCastingModes = require( './../../casting-modes' );
 import ndarray = require( './../../ctor' );
 import ndarrayDataTypes = require( './../../dtypes' );
+import scalar2ndarray = require( './../../from-scalar' );
 import ind2sub = require( './../../ind2sub' );
 import ndarrayIndexModes = require( './../../index-modes' );
 import ndarrayMinDataType = require( './../../min-dtype' );
@@ -35,6 +36,8 @@ import ndarrayPromotionRules = require( './../../promotion-rules' );
 import ndarraySafeCasts = require( './../../safe-casts' );
 import ndarraySameKindCasts = require( './../../same-kind-casts' );
 import sub2ind = require( './../../sub2ind' );
+import ndzeros = require( './../../zeros' );
+import ndzerosLike = require( './../../zeros-like' );
 
 /**
 * Interface describing the `ndarray` namespace.
@@ -55,6 +58,7 @@ interface Namespace {
 	* @param options.flatten - boolean indicating whether to automatically flatten generic array data sources (default: true)
 	* @param options.ndmin - minimum number of dimensions (default: 0)
 	* @param options.casting - casting rule used to determine what constitutes an acceptable cast (default: 'safe')
+	* @param options.readonly - boolean indicating whether an array should be read-only
 	* @throws must provide valid options
 	* @throws must provide either an array shape, data source, or both
 	* @throws invalid cast
@@ -135,6 +139,7 @@ interface Namespace {
 	* @param options - function options
 	* @param options.mode - specifies how to handle indices which exceed array dimensions (default: 'throw')
 	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis (default: ['throw'])
+	* @param options.readonly - specifies whether an array should be read-only (default: false)
 	* @throws `buffer` argument `get` and `set` properties must be functions
 	* @throws `shape` argument must be an array-like object containing nonnegative integers
 	* @throws `shape` argument length must equal the number of dimensions
@@ -185,6 +190,36 @@ interface Namespace {
 	* // returns [...]
 	*/
 	ndarrayDataTypes: typeof ndarrayDataTypes;
+
+	/**
+	* Returns a zero-dimensional ndarray containing a provided scalar value.
+	*
+	* ## Notes
+	*
+	* -   If `dtype` is not provided and `value`
+	*
+	*     -   is a `number`, the default data type is `'float64'`.
+	*     -   is a complex number object, the default data type is `'complex128'`.
+	*     -   is any other value type, the default data type is `'generic'`.
+	*
+	* @param value - scalar value
+	* @param dtype - array data type
+	* @returns zero-dimensional ndarray
+	*
+	* @example
+	* var x = ns.scalar2ndarray( 1.0, 'generic' );
+	* // returns <ndarray>
+	*
+	* var sh = x.shape;
+	* // returns []
+	*
+	* var dt = x.dtype;
+	* // returns 'generic'
+	*
+	* var v = x.get();
+	* // returns 1.0
+	*/
+	scalar2ndarray: typeof scalar2ndarray;
 
 	/**
 	* Converts a linear index to an array of subscripts.
@@ -272,7 +307,7 @@ interface Namespace {
 	* -   If a data type does not have a next larger data type or the next larger type is not supported, the function returns `-1`.
 	* -   If provided an unrecognized data type, the function returns `null`.
 	*
-	* @param dtype - ndarray data type
+	* @param dtype - ndarray data type value
 	* @returns next larger data type(s) or null
 	*
 	* @example
@@ -318,7 +353,7 @@ interface Namespace {
 	* -   If not provided an ndarray data type, the function returns a casting table.
 	* -   If provided an unrecognized ndarray data type, the function returns `null`.
 	*
-	* @param dtype - ndarray data type
+	* @param dtype - ndarray data type value
 	* @returns list of ndarray data types or null
 	*
 	* @example
@@ -335,7 +370,7 @@ interface Namespace {
 	* -   If not provided an ndarray data type, the function returns a casting table.
 	* -   If provided an unrecognized ndarray data type, the function returns `null`.
 	*
-	* @param dtype - ndarray data type
+	* @param dtype - ndarray data type value
 	* @returns list of ndarray data types or null
 	*
 	* @example
@@ -372,6 +407,62 @@ interface Namespace {
 	* // returns 17
 	*/
 	sub2ind: typeof sub2ind;
+
+	/**
+	* Creates a zero-filled array having a specified shape and data type.
+	*
+	* @param shape - array shape
+	* @param options - options
+	* @param options.dtype - underlying data type (default: 'float64')
+	* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+	* @returns zero-filled array
+	*
+	* @example
+	* var arr = ns.ndzeros( [ 2, 2 ] );
+	* // returns <ndarray>
+	*
+	* var sh = arr.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var dt = arr.dtype;
+	* // returns 'float64'
+	*/
+	ndzeros: typeof ndzeros;
+
+	/**
+	* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @param options - options
+	* @param options.dtype - output array data type
+	* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+	* @param options.shape - output array shape
+	* @returns zero-filled array
+	*
+	* @example
+	* var zeros = require( `@stdlib/ndarray/zeros` );
+	*
+	* var x = zeros( [ 2, 2 ], {
+	*     'dtype': 'float64'
+	* });
+	* // returns <ndarray>
+	*
+	* var sh = x.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var dt = x.dtype;
+	* // returns 'generic'
+	*
+	* var y = ns.ndzerosLike( x );
+	* // returns <ndarray>
+	*
+	* sh = y.shape;
+	* // returns [ 2, 2 ]
+	*
+	* dt = y.dtype;
+	* // returns 'generic'
+	*/
+	ndzerosLike: typeof ndzerosLike;
 }
 
 /**

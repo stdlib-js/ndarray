@@ -31,6 +31,7 @@ import isContiguous = require( './../../../../base/assert/is-contiguous' );
 import isDataType = require( './../../../../base/assert/is-data-type' );
 import isIndexMode = require( './../../../../base/assert/is-index-mode' );
 import isOrder = require( './../../../../base/assert/is-order' );
+import isReadOnly = require( './../../../../base/assert/is-read-only' );
 import isRowMajor = require( './../../../../base/assert/is-row-major' );
 import isRowMajorContiguous = require( './../../../../base/assert/is-row-major-contiguous' );
 import isSafeDataTypeCast = require( './../../../../base/assert/is-safe-data-type-cast' );
@@ -299,6 +300,29 @@ interface Namespace {
 	* // returns false
 	*/
 	isOrder: typeof isOrder;
+
+	/**
+	* Tests whether an ndarray is read-only.
+	*
+	* @param arr - input ndarray
+	* @returns boolean indicating whether an ndarray is read-only
+	*
+	* @example
+	* var array = require( `@stdlib/ndarray/array` );
+	*
+	* var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
+	*     'readonly': true
+	* });
+	* var bool = ns.isReadOnly( x );
+	* // returns true
+	*
+	* x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
+	*     'readonly': false
+	* });
+	* bool = ns.isReadOnly( x );
+	* // returns false
+	*/
+	isReadOnly: typeof isReadOnly;
 
 	/**
 	* Returns a boolean indicating if an array is row-major based on a provided stride array.
