@@ -69,11 +69,11 @@ function validate( opts, options ) {
 			return new TypeError( format( 'invalid option. `%s` option must be an array containing recognized modes. Option: `%s`.', 'submode', opts.submode ) );
 		}
 		if ( opts.submode.length === 0 ) {
-			return new TypeError( format( 'invalid option. `submode` option must be an array containing recognized modes. Option: `%s`.', opts.submode.join( ',' ) ) );
+			return new TypeError( format( 'invalid option. `%s` option must be an array containing recognized modes. Option: `%s`.', 'submode', opts.submode.join( ',' ) ) );
 		}
 		for ( i = 0; i < opts.submode.length; i++ ) {
 			if ( !isIndexMode( opts.submode[ i ] ) ) {
-				return new TypeError( format( 'invalid option. Each `submode` must be a recognized mode. Option: `%s`.', opts.submode[ i ] ) );
+				return new TypeError( format( 'invalid option. Each submode must be a recognized mode. Option: `%s`.', opts.submode[ i ] ) );
 			}
 		}
 		opts.submode = opts.submode.slice();
