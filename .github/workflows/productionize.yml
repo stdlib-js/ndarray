@@ -202,13 +202,15 @@ jobs:
         run: |
           git checkout -b deno origin/deno
 
-          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
 
           git add -A
-          git commit -m "Remove files"
+          git commit -m "Remove files" --allow-empty
 
-          git merge -s recursive -X theirs origin/production --allow-unrelated-histories
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
 
       # If `deno` does not exist, create `deno` branch:
       - name: 'If `deno` does not exist, create `deno` branch'
@@ -292,8 +294,8 @@ jobs:
       # Delete everything in current directory aside from deno folder:
       - name: 'Delete everything in current directory aside from deno folder'
         run: |
-          find . -type 'f' | grep -v -e "deno" -e ".git/" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e "deno" -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e "deno" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "deno" -e ".git" | xargs -r rm -rf
 
       # Move deno directory to root:
       - name: 'Move deno directory to root'
@@ -375,13 +377,15 @@ jobs:
         run: |
           git checkout -b umd origin/umd
 
-          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
 
           git add -A
-          git commit -m "Remove files"
+          git commit -m "Remove files" --allow-empty
 
-          git merge -s recursive -X theirs origin/production --allow-unrelated-histories
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
 
       # If `umd` does not exist, create `umd` branch:
       - name: 'If `umd` does not exist, create `umd` branch'
@@ -458,13 +462,13 @@ jobs:
           find ./umd -type f -name '*.md' -print0 | xargs -0 perl -0777 -i -pe "s/<script type=\"text\/javascript\">([\s\S]+?)<\/script>/<script type=\"text\/javascript\">\n\(function \(\) {\1}\)\(\);\n<\/script>/g"
 
           # Create package.json file for umd branch:
-          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./browser.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
+          jq --indent 2 '{"name": .name, "version": .version, "description": .description, "license": .license, "main": "./index.js", "homepage": .homepage, "repository": .repository, "bugs": .bugs, "keywords": .keywords, "funding": .funding}' package.json > ./umd/package.json
 
       # Delete everything in current directory aside from umd folder:
       - name: 'Delete everything in current directory aside from umd folder'
         run: |
-          find . -type 'f' | grep -v -e "umd" -e ".git/" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e "umd" -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e "umd" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "umd" -e ".git" | xargs -r rm -rf
 
       # Move umd directory to root:
       - name: 'Move umd directory to root'
@@ -546,13 +550,15 @@ jobs:
         run: |
           git checkout -b esm origin/esm
 
-          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e ".git/" -e "package.json" -e "README.md" -e "LICENSE"  -e "CONTRIBUTORS" -e "NOTICE" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e ".git" | xargs -r rm -rf
 
           git add -A
-          git commit -m "Remove files"
+          git commit -m "Remove files" --allow-empty
 
-          git merge -s recursive -X theirs origin/production --allow-unrelated-histories
+          git config merge.theirs.name 'simulate `-s theirs`'
+          git config merge.theirs.driver 'cat %B > %A'
+          GIT_CONFIG_PARAMETERS="'merge.default=theirs'" git merge origin/production --allow-unrelated-histories
 
       # If `esm` does not exist, create `esm` branch:
       - name: 'If `esm` does not exist, create `esm` branch'
@@ -640,8 +646,8 @@ jobs:
       # Delete everything in current directory aside from esm folder:
       - name: 'Delete everything in current directory aside from esm folder'
         run: |
-          find . -type 'f' | grep -v -e "esm" -e ".git/" | xargs rm
-          find . -mindepth 1 -type 'd' | grep -v -e "esm" -e ".git" | xargs rm -rf
+          find . -type 'f' | grep -v -e "esm" -e ".git/" | xargs -r rm
+          find . -mindepth 1 -type 'd' | grep -v -e "esm" -e ".git" | xargs -r rm -rf
 
       # Move esm directory to root:
       - name: 'Move esm directory to root'
