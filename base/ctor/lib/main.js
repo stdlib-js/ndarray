@@ -28,6 +28,7 @@ var setReadOnlyAccessor = require( '@stdlib/utils/define-nonenumerable-read-only
 var bytesPerElement = require( './../../../base/bytes-per-element' );
 var iterationOrder = require( './../../../base/iteration-order' );
 var strides2order = require( './../../../base/strides2order' );
+var Boolean = require( '@stdlib/boolean/ctor' );
 var isColumnMajorContiguous = require( './is_column_major_contiguous.js' );
 var isRowMajorContiguous = require( './is_row_major_contiguous.js' );
 var isContiguous = require( './is_contiguous.js' );

@@ -39,6 +39,7 @@
     "@stdlib/array": "github:stdlib-js/array#main",
     "@stdlib/assert": "github:stdlib-js/assert#main",
     "@stdlib/bigint": "github:stdlib-js/bigint#main",
+    "@stdlib/boolean": "github:stdlib-js/boolean#main",
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/complex": "github:stdlib-js/complex#main",
     "@stdlib/constants": "github:stdlib-js/constants#main",
