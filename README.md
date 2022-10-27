@@ -91,6 +91,7 @@ In addition, the namespace contaians the following multidimensional array utilit
 <div class="namespace-toc">
 
 -   <span class="signature">[`ndarrayCastingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`ndarrayDataTypes()`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`scalar2ndarray( value[, dtype] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`ind2sub( shape, idx[, options] )`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
@@ -212,6 +213,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 <!-- <toc-links> -->
 
 [@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
+
+[@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
