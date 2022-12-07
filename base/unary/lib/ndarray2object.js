@@ -21,57 +21,10 @@
 // MODULES //
 
 var isAccessorArray = require( '@stdlib/array/base/assert/is-accessor-array' );
-
-
-// FUNCTIONS //
-
-/**
-* Returns an ndarray buffer element.
-*
-* @private
-* @param {Collection} buf - data buffer
-* @param {NonNegativeInteger} idx - element index
-* @returns {*} element
-*/
-function getIndexed( buf, idx ) {
-	return buf[ idx ];
-}
-
-/**
-* Returns an ndarray buffer element using an accessor method.
-*
-* @private
-* @param {Collection} buf - data buffer
-* @param {NonNegativeInteger} idx - element index
-* @returns {*} element
-*/
-function getAccessor( buf, idx ) {
-	return buf.get( idx );
-}
-
-/**
-* Sets an ndarray buffer element.
-*
-* @private
-* @param {Collection} buf - data buffer
-* @param {NonNegativeInteger} idx - element index
-* @param {*} value - value to set
-*/
-function setIndexed( buf, idx, value ) {
-	buf[ idx ] = value;
-}
-
-/**
-* Sets an ndarray buffer element using an accessor method.
-*
-* @private
-* @param {Collection} buf - data buffer
-* @param {NonNegativeInteger} idx - element index
-* @param {*} value - value to set
-*/
-function setAccessor( buf, idx, value ) {
-	buf.set( value, idx );
-}
+var accessorGetter = require( '@stdlib/array/base/accessor-getter' );
+var accessorSetter = require( '@stdlib/array/base/accessor-setter' );
+var getter = require( '@stdlib/array/base/getter' );
+var setter = require( '@stdlib/array/base/setter' );
 
 
 // MAIN //
@@ -93,26 +46,31 @@ function setAccessor( buf, idx, value ) {
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @returns {Object} object containing ndarray meta data
 */
-function copy( x ) {
+function ndarray2object( x ) {
 	var xbuf;
 	var bool;
+	var dt;
 
 	xbuf = x.data;
+	dt = x.dtype;
+
 	bool = isAccessorArray( xbuf );
+
 	return {
-		'dtype': x.dtype,
+		'dtype': dt,
 		'data': xbuf,
 		'shape': x.shape,
 		'strides': x.strides,
 		'offset': x.offset,
 		'order': x.order,
-		'accessors': bool,
-		'getter': ( bool ) ? getAccessor : getIndexed,
-		'setter': ( bool ) ? setAccessor : setIndexed
+		'accessorProtocol': bool,
+		'accessors': ( bool ) ?
+			[ accessorGetter( dt ), accessorSetter( dt ) ] :
+			[ getter( dt ), setter( dt ) ]
 	};
 }
 
 
 // EXPORTS //
 
-module.exports = copy;
+module.exports = ndarray2object;
