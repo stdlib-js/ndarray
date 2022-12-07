@@ -428,6 +428,24 @@ setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
 setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
 
 /**
+* @name unary
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary}
+*/
+setReadOnly( ns, 'unary', require( './../../base/unary' ) );
+
+/**
+* @name unaryLoopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-loop-interchange-order}
+*/
+setReadOnly( ns, 'unaryLoopOrder', require( './../../base/unary-loop-interchange-order' ) );
+
+/**
 * @name vind2bind
 * @memberof ns
 * @readonly
