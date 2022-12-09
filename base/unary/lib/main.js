@@ -22,7 +22,7 @@
 
 var iterationOrder = require( './../../../base/iteration-order' );
 var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
-var ndarray2object = require( './ndarray2object.js' );
+var ndarray2object = require( './../../../base/ndarraylike2object' );
 var blockedaccessorunary2d = require( './2d_blocked_accessors.js' );
 var blockedaccessorunary3d = require( './3d_blocked_accessors.js' );
 var blockedaccessorunary4d = require( './4d_blocked_accessors.js' );
