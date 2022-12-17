@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ var filledarray = require( '@stdlib/array/filled' );
 var ctors = require( '@stdlib/array/typed-complex-ctors' );
 var shape2strides = require( './../../../base/shape2strides' );
 var pkg = require( './../package.json' ).name;
-var unary = require( './../lib/2d_accessors.js' );
+var unaryBy = require( './../lib/2d_accessors.js' );
 
 
 // VARIABLES //
@@ -126,7 +126,7 @@ function createBenchmark( len, shape, xtype, ytype ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			unary( x, y, identity );
+			unaryBy( x, y, identity, identity );
 			if ( isnan( ybuf[ i%len ] ) ) {
 				b.fail( 'should not return NaN' );
 			}

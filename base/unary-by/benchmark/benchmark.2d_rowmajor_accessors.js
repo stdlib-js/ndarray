@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -29,20 +29,15 @@ var floor = require( '@stdlib/math/base/special/floor' );
 var round = require( '@stdlib/math/base/special/round' );
 var identity = require( '@stdlib/math/base/special/identity' );
 var filledarray = require( '@stdlib/array/filled' );
-var ctors = require( '@stdlib/array/typed-complex-ctors' );
 var shape2strides = require( './../../../base/shape2strides' );
 var pkg = require( './../package.json' ).name;
-var unary = require( './../lib/2d_accessors.js' );
+var unaryBy = require( './../lib/2d_accessors.js' );
 
 
 // VARIABLES //
 
-var types = [ 'complex64' ];
+var types = [ 'float64' ];
 var order = 'row-major';
-var abtype = {
-	'complex64': 'float32',
-	'complex128': 'float64'
-};
 
 
 // FUNCTIONS //
@@ -56,7 +51,7 @@ var abtype = {
 * @returns {*} element
 */
 function get( buf, idx ) {
-	return buf.get( idx );
+	return buf[ idx ];
 }
 
 /**
@@ -68,7 +63,7 @@ function get( buf, idx ) {
 * @param {*} value - value to set
 */
 function set( buf, idx, value ) {
-	buf.set( value, idx );
+	buf[ idx ] = value;
 }
 
 /**
@@ -82,20 +77,18 @@ function set( buf, idx, value ) {
 * @returns {Function} benchmark function
 */
 function createBenchmark( len, shape, xtype, ytype ) {
-	var xbuf;
-	var ybuf;
 	var x;
 	var y;
 	var i;
 
-	xbuf = filledarray( 0.0, len*2, abtype[ xtype ] );
-	ybuf = filledarray( 0.0, len*2, abtype[ ytype ] );
-	for ( i = 0; i < len*2; i++ ) {
-		xbuf[ i ] = round( ( randu()*200.0 ) - 100.0 );
+	x = filledarray( 0.0, len, xtype );
+	y = filledarray( 0.0, len, ytype );
+	for ( i = 0; i < len; i++ ) {
+		x[ i ] = round( ( randu()*200.0 ) - 100.0 );
 	}
 	x = {
 		'dtype': xtype,
-		'data': new ( ctors( xtype ) )( xbuf.buffer ),
+		'data': x,
 		'shape': shape,
 		'strides': shape2strides( shape, order ),
 		'offset': 0,
@@ -105,7 +98,7 @@ function createBenchmark( len, shape, xtype, ytype ) {
 	};
 	y = {
 		'dtype': ytype,
-		'data': new ( ctors( ytype ) )( ybuf.buffer ),
+		'data': y,
 		'shape': shape,
 		'strides': shape2strides( shape, order ),
 		'offset': 0,
@@ -126,13 +119,13 @@ function createBenchmark( len, shape, xtype, ytype ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			unary( x, y, identity );
-			if ( isnan( ybuf[ i%len ] ) ) {
+			unaryBy( x, y, identity, identity );
+			if ( isnan( y.data[ i%len ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
 		}
 		b.toc();
-		if ( isnan( ybuf[ i%len ] ) ) {
+		if ( isnan( y.data[ i%len ] ) ) {
 			b.fail( 'should not return NaN' );
 		}
 		b.pass( 'benchmark finished' );
@@ -160,7 +153,7 @@ function main() {
 	var j;
 
 	min = 1; // 10^min
-	max = 5; // 10^max
+	max = 6; // 10^max
 
 	for ( j = 0; j < types.length; j++ ) {
 		t1 = types[ j ];
