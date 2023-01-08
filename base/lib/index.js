@@ -437,6 +437,15 @@ setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
 setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 
 /**
+* @name unaryBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-by}
+*/
+setReadOnly( ns, 'unaryBy', require( './../../base/unary-by' ) );
+
+/**
 * @name unaryLoopOrder
 * @memberof ns
 * @readonly
