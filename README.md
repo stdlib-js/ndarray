@@ -24,20 +24,30 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { array, base, dispatch, ind2sub, ndarray, ndarrayCastingModes, ndarrayDataTypes, ndarrayIndexModes, ndarrayMinDataType, ndarrayNextDataType, ndarrayOrders, ndarrayPromotionRules, ndarraySafeCasts, ndarraySameKindCasts, ndzeros, ndzerosLike, scalar2ndarray, sub2ind } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -82,6 +92,7 @@ In addition, the namespace contains the following multidimensional array utility
 
 -   <span class="signature">[`ndarrayCastingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
+-   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`ndarrayDataTypes()`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`scalar2ndarray( value[, dtype] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`ind2sub( shape, idx[, options] )`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
@@ -113,8 +124,8 @@ In addition, the namespace contains the following multidimensional array utility
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -140,7 +151,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
