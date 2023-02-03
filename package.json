@@ -3,30 +3,7 @@
   "version": "0.0.13",
   "description": "Multidimensional arrays.",
   "license": "Apache-2.0",
-  "author": {
-    "name": "The Stdlib Authors",
-    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-  },
-  "contributors": [
-    {
-      "name": "The Stdlib Authors",
-      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
-    }
-  ],
-  "main": "./lib",
-  "directories": {
-    "doc": "./docs",
-    "example": "./examples",
-    "lib": "./lib",
-    "test": "./test"
-  },
-  "types": "./docs/types",
-  "scripts": {
-    "test": "make test",
-    "test-cov": "make test-cov",
-    "examples": "make examples",
-    "benchmark": "make benchmark"
-  },
+  "main": "./index.js",
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -35,48 +12,6 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {
-    "@stdlib/array": "github:stdlib-js/array#main",
-    "@stdlib/assert": "github:stdlib-js/assert#main",
-    "@stdlib/bigint": "github:stdlib-js/bigint#main",
-    "@stdlib/boolean": "github:stdlib-js/boolean#main",
-    "@stdlib/buffer": "github:stdlib-js/buffer#main",
-    "@stdlib/complex": "github:stdlib-js/complex#main",
-    "@stdlib/constants": "github:stdlib-js/constants#main",
-    "@stdlib/math": "github:stdlib-js/math#main",
-    "@stdlib/number": "github:stdlib-js/number#main",
-    "@stdlib/strided": "github:stdlib-js/strided#main",
-    "@stdlib/string": "github:stdlib-js/string#main",
-    "@stdlib/types": "github:stdlib-js/types#main",
-    "@stdlib/utils": "github:stdlib-js/utils#main",
-    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
-  },
-  "devDependencies": {
-    "@stdlib/bench": "github:stdlib-js/bench#main",
-    "@stdlib/blas": "github:stdlib-js/blas#main",
-    "@stdlib/fs": "github:stdlib-js/fs#main",
-    "@stdlib/random": "github:stdlib-js/random#main",
-    "@stdlib/time": "github:stdlib-js/time#main",
-    "proxyquire": "^2.0.0",
-    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
-    "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
-  },
-  "engines": {
-    "node": ">=0.10.0",
-    "npm": ">2.7.0"
-  },
-  "os": [
-    "aix",
-    "darwin",
-    "freebsd",
-    "linux",
-    "macos",
-    "openbsd",
-    "sunos",
-    "win32",
-    "windows"
-  ],
   "keywords": [
     "stdlib",
     "stdtypes",
@@ -96,7 +31,6 @@
     "namespace",
     "ns"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "patreon",
     "url": "https://www.patreon.com/athan"
