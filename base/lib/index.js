@@ -329,6 +329,24 @@ setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object
 setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-dimensions' ) );
 
 /**
+* @name nullaryLoopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nullary-loop-interchange-order}
+*/
+setReadOnly( ns, 'nullaryLoopOrder', require( './../../base/nullary-loop-interchange-order' ) );
+
+/**
+* @name nullaryBlockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nullary-tiling-block-size}
+*/
+setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block-size' ) );
+
+/**
 * @name numel
 * @memberof ns
 * @readonly
