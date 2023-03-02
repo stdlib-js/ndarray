@@ -50,6 +50,15 @@ var ns = {};
 setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 
 /**
+* @name binaryBlockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/binary-tiling-block-size}
+*/
+setReadOnly( ns, 'binaryBlockSize', require( './../../base/binary-tiling-block-size' ) );
+
+/**
 * @name bind2vind
 * @memberof ns
 * @readonly
