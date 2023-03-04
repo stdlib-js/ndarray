@@ -48,7 +48,8 @@
     "@stdlib/strided": "github:stdlib-js/strided#main",
     "@stdlib/string": "github:stdlib-js/string#main",
     "@stdlib/types": "github:stdlib-js/types#main",
-    "@stdlib/utils": "github:stdlib-js/utils#main"
+    "@stdlib/utils": "github:stdlib-js/utils#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
