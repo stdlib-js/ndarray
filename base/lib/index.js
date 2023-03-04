@@ -347,6 +347,15 @@ setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object
 setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-dimensions' ) );
 
 /**
+* @name nullary
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nullary}
+*/
+setReadOnly( ns, 'nullary', require( './../../base/nullary' ) );
+
+/**
 * @name nullaryLoopOrder
 * @memberof ns
 * @readonly
