@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,17 +18,15 @@
 
 'use strict';
 
-var shape2strides = require( './../../../base/shape2strides' );
-var strides2offset = require( './../../../base/strides2offset' );
+var shape2strides = require( './../../base/shape2strides' );
+var strides2offset = require( './../../base/strides2offset' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
+var ndarray = require( './../../ctor' );
 var ndarray2array = require( './../lib' );
 
 // Create a data buffer:
-var buffer = [];
-var i;
-for ( i = 0; i < 27; i++ ) {
-	buffer.push( i );
-}
+var buffer = zeroTo( 27 );
 
 // Specify array meta data:
 var shape = [ 3, 3, 3 ];
@@ -45,6 +43,7 @@ console.log( 'Dims: %s', shape.join( 'x' ) );
 
 // Randomly flip strides and convert an ndarray to a nested array...
 var arr;
+var i;
 var j;
 for ( i = 0; i < 20; i++ ) {
 	j = discreteUniform( 0, ndims-1 );
@@ -55,6 +54,6 @@ for ( i = 0; i < 20; i++ ) {
 	console.log( 'Strides: %s', strides.join( ',' ) );
 	console.log( 'Offset: %d', offset );
 
-	arr = ndarray2array( buffer, shape, strides, offset, order );
-	console.log( JSON.stringify( arr ) );
+	arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+	console.log( JSON.stringify( ndarray2array( arr ) ) );
 }

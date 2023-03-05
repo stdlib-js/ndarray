@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ limitations under the License.
 
 # ndarray2array
 
-> Convert an ndarray buffer to a generic array.
+> Convert an [ndarray][@stdlib/ndarray/ctor] to a generic array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,48 +37,27 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 ```
 
-#### ndarray2array( buffer, shape, strides, offset, order )
+#### ndarray2array( arr )
 
-Converts an ndarray buffer to a generic array (which may include nested arrays).
+Converts an [ndarray][@stdlib/ndarray/ctor] to a generic array (which may include nested arrays).
 
 ```javascript
+var ndarray = require( '@stdlib/ndarray/ctor' );
+
 var buffer = [ 1, 2, 3, 4 ];
 var shape = [ 2, 2 ];
 var order = 'row-major';
 var strides = [ 2, 1 ];
 var offset = 0;
 
-var arr = ndarray2array( buffer, shape, strides, offset, order );
+var arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+// returns <ndarray>
+
+var out = ndarray2array( arr );
 // returns [ [ 1, 2 ], [ 3, 4 ] ]
-```
-
-The `order` parameter specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style).
-
-```javascript
-var buffer = [ 1, 2, 3, 4 ];
-var shape = [ 2, 2 ];
-var order = 'column-major';
-var strides = [ 1, 2 ];
-var offset = 0;
-
-var arr = ndarray2array( buffer, shape, strides, offset, order );
-// returns [ [ 1, 3 ], [ 2, 4 ] ]
-```
-
-The `offset` parameter specifies the location of the first indexed element based on the `strides` array.
-
-```javascript
-var buffer = [ 1, 2, 3, 4 ];
-var shape = [ 2, 2 ];
-var order = 'row-major';
-var strides = [ -2, -1 ];
-var offset = 3;
-
-var arr = ndarray2array( buffer, shape, strides, offset, order );
-// returns [ [ 4, 3 ], [ 2, 1 ] ]
 ```
 
 </section>
@@ -105,14 +84,12 @@ var arr = ndarray2array( buffer, shape, strides, offset, order );
 var shape2strides = require( '@stdlib/ndarray/base/shape2strides' );
 var strides2offset = require( '@stdlib/ndarray/base/strides2offset' );
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
+var zeroTo = require( '@stdlib/array/base/zero-to' );
+var ndarray = require( '@stdlib/ndarray/ctor' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 
 // Create a data buffer:
-var buffer = [];
-var i;
-for ( i = 0; i < 27; i++ ) {
-    buffer.push( i );
-}
+var buffer = zeroTo( 27 );
 
 // Specify array meta data:
 var shape = [ 3, 3, 3 ];
@@ -129,6 +106,7 @@ console.log( 'Dims: %s', shape.join( 'x' ) );
 
 // Randomly flip strides and convert an ndarray to a nested array...
 var arr;
+var i;
 var j;
 for ( i = 0; i < 20; i++ ) {
     j = discreteUniform( 0, ndims-1 );
@@ -139,8 +117,8 @@ for ( i = 0; i < 20; i++ ) {
     console.log( 'Strides: %s', strides.join( ',' ) );
     console.log( 'Offset: %d', offset );
 
-    arr = ndarray2array( buffer, shape, strides, offset, order );
-    console.log( JSON.stringify( arr ) );
+    arr = ndarray( 'generic', buffer, shape, strides, offset, order );
+    console.log( JSON.stringify( ndarray2array( arr ) ) );
 }
 ```
 
@@ -167,6 +145,8 @@ for ( i = 0; i < 20; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 </section>
 
