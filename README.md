@@ -24,38 +24,30 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -112,6 +104,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`ndarraySafeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
 -   <span class="signature">[`ndarraySameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
+-   <span class="signature">[`ndarray2array( arr )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
 -   <span class="signature">[`ndzerosLike( x[, options] )`][@stdlib/ndarray/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`ndzeros( shape[, options] )`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
 
@@ -131,21 +124,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -256,6 +239,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/same-kind-casts]: https://github.com/stdlib-js/ndarray/tree/main/same-kind-casts
 
 [@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray/tree/main/sub2ind
+
+[@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
 
 [@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray/tree/main/zeros-like
 
