@@ -26,6 +26,7 @@ import binaryLoopOrder = require( './../../../base/binary-loop-interchange-order
 import binaryBlockSize = require( './../../../base/binary-tiling-block-size' );
 import bind2vind = require( './../../../base/bind2vind' );
 import broadcastArray = require( './../../../base/broadcast-array' );
+import broadcastScalar = require( './../../../base/broadcast-scalar' );
 import broadcastShapes = require( './../../../base/broadcast-shapes' );
 import buffer = require( './../../../base/buffer' );
 import bufferCtors = require( './../../../base/buffer-ctors' );
@@ -225,6 +226,30 @@ interface Namespace {
 	* // returns 4
 	*/
 	broadcastArray: typeof broadcastArray;
+
+	/**
+	* Broadcasts a scalar value to an ndarray having a specified shape.
+	*
+	* @param value - scalar value
+	* @param dtype - array data type
+	* @param shape - array shape
+	* @param order - array order
+	* @returns ndarray
+	*
+	* @example
+	* var x = ns.broadcastScalar( 1.0, 'generic', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>
+	*
+	* var sh = x.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var dt = x.dtype;
+	* // returns 'generic'
+	*
+	* var v = x.get( 0, 1 );
+	* // returns 1.0
+	*/
+	broadcastScalar: typeof broadcastScalar;
 
 	/**
 	* Broadcasts array shapes to a single shape.
