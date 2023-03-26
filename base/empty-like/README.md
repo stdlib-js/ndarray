@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# empty
+# emptyLike
 
-> Create an uninitialized [ndarray][@stdlib/ndarray/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
+> Create an uninitialized ndarray having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,57 +37,24 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var empty = require( '@stdlib/ndarray/empty' );
+var emptyLike = require( '@stdlib/ndarray/base/empty-like' );
 ```
 
-#### empty( shape\[, options] )
+#### emptyLike( x )
 
-Creates an uninitialized [ndarray][@stdlib/ndarray/ctor] having a specified shape and [data type][@stdlib/ndarray/dtypes].
+Creates an uninitialized ndarray having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
-var arr = empty( [ 2, 2 ] );
+var zeros = require( '@stdlib/ndarray/base/zeros' );
+
+var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
 // returns <ndarray>
 
-var sh = arr.shape;
+var y = emptyLike( x );
+// returns <ndarray>
+
+var sh = y.shape;
 // returns [ 2, 2 ]
-
-var dt = arr.dtype;
-// returns 'float64'
-```
-
-The specified output [ndarray][@stdlib/ndarray/ctor] `shape` may be either an array-like object or an integer value.
-
-```javascript
-var arr = empty( 2 );
-// returns <ndarray>
-
-var sh = arr.shape;
-// returns [ 2 ]
-
-var dt = arr.dtype;
-// returns 'float64'
-```
-
-The function accepts the following `options`:
-
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Default: `'float64'`.
--   **order**: specifies whether an [ndarray][@stdlib/ndarray/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style). Default: `'row-major'`.
--   **mode**: specifies how to handle indices which exceed array dimensions (see [`ndarray`][@stdlib/ndarray/ctor]). Default: `'throw'`.
--   **submode**: a mode array which specifies for each dimension how to handle subscripts which exceed array dimensions  (see [`ndarray`][@stdlib/ndarray/ctor]). If provided fewer modes than dimensions, the constructor recycles modes using modulo arithmetic. Default: `[ options.mode ]`.
-
-By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [`float64`][@stdlib/ndarray/dtypes] data type. To specify an alternative [data type][@stdlib/ndarray/dtypes], provide a `dtype` option.
-
-```javascript
-var arr = empty( [ 2, 2 ], {
-    'dtype': 'float32'
-});
-// returns <ndarray>
-
-var sh = arr.shape;
-// returns [ 2, 2 ]
-
-var dt = arr.dtype;
-// returns 'float32'
 ```
 
 </section>
@@ -100,8 +67,9 @@ var dt = arr.dtype;
 
 ## Notes
 
--   If the `dtype` option is `'generic'`, the function always returns a zero-filled ndarray.
--   For returned [ndarrays][@stdlib/ndarray/ctor] whose underlying memory is **not** initialized, memory contents are unknown and may contain **sensitive** data.
+-   Along with data type, shape, and order, the function infers the "class" of the returned ndarray from the provided ndarray. For example, if provided a "base" [ndarray][@stdlib/ndarray/base/ctor], the function returns a base [ndarray][@stdlib/ndarray/base/ctor]. If provided a non-base [ndarray][@stdlib/ndarray/ctor], the function returns a non-base [ndarray][@stdlib/ndarray/ctor].
+-   If the inferred output ndarray data type is `'generic'`, the function always returns a zero-filled ndarray.
+-   For returned ndarrays whose underlying memory is **not** initialized, memory contents are unknown and may contain **sensitive** data.
 
 </section>
 
@@ -117,19 +85,20 @@ var dt = arr.dtype;
 
 ```javascript
 var dtypes = require( '@stdlib/ndarray/dtypes' );
-var empty = require( '@stdlib/ndarray/empty' );
+var zeros = require( '@stdlib/ndarray/base/zeros' );
+var emptyLike = require( '@stdlib/ndarray/base/empty-like' );
 
 // Get a list of data types:
 var dt = dtypes();
 
 // Generate uninitialized arrays...
-var arr;
+var x;
+var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-    arr = empty( [ 2, 2 ], {
-        'dtype': dt[ i ]
-    });
-    console.log( arr.data );
+    x = zeros( dt[ i ], [ 2, 2 ], 'row-major' );
+    y = emptyLike( x );
+    console.log( y.data );
 }
 ```
 
@@ -156,6 +125,8 @@ for ( i = 0; i < dt.length; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray/tree/main/base/ctor
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 

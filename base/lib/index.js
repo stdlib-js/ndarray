@@ -257,6 +257,15 @@ setReadOnly( ns, 'dtypes2signatures', require( './../../base/dtypes2signatures' 
 setReadOnly( ns, 'empty', require( './../../base/empty' ) );
 
 /**
+* @name emptyLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/empty-like}
+*/
+setReadOnly( ns, 'emptyLike', require( './../../base/empty-like' ) );
+
+/**
 * @name expandDimensions
 * @memberof ns
 * @readonly
