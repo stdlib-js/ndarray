@@ -410,6 +410,42 @@ setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block
 setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
+* @name outputPolicyEnum2Str
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-policy-enum2str}
+*/
+setReadOnly( ns, 'outputPolicyEnum2Str', require( './../../base/output-policy-enum2str' ) );
+
+/**
+* @name outputPolicyResolveEnum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-policy-resolve-enum}
+*/
+setReadOnly( ns, 'outputPolicyResolveEnum', require( './../../base/output-policy-resolve-enum' ) );
+
+/**
+* @name outputPolicyResolveStr
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-policy-resolve-str}
+*/
+setReadOnly( ns, 'outputPolicyResolveStr', require( './../../base/output-policy-resolve-str' ) );
+
+/**
+* @name outputPolicyStr2Enum
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-policy-str2enum}
+*/
+setReadOnly( ns, 'outputPolicyStr2Enum', require( './../../base/output-policy-str2enum' ) );
+
+/**
 * @name prependSingletonDimensions
 * @memberof ns
 * @readonly
