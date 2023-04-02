@@ -19,51 +19,51 @@
 // TypeScript Version: 2.0
 
 /**
-* Tests whether an input value is a supported ndarray integral (i.e., signed or unsigned integer) data type.
+* Tests whether an input value is a supported ndarray integer (i.e., signed or unsigned integer) data type.
 *
 * @param v - value to test
-* @returns boolean indicating whether an input value is a supported ndarray integral data type
+* @returns boolean indicating whether an input value is a supported ndarray integer data type
 *
 * @example
-* var bool = isIntegralDataType( 'binary' );
+* var bool = isIntegerDataType( 'binary' );
 * // returns false
 *
-* bool = isIntegralDataType( 'float32' );
+* bool = isIntegerDataType( 'float32' );
 * // returns false
 *
-* bool = isIntegralDataType( 'float64' );
+* bool = isIntegerDataType( 'float64' );
 * // returns false
 *
-* bool = isIntegralDataType( 'generic' );
+* bool = isIntegerDataType( 'generic' );
 * // returns false
 *
-* bool = isIntegralDataType( 'int16' );
+* bool = isIntegerDataType( 'int16' );
 * // returns true
 *
-* bool = isIntegralDataType( 'int32' );
+* bool = isIntegerDataType( 'int32' );
 * // returns true
 *
-* bool = isIntegralDataType( 'int8' );
+* bool = isIntegerDataType( 'int8' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint16' );
+* bool = isIntegerDataType( 'uint16' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint32' );
+* bool = isIntegerDataType( 'uint32' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint8' );
+* bool = isIntegerDataType( 'uint8' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint8c' );
+* bool = isIntegerDataType( 'uint8c' );
 * // returns true
 *
-* bool = isIntegralDataType( 'foo' );
+* bool = isIntegerDataType( 'foo' );
 * // returns false
 */
-declare function isIntegralDataType( v: any ): boolean;
+declare function isIntegerDataType( v: any ): boolean;
 
 
 // EXPORTS //
 
-export = isIntegralDataType;
+export = isIntegerDataType;

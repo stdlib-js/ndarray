@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# isIntegralDataType
+# isIntegerDataType
 
-> Test if an input value is a supported ndarray integral data type.
+> Test if an input value is a supported ndarray integer data type.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,18 +37,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isIntegralDataType = require( '@stdlib/ndarray/base/assert/is-integral-data-type' );
+var isIntegerDataType = require( '@stdlib/ndarray/base/assert/is-integer-data-type' );
 ```
 
-#### isIntegralDataType( value )
+#### isIntegerDataType( value )
 
-Tests if an input `value` is a supported ndarray integral (i.e., signed or unsigned integer) data type.
+Tests if an input `value` is a supported ndarray integer (i.e., signed or unsigned integer) data type.
 
 ```javascript
-var bool = isIntegralDataType( 'float32' );
+var bool = isIntegerDataType( 'float32' );
 // returns false
 
-bool = isIntegralDataType( 'uint32' );
+bool = isIntegerDataType( 'uint32' );
 // returns true
 ```
 
@@ -73,45 +73,45 @@ bool = isIntegralDataType( 'uint32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var isIntegralDataType = require( '@stdlib/ndarray/base/assert/is-integral-data-type' );
+var isIntegerDataType = require( '@stdlib/ndarray/base/assert/is-integer-data-type' );
 
-var bool = isIntegralDataType( 'binary' );
+var bool = isIntegerDataType( 'binary' );
 // returns false
 
-bool = isIntegralDataType( 'float32' );
+bool = isIntegerDataType( 'float32' );
 // returns false
 
-bool = isIntegralDataType( 'float64' );
+bool = isIntegerDataType( 'float64' );
 // returns false
 
-bool = isIntegralDataType( 'generic' );
+bool = isIntegerDataType( 'generic' );
 // returns false
 
-bool = isIntegralDataType( 'int16' );
+bool = isIntegerDataType( 'int16' );
 // returns true
 
-bool = isIntegralDataType( 'int32' );
+bool = isIntegerDataType( 'int32' );
 // returns true
 
-bool = isIntegralDataType( 'int8' );
+bool = isIntegerDataType( 'int8' );
 // returns true
 
-bool = isIntegralDataType( 'uint16' );
+bool = isIntegerDataType( 'uint16' );
 // returns true
 
-bool = isIntegralDataType( 'uint32' );
+bool = isIntegerDataType( 'uint32' );
 // returns true
 
-bool = isIntegralDataType( 'uint8' );
+bool = isIntegerDataType( 'uint8' );
 // returns true
 
-bool = isIntegralDataType( 'uint8c' );
+bool = isIntegerDataType( 'uint8c' );
 // returns true
 
-bool = isIntegralDataType( '' );
+bool = isIntegerDataType( '' );
 // returns false
 
-bool = isIntegralDataType( 'foo' );
+bool = isIntegerDataType( 'foo' );
 // returns false
 ```
 

@@ -18,56 +18,56 @@
 
 'use strict';
 
-var isIntegralDataType = require( './../lib' );
+var isIntegerDataType = require( './../lib' );
 
-var bool = isIntegralDataType( 'binary' );
+var bool = isIntegerDataType( 'binary' );
 console.log( bool );
 // => false
 
-bool = isIntegralDataType( 'float32' );
+bool = isIntegerDataType( 'float32' );
 console.log( bool );
 // => false
 
-bool = isIntegralDataType( 'float64' );
+bool = isIntegerDataType( 'float64' );
 console.log( bool );
 // => false
 
-bool = isIntegralDataType( 'generic' );
+bool = isIntegerDataType( 'generic' );
 console.log( bool );
 // => false
 
-bool = isIntegralDataType( 'int16' );
+bool = isIntegerDataType( 'int16' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'int32' );
+bool = isIntegerDataType( 'int32' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'int8' );
+bool = isIntegerDataType( 'int8' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'uint16' );
+bool = isIntegerDataType( 'uint16' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'uint32' );
+bool = isIntegerDataType( 'uint32' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'uint8' );
+bool = isIntegerDataType( 'uint8' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( 'uint8c' );
+bool = isIntegerDataType( 'uint8c' );
 console.log( bool );
 // => true
 
-bool = isIntegralDataType( '' );
+bool = isIntegerDataType( '' );
 console.log( bool );
 // => false
 
-bool = isIntegralDataType( 'foo' );
+bool = isIntegerDataType( 'foo' );
 console.log( bool );
 // => false

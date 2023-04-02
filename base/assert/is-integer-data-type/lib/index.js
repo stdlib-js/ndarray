@@ -19,47 +19,47 @@
 'use strict';
 
 /**
-* Test whether an input value is a supported ndarray integral data type.
+* Test whether an input value is a supported ndarray integer data type.
 *
-* @module @stdlib/ndarray/base/assert/is-integral-data-type
+* @module @stdlib/ndarray/base/assert/is-integer-data-type
 *
 * @example
-* var isIntegralDataType = require( '@stdlib/ndarray/base/assert/is-integral-data-type' );
+* var isIntegerDataType = require( '@stdlib/ndarray/base/assert/is-integer-data-type' );
 *
-* var bool = isIntegralDataType( 'binary' );
+* var bool = isIntegerDataType( 'binary' );
 * // returns false
 *
-* bool = isIntegralDataType( 'float32' );
+* bool = isIntegerDataType( 'float32' );
 * // returns false
 *
-* bool = isIntegralDataType( 'float64' );
+* bool = isIntegerDataType( 'float64' );
 * // returns false
 *
-* bool = isIntegralDataType( 'generic' );
+* bool = isIntegerDataType( 'generic' );
 * // returns false
 *
-* bool = isIntegralDataType( 'int16' );
+* bool = isIntegerDataType( 'int16' );
 * // returns true
 *
-* bool = isIntegralDataType( 'int32' );
+* bool = isIntegerDataType( 'int32' );
 * // returns true
 *
-* bool = isIntegralDataType( 'int8' );
+* bool = isIntegerDataType( 'int8' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint16' );
+* bool = isIntegerDataType( 'uint16' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint32' );
+* bool = isIntegerDataType( 'uint32' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint8' );
+* bool = isIntegerDataType( 'uint8' );
 * // returns true
 *
-* bool = isIntegralDataType( 'uint8c' );
+* bool = isIntegerDataType( 'uint8c' );
 * // returns true
 *
-* bool = isIntegralDataType( 'foo' );
+* bool = isIntegerDataType( 'foo' );
 * // returns false
 */
 

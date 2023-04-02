@@ -16,19 +16,19 @@
 * limitations under the License.
 */
 
-import isIntegralDataType = require( './index' );
+import isIntegerDataType = require( './index' );
 
 
 // TESTS //
 
 // The function returns a boolean...
 {
-	isIntegralDataType( 'binary' ); // $ExpectType boolean
-	isIntegralDataType( 'foo' ); // $ExpectType boolean
+	isIntegerDataType( 'binary' ); // $ExpectType boolean
+	isIntegerDataType( 'foo' ); // $ExpectType boolean
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	isIntegralDataType(); // $ExpectError
-	isIntegralDataType( undefined, 123 ); // $ExpectError
+	isIntegerDataType(); // $ExpectError
+	isIntegerDataType( undefined, 123 ); // $ExpectError
 }

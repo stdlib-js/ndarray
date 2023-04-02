@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var pkg = require( './../package.json' ).name;
-var isIntegralDataType = require( './../lib' );
+var isIntegerDataType = require( './../lib' );
 
 
 // MAIN //
@@ -56,7 +56,7 @@ bench( pkg, function benchmark( b ) {
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
 		v = values[ i%values.length ];
-		out = isIntegralDataType( v );
+		out = isIntegerDataType( v );
 		if ( typeof out !== 'boolean' ) {
 			b.fail( 'should return a boolean' );
 		}

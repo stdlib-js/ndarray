@@ -136,13 +136,13 @@ setReadOnly( ns, 'isFloatingPointDataType', require( './../../../base/assert/is-
 setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' ) );
 
 /**
-* @name isIntegralDataType
+* @name isIntegerDataType
 * @memberof ns
 * @readonly
 * @type {Function}
-* @see {@link module:@stdlib/ndarray/base/assert/is-integral-data-type}
+* @see {@link module:@stdlib/ndarray/base/assert/is-integer-data-type}
 */
-setReadOnly( ns, 'isIntegralDataType', require( './../../../base/assert/is-integral-data-type' ) );
+setReadOnly( ns, 'isIntegerDataType', require( './../../../base/assert/is-integer-data-type' ) );
 
 /**
 * @name isNumericDataType

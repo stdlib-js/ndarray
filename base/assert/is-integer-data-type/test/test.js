@@ -21,18 +21,18 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isIntegralDataType = require( './../lib' );
+var isIntegerDataType = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isIntegralDataType, 'function', 'main export is a function' );
+	t.strictEqual( typeof isIntegerDataType, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function returns `true` if provided a supported ndarray integral data type', function test( t ) {
+tape( 'the function returns `true` if provided a supported ndarray integer data type', function test( t ) {
 	var values;
 	var bool;
 	var i;
@@ -47,13 +47,13 @@ tape( 'the function returns `true` if provided a supported ndarray integral data
 		'int8'
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		bool = isIntegralDataType( values[ i ] );
+		bool = isIntegerDataType( values[ i ] );
 		t.strictEqual( bool, true, 'returns expected value when provided '+values[ i ] );
 	}
 	t.end();
 });
 
-tape( 'the function returns `false` if not provided a supported ndarray integral data type', function test( t ) {
+tape( 'the function returns `false` if not provided a supported ndarray integer data type', function test( t ) {
 	var values;
 	var bool;
 	var i;
@@ -87,7 +87,7 @@ tape( 'the function returns `false` if not provided a supported ndarray integral
 		function noop() {}
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		bool = isIntegralDataType( values[ i ] );
+		bool = isIntegerDataType( values[ i ] );
 		t.strictEqual( bool, false, 'returns expected value when provided '+values[ i ] );
 	}
 	t.end();
