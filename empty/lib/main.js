@@ -29,13 +29,14 @@ var emptyArray = require( '@stdlib/array/empty' );
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
 
 
 // VARIABLES //
 
-var DTYPE = 'float64';
-var ORDER = 'row-major';
+var DTYPE = defaults.get( 'dtypes.default' );
+var ORDER = defaults.get( 'order' );
 
 
 // MAIN //

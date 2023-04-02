@@ -28,13 +28,14 @@ var strides2offset = require( './../../base/strides2offset' );
 var buffer = require( './../../base/buffer' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
 
 
 // VARIABLES //
 
-var DTYPE = 'float64';
-var ORDER = 'row-major';
+var DTYPE = defaults.get( 'dtypes.default' );
+var ORDER = defaults.get( 'order' );
 
 
 // MAIN //

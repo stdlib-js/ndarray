@@ -29,8 +29,13 @@ var accessorSetter = require( '@stdlib/array/base/accessor-setter' );
 var setter = require( '@stdlib/array/base/setter' );
 var buffer = require( './../../base/buffer' );
 var ndarray = require( './../../ctor' );
+var defaults = require( './../../defaults' );
 var format = require( '@stdlib/string/format' );
-var defaults = require( './defaults.json' );
+
+
+// VARIABLES //
+
+var ORDER = defaults.get( 'order' );
 
 
 // MAIN //
@@ -94,8 +99,8 @@ function scalar2ndarray( value ) {
 
 	opts = {
 		'dtype': '',
-		'order': defaults.order,
-		'readonly': defaults.readonly
+		'order': ORDER,
+		'readonly': false
 	};
 	if ( arguments.length > 1 ) {
 		options = arguments[ 1 ];
