@@ -172,6 +172,15 @@ setReadOnly( ns, 'isOrder', require( './../../../base/assert/is-order' ) );
 setReadOnly( ns, 'isReadOnly', require( './../../../base/assert/is-read-only' ) );
 
 /**
+* @name isRealDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-real-data-type}
+*/
+setReadOnly( ns, 'isRealDataType', require( './../../../base/assert/is-real-data-type' ) );
+
+/**
 * @name isRealFloatingPointDataType
 * @memberof ns
 * @readonly

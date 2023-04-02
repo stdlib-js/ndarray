@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# resolve
+# isRealDataType
 
-> Return the policy string associated with a supported ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] value.
+> Test if an input value is a supported ndarray real-valued data type.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,28 +37,19 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var resolve = require( '@stdlib/ndarray/base/output-policy-resolve-str' );
+var isRealDataType = require( '@stdlib/ndarray/base/assert/is-real-data-type' );
 ```
 
-#### resolve( dtype )
+#### isRealDataType( value )
 
-Returns the policy string associated with an ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] value.
-
-```javascript
-var str2enum = require( '@stdlib/ndarray/base/output-policy-str2enum' );
-
-var v = resolve( 'same' );
-// returns 'same'
-
-v = resolve( str2enum( 'same' ) );
-// returns 'same'
-```
-
-If unable to resolve a policy string, the function returns `null`.
+Tests if an input `value` is a supported ndarray real-valued data type.
 
 ```javascript
-var v = resolve( 'beep' );
-// returns null
+var bool = isRealDataType( 'float32' );
+// returns true
+
+bool = isRealDataType( 'uint32' );
+// returns true
 ```
 
 </section>
@@ -82,32 +73,49 @@ var v = resolve( 'beep' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var str2enum = require( '@stdlib/ndarray/base/output-policy-str2enum' );
-var resolve = require( '@stdlib/ndarray/base/output-policy-resolve-str' );
+var isRealDataType = require( '@stdlib/ndarray/base/assert/is-real-data-type' );
 
-var v = resolve( str2enum( 'same' ) );
-// returns 'same'
+var bool = isRealDataType( 'binary' );
+// returns false
 
-v = resolve( str2enum( 'promoted' ) );
-// returns 'promoted'
+bool = isRealDataType( 'float32' );
+// returns true
 
-v = resolve( str2enum( 'signed_integer' ) );
-// returns 'signed_integer'
+bool = isRealDataType( 'float64' );
+// returns true
 
-v = resolve( str2enum( 'unsigned_integer' ) );
-// returns 'unsigned_integer'
+bool = isRealDataType( 'complex128' );
+// returns false
 
-v = resolve( str2enum( 'floating_point' ) );
-// returns 'floating_point'
+bool = isRealDataType( 'generic' );
+// returns false
 
-v = resolve( str2enum( 'integral' ) );
-// returns 'integral'
+bool = isRealDataType( 'int16' );
+// returns true
 
-v = resolve( str2enum( 'real_floating_point' ) );
-// returns 'real_floating_point'
+bool = isRealDataType( 'int32' );
+// returns true
 
-v = resolve( str2enum( 'complex_floating_point' ) );
-// returns 'complex_floating_point'
+bool = isRealDataType( 'int8' );
+// returns true
+
+bool = isRealDataType( 'uint16' );
+// returns true
+
+bool = isRealDataType( 'uint32' );
+// returns true
+
+bool = isRealDataType( 'uint8' );
+// returns true
+
+bool = isRealDataType( 'uint8c' );
+// returns true
+
+bool = isRealDataType( '' );
+// returns false
+
+bool = isRealDataType( 'foo' );
+// returns false
 ```
 
 </section>
@@ -133,8 +141,6 @@ v = resolve( str2enum( 'complex_floating_point' ) );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray/tree/main/output-dtype-policies
 
 </section>
 
