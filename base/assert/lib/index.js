@@ -91,6 +91,15 @@ setReadOnly( ns, 'isColumnMajor', require( './../../../base/assert/is-column-maj
 setReadOnly( ns, 'isColumnMajorContiguous', require( './../../../base/assert/is-column-major-contiguous' ) );
 
 /**
+* @name isComplexFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-complex-floating-point-data-type}
+*/
+setReadOnly( ns, 'isComplexFloatingPointDataType', require( './../../../base/assert/is-complex-floating-point-data-type' ) );
+
+/**
 * @name isContiguous
 * @memberof ns
 * @readonly
@@ -109,6 +118,15 @@ setReadOnly( ns, 'isContiguous', require( './../../../base/assert/is-contiguous'
 setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) );
 
 /**
+* @name isFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-floating-point-data-type}
+*/
+setReadOnly( ns, 'isFloatingPointDataType', require( './../../../base/assert/is-floating-point-data-type' ) );
+
+/**
 * @name isIndexMode
 * @memberof ns
 * @readonly
@@ -116,6 +134,24 @@ setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) 
 * @see {@link module:@stdlib/ndarray/base/assert/is-index-mode}
 */
 setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' ) );
+
+/**
+* @name isIntegralDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-integral-data-type}
+*/
+setReadOnly( ns, 'isIntegralDataType', require( './../../../base/assert/is-integral-data-type' ) );
+
+/**
+* @name isNumericDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-numeric-data-type}
+*/
+setReadOnly( ns, 'isNumericDataType', require( './../../../base/assert/is-numeric-data-type' ) );
 
 /**
 * @name isOrder
@@ -134,6 +170,15 @@ setReadOnly( ns, 'isOrder', require( './../../../base/assert/is-order' ) );
 * @see {@link module:@stdlib/ndarray/base/assert/is-read-only}
 */
 setReadOnly( ns, 'isReadOnly', require( './../../../base/assert/is-read-only' ) );
+
+/**
+* @name isRealFloatingPointDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-real-floating-point-data-type}
+*/
+setReadOnly( ns, 'isRealFloatingPointDataType', require( './../../../base/assert/is-real-floating-point-data-type' ) );
 
 /**
 * @name isRowMajor
@@ -172,6 +217,15 @@ setReadOnly( ns, 'isSafeDataTypeCast', require( './../../../base/assert/is-safe-
 setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-same-kind-data-type-cast' ) );
 
 /**
+* @name isSignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-signed-integer-data-type}
+*/
+setReadOnly( ns, 'isSignedIntegerDataType', require( './../../../base/assert/is-signed-integer-data-type' ) );
+
+/**
 * @name isSingleSegmentCompatible
 * @memberof ns
 * @readonly
@@ -179,6 +233,15 @@ setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-s
 * @see {@link module:@stdlib/ndarray/base/assert/is-single-segment-compatible}
 */
 setReadOnly( ns, 'isSingleSegmentCompatible', require( './../../../base/assert/is-single-segment-compatible' ) );
+
+/**
+* @name isUnsignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-unsigned-integer-data-type}
+*/
+setReadOnly( ns, 'isUnsignedIntegerDataType', require( './../../../base/assert/is-unsigned-integer-data-type' ) );
 
 
 // EXPORTS //
