@@ -52,6 +52,7 @@
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
     "@stdlib/blas": "github:stdlib-js/blas#main",
+    "@stdlib/console": "github:stdlib-js/console#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
     "@stdlib/random": "github:stdlib-js/random#main",
     "@stdlib/strided": "github:stdlib-js/strided#main",
