@@ -44,6 +44,8 @@ import dtypeResolveStr = require( './../../../base/dtype-resolve-str' );
 import dtypeStr2Enum = require( './../../../base/dtype-str2enum' );
 import dtype2c = require( './../../../base/dtype2c' );
 import dtypes2signatures = require( './../../../base/dtypes2signatures' );
+import empty = require( './../../../base/empty' );
+import emptyLike = require( './../../../base/empty-like' );
 import expandDimensions = require( './../../../base/expand-dimensions' );
 import scalar2ndarray = require( './../../../base/from-scalar' );
 import ind = require( './../../../base/ind' );
@@ -60,6 +62,10 @@ import nullary = require( './../../../base/nullary' );
 import nullaryLoopOrder = require( './../../../base/nullary-loop-interchange-order' );
 import nullaryBlockSize = require( './../../../base/nullary-tiling-block-size' );
 import numel = require( './../../../base/numel' );
+import outputPolicyEnum2Str = require( './../../../base/output-policy-enum2str' );
+import outputPolicyResolveEnum = require( './../../../base/output-policy-resolve-enum' );
+import outputPolicyResolveStr = require( './../../../base/output-policy-resolve-str' );
+import outputPolicyStr2Enum = require( './../../../base/output-policy-str2enum' );
 import prependSingletonDimensions = require( './../../../base/prepend-singleton-dimensions' );
 import removeSingletonDimensions = require( './../../../base/remove-singleton-dimensions' );
 import serializeMetaData = require( './../../../base/serialize-meta-data' );
@@ -73,6 +79,7 @@ import transpose = require( './../../../base/transpose' );
 import unary = require( './../../../base/unary' );
 import unaryBy = require( './../../../base/unary-by' );
 import unaryLoopOrder = require( './../../../base/unary-loop-interchange-order' );
+import unaryOutputDataType = require( './../../../base/unary-output-dtype' );
 import unaryBlockSize = require( './../../../base/unary-tiling-block-size' );
 import vind2bind = require( './../../../base/vind2bind' );
 import wrapIndex = require( './../../../base/wrap-index' );
@@ -664,6 +671,55 @@ interface Namespace {
 	dtypes2signatures: typeof dtypes2signatures;
 
 	/**
+	* Creates an uninitialized array having a specified shape and data type.
+	*
+	* @param dtype - underlying data type
+	* @param shape - array shape
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns output array
+	*
+	* @example
+	* var arr = ns.empty( 'float32', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>
+	*
+	* var sh = arr.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var dt = arr.dtype;
+	* // returns 'float32'
+	*/
+	empty: typeof empty;
+
+	/**
+	* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @returns output array
+	*
+	* @example
+	* var zeros = require( `@stdlib/ndarray/base/zeros` );
+	*
+	* var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>
+	*
+	* var sh = x.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var dt = x.dtype;
+	* // returns 'generic'
+	*
+	* var y = ns.emptyLike( x );
+	* // returns <ndarray>
+	*
+	* sh = y.shape;
+	* // returns [ 2, 2 ]
+	*
+	* dt = y.dtype;
+	* // returns 'generic'
+	*/
+	emptyLike: typeof emptyLike;
+
+	/**
 	* Expands the shape of an array by inserting a new dimension of size one at a specified axis.
 	*
 	* ## Notes
@@ -708,10 +764,11 @@ interface Namespace {
 	*
 	* @param value - scalar value
 	* @param dtype - array data type
+	* @param order - memory layout (row-major or column-major)
 	* @returns zero-dimensional ndarray
 	*
 	* @example
-	* var x = ns.scalar2ndarray( 1.0, 'generic' );
+	* var x = ns.scalar2ndarray( 1.0, 'generic', 'row-major' );
 	* // returns <ndarray>
 	*
 	* var sh = x.shape;
@@ -1242,6 +1299,69 @@ interface Namespace {
 	numel: typeof numel;
 
 	/**
+	* Returns the policy string associated with an output ndarray data type policy enumeration constant.
+	*
+	* @param policy - policy enumeration constant
+	* @returns policy string
+	*
+	* @example
+	* var str2enum = require( `@stdlib/ndarray/base/output-policy-str2enum` );
+	*
+	* var v = str2enum( 'same' );
+	* // returns <number>
+	*
+	* var policy = ns.outputPolicyEnum2Str( v );
+	* // returns 'same'
+	*/
+	outputPolicyEnum2Str: typeof outputPolicyEnum2Str;
+
+	/**
+	* Returns the enumeration constant associated with an ndarray data type policy value.
+	*
+	* ## Notes
+	*
+	* -   Downstream consumers of this function should **not** rely on specific integer values (e.g., `SAME == 0`). Instead, the function should be used in an opaque manner.
+	*
+	* @param policy - policy value
+	* @returns enumeration constant
+	*
+	* @example
+	* var v = ns.outputPolicyResolveEnum( 'same' );
+	* // returns <number>
+	*/
+	outputPolicyResolveEnum: typeof outputPolicyResolveEnum;
+
+	/**
+	* Returns the policy string associated with an output ndarray data type policy value.
+	*
+	* @param policy - policy value
+	* @returns policy string
+	*
+	* @example
+	* var str2enum = require( `@stdlib/ndarray/base/output-policy-str2enum` );
+	*
+	* var v = ns.outputPolicyResolveStr( str2enum( 'same' ) );
+	* // returns 'same'
+	*/
+	outputPolicyResolveStr: typeof outputPolicyResolveStr;
+
+	/**
+	* Returns the enumeration constant associated with an output ndarray data type policy string.
+	*
+	* ## Notes
+	*
+	* -   Downstream consumers of this function should **not** rely on specific integer values (e.g., `SAME == 0`). Instead, the function should be used in an opaque manner.
+	*
+	* @param policy - policy string
+	* @returns enumeration constant
+	*
+	* @example
+	* var v = ns.outputPolicyStr2Enum( 'same' );
+	* // returns <number>
+	*/
+	outputPolicyStr2Enum: typeof outputPolicyStr2Enum;
+
+	/**
 	* Returns an array with a specified number of prepended singleton dimensions.
 	*
 	* @param x - input array
@@ -1756,6 +1876,19 @@ interface Namespace {
 	* // returns [ 6, -2, 1 ]
 	*/
 	unaryLoopOrder: typeof unaryLoopOrder;
+
+	/**
+	* Resolves the output ndarray data type for a unary function.
+	*
+	* @param dtype - input ndarray data type
+	* @param policy - output ndarray data type policy
+	* @returns output ndarray data type
+	*
+	* @example
+	* var dt = ns.unaryOutputDataType( 'float64', 'complex_floating_point' );
+	* // returns <string>
+	*/
+	unaryOutputDataType: typeof unaryOutputDataType;
 
 	/**
 	* Returns a loop block size for multi-dimensional array tiled loops.
