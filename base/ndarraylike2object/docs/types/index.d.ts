@@ -16,12 +16,11 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 2.0
+// TypeScript Version: 4.1
 
 /// <reference types="@stdlib/types"/>
 
 import { ndarray } from '@stdlib/types/ndarray';
-import { Collection } from '@stdlib/types/object';
 
 // FIXME: we can improve specificity here by retaining type information from the wrapped ndarray. See `@stdlib/array/base/arraylike2object` which types specialized objects depending on the input array data type.
 
