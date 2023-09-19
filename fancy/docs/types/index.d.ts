@@ -45,11 +45,11 @@ interface Options {
 }
 
 /**
-* Interface defining a ndarray constructor which is both "newable" and "callable".
+* Interface defining a FancyArray constructor which is both "newable" and "callable".
 */
 interface Constructor {
 	/**
-	* ndarray constructor.
+	* Fancy array constructor.
 	*
 	* @param dtype - data type
 	* @param buffer - data buffer
@@ -71,7 +71,7 @@ interface Constructor {
 	* @throws `buffer` argument must be compatible with specified meta data
 	* @throws must provide valid options
 	* @throws too many dimensions
-	* @returns ndarray instance
+	* @returns an ndarray
 	*
 	* @example
 	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -79,12 +79,12 @@ interface Constructor {
 	* var strides = [ 2, 1 ];
 	* var offset = 0;
 	*
-	* var out = new ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	* var out = new FancyArray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
 	new ( dtype: DataType, buffer: Collection | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray;
 
 	/**
-	* ndarray constructor.
+	* Fancy array constructor.
 	*
 	* @param dtype - data type
 	* @param buffer - data buffer
@@ -106,7 +106,7 @@ interface Constructor {
 	* @throws `buffer` argument must be compatible with specified meta data
 	* @throws must provide valid options
 	* @throws too many dimensions
-	* @returns ndarray instance
+	* @returns an ndarray
 	*
 	* @example
 	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -114,13 +114,13 @@ interface Constructor {
 	* var strides = [ 2, 1 ];
 	* var offset = 0;
 	*
-	* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	* var out = FancyArray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
 	( dtype: DataType, buffer: Collection | Buffer, shape: Shape, strides: Strides, offset: number, order: Order, options?: Options ): ndarray;
 }
 
 /**
-* ndarray constructor.
+* Fancy array constructor.
 *
 * @param dtype - data type
 * @param buffer - data buffer
@@ -142,7 +142,7 @@ interface Constructor {
 * @throws `buffer` argument must be compatible with specified meta data
 * @throws must provide valid options
 * @throws too many dimensions
-* @returns ndarray instance
+* @returns an ndarray
 *
 * @example
 * var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
@@ -150,7 +150,7 @@ interface Constructor {
 * var strides = [ 2, 1 ];
 * var offset = 0;
 *
-* var out = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+* var out = new FancyArray( 'generic', buffer, shape, strides, offset, 'row-major' );
 */
 declare var ctor: Constructor;
 
