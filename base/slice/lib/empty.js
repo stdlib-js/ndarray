@@ -20,9 +20,9 @@
 
 // MODULES //
 
-var buffer = require( './../../base/buffer' );
+var buffer = require( './../../../base/buffer' );
 var zeros = require( '@stdlib/array/base/zeros' );
-var options = require( './array_options.js' );
+var options = require( './options.js' );
 
 
 // MAIN //

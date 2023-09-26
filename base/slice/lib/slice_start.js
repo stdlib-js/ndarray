@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var sub2ind = require( './../../base/sub2ind' );
+var sub2ind = require( './../../../base/sub2ind' );
 
 
 // MAIN //

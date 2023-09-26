@@ -491,6 +491,15 @@ setReadOnly( ns, 'shape2strides', require( './../../base/shape2strides' ) );
 setReadOnly( ns, 'singletonDimensions', require( './../../base/singleton-dimensions' ) );
 
 /**
+* @name slice
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/slice}
+*/
+setReadOnly( ns, 'slice', require( './../../base/slice' ) );
+
+/**
 * @name strides2offset
 * @memberof ns
 * @readonly
