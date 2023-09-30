@@ -20,49 +20,35 @@
 
 // MODULES //
 
-var isFunction = require( '@stdlib/assert/is-function' );
 var trim = require( '@stdlib/string/base/trim' );
 var replace = require( '@stdlib/string/base/replace' );
 var MultiSlice = require( '@stdlib/slice/multi' );
 var str2multislice = require( '@stdlib/slice/base/str2multislice' );
 var seq2multislice = require( '@stdlib/slice/base/seq2multislice' );
 var str2slice = require( '@stdlib/slice/base/str2slice' );
-var slice = require( './../../base/slice' );
 var format = require( '@stdlib/string/format' );
-var errMessage = require( './error_message.js' );
-var errConstructor = require( './error_constructor.js' );
-var hasProperty = require( './has_property.js' );
 var RE_INTEGER = require( './re_integer.js' );
-var RE_SUBSEQ = require( './re_subseq.js' );
 
 
 // MAIN //
 
 /**
-* Trap for retrieving property values.
+* Converts a one-dimensional ndarray indexing expression to a slice.
 *
 * @private
 * @param {Object} target - target object
-* @param {(string|symbol)} property - property name
-* @param {Object} receiver - the proxy object or an object inheriting from the proxy
+* @param {string} property - property name
+* @param {boolean} strict - boolean indicating whether to enforce strict bounds checking
 * @throws {Error} invalid slice operation
 * @throws {RangeError} number of slice dimensions must match the number of array dimensions
-* @returns {*} result
+* @returns {MultiSlice} multi-slice object
 */
-function get( target, property, receiver ) { // eslint-disable-line stdlib/jsdoc-require-throws-tags
-	var value;
+function prop2slice( target, property, strict ) {
 	var shape;
 	var prop;
 	var ch;
-	var E;
 	var s;
-	if ( hasProperty( property ) ) {
-		value = target[ property ];
-		if ( isFunction( value ) ) {
-			return wrapper;
-		}
-		return value;
-	}
+
 	prop = trim( property );
 
 	// Retrieve the first character in order to to detect how a slice operation was specified:
@@ -94,8 +80,8 @@ function get( target, property, receiver ) { // eslint-disable-line stdlib/jsdoc
 		// Create a multi-slice:
 		s = new MultiSlice( s );
 	}
-	// Case: subsequence string (e.g., ':10,1,::-1,:,-5,2::3')
-	else if ( RE_SUBSEQ.test( prop ) ) {
+	// Case: subsequence string
+	else if ( prop.length > 0 ) {
 		shape = target.shape;
 		s = seq2multislice( prop, shape, true );
 		if ( s.code ) {
@@ -108,44 +94,27 @@ function get( target, property, receiver ) { // eslint-disable-line stdlib/jsdoc
 			if ( s.code === 'ERR_SLICE_INVALID_SUBSEQUENCE' ) {
 				throw new Error( format( 'invalid operation. Unsupported slice operation. Value: `%s`.', property ) );
 			}
-			// s.code === 'ERR_SLICE_TOO_MANY_DIMENSIONS'
-			throw new RangeError( format( 'invalid operation. Number of slice dimensions does not match the number of array dimensions. Array shape: (%s). Slice dimensions: %u.', shape.join( ',' ), replace( prop, /\.\.\.,/, '' ).split( ',' ).length ) );
+			if ( s.code === 'ERR_SLICE_TOO_MANY_DIMENSIONS' ) {
+				throw new RangeError( format( 'invalid operation. Number of slice dimensions does not match the number of array dimensions. Array shape: (%s). Slice dimensions: %u.', target.shape.join( ',' ), replace( prop, /\.\.\.,/, '' ).split( ',' ).length ) );
+			}
+			// NOTE: the following error check must come last due to fall-through when in non-strict mode...
+			if ( s.code === 'ERR_SLICE_OUT_OF_BOUNDS' ) {
+				if ( strict ) {
+					throw new RangeError( format( 'invalid operation. Slice exceeds array bounds. Array shape: (%s).', shape.join( ',' ) ) );
+				}
+				// Repeat parsing, this time allowing for out-of-bounds slices:
+				s = seq2multislice( prop, shape, false );
+			}
 		}
 	}
-	// Case: empty string or ellipsis
-	else if ( prop.length === 0 || prop === '...' ) {
-		s = new MultiSlice();
-	}
-	// Case: non-empty string
+	// Case: empty string
 	else {
-		throw new Error( format( 'invalid operation. Unsupported slice operation. Value: `%s`.', property ) );
+		throw new RangeError( format( 'invalid operation. Number of slice dimensions does not match the number of array dimensions. Array shape: (%s). Slice dimensions: %u.', target.shape.join( ',' ), 0 ) );
 	}
-	try {
-		return slice( receiver, s, true );
-	} catch ( err ) {
-		E = errConstructor( err );
-		throw new E( errMessage( err.message ) );
-	}
-
-	/**
-	* Method wrapper.
-	*
-	* @private
-	* @returns {*} results
-	*/
-	function wrapper() {
-		var args;
-		var i;
-
-		args = [];
-		for ( i = 0; i < arguments.length; i++ ) {
-			args.push( arguments[ i ] );
-		}
-		return value.apply( ( this === receiver ) ? target : this, args ); // eslint-disable-line no-invalid-this
-	}
+	return s;
 }
 
 
 // EXPORTS //
 
-module.exports = get;
+module.exports = prop2slice;

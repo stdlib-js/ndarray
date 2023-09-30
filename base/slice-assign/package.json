@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/ndarray/base/slice",
+  "name": "@stdlib/ndarray/base/slice-assign",
   "version": "0.0.0",
-  "description": "Return a view of an input ndarray.",
+  "description": "Assign element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -60,6 +60,10 @@
     "matrix",
     "slice",
     "view",
-    "copy"
+    "copy",
+    "assign",
+    "assignment",
+    "setitem",
+    "set"
   ]
 }

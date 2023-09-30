@@ -500,6 +500,15 @@ setReadOnly( ns, 'singletonDimensions', require( './../../base/singleton-dimensi
 setReadOnly( ns, 'slice', require( './../../base/slice' ) );
 
 /**
+* @name sliceAssign
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/slice-assign}
+*/
+setReadOnly( ns, 'sliceAssign', require( './../../base/slice-assign' ) );
+
+/**
 * @name strides2offset
 * @memberof ns
 * @readonly
