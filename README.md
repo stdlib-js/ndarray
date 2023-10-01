@@ -85,7 +85,7 @@ The namespace exports the following functions to create multidimensional arrays:
 
 The namespace contains the following sub-namespaces:
 
-<!-- <toc pattern="base"> -->
+<!-- <toc pattern="+(base|iter)"> -->
 
 <div class="namespace-toc">
 
