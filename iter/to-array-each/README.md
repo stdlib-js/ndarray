@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# nditerRows
+# nditer2arrayEach
 
-> Create an iterator which iterates over each row in a matrix (or stack of matrices).
+> Create an iterator which [converts][@stdlib/ndarray/to-array] each iterated [`ndarray`][@stdlib/ndarray/ctor] to a generic array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,70 +37,32 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var nditerRows = require( '@stdlib/ndarray/iter/rows' );
+var nditer2arrayEach = require( '@stdlib/ndarray/iter/to-array-each' );
 ```
 
-#### nditerRows( x\[, options] )
+#### nditer2arrayEach( iterator )
 
-Returns an iterator which iterates over each row in a matrix (or stack of matrices).
+Returns an iterator which [converts][@stdlib/ndarray/to-array] each iterated [`ndarray`][@stdlib/ndarray/ctor] to a generic array (which may include nested arrays).
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
+var nditerRows = require( '@stdlib/ndarray/iter/rows' );
 
 var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 // returns <ndarray>
 
-var iter = nditerRows( x );
+var iter = nditer2arrayEach( nditerRows( x ) );
 
 var v = iter.next().value;
-// returns <ndarray>
-
-var arr = ndarray2array( v );
 // returns [ 1, 2 ]
 
 v = iter.next().value;
-// returns <ndarray>
-
-arr = ndarray2array( v );
 // returns [ 3, 4 ]
 
 v = iter.next().value;
-// returns <ndarray>
-
-arr = ndarray2array( v );
 // returns [ 5, 6 ]
 
 // ...
-```
-
-The function accepts the following `options`:
-
--   **readonly**: boolean indicating whether returned [`ndarray`][@stdlib/ndarray/ctor] views should be read-only. Default: `true`.
-
-By default, the iterator returns [`ndarray`][@stdlib/ndarray/ctor] views which are **read-only**. To return writable [views][@stdlib/ndarray/slice], set the `readonly` option to `false`.
-
-```javascript
-var array = require( '@stdlib/ndarray/array' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
-
-var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
-// returns <ndarray>
-
-var iter = nditerRows( x, {
-    'readonly': false
-});
-
-var v = iter.next().value;
-// returns <ndarray>
-
-var arr = ndarray2array( v );
-// returns [ 1, 2 ]
-
-v.set( 0, 10 );
-
-arr = ndarray2array( v );
-// returns [ 10, 2 ]
 ```
 
 The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the following properties:
@@ -118,9 +80,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 ## Notes
 
--   If an environment supports `Symbol.iterator`, the returned iterator is iterable.
--   A returned iterator does **not** copy a provided [`ndarray`][@stdlib/ndarray/ctor]. To ensure iterable reproducibility, copy the input [`ndarray`][@stdlib/ndarray/ctor] **before** creating an iterator. Otherwise, any changes to the contents of input [`ndarray`][@stdlib/ndarray/ctor] will be reflected in the returned iterator.
--   In environments supporting `Symbol.iterator`, the function **explicitly** does **not** invoke an ndarray's `@@iterator` method, regardless of whether this method is defined.
+-   If an environment supports `Symbol.iterator` **and** a provided [iterator][mdn-iterator-protocol] is iterable, the returned [iterator][mdn-iterator-protocol] is iterable.
 
 </section>
 
@@ -137,16 +97,16 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
-var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var nditerRows = require( '@stdlib/ndarray/iter/rows' );
+var nditer2arrayEach = require( '@stdlib/ndarray/iter/to-array-each' );
 
 // Define an input array:
 var x = array( zeroTo( 27 ), {
     'shape': [ 3, 3, 3 ]
 });
 
-// Create an iterator for iterating over rows:
-var it = nditerRows( x );
+// Create an iterator for iterating over rows and converting to generic arrays:
+var it = nditer2arrayEach( nditerRows( x ) );
 
 // Perform manual iteration...
 var v;
@@ -155,7 +115,7 @@ while ( true ) {
     if ( v.done ) {
         break;
     }
-    console.log( ndarray2array( v.value ) );
+    console.log( v.value );
 }
 ```
 
@@ -187,7 +147,7 @@ while ( true ) {
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
-[@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray/tree/main/slice
+[@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
 
 </section>
 

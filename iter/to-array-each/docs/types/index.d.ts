@@ -27,57 +27,39 @@ import { ndarray } from '@stdlib/types/ndarray';
 type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 
 /**
-* Interface defining function options.
-*/
-interface Options {
-	/**
-	* Boolean indicating whether returned views should be read-only (default: true).
-	*/
-	readonly?: boolean;
-}
-
-/**
-* Returns an iterator which iterates over each row in a matrix (or stack of matrices).
+* Returns an iterator which converts each iterated ndarray to a generic array.
 *
-* @param x - input value
-* @param options - function options
-* @param options.readonly - boolean indicating whether returned views should be read-only
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator` and a provided iterator is iterable, the returned iterator is iterable.
+*
+* @param iterator - input iterator
 * @returns iterator
 *
 * @example
 * var array = require( `@stdlib/ndarray/array` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
+* var nditerRows = require( `@stdlib/ndarray/iter/rows` );
 *
-* var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ], {
-*     'dtype': 'float64'
-* });
+* var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>
 *
-* var iter = nditerRows( x );
+* var iter = nditer2arrayEach( nditerRows( x ) );
 *
 * var v = iter.next().value;
-* // returns <ndarray>
-*
-* var arr = ndarray2array( v );
 * // returns [ 1, 2 ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
-*
-* arr = ndarray2array( v );
 * // returns [ 3, 4 ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
-*
-* arr = ndarray2array( v );
 * // returns [ 5, 6 ]
 *
 * // ...
 */
-declare function nditerRows( src: ndarray, options?: Options ): Iterator<ndarray>;
+declare function nditer2arrayEach<T = unknown>( iterator: Iterator<ndarray> ): Iterator<Array<T>>; // tslint:disable-line:no-unnecessary-generics
 
 
 // EXPORTS //
 
-export = nditerRows;
+export = nditer2arrayEach;
