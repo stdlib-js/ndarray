@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var array = require( './../../../array' );
+var array = require( './../../array' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var pkg = require( './../package.json' ).name;
 var broadcastArray = require( './../lib' );
