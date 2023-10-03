@@ -50,7 +50,8 @@
     "@stdlib/string": "github:stdlib-js/string#main",
     "@stdlib/symbol": "github:stdlib-js/symbol#main",
     "@stdlib/types": "github:stdlib-js/types#main",
-    "@stdlib/utils": "github:stdlib-js/utils#main"
+    "@stdlib/utils": "github:stdlib-js/utils#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
