@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { TypedIterator, TypedIterableIterator } from '@stdlib/types/iter';
-import { ndarray } from '@stdlib/types/ndarray';
+import { Shape, Order } from '@stdlib/types/ndarray';
 
 // Define a union type representing both iterable and non-iterable iterators:
 type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
@@ -31,53 +31,47 @@ type Iterator<T> = TypedIterator<T> | TypedIterableIterator<T>;
 */
 interface Options {
 	/**
-	* Boolean indicating whether returned views should be read-only (default: true).
+	* Index iteration order.
+	*
+	* ## Notes
+	*
+	* -   By default, the returned iterator iterates over the last dimensions first, thus corresponding to iteration over contiguous data stored in row-major order.
 	*/
-	readonly?: boolean;
+	order?: Order;
 }
 
 /**
-* Returns an iterator which iterates over each row in a matrix (or stack of matrices).
+* Returns an iterator which returns indices for use indexing into an ndarray having a specified shape.
 *
-* @param x - input value
+* @param shape - input shape
 * @param options - function options
-* @param options.readonly - boolean indicating whether returned views should be read-only
+* @param options.order - index iteration order
 * @returns iterator
 *
 * @example
 * var array = require( `@stdlib/ndarray/array` );
-* var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ], {
 *     'dtype': 'float64'
 * });
 * // returns <ndarray>
 *
-* var iter = nditerRows( x );
+* var iter = nditerIndices( x.shape );
 *
 * var v = iter.next().value;
-* // returns <ndarray>
-*
-* var arr = ndarray2array( v );
-* // returns [ 1, 2 ]
+* // returns [ 0, 0, 0 ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
-*
-* arr = ndarray2array( v );
-* // returns [ 3, 4 ]
+* // returns [ 0, 0, 1 ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
-*
-* arr = ndarray2array( v );
-* // returns [ 5, 6 ]
+* // returns [ 0, 1, 0 ]
 *
 * // ...
 */
-declare function nditerRows( x: ndarray, options?: Options ): Iterator<ndarray>;
+declare function nditerIndices( shape: Shape, options?: Options ): Iterator<Array<number>>;
 
 
 // EXPORTS //
 
-export = nditerRows;
+export = nditerIndices;
