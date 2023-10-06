@@ -81,6 +81,15 @@ setReadOnly( ns, 'nditerRows', require( './../../iter/rows' ) );
 */
 setReadOnly( ns, 'nditer2arrayEach', require( './../../iter/to-array-each' ) );
 
+/**
+* @name nditerValues
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/values}
+*/
+setReadOnly( ns, 'nditerValues', require( './../../iter/values' ) );
+
 
 // EXPORTS //
 

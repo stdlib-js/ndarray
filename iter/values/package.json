@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/ndarray/iter/indices",
+  "name": "@stdlib/ndarray/iter/values",
   "version": "0.0.0",
-  "description": "Create an iterator which returns indices for use indexing into an ndarray having a specified shape.",
+  "description": "Create an iterator which returns individual elements from a provided ndarray.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -65,7 +65,12 @@
     "iterate",
     "iteration",
     "iter",
-    "subscripts",
-    "ndindex"
+    "entries",
+    "elements",
+    "element-wise",
+    "flatten",
+    "flat",
+    "enumerate",
+    "ndenumerate"
   ]
 }
