@@ -46,6 +46,15 @@ var ns = {};
 setReadOnly( ns, 'nditerColumns', require( './../../iter/columns' ) );
 
 /**
+* @name nditerEntries
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/entries}
+*/
+setReadOnly( ns, 'nditerEntries', require( './../../iter/entries' ) );
+
+/**
 * @name nditerIndices
 * @memberof ns
 * @readonly
