@@ -365,6 +365,15 @@ setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buf
 setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object' ) );
 
 /**
+* @name nextCartesianIndex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/next-cartesian-index}
+*/
+setReadOnly( ns, 'nextCartesianIndex', require( './../../base/next-cartesian-index' ) );
+
+/**
 * @name nonsingletonDimensions
 * @memberof ns
 * @readonly
