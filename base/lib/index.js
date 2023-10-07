@@ -500,6 +500,15 @@ setReadOnly( ns, 'removeSingletonDimensions', require( './../../base/remove-sing
 setReadOnly( ns, 'serializeMetaData', require( './../../base/serialize-meta-data' ) );
 
 /**
+* @name shape
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/shape}
+*/
+setReadOnly( ns, 'shape', require( './../../base/shape' ) );
+
+/**
 * @name shape2strides
 * @memberof ns
 * @readonly
