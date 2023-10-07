@@ -365,6 +365,15 @@ setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buf
 setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object' ) );
 
 /**
+* @name ndims
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ndims}
+*/
+setReadOnly( ns, 'ndims', require( './../../base/ndims' ) );
+
+/**
 * @name nextCartesianIndex
 * @memberof ns
 * @readonly
