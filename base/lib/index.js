@@ -428,6 +428,15 @@ setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block
 setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
+* @name offset
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/offset}
+*/
+setReadOnly( ns, 'offset', require( './../../base/offset' ) );
+
+/**
 * @name outputPolicyEnum2Str
 * @memberof ns
 * @readonly
