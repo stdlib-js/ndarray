@@ -545,6 +545,15 @@ setReadOnly( ns, 'slice', require( './../../base/slice' ) );
 setReadOnly( ns, 'sliceAssign', require( './../../base/slice-assign' ) );
 
 /**
+* @name strides
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/strides}
+*/
+setReadOnly( ns, 'strides', require( './../../base/strides' ) );
+
+/**
 * @name strides2offset
 * @memberof ns
 * @readonly
