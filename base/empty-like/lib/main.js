@@ -23,6 +23,9 @@
 var shape2strides = require( './../../../base/shape2strides' );
 var strides2offset = require( './../../../base/strides2offset' );
 var numel = require( './../../../base/numel' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getOrder = require( './../../../base/order' );
 var emptyArray = require( '@stdlib/array/empty' );
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
 
@@ -60,9 +63,9 @@ function emptyLike( x ) {
 	var st;
 	var dt;
 
-	dt = x.dtype;
-	sh = x.shape;
-	ord = x.order;
+	dt = getDType( x );
+	sh = getShape( x );
+	ord = getOrder( x );
 
 	ndims = sh.length;
 	if ( ndims > 0 ) {
