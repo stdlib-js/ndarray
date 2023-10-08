@@ -545,6 +545,15 @@ setReadOnly( ns, 'slice', require( './../../base/slice' ) );
 setReadOnly( ns, 'sliceAssign', require( './../../base/slice-assign' ) );
 
 /**
+* @name sliceDimension
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/slice-dimension}
+*/
+setReadOnly( ns, 'sliceDimension', require( './../../base/slice-dimension' ) );
+
+/**
 * @name strides
 * @memberof ns
 * @readonly
