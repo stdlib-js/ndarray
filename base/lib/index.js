@@ -176,6 +176,15 @@ setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 
 /**
+* @name dtype
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype}
+*/
+setReadOnly( ns, 'dtype', require( './../../base/dtype' ) );
+
+/**
 * @name dtypeChar
 * @memberof ns
 * @readonly

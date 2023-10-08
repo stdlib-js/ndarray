@@ -20,56 +20,45 @@
 
 // MODULES //
 
-var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
-var isCollection = require( '@stdlib/assert/is-collection' );
-var strides2offset = require( './../../base/strides2offset' );
+var isDataType = require( './../../base/assert/is-data-type' );
 var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
 
 /**
-* Returns the index offset specifying the underlying buffer index of the first iterated ndarray element.
+* Returns the data type of a provided ndarray.
 *
 * @param {ndarrayLike} x - input ndarray
-* @throws {TypeError} must provide an ndarray
-* @returns {NonNegativeInteger} index offset
+* @throws {TypeError} must provide an ndarray having a supported data type
+* @returns {string} data type
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
-* var n = offset( zeros( [ 3, 3, 3 ] ) );
-* // returns 0
+* var x = zeros( [ 3, 3, 3 ], {
+*     'dtype': 'float64'
+* });
+*
+* var dt = dtype( x );
+* // returns 'float64'
 */
-function offset( x ) {
-	var st;
-	var sh;
-	var n;
+function dtype( x ) {
+	var dt;
 
 	// Note: we intentionally avoid rigorous ndarray checks to minimize performance impacts. This obviously means that non-ndarray-like objects can sneak through, but this is likely all right for the purposes of this function...
 	if ( typeof x !== 'object' || x === null ) {
 		throw new TypeError( format( 'invalid argument. Must provide an ndarray. Value: `%s`.', x ) );
 	}
-	n = x.offset;
-	if ( isNonNegativeInteger( n ) ) {
-		return n;
+	dt = x.dtype;
+	if ( isDataType( dt ) ) {
+		return dt;
 	}
-	sh = x.shape;
-	if ( !isCollection( sh ) ) {
-		throw new TypeError( format( 'invalid argument. Must provide an ndarray. Value: `%s`.', x ) );
-	}
-	st = x.strides;
-	if ( sh.length === 0 || !isCollection( st ) ) {
-		return 0;
-	}
-	n = strides2offset( sh, st );
-	if ( isNonNegativeInteger( n ) ) {
-		return n;
-	}
-	throw new TypeError( format( 'invalid argument. Must provide an ndarray. Value: `%s`.', x ) );
+	// A data type is essential for interpreting the memory associated with an ndarray object, so no fallbacks or workarounds for data type resolution...
+	throw new TypeError( format( 'invalid argument. Must provide an ndarray having a supported data type. Value: `%s`.', dt ) );
 }
 
 
 // EXPORTS //
 
-module.exports = offset;
+module.exports = dtype;

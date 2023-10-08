@@ -18,46 +18,29 @@
 
 'use strict';
 
-// MODULES //
-
-var strides2offset = require( './../../../base/strides2offset' );
-
-
 // MAIN //
 
 /**
-* Returns the index offset specifying the underlying buffer index of the first iterated ndarray element.
+* Returns the data type of a provided ndarray.
 *
 * @param {ndarrayLike} x - input ndarray
-* @returns {NonNegativeInteger} index offset
+* @returns {string} data type
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
-* var n = offset( zeros( [ 3, 3, 3 ] ) );
-* // returns 0
+* var x = zeros( [ 3, 3, 3 ], {
+*     'dtype': 'float64'
+* });
+*
+* var dt = dtype( x );
+* // returns 'float64'
 */
-function offset( x ) {
-	var st;
-	var sh;
-	var o;
-
-	o = x.offset;
-	if ( typeof o === 'number' ) {
-		return o;
-	}
-	sh = x.shape;
-	if ( sh.length === 0 ) {
-		return 0;
-	}
-	st = x.strides;
-	if ( typeof st !== 'object' || st === null ) {
-		return 0;
-	}
-	return strides2offset( sh, st );
+function dtype( x ) {
+	return x.dtype;
 }
 
 
 // EXPORTS //
 
-module.exports = offset;
+module.exports = dtype;
