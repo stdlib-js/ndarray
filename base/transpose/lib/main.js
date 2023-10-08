@@ -21,6 +21,11 @@
 // MODULES //
 
 var strides2offset = require( './../../../base/strides2offset' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getStrides = require( './../../../base/strides' );
+var getOrder = require( './../../../base/order' );
+var getData = require( './../../../base/data-buffer' );
 
 
 // MAIN //
@@ -59,12 +64,12 @@ function transpose( x ) {
 	var st;
 	var N;
 
-	sh = x.shape;   // WARNING: we assume that `sh` is a copy, which is true of `ndarray` instances!
+	sh = getShape( x, true );
 	N = sh.length;
 	if ( N < 2 ) {
 		throw new Error( 'invalid argument. Must provide an ndarray having two or more dimensions.' );
 	}
-	st = x.strides; // WARNING: we assume that `st` is a copy, which is true of `ndarray` instances!
+	st = getStrides( x, true );
 
 	tmp = sh[ N-2 ];
 	sh[ N-2 ] = sh[ N-1 ];
@@ -74,7 +79,8 @@ function transpose( x ) {
 	st[ N-2 ] = st[ N-1 ];
 	st[ N-1 ] = tmp;
 
-	return new x.constructor( x.dtype, x.data, sh, st, strides2offset( sh, st ), x.order ); // eslint-disable-line max-len
+	// FIXME: handling of offset seems incorrect. Should also handle READ-ONLY arrays.
+	return new x.constructor( getDType( x ), getData( x ), sh, st, strides2offset( sh, st ), getOrder( x ) ); // eslint-disable-line max-len
 }
 
 

@@ -28,6 +28,11 @@ var bytesPerElement = require( './../../../base/bytes-per-element' );
 var dtypes = require( './../../../dtypes' ).enum;
 var orders = require( './../../../orders' ).enum;
 var modes = require( './../../../index-modes' ).enum;
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getStrides = require( './../../../base/strides' );
+var getOffset = require( './../../../base/offset' );
+var getOrder = require( './../../../base/order' );
 
 
 // VARIABLES //
@@ -142,9 +147,9 @@ function serialize( x ) {
 		return x.__array_meta_dataview__(); // eslint-disable-line no-underscore-dangle
 	}
 	// Extract meta data known to be attached to ndarray-like objects:
-	dt = x.dtype;
-	sh = x.shape;
-	st = x.strides;
+	dt = getDType( x );
+	sh = getShape( x, false );
+	st = getStrides( x, false );
 	N = sh.length; // ndims
 
 	// Extract meta data which may be available on ndarray-like objects (e.g., stdlib ndarray instances):
@@ -183,11 +188,11 @@ function serialize( x ) {
 	}
 	// Offset: (byteoffset: 11+(ndims*16); bytelength: 8)
 	o += s;
-	v.setBigInt64( o, BigInt( x.offset*nbytes ), IS_LITTLE_ENDIAN );
+	v.setBigInt64( o, BigInt( getOffset( x )*nbytes ), IS_LITTLE_ENDIAN );
 
 	// Order: (byteoffset: 19+(ndims*16); bytelength: 1)
 	o += 8;
-	v.setInt8( o, ORDERS[ x.order ] );
+	v.setInt8( o, ORDERS[ getOrder( x ) ] );
 
 	// Index mode: (byteoffset: 20+(ndims*16); bytelength: 1)
 	o += 1;

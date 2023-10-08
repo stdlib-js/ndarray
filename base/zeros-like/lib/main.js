@@ -23,8 +23,11 @@
 var shape2strides = require( './../../../base/shape2strides' );
 var strides2offset = require( './../../../base/strides2offset' );
 var buffer = require( './../../../base/buffer' );
-var format = require( '@stdlib/string/format' );
 var numel = require( './../../../base/numel' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getOrder = require( './../../../base/order' );
+var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
@@ -60,9 +63,9 @@ function zerosLike( x ) {
 	var st;
 	var dt;
 
-	dt = x.dtype;
-	sh = x.shape;
-	ord = x.order;
+	dt = getDType( x );
+	sh = getShape( x, true );
+	ord = getOrder( x );
 
 	ndims = sh.length;
 	if ( ndims > 0 ) {

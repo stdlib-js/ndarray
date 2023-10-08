@@ -31,6 +31,8 @@ var identity = require( '@stdlib/utils/identity-function' ); // TODO: remove onc
 var castReturn = require( '@stdlib/complex/base/cast-return' );
 var complexCtors = require( '@stdlib/complex/ctors' );
 var slice = require( './../../../base/slice' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -99,8 +101,8 @@ function sliceAssign( x, y, s, strict ) {
 	var xdt;
 	var ydt;
 
-	xdt = x.dtype;
-	ydt = y.dtype;
+	xdt = getDType( x );
+	ydt = getDType( y );
 
 	// Safe casts are always allowed...
 	if ( isSafeCast( xdt, ydt ) ) {
@@ -124,7 +126,7 @@ function sliceAssign( x, y, s, strict ) {
 	view = slice( y, s, strict, true );
 
 	// Broadcast the input array:
-	x = broadcast( x, view.shape );
+	x = broadcast( x, getShape( view, true ) );
 
 	// Set elements from `x` in `y`:
 	unary( [ x, view ], fcn );
