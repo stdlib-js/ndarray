@@ -21,6 +21,7 @@
 // MODULES //
 
 var broadcast = require( './../../../base/broadcast-array' );
+var getShape = require( './../../../base/shape' );
 
 
 // MAIN //
@@ -88,7 +89,7 @@ function maybeBroadcastArray( arr, shape ) {
 	var i;
 
 	N = shape.length;
-	sh = arr.shape;
+	sh = getShape( arr );
 
 	// Check whether we need to broadcast the input array...
 	if ( sh.length === N ) {

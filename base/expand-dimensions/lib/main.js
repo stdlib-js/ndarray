@@ -21,6 +21,12 @@
 // MODULES //
 
 var isReadOnly = require( './../../../base/assert/is-read-only' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getStrides = require( './../../../base/strides' );
+var getOffset = require( './../../../base/offset' );
+var getOrder = require( './../../../base/order' );
+var getData = require( './../../../base/data-buffer' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -74,9 +80,9 @@ function expandDimensions( x, axis ) {
 	var N;
 	var i;
 
-	sh = x.shape;
-	st = x.strides;
-	ord = x.order;
+	sh = getShape( x );
+	st = getStrides( x );
+	ord = getOrder( x );
 	N = sh.length;
 
 	strides = [];
@@ -130,11 +136,11 @@ function expandDimensions( x, axis ) {
 	}
 	if ( isReadOnly( x ) ) {
 		// If provided a read-only view, the returned array should also be read-only...
-		return new x.constructor( x.dtype, x.data, shape, strides, x.offset, x.order, { // eslint-disable-line max-len
+		return new x.constructor( getDType( x ), getData( x ), shape, strides, getOffset( x ), ord, { // eslint-disable-line max-len
 			'readonly': true
 		});
 	}
-	return new x.constructor( x.dtype, x.data, shape, strides, x.offset, x.order ); // eslint-disable-line max-len
+	return new x.constructor( getDType( x ), getData( x ), shape, strides, getOffset( x ), ord ); // eslint-disable-line max-len
 }
 
 
