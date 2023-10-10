@@ -27,6 +27,9 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var shape2strides = require( './../../base/shape2strides' );
 var strides2offset = require( './../../base/strides2offset' );
 var numel = require( './../../base/numel' );
+var getDType = require( './../../dtype' );
+var getShape = require( './../../shape' );
+var getOrder = require( './../../order' );
 var ndarray = require( './../../ctor' );
 var emptyArray = require( '@stdlib/array/empty' );
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
@@ -91,7 +94,7 @@ function emptyLike( x ) {
 		if ( hasOwnProp( options, 'dtype' ) ) {
 			dtype = options.dtype;
 		} else {
-			dtype = x.dtype;
+			dtype = getDType( x );
 		}
 		if ( hasOwnProp( options, 'shape' ) ) {
 			sh = options.shape;
@@ -102,12 +105,12 @@ function emptyLike( x ) {
 				throw new TypeError( format( 'invalid option. `%s` option must be a nonnegative integer or an array of nonnegative integers. Option: `%s`.', 'shape', sh ) );
 			}
 		} else {
-			sh = x.shape;
+			sh = getShape( x );
 		}
 		if ( hasOwnProp( options, 'order' ) ) {
 			order = options.order;
 		} else {
-			order = x.order;
+			order = getOrder( x );
 		}
 		if ( hasOwnProp( options, 'mode' ) ) {
 			opts.mode = options.mode;
@@ -116,9 +119,9 @@ function emptyLike( x ) {
 			opts.submode = options.submode;
 		}
 	} else {
-		dtype = x.dtype;
-		sh = x.shape;
-		order = x.order;
+		dtype = getDType( x );
+		sh = getShape( x );
+		order = getOrder( x );
 	}
 	ndims = sh.length;
 	if ( ndims > 0 ) {
