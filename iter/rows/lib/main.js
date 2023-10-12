@@ -28,6 +28,7 @@ var isReadOnly = require( './../../../base/assert/is-read-only' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var iteratorSymbol = require( '@stdlib/symbol/iterator' );
 var zeros = require( '@stdlib/array/base/zeros' );
+var getShape = require( './../../../shape' );
 var numel = require( './../../../base/numel' );
 var slice = require( './../../../base/slice' );
 var nextCartesianIndex = require( './../../../base/next-cartesian-index' ).assign;
@@ -114,7 +115,7 @@ function nditerRows( x ) {
 		}
 	}
 	// Retrieve input array meta data:
-	shape = x.shape;
+	shape = getShape( x );
 	ndims = shape.length;
 
 	// Ensure that the input array has sufficient dimensions...
