@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/ndarray/array",
+  "name": "@stdlib/ndarray/slice-dimension",
   "version": "0.0.0",
-  "description": "Multidimensional arrays.",
+  "description": "Return a read-only view of an input ndarray when sliced along a specified dimension.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -54,15 +54,12 @@
     "types",
     "data",
     "structure",
-    "array",
-    "typed",
-    "typed array",
-    "typed-array",
-    "multidimensional",
-    "dimensions",
-    "dims",
-    "numpy.array",
-    "numpy.asarray"
-  ],
-  "__stdlib__": {}
+    "vector",
+    "ndarray",
+    "matrix",
+    "slice",
+    "view",
+    "copy",
+    "select"
+  ]
 }

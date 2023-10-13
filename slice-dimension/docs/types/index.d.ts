@@ -24,13 +24,28 @@ import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndar
 import { Slice } from '@stdlib/types/slice';
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Interface defining function options.
+*/
+interface Options {
+	/**
+	* Boolean indicating whether to enforce strict bounds checking (default: true).
+	*/
+	strict?: boolean;
+}
+
+/**
+* Slice argument.
+*/
+type SliceArgument = Slice | number | null | undefined;
+
+/**
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -56,7 +71,7 @@ import { Slice } from '@stdlib/types/slice';
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -65,16 +80,16 @@ import { Slice } from '@stdlib/types/slice';
 * arr = ndarray2array( y );
 * // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 */
-declare function sliceDimension( x: float64ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): float64ndarray;
+declare function sliceDimension( x: float64ndarray, dim: number, s: SliceArgument, options?: Options ): float64ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -100,7 +115,7 @@ declare function sliceDimension( x: float64ndarray, dim: number, s: Slice | numb
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -109,16 +124,16 @@ declare function sliceDimension( x: float64ndarray, dim: number, s: Slice | numb
 * arr = ndarray2array( y );
 * // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 */
-declare function sliceDimension( x: float32ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): float32ndarray;
+declare function sliceDimension( x: float32ndarray, dim: number, s: SliceArgument, options?: Options ): float32ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -144,7 +159,7 @@ declare function sliceDimension( x: float32ndarray, dim: number, s: Slice | numb
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -153,16 +168,16 @@ declare function sliceDimension( x: float32ndarray, dim: number, s: Slice | numb
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: int32ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): int32ndarray;
+declare function sliceDimension( x: int32ndarray, dim: number, s: SliceArgument, options?: Options ): int32ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -188,7 +203,7 @@ declare function sliceDimension( x: int32ndarray, dim: number, s: Slice | number
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -197,16 +212,16 @@ declare function sliceDimension( x: int32ndarray, dim: number, s: Slice | number
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: int16ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): int16ndarray;
+declare function sliceDimension( x: int16ndarray, dim: number, s: SliceArgument, options?: Options ): int16ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -232,7 +247,7 @@ declare function sliceDimension( x: int16ndarray, dim: number, s: Slice | number
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -241,16 +256,16 @@ declare function sliceDimension( x: int16ndarray, dim: number, s: Slice | number
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: int8ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): int8ndarray;
+declare function sliceDimension( x: int8ndarray, dim: number, s: SliceArgument, options?: Options ): int8ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -276,7 +291,7 @@ declare function sliceDimension( x: int8ndarray, dim: number, s: Slice | number,
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -285,16 +300,16 @@ declare function sliceDimension( x: int8ndarray, dim: number, s: Slice | number,
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: uint32ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): uint32ndarray;
+declare function sliceDimension( x: uint32ndarray, dim: number, s: SliceArgument, options?: Options ): uint32ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -320,7 +335,7 @@ declare function sliceDimension( x: uint32ndarray, dim: number, s: Slice | numbe
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -329,16 +344,16 @@ declare function sliceDimension( x: uint32ndarray, dim: number, s: Slice | numbe
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: uint16ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): uint16ndarray;
+declare function sliceDimension( x: uint16ndarray, dim: number, s: SliceArgument, options?: Options ): uint16ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -364,7 +379,7 @@ declare function sliceDimension( x: uint16ndarray, dim: number, s: Slice | numbe
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -373,16 +388,16 @@ declare function sliceDimension( x: uint16ndarray, dim: number, s: Slice | numbe
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: uint8ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): uint8ndarray;
+declare function sliceDimension( x: uint8ndarray, dim: number, s: SliceArgument, options?: Options ): uint8ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -408,7 +423,7 @@ declare function sliceDimension( x: uint8ndarray, dim: number, s: Slice | number
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -417,16 +432,16 @@ declare function sliceDimension( x: uint8ndarray, dim: number, s: Slice | number
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension( x: uint8cndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): uint8cndarray;
+declare function sliceDimension( x: uint8cndarray, dim: number, s: SliceArgument, options?: Options ): uint8cndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -449,22 +464,22 @@ declare function sliceDimension( x: uint8cndarray, dim: number, s: Slice | numbe
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
 * // returns [ 3, 2 ]
 */
-declare function sliceDimension( x: complex128ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): complex128ndarray;
+declare function sliceDimension( x: complex128ndarray, dim: number, s: SliceArgument, options?: Options ): complex128ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -487,22 +502,22 @@ declare function sliceDimension( x: complex128ndarray, dim: number, s: Slice | n
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
 * // returns [ 3, 2 ]
 */
-declare function sliceDimension( x: complex64ndarray, dim: number, s: Slice | number, strict: boolean, writable: boolean ): complex64ndarray;
+declare function sliceDimension( x: complex64ndarray, dim: number, s: SliceArgument, options?: Options ): complex64ndarray;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -528,7 +543,7 @@ declare function sliceDimension( x: complex64ndarray, dim: number, s: Slice | nu
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -537,16 +552,16 @@ declare function sliceDimension( x: complex64ndarray, dim: number, s: Slice | nu
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number, s: Slice | number, strict: boolean, writable: boolean ): genericndarray<T>;
+declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number, s: SliceArgument, options?: Options ): genericndarray<T>;
 
 /**
-* Returns a view of an input ndarray when sliced along a specified dimension.
+* Returns a read-only view of an input ndarray when sliced along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
 * @param s - slice object or an integer
-* @param strict - boolean indicating whether to enforce strict bounds checking
-* @param writable - boolean indicating whether a returned array should be writable
+* @param options - function options
+* @param options.strict - boolean indicating whether to enforce strict bounds checking
 * @returns output array
 *
 * @example
@@ -572,7 +587,7 @@ declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number,
 * var s = new Slice( null, null, -1 );
 * // returns <Slice>
 *
-* var y = sliceDimension( x, 0, s, false, false );
+* var y = sliceDimension( x, 0, s );
 * // returns <ndarray>
 *
 * sh = y.shape;
@@ -581,7 +596,7 @@ declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number,
 * arr = ndarray2array( y );
 * // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 */
-declare function sliceDimension<T = unknown>( x: typedndarray<T>, dim: number, s: Slice | number, strict: boolean, writable: boolean ): typedndarray<T>;
+declare function sliceDimension<T = unknown>( x: typedndarray<T>, dim: number, s: SliceArgument, options?: Options ): typedndarray<T>;
 
 
 // EXPORTS //

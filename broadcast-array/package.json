@@ -61,7 +61,9 @@
     "utilities",
     "utility",
     "utils",
-    "util"
+    "util",
+    "broadcast_to",
+    "numpy.broadcast_to"
   ],
   "__stdlib__": {}
 }
