@@ -527,6 +527,15 @@ setReadOnly( ns, 'prependSingletonDimensions', require( './../../base/prepend-si
 setReadOnly( ns, 'removeSingletonDimensions', require( './../../base/remove-singleton-dimensions' ) );
 
 /**
+* @name reverse
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reverse}
+*/
+setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
+
+/**
 * @name serializeMetaData
 * @memberof ns
 * @readonly
