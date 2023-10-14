@@ -23,13 +23,8 @@
 var isSafeCast = require( './../../../base/assert/is-safe-data-type-cast' );
 var isSameKindCast = require( './../../../base/assert/is-same-kind-data-type-cast' );
 var isFloatingPointDataType = require( './../../../base/assert/is-floating-point-data-type' );
-var isComplexDataType = require( './../../../base/assert/is-complex-floating-point-data-type' );
-var isRealDataType = require( './../../../base/assert/is-real-data-type' );
 var broadcast = require( './../../../base/broadcast-array' );
-var unary = require( './../../../base/unary' ); // TODO: replace with `@stdlib/ndarray/base/assign` and add native add-on support
-var identity = require( '@stdlib/utils/identity-function' ); // TODO: remove once use `@stdlib/ndarray/base/assign`
-var castReturn = require( '@stdlib/complex/base/cast-return' );
-var complexCtors = require( '@stdlib/complex/ctors' );
+var assign = require( './../../../base/assign' );
 var slice = require( './../../../base/slice' );
 var getDType = require( './../../../base/dtype' );
 var getShape = require( './../../../base/shape' );
@@ -97,29 +92,14 @@ var format = require( '@stdlib/string/format' );
 */
 function sliceAssign( x, y, s, strict ) {
 	var view;
-	var fcn;
 	var xdt;
 	var ydt;
 
 	xdt = getDType( x );
 	ydt = getDType( y );
 
-	// Safe casts are always allowed...
-	if ( isSafeCast( xdt, ydt ) ) {
-		// Check for real-to-complex conversion...
-		if ( isRealDataType( xdt ) && isComplexDataType( ydt ) ) {
-			// Need to cast a real number to a complex number:
-			fcn = castReturn( identity, 1, complexCtors( ydt ) );
-		} else {
-			// Should only be real->real and complex->complex:
-			fcn = identity;
-		}
-	}
-	// Allow same kind casts (i.e., downcasts) only when the output data type is floating-point...
-	else if ( isFloatingPointDataType( ydt ) && isSameKindCast( xdt, ydt ) ) {
-		// At this point, we know that the input data type and output data type are of the same "kind" (e.g., real->real and complex->complex), and, thus, we don't need to perform any special conversions:
-		fcn = identity;
-	} else {
+	// Safe casts are always allowed and allow same kind casts (i.e., downcasts) only when the output data type is floating-point...
+	if ( !isSafeCast( xdt, ydt ) && !( isFloatingPointDataType( ydt ) && isSameKindCast( xdt, ydt ) ) ) { // eslint-disable-line max-len
 		throw new TypeError( format( 'invalid argument. Input array values cannot be safely cast to the output array data type. Data types: [%s, %s].', xdt, ydt ) );
 	}
 	// Resolve a writable output array view:
@@ -129,7 +109,7 @@ function sliceAssign( x, y, s, strict ) {
 	x = broadcast( x, getShape( view, true ) );
 
 	// Set elements from `x` in `y`:
-	unary( [ x, view ], fcn );
+	assign( [ x, view ] );
 
 	// Return the original output array:
 	return y;
