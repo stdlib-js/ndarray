@@ -32,7 +32,7 @@ var getShape = require( './../../../shape' );
 var numel = require( './../../../base/numel' );
 var slice = require( './../../../base/slice' );
 var nextCartesianIndex = require( './../../../base/next-cartesian-index' ).assign;
-var MultiSlice = require( '@stdlib/slice/multi' );
+var args2multislice = require( '@stdlib/slice/base/args2multislice' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -168,7 +168,7 @@ function nditerColumns( x ) {
 			};
 		}
 		// Create a multi-slice for the current view:
-		s = MultiSlice.apply( null, idx );
+		s = args2multislice( idx );
 
 		// Update the index array:
 		j = ( idx[ dim ] + 1 ) % S0;

@@ -20,9 +20,7 @@
 
 // MODULES //
 
-var isSafeCast = require( './../../../base/assert/is-safe-data-type-cast' );
-var isSameKindCast = require( './../../../base/assert/is-same-kind-data-type-cast' );
-var isFloatingPointDataType = require( './../../../base/assert/is-floating-point-data-type' );
+var isMostlySafeCast = require( './../../../base/assert/is-mostly-safe-data-type-cast' );
 var broadcast = require( './../../../base/broadcast-array' );
 var assign = require( './../../../base/assign' );
 var slice = require( './../../../base/slice' );
@@ -99,7 +97,7 @@ function sliceAssign( x, y, s, strict ) {
 	ydt = getDType( y );
 
 	// Safe casts are always allowed and allow same kind casts (i.e., downcasts) only when the output data type is floating-point...
-	if ( !isSafeCast( xdt, ydt ) && !( isFloatingPointDataType( ydt ) && isSameKindCast( xdt, ydt ) ) ) { // eslint-disable-line max-len
+	if ( !isMostlySafeCast( xdt, ydt ) ) {
 		throw new TypeError( format( 'invalid argument. Input array values cannot be safely cast to the output array data type. Data types: [%s, %s].', xdt, ydt ) );
 	}
 	// Resolve a writable output array view:
