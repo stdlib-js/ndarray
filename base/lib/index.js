@@ -536,6 +536,15 @@ setReadOnly( ns, 'removeSingletonDimensions', require( './../../base/remove-sing
 setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
 
 /**
+* @name reverseDimension
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reverse-dimension}
+*/
+setReadOnly( ns, 'reverseDimension', require( './../../base/reverse-dimension' ) );
+
+/**
 * @name serializeMetaData
 * @memberof ns
 * @readonly
