@@ -311,6 +311,15 @@ setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' )
 setReadOnly( ns, 'fliplr', require( './../../base/fliplr' ) );
 
 /**
+* @name flipud
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/flipud}
+*/
+setReadOnly( ns, 'flipud', require( './../../base/flipud' ) );
+
+/**
 * @name scalar2ndarray
 * @memberof ns
 * @readonly
