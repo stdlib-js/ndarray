@@ -29,10 +29,10 @@ var slice = require( './../../../base/slice' );
 // MAIN //
 
 /**
-* Returns a truncated view of an input ndarray.
+* Returns a shifted view of an input ndarray.
 *
 * @param {ndarray} x - input array
-* @param {Array<null|void|integer>} stop - ending indices (exclusive)
+* @param {Array<null|void|integer>} start - starting indices (inclusive)
 * @param {boolean} strict - boolean indicating whether to enforce strict bounds checking
 * @param {boolean} writable - boolean indicating whether a returned array should be writable
 * @throws {RangeError} number of slice dimensions must match the number of array dimensions
@@ -57,24 +57,26 @@ var slice = require( './../../../base/slice' );
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var s = [ 2, null ];
-* var y = sliceTo( x, s, false, false );
+* var s = [ 1, null ];
+* var y = sliceFrom( x, s, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+* // returns [ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 */
-function sliceTo( x, stop, strict, writable ) {
+function sliceFrom( x, start, strict, writable ) {
 	var args;
+	var s;
 	var i;
 
 	args = [];
-	for ( i = 0; i < stop.length; i++ ) {
-		if ( isNumber( stop[ i ] ) ) {
-			args.push( new Slice( stop[ i ] ) );
+	for ( i = 0; i < start.length; i++ ) {
+		s = start[ i ];
+		if ( isNumber( s ) && s !== 0 ) { // note: a start value equal to 0 is equivalent to `null` (i.e., including all elements along a dimension)
+			args.push( new Slice( s, null ) );
 		} else {
 			args.push( null );
 		}
@@ -85,4 +87,4 @@ function sliceTo( x, stop, strict, writable ) {
 
 // EXPORTS //
 
-module.exports = sliceTo;
+module.exports = sliceFrom;

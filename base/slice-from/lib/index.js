@@ -18,30 +18,15 @@
 
 'use strict';
 
-// MODULES //
-
-var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
-var args2multislice = require( '@stdlib/slice/base/args2multislice' );
-var Slice = require( '@stdlib/slice/ctor' );
-var slice = require( './../../../base/slice' );
-
-
-// MAIN //
-
 /**
-* Returns a truncated view of an input ndarray.
+* Return a shifted view of an input ndarray.
 *
-* @param {ndarray} x - input array
-* @param {Array<null|void|integer>} stop - ending indices (exclusive)
-* @param {boolean} strict - boolean indicating whether to enforce strict bounds checking
-* @param {boolean} writable - boolean indicating whether a returned array should be writable
-* @throws {RangeError} number of slice dimensions must match the number of array dimensions
-* @throws {RangeError} slice exceeds array bounds
-* @returns {ndarray} ndarray view
+* @module @stdlib/ndarray/base/slice-from
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
+* var sliceFrom = require( '@stdlib/ndarray/base/slice-from' );
 *
 * var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 * var shape = [ 3, 2 ];
@@ -57,32 +42,22 @@ var slice = require( './../../../base/slice' );
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var s = [ 2, null ];
-* var y = sliceTo( x, s, false, false );
+* var s = [ 1, null ];
+* var y = sliceFrom( x, s, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
 * // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+* // returns [ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 */
-function sliceTo( x, stop, strict, writable ) {
-	var args;
-	var i;
 
-	args = [];
-	for ( i = 0; i < stop.length; i++ ) {
-		if ( isNumber( stop[ i ] ) ) {
-			args.push( new Slice( stop[ i ] ) );
-		} else {
-			args.push( null );
-		}
-	}
-	return slice( x, args2multislice( args ), strict, writable );
-}
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = sliceTo;
+module.exports = main;
