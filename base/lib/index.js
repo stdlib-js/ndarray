@@ -437,6 +437,15 @@ setReadOnly( ns, 'nextCartesianIndex', require( './../../base/next-cartesian-ind
 setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-dimensions' ) );
 
 /**
+* @name normalizeIndex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/normalize-index}
+*/
+setReadOnly( ns, 'normalizeIndex', require( './../../base/normalize-index' ) );
+
+/**
 * @name nullary
 * @memberof ns
 * @readonly

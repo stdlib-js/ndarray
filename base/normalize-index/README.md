@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2023 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# clampIndex
+# normalizeIndex
 
-> Restrict an index to the interval `[0,max]`.
+> Normalize an index to the interval `[0,max]`.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,22 +37,29 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var clampIndex = require( '@stdlib/ndarray/base/clamp-index' );
+var normalizeIndex = require( '@stdlib/ndarray/base/normalize-index' );
 ```
 
-#### clampIndex( idx, max )
+#### normalizeIndex( idx, max )
 
-Restricts an index to the interval `[0,max]`.
+Normalizes an index to the interval `[0,max]`.
 
 ```javascript
-var idx = clampIndex( 2, 10 );
+var idx = normalizeIndex( 2, 10 );
 // returns 2
 
-idx = clampIndex( -5, 10 );
-// returns 0
+idx = normalizeIndex( -5, 10 );
+// returns 6
+```
 
-idx = clampIndex( 15, 10 );
-// returns 10
+If provided an out-of-bounds index, the function returns `-1`.
+
+```javascript
+var idx = normalizeIndex( 15, 10 );
+// returns -1
+
+idx = normalizeIndex( -15, 10 );
+// returns -1
 ```
 
 </section>
@@ -77,7 +84,7 @@ idx = clampIndex( 15, 10 );
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' );
-var clampIndex = require( '@stdlib/ndarray/base/clamp-index' );
+var normalizeIndex = require( '@stdlib/ndarray/base/normalize-index' );
 
 var idx;
 var out;
@@ -85,8 +92,8 @@ var i;
 
 for ( i = 0; i < 100; i++ ) {
     idx = discreteUniform( -20, 20 );
-    out = clampIndex( idx, 10 );
-    console.log( '%d => [%d,%d] => %d', idx, 0, 10, out );
+    out = normalizeIndex( idx, 15 );
+    console.log( '%d => [%d,%d] => %d', idx, 0, 15, out );
 }
 ```
 
