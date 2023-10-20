@@ -21,37 +21,21 @@
 /// <reference types="@stdlib/types"/>
 
 import { typedndarray, genericndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray } from '@stdlib/types/ndarray';
-import { Slice } from '@stdlib/types/slice';
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Interface defining function options.
-*/
-interface Options {
-	/**
-	* Boolean indicating whether to enforce strict bounds checking (default: true).
-	*/
-	strict?: boolean;
-}
-
-/**
-* Slice argument.
-*/
-type SliceArgument = Slice | number | null | undefined;
-
-/**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
-* var ndarray = require( `@stdlib/ndarray/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
+* var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
 * var buffer = typedarray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], 'float64' );
@@ -68,32 +52,28 @@ type SliceArgument = Slice | number | null | undefined;
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 */
-declare function sliceDimension( x: float64ndarray, dim: number, s: SliceArgument, options?: Options ): float64ndarray;
+declare function sliceDimensionTo( x: float64ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): float64ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -112,32 +92,28 @@ declare function sliceDimension( x: float64ndarray, dim: number, s: SliceArgumen
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
+* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 */
-declare function sliceDimension( x: float32ndarray, dim: number, s: SliceArgument, options?: Options ): float32ndarray;
+declare function sliceDimensionTo( x: float32ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): float32ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -156,32 +132,28 @@ declare function sliceDimension( x: float32ndarray, dim: number, s: SliceArgumen
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: int32ndarray, dim: number, s: SliceArgument, options?: Options ): int32ndarray;
+declare function sliceDimensionTo( x: int32ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): int32ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -200,32 +172,28 @@ declare function sliceDimension( x: int32ndarray, dim: number, s: SliceArgument,
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: int16ndarray, dim: number, s: SliceArgument, options?: Options ): int16ndarray;
+declare function sliceDimensionTo( x: int16ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): int16ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -244,32 +212,28 @@ declare function sliceDimension( x: int16ndarray, dim: number, s: SliceArgument,
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: int8ndarray, dim: number, s: SliceArgument, options?: Options ): int8ndarray;
+declare function sliceDimensionTo( x: int8ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): int8ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -288,32 +252,28 @@ declare function sliceDimension( x: int8ndarray, dim: number, s: SliceArgument, 
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: uint32ndarray, dim: number, s: SliceArgument, options?: Options ): uint32ndarray;
+declare function sliceDimensionTo( x: uint32ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): uint32ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -332,32 +292,28 @@ declare function sliceDimension( x: uint32ndarray, dim: number, s: SliceArgument
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: uint16ndarray, dim: number, s: SliceArgument, options?: Options ): uint16ndarray;
+declare function sliceDimensionTo( x: uint16ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): uint16ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -376,32 +332,28 @@ declare function sliceDimension( x: uint16ndarray, dim: number, s: SliceArgument
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: uint8ndarray, dim: number, s: SliceArgument, options?: Options ): uint8ndarray;
+declare function sliceDimensionTo( x: uint8ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): uint8ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -420,32 +372,28 @@ declare function sliceDimension( x: uint8ndarray, dim: number, s: SliceArgument,
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension( x: uint8cndarray, dim: number, s: SliceArgument, options?: Options ): uint8cndarray;
+declare function sliceDimensionTo( x: uint8cndarray, dim: number, stop: number, strict: boolean, writable: boolean ): uint8cndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -461,29 +409,25 @@ declare function sliceDimension( x: uint8cndarray, dim: number, s: SliceArgument
 * var sh = x.shape;
 * // returns [ 3, 2 ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 */
-declare function sliceDimension( x: complex128ndarray, dim: number, s: SliceArgument, options?: Options ): complex128ndarray;
+declare function sliceDimensionTo( x: complex128ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): complex128ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var typedarray = require( `@stdlib/array/typed` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
@@ -499,29 +443,25 @@ declare function sliceDimension( x: complex128ndarray, dim: number, s: SliceArgu
 * var sh = x.shape;
 * // returns [ 3, 2 ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 */
-declare function sliceDimension( x: complex64ndarray, dim: number, s: SliceArgument, options?: Options ): complex64ndarray;
+declare function sliceDimensionTo( x: complex64ndarray, dim: number, stop: number, strict: boolean, writable: boolean ): complex64ndarray;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
 * @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
@@ -539,32 +479,27 @@ declare function sliceDimension( x: complex64ndarray, dim: number, s: SliceArgum
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number, s: SliceArgument, options?: Options ): genericndarray<T>;
+declare function sliceDimensionTo<T = unknown>( x: genericndarray<T>, dim: number, stop: number, strict: boolean, writable: boolean ): genericndarray<T>;
 
 /**
-* Returns a read-only view of an input ndarray when sliced along a specified dimension.
+* Returns a truncated view of an input ndarray along a specified dimension.
 *
 * @param x - input array
-* @param dim - index of dimension to slice
-* @param s - slice object or an integer
-* @param options - function options
-* @param options.strict - boolean indicating whether to enforce strict bounds checking
+* @param stop - ending index (exclusive)
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @param writable - boolean indicating whether a returned array should be writable
 * @returns output array
 *
 * @example
-* var Slice = require( `@stdlib/slice/ctor` );
 * var ndarray = require( `@stdlib/ndarray/ctor` );
 * var ndarray2array = require( `@stdlib/ndarray/to-array` );
 *
@@ -582,21 +517,18 @@ declare function sliceDimension<T = unknown>( x: genericndarray<T>, dim: number,
 * var arr = ndarray2array( x );
 * // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 *
-* var s = new Slice( null, null, -1 );
-* // returns <Slice>
-*
-* var y = sliceDimension( x, 0, s );
+* var y = sliceDimensionTo( x, 0, 2, false, false );
 * // returns <ndarray>
 *
 * sh = y.shape;
-* // returns [ 3, 2 ]
+* // returns [ 2, 2 ]
 *
 * arr = ndarray2array( y );
-* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
+* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-declare function sliceDimension<T = unknown>( x: typedndarray<T>, dim: number, s: SliceArgument, options?: Options ): typedndarray<T>;
+declare function sliceDimensionTo<T = unknown>( x: typedndarray<T>, dim: number, stop: number, strict: boolean, writable: boolean ): typedndarray<T>;
 
 
 // EXPORTS //
 
-export = sliceDimension;
+export = sliceDimensionTo;
