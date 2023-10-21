@@ -19,14 +19,14 @@
 'use strict';
 
 /**
-* Return a shifted view of an input ndarray along a specified dimension.
+* Return a read-only shifted view of an input ndarray along a specified dimension.
 *
-* @module @stdlib/ndarray/base/slice-dimension-from
+* @module @stdlib/ndarray/slice-dimension-from
 *
 * @example
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
-* var sliceDimensionFrom = require( '@stdlib/ndarray/base/slice-dimension-from' );
+* var sliceDimensionFrom = require( '@stdlib/ndarray/slice-dimension-from' );
 *
 * var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 * var shape = [ 3, 2 ];
@@ -42,7 +42,7 @@
 * var arr = ndarray2array( x );
 * // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 *
-* var y = sliceDimensionFrom( x, 0, 1, false, false );
+* var y = sliceDimensionFrom( x, 0, 1 );
 * // returns <ndarray>
 *
 * sh = y.shape;
