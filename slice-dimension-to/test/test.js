@@ -24,14 +24,14 @@
 
 var tape = require( 'tape' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
-var isReadOnly = require( './../../../base/assert/is-read-only' );
+var isReadOnly = require( './../../base/assert/is-read-only' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var typedarray = require( '@stdlib/array/typed' );
-var zeros = require( './../../../zeros' );
-var numel = require( './../../../base/numel' );
-var ndarray2array = require( './../../../to-array' );
-var baseCtor = require( './../../../base/ctor' );
-var ctor = require( './../../../ctor' );
+var zeros = require( './../../zeros' );
+var numel = require( './../../base/numel' );
+var ndarray2array = require( './../../to-array' );
+var baseCtor = require( './../../base/ctor' );
+var ctor = require( './../../ctor' );
 var sliceDimensionTo = require( './../lib' );
 
 
@@ -41,6 +41,268 @@ tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
 	t.strictEqual( typeof sliceDimensionTo, 'function', 'main export is a function' );
 	t.end();
+});
+
+tape( 'the function throws an error if provided a first argument which is not an ndarray', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( value, 0, 0 );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a first argument which is not an ndarray (options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( value, 0, 0, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a second argument which is not an integer', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, value, 0 );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a second argument which is not an integer (options)', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, value, 0, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a third argument which is not an integer', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, 0, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a third argument which is not an integer (options)', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, 0, value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, 0, 0, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a `strict` option which is not a boolean', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	x = zeros( [ 2, 2 ] );
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			sliceDimensionTo( x, 0, 0, {
+				'strict': value
+			});
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a zero-dimensional array (default)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		zeros( [] )
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error' );
+	}
+	t.end();
+
+	function badValue( x ) {
+		return function badValue() {
+			sliceDimensionTo( x, 0, 0 );
+		};
+	}
 });
 
 tape( 'the function throws an error if provided a zero-dimensional array (strict=false)', function test( t ) {
@@ -57,7 +319,9 @@ tape( 'the function throws an error if provided a zero-dimensional array (strict
 
 	function badValue( x ) {
 		return function badValue() {
-			sliceDimensionTo( x, 0, 0, false, false );
+			sliceDimensionTo( x, 0, 0, {
+				'strict': false
+			});
 		};
 	}
 });
@@ -76,7 +340,32 @@ tape( 'the function throws an error if provided a zero-dimensional array (strict
 
 	function badValue( x ) {
 		return function badValue() {
-			sliceDimensionTo( x, 0, 0, true, false );
+			sliceDimensionTo( x, 0, 0, {
+				'strict': true
+			});
+		};
+	}
+});
+
+tape( 'the function throws an error if the dimension index exceeds the number of dimensions (default)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		zeros( [ 1 ] ),
+		zeros( [ 1, 1 ] ),
+		zeros( [ 1, 1, 1 ] ),
+		zeros( [ 1, 1, 1, 1 ] )
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ], 10 ), RangeError, 'throws an error when provided ' + values[ i ].shape.join( 'x' ) );
+		t.throws( badValue( values[ i ], -10 ), RangeError, 'throws an error when provided ' + values[ i ].shape.join( 'x' ) );
+	}
+	t.end();
+
+	function badValue( x, dim ) {
+		return function badValue() {
+			sliceDimensionTo( x, dim, 0 );
 		};
 	}
 });
@@ -99,7 +388,9 @@ tape( 'the function throws an error if the dimension index exceeds the number of
 
 	function badValue( x, dim ) {
 		return function badValue() {
-			sliceDimensionTo( x, dim, 0, false, false );
+			sliceDimensionTo( x, dim, 0, {
+				'strict': false
+			});
 		};
 	}
 });
@@ -122,7 +413,39 @@ tape( 'the function throws an error if the dimension index exceeds the number of
 
 	function badValue( x, dim ) {
 		return function badValue() {
-			sliceDimensionTo( x, dim, 0, true, false );
+			sliceDimensionTo( x, dim, 0, {
+				'strict': true
+			});
+		};
+	}
+});
+
+tape( 'by default, the function throws an error when an ending index exceeds array bounds', function test( t ) {
+	var values;
+	var stop;
+	var i;
+
+	values = [
+		zeros( [ 1 ] ),
+		zeros( [ 1, 1 ] ),
+		zeros( [ 1, 1, 1 ] ),
+		zeros( [ 1, 1, 1, 1 ] )
+	];
+
+	stop = [
+		10,
+		20,
+		20,
+		20
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValues( values[ i ], stop[ i ] ), RangeError, 'throws an error when provided ' + stop[ i ].toString() );
+	}
+	t.end();
+
+	function badValues( x, s ) {
+		return function badValues() {
+			sliceDimensionTo( x, 0, s );
 		};
 	}
 });
@@ -152,7 +475,9 @@ tape( 'in strict mode, the function throws an error when an ending index exceeds
 
 	function badValues( x, s ) {
 		return function badValues() {
-			sliceDimensionTo( x, 0, s, true, false );
+			sliceDimensionTo( x, 0, s, {
+				'strict': true
+			});
 		};
 	}
 });
@@ -179,7 +504,9 @@ tape( 'in non-strict mode, the function returns an empty array when an ending in
 		-10
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		actual = sliceDimensionTo( values[ i ], 0, stop[ i ], false, false );
+		actual = sliceDimensionTo( values[ i ], 0, stop[ i ], {
+			'strict': false
+		});
 		t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 		t.strictEqual( numel( actual.shape ), 0, 'returns expected value' );
 		t.strictEqual( actual.dtype, values[ i ].dtype, 'returns expected value' );
@@ -218,7 +545,7 @@ tape( 'the function returns an empty array when an ending index is the first ele
 		0
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		actual = sliceDimensionTo( values[ i ], dim[ i ], stop[ i ], false, false ); // eslint-disable-line max-len
+		actual = sliceDimensionTo( values[ i ], dim[ i ], stop[ i ] );
 		t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 		t.strictEqual( numel( actual.shape ), 0, 'returns expected value' );
 		t.strictEqual( actual.dtype, values[ i ].dtype, 'returns expected value' );
@@ -245,7 +572,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=1)
 
 	x = new ctor( 'float64', buf, sh, st, o, ord );
 
-	actual = sliceDimensionTo( x, 0, 6, true, false );
+	actual = sliceDimensionTo( x, 0, 6 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 1, 'returns expected value' );
@@ -259,7 +586,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=1)
 		t.strictEqual( actual.iget( i ), expected[ i ], 'returns expected value' );
 	}
 
-	actual = sliceDimensionTo( x, 0, 4, true, false );
+	actual = sliceDimensionTo( x, 0, 4 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 1, 'returns expected value' );
@@ -273,7 +600,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=1)
 		t.strictEqual( actual.iget( i ), expected[ i ], 'returns expected value' );
 	}
 
-	actual = sliceDimensionTo( x, 0, -2, true, false );
+	actual = sliceDimensionTo( x, 0, -2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 1, 'returns expected value' );
@@ -307,7 +634,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 
 	x = new ctor( 'float64', buf, sh, st, o, ord );
 
-	actual = sliceDimensionTo( x, 0, 4, true, false );
+	actual = sliceDimensionTo( x, 0, 4 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -325,7 +652,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 1, 3, true, false );
+	actual = sliceDimensionTo( x, 1, 3 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -343,7 +670,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 0, 2, true, false );
+	actual = sliceDimensionTo( x, 0, 2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -359,7 +686,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 0, -2, true, false );
+	actual = sliceDimensionTo( x, 0, -2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -375,7 +702,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 1, 2, true, false );
+	actual = sliceDimensionTo( x, 1, 2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -393,7 +720,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=2)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 1, -1, true, false );
+	actual = sliceDimensionTo( x, 1, -1 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 2, 'returns expected value' );
@@ -431,7 +758,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=3)
 
 	x = new ctor( 'float64', buf, sh, st, o, ord );
 
-	actual = sliceDimensionTo( x, 0, 2, true, false );
+	actual = sliceDimensionTo( x, 0, 2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 3, 'returns expected value' );
@@ -457,7 +784,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=3)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 0, 1, true, false );
+	actual = sliceDimensionTo( x, 0, 1 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 3, 'returns expected value' );
@@ -477,7 +804,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=3)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 1, 3, true, false );
+	actual = sliceDimensionTo( x, 1, 3 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 3, 'returns expected value' );
@@ -501,7 +828,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=3)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 2, 1, true, false );
+	actual = sliceDimensionTo( x, 2, 1 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 3, 'returns expected value' );
@@ -527,7 +854,7 @@ tape( 'the function returns a truncated view of a provided input array (ndims=3)
 	actual = ndarray2array( actual );
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	actual = sliceDimensionTo( x, 2, -2, true, false );
+	actual = sliceDimensionTo( x, 2, -2 );
 
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( actual.ndims, 3, 'returns expected value' );
@@ -572,43 +899,13 @@ tape( 'if a provided ndarray has a constructor supporting read-only instances, t
 
 	x = new ctor( 'float64', buf, sh, st, o, ord );
 
-	actual = sliceDimensionTo( x, 0, 6, true, false );
+	actual = sliceDimensionTo( x, 0, 6 );
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( isReadOnly( actual ), true, 'returns expected value' );
 
 	x = new baseCtor( 'float64', buf, sh, st, o, ord );
 
-	actual = sliceDimensionTo( x, 0, 6, true, false );
-	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
-	t.strictEqual( isReadOnly( actual ), false, 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function supports returning writable views', function test( t ) {
-	var actual;
-	var buf;
-	var ord;
-	var sh;
-	var st;
-	var o;
-	var x;
-
-	buf = typedarray( zeroTo( 30 ), 'float64' );
-	sh = [ 6 ];
-	st = [ 2 ];
-	o = 4;
-	ord = 'row-major';
-
-	x = new ctor( 'float64', buf, sh, st, o, ord );
-
-	actual = sliceDimensionTo( x, 0, 6, true, true );
-	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
-	t.strictEqual( isReadOnly( actual ), false, 'returns expected value' );
-
-	x = new baseCtor( 'float64', buf, sh, st, o, ord );
-
-	actual = sliceDimensionTo( x, 0, 6, true, true );
+	actual = sliceDimensionTo( x, 0, 6 );
 	t.strictEqual( isndarrayLike( actual ), true, 'returns expected value' );
 	t.strictEqual( isReadOnly( actual ), false, 'returns expected value' );
 
