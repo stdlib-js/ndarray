@@ -128,7 +128,7 @@ function nditerMatrixEntries( x ) {
 	if ( N === 0 ) {
 		FLG = true;
 	}
-	// Compute the number of rows across all stacks of matrices:
+	// Compute the number of matrices across all stacks of matrices:
 	N /= shape[ ndims-1 ] * shape[ ndims-2 ];
 	dim = ndims - 3;
 	S2 = shape[ dim ];
@@ -180,10 +180,10 @@ function nditerMatrixEntries( x ) {
 		j = ( idx[ dim ] + 1 ) % S2;
 		idx[ dim ] = j;
 		if ( j === 0 ) {
-			// If we've iterated over all the matrices in the current matrix, move on to the next matrix in the stack:
+			// If we've iterated over all the matrices in the current stack, move on to the next set of matrices:
 			idx = nextCartesianIndex( shape, 'row-major', idx, dim-1, idx );
 		}
-		// Return the next row entry:
+		// Return the next matrix entry:
 		return {
 			'value': [ indices, slice( x, s, true, opts.writable ) ],
 			'done': false
