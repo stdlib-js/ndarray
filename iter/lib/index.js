@@ -64,6 +64,15 @@ setReadOnly( ns, 'nditerEntries', require( './../../iter/entries' ) );
 setReadOnly( ns, 'nditerIndices', require( './../../iter/indices' ) );
 
 /**
+* @name nditerMatrices
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/matrices}
+*/
+setReadOnly( ns, 'nditerMatrices', require( './../../iter/matrices' ) );
+
+/**
 * @name nditerRows
 * @memberof ns
 * @readonly
