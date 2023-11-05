@@ -19,27 +19,37 @@
 'use strict';
 
 /**
-* Create an iterator which returns `[index, value]` pairs for each element in a provided ndarray.
+* Create an iterator which returns `[index, column]` pairs for each column in a matrix (or stack of matrices).
 *
-* @module @stdlib/ndarray/iter/entries
+* @module @stdlib/ndarray/iter/column-entries
 *
 * @example
+* var ndarray2array = require( '@stdlib/ndarray/to-array' );
 * var array = require( '@stdlib/ndarray/array' );
-* var nditerEntries = require( '@stdlib/ndarray/iter/entries' );
+* var nditerColumnEntries = require( '@stdlib/ndarray/iter/column-entries' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>
 *
-* var iter = nditerEntries( x );
+* var iter = nditerColumnEntries( x );
 *
 * var v = iter.next().value;
-* // returns [ [ 0, 0, 0 ], 1 ]
+* // returns [...]
+*
+* var idx = v[ 0 ];
+* // returns [ 0, null, 0 ]
+*
+* var col = ndarray2array( v[ 1 ] );
+* // returns [ 1, 3 ]
 *
 * v = iter.next().value;
-* // returns [ [ 0, 0, 1 ], 2 ]
+* // returns [...]
 *
-* v = iter.next().value;
-* // returns [ [ 0, 1, 0 ], 3 ]
+* idx = v[ 0 ];
+* // returns [ 0, null, 1 ]
+*
+* col = ndarray2array( v[ 1 ] );
+* // returns [ 2, 4 ]
 *
 * // ...
 */

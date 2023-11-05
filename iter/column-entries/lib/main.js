@@ -39,42 +39,48 @@ var format = require( '@stdlib/string/format' );
 // MAIN //
 
 /**
-* Returns an iterator which iterates over each matrix in a stack of matrices.
+* Returns an iterator which returns `[index, column]` pairs for each column in a matrix (or stack of matrices).
 *
-* @param {ndarray} x - input value
+* @param {ndarray} x - input array
 * @param {Options} [options] - function options
 * @param {boolean} [options.readonly=true] - boolean indicating whether returned views should be read-only
 * @throws {TypeError} first argument must be an ndarray
-* @throws {TypeError} first argument must have at least three dimensions
+* @throws {TypeError} first argument must have at least two dimensions
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
 * @throws {Error} cannot write to a read-only array
 * @returns {Iterator} iterator
 *
 * @example
-* var array = require( '@stdlib/ndarray/array' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
+* var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ [ 1, 2 ], [ 3, 4 ] ], [ [ 5, 6 ], [ 7, 8 ] ] ] );
 * // returns <ndarray>
 *
-* var iter = nditerMatrices( x );
+* var iter = nditerColumnEntries( x );
 *
 * var v = iter.next().value;
-* // returns <ndarray>
+* // returns [...]
 *
-* var arr = ndarray2array( v );
-* // returns [ [ 1, 2 ], [ 3, 4 ] ]
+* var idx = v[ 0 ];
+* // returns [ 0, null, 0 ]
+*
+* var col = ndarray2array( v[ 1 ] );
+* // returns [ 1, 3 ]
 *
 * v = iter.next().value;
-* // returns <ndarray>
+* // returns [...]
 *
-* arr = ndarray2array( v );
-* // returns [ [ 5, 6 ], [ 7, 8 ] ]
+* idx = v[ 0 ];
+* // returns [ 0, null, 1 ]
+*
+* col = ndarray2array( v[ 1 ] );
+* // returns [ 2, 4 ]
 *
 * // ...
 */
-function nditerMatrices( x ) {
+function nditerColumnEntries( x ) {
 	var options;
 	var shape;
 	var ndims;
@@ -83,7 +89,7 @@ function nditerMatrices( x ) {
 	var FLG;
 	var idx;
 	var dim;
-	var S2;
+	var S0;
 	var N;
 	var i;
 
@@ -113,27 +119,27 @@ function nditerMatrices( x ) {
 	ndims = shape.length;
 
 	// Ensure that the input array has sufficient dimensions...
-	if ( ndims < 3 ) {
-		throw new TypeError( 'invalid argument. First argument must be an ndarray having at least three dimensions.' );
+	if ( ndims < 2 ) {
+		throw new TypeError( 'invalid argument. First argument must be an ndarray having at least two dimensions.' );
 	}
+
 	// Check whether the input array is empty...
 	N = numel( shape );
 	if ( N === 0 ) {
 		FLG = true;
 	}
-	// Compute the number of matrices across all stacks of matrices:
-	N /= shape[ ndims-1 ] * shape[ ndims-2 ];
-	dim = ndims - 3;
-	S2 = shape[ dim ];
+	// Compute the number of columns across all stacks of matrices:
+	N /= shape[ ndims-2 ];
+	dim = ndims - 1;
+	S0 = shape[ dim ];
 
 	// Initialize a counter:
 	i = -1;
 
-	// Initialize an index array for generating slices:
+	// Initialize an index array:
 	idx = zeros( ndims );
 
-	// Set the last two elements to `null` to indicate that we want a full "slice" for the last two dimensions:
-	idx[ ndims-1 ] = null;
+	// Set the second-to-last element to `null` to indicate that we want a full "slice" for the second-to-last dimension:
 	idx[ ndims-2 ] = null;
 
 	// Create an iterator protocol-compliant object:
@@ -154,6 +160,7 @@ function nditerMatrices( x ) {
 	* @returns {Object} iterator protocol-compliant object
 	*/
 	function next() {
+		var indices;
 		var s;
 		var j;
 		i += 1;
@@ -162,19 +169,22 @@ function nditerMatrices( x ) {
 				'done': true
 			};
 		}
+		// Cache the current state of the index array:
+		indices = idx.slice();
+
 		// Create a multi-slice for the current view:
 		s = args2multislice( idx );
 
 		// Update the index array:
-		j = ( idx[ dim ] + 1 ) % S2;
+		j = ( idx[ dim ] + 1 ) % S0;
 		idx[ dim ] = j;
 		if ( j === 0 ) {
-			// If we've iterated over all the matrices in the current stack, move on to the next set of matrices:
-			idx = nextCartesianIndex( shape, 'row-major', idx, dim-1, idx );
+			// If we've iterated over all the columns in the current matrix, move on to the next matrix in the stack:
+			idx = nextCartesianIndex( shape, 'row-major', idx, dim-2, idx );
 		}
-		// Return the next slice:
+		// Return the next row entry:
 		return {
-			'value': slice( x, s, true, opts.writable ),
+			'value': [ indices, slice( x, s, true, opts.writable ) ],
 			'done': false
 		};
 	}
@@ -206,11 +216,11 @@ function nditerMatrices( x ) {
 	* @returns {Iterator} iterator
 	*/
 	function factory() {
-		return nditerMatrices( x, opts );
+		return nditerColumnEntries( x, opts );
 	}
 }
 
 
 // EXPORTS //
 
-module.exports = nditerMatrices;
+module.exports = nditerColumnEntries;

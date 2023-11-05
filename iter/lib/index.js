@@ -37,6 +37,15 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name nditerColumnEntries
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/column-entries}
+*/
+setReadOnly( ns, 'nditerColumnEntries', require( './../../iter/column-entries' ) );
+
+/**
 * @name nditerColumns
 * @memberof ns
 * @readonly
@@ -71,6 +80,15 @@ setReadOnly( ns, 'nditerIndices', require( './../../iter/indices' ) );
 * @see {@link module:@stdlib/ndarray/iter/matrices}
 */
 setReadOnly( ns, 'nditerMatrices', require( './../../iter/matrices' ) );
+
+/**
+* @name nditerMatrixEntries
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/matrix-entries}
+*/
+setReadOnly( ns, 'nditerMatrixEntries', require( './../../iter/matrix-entries' ) );
 
 /**
 * @name nditerRowEntries
