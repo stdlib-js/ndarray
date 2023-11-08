@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { FancyArray, array, base, broadcastArray, defaults, dispatch, ind2sub, iter, maybeBroadcastArray, ndarray, ndarray2array, ndarrayCastingModes, ndarrayDataBuffer, ndarrayDataType, ndarrayDataTypes, ndarrayIndexModes, ndarrayMinDataType, ndarrayMostlySafeCasts, ndarrayNextDataType, ndarrayOffset, ndarrayOrder, ndarrayOrders, ndarrayOutputDataTypePolicies, ndarrayPromotionRules, ndarraySafeCasts, ndarraySameKindCasts, ndarrayShape, ndarrayStrides, ndempty, ndemptyLike, ndims, ndslice, ndsliceAssign, ndsliceDimension, ndsliceDimensionFrom, ndsliceDimensionTo, ndzeros, ndzerosLike, numel, scalar2ndarray, sub2ind } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+import { FancyArray, array, base, broadcastArray, defaults, dispatch, ind2sub, iter, maybeBroadcastArray, ndarray, ndarray2array, ndarrayCastingModes, ndarrayDataBuffer, ndarrayDataType, ndarrayDataTypes, ndarrayIndexModes, ndarrayMinDataType, ndarrayMostlySafeCasts, ndarrayNextDataType, ndarrayOffset, ndarrayOrder, ndarrayOrders, ndarrayOutputDataTypePolicies, ndarrayPromotionRules, ndarraySafeCasts, ndarraySameKindCasts, ndarrayShape, ndarrayStrides, ndempty, ndemptyLike, ndims, ndslice, ndsliceAssign, ndsliceDimension, ndsliceDimensionFrom, ndsliceDimensionTo, ndzeros, ndzerosLike, numel, scalar2ndarray, sub2ind } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.1.1-deno/mod.js';
 ```
 
 #### ns
@@ -148,7 +148,7 @@ In addition, the namespace contains the following multidimensional array utility
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.1.1-deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
