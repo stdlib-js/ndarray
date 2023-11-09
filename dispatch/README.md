@@ -266,13 +266,13 @@ console.log( ybuf );
 
 <section class="links">
 
-<!-- <related-links> -->
-
 [@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
+
+<!-- <related-links> -->
 
 <!-- </related-links> -->
 
