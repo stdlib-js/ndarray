@@ -221,6 +221,16 @@ var a6 = ndarray2array( y6 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray/slice`][@stdlib/ndarray/slice]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray.</span>
+-   <span class="package-name">[`@stdlib/ndarray/slice-dimension-from`][@stdlib/ndarray/slice-dimension-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input ndarray along a specific dimension.</span>
+-   <span class="package-name">[`@stdlib/ndarray/slice-dimension-to`][@stdlib/ndarray/slice-dimension-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input ndarray along a specific dimension.</span>
+
 </section>
 
 <!-- /.related -->
@@ -231,7 +241,19 @@ var a6 = ndarray2array( y6 );
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
+
+[@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray/tree/main/slice
+
+[@stdlib/ndarray/slice-dimension-from]: https://github.com/stdlib-js/ndarray/tree/main/slice-dimension-from
+
+[@stdlib/ndarray/slice-dimension-to]: https://github.com/stdlib-js/ndarray/tree/main/slice-dimension-to
+
+<!-- </related-links> -->
 
 </section>
 

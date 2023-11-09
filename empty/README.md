@@ -149,6 +149,13 @@ for ( i = 0; i < dt.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/empty-like`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
+-   <span class="package-name">[`@stdlib/ndarray/zeros`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
+
 </section>
 
 <!-- /.related -->
@@ -160,6 +167,14 @@ for ( i = 0; i < dt.length; i++ ) {
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/empty-like]: https://github.com/stdlib-js/ndarray/tree/main/empty-like
+
+[@stdlib/ndarray/zeros]: https://github.com/stdlib-js/ndarray/tree/main/zeros
+
+<!-- </related-links> -->
 
 </section>
 
