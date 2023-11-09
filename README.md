@@ -35,25 +35,30 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray/tags). For example,
-
-```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.1.1-deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { FancyArray, array, base, broadcastArray, defaults, dispatch, ind2sub, iter, maybeBroadcastArray, ndarray, ndarray2array, ndarrayCastingModes, ndarrayDataBuffer, ndarrayDataType, ndarrayDataTypes, ndarrayIndexModes, ndarrayMinDataType, ndarrayMostlySafeCasts, ndarrayNextDataType, ndarrayOffset, ndarrayOrder, ndarrayOrders, ndarrayOutputDataTypePolicies, ndarrayPromotionRules, ndarraySafeCasts, ndarraySameKindCasts, ndarrayShape, ndarrayStrides, ndempty, ndemptyLike, ndims, ndslice, ndsliceAssign, ndsliceDimension, ndsliceDimensionFrom, ndsliceDimensionTo, ndzeros, ndzerosLike, numel, scalar2ndarray, sub2ind } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -152,8 +157,8 @@ In addition, the namespace contains the following multidimensional array utility
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -179,7 +184,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -209,8 +214,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray
 
-[test-image]: https://github.com/stdlib-js/ndarray/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/ndarray/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/ndarray/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/ndarray/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray?branch=main
