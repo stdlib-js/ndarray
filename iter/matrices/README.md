@@ -169,6 +169,15 @@ while ( true ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/iter/columns`][@stdlib/ndarray/iter/columns]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates over each column in a matrix (or stack of matrices).</span>
+-   <span class="package-name">[`@stdlib/ndarray/iter/matrix-entries`][@stdlib/ndarray/iter/matrix-entries]</span><span class="delimiter">: </span><span class="description">create an iterator which returns \[index, matrix] pairs for each matrix in a stack of matrices.</span>
+-   <span class="package-name">[`@stdlib/ndarray/iter/rows`][@stdlib/ndarray/iter/rows]</span><span class="delimiter">: </span><span class="description">create an iterator which iterates over each row in a matrix (or stack of matrices).</span>
+-   <span class="package-name">[`@stdlib/ndarray/slice`][@stdlib/ndarray/slice]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray.</span>
+
 </section>
 
 <!-- /.related -->
@@ -182,6 +191,16 @@ while ( true ) {
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 [@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray/tree/main/slice
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/iter/columns]: https://github.com/stdlib-js/ndarray/tree/main/iter/columns
+
+[@stdlib/ndarray/iter/matrix-entries]: https://github.com/stdlib-js/ndarray/tree/main/iter/matrix-entries
+
+[@stdlib/ndarray/iter/rows]: https://github.com/stdlib-js/ndarray/tree/main/iter/rows
+
+<!-- </related-links> -->
 
 </section>
 

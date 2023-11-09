@@ -165,6 +165,14 @@ while ( true ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray/iter/entries`][@stdlib/ndarray/iter/entries]</span><span class="delimiter">: </span><span class="description">create an iterator which returns \[index, value] pairs for each element in a provided ndarray.</span>
+-   <span class="package-name">[`@stdlib/ndarray/iter/indices`][@stdlib/ndarray/iter/indices]</span><span class="delimiter">: </span><span class="description">create an iterator which returns indices for use indexing into an ndarray having a specified shape.</span>
+
 </section>
 
 <!-- /.related -->
@@ -176,6 +184,14 @@ while ( true ) {
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/iter/entries]: https://github.com/stdlib-js/ndarray/tree/main/iter/entries
+
+[@stdlib/ndarray/iter/indices]: https://github.com/stdlib-js/ndarray/tree/main/iter/indices
+
+<!-- </related-links> -->
 
 </section>
 
