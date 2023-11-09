@@ -116,6 +116,13 @@ for ( i = 0; i < dt.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/base/ctor`][@stdlib/ndarray/base/ctor]</span><span class="delimiter">: </span><span class="description">base multidimensional array.</span>
+-   <span class="package-name">[`@stdlib/ndarray/base/zeros`][@stdlib/ndarray/base/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
+
 </section>
 
 <!-- /.related -->
@@ -129,6 +136,12 @@ for ( i = 0; i < dt.length; i++ ) {
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
+
+<!-- <related-links> -->
+
+[@stdlib/ndarray/base/zeros]: https://github.com/stdlib-js/ndarray/tree/main/base/zeros
+
+<!-- </related-links> -->
 
 </section>
 

@@ -217,7 +217,7 @@ var a6 = ndarray2array( y );
 
 <section class="links">
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/stdlib
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
 
 [@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray/tree/main/base/broadcast-shapes
 

@@ -194,7 +194,7 @@ var a6 = ndarray2array( y6 );
 
 <section class="links">
 
-[@stdlib/slice/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/slice/ctor]: https://github.com/stdlib-js/slice-ctor
 
 </section>
 
