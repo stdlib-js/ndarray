@@ -47,10 +47,10 @@ interface Ind2Sub {
 	*
 	* -   The function accepts the following "modes":
 	*
-	*     -   `throw`: throws an error when a linear index exceeds array dimensions.
-	*     -   `wrap`: wrap around a linear index exceeding array dimensions using modulo arithmetic.
-	*     -   `clamp`: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
-	*
+	*     -   **throw**: throw an error when a linear index exceeds array dimensions.
+	*     -   **normalize**: normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
+	*     -   **wrap**: wrap around a linear index exceeding array dimensions using modulo arithmetic.
+	*     -   **clamp**: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 	*
 	* @param shape - array shape
 	* @param idx - linear index
@@ -73,12 +73,12 @@ interface Ind2Sub {
 	*
 	* ## Notes
 	*
-	* -   The function accepts the following "modes":
+	* -  The function accepts the following "modes":
 	*
-	*     -   `throw`: throws an error when a linear index exceeds array dimensions.
-	*     -   `wrap`: wrap around a linear index exceeding array dimensions using modulo arithmetic.
-	*     -   `clamp`: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
-	*
+	*     -   **throw**: throw an error when a linear index exceeds array dimensions.
+	*     -   **normalize**: normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
+	*     -   **wrap**: wrap around a linear index exceeding array dimensions using modulo arithmetic.
+	*     -   **clamp**: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 	*
 	* @param shape - array shape
 	* @param idx - linear index
@@ -102,7 +102,7 @@ interface Ind2Sub {
 	* var bool = ( s === out );
 	* // returns true
 	*/
-	assign( shape: ArrayLike<number>, idx: number, options: Options, out: any ): Array<number>;
+	assign<T = unknown>( shape: ArrayLike<number>, idx: number, options: Options, out: ArrayLike<T> ): ArrayLike<T | number>;
 
 	/**
 	* Converts a linear index to an array of subscripts and assigns results to a provided output array.
@@ -111,10 +111,10 @@ interface Ind2Sub {
 	*
 	* -   The function accepts the following "modes":
 	*
-	*     -   `throw`: throws an error when a linear index exceeds array dimensions.
-	*     -   `wrap`: wrap around a linear index exceeding array dimensions using modulo arithmetic.
-	*     -   `clamp`: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
-	*
+	*     -   **throw**: throw an error when a linear index exceeds array dimensions.
+	*     -   **normalize**: normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
+	*     -   **wrap**: wrap around a linear index exceeding array dimensions using modulo arithmetic.
+	*     -   **clamp**: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 	*
 	* @param shape - array shape
 	* @param idx - linear index
@@ -134,7 +134,7 @@ interface Ind2Sub {
 	* var bool = ( s === out );
 	* // returns true
 	*/
-	assign( shape: ArrayLike<number>, idx: number, out: any ): Array<number>;
+	assign<T = unknown>( shape: ArrayLike<number>, idx: number, out: ArrayLike<T> ): ArrayLike<T | number>;
 }
 
 /**
@@ -144,10 +144,10 @@ interface Ind2Sub {
 *
 * -   The function accepts the following "modes":
 *
-*     -   `throw`: throws an error when a linear index exceeds array dimensions.
-*     -   `wrap`: wrap around a linear index exceeding array dimensions using modulo arithmetic.
-*     -   `clamp`: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
-*
+*     -   **throw**: throw an error when a linear index exceeds array dimensions.
+*     -   **normalize**: normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
+*     -   **wrap**: wrap around a linear index exceeding array dimensions using modulo arithmetic.
+*     -   **clamp**: set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 *
 * @param shape - array shape
 * @param idx - linear index
