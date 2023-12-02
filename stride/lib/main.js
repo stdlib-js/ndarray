@@ -20,9 +20,9 @@
 
 // MODULES //
 
-var normalizeIndex = require( './../../../base/normalize-index' );
-var ndims = require( './../../../base/ndims' );
-var getStrides = require( './../../../base/strides' );
+var isInteger = require( '@stdlib/assert/is-integer' );
+var isCollection = require( '@stdlib/assert/is-collection' );
+var getStride = require( './../../base/stride' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -34,6 +34,7 @@ var format = require( '@stdlib/string/format' );
 * @param {ndarrayLike} x - input ndarray
 * @param {integer} dim - dimension index
 * @throws {TypeError} first argument must be an ndarray having one or more dimensions
+* @throws {TypeError} second argument must be an integer
 * @throws {RangeError} dimension index exceeds the number of dimensions
 * @returns {integer} stride
 *
@@ -44,23 +45,21 @@ var format = require( '@stdlib/string/format' );
 * // returns 9
 */
 function stride( x, dim ) {
-	var N;
-	var d;
+	var st;
 
-	// Retrieve array meta data:
-	N = ndims( x );
-
-	// Check whether we were provided a zero-dimensional array...
-	if ( N === 0 ) {
-		throw new TypeError( format( 'invalid argument. First argument must be an ndarray having one or more dimensions. Number of dimensions: %d.', N ) );
+	// Note: we intentionally avoid rigorous ndarray checks to minimize performance impacts. This obviously means that non-ndarray-like objects can sneak through, but this is likely all right for the purposes of this function...
+	if ( typeof x !== 'object' || x === null || !isCollection( x.shape ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
 	}
-	// Normalize the dimension index:
-	d = normalizeIndex( dim, N-1 );
-	if ( d === -1 ) {
-		throw new RangeError( format( 'invalid argument. Dimension index exceeds the number of dimensions. Number of dimensions: %d. Value: `%d`.', N, dim ) );
+	if ( !isInteger( dim ) ) {
+		throw new TypeError( format( 'invalid argument. Second argument must be an integer. Value: `%s`.', dim ) );
 	}
-	// Return the array stride:
-	return getStrides( x, false )[ d ];
+	st = getStride( x, dim );
+	if ( isInteger( st ) ) {
+		return st;
+	}
+	// As ndarrays must have integer-valued strides, if the returned "stride" value is not integer-valued, assume we haven't been provided an ndarray:
+	throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
 }
 
 
