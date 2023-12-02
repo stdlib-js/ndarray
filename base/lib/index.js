@@ -671,6 +671,15 @@ setReadOnly( ns, 'sliceFrom', require( './../../base/slice-from' ) );
 setReadOnly( ns, 'sliceTo', require( './../../base/slice-to' ) );
 
 /**
+* @name stride
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/stride}
+*/
+setReadOnly( ns, 'stride', require( './../../base/stride' ) );
+
+/**
 * @name strides
 * @memberof ns
 * @readonly
