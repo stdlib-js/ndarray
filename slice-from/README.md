@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# sliceTo
+# sliceFrom
 
-> Return a read-only truncated view of an input [ndarray][@stdlib/ndarray/ctor].
+> Return a read-only shifted view of an input [ndarray][@stdlib/ndarray/ctor].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,12 +37,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var sliceTo = require( '@stdlib/ndarray/slice-to' );
+var sliceFrom = require( '@stdlib/ndarray/slice-from' );
 ```
 
-#### sliceTo( x, ...stop\[, options] )
+#### sliceFrom( x, ...start\[, options] )
 
-Returns a **read-only** truncated view of an input [ndarray][@stdlib/ndarray/ctor].
+Returns a **read-only** shifted view of an input [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/ctor' );
@@ -62,20 +62,20 @@ var sh = x.shape;
 var arr = ndarray2array( x );
 // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var y = sliceTo( x, 2, null );
+var y = sliceFrom( x, 1, null );
 // returns <ndarray>
 
 sh = y.shape;
 // returns [ 2, 2 ]
 
 arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns [ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 ```
 
 The function accepts the following arguments:
 
 -   **x**: input [ndarray][@stdlib/ndarray/ctor].
--   **stop**: an array of ending indices (exclusive) or ending indices (exclusive) as separate arguments. Each index must be either `null`, `undefined`, or an integer. A value of `null` or `undefined` indicates to include all elements along a corresponding dimension. A negative integer indicates to resolve an ending index relative to the last element along a corresponding dimension, with the last element having index `-1`.
+-   **start**: an array of starting indices (inclusive) or starting indices (inclusive) as separate arguments. Each index must be either `null`, `undefined`, or an integer. A value of `null` or `undefined` indicates to include all elements along a corresponding dimension. A negative integer indicates to resolve a starting index relative to the last element along a corresponding dimension, with the last element having index `-1`.
 -   **options**: function options.
 
 The function supports two (mutually exclusive) means for providing index arguments:
@@ -104,24 +104,24 @@ var arr = ndarray2array( x );
 // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
 // 1. Using an array of index arguments:
-var y = sliceTo( x, [ 2, null ] );
+var y = sliceFrom( x, [ 1, null ] );
 // returns <ndarray>
 
 sh = y.shape;
 // returns [ 2, 2 ]
 
 arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns [ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
 // 2. Providing separate arguments:
-y = sliceTo( x, 2, null );
+y = sliceFrom( x, 1, null );
 // returns <ndarray>
 
 sh = y.shape;
 // returns [ 2, 2 ]
 
 arr = ndarray2array( y );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns [ [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 ```
 
 The function supports the following `options`:
@@ -148,13 +148,13 @@ var sh = x.shape;
 var arr = ndarray2array( x );
 // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 
-var y = sliceTo( x, 2, -20, {
+var y = sliceFrom( x, null, 20, {
     'strict': false
 });
 // returns <ndarray>
 
 sh = y.shape;
-// returns [ 2, 0 ]
+// returns [ 3, 0 ]
 
 arr = ndarray2array( y );
 // returns []
@@ -171,7 +171,7 @@ arr = ndarray2array( y );
 ## Notes
 
 -   An **index argument** must be either an integer, `null`, or `undefined`.
--   The number of indices must match the number of array dimensions. Hence, if `x` is a zero-dimensional [ndarray][@stdlib/ndarray/ctor], then, if `stop` is an array, `stop` should not contain any index arguments. Similarly, if `x` is a one-dimensional [ndarray][@stdlib/ndarray/ctor], then, if `stop` is an array, `stop` should contain a single index argument. And so on and so forth.
+-   The number of indices must match the number of array dimensions. Hence, if `x` is a zero-dimensional [ndarray][@stdlib/ndarray/ctor], then, if `start` is an array, `start` should not contain any index arguments. Similarly, if `x` is a one-dimensional [ndarray][@stdlib/ndarray/ctor], then, if `start` is an array, `start` should contain a single index argument. And so on and so forth.
 
 </section>
 
@@ -189,7 +189,7 @@ arr = ndarray2array( y );
 var array = require( '@stdlib/ndarray/array' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
-var sliceTo = require( '@stdlib/ndarray/slice-to' );
+var sliceFrom = require( '@stdlib/ndarray/slice-from' );
 
 // Create a linear ndarray buffer:
 var buf = zeroTo( 27 );
@@ -199,26 +199,26 @@ var x = array( buf, {
     'shape': [ 3, 3, 3 ]
 });
 
-// Get the first two rows of each matrix:
-var y1 = sliceTo( x, null, 2, null );
+// Get the last two rows of each matrix:
+var y1 = sliceFrom( x, null, 1, null );
 // returns <ndarray>
 
 var a1 = ndarray2array( y1 );
-// returns [ [ [ 0, 1, 2 ], [ 3, 4, 5 ] ], [ [ 9, 10, 11 ], [ 12, 13, 14 ] ], [ [ 18, 19, 20 ], [ 21, 22, 23 ] ] ]
+// returns [ [ [ 3, 4, 5 ], [ 6, 7, 8 ] ], [ [ 12, 13, 14 ], [ 15, 16, 17 ] ], [ [ 21, 22, 23 ], [ 24, 25, 26 ] ] ]
 
-// Get the first two rows and columns of each matrix:
-var y2 = sliceTo( x, null, 2, 2 );
+// Get the last two rows and columns of each matrix:
+var y2 = sliceFrom( x, null, 1, 1 );
 // returns <ndarray>
 
 var a2 = ndarray2array( y2 );
-// returns [ [ [ 0, 1 ], [ 3, 4 ] ], [ [ 9, 10 ], [ 12, 13 ] ], [ [ 18, 19 ], [ 21, 22 ] ] ]
+// returns [ [ [ 4, 5 ], [ 7, 8 ] ], [ [ 13, 14 ], [ 16, 17 ] ], [ [ 22, 23 ], [ 25, 26 ] ] ]
 
-// Get the first two 2x2 matrices:
-var y3 = sliceTo( x, 2, 2, 2 );
+// Get the last two 2x2 matrices:
+var y3 = sliceFrom( x, 1, 1, 1 );
 // returns <ndarray>
 
 var a3 = ndarray2array( y3 );
-// returns [ [ [ 0, 1 ], [ 3, 4 ] ], [ [ 9, 10 ], [ 12, 13 ] ] ]
+// returns [ [ [ 13, 14 ], [ 16, 17 ] ], [ [ 22, 23 ], [ 25, 26 ] ] ]
 ```
 
 </section>
