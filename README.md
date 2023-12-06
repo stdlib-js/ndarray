@@ -133,7 +133,10 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`ndsliceDimensionFrom( x, dim, start[, options] )`][@stdlib/ndarray/slice-dimension-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input `ndarray` along a specified dimension.</span>
 -   <span class="signature">[`ndsliceDimensionTo( x, dim, stop[, options] )`][@stdlib/ndarray/slice-dimension-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input `ndarray` along a specified dimension.</span>
 -   <span class="signature">[`ndsliceDimension( x, dim, slice[, options] )`][@stdlib/ndarray/slice-dimension]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input `ndarray` when sliced along a specified dimension.</span>
+-   <span class="signature">[`ndsliceFrom( x, ...start[, options] )`][@stdlib/ndarray/slice-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input ndarray.</span>
+-   <span class="signature">[`ndsliceTo( x, ...stop[, options] )`][@stdlib/ndarray/slice-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input ndarray.</span>
 -   <span class="signature">[`ndslice( x, ...s[, options] )`][@stdlib/ndarray/slice]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input `ndarray`.</span>
+-   <span class="signature">[`ndarrayStride( x, dim )`][@stdlib/ndarray/stride]</span><span class="delimiter">: </span><span class="description">return the stride along a specified dimension for a provided ndarray.</span>
 -   <span class="signature">[`ndarrayStrides( x )`][@stdlib/ndarray/strides]</span><span class="delimiter">: </span><span class="description">return the strides of a provided ndarray.</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
@@ -308,7 +311,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/slice-dimension]: https://github.com/stdlib-js/ndarray/tree/main/slice-dimension
 
+[@stdlib/ndarray/slice-from]: https://github.com/stdlib-js/ndarray/tree/main/slice-from
+
+[@stdlib/ndarray/slice-to]: https://github.com/stdlib-js/ndarray/tree/main/slice-to
+
 [@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray/tree/main/slice
+
+[@stdlib/ndarray/stride]: https://github.com/stdlib-js/ndarray/tree/main/stride
 
 [@stdlib/ndarray/strides]: https://github.com/stdlib-js/ndarray/tree/main/strides
 
