@@ -797,8 +797,6 @@ console.log( toArray( y4 ) );
 
 [@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
-
 <!-- </related-links> -->
 
 </section>
