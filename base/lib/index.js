@@ -95,6 +95,15 @@ setReadOnly( ns, 'bind2vind', require( './../../base/bind2vind' ) );
 setReadOnly( ns, 'broadcastArray', require( './../../base/broadcast-array' ) );
 
 /**
+* @name broadcastArrays
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/broadcast-arrays}
+*/
+setReadOnly( ns, 'broadcastArrays', require( './../../base/broadcast-arrays' ) );
+
+/**
 * @name broadcastScalar
 * @memberof ns
 * @readonly
