@@ -22,7 +22,7 @@ var array = require( './../../../array' );
 var zeros = require( './../../../zeros' );
 var numel = require( './../../../base/numel' );
 var ind2sub = require( './../../../ind2sub' );
-var broadcastArrays = require( './../lib' );
+var maybeBroadcastArrays = require( './../lib' );
 
 // Create a 2x2 array:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
@@ -32,9 +32,9 @@ var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 var y = zeros( [ 3, 2, 2 ] );
 // returns <ndarray>
 
-// Broadcast the arrays to a common shape:
-var out = broadcastArrays( [ x, y ] );
-// returns [ <ndarray>, <ndarray> ]
+// Broadcast arrays to a common shape:
+var out = maybeBroadcastArrays( [ x, y ] );
+// returns <ndarray>
 
 // Retrieve the common shape:
 var sh = out[ 0 ].shape;

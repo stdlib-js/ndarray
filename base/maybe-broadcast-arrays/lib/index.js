@@ -21,17 +21,17 @@
 /**
 * Broadcast ndarrays to a common shape.
 *
-* @module @stdlib/ndarray/base/broadcast-arrays
+* @module @stdlib/ndarray/base/maybe-broadcast-arrays
 *
 * @example
 * var array = require( '@stdlib/ndarray/array' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
-* var broadcastArrays = require( '@stdlib/ndarray/base/broadcast-arrays' );
+* var maybeBroadcastArrays = require( '@stdlib/ndarray/base/maybe-broadcast-arrays' );
 *
-* var x1 = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+* var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * // returns <ndarray>
 *
-* var shx = x1.shape;
+* var shx = x.shape;
 * // returns [ 2, 2 ]
 *
 * var y1 = zeros( [ 3, 2, 2 ] );
@@ -40,7 +40,7 @@
 * var shy = y1.shape;
 * // returns [ 3, 2, 2 ]
 *
-* var out = broadcastArrays( [ x1, y1 ] );
+* var out = maybeBroadcastArrays( [ x1, y1 ] );
 * // returns [ <ndarray>, <ndarray> ]
 *
 * var x2 = out[ 0 ];

@@ -25,14 +25,14 @@ var isArray = require( '@stdlib/assert/is-array' );
 var array = require( './../../../array' );
 var zeros = require( './../../../zeros' );
 var ndarray = require( './../../../base/ctor' );
-var broadcastArrays = require( './../lib' );
+var maybeBroadcastArrays = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof broadcastArrays, 'function', 'main export is a function' );
+	t.strictEqual( typeof maybeBroadcastArrays, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -47,11 +47,13 @@ tape( 'the function throws an error if provided broadcast-incompatible ndarrays'
 
 	values = [
 		[ 10, 20, 10 ],
-		[ 10, 10, 100 ],
+		[ 10, 10, 20 ],
 		[ 10, 10, 2 ],
 		[ 10, 10, 9 ],
+		[ 10, 5, 10 ],
 		[ 10, 2, 10 ],
-		[ 10, 9, 10 ]
+		[ 10, 9, 10 ],
+		[ 10, 10, 100 ]
 	];
 	for ( i = 0; i < values.length; i++ ) {
 		t.throws( badValue( values[ i ] ), Error, 'throws an error when provided shape ('+values[ i ].join( ',')+')' );
@@ -60,13 +62,13 @@ tape( 'the function throws an error if provided broadcast-incompatible ndarrays'
 
 	function badValue( value ) {
 		return function badValue() {
-			broadcastArrays( [ x, zeros( value ) ] );
+			maybeBroadcastArrays( [ x, zeros( value ) ] );
 		};
 	}
 });
 
 tape( 'the function returns an empty array if provided an empty array', function test( t ) {
-	var out = broadcastArrays( [] );
+	var out = maybeBroadcastArrays( [] );
 	t.strictEqual( isArray( out ), true, 'returns expected value' );
 	t.deepEqual( out, [], 'returns expected value' );
 	t.end();
@@ -77,12 +79,12 @@ tape( 'the function returns "base" ndarray instances (1 array)', function test( 
 	var x;
 
 	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-	out = broadcastArrays( [ x ] );
+	out = maybeBroadcastArrays( [ x ] );
 
 	t.strictEqual( isArray( out ), true, 'returns expected value' );
 	t.strictEqual( out.length, 1, 'returns expected value' );
 
-	t.notEqual( out[ 0 ], x, 'returns new instance' );
+	t.strictEqual( out[ 0 ], x, 'returns expected value' );
 	t.strictEqual( out[ 0 ] instanceof ndarray, true, 'returns expected value' );
 
 	t.end();
@@ -95,7 +97,7 @@ tape( 'the function returns "base" ndarray instances (2 arrays)', function test(
 
 	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 	y = zeros( [ 2, 2, 2 ] );
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.strictEqual( isArray( out ), true, 'returns expected value' );
 	t.strictEqual( out.length, 2, 'returns expected value' );
@@ -103,7 +105,7 @@ tape( 'the function returns "base" ndarray instances (2 arrays)', function test(
 	t.notEqual( out[ 0 ], x, 'returns new instance' );
 	t.strictEqual( out[ 0 ] instanceof ndarray, true, 'returns expected value' );
 
-	t.notEqual( out[ 1 ], y, 'returns new instance' );
+	t.strictEqual( out[ 1 ], y, 'returns expected value' );
 	t.strictEqual( out[ 1 ] instanceof ndarray, true, 'returns expected value' );
 
 	t.end();
@@ -118,7 +120,7 @@ tape( 'the function returns "base" ndarray instances (>2 arrays)', function test
 	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 	y = zeros( [ 2, 2, 2 ] );
 	z = zeros( [ 1 ] );
-	out = broadcastArrays( [ x, y, z ] );
+	out = maybeBroadcastArrays( [ x, y, z ] );
 
 	t.strictEqual( isArray( out ), true, 'returns expected value' );
 	t.strictEqual( out.length, 3, 'returns expected value' );
@@ -126,7 +128,7 @@ tape( 'the function returns "base" ndarray instances (>2 arrays)', function test
 	t.notEqual( out[ 0 ], x, 'returns new instance' );
 	t.strictEqual( out[ 0 ] instanceof ndarray, true, 'returns expected value' );
 
-	t.notEqual( out[ 1 ], y, 'returns new instance' );
+	t.strictEqual( out[ 1 ], y, 'returns expected value' );
 	t.strictEqual( out[ 1 ] instanceof ndarray, true, 'returns expected value' );
 
 	t.notEqual( out[ 2 ], z, 'returns new instance' );
@@ -144,7 +146,7 @@ tape( 'the function returns views over underlying array data buffers', function 
 	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 	y = zeros( [ 2, 2, 2 ] );
 	z = zeros( [ 1 ] );
-	out = broadcastArrays( [ x, y, z ] );
+	out = maybeBroadcastArrays( [ x, y, z ] );
 
 	t.strictEqual( out[ 0 ].data, x.data, 'returns expected value' );
 	t.strictEqual( out[ 1 ].data, y.data, 'returns expected value' );
@@ -174,7 +176,7 @@ tape( 'the function broadcasts input arrays (row-major)', function test( t ) {
 	});
 
 	expected = [ 5, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );
@@ -209,7 +211,7 @@ tape( 'the function broadcasts input arrays (row-major; strides)', function test
 	y = ndarray( 'generic', [ 0, 0, 0, 0, 0 ], [ 5, 1, 1 ], [ -1, -1, -1 ], 4, 'row-major' );
 
 	expected = [ 5, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );
@@ -251,7 +253,7 @@ tape( 'the function broadcasts input arrays (column-major)', function test( t ) 
 	});
 
 	expected = [ 5, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );
@@ -293,11 +295,11 @@ tape( 'the function broadcasts input arrays (same shape)', function test( t ) {
 	});
 
 	expected = [ 2, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
-	// Should return a new instance:
-	t.notEqual( out[ 0 ], x, 'returns expected value' );
-	t.notEqual( out[ 1 ], y, 'returns expected value' );
+	// Should return the same instance:
+	t.strictEqual( out[ 0 ], x, 'returns expected value' );
+	t.strictEqual( out[ 1 ], y, 'returns expected value' );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );
@@ -339,7 +341,7 @@ tape( 'the function broadcasts input arrays (same number of dimensions)', functi
 	});
 
 	expected = [ 2, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );
@@ -378,7 +380,7 @@ tape( 'the function broadcasts input arrays (0-dimensional array)', function tes
 	});
 
 	expected = [ 5, 2, 2 ];
-	out = broadcastArrays( [ x, y ] );
+	out = maybeBroadcastArrays( [ x, y ] );
 
 	t.deepEqual( out[ 0 ].shape, expected, 'returns expected shape' );
 	t.deepEqual( out[ 1 ].shape, expected, 'returns expected shape' );

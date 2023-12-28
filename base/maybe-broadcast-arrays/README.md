@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# broadcastArrays
+# maybeBroadcastArrays
 
 > Broadcast [ndarrays][@stdlib/ndarray/base/ctor] to a common shape.
 
@@ -37,12 +37,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var broadcastArrays = require( '@stdlib/ndarray/base/broadcast-arrays' );
+var maybeBroadcastArrays = require( '@stdlib/ndarray/base/maybe-broadcast-arrays' );
 ```
 
-#### broadcastArrays( arrays )
+#### maybeBroadcastArrays( arrays )
 
-Broadcasts a list of [ndarrays][@stdlib/ndarray/base/ctor] to a common shape.
+Broadcasts [ndarrays][@stdlib/ndarray/base/ctor] to a common shape.
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
@@ -57,7 +57,7 @@ var y = zeros( [ 2, 2, 2 ] );
 // returns <ndarray>
 
 // Broadcast to a common shape:
-var out = broadcastArrays( [ x, y ] );
+var out = maybeBroadcastArrays( [ x, y ] );
 // returns [ <ndarray>, <ndarray> ]
 ```
 
@@ -71,10 +71,10 @@ var out = broadcastArrays( [ x, y ] );
 
 ## Notes
 
--   The function throws an error if provided [broadcast-incompatible][@stdlib/ndarray/base/broadcast-shapes] ndarrays.
--   Returned [ndarrays][@stdlib/ndarray/base/ctor] are views on their respective underlying data buffers. The views are typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to a returned [ndarray][@stdlib/ndarray/base/ctor], copy the [ndarray][@stdlib/ndarray/base/ctor] **before** performing operations which may mutate elements.
--   Returned [ndarrays][@stdlib/ndarray/base/ctor] are "base" [ndarrays][@stdlib/ndarray/base/ctor], and, thus, the returned [ndarrays][@stdlib/ndarray/base/ctor] do not perform bounds checking or afford any of the guarantees of the non-base [ndarray][@stdlib/ndarray/ctor] constructor. The primary intent of this function is to broadcast ndarray-like objects within internal implementations and to do so with minimal overhead.
--   The function always returns new [ndarray][@stdlib/ndarray/base/ctor] instances even if an input [ndarray][@stdlib/ndarray/base/ctor] shape and the broadcasted shape are the same.
+-   The function throws an error if a provided [broadcast-incompatible][@stdlib/ndarray/base/broadcast-shapes] ndarrays.
+-   If a provided [ndarray][@stdlib/ndarray/base/ctor] has a shape matching the common shape, the function returns the provided [ndarray][@stdlib/ndarray/base/ctor].
+-   If a provided [ndarray][@stdlib/ndarray/base/ctor] has a different (broadcast compatible) shape than the common shape, the function returns a new (base) [ndarray][@stdlib/ndarray/base/ctor] view of the provided [ndarray][@stdlib/ndarray/base/ctor]'s data. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to a returned [ndarray][@stdlib/ndarray/base/ctor], copy the [ndarray][@stdlib/ndarray/base/ctor] **before** performing operations which may mutate elements.
+-   A returned [ndarray][@stdlib/ndarray/base/ctor] is a "base" [ndarray][@stdlib/ndarray/base/ctor], and, thus, a returned [ndarray][@stdlib/ndarray/base/ctor] view does not perform bounds checking or afford any of the guarantees of the non-base [ndarray][@stdlib/ndarray/ctor] constructor. The primary intent of this function is to broadcast ndarray-like objects within internal implementations and to do so with minimal overhead.
 
 </section>
 
@@ -93,7 +93,7 @@ var array = require( '@stdlib/ndarray/array' );
 var zeros = require( '@stdlib/ndarray/zeros' );
 var numel = require( '@stdlib/ndarray/base/numel' );
 var ind2sub = require( '@stdlib/ndarray/ind2sub' );
-var broadcastArrays = require( '@stdlib/ndarray/base/broadcast-arrays' );
+var maybeBroadcastArrays = require( '@stdlib/ndarray/base/maybe-broadcast-arrays' );
 
 // Create a 2x2 array:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
@@ -103,9 +103,9 @@ var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 var y = zeros( [ 3, 2, 2 ] );
 // returns <ndarray>
 
-// Broadcast the arrays to a common shape:
-var out = broadcastArrays( [ x, y ] );
-// returns [ <ndarray>, <ndarray> ]
+// Broadcast arrays to a common shape:
+var out = maybeBroadcastArrays( [ x, y ] );
+// returns <ndarray>
 
 // Retrieve the common shape:
 var sh = out[ 0 ].shape;
