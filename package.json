@@ -45,6 +45,7 @@
     "@stdlib/constants": "github:stdlib-js/constants#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/number": "github:stdlib-js/number#main",
+    "@stdlib/object": "github:stdlib-js/object#main",
     "@stdlib/proxy": "github:stdlib-js/proxy#main",
     "@stdlib/slice": "github:stdlib-js/slice#main",
     "@stdlib/string": "github:stdlib-js/string#main",

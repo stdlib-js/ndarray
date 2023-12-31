@@ -311,6 +311,15 @@ setReadOnly( ns, 'emptyLike', require( './../../base/empty-like' ) );
 setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' ) );
 
 /**
+* @name flags
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/flags}
+*/
+setReadOnly( ns, 'flags', require( './../../base/flags' ) );
+
+/**
 * @name fliplr
 * @memberof ns
 * @readonly
