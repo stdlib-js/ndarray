@@ -20,49 +20,40 @@
 
 // MODULES //
 
-var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
-var isCollection = require( '@stdlib/assert/is-collection' );
-var getStride = require( './../../base/stride' );
+var isPropertyKey = require( '@stdlib/assert/is-property-key' );
+var flags = require( './../../base/flags' );
 var format = require( '@stdlib/string/format' );
 
 
 // MAIN //
 
 /**
-* Returns the stride along a specified dimension for a provided ndarray.
+* Returns a specified flag for a provided ndarray.
 *
 * @param {ndarrayLike} x - input ndarray
-* @param {integer} dim - dimension index
+* @param {(string|symbol)} name - flag name
 * @throws {TypeError} first argument must be an ndarray having one or more dimensions
-* @throws {TypeError} second argument must be an integer
-* @throws {RangeError} dimension index exceeds the number of dimensions
-* @returns {integer} stride
+* @throws {TypeError} second argument must be a valid property name
+* @returns {*} flag value
 *
 * @example
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
-* var out = stride( zeros( [ 3, 3, 3 ] ), 0 );
-* // returns 9
+* var out = flag( zeros( [ 3, 3, 3 ] ), 'READONLY' );
+* // returns <boolean>
 */
-function stride( x, dim ) {
-	var st;
-
+function flag( x, name ) {
 	// Note: we intentionally avoid rigorous ndarray checks to minimize performance impacts. This obviously means that non-ndarray-like objects can sneak through, but this is likely all right for the purposes of this function...
-	if ( typeof x !== 'object' || x === null || !isCollection( x.shape ) ) {
+	if ( typeof x !== 'object' || x === null ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
 	}
-	if ( !isInteger( dim ) ) {
-		throw new TypeError( format( 'invalid argument. Second argument must be an integer. Value: `%s`.', dim ) );
+	if ( !isPropertyKey( name ) ) {
+		throw new TypeError( 'invalid argument. Second argument must be a valid property name. Value: `%s`.', name );
 	}
-	st = getStride( x, dim );
-	if ( isInteger( st ) ) {
-		return st;
-	}
-	// As ndarrays must have integer-valued strides, if the returned "stride" value is not integer-valued, assume we haven't been provided an ndarray:
-	throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
+	return flags( x, false )[ name ];
 }
 
 
 // EXPORTS //
 
-module.exports = stride;
+module.exports = flag;

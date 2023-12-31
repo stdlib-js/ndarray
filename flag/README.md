@@ -20,7 +20,7 @@ limitations under the License.
 
 # flag
 
-> Return a specified flag for a provided [ndarray][@stdlib/ndarray/base/ctor].
+> Return a specified flag for a provided [ndarray][@stdlib/ndarray/ctor].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,12 +37,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var flag = require( '@stdlib/ndarray/base/flag' );
+var flag = require( '@stdlib/ndarray/flag' );
 ```
 
 #### flag( x, name )
 
-Returns a specified flag for a provided [ndarray][@stdlib/ndarray/base/ctor].
+Returns a specified flag for a provided [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
 var zeros = require( '@stdlib/ndarray/zeros' );
@@ -61,6 +61,10 @@ var o = flag( x, 'READONLY' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   This function is intended as a slight performance optimization over [`@stdlib/ndarray/flags`][@stdlib/ndarray/flags] when **only** a single flag is needed. For retrieving multiple flags, use [`@stdlib/ndarray/flags`][@stdlib/ndarray/flags] directly.
 
 </section>
 
@@ -81,7 +85,7 @@ var zeros = require( '@stdlib/ndarray/zeros' );
 var slice = require( '@stdlib/ndarray/slice' );
 var E = require( '@stdlib/slice/multi' );
 var S = require( '@stdlib/slice/ctor' );
-var flag = require( '@stdlib/ndarray/base/flag' );
+var flag = require( '@stdlib/ndarray/flag' );
 
 // Create an array:
 var x = zeros( [ 10, 10, 10, 10 ] );
@@ -138,7 +142,9 @@ for ( i = 0; i < slices.length; i++ ) {
 
 <section class="links">
 
-[@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray/tree/main/base/ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
+
+[@stdlib/ndarray/flags]: https://github.com/stdlib-js/ndarray/tree/main/flags
 
 </section>
 
