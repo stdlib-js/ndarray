@@ -518,6 +518,15 @@ setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block
 setReadOnly( ns, 'numel', require( './../../base/numel' ) );
 
 /**
+* @name numelDimension
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/numel-dimension}
+*/
+setReadOnly( ns, 'numelDimension', require( './../../base/numel-dimension' ) );
+
+/**
 * @name offset
 * @memberof ns
 * @readonly
