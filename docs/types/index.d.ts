@@ -23,6 +23,7 @@
 import array = require( './../../array' );
 import base = require( './../../base' );
 import broadcastArray = require( './../../broadcast-array' );
+import broadcastArrays = require( './../../broadcast-arrays' );
 import ndarrayCastingModes = require( './../../casting-modes' );
 import ndarray = require( './../../ctor' );
 import ndarrayDataBuffer = require( './../../data-buffer' );
@@ -33,16 +34,20 @@ import ndarrayDataTypes = require( './../../dtypes' );
 import ndempty = require( './../../empty' );
 import ndemptyLike = require( './../../empty-like' );
 import FancyArray = require( './../../fancy' );
+import ndarrayFlag = require( './../../flag' );
+import ndarrayFlags = require( './../../flags' );
 import scalar2ndarray = require( './../../from-scalar' );
 import ind2sub = require( './../../ind2sub' );
 import ndarrayIndexModes = require( './../../index-modes' );
 import iter = require( './../../iter' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
+import maybeBroadcastArrays = require( './../../maybe-broadcast-arrays' );
 import ndarrayMinDataType = require( './../../min-dtype' );
 import ndarrayMostlySafeCasts = require( './../../mostly-safe-casts' );
 import ndims = require( './../../ndims' );
 import ndarrayNextDataType = require( './../../next-dtype' );
 import numel = require( './../../numel' );
+import numelDimension = require( './../../numel-dimension' );
 import ndarrayOffset = require( './../../offset' );
 import ndarrayOrder = require( './../../order' );
 import ndarrayOrders = require( './../../orders' );
@@ -179,6 +184,82 @@ interface Namespace {
 	* // returns 4
 	*/
 	broadcastArray: typeof broadcastArray;
+
+	/**
+	* Broadcasts ndarrays to a common shape.
+	*
+	* ## Notes
+	*
+	* -   The function throws an error if provided broadcast-incompatible ndarrays.
+	* -   The returned arrays are **read-only** views on their respective underlying array data buffers. The views are typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to an input array, copy the array before broadcasting.
+	* -   The function always returns new ndarray instances even if an input ndarray shape and the broadcasted shape are the same.
+	*
+	* @param arrays - input arrays
+	* @throws input arrays must be broadcast compatible
+	* @returns list of broadcasted arrays
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x1 = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+	* // returns <ndarray>
+	*
+	* var shx = x1.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var y1 = zeros( [ 3, 2, 2 ] );
+	* // returns <ndarray>
+	*
+	* var shy = y1.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* var out = ns.broadcastArrays( [ x1, y1 ] );
+	* // returns <ndarray>
+	*
+	* var x2 = out[ 0 ];
+	* // returns <ndarray>
+	*
+	* var y2 = out[ 1 ];
+	* // returns <ndarray>
+	*
+	* shx = x2.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* shy = y2.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* var v = x2.get( 0, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 0, 0, 1 );
+	* // returns 2
+	*
+	* v = x2.get( 1, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 1, 1, 0 );
+	* // returns 3
+	*
+	* v = x2.get( 2, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 2, 1, 1 );
+	* // returns 4
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = zeros( [ 2, 2 ] );
+	* // returns <ndarray>
+	*
+	* var y = zeros( [ 4, 2 ] );
+	* // returns <ndarray>
+	*
+	* var out = ns.broadcastArrays( [ x, y ] );
+	* // throws <Error>
+	*/
+	broadcastArrays: typeof broadcastArrays;
 
 	/**
 	* Returns a list of ndarray casting modes.
@@ -470,6 +551,35 @@ interface Namespace {
 	FancyArray: typeof FancyArray;
 
 	/**
+	* Returns a specified flag for a provided ndarray.
+	*
+	* @param x - input ndarray
+	* @param name - flag name
+	* @returns flag value
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	*
+	* var o = ns.ndarrayFlag( zeros( [ 3, 3, 3 ] ), 'READONLY' );
+	* // returns <boolean>
+	*/
+	ndarrayFlag: typeof ndarrayFlag;
+
+	/**
+	* Returns the flags of a provided ndarray.
+	*
+	* @param x - input ndarray
+	* @returns flags
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	*
+	* var o = ns.ndarrayFlags( zeros( [ 3, 3, 3 ] ) );
+	* // returns {...}
+	*/
+	ndarrayFlags: typeof ndarrayFlags;
+
+	/**
 	* Returns a zero-dimensional ndarray containing a provided scalar value.
 	*
 	* ## Notes
@@ -620,6 +730,70 @@ interface Namespace {
 	maybeBroadcastArray: typeof maybeBroadcastArray;
 
 	/**
+	* Broadcasts ndarrays to a common shape.
+	*
+	* ## Notes
+	*
+	* -   The function throws an error if a provided broadcast-incompatible ndarrays.
+	* -   If a provided ndarray has a shape matching the common shape, the function returns the provided ndarray.
+	* -   If a provided ndarray has a different (broadcast compatible) shape than the common shape, the function returns a new **read-only** ndarray view of the provided ndarray's data. The view is typically **not** contiguous. As more than one element of a returned view may refer to the same memory location, writing to a view may affect multiple elements. If you need to write to an input array, copy the array before broadcasting.
+	*
+	* @param arrays - input arrays
+	* @throws input arrays must be broadcast compatible
+	* @returns list of broadcasted arrays
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+	* // returns <ndarray>
+	*
+	* var shx = x.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var y1 = zeros( [ 3, 2, 2 ] );
+	* // returns <ndarray>
+	*
+	* var shy = y1.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* var out = ns.maybeBroadcastArrays( x, y );
+	* // returns <ndarray>
+	*
+	* var x2 = out[ 0 ];
+	* // returns <ndarray>
+	*
+	* var y2 = out[ 1 ];
+	* // returns <ndarray>
+	*
+	* shx = x2.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* shy = y2.shape;
+	* // returns [ 3, 2, 2 ]
+	*
+	* var v = x2.get( 0, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 0, 0, 1 );
+	* // returns 2
+	*
+	* v = x2.get( 1, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 1, 1, 0 );
+	* // returns 3
+	*
+	* v = x2.get( 2, 0, 0 );
+	* // returns 1
+	*
+	* v = x2.get( 2, 1, 1 );
+	* // returns 4
+	*/
+	maybeBroadcastArrays: typeof maybeBroadcastArrays;
+
+	/**
 	* Returns the minimum ndarray data type of the closest "kind" necessary for storing a provided scalar value.
 	*
 	* @param value - scalar value
@@ -697,6 +871,21 @@ interface Namespace {
 	* // returns 27
 	*/
 	numel: typeof numel;
+
+	/**
+	* Returns the size (i.e., number of elements) of a specified dimension for a provided ndarray.
+	*
+	* @param x - input ndarray
+	* @param dim - dimension index
+	* @returns dimension size
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	*
+	* var d = ns.numelDimension( zeros( [ 4, 2, 3 ] ), 0 );
+	* // returns 4
+	*/
+	numelDimension: typeof numelDimension;
 
 	/**
 	* Returns the index offset specifying the underlying buffer index of the first iterated ndarray element.
