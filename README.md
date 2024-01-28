@@ -104,6 +104,7 @@ In addition, the namespace contains the following multidimensional array utility
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`ndat( x[, ...indices] )`][@stdlib/ndarray/at]</span><span class="delimiter">: </span><span class="description">return an `ndarray` element.</span>
 -   <span class="signature">[`broadcastArray( x, shape )`][@stdlib/ndarray/broadcast-array]</span><span class="delimiter">: </span><span class="description">broadcast an ndarray to a specified shape.</span>
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
 -   <span class="signature">[`ndarrayCastingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
@@ -258,6 +259,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/ndarray/at]: https://github.com/stdlib-js/ndarray/tree/main/at
 
 [@stdlib/ndarray/broadcast-array]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-array
 
