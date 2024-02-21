@@ -21,55 +21,55 @@
 /* eslint-disable max-lines */
 
 import array = require( './../../array' );
-import ndat = require( './../../at' );
+import at = require( './../../at' );
 import base = require( './../../base' );
 import broadcastArray = require( './../../broadcast-array' );
 import broadcastArrays = require( './../../broadcast-arrays' );
-import ndarrayCastingModes = require( './../../casting-modes' );
+import castingModes = require( './../../casting-modes' );
 import ndarray = require( './../../ctor' );
-import ndarrayDataBuffer = require( './../../data-buffer' );
+import dataBuffer = require( './../../data-buffer' );
 import defaults = require( './../../defaults' );
 import dispatch = require( './../../dispatch' );
-import ndarrayDataType = require( './../../dtype' );
-import ndarrayDataTypes = require( './../../dtypes' );
-import ndempty = require( './../../empty' );
-import ndemptyLike = require( './../../empty-like' );
+import dtype = require( './../../dtype' );
+import dtypes = require( './../../dtypes' );
+import empty = require( './../../empty' );
+import emptyLike = require( './../../empty-like' );
 import FancyArray = require( './../../fancy' );
-import ndarrayFlag = require( './../../flag' );
-import ndarrayFlags = require( './../../flags' );
+import flag = require( './../../flag' );
+import flags = require( './../../flags' );
 import scalar2ndarray = require( './../../from-scalar' );
 import ind2sub = require( './../../ind2sub' );
-import ndarrayIndexModes = require( './../../index-modes' );
+import indexModes = require( './../../index-modes' );
 import iter = require( './../../iter' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
 import maybeBroadcastArrays = require( './../../maybe-broadcast-arrays' );
-import ndarrayMinDataType = require( './../../min-dtype' );
-import ndarrayMostlySafeCasts = require( './../../mostly-safe-casts' );
+import minDataType = require( './../../min-dtype' );
+import mostlySafeCasts = require( './../../mostly-safe-casts' );
 import ndims = require( './../../ndims' );
-import ndarrayNextDataType = require( './../../next-dtype' );
+import nextDataType = require( './../../next-dtype' );
 import numel = require( './../../numel' );
 import numelDimension = require( './../../numel-dimension' );
-import ndarrayOffset = require( './../../offset' );
-import ndarrayOrder = require( './../../order' );
-import ndarrayOrders = require( './../../orders' );
-import ndarrayOutputDataTypePolicies = require( './../../output-dtype-policies' );
-import ndarrayPromotionRules = require( './../../promotion-rules' );
-import ndarraySafeCasts = require( './../../safe-casts' );
-import ndarraySameKindCasts = require( './../../same-kind-casts' );
-import ndarrayShape = require( './../../shape' );
-import ndslice = require( './../../slice' );
+import offset = require( './../../offset' );
+import order = require( './../../order' );
+import orders = require( './../../orders' );
+import outputDataTypePolicies = require( './../../output-dtype-policies' );
+import promotionRules = require( './../../promotion-rules' );
+import safeCasts = require( './../../safe-casts' );
+import sameKindCasts = require( './../../same-kind-casts' );
+import shape = require( './../../shape' );
+import slice = require( './../../slice' );
 import ndsliceAssign = require( './../../slice-assign' );
-import ndsliceDimension = require( './../../slice-dimension' );
-import ndsliceDimensionFrom = require( './../../slice-dimension-from' );
-import ndsliceDimensionTo = require( './../../slice-dimension-to' );
-import ndsliceFrom = require( './../../slice-from' );
-import ndsliceTo = require( './../../slice-to' );
-import ndarrayStride = require( './../../stride' );
-import ndarrayStrides = require( './../../strides' );
+import sliceDimension = require( './../../slice-dimension' );
+import sliceDimensionFrom = require( './../../slice-dimension-from' );
+import sliceDimensionTo = require( './../../slice-dimension-to' );
+import sliceFrom = require( './../../slice-from' );
+import sliceTo = require( './../../slice-to' );
+import stride = require( './../../stride' );
+import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
 import ndarray2array = require( './../../to-array' );
-import ndzeros = require( './../../zeros' );
-import ndzerosLike = require( './../../zeros-like' );
+import zeros = require( './../../zeros' );
+import zerosLike = require( './../../zeros-like' );
 
 /**
 * Interface describing the `ndarray` namespace.
@@ -152,13 +152,13 @@ interface Namespace {
 	* });
 	* // returns <ndarray>
 	*
-	* var v = ns.ndat( x, 0, 0 );
+	* var v = ns.at( x, 0, 0 );
 	* // returns 0
 	*
-	* v = ns.ndat( x, 5, 5 );
+	* v = ns.at( x, 5, 5 );
 	* // returns undefined
 	*/
-	ndat: typeof ndat;
+	at: typeof at;
 
 	/**
 	* Base ndarray.
@@ -310,10 +310,10 @@ interface Namespace {
 	* @returns list of ndarray casting modes
 	*
 	* @example
-	* var list = ns.ndarrayCastingModes();
+	* var list = ns.castingModes();
 	* // returns [ 'none', 'equiv', 'safe', 'mostly-safe', 'same-kind', 'unsafe' ]
 	*/
-	ndarrayCastingModes: typeof ndarrayCastingModes;
+	castingModes: typeof castingModes;
 
 	/**
 	* ndarray constructor.
@@ -363,10 +363,10 @@ interface Namespace {
 	*     'dtype': 'float64'
 	* });
 	*
-	* var out = ns.ndarrayDataBuffer( x );
+	* var out = ns.dataBuffer( x );
 	* // returns <Float64Array>
 	*/
-	ndarrayDataBuffer: typeof ndarrayDataBuffer;
+	dataBuffer: typeof dataBuffer;
 
 	/**
 	* Returns default ndarray settings.
@@ -443,47 +443,29 @@ interface Namespace {
 	* var zeros = require( './../../zeros' );
 	*
 	* var x = zeros( [ 3, 3, 3 ], {
-	*     'ns.ndarrayDataType': 'float64'
+	*     'ns.dtype': 'float64'
 	* });
 	*
-	* var dt = ns.ndarrayDataType( x );
+	* var dt = ns.dtype( x );
 	* // returns 'float64'
 	*/
-	ndarrayDataType: typeof ndarrayDataType;
+	dtype: typeof dtype;
 
 	/**
 	* Returns a list of ndarray data types.
-	*
-	* ## Notes
-	*
-	* -   When not provided a data type "kind", the function returns an array containing the following data types:
-	*
-	*     -   `binary`: binary.
-	*     -   `complex64`: single-precision complex floating-point numbers.
-	*     -   `complex128`: double-precision complex floating-point numbers.
-	*     -   `float32`: single-precision floating-point numbers.
-	*     -   `float64`: double-precision floating-point numbers.
-	*     -   `generic`: values of any type.
-	*     -   `int16`: signed 16-bit integers.
-	*     -   `int32`: signed 32-bit integers.
-	*     -   `int8`: signed 8-bit integers.
-	*     -   `uint16`: unsigned 16-bit integers.
-	*     -   `uint32`: unsigned 32-bit integers.
-	*     -   `uint8`: unsigned 8-bit integers.
-	*     -   `uint8c`: unsigned clamped 8-bit integers.
 	*
 	* @param kind - data type kind
 	* @returns list of ndarray data types
 	*
 	* @example
-	* var list = ns.ndarrayDataTypes();
+	* var list = ns.dtypes();
 	* // returns [...]
 	*
 	* @example
-	* var list = ns.ndarrayDataTypes( 'floating_point' );
+	* var list = ns.dtypes( 'floating_point' );
 	* // returns [...]
 	*/
-	ndarrayDataTypes: typeof ndarrayDataTypes;
+	dtypes: typeof dtypes;
 
 	/**
 	* Creates an uninitialized array having a specified shape and data type.
@@ -497,7 +479,7 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var arr = ns.ndempty( [ 2, 2 ] );
+	* var arr = ns.empty( [ 2, 2 ] );
 	* // returns <ndarray>
 	*
 	* var sh = arr.shape;
@@ -506,7 +488,7 @@ interface Namespace {
 	* var dt = arr.dtype;
 	* // returns 'float64'
 	*/
-	ndempty: typeof ndempty;
+	empty: typeof empty;
 
 	/**
 	* Creates an uninitialized array having the same shape and data type as a provided input ndarray.
@@ -534,7 +516,7 @@ interface Namespace {
 	* var dt = x.dtype;
 	* // returns 'generic'
 	*
-	* var y = ns.ndemptyLike( x );
+	* var y = ns.emptyLike( x );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -543,7 +525,7 @@ interface Namespace {
 	* dt = y.dtype;
 	* // returns 'generic'
 	*/
-	ndemptyLike: typeof ndemptyLike;
+	emptyLike: typeof emptyLike;
 
 	/**
 	* Fancy array constructor.
@@ -590,10 +572,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var o = ns.ndarrayFlag( zeros( [ 3, 3, 3 ] ), 'READONLY' );
+	* var o = ns.flag( zeros( [ 3, 3, 3 ] ), 'READONLY' );
 	* // returns <boolean>
 	*/
-	ndarrayFlag: typeof ndarrayFlag;
+	flag: typeof flag;
 
 	/**
 	* Returns the flags of a provided ndarray.
@@ -604,10 +586,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var o = ns.ndarrayFlags( zeros( [ 3, 3, 3 ] ) );
+	* var o = ns.flags( zeros( [ 3, 3, 3 ] ) );
 	* // returns {...}
 	*/
-	ndarrayFlags: typeof ndarrayFlags;
+	flags: typeof flags;
 
 	/**
 	* Returns a zero-dimensional ndarray containing a provided scalar value.
@@ -616,8 +598,9 @@ interface Namespace {
 	*
 	* -   If a `dtype` option is not provided and `value`
 	*
-	*     -   is a `number`, the default data type is `'float64'`.
-	*     -   is a complex number object, the default data type is `'complex128'`.
+	*     -   is a `number`, the default data type is the default real-valued floating-point data type.
+	*     -   is a complex number object of a known complex data type, the data type is the same as the provided value.
+	*     -   is a complex number object of an unknown complex data type, the default data type is the default complex-valued floating-point data type.
 	*     -   is any other value type, the default data type is `'generic'`.
 	*
 	* @param value - scalar value
@@ -698,10 +681,10 @@ interface Namespace {
 	* @returns list of ndarray index modes
 	*
 	* @example
-	* var list = ns.ndarrayIndexModes();
+	* var list = ns.indexModes();
 	* // returns [ 'throw', 'normalize', 'clamp', 'wrap' ]
 	*/
-	ndarrayIndexModes: typeof ndarrayIndexModes;
+	indexModes: typeof indexModes;
 
 	/**
 	* Multidimensional array iterators.
@@ -830,14 +813,14 @@ interface Namespace {
 	* @returns ndarray data type
 	*
 	* @example
-	* var dt = ns.ndarrayMinDataType( 3.141592653589793 );
+	* var dt = ns.minDataType( 3.141592653589793 );
 	* // returns 'float32'
 	*
 	* @example
-	* var dt = ns.ndarrayMinDataType( 3 );
+	* var dt = ns.minDataType( 3 );
 	* // returns 'uint8'
 	*/
-	ndarrayMinDataType: typeof ndarrayMinDataType;
+	minDataType: typeof minDataType;
 
 	/**
 	* Returns a list of ndarray data types to which a provided ndarray data type can be safely cast and, for floating-point data types, can be downcast.
@@ -851,10 +834,10 @@ interface Namespace {
 	* @returns list of ndarray data types or null
 	*
 	* @example
-	* var list = ns.ndarrayMostlySafeCasts( 'float32' );
+	* var list = ns.mostlySafeCasts( 'float32' );
 	* // returns [...]
 	*/
-	ndarrayMostlySafeCasts: typeof ndarrayMostlySafeCasts;
+	mostlySafeCasts: typeof mostlySafeCasts;
 
 	/**
 	* Returns the number of ndarray dimensions.
@@ -883,10 +866,10 @@ interface Namespace {
 	* @returns next larger data type(s) or null
 	*
 	* @example
-	* var dt = ns.ndarrayNextDataType( 'float32' );
+	* var dt = ns.nextDataType( 'float32' );
 	* // returns 'float64'
 	*/
-	ndarrayNextDataType: typeof ndarrayNextDataType;
+	nextDataType: typeof nextDataType;
 
 	/**
 	* Returns the number of elements in an ndarray.
@@ -926,10 +909,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var n = ns.ndarrayOffset( zeros( [ 3, 3, 3 ] ) );
+	* var n = ns.offset( zeros( [ 3, 3, 3 ] ) );
 	* // returns 0
 	*/
-	ndarrayOffset: typeof ndarrayOffset;
+	offset: typeof offset;
 
 	/**
 	* Returns the layout order of a provided ndarray.
@@ -945,13 +928,13 @@ interface Namespace {
 	* var zeros = require( './../../zeros' );
 	*
 	* var x = zeros( [ 3, 3, 3 ], {
-	*     'ns.ndarrayOrder': 'row-major'
+	*     'ns.order': 'row-major'
 	* });
 	*
-	* var o = ns.ndarrayOrder( x );
+	* var o = ns.order( x );
 	* // returns 'row-major'
 	*/
-	ndarrayOrder: typeof ndarrayOrder;
+	order: typeof order;
 
 	/**
 	* Returns a list of ndarray orders.
@@ -966,10 +949,10 @@ interface Namespace {
 	* @returns list of ndarray orders
 	*
 	* @example
-	* var list = ns.ndarrayOrders();
+	* var list = ns.orders();
 	* // returns [ 'row-major', 'column-major' ]
 	*/
-	ndarrayOrders: typeof ndarrayOrders;
+	orders: typeof orders;
 
 	/**
 	* Returns a list of output ndarray data type policies.
@@ -994,10 +977,10 @@ interface Namespace {
 	* @returns list of data type policies
 	*
 	* @example
-	* var list = ns.ndarrayOutputDataTypePolicies();
+	* var list = ns.outputDataTypePolicies();
 	* // returns [...]
 	*/
-	ndarrayOutputDataTypePolicies: typeof ndarrayOutputDataTypePolicies;
+	outputDataTypePolicies: typeof outputDataTypePolicies;
 
 	/**
 	* Returns a type promotion table displaying the ndarray data types with the smallest size and closest "kind" to which ndarray data types can be safely cast.
@@ -1005,10 +988,10 @@ interface Namespace {
 	* @returns promotion rule table
 	*
 	* @example
-	* var table = ns.ndarrayPromotionRules();
+	* var table = ns.promotionRules();
 	* // returns {...}
 	*/
-	ndarrayPromotionRules: typeof ndarrayPromotionRules;
+	promotionRules: typeof promotionRules;
 
 	/**
 	* Returns a list of ndarray data types to which a provided ndarray data type can be safely cast.
@@ -1022,10 +1005,10 @@ interface Namespace {
 	* @returns list of ndarray data types or null
 	*
 	* @example
-	* var list = ns.ndarraySafeCasts( 'float32' );
+	* var list = ns.safeCasts( 'float32' );
 	* // returns [...]
 	*/
-	ndarraySafeCasts: typeof ndarraySafeCasts;
+	safeCasts: typeof safeCasts;
 
 	/**
 	* Returns a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".
@@ -1039,10 +1022,10 @@ interface Namespace {
 	* @returns list of ndarray data types or null
 	*
 	* @example
-	* var list = ns.ndarraySameKindCasts( 'float32' );
+	* var list = ns.sameKindCasts( 'float32' );
 	* // returns [...]
 	*/
-	ndarraySameKindCasts: typeof ndarraySameKindCasts;
+	sameKindCasts: typeof sameKindCasts;
 
 	/**
 	* Returns the shape of a provided ndarray.
@@ -1053,10 +1036,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var sh = ns.ndarrayShape( zeros( [ 3, 3, 3 ] ) );
+	* var sh = ns.shape( zeros( [ 3, 3, 3 ] ) );
 	* // returns [ 3, 3, 3 ]
 	*/
-	ndarrayShape: typeof ndarrayShape;
+	shape: typeof shape;
 
 	/**
 	* Returns a read-only view of an input ndarray.
@@ -1068,8 +1051,8 @@ interface Namespace {
 	* @returns output array
 	*
 	* @example
-	* var Slice = require( '@stdlib/ns.ndslice/ctor' );
-	* var MultiSlice = require( '@stdlib/ns.ndslice/multi' );
+	* var Slice = require( '@stdlib/ns.slice/ctor' );
+	* var MultiSlice = require( '@stdlib/ns.slice/multi' );
 	* var ndarray = require( './../../ctor' );
 	* var ndarray2array = require( './../../to-array' );
 	*
@@ -1090,7 +1073,7 @@ interface Namespace {
 	* var s0 = new Slice( null, null, -2 );
 	* var s1 = new Slice( null, null, -1 );
 	*
-	* var y = ns.ndslice( x, s0, s1 );
+	* var y = ns.slice( x, s0, s1 );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1099,7 +1082,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 6, 5 ], [ 2, 1 ] ]
 	*/
-	ndslice: typeof ndslice;
+	slice: typeof slice;
 
 	/**
 	* Assigns element values from a broadcasted input ndarray to corresponding elements in an output ndarray view.
@@ -1193,7 +1176,7 @@ interface Namespace {
 	* var s = new Slice( null, null, -1 );
 	* // returns <Slice>
 	*
-	* var y = ns.ndsliceDimension( x, 0, s );
+	* var y = ns.sliceDimension( x, 0, s );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1202,7 +1185,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 	*/
-	ndsliceDimension: typeof ndsliceDimension;
+	sliceDimension: typeof sliceDimension;
 
 	/**
 	* Returns a read-only shifted view of an input ndarray along a specified dimension.
@@ -1231,7 +1214,7 @@ interface Namespace {
 	* var arr = ndarray2array( x );
 	* // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 	*
-	* var y = ns.ndsliceDimensionFrom( x, 0, 1 );
+	* var y = ns.sliceDimensionFrom( x, 0, 1 );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1240,7 +1223,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 3, 4 ], [ 5, 6 ] ]
 	*/
-	ndsliceDimensionFrom: typeof ndsliceDimensionFrom;
+	sliceDimensionFrom: typeof sliceDimensionFrom;
 
 	/**
 	* Returns a read-only truncated view of an input ndarray along a specified dimension.
@@ -1269,7 +1252,7 @@ interface Namespace {
 	* var arr = ndarray2array( x );
 	* // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 	*
-	* var y = ns.ndsliceDimensionTo( x, 0, 2 );
+	* var y = ns.sliceDimensionTo( x, 0, 2 );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1278,7 +1261,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 	*/
-	ndsliceDimensionTo: typeof ndsliceDimensionTo;
+	sliceDimensionTo: typeof sliceDimensionTo;
 
 	/**
 	* Returns a read-only shifted view of an input ndarray.
@@ -1307,7 +1290,7 @@ interface Namespace {
 	* var arr = ndarray2array( x );
 	* // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 	*
-	* var y = ns.ndsliceFrom( x, 1, null );
+	* var y = ns.sliceFrom( x, 1, null );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1316,7 +1299,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 3, 4 ], [ 5, 6 ] ]
 	*/
-	ndsliceFrom: typeof ndsliceFrom;
+	sliceFrom: typeof sliceFrom;
 
 	/**
 	* Returns a read-only truncated view of an input ndarray.
@@ -1345,7 +1328,7 @@ interface Namespace {
 	* var arr = ndarray2array( x );
 	* // returns [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 	*
-	* var y = ns.ndsliceTo( x, 2, null );
+	* var y = ns.sliceTo( x, 2, null );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1354,7 +1337,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 	*/
-	ndsliceTo: typeof ndsliceTo;
+	sliceTo: typeof sliceTo;
 
 	/**
 	* Returns the stride along a specified dimension for a provided ndarray.
@@ -1370,10 +1353,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var st = ns.ndarrayStride( zeros( [ 3, 3, 3 ] ), 0 );
+	* var st = ns.stride( zeros( [ 3, 3, 3 ] ), 0 );
 	* // returns 9
 	*/
-	ndarrayStride: typeof ndarrayStride;
+	stride: typeof stride;
 
 	/**
 	* Returns the strides of a provided ndarray.
@@ -1384,10 +1367,10 @@ interface Namespace {
 	* @example
 	* var zeros = require( './../../zeros' );
 	*
-	* var sh = ns.ndarrayStrides( zeros( [ 3, 3, 3 ] ) );
+	* var sh = ns.strides( zeros( [ 3, 3, 3 ] ) );
 	* // returns [ 9, 3, 1 ]
 	*/
-	ndarrayStrides: typeof ndarrayStrides;
+	strides: typeof strides;
 
 	/**
 	* Converts subscripts to a linear index.
@@ -1446,7 +1429,7 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var arr = ns.ndzeros( [ 2, 2 ] );
+	* var arr = ns.zeros( [ 2, 2 ] );
 	* // returns <ndarray>
 	*
 	* var sh = arr.shape;
@@ -1455,7 +1438,7 @@ interface Namespace {
 	* var dt = arr.dtype;
 	* // returns 'float64'
 	*/
-	ndzeros: typeof ndzeros;
+	zeros: typeof zeros;
 
 	/**
 	* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
@@ -1484,7 +1467,7 @@ interface Namespace {
 	* var dt = x.dtype;
 	* // returns 'generic'
 	*
-	* var y = ns.ndzerosLike( x );
+	* var y = ns.zerosLike( x );
 	* // returns <ndarray>
 	*
 	* sh = y.shape;
@@ -1493,7 +1476,7 @@ interface Namespace {
 	* dt = y.dtype;
 	* // returns 'generic'
 	*/
-	ndzerosLike: typeof ndzerosLike;
+	zerosLike: typeof zerosLike;
 }
 
 /**
