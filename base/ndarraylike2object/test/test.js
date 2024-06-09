@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Complex64Array = require( '@stdlib/array/complex64' );
-var Complex64 = require( '@stdlib/complex/float32' );
+var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var array = require( './../../../array' );
 var ndarray = require( './../../../ctor' );
 var realf = require( '@stdlib/complex/realf' );

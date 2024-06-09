@@ -39,6 +39,7 @@
     "@stdlib/array": "github:stdlib-js/array#main",
     "@stdlib/assert": "github:stdlib-js/assert#main",
     "@stdlib/bigint": "github:stdlib-js/bigint#main",
+    "@stdlib/blas": "github:stdlib-js/blas#main",
     "@stdlib/boolean": "github:stdlib-js/boolean#main",
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/complex": "github:stdlib-js/complex#main",
@@ -55,7 +56,6 @@
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
-    "@stdlib/blas": "github:stdlib-js/blas#main",
     "@stdlib/console": "github:stdlib-js/console#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
     "@stdlib/random": "github:stdlib-js/random#main",
