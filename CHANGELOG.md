@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-09)
+## Unreleased (2024-06-10)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - update namespace TypeScript declarations [(##2351)](#2351)
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`8f43afc`](https://github.com/stdlib-js/stdlib/commit/8f43afc5d9637ba35f60d35046041e5f0579f92c) - rename exported aliases
 
@@ -262,6 +263,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - **feat:** update namespace TypeScript declarations [(##2351)](#2351) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`539fc72`](https://github.com/stdlib-js/stdlib/commit/539fc725d1fea6738862de98e3f3c6385fbdc0e6) - **style:** fix indentation _(by Athan Reines)_
 -   [`71b0621`](https://github.com/stdlib-js/stdlib/commit/71b06218afbce673efa51c4704f26637a27a1d1c) - **refactor:** ensure enumeration constants match BLAS layouts _(by Athan Reines)_
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - **fix:** update include paths _(by Athan Reines)_
