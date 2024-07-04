@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-10)
+## Unreleased (2024-07-04)
 
 <section class="packages">
 
@@ -207,6 +207,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-safe-casts-unreleased">
+
+#### [@stdlib/ndarray/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/safe-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ca687d6`](https://github.com/stdlib-js/stdlib/commit/ca687d6a8d8476309630c5a03f303c2420dc753f) - add boolean dtype support to `ndarray/safe-casts` [(#2507)](https://github.com/stdlib-js/stdlib/pull/2507)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -248,9 +270,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Jaysukh Makvana
 -   Philipp Burckhardt
 
 </section>
@@ -263,6 +286,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ca687d6`](https://github.com/stdlib-js/stdlib/commit/ca687d6a8d8476309630c5a03f303c2420dc753f) - **feat:** add boolean dtype support to `ndarray/safe-casts` [(#2507)](https://github.com/stdlib-js/stdlib/pull/2507) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - **feat:** update namespace TypeScript declarations [(##2351)](#2351) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`539fc72`](https://github.com/stdlib-js/stdlib/commit/539fc725d1fea6738862de98e3f3c6385fbdc0e6) - **style:** fix indentation _(by Athan Reines)_
 -   [`71b0621`](https://github.com/stdlib-js/stdlib/commit/71b06218afbce673efa51c4704f26637a27a1d1c) - **refactor:** ensure enumeration constants match BLAS layouts _(by Athan Reines)_
