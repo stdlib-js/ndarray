@@ -286,6 +286,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`41a5c49`](https://github.com/stdlib-js/stdlib/commit/41a5c4954cc46899abfe20145987627b2e86fc94) - **test:** update tests in `ndarray/base/*` to support boolean dtypes [(#2505)](https://github.com/stdlib-js/stdlib/pull/2505) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ca687d6`](https://github.com/stdlib-js/stdlib/commit/ca687d6a8d8476309630c5a03f303c2420dc753f) - **feat:** add boolean dtype support to `ndarray/safe-casts` [(#2507)](https://github.com/stdlib-js/stdlib/pull/2507) _(by Jaysukh Makvana, Athan Reines)_
 -   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - **feat:** update namespace TypeScript declarations [(##2351)](#2351) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`539fc72`](https://github.com/stdlib-js/stdlib/commit/539fc725d1fea6738862de98e3f3c6385fbdc0e6) - **style:** fix indentation _(by Athan Reines)_
