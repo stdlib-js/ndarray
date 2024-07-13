@@ -77,6 +77,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-buffer-unreleased">
+
+#### [@stdlib/ndarray/base/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fa118f2`](https://github.com/stdlib-js/stdlib/commit/fa118f279848e1c85ea6e5cf9799f3089649214c) - add boolean dtype support to `ndarray/base/buffer` [(#2574)](https://github.com/stdlib-js/stdlib/pull/2574)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-buffer-ctors-unreleased">
 
 #### [@stdlib/ndarray/base/buffer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-ctors)
@@ -463,6 +485,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`fa118f2`](https://github.com/stdlib-js/stdlib/commit/fa118f279848e1c85ea6e5cf9799f3089649214c) - **feat:** add boolean dtype support to `ndarray/base/buffer` [(#2574)](https://github.com/stdlib-js/stdlib/pull/2574) _(by Jaysukh Makvana, Athan Reines)_
 -   [`e92152b`](https://github.com/stdlib-js/stdlib/commit/e92152baba61ab358640cba9d0506d75123a5f60) - **feat:** add boolean dtype support to `ndarray/defaults` [(#2551)](https://github.com/stdlib-js/stdlib/pull/2551) _(by Jaysukh Makvana, Athan Reines)_
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - **feat:** add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550) _(by Jaysukh Makvana, Athan Reines)_
 -   [`21052a2`](https://github.com/stdlib-js/stdlib/commit/21052a211289b86b0e8a2e1f43a4d4c5b2379ffb) - **feat:** add boolean dtype support to `ndarray/min-dtype` [(#2552)](https://github.com/stdlib-js/stdlib/pull/2552) _(by Jaysukh Makvana, Athan Reines)_
