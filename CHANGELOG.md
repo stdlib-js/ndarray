@@ -55,6 +55,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-assert-is-boolean--unreleased">
+
+#### [@stdlib/ndarray/base/assert/is-boolean-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-boolean-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`979cf48`](https://github.com/stdlib-js/stdlib/commit/979cf4883141c4c5545860ac59ae056b2ecd3e43) - add `ndarray/base/assert/is-boolean-data-type` [(#2575)](https://github.com/stdlib-js/stdlib/pull/2575)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-assign-unreleased">
 
 #### [@stdlib/ndarray/base/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assign)
@@ -485,6 +507,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`979cf48`](https://github.com/stdlib-js/stdlib/commit/979cf4883141c4c5545860ac59ae056b2ecd3e43) - **feat:** add `ndarray/base/assert/is-boolean-data-type` [(#2575)](https://github.com/stdlib-js/stdlib/pull/2575) _(by Jaysukh Makvana, Athan Reines)_
 -   [`fa118f2`](https://github.com/stdlib-js/stdlib/commit/fa118f279848e1c85ea6e5cf9799f3089649214c) - **feat:** add boolean dtype support to `ndarray/base/buffer` [(#2574)](https://github.com/stdlib-js/stdlib/pull/2574) _(by Jaysukh Makvana, Athan Reines)_
 -   [`e92152b`](https://github.com/stdlib-js/stdlib/commit/e92152baba61ab358640cba9d0506d75123a5f60) - **feat:** add boolean dtype support to `ndarray/defaults` [(#2551)](https://github.com/stdlib-js/stdlib/pull/2551) _(by Jaysukh Makvana, Athan Reines)_
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - **feat:** add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550) _(by Jaysukh Makvana, Athan Reines)_
