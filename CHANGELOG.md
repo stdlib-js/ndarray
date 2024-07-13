@@ -171,6 +171,16 @@
 
 <details>
 
+<section class="features">
+
+##### Features
+
+-   [`19d4a8d`](https://github.com/stdlib-js/stdlib/commit/19d4a8da27facd0cc72b6162dc7e6b0d66d7a63c) - add boolean dtype support to `ndarray/base/nullary` [(#2586)](https://github.com/stdlib-js/stdlib/pull/2586)
+
+</section>
+
+<!-- /.features -->
+
 <section class="bug-fixes">
 
 ##### Bug Fixes
@@ -507,6 +517,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`19d4a8d`](https://github.com/stdlib-js/stdlib/commit/19d4a8da27facd0cc72b6162dc7e6b0d66d7a63c) - **feat:** add boolean dtype support to `ndarray/base/nullary` [(#2586)](https://github.com/stdlib-js/stdlib/pull/2586) _(by Jaysukh Makvana)_
 -   [`c067b6c`](https://github.com/stdlib-js/stdlib/commit/c067b6c990c99b8f4cf315b5378af8574098962b) - **docs:** update namespace table of contents [(#2576)](https://github.com/stdlib-js/stdlib/pull/2576) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`d71c3a9`](https://github.com/stdlib-js/stdlib/commit/d71c3a91bd81b7dff1a24b151ef429c427e5875b) - **docs:** update namespace TypeScript declarations [(#2584)](https://github.com/stdlib-js/stdlib/pull/2584) _(by stdlib-bot, Athan Reines)_
 -   [`979cf48`](https://github.com/stdlib-js/stdlib/commit/979cf4883141c4c5545860ac59ae056b2ecd3e43) - **feat:** add `ndarray/base/assert/is-boolean-data-type` [(#2575)](https://github.com/stdlib-js/stdlib/pull/2575) _(by Jaysukh Makvana, Athan Reines)_
