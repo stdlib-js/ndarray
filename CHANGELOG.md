@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-10)
+## Unreleased (2024-07-13)
 
 <section class="packages">
 
@@ -70,6 +70,28 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-buffer-ctors-unreleased">
+
+#### [@stdlib/ndarray/base/buffer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`0f0dbca`](https://github.com/stdlib-js/stdlib/commit/0f0dbcaa7eddb30c09c8cc394224cd4a409b90a6) - add boolean dtype support to `ndarray/base/buffer-ctors` [(#2571)](https://github.com/stdlib-js/stdlib/pull/2571)
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -374,6 +396,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`0f0dbca`](https://github.com/stdlib-js/stdlib/commit/0f0dbcaa7eddb30c09c8cc394224cd4a409b90a6) - **feat:** add boolean dtype support to `ndarray/base/buffer-ctors` [(#2571)](https://github.com/stdlib-js/stdlib/pull/2571) _(by Jaysukh Makvana, Athan Reines)_
 -   [`1cb0243`](https://github.com/stdlib-js/stdlib/commit/1cb0243d79c25ae193c058bb15ceeebad6cf3cfd) - **feat:** add boolean dtype support to `ndarray/next-dtype` [(#2553)](https://github.com/stdlib-js/stdlib/pull/2553) _(by Jaysukh Makvana)_
 -   [`131d649`](https://github.com/stdlib-js/stdlib/commit/131d649c6b22a6247121db1fd380658bf4e83b65) - **feat:** add boolean dtype support to `ndarray/mostly-safe-casts` [(#2554)](https://github.com/stdlib-js/stdlib/pull/2554) _(by Jaysukh Makvana, Athan Reines)_
 -   [`4e860d8`](https://github.com/stdlib-js/stdlib/commit/4e860d827216f445b5abc569a0d7d7d7e61d83f6) - **feat:** add boolean dtype support to `ndarray/same-kind-casts` [(#2555)](https://github.com/stdlib-js/stdlib/pull/2555) _(by Jaysukh Makvana)_
