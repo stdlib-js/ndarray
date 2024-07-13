@@ -165,6 +165,50 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-empty-unreleased">
+
+#### [@stdlib/ndarray/base/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-empty-like-unreleased">
+
+#### [@stdlib/ndarray/base/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-nullary-unreleased">
 
 #### [@stdlib/ndarray/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary)
@@ -229,6 +273,50 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-zeros-unreleased">
+
+#### [@stdlib/ndarray/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-zeros-like-unreleased">
+
+#### [@stdlib/ndarray/base/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-ctor-unreleased">
 
 #### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
@@ -285,6 +373,50 @@
 
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550)
 -   [`6b9e18f`](https://github.com/stdlib-js/stdlib/commit/6b9e18f625337d030eb3cd2001934696ef05bfc2) - add support for 'typed' data type kind
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-empty-unreleased">
+
+#### [@stdlib/ndarray/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-empty-like-unreleased">
+
+#### [@stdlib/ndarray/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
 
 </section>
 
@@ -471,6 +603,50 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-zeros-unreleased">
+
+#### [@stdlib/ndarray/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-zeros-like-unreleased">
+
+#### [@stdlib/ndarray/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -528,6 +704,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - **feat:** add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588) _(by Jaysukh Makvana, Athan Reines)_
 -   [`f766a56`](https://github.com/stdlib-js/stdlib/commit/f766a563e112098dc229991c0eedb5f5b7417811) - **feat:** add boolean dtype support to `ndarray/from-scalar` [(#2589)](https://github.com/stdlib-js/stdlib/pull/2589) _(by Jaysukh Makvana, Athan Reines)_
 -   [`a360f04`](https://github.com/stdlib-js/stdlib/commit/a360f048dde8429a3ffcc60d36abe9ad33038c73) - **feat:** add boolean dtype support to `ndarray/base/unary` [(#2587)](https://github.com/stdlib-js/stdlib/pull/2587) _(by Jaysukh Makvana)_
 -   [`19d4a8d`](https://github.com/stdlib-js/stdlib/commit/19d4a8da27facd0cc72b6162dc7e6b0d66d7a63c) - **feat:** add boolean dtype support to `ndarray/base/nullary` [(#2586)](https://github.com/stdlib-js/stdlib/pull/2586) _(by Jaysukh Makvana)_

@@ -19,7 +19,7 @@
 'use strict';
 
 var dtypes = require( './../../dtypes' );
-var zeros = require( './../../zeros' );
+var empty = require( './../../empty' );
 var emptyLike = require( './../lib' );
 
 // Get a list of data types:
@@ -30,7 +30,7 @@ var x;
 var y;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-	x = zeros( [ 2, 2 ], {
+	x = empty( [ 2, 2 ], {
 		'dtype': dt[ i ]
 	});
 	y = emptyLike( x );
