@@ -306,6 +306,7 @@
 
 ##### Features
 
+-   [`f766a56`](https://github.com/stdlib-js/stdlib/commit/f766a563e112098dc229991c0eedb5f5b7417811) - add boolean dtype support to `ndarray/from-scalar` [(#2589)](https://github.com/stdlib-js/stdlib/pull/2589)
 -   [`9e08caf`](https://github.com/stdlib-js/stdlib/commit/9e08caf0e897040e9b82ff104cb5a09d6b03465e) - return a `complex64` dtype ndarray if provided a Complex64 scalar
 
 </section>
@@ -527,6 +528,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f766a56`](https://github.com/stdlib-js/stdlib/commit/f766a563e112098dc229991c0eedb5f5b7417811) - **feat:** add boolean dtype support to `ndarray/from-scalar` [(#2589)](https://github.com/stdlib-js/stdlib/pull/2589) _(by Jaysukh Makvana, Athan Reines)_
 -   [`a360f04`](https://github.com/stdlib-js/stdlib/commit/a360f048dde8429a3ffcc60d36abe9ad33038c73) - **feat:** add boolean dtype support to `ndarray/base/unary` [(#2587)](https://github.com/stdlib-js/stdlib/pull/2587) _(by Jaysukh Makvana)_
 -   [`19d4a8d`](https://github.com/stdlib-js/stdlib/commit/19d4a8da27facd0cc72b6162dc7e6b0d66d7a63c) - **feat:** add boolean dtype support to `ndarray/base/nullary` [(#2586)](https://github.com/stdlib-js/stdlib/pull/2586) _(by Jaysukh Makvana)_
 -   [`c067b6c`](https://github.com/stdlib-js/stdlib/commit/c067b6c990c99b8f4cf315b5378af8574098962b) - **docs:** update namespace table of contents [(#2576)](https://github.com/stdlib-js/stdlib/pull/2576) _(by stdlib-bot, Philipp Burckhardt)_
