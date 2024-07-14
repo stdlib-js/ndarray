@@ -404,6 +404,7 @@
 
 ##### Features
 
+-   [`d06165b`](https://github.com/stdlib-js/stdlib/commit/d06165bd6c491b4ad19bc2577be76cff083eda98) - add support for extending data type kind subsets with a \"generic\" data type
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550)
 -   [`6b9e18f`](https://github.com/stdlib-js/stdlib/commit/6b9e18f625337d030eb3cd2001934696ef05bfc2) - add support for 'typed' data type kind
 
@@ -738,6 +739,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d06165b`](https://github.com/stdlib-js/stdlib/commit/d06165bd6c491b4ad19bc2577be76cff083eda98) - **feat:** add support for extending data type kind subsets with a \"generic\" data type _(by Athan Reines)_
 -   [`6ea880c`](https://github.com/stdlib-js/stdlib/commit/6ea880ccabbf770cf13a2def4f9ce806daa2b2f6) - **feat:** add boolean dtype support to `ndarray/base/assign` [(#2598)](https://github.com/stdlib-js/stdlib/pull/2598) _(by Jaysukh Makvana, Athan Reines)_
 -   [`903c51c`](https://github.com/stdlib-js/stdlib/commit/903c51c7d0a06d9186a6f2be1b01fa25f770a3eb) - **test:** add tests to `@stdlib/ndarray/base/nullary` [(#2350)](https://github.com/stdlib-js/stdlib/pull/2350) _(by Muhammad Haris, Athan Reines)_
 -   [`de17de3`](https://github.com/stdlib-js/stdlib/commit/de17de32867461079aae166d5cecbecb1da7f922) - **feat:** update namespace TypeScript declarations [(#2593)](https://github.com/stdlib-js/stdlib/pull/2593) _(by stdlib-bot, Athan Reines)_
