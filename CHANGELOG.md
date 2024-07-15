@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-14)
+## Unreleased (2024-07-15)
 
 <section class="packages">
 
@@ -739,6 +739,8 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9abdead`](https://github.com/stdlib-js/stdlib/commit/9abdead65457225ccbf44f4bab8caf96167a71c5) - **test:** add tests for three-dimensional arrays [(#2599)](https://github.com/stdlib-js/stdlib/pull/2599) _(by Muhammad Haris, Athan Reines)_
+-   [`d04dcbd`](https://github.com/stdlib-js/stdlib/commit/d04dcbd6dc3b0bf4a89bd3947d317fa5ff15bb38) - **docs:** remove private annotations in C comments _(by Philipp Burckhardt)_
 -   [`d06165b`](https://github.com/stdlib-js/stdlib/commit/d06165bd6c491b4ad19bc2577be76cff083eda98) - **feat:** add support for extending data type kind subsets with a \"generic\" data type _(by Athan Reines)_
 -   [`6ea880c`](https://github.com/stdlib-js/stdlib/commit/6ea880ccabbf770cf13a2def4f9ce806daa2b2f6) - **feat:** add boolean dtype support to `ndarray/base/assign` [(#2598)](https://github.com/stdlib-js/stdlib/pull/2598) _(by Jaysukh Makvana, Athan Reines)_
 -   [`903c51c`](https://github.com/stdlib-js/stdlib/commit/903c51c7d0a06d9186a6f2be1b01fa25f770a3eb) - **test:** add tests to `@stdlib/ndarray/base/nullary` [(#2350)](https://github.com/stdlib-js/stdlib/pull/2350) _(by Muhammad Haris, Athan Reines)_
