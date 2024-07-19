@@ -26,8 +26,8 @@ var Complex64Array = require( '@stdlib/array/complex64' );
 var Complex64 = require( '@stdlib/complex/float32/ctor' );
 var array = require( './../../../array' );
 var ndarray = require( './../../../ctor' );
-var realf = require( '@stdlib/complex/realf' );
-var imagf = require( '@stdlib/complex/imagf' );
+var realf = require( '@stdlib/complex/float32/real' );
+var imagf = require( '@stdlib/complex/float32/imag' );
 var ndarraylike2object = require( './../lib' );
 
 
