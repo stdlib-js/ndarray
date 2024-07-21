@@ -739,6 +739,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`14a2930`](https://github.com/stdlib-js/stdlib/commit/14a2930e995e2a92b2886146514c82f637807724) - **test:** add tests to `ndarray/base/nullary` [(#2644)](https://github.com/stdlib-js/stdlib/pull/2644) _(by Muhammad Haris, Athan Reines)_
 -   [`06b4d43`](https://github.com/stdlib-js/stdlib/commit/06b4d4334a2c56bb39787c902fadfb9bb794779d) - **test:** add tests to `ndarray/base/nullary` [(#2634)](https://github.com/stdlib-js/stdlib/pull/2634) _(by Muhammad Haris, Athan Reines)_
 -   [`e4cd553`](https://github.com/stdlib-js/stdlib/commit/e4cd5534b04ce1c7277126fdd1811b845f95d1f2) - **test:** add tests to `ndarray/base/nullary` [(#2609)](https://github.com/stdlib-js/stdlib/pull/2609) _(by Muhammad Haris, Athan Reines)_
 -   [`32bbcb3`](https://github.com/stdlib-js/stdlib/commit/32bbcb3b3dae1f028fd18166ee7875a93d44d0ee) - **refactor:** update paths _(by Athan Reines)_
