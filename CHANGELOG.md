@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-24)
+## Unreleased (2024-07-25)
 
 <section class="packages">
 
@@ -757,6 +757,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`468eb7f`](https://github.com/stdlib-js/stdlib/commit/468eb7f2d12876dc0713c081a53043961c70feda) - **test:** add tests to `ndarray/base/nullary` [(#2655)](https://github.com/stdlib-js/stdlib/pull/2655) _(by Muhammad Haris, Athan Reines)_
 -   [`fa34b48`](https://github.com/stdlib-js/stdlib/commit/fa34b48968bddc6eb016fd4991833d7942e2a9a9) - **test:** add tests to `ndarray/base/nullary` [(#2652)](https://github.com/stdlib-js/stdlib/pull/2652) _(by Muhammad Haris, Athan Reines)_
 -   [`0dfdd7d`](https://github.com/stdlib-js/stdlib/commit/0dfdd7da997c13178f0a2bd7a9895a4618629a46) - **test:** add tests to `ndarray/base/nullary` [(#2645)](https://github.com/stdlib-js/stdlib/pull/2645) _(by Muhammad Haris, Athan Reines)_
 -   [`14a2930`](https://github.com/stdlib-js/stdlib/commit/14a2930e995e2a92b2886146514c82f637807724) - **test:** add tests to `ndarray/base/nullary` [(#2644)](https://github.com/stdlib-js/stdlib/pull/2644) _(by Muhammad Haris, Athan Reines)_
