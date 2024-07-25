@@ -268,6 +268,18 @@
 
 <!-- /.bug-fixes -->
 
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#2229](https://github.com/stdlib-js/stdlib/issues/2229)
+
+</section>
+
+<!-- /.issues -->
+
 </details>
 
 </section>
@@ -736,6 +748,18 @@
 
 <!-- /.breaking-changes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#2229](https://github.com/stdlib-js/stdlib/issues/2229)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="contributors">
 
 ### Contributors
@@ -757,6 +781,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cace2b4`](https://github.com/stdlib-js/stdlib/commit/cace2b43ed6624d28afdc5d85fb6551f7f0155b1) - **test:** add tests to `ndarray/base/nullary` [(#2663)](https://github.com/stdlib-js/stdlib/pull/2663) _(by Muhammad Haris, Athan Reines)_
 -   [`468eb7f`](https://github.com/stdlib-js/stdlib/commit/468eb7f2d12876dc0713c081a53043961c70feda) - **test:** add tests to `ndarray/base/nullary` [(#2655)](https://github.com/stdlib-js/stdlib/pull/2655) _(by Muhammad Haris, Athan Reines)_
 -   [`fa34b48`](https://github.com/stdlib-js/stdlib/commit/fa34b48968bddc6eb016fd4991833d7942e2a9a9) - **test:** add tests to `ndarray/base/nullary` [(#2652)](https://github.com/stdlib-js/stdlib/pull/2652) _(by Muhammad Haris, Athan Reines)_
 -   [`0dfdd7d`](https://github.com/stdlib-js/stdlib/commit/0dfdd7da997c13178f0a2bd7a9895a4618629a46) - **test:** add tests to `ndarray/base/nullary` [(#2645)](https://github.com/stdlib-js/stdlib/pull/2645) _(by Muhammad Haris, Athan Reines)_
@@ -827,7 +852,39 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 ### Packages
 
-<section class="package" id="ndarray-v0.2.1">
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.2.0 (2024-02-05)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="ndarray-v0.2.0">
 
 #### [@stdlib/ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray)
 
@@ -850,70 +907,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`fca85b7`](https://github.com/stdlib-js/stdlib/commit/fca85b7d10fc3a84033633cfa6034521a6d5aa42) - add `ndsliceFrom` to namespace
 -   [`e391499`](https://github.com/stdlib-js/stdlib/commit/e3914991ac1b77626f7a10051930f53af0344470) - add `ndarrayStride` to namespace
 -   [`d138eac`](https://github.com/stdlib-js/stdlib/commit/d138eacc068299ac8b928e1f65f6731da68dbcc9) - add `ndsliceTo` to namespace
--   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
--   [`c54dc22`](https://github.com/stdlib-js/stdlib/commit/c54dc2221daaeb94f148dd042f68f28e27afee34) - add `ndsliceDimensionFrom`
--   [`1b0fc06`](https://github.com/stdlib-js/stdlib/commit/1b0fc06ec87f77a925ec0881f3aeda270759be14) - add `ndsliceDimensionTo` to namespace
--   [`1ee8ca1`](https://github.com/stdlib-js/stdlib/commit/1ee8ca150bc67b905084fe89d20f6102ed823794) - add `ndarrayMostlySafeCasts` to namespace
--   [`b5c4543`](https://github.com/stdlib-js/stdlib/commit/b5c454313c1f2cce40a913f889093410608246bf) - add `ndsliceDimension` to namespace
--   [`3eeff0a`](https://github.com/stdlib-js/stdlib/commit/3eeff0a0843cbe3c94c814def9f26b5caa4ed429) - add `ndarrayDataBuffer` to namespace
--   [`a2b2082`](https://github.com/stdlib-js/stdlib/commit/a2b208201a324c5efea72831cc35da60fe560583) - add `ndarray/data-buffer`
--   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167) - rename aliases
--   [`b38f7f8`](https://github.com/stdlib-js/stdlib/commit/b38f7f89759f2f8577c1184a9b0cd71d412db8a2) - add `ndorder` to namespace
--   [`a0baf19`](https://github.com/stdlib-js/stdlib/commit/a0baf191ee0dd9c4fa49229ced25c00cd25ca4a9) - add `ndarrayDataType` to namespace
--   [`6eb1720`](https://github.com/stdlib-js/stdlib/commit/6eb1720344be2cc2e1ac46ae1aef501edc0dc4a2) - add `ndstrides` to namespace
--   [`482bd69`](https://github.com/stdlib-js/stdlib/commit/482bd6970166f88f832e4d0e241b2fc1d0d780ea) - add `ndshape` to namespace
--   [`e20c23e`](https://github.com/stdlib-js/stdlib/commit/e20c23e36bdb2904b2aa51a47a5cd674bdc377d0) - add `ndoffset` to namespace
--   [`94b7c2d`](https://github.com/stdlib-js/stdlib/commit/94b7c2da42e0d782ccd380503ec6770a0c671822) - add `ndims` to namespace
--   [`3514d7d`](https://github.com/stdlib-js/stdlib/commit/3514d7d812aaad71eaaf60dd570bf460758319f2) - add `numel` to namespace
--   [`3e3d62e`](https://github.com/stdlib-js/stdlib/commit/3e3d62e3b7dd32fce3cb16ae1457729fdbecdaf7) - add `maybeBroadcastArray` to namespace
--   [`9759a2c`](https://github.com/stdlib-js/stdlib/commit/9759a2c124154866e00bcba3c19647e45079ce56) - add `broadcastArray` to namespace
--   [`fdebad4`](https://github.com/stdlib-js/stdlib/commit/fdebad409c163e0358421db3705d37768c8bca32) - add `iter` to namespace
--   [`6d9677a`](https://github.com/stdlib-js/stdlib/commit/6d9677a1d879fd369ad1145d43b3334659c5d10f) - add `ndsliceAssign` to namespace
--   [`c3ff11f`](https://github.com/stdlib-js/stdlib/commit/c3ff11f96e30d608107ed1c7034792b40adc4ca0) - add `FancyArray` to namespace
--   [`c26a733`](https://github.com/stdlib-js/stdlib/commit/c26a7337fcc5c1d1c50d492d6ea362d7bc360810) - add `ndslice` to namespace
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`3556d4e`](https://github.com/stdlib-js/stdlib/commit/3556d4e588a0840c788c02b357a7b8d87e575f78) - add `defaults` to namespace
--   [`a3a7a45`](https://github.com/stdlib-js/stdlib/commit/a3a7a4579edeb83503df22604e0ee47b60184ad3) - add `ndarrayOutputDataTypePolicies` to namespace
--   [`3da30d7`](https://github.com/stdlib-js/stdlib/commit/3da30d74baf9e5ee13c299cf33a767fd071f1694) - add `ndemptyLike` to namespace
--   [`8306cb9`](https://github.com/stdlib-js/stdlib/commit/8306cb9fedf86eb1d090149e4beed3d23fdee4b0) - add `ndempty` to namespace
--   [`1c450ba`](https://github.com/stdlib-js/stdlib/commit/1c450ba6f265f5160dd66a0638efcc8899fc119a) - add `ndarray2array` to namespace
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`72c6fa0`](https://github.com/stdlib-js/stdlib/commit/72c6fa09c02e49ff622030040703aee18ddfd3e8) - rename alias from `ndorder` to `ndarrayOrder` to match existing convention
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases
--   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases 
-
-    -   To migrate, users should make the following name changes:
-    ndoffset => ndarrayOffset
-    ndshape => ndarrayShape
-    ndstrides => ndarrayStrides
-    This renaming allows for more consistent naming conventions with
-    other ndarray utility functions.
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -921,46 +918,21 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-array-v0.2.1">
+<section class="package" id="ndarray-array-v0.2.0">
 
 #### [@stdlib/ndarray/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/array)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`9b8ad73`](https://github.com/stdlib-js/stdlib/commit/9b8ad73643ef01a8382e65c668b6a39c01be06a1) - convert declaration to generic to provide additional type information
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
 ##### Bug Fixes
 
 -   [`6134859`](https://github.com/stdlib-js/stdlib/commit/61348590284d468ea52a07c51a68219407588757) - flatten nested arrays in (co)lexicographic order
--   [`267e16e`](https://github.com/stdlib-js/stdlib/commit/267e16e021c86a2dbfeefc4112b3008ac7638688) - add support for complex numbers and provided ndarrays having arbitrary rank
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -968,7 +940,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-at-v0.2.1">
+<section class="package" id="ndarray-at-v0.2.0">
 
 #### [@stdlib/ndarray/at](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/at)
 
@@ -990,7 +962,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-v0.2.1">
+<section class="package" id="ndarray-base-v0.2.0">
 
 #### [@stdlib/ndarray/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base)
 
@@ -1010,60 +982,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`783804d`](https://github.com/stdlib-js/stdlib/commit/783804dbc9b3899c5227c5593e0ca1e8a6a9f195) - update namespace TypeScript declarations [(#1170)](https://github.com/stdlib-js/stdlib/pull/1170)
 -   [`9f19a74`](https://github.com/stdlib-js/stdlib/commit/9f19a74b5e8907f2925f3bc21f002a260031c564) - add `stride` to namespace
 -   [`8a27986`](https://github.com/stdlib-js/stdlib/commit/8a279869a4a7c154d239f4e7af037833350e208f) - add support for `normalize` index mode
--   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
--   [`d90228a`](https://github.com/stdlib-js/stdlib/commit/d90228a01f71e0b0a9e443377e711549040ecf31) - add `sliceDimensionFrom` to namespace
--   [`229ab6e`](https://github.com/stdlib-js/stdlib/commit/229ab6efd7b1b93991b78a9399d071e23522e633) - add `sliceDimensionTo` to namespace
--   [`67592b8`](https://github.com/stdlib-js/stdlib/commit/67592b82b088e4b8516f4f5e210368c96cbb4c11) - add `normalizeIndex` to namespace
--   [`a41ecbd`](https://github.com/stdlib-js/stdlib/commit/a41ecbd20541d1f60bc30db109b2599021cc4e47) - add `sliceFrom` to namespace
--   [`54401ac`](https://github.com/stdlib-js/stdlib/commit/54401acffc828b45fbe3cabe6b17f305cb4170b0) - add `sliceTo` to namespace
--   [`2934e57`](https://github.com/stdlib-js/stdlib/commit/2934e576d314c60fc6198228d33282a1ab4f76c1) - add `flipud` to namespace
--   [`013beaa`](https://github.com/stdlib-js/stdlib/commit/013beaa9f51f64fb56a25ab95dc85a0f849dc1ad) - add `fliplr` to namespace
--   [`b390e0b`](https://github.com/stdlib-js/stdlib/commit/b390e0bdfc5f184568b70ddd3d9b4a9cd92dbf9e) - add `reverseDimension` to namespace
--   [`be83095`](https://github.com/stdlib-js/stdlib/commit/be83095aaf7d0dec724ac1d42135459f33ca38af) - add `reverse` to namespace
--   [`f4cb44c`](https://github.com/stdlib-js/stdlib/commit/f4cb44c4a2f34211b7f53aa1e7e49e564445268b) - add `assign` to namespace
--   [`b985417`](https://github.com/stdlib-js/stdlib/commit/b9854176622b79eb7338247ac9d77ec0d22dc3a7) - add `data` to namespace
--   [`0786d6c`](https://github.com/stdlib-js/stdlib/commit/0786d6c0bc1087b5748b42632c6b8efebcb147ad) - add `ndarray/base/data-buffer`
--   [`3a2e182`](https://github.com/stdlib-js/stdlib/commit/3a2e182a27fd4d6ca7d5b518cf24570c273a2556) - add `order` to namespace
--   [`88e5849`](https://github.com/stdlib-js/stdlib/commit/88e58498365a51ba56218c74a4767e89eb5061cc) - add `dtype` to namespace
--   [`ed14448`](https://github.com/stdlib-js/stdlib/commit/ed1444886a2b28f68d09d313c7fe550be337d2b4) - add `sliceDimension` to namespace
--   [`b6571b2`](https://github.com/stdlib-js/stdlib/commit/b6571b2e436559d99e92767a95e95588857205c8) - add `strides` to namespace
--   [`ed378b7`](https://github.com/stdlib-js/stdlib/commit/ed378b72c05992f0473dc5891dc4664773949148) - add `shape` to namespace
--   [`0f8bc08`](https://github.com/stdlib-js/stdlib/commit/0f8bc0882a61b2c54219f37e6d2cb80c50985194) - add `offset` to namespace
--   [`6b48944`](https://github.com/stdlib-js/stdlib/commit/6b48944663c08f64956469340e8561704d9923f8) - add `ndims` to namespace
--   [`49e1d21`](https://github.com/stdlib-js/stdlib/commit/49e1d216375e904a5448da4bf414a3261e1f68ba) - add `nextCartesianIndex` to namespace
--   [`212c1fa`](https://github.com/stdlib-js/stdlib/commit/212c1fa13fd177b87d0ddfa4e70d411e587d5560) - add `sliceAssign` to namespace
--   [`15373b4`](https://github.com/stdlib-js/stdlib/commit/15373b4bc5df65314a0fffe20184429f7ad29616) - add `slice` to namespace
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`98c37fa`](https://github.com/stdlib-js/stdlib/commit/98c37fa381ef03c24703d76a5b0be4f95727243c) - add `unaryOutputDataType` to namespace
--   [`6ca0ecb`](https://github.com/stdlib-js/stdlib/commit/6ca0ecb07f89d0ff6041ac2d2cb4a91cdad0059d) - add policy APIs to namespace
--   [`00b4630`](https://github.com/stdlib-js/stdlib/commit/00b46302fa85b4a133c2b93d13ac4cedd427bc11) - add `emptyLike` to namespace
--   [`33e76ef`](https://github.com/stdlib-js/stdlib/commit/33e76efad5564bbd2455f492c34b04a4fbfc8988) - add `empty` to namespace
--   [`0661629`](https://github.com/stdlib-js/stdlib/commit/06616293c16e65f85a2b9b72fc9e036e20cff6ab) - add `broadcastScalar` to namespace
--   [`9800cc4`](https://github.com/stdlib-js/stdlib/commit/9800cc4f8df8d96db8bac00b51ae1491fa579666) - add `nullary` to namespace
--   [`4e94bf0`](https://github.com/stdlib-js/stdlib/commit/4e94bf079c6677f10e5ea1f4eaca93dc52dac8f3) - add `binaryLoopOrder` to namespace
--   [`d151153`](https://github.com/stdlib-js/stdlib/commit/d151153ac4aced58a04e795607000b7138feb05d) - add `ndarray/base/binary-loop-interchange-order`
--   [`0ac8825`](https://github.com/stdlib-js/stdlib/commit/0ac88258a1b720982b47661c5ddeb5a932cf56d4) - add `binaryBlockSize` to namespace
--   [`2600d28`](https://github.com/stdlib-js/stdlib/commit/2600d28341fe75b74e3ab7c02779ee856d0d53ad) - add `ndarray/base/binary-tiling-block-size`
--   [`e8775fc`](https://github.com/stdlib-js/stdlib/commit/e8775fcbe3617b9013bd1cea74d7f70aa2669ab4) - update namespace TypeScript declarations [(#951)](https://github.com/stdlib-js/stdlib/pull/951)
--   [`6b7c54d`](https://github.com/stdlib-js/stdlib/commit/6b7c54dd2aa970a48a5f73d89c160c7ab6b6ba28) - add `nullaryLoopOrder` to namespace
--   [`760a0a1`](https://github.com/stdlib-js/stdlib/commit/760a0a1aab281e0a1b043b526eac9592551cffb8) - add `nullaryBlockSize` to namespace
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -1071,1021 +993,67 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-v0.2.1">
+<section class="package" id="ndarray-base-assert-v0.2.0">
 
 #### [@stdlib/ndarray/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
--   [`1aefe83`](https://github.com/stdlib-js/stdlib/commit/1aefe83e90f109989a001e85ca25ed278a7c3a50) - add `isMostlySafeDataTypeCast` to namespace
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53) - rename `isIntegralDataType` to `isIntegerDataType`
--   [`d0eb2cf`](https://github.com/stdlib-js/stdlib/commit/d0eb2cf2a86e9c9002b3b78218297f3aa57a5ff5) - add `isRealDataType` to namespace
--   [`901dc93`](https://github.com/stdlib-js/stdlib/commit/901dc93c3954e048073b711818553f2a065476f1) - add `isNumericDataType` to namespace
--   [`d3d2708`](https://github.com/stdlib-js/stdlib/commit/d3d2708eb6919b2eace1fb6f0fa06afac138f117) - add `isComplexFloatingPointDataType` to namespace
--   [`088f3e9`](https://github.com/stdlib-js/stdlib/commit/088f3e9fea4a7090b1c1c09765d264acc832094b) - add `isRealFloatingPointDataType` to namespace
--   [`61a6fee`](https://github.com/stdlib-js/stdlib/commit/61a6feec47761cf559d455264a6908a1f4ac545e) - add `isFloatingPointDataType` to namespace
--   [`f1b2025`](https://github.com/stdlib-js/stdlib/commit/f1b20259563e3e94ef269e3c98cec028af4e87ae) - add `isIntegralDataType` to namespace
--   [`74d366e`](https://github.com/stdlib-js/stdlib/commit/74d366e11957a3016839fa6836a021f49e2d4337) - add `isUnsignedIntegerDataType` to namespace
--   [`35dc02a`](https://github.com/stdlib-js/stdlib/commit/35dc02a0c40af961cfe20e14e4ceddaa4012bc4d) - add `isSignedIntegerDataType` to namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType`
--   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType` 
-
-    -   To migrate, users should update their usage accordingly.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-is--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-allowed--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-allowed-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-allowed-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`733ee49`](https://github.com/stdlib-js/stdlib/commit/733ee4954b08c24007460390d688fe86bb1e8fae) - add support for a `mostly-safe` casting mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-buffer-length-compatible-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-buffer-length-compatible](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-buffer-length-compatible)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-buffer-length-compatible-shape-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-buffer-length-compatible-shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-buffer-length-compatible-shape)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-casting-mode-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-casting-mode](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-casting-mode)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-column-major-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-column-major](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-column-major)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-column-major-contiguous-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-column-major-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-column-major-contiguous)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-complex-floating-point--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-complex-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-complex-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`7b0d1b0`](https://github.com/stdlib-js/stdlib/commit/7b0d1b09616c4d92e0733564ef3c8b420a9ddb4f) - add `ndarray/base/assert/is-complex-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-contiguous-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-contiguous)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-floating-point--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`31ad686`](https://github.com/stdlib-js/stdlib/commit/31ad686cf56d70e9cd1d24043330eb3f4a688684) - add `ndarray/base/assert/is-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-index-mode-v0.2.1">
+<section class="package" id="ndarray-base-assert-is-index-mode-v0.2.0">
 
 #### [@stdlib/ndarray/base/assert/is-index-mode](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-index-mode)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-is-integer--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`d96fdc9`](https://github.com/stdlib-js/stdlib/commit/d96fdc905898b96fffcc8ab210ad4b4d6c700565) - add `ndarray/base/assert/is-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-integral--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-integral-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-integral-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`e2f9bb3`](https://github.com/stdlib-js/stdlib/commit/e2f9bb3c9d922cddeb3bbdac52744c46f4fa6186) - add `ndarray/base/assert/is-integral-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-mostly-safe--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-mostly-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-mostly-safe-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`a8290c4`](https://github.com/stdlib-js/stdlib/commit/a8290c4059e1aa16ed2388a02c5637e58659ae01) - add `ndarray/base/assert/is-mostly-safe-data-type-cast`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-numeric--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-numeric-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-numeric-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`c326c3f`](https://github.com/stdlib-js/stdlib/commit/c326c3fe89ba54c362395aa53e442ec70a2ad69d) - add `ndarray/base/assert/is-numeric-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-order-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-order)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-read-only-v0.2.1">
+<section class="package" id="ndarray-base-assert-is-read-only-v0.2.0">
 
 #### [@stdlib/ndarray/base/assert/is-read-only](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-read-only)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-is-real--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-real-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-real-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`889da69`](https://github.com/stdlib-js/stdlib/commit/889da694559f4b0da7670277001dc2414e55edd9) - add `ndarray/base/assert/is-real-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-real-floating-point--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-real-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-real-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`41d3972`](https://github.com/stdlib-js/stdlib/commit/41d3972e82c51bdd6522708d9446fce378e30c8a) - add `ndarray/base/assert/is-real-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-row-major-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-row-major](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-row-major)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-row-major-contiguous-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-row-major-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-row-major-contiguous)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-safe--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-safe-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-same-kind--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-same-kind-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-same-kind-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-signed-integer--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-signed-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-signed-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`063b647`](https://github.com/stdlib-js/stdlib/commit/063b6475df8c93d7b199e77b28325928e960e18b) - add `ndarray/base/assert/is-signed-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-single-segment-compatible-v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-single-segment-compatible](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-single-segment-compatible)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assert-is-unsigned-integer--v0.2.1">
-
-#### [@stdlib/ndarray/base/assert/is-unsigned-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-unsigned-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`f2fd134`](https://github.com/stdlib-js/stdlib/commit/f2fd1344eee163ede1839e2be9a537be2d4ec240) - add `ndarray/base/assert/is-unsigned-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-assign-v0.2.1">
+<section class="package" id="ndarray-base-assign-v0.2.0">
 
 #### [@stdlib/ndarray/base/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assign)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`aabbb4e`](https://github.com/stdlib-js/stdlib/commit/aabbb4eaff80556d2320d75cf9520f5b01352e50) - add loop functions for downcasting floating-point dtypes
--   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`c8417b0`](https://github.com/stdlib-js/stdlib/commit/c8417b07e7637b7c5c2336191d9b3288a0e5a228) - add support for assigning real-valued elements to complex-valued elements
--   [`46d5210`](https://github.com/stdlib-js/stdlib/commit/46d52108725f354f62312121e797195cbbfe7611) - address unterminated macro
--   [`39b2b0d`](https://github.com/stdlib-js/stdlib/commit/39b2b0da7407b46375ee9897ce60452f5179cf1b) - use correct type for dispatch object
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-broadcast-array-v0.2.1">
+<section class="package" id="ndarray-base-broadcast-array-v0.2.0">
 
 #### [@stdlib/ndarray/base/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-array)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-broadcast-arrays-v0.2.1">
+<section class="package" id="ndarray-base-broadcast-arrays-v0.2.0">
 
 #### [@stdlib/ndarray/base/broadcast-arrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-arrays)
 
@@ -2107,702 +1075,83 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-broadcast-scalar-v0.2.1">
+<section class="package" id="ndarray-base-broadcast-scalar-v0.2.0">
 
 #### [@stdlib/ndarray/base/broadcast-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-scalar)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`efe7c22`](https://github.com/stdlib-js/stdlib/commit/efe7c226d5fb5ac7fb0c36dec4b5925d4484ee43) - add `ndarray/base/broadcast-scalar`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-broadcast-shapes-v0.2.1">
-
-#### [@stdlib/ndarray/base/broadcast-shapes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-shapes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-buffer-v0.2.1">
-
-#### [@stdlib/ndarray/base/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-buffer-ctors-v0.2.1">
-
-#### [@stdlib/ndarray/base/buffer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-ctors)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-buffer-dtype-v0.2.1">
-
-#### [@stdlib/ndarray/base/buffer-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-buffer-dtype-enum-v0.2.1">
+<section class="package" id="ndarray-base-buffer-dtype-enum-v0.2.0">
 
 #### [@stdlib/ndarray/base/buffer-dtype-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-dtype-enum)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd) - increase minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`0deb1be`](https://github.com/stdlib-js/stdlib/commit/0deb1be1f1efe2cc98bd944ab1c50cc885cf523b) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd): increase minimum TypeScript version
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-bytes-per-element-v0.2.1">
-
-#### [@stdlib/ndarray/base/bytes-per-element](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/bytes-per-element)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-char2dtype-v0.2.1">
-
-#### [@stdlib/ndarray/base/char2dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/char2dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-clamp-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/clamp-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/clamp-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-ctor-v0.2.1">
+<section class="package" id="ndarray-base-ctor-v0.2.0">
 
 #### [@stdlib/ndarray/base/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ctor)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-dtype-v0.2.1">
+<section class="package" id="ndarray-base-dtype-v0.2.0">
 
 #### [@stdlib/ndarray/base/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`9d9b5ca`](https://github.com/stdlib-js/stdlib/commit/9d9b5ca04c251db89351dabfd1d3868fdee22fd2) - add `ndarray/base/dtype`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-dtype-char-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtype-char](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-char)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-dtype-desc-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtype-desc](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-desc)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-dtype-enum2str-v0.2.1">
+<section class="package" id="ndarray-base-dtype-enum2str-v0.2.0">
 
 #### [@stdlib/ndarray/base/dtype-enum2str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-enum2str)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`fe527ef`](https://github.com/stdlib-js/stdlib/commit/fe527ef22a44592d7eaa0adbded47730248eaa74) - fix require path
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-dtype-resolve-enum-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtype-resolve-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-resolve-enum)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-dtype-resolve-str-v0.2.1">
+<section class="package" id="ndarray-base-dtype-resolve-str-v0.2.0">
 
 #### [@stdlib/ndarray/base/dtype-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-resolve-str)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-dtype-str2enum-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtype-str2enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-str2enum)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-dtype2c-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtype2c](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype2c)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-dtypes2signatures-v0.2.1">
-
-#### [@stdlib/ndarray/base/dtypes2signatures](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtypes2signatures)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-empty-v0.2.1">
+<section class="package" id="ndarray-base-empty-v0.2.0">
 
 #### [@stdlib/ndarray/base/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`c593502`](https://github.com/stdlib-js/stdlib/commit/c593502093613634a80bdb6c6806b8d2477d17d4) - add `ndarray/base/empty`
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -2814,117 +1163,37 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-empty-like-v0.2.1">
+<section class="package" id="ndarray-base-empty-like-v0.2.0">
 
 #### [@stdlib/ndarray/base/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty-like)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`9f1c2f3`](https://github.com/stdlib-js/stdlib/commit/9f1c2f30fd1fc23c8159c2d8df5df0f14b679ce8) - add `ndarray/base/empty-like`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`65d964f`](https://github.com/stdlib-js/stdlib/commit/65d964fc0d0cde545a0e15fd34bcfcdec5eb01b6) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-expand-dimensions-v0.2.1">
+<section class="package" id="ndarray-base-expand-dimensions-v0.2.0">
 
 #### [@stdlib/ndarray/base/expand-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/expand-dimensions)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`61aa8e7`](https://github.com/stdlib-js/stdlib/commit/61aa8e7e7d3d64e9bac8b51d34b1b734a24a84de) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-flag-v0.2.1">
+<section class="package" id="ndarray-base-flag-v0.2.0">
 
 #### [@stdlib/ndarray/base/flag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/flag)
 
@@ -2946,7 +1215,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-flags-v0.2.1">
+<section class="package" id="ndarray-base-flags-v0.2.0">
 
 #### [@stdlib/ndarray/base/flags](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/flags)
 
@@ -2968,138 +1237,55 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-fliplr-v0.2.1">
+<section class="package" id="ndarray-base-fliplr-v0.2.0">
 
 #### [@stdlib/ndarray/base/fliplr](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fliplr)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`bb9e0a4`](https://github.com/stdlib-js/stdlib/commit/bb9e0a4dc183c68ffd21fecc1130cb4bac303597) - add `ndarray/base/fliplr`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-flipud-v0.2.1">
+<section class="package" id="ndarray-base-flipud-v0.2.0">
 
 #### [@stdlib/ndarray/base/flipud](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/flipud)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`316273f`](https://github.com/stdlib-js/stdlib/commit/316273feed1a28304e7e4a1612831e257fc6e9e2) - add `ndarray/base/flipud`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-from-scalar-v0.2.1">
+<section class="package" id="ndarray-base-from-scalar-v0.2.0">
 
 #### [@stdlib/ndarray/base/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/from-scalar)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c) - add support for providing `order` argument
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): add support for providing `order` argument
--   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): must provide `order` argument. 
-
-    -   To migrate, users should explicitly provide an `order` argument as
-    a third argument when invoking `scalar2ndarray`.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-function-object-v0.2.1">
+<section class="package" id="ndarray-base-function-object-v0.2.0">
 
 #### [@stdlib/ndarray/base/function-object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/function-object)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-ind-v0.2.1">
+<section class="package" id="ndarray-base-ind-v0.2.0">
 
 #### [@stdlib/ndarray/base/ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ind)
 
@@ -3111,34 +1297,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 -   [`f3d3f4f`](https://github.com/stdlib-js/stdlib/commit/f3d3f4f4d69804a3f31bdb542abf1aca9f3576d9) - add a `factory` method to allow for partial application
 -   [`a7d2960`](https://github.com/stdlib-js/stdlib/commit/a7d2960bebae832e80d61cadeb2a1b6d719f0db1) - add support for returning a normalized index
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`aaaf01e`](https://github.com/stdlib-js/stdlib/commit/aaaf01e43bfef9b8b3c2c9d3f703b3e95e0524b9) - use correct format specifier in error message
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3146,7 +1308,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-ind2sub-v0.2.1">
+<section class="package" id="ndarray-base-ind2sub-v0.2.0">
 
 #### [@stdlib/ndarray/base/ind2sub](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ind2sub)
 
@@ -3157,24 +1319,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`8e18e43`](https://github.com/stdlib-js/stdlib/commit/8e18e43bbd0b553e32bd5e8df1d36d4a8cc9d8c3) - add support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3182,122 +1330,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-iteration-order-v0.2.1">
-
-#### [@stdlib/ndarray/base/iteration-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/iteration-order)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-max-view-buffer-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/max-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/max-view-buffer-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-maybe-broadcast-array-v0.2.1">
+<section class="package" id="ndarray-base-maybe-broadcast-array-v0.2.0">
 
 #### [@stdlib/ndarray/base/maybe-broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/maybe-broadcast-array)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`c142624`](https://github.com/stdlib-js/stdlib/commit/c1426240f375b6c864a2d59368694ac09d7637f6) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-maybe-broadcast-arrays-v0.2.1">
+<section class="package" id="ndarray-base-maybe-broadcast-arrays-v0.2.0">
 
 #### [@stdlib/ndarray/base/maybe-broadcast-arrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/maybe-broadcast-arrays)
 
@@ -3319,474 +1364,105 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-meta--v0.2.1">
-
-#### [@stdlib/ndarray/base/meta-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/meta-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-min-view-buffer-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/min-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/min-view-buffer-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-minmax-view-buffer-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/minmax-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/minmax-view-buffer-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-napi-v0.2.1">
+<section class="package" id="ndarray-base-napi-v0.2.0">
 
 #### [@stdlib/ndarray/base/napi](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-napi-addon-arguments-v0.2.1">
+<section class="package" id="ndarray-base-napi-addon-arguments-v0.2.0">
 
 #### [@stdlib/ndarray/base/napi/addon-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/addon-arguments)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-napi-dtype-string-to-dtype-v0.2.1">
+<section class="package" id="ndarray-base-napi-dtype-string-to-dtype-v0.2.0">
 
 #### [@stdlib/ndarray/base/napi/dtype-string-to-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/dtype-string-to-dtype)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-napi-typedarray-type-to-dtype-v0.2.1">
+<section class="package" id="ndarray-base-napi-typedarray-type-to-dtype-v0.2.0">
 
 #### [@stdlib/ndarray/base/napi/typedarray-type-to-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/typedarray-type-to-dtype)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-napi-unary-v0.2.1">
+<section class="package" id="ndarray-base-napi-unary-v0.2.0">
 
 #### [@stdlib/ndarray/base/napi/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/unary)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-ndarraylike2object-v0.2.1">
+<section class="package" id="ndarray-base-ndarraylike2object-v0.2.0">
 
 #### [@stdlib/ndarray/base/ndarraylike2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ndarraylike2object)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`c539bd1`](https://github.com/stdlib-js/stdlib/commit/c539bd17b8cd17ca3a37a958626dbd6df2e25477) - add missing argument
--   [`0deb1be`](https://github.com/stdlib-js/stdlib/commit/0deb1be1f1efe2cc98bd944ab1c50cc885cf523b) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-ndims-v0.2.1">
+<section class="package" id="ndarray-base-ndims-v0.2.0">
 
 #### [@stdlib/ndarray/base/ndims](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ndims)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`dd72b0f`](https://github.com/stdlib-js/stdlib/commit/dd72b0f28dc570151a855a31c9c831fe86f91169) - add `ndarray/base/ndims`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-next-cartesian-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/next-cartesian-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/next-cartesian-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`b8de2da`](https://github.com/stdlib-js/stdlib/commit/b8de2dab6ca473794f646945254f97c839fc31af) - add `ndarray/base/next-cartesian-index`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-nonsingleton-dimensions-v0.2.1">
-
-#### [@stdlib/ndarray/base/nonsingleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nonsingleton-dimensions)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-normalize-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/normalize-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/normalize-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`512c8a8`](https://github.com/stdlib-js/stdlib/commit/512c8a8f75a158a42f9ea9113bda929e0c28519e) - add `ndarray/base/normalize-index`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-nullary-v0.2.1">
+<section class="package" id="ndarray-base-nullary-v0.2.0">
 
 #### [@stdlib/ndarray/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`28c87ca`](https://github.com/stdlib-js/stdlib/commit/28c87ca422d9953a5d5ee583e904b24d66e59682) - add `ndarray/base/nullary`
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
 ##### Bug Fixes
 
 -   [`ba92c62`](https://github.com/stdlib-js/stdlib/commit/ba92c62429e3f7165f526c72ad37824283b459d7) - remove related section
--   [`23b99ac`](https://github.com/stdlib-js/stdlib/commit/23b99acc256b4c9034347ed42ba21f202caedda8) - resolve C lint errors
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3794,7 +1470,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-nullary-loop-interchange-order-v0.2.1">
+<section class="package" id="ndarray-base-nullary-loop-interchange-order-v0.2.0">
 
 #### [@stdlib/ndarray/base/nullary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary-loop-interchange-order)
 
@@ -3805,25 +1481,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`c73cbe7`](https://github.com/stdlib-js/stdlib/commit/c73cbe76e440cf2e4211467d0db69d752409054d) - add support for returning dimension indices
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`45b2ba9`](https://github.com/stdlib-js/stdlib/commit/45b2ba9a82ac496a9c00c697839453cd2aef285a) - add `@stdlib/ndarray/base/nullary-loop-interchange-order`
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -3831,78 +1492,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-nullary-tiling-block-size-v0.2.1">
-
-#### [@stdlib/ndarray/base/nullary-tiling-block-size](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary-tiling-block-size)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`0ed2dc6`](https://github.com/stdlib-js/stdlib/commit/0ed2dc6083a20d0f90e653191778da2a9ddf9105) - add `@stdlib/ndarray/base/nullary-tiling-block-size`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-numel-v0.2.1">
-
-#### [@stdlib/ndarray/base/numel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/numel)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-numel-dimension-v0.2.1">
+<section class="package" id="ndarray-base-numel-dimension-v0.2.0">
 
 #### [@stdlib/ndarray/base/numel-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/numel-dimension)
 
@@ -3924,623 +1514,215 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-offset-v0.2.1">
+<section class="package" id="ndarray-base-offset-v0.2.0">
 
 #### [@stdlib/ndarray/base/offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/offset)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`08dd5cd`](https://github.com/stdlib-js/stdlib/commit/08dd5cdbbfb2370bc88cf0e223a1371473243c09) - add `ndarray/base/offset`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-order-v0.2.1">
+<section class="package" id="ndarray-base-order-v0.2.0">
 
 #### [@stdlib/ndarray/base/order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/order)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`857a8c7`](https://github.com/stdlib-js/stdlib/commit/857a8c79fd6099e8a34cec07d9b6c89a8e29e77f) - add `ndarray/base/order`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-output-policy-enum2str-v0.2.1">
+<section class="package" id="ndarray-base-output-policy-enum2str-v0.2.0">
 
 #### [@stdlib/ndarray/base/output-policy-enum2str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-enum2str)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`144d739`](https://github.com/stdlib-js/stdlib/commit/144d7393381f2430219962e39287792bf69374b8) - add `ndarray/base/output-policy-enum2str`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`b4dbeae`](https://github.com/stdlib-js/stdlib/commit/b4dbeaebb752c2494a156cd6f92d7055bea024ec) - set correct package names
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-output-policy-resolve-enum-v0.2.1">
+<section class="package" id="ndarray-base-output-policy-resolve-enum-v0.2.0">
 
 #### [@stdlib/ndarray/base/output-policy-resolve-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-resolve-enum)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`c0d63fe`](https://github.com/stdlib-js/stdlib/commit/c0d63fe91fe1de62e13334ade3bb157aa3ccdb4a) - add `ndarray/base/output-policy-resolve-enum`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-output-policy-resolve-str-v0.2.1">
+<section class="package" id="ndarray-base-output-policy-resolve-str-v0.2.0">
 
 #### [@stdlib/ndarray/base/output-policy-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-resolve-str)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`375a3e8`](https://github.com/stdlib-js/stdlib/commit/375a3e851b300eb1b936520f43e6d303c253ba26) - add `ndarray/base/output-policy-resolve-str`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-output-policy-str2enum-v0.2.1">
+<section class="package" id="ndarray-base-output-policy-str2enum-v0.2.0">
 
 #### [@stdlib/ndarray/base/output-policy-str2enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-str2enum)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`66e4d33`](https://github.com/stdlib-js/stdlib/commit/66e4d331999220774c45c093900470e88fb6953a) - add `ndarray/base/output-policy-str2enum`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-prepend-singleton-dimensions-v0.2.1">
+<section class="package" id="ndarray-base-prepend-singleton-dimensions-v0.2.0">
 
 #### [@stdlib/ndarray/base/prepend-singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/prepend-singleton-dimensions)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`a5ce155`](https://github.com/stdlib-js/stdlib/commit/a5ce155e3f2da8176e848e5fd75833a7a943fdb6) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-remove-singleton-dimensions-v0.2.1">
+<section class="package" id="ndarray-base-remove-singleton-dimensions-v0.2.0">
 
 #### [@stdlib/ndarray/base/remove-singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/remove-singleton-dimensions)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`9741d55`](https://github.com/stdlib-js/stdlib/commit/9741d5527de099260554aa7f4e2e4ca4c3e2cd2a) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-reverse-v0.2.1">
+<section class="package" id="ndarray-base-reverse-v0.2.0">
 
 #### [@stdlib/ndarray/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`aff949b`](https://github.com/stdlib-js/stdlib/commit/aff949b5c2ee01b9aef69e471c735691b27ec370) - add `ndarray/base/reverse`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-reverse-dimension-v0.2.1">
+<section class="package" id="ndarray-base-reverse-dimension-v0.2.0">
 
 #### [@stdlib/ndarray/base/reverse-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse-dimension)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`86f5a89`](https://github.com/stdlib-js/stdlib/commit/86f5a894a141d677a19ee54e1263dacb165a177c) - add `ndarray/base/reverse-dimension`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-serialize-meta--v0.2.1">
+<section class="package" id="ndarray-base-serialize-meta--v0.2.0">
 
 #### [@stdlib/ndarray/base/serialize-meta-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/serialize-meta-)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`6a6225d`](https://github.com/stdlib-js/stdlib/commit/6a6225d3d7a9a7e97387c1d1b3dff09c702eddd7) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-shape-v0.2.1">
+<section class="package" id="ndarray-base-shape-v0.2.0">
 
 #### [@stdlib/ndarray/base/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/shape)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7a6cc2b`](https://github.com/stdlib-js/stdlib/commit/7a6cc2b58a83de238126dc3e899d663b5939167b) - add `ndarray/base/shape`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-shape2strides-v0.2.1">
-
-#### [@stdlib/ndarray/base/shape2strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/shape2strides)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-singleton-dimensions-v0.2.1">
-
-#### [@stdlib/ndarray/base/singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/singleton-dimensions)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-slice-v0.2.1">
+<section class="package" id="ndarray-base-slice-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`48cb9aa`](https://github.com/stdlib-js/stdlib/commit/48cb9aabdfbeb58af82ad69ebf0754e2802797fd) - add support for returning a mutable ndarray view
--   [`37ddf6d`](https://github.com/stdlib-js/stdlib/commit/37ddf6d4d84a64c83743a3e18863ad5ea8fd0d6f) - add `ndarray/base/slice`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`b75bcc2`](https://github.com/stdlib-js/stdlib/commit/b75bcc2e8807ea3f2ec8d8803bb6f4106bd11d0f) - add missing argument
--   [`09b4354`](https://github.com/stdlib-js/stdlib/commit/09b435430b5f5a1809e409d8b64bd3974fc56ccb) - rename parameter to match docs
--   [`c636c08`](https://github.com/stdlib-js/stdlib/commit/c636c084bae9899fff1e667f00ecf9a71dd61175) - address bug when resolving buffer index of the first element indexed by a slice
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-assign-v0.2.1">
+<section class="package" id="ndarray-base-slice-assign-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-assign)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`c90e739`](https://github.com/stdlib-js/stdlib/commit/c90e7393fb2abf6d563581c2e47e8fe707b4cc33) - add `ndarray/base/slice-assign`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`c13a4d5`](https://github.com/stdlib-js/stdlib/commit/c13a4d58f04d875125481add5d68e1e2052b19ce) - add missing argument
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-dimension-v0.2.1">
+<section class="package" id="ndarray-base-slice-dimension-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`5ca2f0e`](https://github.com/stdlib-js/stdlib/commit/5ca2f0e339d3580058c55d401045f8e66caaf543) - add `ndarray/base/slice-dimension`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-dimension-from-v0.2.1">
+<section class="package" id="ndarray-base-slice-dimension-from-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-from)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`de5ef5e`](https://github.com/stdlib-js/stdlib/commit/de5ef5e1b15d235a28570f92fb5c12b1958227b5) - add `ndarray/base/slice-dimension-from`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-dimension-to-v0.2.1">
+<section class="package" id="ndarray-base-slice-dimension-to-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-to)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`3eb7c44`](https://github.com/stdlib-js/stdlib/commit/3eb7c445c25a352075cd32b826ec399fdb8f2775) - add `ndarray/base/slice-dimension-to`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-from-v0.2.1">
+<section class="package" id="ndarray-base-slice-from-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-from)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`7f80a7c`](https://github.com/stdlib-js/stdlib/commit/7f80a7cdf828e50f98b963df45b2c9262c501a14) - add `ndarray/base/slice-from`
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -4558,29 +1740,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-to-v0.2.1">
+<section class="package" id="ndarray-base-slice-to-v0.2.0">
 
 #### [@stdlib/ndarray/base/slice-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-to)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`4da3db2`](https://github.com/stdlib-js/stdlib/commit/4da3db265d7a7ab8dd6e91eb55d3ab393a2789f3) - add `ndarray/base/slice-to`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-stride-v0.2.1">
+<section class="package" id="ndarray-base-stride-v0.2.0">
 
 #### [@stdlib/ndarray/base/stride](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/stride)
 
@@ -4602,109 +1774,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-strides-v0.2.1">
+<section class="package" id="ndarray-base-strides-v0.2.0">
 
 #### [@stdlib/ndarray/base/strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`5a0c235`](https://github.com/stdlib-js/stdlib/commit/5a0c23554e53b29fe6c36148c351699dfefe4ea7) - add `ndarray/base/strides`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`8874562`](https://github.com/stdlib-js/stdlib/commit/8874562a8e3383393bef0e1220080fb20a99880f) - add missing support for minimal ndarray-like objects not supporting a strides property
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-strides2offset-v0.2.1">
-
-#### [@stdlib/ndarray/base/strides2offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides2offset)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-strides2order-v0.2.1">
-
-#### [@stdlib/ndarray/base/strides2order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides2order)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-sub2ind-v0.2.1">
+<section class="package" id="ndarray-base-sub2ind-v0.2.0">
 
 #### [@stdlib/ndarray/base/sub2ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/sub2ind)
 
@@ -4715,24 +1797,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`5363916`](https://github.com/stdlib-js/stdlib/commit/5363916b97a8b70622fff6d8663760d3582e4336) - add support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -4740,265 +1808,67 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-to-array-v0.2.1">
-
-#### [@stdlib/ndarray/base/to-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-transpose-v0.2.1">
+<section class="package" id="ndarray-base-transpose-v0.2.0">
 
 #### [@stdlib/ndarray/base/transpose](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/transpose)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-v0.2.1">
+<section class="package" id="ndarray-base-unary-v0.2.0">
 
 #### [@stdlib/ndarray/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`23b99ac`](https://github.com/stdlib-js/stdlib/commit/23b99acc256b4c9034347ed42ba21f202caedda8) - resolve C lint errors
--   [`64a7e92`](https://github.com/stdlib-js/stdlib/commit/64a7e9272da47f0b0a7afd8a5f4d5be613cbfb8d) - add missing variable declaration
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-by-v0.2.1">
+<section class="package" id="ndarray-base-unary-by-v0.2.0">
 
 #### [@stdlib/ndarray/base/unary-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-by)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-loop-interchange-order-v0.2.1">
+<section class="package" id="ndarray-base-unary-loop-interchange-order-v0.2.0">
 
 #### [@stdlib/ndarray/base/unary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-loop-interchange-order)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-output-dtype-v0.2.1">
+<section class="package" id="ndarray-base-unary-output-dtype-v0.2.0">
 
 #### [@stdlib/ndarray/base/unary-output-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-output-dtype)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`eec20f6`](https://github.com/stdlib-js/stdlib/commit/eec20f6aba797b451addbf452384c2c4f2ff1add) - add `ndarray/base/unary-output-dtype`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-tiling-block-size-v0.2.1">
-
-#### [@stdlib/ndarray/base/unary-tiling-block-size](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-tiling-block-size)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-vind2-v0.2.1">
+<section class="package" id="ndarray-base-vind2-v0.2.0">
 
 #### [@stdlib/ndarray/base/vind2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/vind2)
 
@@ -5009,24 +1879,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`274da55`](https://github.com/stdlib-js/stdlib/commit/274da55cfd025bbc1f1bf59d5c7e71ed12250ae4) - add support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5034,56 +1890,11 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-wrap-index-v0.2.1">
-
-#### [@stdlib/ndarray/base/wrap-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/wrap-index)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-base-zeros-v0.2.1">
+<section class="package" id="ndarray-base-zeros-v0.2.0">
 
 #### [@stdlib/ndarray/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -5095,83 +1906,37 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-zeros-like-v0.2.1">
+<section class="package" id="ndarray-base-zeros-like-v0.2.0">
 
 #### [@stdlib/ndarray/base/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros-like)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-broadcast-array-v0.2.1">
+<section class="package" id="ndarray-broadcast-array-v0.2.0">
 
 #### [@stdlib/ndarray/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/broadcast-array)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`6d0da66`](https://github.com/stdlib-js/stdlib/commit/6d0da668d0d69bfe1a7fdceeceae05b52eada5c1) - add `ndarray/broadcast-array`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-broadcast-arrays-v0.2.1">
+<section class="package" id="ndarray-broadcast-arrays-v0.2.0">
 
 #### [@stdlib/ndarray/broadcast-arrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/broadcast-arrays)
 
@@ -5193,43 +1958,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-casting-modes-v0.2.1">
-
-#### [@stdlib/ndarray/casting-modes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/casting-modes)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`12ee2c9`](https://github.com/stdlib-js/stdlib/commit/12ee2c9e8cd35134cc91dd32dd609144e76b8686) - add `mostly-safe` casting mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-ctor-v0.2.1">
+<section class="package" id="ndarray-ctor-v0.2.0">
 
 #### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
 
@@ -5240,34 +1969,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`5c9d067`](https://github.com/stdlib-js/stdlib/commit/5c9d067cfaf35e20ff0dde4943f9e75a9ceb6037) - add tests and update docs for `normalize` index mode support
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`fb65dfe`](https://github.com/stdlib-js/stdlib/commit/fb65dfe5b36b35ad8b3747df6ddb693a5b62d171) - use `Collection`, rather than `ArrayLike`
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5275,67 +1980,11 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-defaults-v0.2.1">
-
-#### [@stdlib/ndarray/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/defaults)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
--   [`bd1017d`](https://github.com/stdlib-js/stdlib/commit/bd1017ddb8dd6fe552675221570186440cdbb4f5) - add `numeric` and `real` dtype defaults
--   [`9363dc3`](https://github.com/stdlib-js/stdlib/commit/9363dc3376fcb9ba18d181716fae8fbb731771bd) - add `get` method for retrieving a single default setting
--   [`35de20d`](https://github.com/stdlib-js/stdlib/commit/35de20d9359f2497eb0527c7cd99778dd7bff038) - add `ndarray/defaults`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
-
-    -   To migrate, users should update their code to use `integer` rather
-    than `integral` to refer to the policy/kind which includes both
-    signed and unsigned integer dtypes.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-dispatch-v0.2.1">
+<section class="package" id="ndarray-dispatch-v0.2.0">
 
 #### [@stdlib/ndarray/dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dispatch)
 
 <details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -5348,26 +1997,13 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-dispatch-by-v0.2.1">
+<section class="package" id="ndarray-dispatch-by-v0.2.0">
 
 #### [@stdlib/ndarray/dispatch-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dispatch-by)
 
@@ -5378,7 +2014,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Bug Fixes
 
 -   [`8fccaaa`](https://github.com/stdlib-js/stdlib/commit/8fccaaa1d2ce14f2ee512f0ea307b53f9bd16211) - move links
--   [`2ef370c`](https://github.com/stdlib-js/stdlib/commit/2ef370c299de57a389c57f1815824b05665c9ece) - add missing test fixture [(#1054)](https://github.com/stdlib-js/stdlib/pull/1054)
 
 </section>
 
@@ -5390,29 +2025,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-dtype-v0.2.1">
+<section class="package" id="ndarray-dtype-v0.2.0">
 
 #### [@stdlib/ndarray/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dtype)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`29df3cf`](https://github.com/stdlib-js/stdlib/commit/29df3cf36888a96512dfade51adf0e3dde320166) - add `ndarray/dtype`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-dtypes-v0.2.1">
+<section class="package" id="ndarray-dtypes-v0.2.0">
 
 #### [@stdlib/ndarray/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dtypes)
 
@@ -5423,34 +2048,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`e90a075`](https://github.com/stdlib-js/stdlib/commit/e90a075eea2dbfe41a5b19209226316544f95f4d) - improve type specificity of return type and update examples
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
--   [`03effb2`](https://github.com/stdlib-js/stdlib/commit/03effb27ed971c369883a650dd3f8d079a2acab1) - add `real` data type kind
--   [`99146bb`](https://github.com/stdlib-js/stdlib/commit/99146bb9777c1c042d95f68494c9fb4f9377e651) - add support for returning a subset of data types
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
-
-    -   To migrate, users should update their code to use `integer` rather
-    than `integral` to refer to the policy/kind which includes both
-    signed and unsigned integer dtypes.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5458,7 +2059,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-empty-v0.2.1">
+<section class="package" id="ndarray-empty-v0.2.0">
 
 #### [@stdlib/ndarray/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty)
 
@@ -5469,8 +2070,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`9ed4346`](https://github.com/stdlib-js/stdlib/commit/9ed4346eb686d5c3d95467dfd8db4a6f5ef5fb6b) - document support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`910fed5`](https://github.com/stdlib-js/stdlib/commit/910fed5f346f7d5ac2d94a41e50c9eff2219518e) - add `ndarray/empty`
 
 </section>
 
@@ -5481,24 +2080,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Bug Fixes
 
 -   [`def989d`](https://github.com/stdlib-js/stdlib/commit/def989d20c35d4cb0834e91324177abc8f522626) - resolve type declaration typo by removing stray lint directive
--   [`06712ce`](https://github.com/stdlib-js/stdlib/commit/06712ce614899b7bf573e6323532a48a452526fe) - fix package name and keywords
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5506,7 +2091,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-empty-like-v0.2.1">
+<section class="package" id="ndarray-empty-like-v0.2.0">
 
 #### [@stdlib/ndarray/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty-like)
 
@@ -5517,25 +2102,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`55928ab`](https://github.com/stdlib-js/stdlib/commit/55928abe7265b9edf33b2aae02acaabe567ce4b2) - document support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`561a9ea`](https://github.com/stdlib-js/stdlib/commit/561a9ea36c1300678da980b4740f78d71a49c0ba) - add `ndarray/empty-like`
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5543,7 +2113,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-fancy-v0.2.1">
+<section class="package" id="ndarray-fancy-v0.2.0">
 
 #### [@stdlib/ndarray/fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/fancy)
 
@@ -5554,24 +2124,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`6ee30cd`](https://github.com/stdlib-js/stdlib/commit/6ee30cdbe8fe3148bf6b0316db4303da154e10c3) - document support for `normalize` index mode
--   [`54858d0`](https://github.com/stdlib-js/stdlib/commit/54858d0033107586ec0b0b823019e75548664bd4) - add support for slice assignment and refactor index expression handling
--   [`d64f3c7`](https://github.com/stdlib-js/stdlib/commit/d64f3c7831c6490eae291c9de253dfc763052fbb) - add TypeScript declarations and add REPL help
--   [`4433c86`](https://github.com/stdlib-js/stdlib/commit/4433c8677f64ffe451f267484367d3d9f27e32f5) - add `ndarray/fancy`
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`fcbe4c1`](https://github.com/stdlib-js/stdlib/commit/fcbe4c18fd4ebfad0466b56b4c19abda6cdb4c2b) - address indexing expression errors and refactor to use `ndarray/base/slice`
--   [`e17e199`](https://github.com/stdlib-js/stdlib/commit/e17e1999c8d3f29a7b9fe509ce3fb05db05aaf39) - address dimension reduction bug
-
-</section>
-
-<!-- /.bug-fixes -->
 
 </details>
 
@@ -5579,7 +2135,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-flag-v0.2.1">
+<section class="package" id="ndarray-flag-v0.2.0">
 
 #### [@stdlib/ndarray/flag](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/flag)
 
@@ -5611,7 +2167,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-flags-v0.2.1">
+<section class="package" id="ndarray-flags-v0.2.0">
 
 #### [@stdlib/ndarray/flags](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/flags)
 
@@ -5633,59 +2189,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-from-scalar-v0.2.1">
+<section class="package" id="ndarray-from-scalar-v0.2.0">
 
 #### [@stdlib/ndarray/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35) - add ndarray option support to `ndarray/from-scalar`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): add ndarray option support to `ndarray/from-scalar`
--   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): `dtype` argument replaced by `options` argument 
-
-    -   In order to migrate to the new API, users should replace any
-    `dtype` argument usage with an equivalent `options` argument.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-ind2sub-v0.2.1">
+<section class="package" id="ndarray-ind2sub-v0.2.0">
 
 #### [@stdlib/ndarray/ind2sub](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ind2sub)
 
@@ -5696,7 +2212,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`12102f1`](https://github.com/stdlib-js/stdlib/commit/12102f1b974064f4c0ca0156e435e9299ad75c68) - add support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
@@ -5712,26 +2227,13 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.bug-fixes -->
 
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 </details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-index-modes-v0.2.1">
+<section class="package" id="ndarray-index-modes-v0.2.0">
 
 #### [@stdlib/ndarray/index-modes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/index-modes)
 
@@ -5742,24 +2244,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`272081f`](https://github.com/stdlib-js/stdlib/commit/272081ff11f0b57f3d83f61abc409dbc3aa74821) - add support for a `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -5767,7 +2255,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-v0.2.1">
+<section class="package" id="ndarray-iter-v0.2.0">
 
 #### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
 
@@ -5778,17 +2266,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`d9952f2`](https://github.com/stdlib-js/stdlib/commit/d9952f2a25042570dfe5b20a2dacc4a07cec81c4) - update namespace TypeScript declarations [(#1128)](https://github.com/stdlib-js/stdlib/pull/1128)
--   [`b01d709`](https://github.com/stdlib-js/stdlib/commit/b01d7098eca0cb303d820723d45e8c3e9828a944) - add `nditerMatrixEntries` to namespace
--   [`7685072`](https://github.com/stdlib-js/stdlib/commit/7685072aff78337a4ba796cb1ac4a6f5eb9d6a4d) - add `nditerColumnEntries` to namespace
--   [`b96a9a2`](https://github.com/stdlib-js/stdlib/commit/b96a9a24e8028d366f5435b793cd285a3565e008) - add `nditerRowEntries` to namespace
--   [`29d99d7`](https://github.com/stdlib-js/stdlib/commit/29d99d75414e9559ce2938cc19e4bc13af1d4968) - add `nditerMatrices` to namespace
--   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
--   [`b45eb8f`](https://github.com/stdlib-js/stdlib/commit/b45eb8f83d224bea7e4bc063535ddb7962964872) - add `nditerValues` to namespace
--   [`665ce24`](https://github.com/stdlib-js/stdlib/commit/665ce24b77631e05ab7f1788c5777e2fc7e7cca0) - add `nditerEntries` to namespace
--   [`5c7312f`](https://github.com/stdlib-js/stdlib/commit/5c7312f1de2a2e5b6c10c4c4e1c76e7cec8d1620) - add `nditerIndices` to namespace
--   [`474e7e4`](https://github.com/stdlib-js/stdlib/commit/474e7e4fb2a15bfc8e9e719692b94044d25a7365) - add `nditer2arrayEach` to namespace
--   [`9c23309`](https://github.com/stdlib-js/stdlib/commit/9c233099b1cb3304b0158a52e103b01b262fb683) - add `nditerColumns` to namespace
--   [`43b42fe`](https://github.com/stdlib-js/stdlib/commit/43b42fe596c9b01fb19d3dd710ef71dfdc738510) - add `ndarray/iter` namespace
 
 </section>
 
@@ -5800,271 +2277,139 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-column-entries-v0.2.1">
+<section class="package" id="ndarray-iter-column-entries-v0.2.0">
 
 #### [@stdlib/ndarray/iter/column-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/column-entries)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`aeccc0d`](https://github.com/stdlib-js/stdlib/commit/aeccc0da93a0cd2ad37e8e8bb69494e8453b068e) - add `ndarray/iter/column-entries`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-columns-v0.2.1">
+<section class="package" id="ndarray-iter-columns-v0.2.0">
 
 #### [@stdlib/ndarray/iter/columns](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/columns)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`8aec891`](https://github.com/stdlib-js/stdlib/commit/8aec8914b2435090b1b466bcdd5820b158da94ef) - add `ndarray/iter/columns`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`bc1768e`](https://github.com/stdlib-js/stdlib/commit/bc1768ea93ed7c72ce90dd4ade9b6786603381b8) - prevent creating writable views when an input array is read-only
--   [`92b814f`](https://github.com/stdlib-js/stdlib/commit/92b814fe9446bc9f31aed4fb151e6f8bf75213da) - update parameter name to match docs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-entries-v0.2.1">
+<section class="package" id="ndarray-iter-entries-v0.2.0">
 
 #### [@stdlib/ndarray/iter/entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/entries)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`6cd1bad`](https://github.com/stdlib-js/stdlib/commit/6cd1badeb9fff42ccb03486ccf7d6c0b53d03350) - add `ndarray/iter/entries`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-indices-v0.2.1">
+<section class="package" id="ndarray-iter-indices-v0.2.0">
 
 #### [@stdlib/ndarray/iter/indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/indices)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`613fb18`](https://github.com/stdlib-js/stdlib/commit/613fb18c3890649335378f7b235a5f06e96860eb) - add `ndarray/iter/indices`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-matrices-v0.2.1">
+<section class="package" id="ndarray-iter-matrices-v0.2.0">
 
 #### [@stdlib/ndarray/iter/matrices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/matrices)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`88a673c`](https://github.com/stdlib-js/stdlib/commit/88a673c7ed8f97ab14df8f26c60211f634994108) - add `ndarray/iter/matrices`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-matrix-entries-v0.2.1">
+<section class="package" id="ndarray-iter-matrix-entries-v0.2.0">
 
 #### [@stdlib/ndarray/iter/matrix-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/matrix-entries)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`5f80a15`](https://github.com/stdlib-js/stdlib/commit/5f80a15dcb950ca672331f0fc276b10bc7c06105) - add `ndarray/iter/matrix-entries`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-row-entries-v0.2.1">
+<section class="package" id="ndarray-iter-row-entries-v0.2.0">
 
 #### [@stdlib/ndarray/iter/row-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/row-entries)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`344aa9e`](https://github.com/stdlib-js/stdlib/commit/344aa9e386486ee8b5af3edd2bd788db19f338e1) - add `ndarray/iter/row-entries`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-rows-v0.2.1">
+<section class="package" id="ndarray-iter-rows-v0.2.0">
 
 #### [@stdlib/ndarray/iter/rows](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/rows)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`fda2bf6`](https://github.com/stdlib-js/stdlib/commit/fda2bf6c22937a44b2e17949b437d5bbec08708c) - add `ndarray/iter/rows`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`64bd3a8`](https://github.com/stdlib-js/stdlib/commit/64bd3a808f060dc2004d130c2cb974b100527e82) - prevent creating writable views when provided a read-only array
--   [`69e0a71`](https://github.com/stdlib-js/stdlib/commit/69e0a718dd5b79eae03864b276b635754396d9a0) - update parameter name to match docs
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-to-array-each-v0.2.1">
+<section class="package" id="ndarray-iter-to-array-each-v0.2.0">
 
 #### [@stdlib/ndarray/iter/to-array-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/to-array-each)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`19af262`](https://github.com/stdlib-js/stdlib/commit/19af262e0319ea748c0300abfb363fb4561571a6) - add `ndarray/iter/to-array-each`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-values-v0.2.1">
+<section class="package" id="ndarray-iter-values-v0.2.0">
 
 #### [@stdlib/ndarray/iter/values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/values)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`3cc2fdb`](https://github.com/stdlib-js/stdlib/commit/3cc2fdb3b4ba4b60fb52139dc3ffbef267ecfeec) - add `ndarray/iter/values`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-maybe-broadcast-array-v0.2.1">
+<section class="package" id="ndarray-maybe-broadcast-array-v0.2.0">
 
 #### [@stdlib/ndarray/maybe-broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/maybe-broadcast-array)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`e96df4a`](https://github.com/stdlib-js/stdlib/commit/e96df4adf3598d2453ab869cec535971d4187c20) - add `ndarray/maybe-broadcast-array`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-maybe-broadcast-arrays-v0.2.1">
+<section class="package" id="ndarray-maybe-broadcast-arrays-v0.2.0">
 
 #### [@stdlib/ndarray/maybe-broadcast-arrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/maybe-broadcast-arrays)
 
@@ -6086,153 +2431,43 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-min-dtype-v0.2.1">
-
-#### [@stdlib/ndarray/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/min-dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-mostly-safe-casts-v0.2.1">
+<section class="package" id="ndarray-mostly-safe-casts-v0.2.0">
 
 #### [@stdlib/ndarray/mostly-safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/mostly-safe-casts)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`eff3cdd`](https://github.com/stdlib-js/stdlib/commit/eff3cdd2245ee7c9265d38f2d31b49bc7f4400d8) - add `ndarray/mostly-safe-casts`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`a763ac4`](https://github.com/stdlib-js/stdlib/commit/a763ac4c03c49343e3f06ba93325f39a20da97cc) - allow downcast from `float64` to `complex64`
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-ndims-v0.2.1">
+<section class="package" id="ndarray-ndims-v0.2.0">
 
 #### [@stdlib/ndarray/ndims](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ndims)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`e3e6b60`](https://github.com/stdlib-js/stdlib/commit/e3e6b60e161766128d601efc49aa73b21c4ebe54) - add `ndarray/ndims`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-next-dtype-v0.2.1">
-
-#### [@stdlib/ndarray/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/next-dtype)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-numel-v0.2.1">
+<section class="package" id="ndarray-numel-v0.2.0">
 
 #### [@stdlib/ndarray/numel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/numel)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`657947f`](https://github.com/stdlib-js/stdlib/commit/657947fab94fc9e62005afe17406b1d39c5a3bfa) - add `ndarray/numel`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-numel-dimension-v0.2.1">
+<section class="package" id="ndarray-numel-dimension-v0.2.0">
 
 #### [@stdlib/ndarray/numel-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/numel-dimension)
 
@@ -6254,391 +2489,103 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-offset-v0.2.1">
+<section class="package" id="ndarray-offset-v0.2.0">
 
 #### [@stdlib/ndarray/offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/offset)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`6e284c2`](https://github.com/stdlib-js/stdlib/commit/6e284c28a7e00043ffa90077ede849ad3bdb9272) - add `ndarray/offset`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-order-v0.2.1">
+<section class="package" id="ndarray-order-v0.2.0">
 
 #### [@stdlib/ndarray/order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/order)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`819f02e`](https://github.com/stdlib-js/stdlib/commit/819f02e21e7481d3a43265cb61e9aa1a0d2fd406) - add `ndarray/order`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-orders-v0.2.1">
-
-#### [@stdlib/ndarray/orders](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/orders)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-output-dtype-policies-v0.2.1">
-
-#### [@stdlib/ndarray/output-dtype-policies](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/output-dtype-policies)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
--   [`3d64252`](https://github.com/stdlib-js/stdlib/commit/3d64252e8c076e22298c987fc7237fcaae81023d) - add `default` policy
--   [`1127626`](https://github.com/stdlib-js/stdlib/commit/11276264fde9fc31a2143a1f64db050046bb6085) - add `real` policy
--   [`5954cd5`](https://github.com/stdlib-js/stdlib/commit/5954cd5b913c6d3b2d05c0bb07b607c885d6e5af) - add `ndarray/output-dtype-policies`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
-
-    -   To migrate, users should update their code to use `integer` rather
-    than `integral` to refer to the policy/kind which includes both
-    signed and unsigned integer dtypes.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-promotion-rules-v0.2.1">
-
-#### [@stdlib/ndarray/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/promotion-rules)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-safe-casts-v0.2.1">
-
-#### [@stdlib/ndarray/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/safe-casts)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-same-kind-casts-v0.2.1">
-
-#### [@stdlib/ndarray/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/same-kind-casts)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="ndarray-shape-v0.2.1">
+<section class="package" id="ndarray-shape-v0.2.0">
 
 #### [@stdlib/ndarray/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/shape)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`b76d481`](https://github.com/stdlib-js/stdlib/commit/b76d48151d39b4db1ec0440da235b0f9c042c675) - add `ndarray/shape`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-v0.2.1">
+<section class="package" id="ndarray-slice-v0.2.0">
 
 #### [@stdlib/ndarray/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`afda5bd`](https://github.com/stdlib-js/stdlib/commit/afda5bdedf10cc899794385201b356cf45e90334) - add `ndarray/slice`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`8d7dfdc`](https://github.com/stdlib-js/stdlib/commit/8d7dfdc706aea0628b8d8fce181fae12bcb049c2) - add missing argument
--   [`2910f80`](https://github.com/stdlib-js/stdlib/commit/2910f803215131c7ba9c9e1eb71875a6305cd402) - address broken benchmarks for out-of-bounds slices
--   [`eae0905`](https://github.com/stdlib-js/stdlib/commit/eae09050d3e8bcf751636d469b997d54db1fac9c) - ensure support for slicing zero-dimensional arrays
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-assign-v0.2.1">
+<section class="package" id="ndarray-slice-assign-v0.2.0">
 
 #### [@stdlib/ndarray/slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-assign)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`d73d723`](https://github.com/stdlib-js/stdlib/commit/d73d72364028ed44ed35409292c3357399750db8) - add `ndarray/slice-assign`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`8fabec9`](https://github.com/stdlib-js/stdlib/commit/8fabec9ee825644e00b6088d1684ca6bef752a8a) - add missing check for an output array which is read-only
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-dimension-v0.2.1">
+<section class="package" id="ndarray-slice-dimension-v0.2.0">
 
 #### [@stdlib/ndarray/slice-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`2fd5a3a`](https://github.com/stdlib-js/stdlib/commit/2fd5a3a25229f47a859fd86f5f4a8311153c2618) - add `ndarray/slice-dimension`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-dimension-from-v0.2.1">
+<section class="package" id="ndarray-slice-dimension-from-v0.2.0">
 
 #### [@stdlib/ndarray/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-from)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`aeab98d`](https://github.com/stdlib-js/stdlib/commit/aeab98dc6f81a6266e0c2d61645f2b85850d263f) - add `ndarray/slice-dimension-from`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-dimension-to-v0.2.1">
+<section class="package" id="ndarray-slice-dimension-to-v0.2.0">
 
 #### [@stdlib/ndarray/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-to)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`f9774e0`](https://github.com/stdlib-js/stdlib/commit/f9774e088c9d5e471a3bd8379b913561a8d7c64c) - add `ndarray/slice-dimension-to`
-
-</section>
-
-<!-- /.features -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-from-v0.2.1">
+<section class="package" id="ndarray-slice-from-v0.2.0">
 
 #### [@stdlib/ndarray/slice-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-from)
 
@@ -6660,7 +2607,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-to-v0.2.1">
+<section class="package" id="ndarray-slice-to-v0.2.0">
 
 #### [@stdlib/ndarray/slice-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-to)
 
@@ -6682,7 +2629,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-stride-v0.2.1">
+<section class="package" id="ndarray-stride-v0.2.0">
 
 #### [@stdlib/ndarray/stride](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/stride)
 
@@ -6704,39 +2651,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-strides-v0.2.1">
+<section class="package" id="ndarray-strides-v0.2.0">
 
 #### [@stdlib/ndarray/strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/strides)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`1407845`](https://github.com/stdlib-js/stdlib/commit/1407845fab9107bcab1834c0017c6424e6accccd) - add `ndarray/strides`
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`09306de`](https://github.com/stdlib-js/stdlib/commit/09306deea6b832fdc8b6bf11a853cf2c5eab8108) - ensure consistent results when provided a minimal zero-dimensional ndarray
-
-</section>
-
-<!-- /.bug-fixes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-sub2ind-v0.2.1">
+<section class="package" id="ndarray-sub2ind-v0.2.0">
 
 #### [@stdlib/ndarray/sub2ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/sub2ind)
 
@@ -6747,24 +2674,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`dd80dd0`](https://github.com/stdlib-js/stdlib/commit/dd80dd06ee514621c7cda8acea17c06add946336) - add support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -6772,43 +2685,19 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-to-array-v0.2.1">
+<section class="package" id="ndarray-to-array-v0.2.0">
 
 #### [@stdlib/ndarray/to-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/to-array)
 
 <details>
 
-<section class="features">
-
-##### Features
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`cf7c497`](https://github.com/stdlib-js/stdlib/commit/cf7c4978afd11bd988e8bb9cd2d138df357997e2) - add `ndarray/to-array`
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
+No changes reported for this release.</details>
 
 </section>
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-zeros-v0.2.1">
+<section class="package" id="ndarray-zeros-v0.2.0">
 
 #### [@stdlib/ndarray/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros)
 
@@ -6819,35 +2708,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`cc475bc`](https://github.com/stdlib-js/stdlib/commit/cc475bc4eb69351b15b231bf42257744e25635cd) - document support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`78cb6e3`](https://github.com/stdlib-js/stdlib/commit/78cb6e35c41caff418a7dde7759a311dd35bb407) - add support for additional ndarray constructor options
 
 </section>
 
 <!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`3aec20d`](https://github.com/stdlib-js/stdlib/commit/3aec20d84a70edd88ac294294bb733cabb544d66) - remove leftover disabled lint rule
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -6855,7 +2719,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-zeros-like-v0.2.1">
+<section class="package" id="ndarray-zeros-like-v0.2.0">
 
 #### [@stdlib/ndarray/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros-like)
 
@@ -6866,25 +2730,10 @@ A total of 4 people contributed to this release. Thank you to the following cont
 ##### Features
 
 -   [`4ea3975`](https://github.com/stdlib-js/stdlib/commit/4ea39750d4b9d772deb1b4ee374275e3ee995599) - document support for `normalize` index mode
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
--   [`e618407`](https://github.com/stdlib-js/stdlib/commit/e618407f673288e8aa303b5db6bd316c6f130762) - add support for additional ndarray constructor options
 
 </section>
 
 <!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
 
 </details>
 
@@ -6896,62 +2745,13 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="breaking-changes">
-
-### BREAKING CHANGES
-
--   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases
--   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases 
-
-    -   To migrate, users should make the following name changes:
-    ndoffset => ndarrayOffset
-    ndshape => ndarrayShape
-    ndstrides => ndarrayStrides
-    This renaming allows for more consistent naming conventions with
-    other ndarray utility functions.
-
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
--   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
--   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd): increase minimum TypeScript version
--   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType`
--   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType` 
-
-    -   To migrate, users should update their usage accordingly.
-
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
--   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
-
-    -   To migrate, users should update their code to use `integer` rather
-    than `integral` to refer to the policy/kind which includes both
-    signed and unsigned integer dtypes.
-
--   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): add ndarray option support to `ndarray/from-scalar`
--   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): `dtype` argument replaced by `options` argument 
-
-    -   In order to migrate to the new API, users should replace any
-    `dtype` argument usage with an equivalent `options` argument.
-
--   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): add support for providing `order` argument
--   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): must provide `order` argument. 
-
-    -   To migrate, users should explicitly provide an `order` argument as
-    a third argument when invoking `scalar2ndarray`.
-
-</section>
-
-<!-- /.breaking-changes -->
-
 <section class="contributors">
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
--   Dan Rose
 -   Daniel Killenberger
 -   Philipp Burckhardt
 -   Philipp Burckhardt
@@ -7091,6 +2891,5753 @@ A total of 5 people contributed to this release. Thank you to the following cont
 -   [`1e55c4b`](https://github.com/stdlib-js/stdlib/commit/1e55c4be392d4453a136bed034653452986821d7) - **docs:** remove related packages _(by Athan Reines)_
 -   [`e3a8985`](https://github.com/stdlib-js/stdlib/commit/e3a898537dc0ff2e08c24fbb5a6e58c6394fcd0c) - **fix:** move links _(by Athan Reines)_
 -   [`8fccaaa`](https://github.com/stdlib-js/stdlib/commit/8fccaaa1d2ce14f2ee512f0ea307b53f9bd16211) - **fix:** move links _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.1.1 (2023-11-08)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.1.0 (2023-11-08)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="ndarray-v0.1.0">
+
+#### [@stdlib/ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
+-   [`c54dc22`](https://github.com/stdlib-js/stdlib/commit/c54dc2221daaeb94f148dd042f68f28e27afee34) - add `ndsliceDimensionFrom`
+-   [`1b0fc06`](https://github.com/stdlib-js/stdlib/commit/1b0fc06ec87f77a925ec0881f3aeda270759be14) - add `ndsliceDimensionTo` to namespace
+-   [`1ee8ca1`](https://github.com/stdlib-js/stdlib/commit/1ee8ca150bc67b905084fe89d20f6102ed823794) - add `ndarrayMostlySafeCasts` to namespace
+-   [`b5c4543`](https://github.com/stdlib-js/stdlib/commit/b5c454313c1f2cce40a913f889093410608246bf) - add `ndsliceDimension` to namespace
+-   [`3eeff0a`](https://github.com/stdlib-js/stdlib/commit/3eeff0a0843cbe3c94c814def9f26b5caa4ed429) - add `ndarrayDataBuffer` to namespace
+-   [`a2b2082`](https://github.com/stdlib-js/stdlib/commit/a2b208201a324c5efea72831cc35da60fe560583) - add `ndarray/data-buffer`
+-   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167) - rename aliases
+-   [`b38f7f8`](https://github.com/stdlib-js/stdlib/commit/b38f7f89759f2f8577c1184a9b0cd71d412db8a2) - add `ndorder` to namespace
+-   [`a0baf19`](https://github.com/stdlib-js/stdlib/commit/a0baf191ee0dd9c4fa49229ced25c00cd25ca4a9) - add `ndarrayDataType` to namespace
+-   [`6eb1720`](https://github.com/stdlib-js/stdlib/commit/6eb1720344be2cc2e1ac46ae1aef501edc0dc4a2) - add `ndstrides` to namespace
+-   [`482bd69`](https://github.com/stdlib-js/stdlib/commit/482bd6970166f88f832e4d0e241b2fc1d0d780ea) - add `ndshape` to namespace
+-   [`e20c23e`](https://github.com/stdlib-js/stdlib/commit/e20c23e36bdb2904b2aa51a47a5cd674bdc377d0) - add `ndoffset` to namespace
+-   [`94b7c2d`](https://github.com/stdlib-js/stdlib/commit/94b7c2da42e0d782ccd380503ec6770a0c671822) - add `ndims` to namespace
+-   [`3514d7d`](https://github.com/stdlib-js/stdlib/commit/3514d7d812aaad71eaaf60dd570bf460758319f2) - add `numel` to namespace
+-   [`3e3d62e`](https://github.com/stdlib-js/stdlib/commit/3e3d62e3b7dd32fce3cb16ae1457729fdbecdaf7) - add `maybeBroadcastArray` to namespace
+-   [`9759a2c`](https://github.com/stdlib-js/stdlib/commit/9759a2c124154866e00bcba3c19647e45079ce56) - add `broadcastArray` to namespace
+-   [`fdebad4`](https://github.com/stdlib-js/stdlib/commit/fdebad409c163e0358421db3705d37768c8bca32) - add `iter` to namespace
+-   [`6d9677a`](https://github.com/stdlib-js/stdlib/commit/6d9677a1d879fd369ad1145d43b3334659c5d10f) - add `ndsliceAssign` to namespace
+-   [`c3ff11f`](https://github.com/stdlib-js/stdlib/commit/c3ff11f96e30d608107ed1c7034792b40adc4ca0) - add `FancyArray` to namespace
+-   [`c26a733`](https://github.com/stdlib-js/stdlib/commit/c26a7337fcc5c1d1c50d492d6ea362d7bc360810) - add `ndslice` to namespace
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`3556d4e`](https://github.com/stdlib-js/stdlib/commit/3556d4e588a0840c788c02b357a7b8d87e575f78) - add `defaults` to namespace
+-   [`a3a7a45`](https://github.com/stdlib-js/stdlib/commit/a3a7a4579edeb83503df22604e0ee47b60184ad3) - add `ndarrayOutputDataTypePolicies` to namespace
+-   [`3da30d7`](https://github.com/stdlib-js/stdlib/commit/3da30d74baf9e5ee13c299cf33a767fd071f1694) - add `ndemptyLike` to namespace
+-   [`8306cb9`](https://github.com/stdlib-js/stdlib/commit/8306cb9fedf86eb1d090149e4beed3d23fdee4b0) - add `ndempty` to namespace
+-   [`1c450ba`](https://github.com/stdlib-js/stdlib/commit/1c450ba6f265f5160dd66a0638efcc8899fc119a) - add `ndarray2array` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`72c6fa0`](https://github.com/stdlib-js/stdlib/commit/72c6fa09c02e49ff622030040703aee18ddfd3e8) - rename alias from `ndorder` to `ndarrayOrder` to match existing convention
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases
+-   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases 
+
+    -   To migrate, users should make the following name changes:
+    ndoffset => ndarrayOffset
+    ndshape => ndarrayShape
+    ndstrides => ndarrayStrides
+    This renaming allows for more consistent naming conventions with
+    other ndarray utility functions.
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-array-v0.1.0">
+
+#### [@stdlib/ndarray/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9b8ad73`](https://github.com/stdlib-js/stdlib/commit/9b8ad73643ef01a8382e65c668b6a39c01be06a1) - convert declaration to generic to provide additional type information
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`267e16e`](https://github.com/stdlib-js/stdlib/commit/267e16e021c86a2dbfeefc4112b3008ac7638688) - add support for complex numbers and provided ndarrays having arbitrary rank
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-v0.1.0">
+
+#### [@stdlib/ndarray/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
+-   [`d90228a`](https://github.com/stdlib-js/stdlib/commit/d90228a01f71e0b0a9e443377e711549040ecf31) - add `sliceDimensionFrom` to namespace
+-   [`229ab6e`](https://github.com/stdlib-js/stdlib/commit/229ab6efd7b1b93991b78a9399d071e23522e633) - add `sliceDimensionTo` to namespace
+-   [`67592b8`](https://github.com/stdlib-js/stdlib/commit/67592b82b088e4b8516f4f5e210368c96cbb4c11) - add `normalizeIndex` to namespace
+-   [`a41ecbd`](https://github.com/stdlib-js/stdlib/commit/a41ecbd20541d1f60bc30db109b2599021cc4e47) - add `sliceFrom` to namespace
+-   [`54401ac`](https://github.com/stdlib-js/stdlib/commit/54401acffc828b45fbe3cabe6b17f305cb4170b0) - add `sliceTo` to namespace
+-   [`2934e57`](https://github.com/stdlib-js/stdlib/commit/2934e576d314c60fc6198228d33282a1ab4f76c1) - add `flipud` to namespace
+-   [`013beaa`](https://github.com/stdlib-js/stdlib/commit/013beaa9f51f64fb56a25ab95dc85a0f849dc1ad) - add `fliplr` to namespace
+-   [`b390e0b`](https://github.com/stdlib-js/stdlib/commit/b390e0bdfc5f184568b70ddd3d9b4a9cd92dbf9e) - add `reverseDimension` to namespace
+-   [`be83095`](https://github.com/stdlib-js/stdlib/commit/be83095aaf7d0dec724ac1d42135459f33ca38af) - add `reverse` to namespace
+-   [`f4cb44c`](https://github.com/stdlib-js/stdlib/commit/f4cb44c4a2f34211b7f53aa1e7e49e564445268b) - add `assign` to namespace
+-   [`b985417`](https://github.com/stdlib-js/stdlib/commit/b9854176622b79eb7338247ac9d77ec0d22dc3a7) - add `data` to namespace
+-   [`0786d6c`](https://github.com/stdlib-js/stdlib/commit/0786d6c0bc1087b5748b42632c6b8efebcb147ad) - add `ndarray/base/data-buffer`
+-   [`3a2e182`](https://github.com/stdlib-js/stdlib/commit/3a2e182a27fd4d6ca7d5b518cf24570c273a2556) - add `order` to namespace
+-   [`88e5849`](https://github.com/stdlib-js/stdlib/commit/88e58498365a51ba56218c74a4767e89eb5061cc) - add `dtype` to namespace
+-   [`ed14448`](https://github.com/stdlib-js/stdlib/commit/ed1444886a2b28f68d09d313c7fe550be337d2b4) - add `sliceDimension` to namespace
+-   [`b6571b2`](https://github.com/stdlib-js/stdlib/commit/b6571b2e436559d99e92767a95e95588857205c8) - add `strides` to namespace
+-   [`ed378b7`](https://github.com/stdlib-js/stdlib/commit/ed378b72c05992f0473dc5891dc4664773949148) - add `shape` to namespace
+-   [`0f8bc08`](https://github.com/stdlib-js/stdlib/commit/0f8bc0882a61b2c54219f37e6d2cb80c50985194) - add `offset` to namespace
+-   [`6b48944`](https://github.com/stdlib-js/stdlib/commit/6b48944663c08f64956469340e8561704d9923f8) - add `ndims` to namespace
+-   [`49e1d21`](https://github.com/stdlib-js/stdlib/commit/49e1d216375e904a5448da4bf414a3261e1f68ba) - add `nextCartesianIndex` to namespace
+-   [`212c1fa`](https://github.com/stdlib-js/stdlib/commit/212c1fa13fd177b87d0ddfa4e70d411e587d5560) - add `sliceAssign` to namespace
+-   [`15373b4`](https://github.com/stdlib-js/stdlib/commit/15373b4bc5df65314a0fffe20184429f7ad29616) - add `slice` to namespace
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`98c37fa`](https://github.com/stdlib-js/stdlib/commit/98c37fa381ef03c24703d76a5b0be4f95727243c) - add `unaryOutputDataType` to namespace
+-   [`6ca0ecb`](https://github.com/stdlib-js/stdlib/commit/6ca0ecb07f89d0ff6041ac2d2cb4a91cdad0059d) - add policy APIs to namespace
+-   [`00b4630`](https://github.com/stdlib-js/stdlib/commit/00b46302fa85b4a133c2b93d13ac4cedd427bc11) - add `emptyLike` to namespace
+-   [`33e76ef`](https://github.com/stdlib-js/stdlib/commit/33e76efad5564bbd2455f492c34b04a4fbfc8988) - add `empty` to namespace
+-   [`0661629`](https://github.com/stdlib-js/stdlib/commit/06616293c16e65f85a2b9b72fc9e036e20cff6ab) - add `broadcastScalar` to namespace
+-   [`9800cc4`](https://github.com/stdlib-js/stdlib/commit/9800cc4f8df8d96db8bac00b51ae1491fa579666) - add `nullary` to namespace
+-   [`4e94bf0`](https://github.com/stdlib-js/stdlib/commit/4e94bf079c6677f10e5ea1f4eaca93dc52dac8f3) - add `binaryLoopOrder` to namespace
+-   [`d151153`](https://github.com/stdlib-js/stdlib/commit/d151153ac4aced58a04e795607000b7138feb05d) - add `ndarray/base/binary-loop-interchange-order`
+-   [`0ac8825`](https://github.com/stdlib-js/stdlib/commit/0ac88258a1b720982b47661c5ddeb5a932cf56d4) - add `binaryBlockSize` to namespace
+-   [`2600d28`](https://github.com/stdlib-js/stdlib/commit/2600d28341fe75b74e3ab7c02779ee856d0d53ad) - add `ndarray/base/binary-tiling-block-size`
+-   [`e8775fc`](https://github.com/stdlib-js/stdlib/commit/e8775fcbe3617b9013bd1cea74d7f70aa2669ab4) - update namespace TypeScript declarations [(#951)](https://github.com/stdlib-js/stdlib/pull/951)
+-   [`6b7c54d`](https://github.com/stdlib-js/stdlib/commit/6b7c54dd2aa970a48a5f73d89c160c7ab6b6ba28) - add `nullaryLoopOrder` to namespace
+-   [`760a0a1`](https://github.com/stdlib-js/stdlib/commit/760a0a1aab281e0a1b043b526eac9592551cffb8) - add `nullaryBlockSize` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
+-   [`1aefe83`](https://github.com/stdlib-js/stdlib/commit/1aefe83e90f109989a001e85ca25ed278a7c3a50) - add `isMostlySafeDataTypeCast` to namespace
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53) - rename `isIntegralDataType` to `isIntegerDataType`
+-   [`d0eb2cf`](https://github.com/stdlib-js/stdlib/commit/d0eb2cf2a86e9c9002b3b78218297f3aa57a5ff5) - add `isRealDataType` to namespace
+-   [`901dc93`](https://github.com/stdlib-js/stdlib/commit/901dc93c3954e048073b711818553f2a065476f1) - add `isNumericDataType` to namespace
+-   [`d3d2708`](https://github.com/stdlib-js/stdlib/commit/d3d2708eb6919b2eace1fb6f0fa06afac138f117) - add `isComplexFloatingPointDataType` to namespace
+-   [`088f3e9`](https://github.com/stdlib-js/stdlib/commit/088f3e9fea4a7090b1c1c09765d264acc832094b) - add `isRealFloatingPointDataType` to namespace
+-   [`61a6fee`](https://github.com/stdlib-js/stdlib/commit/61a6feec47761cf559d455264a6908a1f4ac545e) - add `isFloatingPointDataType` to namespace
+-   [`f1b2025`](https://github.com/stdlib-js/stdlib/commit/f1b20259563e3e94ef269e3c98cec028af4e87ae) - add `isIntegralDataType` to namespace
+-   [`74d366e`](https://github.com/stdlib-js/stdlib/commit/74d366e11957a3016839fa6836a021f49e2d4337) - add `isUnsignedIntegerDataType` to namespace
+-   [`35dc02a`](https://github.com/stdlib-js/stdlib/commit/35dc02a0c40af961cfe20e14e4ceddaa4012bc4d) - add `isSignedIntegerDataType` to namespace
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType`
+-   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType` 
+
+    -   To migrate, users should update their usage accordingly.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-allowed--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-allowed-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-allowed-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`733ee49`](https://github.com/stdlib-js/stdlib/commit/733ee4954b08c24007460390d688fe86bb1e8fae) - add support for a `mostly-safe` casting mode
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-buffer-length-compatible-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-buffer-length-compatible](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-buffer-length-compatible)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-buffer-length-compatible-shape-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-buffer-length-compatible-shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-buffer-length-compatible-shape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-casting-mode-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-casting-mode](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-casting-mode)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-column-major-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-column-major](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-column-major)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-column-major-contiguous-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-column-major-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-column-major-contiguous)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-complex-floating-point--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-complex-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-complex-floating-point-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`7b0d1b0`](https://github.com/stdlib-js/stdlib/commit/7b0d1b09616c4d92e0733564ef3c8b420a9ddb4f) - add `ndarray/base/assert/is-complex-floating-point-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-contiguous-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-contiguous)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-floating-point--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-floating-point-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`31ad686`](https://github.com/stdlib-js/stdlib/commit/31ad686cf56d70e9cd1d24043330eb3f4a688684) - add `ndarray/base/assert/is-floating-point-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-index-mode-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-index-mode](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-index-mode)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-integer--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-integer-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`d96fdc9`](https://github.com/stdlib-js/stdlib/commit/d96fdc905898b96fffcc8ab210ad4b4d6c700565) - add `ndarray/base/assert/is-integer-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-integral--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-integral-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-integral-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e2f9bb3`](https://github.com/stdlib-js/stdlib/commit/e2f9bb3c9d922cddeb3bbdac52744c46f4fa6186) - add `ndarray/base/assert/is-integral-data-type`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-mostly-safe--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-mostly-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-mostly-safe-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a8290c4`](https://github.com/stdlib-js/stdlib/commit/a8290c4059e1aa16ed2388a02c5637e58659ae01) - add `ndarray/base/assert/is-mostly-safe-data-type-cast`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-numeric--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-numeric-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-numeric-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`c326c3f`](https://github.com/stdlib-js/stdlib/commit/c326c3fe89ba54c362395aa53e442ec70a2ad69d) - add `ndarray/base/assert/is-numeric-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-order-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-read-only-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-read-only](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-read-only)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-real--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-real-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-real-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`889da69`](https://github.com/stdlib-js/stdlib/commit/889da694559f4b0da7670277001dc2414e55edd9) - add `ndarray/base/assert/is-real-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-real-floating-point--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-real-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-real-floating-point-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`41d3972`](https://github.com/stdlib-js/stdlib/commit/41d3972e82c51bdd6522708d9446fce378e30c8a) - add `ndarray/base/assert/is-real-floating-point-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-row-major-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-row-major](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-row-major)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-row-major-contiguous-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-row-major-contiguous](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-row-major-contiguous)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-safe--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-safe-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-same-kind--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-same-kind-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-same-kind-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-signed-integer--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-signed-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-signed-integer-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`063b647`](https://github.com/stdlib-js/stdlib/commit/063b6475df8c93d7b199e77b28325928e960e18b) - add `ndarray/base/assert/is-signed-integer-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-single-segment-compatible-v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-single-segment-compatible](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-single-segment-compatible)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-unsigned-integer--v0.1.0">
+
+#### [@stdlib/ndarray/base/assert/is-unsigned-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-unsigned-integer-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`f2fd134`](https://github.com/stdlib-js/stdlib/commit/f2fd1344eee163ede1839e2be9a537be2d4ec240) - add `ndarray/base/assert/is-unsigned-integer-data-type`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assign-v0.1.0">
+
+#### [@stdlib/ndarray/base/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assign)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`aabbb4e`](https://github.com/stdlib-js/stdlib/commit/aabbb4eaff80556d2320d75cf9520f5b01352e50) - add loop functions for downcasting floating-point dtypes
+-   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`c8417b0`](https://github.com/stdlib-js/stdlib/commit/c8417b07e7637b7c5c2336191d9b3288a0e5a228) - add support for assigning real-valued elements to complex-valued elements
+-   [`46d5210`](https://github.com/stdlib-js/stdlib/commit/46d52108725f354f62312121e797195cbbfe7611) - address unterminated macro
+-   [`39b2b0d`](https://github.com/stdlib-js/stdlib/commit/39b2b0da7407b46375ee9897ce60452f5179cf1b) - use correct type for dispatch object
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-broadcast-array-v0.1.0">
+
+#### [@stdlib/ndarray/base/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-broadcast-scalar-v0.1.0">
+
+#### [@stdlib/ndarray/base/broadcast-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-scalar)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`efe7c22`](https://github.com/stdlib-js/stdlib/commit/efe7c226d5fb5ac7fb0c36dec4b5925d4484ee43) - add `ndarray/base/broadcast-scalar`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-broadcast-shapes-v0.1.0">
+
+#### [@stdlib/ndarray/base/broadcast-shapes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-shapes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-buffer-v0.1.0">
+
+#### [@stdlib/ndarray/base/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-buffer-ctors-v0.1.0">
+
+#### [@stdlib/ndarray/base/buffer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-ctors)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-buffer-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/buffer-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-buffer-dtype-enum-v0.1.0">
+
+#### [@stdlib/ndarray/base/buffer-dtype-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-dtype-enum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd) - increase minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`0deb1be`](https://github.com/stdlib-js/stdlib/commit/0deb1be1f1efe2cc98bd944ab1c50cc885cf523b) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd): increase minimum TypeScript version
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-bytes-per-element-v0.1.0">
+
+#### [@stdlib/ndarray/base/bytes-per-element](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/bytes-per-element)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-char2dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/char2dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/char2dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-clamp-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/clamp-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/clamp-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ctor-v0.1.0">
+
+#### [@stdlib/ndarray/base/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ctor)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9d9b5ca`](https://github.com/stdlib-js/stdlib/commit/9d9b5ca04c251db89351dabfd1d3868fdee22fd2) - add `ndarray/base/dtype`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-char-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-char](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-char)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-desc-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-desc](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-desc)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-enum2str-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-enum2str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-enum2str)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`fe527ef`](https://github.com/stdlib-js/stdlib/commit/fe527ef22a44592d7eaa0adbded47730248eaa74) - fix require path
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-resolve-enum-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-resolve-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-resolve-enum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-resolve-str-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-resolve-str)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype-str2enum-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype-str2enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype-str2enum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype2c-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtype2c](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype2c)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtypes2signatures-v0.1.0">
+
+#### [@stdlib/ndarray/base/dtypes2signatures](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtypes2signatures)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-empty-v0.1.0">
+
+#### [@stdlib/ndarray/base/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`c593502`](https://github.com/stdlib-js/stdlib/commit/c593502093613634a80bdb6c6806b8d2477d17d4) - add `ndarray/base/empty`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-empty-like-v0.1.0">
+
+#### [@stdlib/ndarray/base/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`9f1c2f3`](https://github.com/stdlib-js/stdlib/commit/9f1c2f30fd1fc23c8159c2d8df5df0f14b679ce8) - add `ndarray/base/empty-like`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`65d964f`](https://github.com/stdlib-js/stdlib/commit/65d964fc0d0cde545a0e15fd34bcfcdec5eb01b6) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-expand-dimensions-v0.1.0">
+
+#### [@stdlib/ndarray/base/expand-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/expand-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`61aa8e7`](https://github.com/stdlib-js/stdlib/commit/61aa8e7e7d3d64e9bac8b51d34b1b734a24a84de) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-fliplr-v0.1.0">
+
+#### [@stdlib/ndarray/base/fliplr](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fliplr)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`bb9e0a4`](https://github.com/stdlib-js/stdlib/commit/bb9e0a4dc183c68ffd21fecc1130cb4bac303597) - add `ndarray/base/fliplr`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-flipud-v0.1.0">
+
+#### [@stdlib/ndarray/base/flipud](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/flipud)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`316273f`](https://github.com/stdlib-js/stdlib/commit/316273feed1a28304e7e4a1612831e257fc6e9e2) - add `ndarray/base/flipud`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-from-scalar-v0.1.0">
+
+#### [@stdlib/ndarray/base/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/from-scalar)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c) - add support for providing `order` argument
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): add support for providing `order` argument
+-   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): must provide `order` argument. 
+
+    -   To migrate, users should explicitly provide an `order` argument as
+    a third argument when invoking `scalar2ndarray`.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-function-object-v0.1.0">
+
+#### [@stdlib/ndarray/base/function-object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/function-object)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ind-v0.1.0">
+
+#### [@stdlib/ndarray/base/ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ind)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`aaaf01e`](https://github.com/stdlib-js/stdlib/commit/aaaf01e43bfef9b8b3c2c9d3f703b3e95e0524b9) - use correct format specifier in error message
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ind2sub-v0.1.0">
+
+#### [@stdlib/ndarray/base/ind2sub](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ind2sub)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-iteration-order-v0.1.0">
+
+#### [@stdlib/ndarray/base/iteration-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/iteration-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-max-view-buffer-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/max-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/max-view-buffer-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-maybe-broadcast-array-v0.1.0">
+
+#### [@stdlib/ndarray/base/maybe-broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/maybe-broadcast-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`c142624`](https://github.com/stdlib-js/stdlib/commit/c1426240f375b6c864a2d59368694ac09d7637f6) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-meta--v0.1.0">
+
+#### [@stdlib/ndarray/base/meta-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/meta-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-min-view-buffer-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/min-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/min-view-buffer-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-minmax-view-buffer-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/minmax-view-buffer-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/minmax-view-buffer-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-napi-v0.1.0">
+
+#### [@stdlib/ndarray/base/napi](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-napi-addon-arguments-v0.1.0">
+
+#### [@stdlib/ndarray/base/napi/addon-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/addon-arguments)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-napi-dtype-string-to-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/napi/dtype-string-to-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/dtype-string-to-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-napi-typedarray-type-to-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/napi/typedarray-type-to-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/typedarray-type-to-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-napi-unary-v0.1.0">
+
+#### [@stdlib/ndarray/base/napi/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/napi/unary)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ndarraylike2object-v0.1.0">
+
+#### [@stdlib/ndarray/base/ndarraylike2object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ndarraylike2object)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`c539bd1`](https://github.com/stdlib-js/stdlib/commit/c539bd17b8cd17ca3a37a958626dbd6df2e25477) - add missing argument
+-   [`0deb1be`](https://github.com/stdlib-js/stdlib/commit/0deb1be1f1efe2cc98bd944ab1c50cc885cf523b) - update import path for `Collection` type definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ndims-v0.1.0">
+
+#### [@stdlib/ndarray/base/ndims](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ndims)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`dd72b0f`](https://github.com/stdlib-js/stdlib/commit/dd72b0f28dc570151a855a31c9c831fe86f91169) - add `ndarray/base/ndims`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-next-cartesian-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/next-cartesian-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/next-cartesian-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b8de2da`](https://github.com/stdlib-js/stdlib/commit/b8de2dab6ca473794f646945254f97c839fc31af) - add `ndarray/base/next-cartesian-index`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-nonsingleton-dimensions-v0.1.0">
+
+#### [@stdlib/ndarray/base/nonsingleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nonsingleton-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-normalize-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/normalize-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/normalize-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`512c8a8`](https://github.com/stdlib-js/stdlib/commit/512c8a8f75a158a42f9ea9113bda929e0c28519e) - add `ndarray/base/normalize-index`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-nullary-v0.1.0">
+
+#### [@stdlib/ndarray/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`28c87ca`](https://github.com/stdlib-js/stdlib/commit/28c87ca422d9953a5d5ee583e904b24d66e59682) - add `ndarray/base/nullary`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`23b99ac`](https://github.com/stdlib-js/stdlib/commit/23b99acc256b4c9034347ed42ba21f202caedda8) - resolve C lint errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-nullary-loop-interchange-order-v0.1.0">
+
+#### [@stdlib/ndarray/base/nullary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary-loop-interchange-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`45b2ba9`](https://github.com/stdlib-js/stdlib/commit/45b2ba9a82ac496a9c00c697839453cd2aef285a) - add `@stdlib/ndarray/base/nullary-loop-interchange-order`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-nullary-tiling-block-size-v0.1.0">
+
+#### [@stdlib/ndarray/base/nullary-tiling-block-size](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary-tiling-block-size)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`0ed2dc6`](https://github.com/stdlib-js/stdlib/commit/0ed2dc6083a20d0f90e653191778da2a9ddf9105) - add `@stdlib/ndarray/base/nullary-tiling-block-size`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-numel-v0.1.0">
+
+#### [@stdlib/ndarray/base/numel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/numel)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-offset-v0.1.0">
+
+#### [@stdlib/ndarray/base/offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/offset)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`08dd5cd`](https://github.com/stdlib-js/stdlib/commit/08dd5cdbbfb2370bc88cf0e223a1371473243c09) - add `ndarray/base/offset`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-order-v0.1.0">
+
+#### [@stdlib/ndarray/base/order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`857a8c7`](https://github.com/stdlib-js/stdlib/commit/857a8c79fd6099e8a34cec07d9b6c89a8e29e77f) - add `ndarray/base/order`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-output-policy-enum2str-v0.1.0">
+
+#### [@stdlib/ndarray/base/output-policy-enum2str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-enum2str)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`144d739`](https://github.com/stdlib-js/stdlib/commit/144d7393381f2430219962e39287792bf69374b8) - add `ndarray/base/output-policy-enum2str`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`b4dbeae`](https://github.com/stdlib-js/stdlib/commit/b4dbeaebb752c2494a156cd6f92d7055bea024ec) - set correct package names
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-output-policy-resolve-enum-v0.1.0">
+
+#### [@stdlib/ndarray/base/output-policy-resolve-enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-resolve-enum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`c0d63fe`](https://github.com/stdlib-js/stdlib/commit/c0d63fe91fe1de62e13334ade3bb157aa3ccdb4a) - add `ndarray/base/output-policy-resolve-enum`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-output-policy-resolve-str-v0.1.0">
+
+#### [@stdlib/ndarray/base/output-policy-resolve-str](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-resolve-str)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`375a3e8`](https://github.com/stdlib-js/stdlib/commit/375a3e851b300eb1b936520f43e6d303c253ba26) - add `ndarray/base/output-policy-resolve-str`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-output-policy-str2enum-v0.1.0">
+
+#### [@stdlib/ndarray/base/output-policy-str2enum](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/output-policy-str2enum)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`66e4d33`](https://github.com/stdlib-js/stdlib/commit/66e4d331999220774c45c093900470e88fb6953a) - add `ndarray/base/output-policy-str2enum`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-prepend-singleton-dimensions-v0.1.0">
+
+#### [@stdlib/ndarray/base/prepend-singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/prepend-singleton-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a5ce155`](https://github.com/stdlib-js/stdlib/commit/a5ce155e3f2da8176e848e5fd75833a7a943fdb6) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-remove-singleton-dimensions-v0.1.0">
+
+#### [@stdlib/ndarray/base/remove-singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/remove-singleton-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`9741d55`](https://github.com/stdlib-js/stdlib/commit/9741d5527de099260554aa7f4e2e4ca4c3e2cd2a) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-reverse-v0.1.0">
+
+#### [@stdlib/ndarray/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`aff949b`](https://github.com/stdlib-js/stdlib/commit/aff949b5c2ee01b9aef69e471c735691b27ec370) - add `ndarray/base/reverse`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-reverse-dimension-v0.1.0">
+
+#### [@stdlib/ndarray/base/reverse-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse-dimension)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`86f5a89`](https://github.com/stdlib-js/stdlib/commit/86f5a894a141d677a19ee54e1263dacb165a177c) - add `ndarray/base/reverse-dimension`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-serialize-meta--v0.1.0">
+
+#### [@stdlib/ndarray/base/serialize-meta-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/serialize-meta-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`6a6225d`](https://github.com/stdlib-js/stdlib/commit/6a6225d3d7a9a7e97387c1d1b3dff09c702eddd7) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-shape-v0.1.0">
+
+#### [@stdlib/ndarray/base/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/shape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7a6cc2b`](https://github.com/stdlib-js/stdlib/commit/7a6cc2b58a83de238126dc3e899d663b5939167b) - add `ndarray/base/shape`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-shape2strides-v0.1.0">
+
+#### [@stdlib/ndarray/base/shape2strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/shape2strides)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-singleton-dimensions-v0.1.0">
+
+#### [@stdlib/ndarray/base/singleton-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/singleton-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`48cb9aa`](https://github.com/stdlib-js/stdlib/commit/48cb9aabdfbeb58af82ad69ebf0754e2802797fd) - add support for returning a mutable ndarray view
+-   [`37ddf6d`](https://github.com/stdlib-js/stdlib/commit/37ddf6d4d84a64c83743a3e18863ad5ea8fd0d6f) - add `ndarray/base/slice`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`b75bcc2`](https://github.com/stdlib-js/stdlib/commit/b75bcc2e8807ea3f2ec8d8803bb6f4106bd11d0f) - add missing argument
+-   [`09b4354`](https://github.com/stdlib-js/stdlib/commit/09b435430b5f5a1809e409d8b64bd3974fc56ccb) - rename parameter to match docs
+-   [`c636c08`](https://github.com/stdlib-js/stdlib/commit/c636c084bae9899fff1e667f00ecf9a71dd61175) - address bug when resolving buffer index of the first element indexed by a slice
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-assign-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-assign)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c90e739`](https://github.com/stdlib-js/stdlib/commit/c90e7393fb2abf6d563581c2e47e8fe707b4cc33) - add `ndarray/base/slice-assign`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`c13a4d5`](https://github.com/stdlib-js/stdlib/commit/c13a4d58f04d875125481add5d68e1e2052b19ce) - add missing argument
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-dimension-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5ca2f0e`](https://github.com/stdlib-js/stdlib/commit/5ca2f0e339d3580058c55d401045f8e66caaf543) - add `ndarray/base/slice-dimension`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-dimension-from-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-from)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`de5ef5e`](https://github.com/stdlib-js/stdlib/commit/de5ef5e1b15d235a28570f92fb5c12b1958227b5) - add `ndarray/base/slice-dimension-from`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-dimension-to-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-to)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3eb7c44`](https://github.com/stdlib-js/stdlib/commit/3eb7c445c25a352075cd32b826ec399fdb8f2775) - add `ndarray/base/slice-dimension-to`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-from-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-from)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7f80a7c`](https://github.com/stdlib-js/stdlib/commit/7f80a7cdf828e50f98b963df45b2c9262c501a14) - add `ndarray/base/slice-from`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-slice-to-v0.1.0">
+
+#### [@stdlib/ndarray/base/slice-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-to)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4da3db2`](https://github.com/stdlib-js/stdlib/commit/4da3db265d7a7ab8dd6e91eb55d3ab393a2789f3) - add `ndarray/base/slice-to`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-strides-v0.1.0">
+
+#### [@stdlib/ndarray/base/strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5a0c235`](https://github.com/stdlib-js/stdlib/commit/5a0c23554e53b29fe6c36148c351699dfefe4ea7) - add `ndarray/base/strides`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8874562`](https://github.com/stdlib-js/stdlib/commit/8874562a8e3383393bef0e1220080fb20a99880f) - add missing support for minimal ndarray-like objects not supporting a strides property
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-strides2offset-v0.1.0">
+
+#### [@stdlib/ndarray/base/strides2offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides2offset)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-strides2order-v0.1.0">
+
+#### [@stdlib/ndarray/base/strides2order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides2order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-sub2ind-v0.1.0">
+
+#### [@stdlib/ndarray/base/sub2ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/sub2ind)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-to-array-v0.1.0">
+
+#### [@stdlib/ndarray/base/to-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-transpose-v0.1.0">
+
+#### [@stdlib/ndarray/base/transpose](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/transpose)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-v0.1.0">
+
+#### [@stdlib/ndarray/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`c28a16e`](https://github.com/stdlib-js/stdlib/commit/c28a16e50e84bc0fb8dd16b644f83b60248fe3b7) - add `ndarray/base/assign`
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`23b99ac`](https://github.com/stdlib-js/stdlib/commit/23b99acc256b4c9034347ed42ba21f202caedda8) - resolve C lint errors
+-   [`64a7e92`](https://github.com/stdlib-js/stdlib/commit/64a7e9272da47f0b0a7afd8a5f4d5be613cbfb8d) - add missing variable declaration
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-by-v0.1.0">
+
+#### [@stdlib/ndarray/base/unary-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-loop-interchange-order-v0.1.0">
+
+#### [@stdlib/ndarray/base/unary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-loop-interchange-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-output-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/base/unary-output-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-output-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`eec20f6`](https://github.com/stdlib-js/stdlib/commit/eec20f6aba797b451addbf452384c2c4f2ff1add) - add `ndarray/base/unary-output-dtype`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-tiling-block-size-v0.1.0">
+
+#### [@stdlib/ndarray/base/unary-tiling-block-size](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-tiling-block-size)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-vind2-v0.1.0">
+
+#### [@stdlib/ndarray/base/vind2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/vind2)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-wrap-index-v0.1.0">
+
+#### [@stdlib/ndarray/base/wrap-index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/wrap-index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-zeros-v0.1.0">
+
+#### [@stdlib/ndarray/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-zeros-like-v0.1.0">
+
+#### [@stdlib/ndarray/base/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-broadcast-array-v0.1.0">
+
+#### [@stdlib/ndarray/broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/broadcast-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6d0da66`](https://github.com/stdlib-js/stdlib/commit/6d0da668d0d69bfe1a7fdceeceae05b52eada5c1) - add `ndarray/broadcast-array`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-casting-modes-v0.1.0">
+
+#### [@stdlib/ndarray/casting-modes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/casting-modes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`12ee2c9`](https://github.com/stdlib-js/stdlib/commit/12ee2c9e8cd35134cc91dd32dd609144e76b8686) - add `mostly-safe` casting mode
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-ctor-v0.1.0">
+
+#### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`fb65dfe`](https://github.com/stdlib-js/stdlib/commit/fb65dfe5b36b35ad8b3747df6ddb693a5b62d171) - use `Collection`, rather than `ArrayLike`
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-defaults-v0.1.0">
+
+#### [@stdlib/ndarray/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/defaults)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
+-   [`bd1017d`](https://github.com/stdlib-js/stdlib/commit/bd1017ddb8dd6fe552675221570186440cdbb4f5) - add `numeric` and `real` dtype defaults
+-   [`9363dc3`](https://github.com/stdlib-js/stdlib/commit/9363dc3376fcb9ba18d181716fae8fbb731771bd) - add `get` method for retrieving a single default setting
+-   [`35de20d`](https://github.com/stdlib-js/stdlib/commit/35de20d9359f2497eb0527c7cd99778dd7bff038) - add `ndarray/defaults`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
+
+    -   To migrate, users should update their code to use `integer` rather
+    than `integral` to refer to the policy/kind which includes both
+    signed and unsigned integer dtypes.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-dispatch-v0.1.0">
+
+#### [@stdlib/ndarray/dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dispatch)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-dispatch-by-v0.1.0">
+
+#### [@stdlib/ndarray/dispatch-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dispatch-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`2ef370c`](https://github.com/stdlib-js/stdlib/commit/2ef370c299de57a389c57f1815824b05665c9ece) - add missing test fixture [(#1054)](https://github.com/stdlib-js/stdlib/pull/1054)
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`29df3cf`](https://github.com/stdlib-js/stdlib/commit/29df3cf36888a96512dfade51adf0e3dde320166) - add `ndarray/dtype`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-dtypes-v0.1.0">
+
+#### [@stdlib/ndarray/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dtypes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
+-   [`03effb2`](https://github.com/stdlib-js/stdlib/commit/03effb27ed971c369883a650dd3f8d079a2acab1) - add `real` data type kind
+-   [`99146bb`](https://github.com/stdlib-js/stdlib/commit/99146bb9777c1c042d95f68494c9fb4f9377e651) - add support for returning a subset of data types
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
+
+    -   To migrate, users should update their code to use `integer` rather
+    than `integral` to refer to the policy/kind which includes both
+    signed and unsigned integer dtypes.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-empty-v0.1.0">
+
+#### [@stdlib/ndarray/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`910fed5`](https://github.com/stdlib-js/stdlib/commit/910fed5f346f7d5ac2d94a41e50c9eff2219518e) - add `ndarray/empty`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`06712ce`](https://github.com/stdlib-js/stdlib/commit/06712ce614899b7bf573e6323532a48a452526fe) - fix package name and keywords
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-empty-like-v0.1.0">
+
+#### [@stdlib/ndarray/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`561a9ea`](https://github.com/stdlib-js/stdlib/commit/561a9ea36c1300678da980b4740f78d71a49c0ba) - add `ndarray/empty-like`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-fancy-v0.1.0">
+
+#### [@stdlib/ndarray/fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/fancy)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`54858d0`](https://github.com/stdlib-js/stdlib/commit/54858d0033107586ec0b0b823019e75548664bd4) - add support for slice assignment and refactor index expression handling
+-   [`d64f3c7`](https://github.com/stdlib-js/stdlib/commit/d64f3c7831c6490eae291c9de253dfc763052fbb) - add TypeScript declarations and add REPL help
+-   [`4433c86`](https://github.com/stdlib-js/stdlib/commit/4433c8677f64ffe451f267484367d3d9f27e32f5) - add `ndarray/fancy`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`fcbe4c1`](https://github.com/stdlib-js/stdlib/commit/fcbe4c18fd4ebfad0466b56b4c19abda6cdb4c2b) - address indexing expression errors and refactor to use `ndarray/base/slice`
+-   [`e17e199`](https://github.com/stdlib-js/stdlib/commit/e17e1999c8d3f29a7b9fe509ce3fb05db05aaf39) - address dimension reduction bug
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-from-scalar-v0.1.0">
+
+#### [@stdlib/ndarray/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35) - add ndarray option support to `ndarray/from-scalar`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`32a2827`](https://github.com/stdlib-js/stdlib/commit/32a282799ffd272d2a0554e81755a14923564e51) - update import paths for complex type defs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): add ndarray option support to `ndarray/from-scalar`
+-   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): `dtype` argument replaced by `options` argument 
+
+    -   In order to migrate to the new API, users should replace any
+    `dtype` argument usage with an equivalent `options` argument.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-ind2sub-v0.1.0">
+
+#### [@stdlib/ndarray/ind2sub](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ind2sub)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-index-modes-v0.1.0">
+
+#### [@stdlib/ndarray/index-modes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/index-modes)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-v0.1.0">
+
+#### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b01d709`](https://github.com/stdlib-js/stdlib/commit/b01d7098eca0cb303d820723d45e8c3e9828a944) - add `nditerMatrixEntries` to namespace
+-   [`7685072`](https://github.com/stdlib-js/stdlib/commit/7685072aff78337a4ba796cb1ac4a6f5eb9d6a4d) - add `nditerColumnEntries` to namespace
+-   [`b96a9a2`](https://github.com/stdlib-js/stdlib/commit/b96a9a24e8028d366f5435b793cd285a3565e008) - add `nditerRowEntries` to namespace
+-   [`29d99d7`](https://github.com/stdlib-js/stdlib/commit/29d99d75414e9559ce2938cc19e4bc13af1d4968) - add `nditerMatrices` to namespace
+-   [`7faffe3`](https://github.com/stdlib-js/stdlib/commit/7faffe325bbf186b14c3dfef621e9d4cc56b47ff) - update namespace TypeScript declarations [(#1122)](https://github.com/stdlib-js/stdlib/pull/1122)
+-   [`b45eb8f`](https://github.com/stdlib-js/stdlib/commit/b45eb8f83d224bea7e4bc063535ddb7962964872) - add `nditerValues` to namespace
+-   [`665ce24`](https://github.com/stdlib-js/stdlib/commit/665ce24b77631e05ab7f1788c5777e2fc7e7cca0) - add `nditerEntries` to namespace
+-   [`5c7312f`](https://github.com/stdlib-js/stdlib/commit/5c7312f1de2a2e5b6c10c4c4e1c76e7cec8d1620) - add `nditerIndices` to namespace
+-   [`474e7e4`](https://github.com/stdlib-js/stdlib/commit/474e7e4fb2a15bfc8e9e719692b94044d25a7365) - add `nditer2arrayEach` to namespace
+-   [`9c23309`](https://github.com/stdlib-js/stdlib/commit/9c233099b1cb3304b0158a52e103b01b262fb683) - add `nditerColumns` to namespace
+-   [`43b42fe`](https://github.com/stdlib-js/stdlib/commit/43b42fe596c9b01fb19d3dd710ef71dfdc738510) - add `ndarray/iter` namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-column-entries-v0.1.0">
+
+#### [@stdlib/ndarray/iter/column-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/column-entries)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`aeccc0d`](https://github.com/stdlib-js/stdlib/commit/aeccc0da93a0cd2ad37e8e8bb69494e8453b068e) - add `ndarray/iter/column-entries`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-columns-v0.1.0">
+
+#### [@stdlib/ndarray/iter/columns](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/columns)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8aec891`](https://github.com/stdlib-js/stdlib/commit/8aec8914b2435090b1b466bcdd5820b158da94ef) - add `ndarray/iter/columns`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`bc1768e`](https://github.com/stdlib-js/stdlib/commit/bc1768ea93ed7c72ce90dd4ade9b6786603381b8) - prevent creating writable views when an input array is read-only
+-   [`92b814f`](https://github.com/stdlib-js/stdlib/commit/92b814fe9446bc9f31aed4fb151e6f8bf75213da) - update parameter name to match docs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-entries-v0.1.0">
+
+#### [@stdlib/ndarray/iter/entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/entries)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6cd1bad`](https://github.com/stdlib-js/stdlib/commit/6cd1badeb9fff42ccb03486ccf7d6c0b53d03350) - add `ndarray/iter/entries`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-indices-v0.1.0">
+
+#### [@stdlib/ndarray/iter/indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/indices)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`613fb18`](https://github.com/stdlib-js/stdlib/commit/613fb18c3890649335378f7b235a5f06e96860eb) - add `ndarray/iter/indices`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-matrices-v0.1.0">
+
+#### [@stdlib/ndarray/iter/matrices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/matrices)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`88a673c`](https://github.com/stdlib-js/stdlib/commit/88a673c7ed8f97ab14df8f26c60211f634994108) - add `ndarray/iter/matrices`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-matrix-entries-v0.1.0">
+
+#### [@stdlib/ndarray/iter/matrix-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/matrix-entries)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`5f80a15`](https://github.com/stdlib-js/stdlib/commit/5f80a15dcb950ca672331f0fc276b10bc7c06105) - add `ndarray/iter/matrix-entries`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-row-entries-v0.1.0">
+
+#### [@stdlib/ndarray/iter/row-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/row-entries)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`344aa9e`](https://github.com/stdlib-js/stdlib/commit/344aa9e386486ee8b5af3edd2bd788db19f338e1) - add `ndarray/iter/row-entries`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-rows-v0.1.0">
+
+#### [@stdlib/ndarray/iter/rows](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/rows)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fda2bf6`](https://github.com/stdlib-js/stdlib/commit/fda2bf6c22937a44b2e17949b437d5bbec08708c) - add `ndarray/iter/rows`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`64bd3a8`](https://github.com/stdlib-js/stdlib/commit/64bd3a808f060dc2004d130c2cb974b100527e82) - prevent creating writable views when provided a read-only array
+-   [`69e0a71`](https://github.com/stdlib-js/stdlib/commit/69e0a718dd5b79eae03864b276b635754396d9a0) - update parameter name to match docs
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-to-array-each-v0.1.0">
+
+#### [@stdlib/ndarray/iter/to-array-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/to-array-each)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`19af262`](https://github.com/stdlib-js/stdlib/commit/19af262e0319ea748c0300abfb363fb4561571a6) - add `ndarray/iter/to-array-each`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-values-v0.1.0">
+
+#### [@stdlib/ndarray/iter/values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/values)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3cc2fdb`](https://github.com/stdlib-js/stdlib/commit/3cc2fdb3b4ba4b60fb52139dc3ffbef267ecfeec) - add `ndarray/iter/values`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-maybe-broadcast-array-v0.1.0">
+
+#### [@stdlib/ndarray/maybe-broadcast-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/maybe-broadcast-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e96df4a`](https://github.com/stdlib-js/stdlib/commit/e96df4adf3598d2453ab869cec535971d4187c20) - add `ndarray/maybe-broadcast-array`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-min-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/min-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-mostly-safe-casts-v0.1.0">
+
+#### [@stdlib/ndarray/mostly-safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/mostly-safe-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`eff3cdd`](https://github.com/stdlib-js/stdlib/commit/eff3cdd2245ee7c9265d38f2d31b49bc7f4400d8) - add `ndarray/mostly-safe-casts`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a763ac4`](https://github.com/stdlib-js/stdlib/commit/a763ac4c03c49343e3f06ba93325f39a20da97cc) - allow downcast from `float64` to `complex64`
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-ndims-v0.1.0">
+
+#### [@stdlib/ndarray/ndims](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ndims)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e3e6b60`](https://github.com/stdlib-js/stdlib/commit/e3e6b60e161766128d601efc49aa73b21c4ebe54) - add `ndarray/ndims`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-next-dtype-v0.1.0">
+
+#### [@stdlib/ndarray/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/next-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-numel-v0.1.0">
+
+#### [@stdlib/ndarray/numel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/numel)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`657947f`](https://github.com/stdlib-js/stdlib/commit/657947fab94fc9e62005afe17406b1d39c5a3bfa) - add `ndarray/numel`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-offset-v0.1.0">
+
+#### [@stdlib/ndarray/offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/offset)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6e284c2`](https://github.com/stdlib-js/stdlib/commit/6e284c28a7e00043ffa90077ede849ad3bdb9272) - add `ndarray/offset`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-order-v0.1.0">
+
+#### [@stdlib/ndarray/order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`819f02e`](https://github.com/stdlib-js/stdlib/commit/819f02e21e7481d3a43265cb61e9aa1a0d2fd406) - add `ndarray/order`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-orders-v0.1.0">
+
+#### [@stdlib/ndarray/orders](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/orders)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-output-dtype-policies-v0.1.0">
+
+#### [@stdlib/ndarray/output-dtype-policies](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/output-dtype-policies)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12) - rename `integral` to `integer`
+-   [`3d64252`](https://github.com/stdlib-js/stdlib/commit/3d64252e8c076e22298c987fc7237fcaae81023d) - add `default` policy
+-   [`1127626`](https://github.com/stdlib-js/stdlib/commit/11276264fde9fc31a2143a1f64db050046bb6085) - add `real` policy
+-   [`5954cd5`](https://github.com/stdlib-js/stdlib/commit/5954cd5b913c6d3b2d05c0bb07b607c885d6e5af) - add `ndarray/output-dtype-policies`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
+
+    -   To migrate, users should update their code to use `integer` rather
+    than `integral` to refer to the policy/kind which includes both
+    signed and unsigned integer dtypes.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-promotion-rules-v0.1.0">
+
+#### [@stdlib/ndarray/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/promotion-rules)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-safe-casts-v0.1.0">
+
+#### [@stdlib/ndarray/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/safe-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-same-kind-casts-v0.1.0">
+
+#### [@stdlib/ndarray/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/same-kind-casts)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-shape-v0.1.0">
+
+#### [@stdlib/ndarray/shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/shape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b76d481`](https://github.com/stdlib-js/stdlib/commit/b76d48151d39b4db1ec0440da235b0f9c042c675) - add `ndarray/shape`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-slice-v0.1.0">
+
+#### [@stdlib/ndarray/slice](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`afda5bd`](https://github.com/stdlib-js/stdlib/commit/afda5bdedf10cc899794385201b356cf45e90334) - add `ndarray/slice`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8d7dfdc`](https://github.com/stdlib-js/stdlib/commit/8d7dfdc706aea0628b8d8fce181fae12bcb049c2) - add missing argument
+-   [`2910f80`](https://github.com/stdlib-js/stdlib/commit/2910f803215131c7ba9c9e1eb71875a6305cd402) - address broken benchmarks for out-of-bounds slices
+-   [`eae0905`](https://github.com/stdlib-js/stdlib/commit/eae09050d3e8bcf751636d469b997d54db1fac9c) - ensure support for slicing zero-dimensional arrays
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-slice-assign-v0.1.0">
+
+#### [@stdlib/ndarray/slice-assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-assign)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d73d723`](https://github.com/stdlib-js/stdlib/commit/d73d72364028ed44ed35409292c3357399750db8) - add `ndarray/slice-assign`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`8fabec9`](https://github.com/stdlib-js/stdlib/commit/8fabec9ee825644e00b6088d1684ca6bef752a8a) - add missing check for an output array which is read-only
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-slice-dimension-v0.1.0">
+
+#### [@stdlib/ndarray/slice-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2fd5a3a`](https://github.com/stdlib-js/stdlib/commit/2fd5a3a25229f47a859fd86f5f4a8311153c2618) - add `ndarray/slice-dimension`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-slice-dimension-from-v0.1.0">
+
+#### [@stdlib/ndarray/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-from)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`aeab98d`](https://github.com/stdlib-js/stdlib/commit/aeab98dc6f81a6266e0c2d61645f2b85850d263f) - add `ndarray/slice-dimension-from`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-slice-dimension-to-v0.1.0">
+
+#### [@stdlib/ndarray/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-to)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f9774e0`](https://github.com/stdlib-js/stdlib/commit/f9774e088c9d5e471a3bd8379b913561a8d7c64c) - add `ndarray/slice-dimension-to`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-strides-v0.1.0">
+
+#### [@stdlib/ndarray/strides](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/strides)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`1407845`](https://github.com/stdlib-js/stdlib/commit/1407845fab9107bcab1834c0017c6424e6accccd) - add `ndarray/strides`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`09306de`](https://github.com/stdlib-js/stdlib/commit/09306deea6b832fdc8b6bf11a853cf2c5eab8108) - ensure consistent results when provided a minimal zero-dimensional ndarray
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-sub2ind-v0.1.0">
+
+#### [@stdlib/ndarray/sub2ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/sub2ind)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-to-array-v0.1.0">
+
+#### [@stdlib/ndarray/to-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/to-array)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`cf7c497`](https://github.com/stdlib-js/stdlib/commit/cf7c4978afd11bd988e8bb9cd2d138df357997e2) - add `ndarray/to-array`
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-zeros-v0.1.0">
+
+#### [@stdlib/ndarray/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`78cb6e3`](https://github.com/stdlib-js/stdlib/commit/78cb6e35c41caff418a7dde7759a311dd35bb407) - add support for additional ndarray constructor options
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`3aec20d`](https://github.com/stdlib-js/stdlib/commit/3aec20d84a70edd88ac294294bb733cabb544d66) - remove leftover disabled lint rule
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-zeros-like-v0.1.0">
+
+#### [@stdlib/ndarray/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+-   [`e618407`](https://github.com/stdlib-js/stdlib/commit/e618407f673288e8aa303b5db6bd316c6f130762) - add support for additional ndarray constructor options
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases
+-   [`6cd4e38`](https://github.com/stdlib-js/stdlib/commit/6cd4e38150c7b040fa6266f71113b35944896167): rename aliases 
+
+    -   To migrate, users should make the following name changes:
+    ndoffset => ndarrayOffset
+    ndshape => ndarrayShape
+    ndstrides => ndarrayStrides
+    This renaming allows for more consistent naming conventions with
+    other ndarray utility functions.
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1 
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+-   [`015ff99`](https://github.com/stdlib-js/stdlib/commit/015ff99285585b1a9267a8ad3f8c856e64742dfd): increase minimum TypeScript version
+-   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType`
+-   [`1e78f7b`](https://github.com/stdlib-js/stdlib/commit/1e78f7b05c30245bd7ae22991ee021ae38a90a53): rename `isIntegralDataType` to `isIntegerDataType` 
+
+    -   To migrate, users should update their usage accordingly.
+
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer`
+-   [`d45a05b`](https://github.com/stdlib-js/stdlib/commit/d45a05b03973bf5b6a5e97cb4bc8c0aba3a68a12): rename `integral` to `integer` 
+
+    -   To migrate, users should update their code to use `integer` rather
+    than `integral` to refer to the policy/kind which includes both
+    signed and unsigned integer dtypes.
+
+-   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): add ndarray option support to `ndarray/from-scalar`
+-   [`f07f1ce`](https://github.com/stdlib-js/stdlib/commit/f07f1cedbfa64e81f21fcea8bb4e7ccbc67bde35): `dtype` argument replaced by `options` argument 
+
+    -   In order to migrate to the new API, users should replace any
+    `dtype` argument usage with an equivalent `options` argument.
+
+-   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): add support for providing `order` argument
+-   [`171fc57`](https://github.com/stdlib-js/stdlib/commit/171fc571b800ceb803d7d925cd871fc9bbcd7e8c): must provide `order` argument. 
+
+    -   To migrate, users should explicitly provide an `order` argument as
+    a third argument when invoking `scalar2ndarray`.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Dan Rose
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
 -   [`18d7b79`](https://github.com/stdlib-js/stdlib/commit/18d7b79b109b7a144bc343d528b6aec1cbd38bd9) - **docs:** fix comment _(by Athan Reines)_
 -   [`f74d56a`](https://github.com/stdlib-js/stdlib/commit/f74d56a193844b0173a5b5b8eae406f927e53b23) - **docs:** fix comment _(by Athan Reines)_
 -   [`471e925`](https://github.com/stdlib-js/stdlib/commit/471e9257d5ca06d13a3c9faf7594d96870deeff0) - **docs:** fix comment _(by Athan Reines)_
@@ -7510,6 +9057,454 @@ A total of 5 people contributed to this release. Thank you to the following cont
 -   [`8df288a`](https://github.com/stdlib-js/stdlib/commit/8df288ad176e2b374f61112a37091b47462f0ec5) - **docs:** fix comment _(by Athan Reines)_
 -   [`760a0a1`](https://github.com/stdlib-js/stdlib/commit/760a0a1aab281e0a1b043b526eac9592551cffb8) - **feat:** add `nullaryBlockSize` to namespace _(by Athan Reines)_
 -   [`0ed2dc6`](https://github.com/stdlib-js/stdlib/commit/0ed2dc6083a20d0f90e653191778da2a9ddf9105) - **feat:** add `@stdlib/ndarray/base/nullary-tiling-block-size` _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.13 (2021-08-22)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.12 (2021-07-10)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.11 (2021-07-07)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.10 (2021-06-29)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.9 (2021-06-27)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.8 (2021-06-16)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.7 (2021-06-15)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.6 (2021-06-15)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.5 (2021-06-13)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.4 (2021-06-12)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.3 (2021-06-12)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.2 (2021-06-10)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.1 (2021-06-10)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+## 0.0.1-alpha.0 (2021-06-10)
+
+<section class="packages">
+
+### Packages
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 0 people contributed to this release. Thank you to the following contributors:
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
 
 </details>
 
