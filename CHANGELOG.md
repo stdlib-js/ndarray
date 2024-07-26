@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-25)
+## Unreleased (2024-07-26)
 
 <section class="packages">
 
@@ -21,7 +21,7 @@
 ##### Features
 
 -   [`de17de3`](https://github.com/stdlib-js/stdlib/commit/de17de32867461079aae166d5cecbecb1da7f922) - update namespace TypeScript declarations [(#2593)](https://github.com/stdlib-js/stdlib/pull/2593)
--   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - update namespace TypeScript declarations [(##2351)](#2351)
+-   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - update namespace TypeScript declarations [(#2351)](https://github.com/stdlib-js/stdlib/pull/2351)
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`8f43afc`](https://github.com/stdlib-js/stdlib/commit/8f43afc5d9637ba35f60d35046041e5f0579f92c) - rename exported aliases
 
@@ -66,6 +66,7 @@
 
 ##### Features
 
+-   [`d31e751`](https://github.com/stdlib-js/stdlib/commit/d31e7515b71dc5b76751173c7724d73d943b1473) - add `forEach` to namespace
 -   [`de17de3`](https://github.com/stdlib-js/stdlib/commit/de17de32867461079aae166d5cecbecb1da7f922) - update namespace TypeScript declarations [(#2593)](https://github.com/stdlib-js/stdlib/pull/2593)
 
 </section>
@@ -231,6 +232,28 @@
 ##### Features
 
 -   [`71cf5a0`](https://github.com/stdlib-js/stdlib/commit/71cf5a05a13d12aed627d332147642adc4694ab9) - add boolean dtype support to `ndarray/empty*` and `ndarray/base/empty*` packages [(#2588)](https://github.com/stdlib-js/stdlib/pull/2588)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-for-each-unreleased">
+
+#### [@stdlib/ndarray/base/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/for-each)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e3fe1fa`](https://github.com/stdlib-js/stdlib/commit/e3fe1fad242ff60466807239c3d156c302885104) - add `ndarray/base/for-each`
 
 </section>
 
@@ -527,7 +550,7 @@ This release closes the following issue:
 
 ##### Features
 
--   [`21052a2`](https://github.com/stdlib-js/stdlib/commit/21052a211289b86b0e8a2e1f43a4d4c5b2379ffb) - add boolean dtype support to ndarray/min-dtype [(##2552)](#2552)
+-   [`21052a2`](https://github.com/stdlib-js/stdlib/commit/21052a211289b86b0e8a2e1f43a4d4c5b2379ffb) - add boolean dtype support to ndarray/min-dtype [(#2552)](https://github.com/stdlib-js/stdlib/pull/2552)
 
 </section>
 
@@ -781,6 +804,9 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d31e751`](https://github.com/stdlib-js/stdlib/commit/d31e7515b71dc5b76751173c7724d73d943b1473) - **feat:** add `forEach` to namespace _(by Athan Reines)_
+-   [`147a189`](https://github.com/stdlib-js/stdlib/commit/147a1897cc5ec7c05a97f8b4d4526ed6e6f224c1) - **docs:** reorder notes _(by Athan Reines)_
+-   [`e3fe1fa`](https://github.com/stdlib-js/stdlib/commit/e3fe1fad242ff60466807239c3d156c302885104) - **feat:** add `ndarray/base/for-each` _(by Athan Reines)_
 -   [`cace2b4`](https://github.com/stdlib-js/stdlib/commit/cace2b43ed6624d28afdc5d85fb6551f7f0155b1) - **test:** add tests to `ndarray/base/nullary` [(#2663)](https://github.com/stdlib-js/stdlib/pull/2663) _(by Muhammad Haris, Athan Reines)_
 -   [`468eb7f`](https://github.com/stdlib-js/stdlib/commit/468eb7f2d12876dc0713c081a53043961c70feda) - **test:** add tests to `ndarray/base/nullary` [(#2655)](https://github.com/stdlib-js/stdlib/pull/2655) _(by Muhammad Haris, Athan Reines)_
 -   [`fa34b48`](https://github.com/stdlib-js/stdlib/commit/fa34b48968bddc6eb016fd4991833d7942e2a9a9) - **test:** add tests to `ndarray/base/nullary` [(#2652)](https://github.com/stdlib-js/stdlib/pull/2652) _(by Muhammad Haris, Athan Reines)_
@@ -808,7 +834,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`fa118f2`](https://github.com/stdlib-js/stdlib/commit/fa118f279848e1c85ea6e5cf9799f3089649214c) - **feat:** add boolean dtype support to `ndarray/base/buffer` [(#2574)](https://github.com/stdlib-js/stdlib/pull/2574) _(by Jaysukh Makvana, Athan Reines)_
 -   [`e92152b`](https://github.com/stdlib-js/stdlib/commit/e92152baba61ab358640cba9d0506d75123a5f60) - **feat:** add boolean dtype support to `ndarray/defaults` [(#2551)](https://github.com/stdlib-js/stdlib/pull/2551) _(by Jaysukh Makvana, Athan Reines)_
 -   [`16e0808`](https://github.com/stdlib-js/stdlib/commit/16e0808004b7bd4f16eea7eced5229ee1120b577) - **feat:** add boolean dtype support to `ndarray/dtypes` [(#2550)](https://github.com/stdlib-js/stdlib/pull/2550) _(by Jaysukh Makvana, Athan Reines)_
--   [`21052a2`](https://github.com/stdlib-js/stdlib/commit/21052a211289b86b0e8a2e1f43a4d4c5b2379ffb) - **feat:** add boolean dtype support to ndarray/min-dtype [(##2552)](#2552) _(by Jaysukh Makvana, Athan Reines)_
+-   [`21052a2`](https://github.com/stdlib-js/stdlib/commit/21052a211289b86b0e8a2e1f43a4d4c5b2379ffb) - **feat:** add boolean dtype support to ndarray/min-dtype [(#2552)](https://github.com/stdlib-js/stdlib/pull/2552) _(by Jaysukh Makvana, Athan Reines)_
 -   [`efecd32`](https://github.com/stdlib-js/stdlib/commit/efecd32448520402335cdf8fdb34ee88b96556b9) - **feat:** add boolean dtype support to `ndarray/base/buffer-dtype` [(#2572)](https://github.com/stdlib-js/stdlib/pull/2572) _(by Jaysukh Makvana, Athan Reines)_
 -   [`0f0dbca`](https://github.com/stdlib-js/stdlib/commit/0f0dbcaa7eddb30c09c8cc394224cd4a409b90a6) - **feat:** add boolean dtype support to `ndarray/base/buffer-ctors` [(#2571)](https://github.com/stdlib-js/stdlib/pull/2571) _(by Jaysukh Makvana, Athan Reines)_
 -   [`1cb0243`](https://github.com/stdlib-js/stdlib/commit/1cb0243d79c25ae193c058bb15ceeebad6cf3cfd) - **feat:** add boolean dtype support to `ndarray/next-dtype` [(#2553)](https://github.com/stdlib-js/stdlib/pull/2553) _(by Jaysukh Makvana)_
@@ -817,7 +843,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`29f4e2b`](https://github.com/stdlib-js/stdlib/commit/29f4e2b3786a8dcec6254b0ab6fb0d69164a673a) - **feat:** add boolean dtype support to `ndarray/promotion-rules` [(#2524)](https://github.com/stdlib-js/stdlib/pull/2524) _(by Jaysukh Makvana)_
 -   [`41a5c49`](https://github.com/stdlib-js/stdlib/commit/41a5c4954cc46899abfe20145987627b2e86fc94) - **test:** update tests in `ndarray/base/*` to support boolean dtypes [(#2505)](https://github.com/stdlib-js/stdlib/pull/2505) _(by Jaysukh Makvana, Athan Reines)_
 -   [`ca687d6`](https://github.com/stdlib-js/stdlib/commit/ca687d6a8d8476309630c5a03f303c2420dc753f) - **feat:** add boolean dtype support to `ndarray/safe-casts` [(#2507)](https://github.com/stdlib-js/stdlib/pull/2507) _(by Jaysukh Makvana, Athan Reines)_
--   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - **feat:** update namespace TypeScript declarations [(##2351)](#2351) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - **feat:** update namespace TypeScript declarations [(#2351)](https://github.com/stdlib-js/stdlib/pull/2351) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`539fc72`](https://github.com/stdlib-js/stdlib/commit/539fc725d1fea6738862de98e3f3c6385fbdc0e6) - **style:** fix indentation _(by Athan Reines)_
 -   [`71b0621`](https://github.com/stdlib-js/stdlib/commit/71b06218afbce673efa51c4704f26637a27a1d1c) - **refactor:** ensure enumeration constants match BLAS layouts _(by Athan Reines)_
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - **fix:** update include paths _(by Athan Reines)_
@@ -855,16 +881,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -1990,7 +2006,7 @@ No changes reported for this release.</details>
 
 ##### Bug Fixes
 
--   [`f204b3f`](https://github.com/stdlib-js/stdlib/commit/f204b3fd61259968e39e91aa3579df62c6fda2ca) - resolve type declaration typo by removing stray lint directive [(##1133)](#1133)
+-   [`f204b3f`](https://github.com/stdlib-js/stdlib/commit/f204b3fd61259968e39e91aa3579df62c6fda2ca) - resolve type declaration typo by removing stray lint directive [(#1133)](https://github.com/stdlib-js/stdlib/pull/1133)
 -   [`e3a8985`](https://github.com/stdlib-js/stdlib/commit/e3a898537dc0ff2e08c24fbb5a6e58c6394fcd0c) - move links
 
 </section>
@@ -2766,7 +2782,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`42b1c7e`](https://github.com/stdlib-js/stdlib/commit/42b1c7e18fadf89854f359a3a01cf37c66dd66cc) - **docs:** update related packages sections [(##1290)](#1290) _(by stdlib-bot)_
+-   [`42b1c7e`](https://github.com/stdlib-js/stdlib/commit/42b1c7e18fadf89854f359a3a01cf37c66dd66cc) - **docs:** update related packages sections [(#1290)](https://github.com/stdlib-js/stdlib/pull/1290) _(by stdlib-bot)_
 -   [`2693e3b`](https://github.com/stdlib-js/stdlib/commit/2693e3b3f0382542a51fc57d78e9ab59e2dc0681) - **feat:** update namespace TypeScript declarations [(#1287)](https://github.com/stdlib-js/stdlib/pull/1287) _(by stdlib-bot, Athan Reines)_
 -   [`08e9376`](https://github.com/stdlib-js/stdlib/commit/08e9376a82d3641f0482a83c7d8ad39ce8a63ae6) - **docs:** update namespace table of contents [(#1288)](https://github.com/stdlib-js/stdlib/pull/1288) _(by stdlib-bot, Athan Reines)_
 -   [`babf9b1`](https://github.com/stdlib-js/stdlib/commit/babf9b181c3a196d6541e7d7347b263d8844480e) - **feat:** add `ndat` to namespace _(by Athan Reines)_
@@ -2776,11 +2792,11 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`a33d506`](https://github.com/stdlib-js/stdlib/commit/a33d506252c11f20153e0de408996ee8798bb4ae) - **docs:** fix comments _(by Athan Reines)_
 -   [`8cec00e`](https://github.com/stdlib-js/stdlib/commit/8cec00e2ba3e5a446a378a932beae01eb400ea8a) - **docs:** fix copy-paste error _(by Athan Reines)_
 -   [`1e909db`](https://github.com/stdlib-js/stdlib/commit/1e909dbafa41bfc46d3f5525a73b5f46cd7a5392) - **docs:** update related packages sections [(#1267)](https://github.com/stdlib-js/stdlib/pull/1267) _(by stdlib-bot)_
--   [`e8cf70a`](https://github.com/stdlib-js/stdlib/commit/e8cf70aa37d29998ec2b4c31f21e41c0ac8c4006) - **docs:** update related packages sections [(##1263)](#1263) _(by stdlib-bot)_
+-   [`e8cf70a`](https://github.com/stdlib-js/stdlib/commit/e8cf70aa37d29998ec2b4c31f21e41c0ac8c4006) - **docs:** update related packages sections [(#1263)](https://github.com/stdlib-js/stdlib/pull/1263) _(by stdlib-bot)_
 -   [`d2d2b70`](https://github.com/stdlib-js/stdlib/commit/d2d2b707e954b400b72b7b9f158164d026d09636) - **docs:** update related packages sections [(#1261)](https://github.com/stdlib-js/stdlib/pull/1261) _(by stdlib-bot)_
 -   [`68413e0`](https://github.com/stdlib-js/stdlib/commit/68413e05376206b18c4ff8662a8568a189dad77e) - **feat:** update namespace TypeScript declarations [(#1221)](https://github.com/stdlib-js/stdlib/pull/1221) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`f1ab4d8`](https://github.com/stdlib-js/stdlib/commit/f1ab4d8fc34236a8651961095815548871db7ccd) - **refactor:** remove export of unready function _(by Philipp Burckhardt)_
--   [`96489fa`](https://github.com/stdlib-js/stdlib/commit/96489fa603a2920bef92fb38b49ca9468851714d) - **docs:** update namespace table of contents [(##1251)](#1251) _(by stdlib-bot, Philipp Burckhardt)_
+-   [`96489fa`](https://github.com/stdlib-js/stdlib/commit/96489fa603a2920bef92fb38b49ca9468851714d) - **docs:** update namespace table of contents [(#1251)](https://github.com/stdlib-js/stdlib/pull/1251) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
 -   [`5c8d407`](https://github.com/stdlib-js/stdlib/commit/5c8d407a1ae6fb6128343b7465741922369d500a) - **docs:** update related packages sections [(#1255)](https://github.com/stdlib-js/stdlib/pull/1255) _(by stdlib-bot)_
 -   [`ebde8f6`](https://github.com/stdlib-js/stdlib/commit/ebde8f607ac62b5a33c48347394ef592e2acd74c) - **test:** fix test descriptions _(by Athan Reines)_
@@ -2822,15 +2838,15 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`74d4f9f`](https://github.com/stdlib-js/stdlib/commit/74d4f9f193420a70ea40fb576d667d582da5cd6f) - **feat:** add `ndarray/base/maybe-broadcast-arrays` _(by Athan Reines)_
 -   [`0beacd0`](https://github.com/stdlib-js/stdlib/commit/0beacd0c0007da402d8219c5e7078c7bb1d1ec88) - **docs:** update examples and fix typos _(by Athan Reines)_
 -   [`d105983`](https://github.com/stdlib-js/stdlib/commit/d105983b65fd6dbbbf4cf49a6ae00d2d8176fac9) - **docs:** update namespace table of contents [(#1230)](https://github.com/stdlib-js/stdlib/pull/1230) _(by stdlib-bot, Athan Reines)_
--   [`398a2ac`](https://github.com/stdlib-js/stdlib/commit/398a2ac65d2291cf7ea630f3a5665c6395502792) - **docs:** update related packages sections [(##1228)](#1228) _(by stdlib-bot)_
+-   [`398a2ac`](https://github.com/stdlib-js/stdlib/commit/398a2ac65d2291cf7ea630f3a5665c6395502792) - **docs:** update related packages sections [(#1228)](https://github.com/stdlib-js/stdlib/pull/1228) _(by stdlib-bot)_
 -   [`dc5bb62`](https://github.com/stdlib-js/stdlib/commit/dc5bb62c65148f6d6dadb351a2b9d0a26134473d) - **feat:** add `broadcastArrays` to namespace _(by Athan Reines)_
 -   [`d47c764`](https://github.com/stdlib-js/stdlib/commit/d47c7648f41c6622489321f7ee36b875acd117f6) - **feat:** add `ndarray/base/broadcast-arrays` _(by Athan Reines)_
--   [`5184bd0`](https://github.com/stdlib-js/stdlib/commit/5184bd0461e8c78f983d4b619a863d93c52c6396) - **docs:** update namespace table of contents [(##1213)](#1213) _(by stdlib-bot, Athan Reines)_
+-   [`5184bd0`](https://github.com/stdlib-js/stdlib/commit/5184bd0461e8c78f983d4b619a863d93c52c6396) - **docs:** update namespace table of contents [(#1213)](https://github.com/stdlib-js/stdlib/pull/1213) _(by stdlib-bot, Athan Reines)_
 -   [`b1e4cca`](https://github.com/stdlib-js/stdlib/commit/b1e4cca30147188064b2275a0242a0334befbcd1) - **feat:** update namespace exports _(by Philipp Burckhardt)_
 -   [`783804d`](https://github.com/stdlib-js/stdlib/commit/783804dbc9b3899c5227c5593e0ca1e8a6a9f195) - **feat:** update namespace TypeScript declarations [(#1170)](https://github.com/stdlib-js/stdlib/pull/1170) _(by stdlib-bot, Athan Reines)_
--   [`d575e8b`](https://github.com/stdlib-js/stdlib/commit/d575e8b063a37d90c3178fcff7b425314ae73c98) - **docs:** update related packages sections [(##1167)](#1167) _(by stdlib-bot)_
--   [`6ff6caf`](https://github.com/stdlib-js/stdlib/commit/6ff6cafeb4e71cb856ded8e0b42957a627fe617d) - **docs:** update namespace table of contents [(##1162)](#1162 ) _(by stdlib-bot)_
--   [`26cf434`](https://github.com/stdlib-js/stdlib/commit/26cf4347b243f1f363273481512e1ffebcb27ad5) - **docs:** update related packages sections [(##1156)](#1156) _(by stdlib-bot)_
+-   [`d575e8b`](https://github.com/stdlib-js/stdlib/commit/d575e8b063a37d90c3178fcff7b425314ae73c98) - **docs:** update related packages sections [(#1167)](https://github.com/stdlib-js/stdlib/pull/1167) _(by stdlib-bot)_
+-   [`6ff6caf`](https://github.com/stdlib-js/stdlib/commit/6ff6cafeb4e71cb856ded8e0b42957a627fe617d) - **docs:** update namespace table of contents [(#1162)](https://github.com/stdlib-js/stdlib/pull/1162 ) _(by stdlib-bot)_
+-   [`26cf434`](https://github.com/stdlib-js/stdlib/commit/26cf4347b243f1f363273481512e1ffebcb27ad5) - **docs:** update related packages sections [(#1156)](https://github.com/stdlib-js/stdlib/pull/1156) _(by stdlib-bot)_
 -   [`2f0cb7e`](https://github.com/stdlib-js/stdlib/commit/2f0cb7ed139b763e65205939511c7cc85b947e64) - **docs:** update related packages sections [(#1154)](https://github.com/stdlib-js/stdlib/pull/1154) _(by stdlib-bot)_
 -   [`fca85b7`](https://github.com/stdlib-js/stdlib/commit/fca85b7d10fc3a84033633cfa6034521a6d5aa42) - **feat:** add `ndsliceFrom` to namespace _(by Athan Reines)_
 -   [`d0a8bea`](https://github.com/stdlib-js/stdlib/commit/d0a8bea89869e7f72528bae02b7b81ea4430f3f1) - **feat:** add `ndarray/slice-from` _(by Athan Reines)_
@@ -2845,7 +2861,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`57592a3`](https://github.com/stdlib-js/stdlib/commit/57592a33a922a782cf7395fc132260ce6789aa71) - **style:** add missing space _(by Athan Reines)_
 -   [`d138eac`](https://github.com/stdlib-js/stdlib/commit/d138eacc068299ac8b928e1f65f6731da68dbcc9) - **feat:** add `ndsliceTo` to namespace _(by Athan Reines)_
 -   [`44dcbe6`](https://github.com/stdlib-js/stdlib/commit/44dcbe692ae45e070dcd125a801c0f9db73c2f30) - **feat:** add `ndarray/slice-to` _(by Athan Reines)_
--   [`78a556e`](https://github.com/stdlib-js/stdlib/commit/78a556efa2f1da29eb9081d393f5768ad1518117) - **docs:** update related packages sections [(##1145)](#1145) _(by stdlib-bot)_
+-   [`78a556e`](https://github.com/stdlib-js/stdlib/commit/78a556efa2f1da29eb9081d393f5768ad1518117) - **docs:** update related packages sections [(#1145)](https://github.com/stdlib-js/stdlib/pull/1145) _(by stdlib-bot)_
 -   [`34ac72a`](https://github.com/stdlib-js/stdlib/commit/34ac72a3d30bc14b366787a5660c44051d84bec5) - **docs:** document interface and add line break _(by Athan Reines)_
 -   [`f3d3f4f`](https://github.com/stdlib-js/stdlib/commit/f3d3f4f4d69804a3f31bdb542abf1aca9f3576d9) - **feat:** add a `factory` method to allow for partial application _(by Athan Reines)_
 -   [`ecb0cf1`](https://github.com/stdlib-js/stdlib/commit/ecb0cf1b6dc6374cc27bfc9e74c32a434360dfe1) - **bench:** fix value range _(by Athan Reines)_
@@ -2872,7 +2888,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 -   [`30e3541`](https://github.com/stdlib-js/stdlib/commit/30e35413446e1f46eb385bb811db2297bfc66bb0) - **refactor:** update require path _(by Athan Reines)_
 -   [`f87e2ee`](https://github.com/stdlib-js/stdlib/commit/f87e2eecc0cb47d8ad15f63dc0d94405e040ac2f) - **refactor:** update require path _(by Athan Reines)_
 -   [`def989d`](https://github.com/stdlib-js/stdlib/commit/def989d20c35d4cb0834e91324177abc8f522626) - **fix:** resolve type declaration typo by removing stray lint directive _(by Philipp Burckhardt)_
--   [`f204b3f`](https://github.com/stdlib-js/stdlib/commit/f204b3fd61259968e39e91aa3579df62c6fda2ca) - **fix:** resolve type declaration typo by removing stray lint directive [(##1133)](#1133) _(by Daniel Killenberger)_
+-   [`f204b3f`](https://github.com/stdlib-js/stdlib/commit/f204b3fd61259968e39e91aa3579df62c6fda2ca) - **fix:** resolve type declaration typo by removing stray lint directive [(#1133)](https://github.com/stdlib-js/stdlib/pull/1133) _(by Daniel Killenberger)_
 -   [`bcb4079`](https://github.com/stdlib-js/stdlib/commit/bcb4079adf3e31d33d28db5dff21558c9e6bd5be) - **build:** remove and replace tslint directives _(by Philipp Burckhardt)_
 -   [`23114c6`](https://github.com/stdlib-js/stdlib/commit/23114c65f67ea8c17fc835e280408c39544dfa76) - **build:** remove tslint directives _(by Philipp Burckhardt)_
 -   [`6a9cc0e`](https://github.com/stdlib-js/stdlib/commit/6a9cc0e47fa5783053f8fd2895ea76f5deea0829) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
@@ -2907,16 +2923,6 @@ A total of 4 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -8922,7 +8928,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 -   [`f5f669f`](https://github.com/stdlib-js/stdlib/commit/f5f669fe49db4cb57103fb1c5f4ba2532bf9011b) - **refactor:** use base utility to construct MultiSlice from args array _(by Athan Reines)_
 -   [`e17e199`](https://github.com/stdlib-js/stdlib/commit/e17e1999c8d3f29a7b9fe509ce3fb05db05aaf39) - **fix:** address dimension reduction bug _(by Athan Reines)_
 -   [`cadd340`](https://github.com/stdlib-js/stdlib/commit/cadd340383dab4e71f41789eb629844fd83b05d6) - **refactor:** use base package for resolving non-reduced dimensions _(by Athan Reines)_
--   [`4f2310d`](https://github.com/stdlib-js/stdlib/commit/4f2310de3494fe36f4b74db309593f63e9d24dcc) - **docs:** update namespace table of contents  [(##1102)](#1102 ) _(by stdlib-bot)_
+-   [`4f2310d`](https://github.com/stdlib-js/stdlib/commit/4f2310de3494fe36f4b74db309593f63e9d24dcc) - **docs:** update namespace table of contents  [(#1102)](https://github.com/stdlib-js/stdlib/pull/1102 ) _(by stdlib-bot)_
 -   [`d358245`](https://github.com/stdlib-js/stdlib/commit/d358245c921277b5069a5baa037582adf22d22f7) - **docs:** fix require paths in README _(by Athan Reines)_
 -   [`f4024f0`](https://github.com/stdlib-js/stdlib/commit/f4024f0d2c13cb5c74917228231ae9f6a9793a50) - **docs:** fix rule location _(by Athan Reines)_
 -   [`6d60c74`](https://github.com/stdlib-js/stdlib/commit/6d60c74f1eb464d2d3875943c75a1c4b04239984) - **docs:** add horizontal rule _(by Athan Reines)_
@@ -9074,16 +9080,6 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9105,16 +9101,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -9138,16 +9124,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9169,16 +9145,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -9202,16 +9168,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9233,16 +9189,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -9266,16 +9212,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9297,16 +9233,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -9330,16 +9256,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9361,16 +9277,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -9394,16 +9300,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9426,16 +9322,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 
 <!-- /.packages -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -9457,48 +9343,6 @@ A total of 0 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
-
-<section class="commits">
-
-### Commits
-
-<details>
-
-</details>
-
-</section>
-
-<!-- /.commits -->
-
-## 0.0.1-alpha.0 (2021-06-10)
-
-<section class="packages">
-
-### Packages
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 0 people contributed to this release. Thank you to the following contributors:
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
