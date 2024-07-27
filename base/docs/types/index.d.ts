@@ -54,6 +54,7 @@ import flag = require( './../../../base/flag' );
 import flags = require( './../../../base/flags' );
 import fliplr = require( './../../../base/fliplr' );
 import flipud = require( './../../../base/flipud' );
+import forEach = require( './../../../base/for-each' );
 import scalar2ndarray = require( './../../../base/from-scalar' );
 import ind = require( './../../../base/ind' );
 import ind2sub = require( './../../../base/ind2sub' );
@@ -1043,6 +1044,37 @@ interface Namespace {
 	* // returns [ [ 5, 6 ], [ 3, 4 ], [ 1, 2 ] ]
 	*/
 	flipud: typeof flipud;
+
+	/**
+	* Invokes a callback function once for each ndarray element.
+	*
+	* @param arrays - array-like object containing an output ndarray
+	* @param fcn - callback function
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var naryFunction = require( '@stdlib/utils/nary-function' );
+	* var log = require( '@stdlib/console/log' );
+	*
+	* // Create data buffers:
+	* var xbuf = new Float64Array( 12 );
+	*
+	* // Define the shape of the array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create the output ndarray:
+	* var x = ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Apply the callback function:
+	* ns.forEach( [ x ], naryFunction( log, 1 ) );
+	*/
+	forEach: typeof forEach;
 
 	/**
 	* Returns a zero-dimensional ndarray containing a provided scalar value.

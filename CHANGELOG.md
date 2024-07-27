@@ -66,6 +66,7 @@
 
 ##### Features
 
+-   [`6e4b9eb`](https://github.com/stdlib-js/stdlib/commit/6e4b9ebc31d9629446019e37e31bfe9b180b675c) - update namespace TypeScript declarations [(#2681)](https://github.com/stdlib-js/stdlib/pull/2681)
 -   [`d31e751`](https://github.com/stdlib-js/stdlib/commit/d31e7515b71dc5b76751173c7724d73d943b1473) - add `forEach` to namespace
 -   [`de17de3`](https://github.com/stdlib-js/stdlib/commit/de17de32867461079aae166d5cecbecb1da7f922) - update namespace TypeScript declarations [(#2593)](https://github.com/stdlib-js/stdlib/pull/2593)
 
@@ -804,6 +805,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6e4b9eb`](https://github.com/stdlib-js/stdlib/commit/6e4b9ebc31d9629446019e37e31bfe9b180b675c) - **feat:** update namespace TypeScript declarations [(#2681)](https://github.com/stdlib-js/stdlib/pull/2681) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`7ee91a5`](https://github.com/stdlib-js/stdlib/commit/7ee91a531462ec823da632c6ae8ff65a8d16549e) - **docs:** update namespace table of contents [(#2674)](https://github.com/stdlib-js/stdlib/pull/2674) _(by stdlib-bot, Athan Reines)_
 -   [`d31e751`](https://github.com/stdlib-js/stdlib/commit/d31e7515b71dc5b76751173c7724d73d943b1473) - **feat:** add `forEach` to namespace _(by Athan Reines)_
 -   [`147a189`](https://github.com/stdlib-js/stdlib/commit/147a1897cc5ec7c05a97f8b4d4526ed6e6f224c1) - **docs:** reorder notes _(by Athan Reines)_
