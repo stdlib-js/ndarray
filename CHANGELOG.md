@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-26)
+## Unreleased (2024-07-27)
 
 <section class="packages">
 
@@ -804,6 +804,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7ee91a5`](https://github.com/stdlib-js/stdlib/commit/7ee91a531462ec823da632c6ae8ff65a8d16549e) - **docs:** update namespace table of contents [(#2674)](https://github.com/stdlib-js/stdlib/pull/2674) _(by stdlib-bot, Athan Reines)_
 -   [`d31e751`](https://github.com/stdlib-js/stdlib/commit/d31e7515b71dc5b76751173c7724d73d943b1473) - **feat:** add `forEach` to namespace _(by Athan Reines)_
 -   [`147a189`](https://github.com/stdlib-js/stdlib/commit/147a1897cc5ec7c05a97f8b4d4526ed6e6f224c1) - **docs:** reorder notes _(by Athan Reines)_
 -   [`e3fe1fa`](https://github.com/stdlib-js/stdlib/commit/e3fe1fad242ff60466807239c3d156c302885104) - **feat:** add `ndarray/base/for-each` _(by Athan Reines)_
