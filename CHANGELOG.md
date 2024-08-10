@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-01)
+## Unreleased (2024-08-10)
 
 <section class="packages">
 
@@ -816,6 +816,9 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`4ec7a03`](https://github.com/stdlib-js/stdlib/commit/4ec7a031214836b442e5bce57b57b20e166ef8a4) - **refactor:** improve type specificity _(by Athan Reines)_
+-   [`0fef28c`](https://github.com/stdlib-js/stdlib/commit/0fef28ccec002134fb0ebd2db1a713404ab1db17) - **refactor:** improve type specificity _(by Athan Reines)_
+-   [`9a4b430`](https://github.com/stdlib-js/stdlib/commit/9a4b430c6013d48480cb73a266fabd9683f49b31) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`5fe7f2e`](https://github.com/stdlib-js/stdlib/commit/5fe7f2e437b3bf7ff82db46944d8f928c7fc4090) - **style:** remove backticks _(by Athan Reines)_
 -   [`dab89ca`](https://github.com/stdlib-js/stdlib/commit/dab89ca7cb89b404eef61ae48cfb84afec543222) - **style:** remove backticks _(by Athan Reines)_
 -   [`22c4d29`](https://github.com/stdlib-js/stdlib/commit/22c4d29898e2b5bb4cb071a6b7f62536027eaf28) - **docs:** remove blank line _(by Athan Reines)_
