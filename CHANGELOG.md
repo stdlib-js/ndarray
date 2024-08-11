@@ -562,6 +562,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`4289f78`](https://github.com/stdlib-js/stdlib/commit/4289f78da1d67c5671151413b4673ec32ede26c2) - add `nditerStacks` to namespace
 -   [`873b085`](https://github.com/stdlib-js/stdlib/commit/873b085ae0183426f3e8e831a50a42e2df3ba13d) - add `nditerSubarrays` to namespace
 -   [`46aec25`](https://github.com/stdlib-js/stdlib/commit/46aec25aac5d4a0c8a3fd7b719dd6a080e59beb8) - add `nditerSelectDimension` to namespace
 
@@ -586,6 +587,28 @@ This release closes the following issue:
 ##### Features
 
 -   [`6dce19b`](https://github.com/stdlib-js/stdlib/commit/6dce19b2a2dfae6159257dab0c52a8421e0861d2) - add `ndarray/iter/select-dimension`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-iter-stacks-unreleased">
+
+#### [@stdlib/ndarray/iter/stacks](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/stacks)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d256bd9`](https://github.com/stdlib-js/stdlib/commit/d256bd93e03a245d45b732ba4d8ab60e47d378d6) - add `ndarray/iter/stacks`
 
 </section>
 
@@ -883,6 +906,8 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`4289f78`](https://github.com/stdlib-js/stdlib/commit/4289f78da1d67c5671151413b4673ec32ede26c2) - **feat:** add `nditerStacks` to namespace _(by Athan Reines)_
+-   [`d256bd9`](https://github.com/stdlib-js/stdlib/commit/d256bd93e03a245d45b732ba4d8ab60e47d378d6) - **feat:** add `ndarray/iter/stacks` _(by Athan Reines)_
 -   [`7a4424b`](https://github.com/stdlib-js/stdlib/commit/7a4424bd81e212e9c7534520213b696c0c64c644) - **docs:** fix comment _(by Athan Reines)_
 -   [`873b085`](https://github.com/stdlib-js/stdlib/commit/873b085ae0183426f3e8e831a50a42e2df3ba13d) - **feat:** add `nditerSubarrays` to namespace _(by Athan Reines)_
 -   [`fd9a5c2`](https://github.com/stdlib-js/stdlib/commit/fd9a5c2e29508ab5b393e2273ddb7463be6affb3) - **feat:** add `ndarray/iter/subarrays` _(by Athan Reines)_

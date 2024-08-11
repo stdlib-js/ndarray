@@ -118,6 +118,15 @@ setReadOnly( ns, 'nditerRows', require( './../../iter/rows' ) );
 setReadOnly( ns, 'nditerSelectDimension', require( './../../iter/select-dimension' ) );
 
 /**
+* @name nditerStacks
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/stacks}
+*/
+setReadOnly( ns, 'nditerStacks', require( './../../iter/stacks' ) );
+
+/**
 * @name nditerSubarrays
 * @memberof ns
 * @readonly
