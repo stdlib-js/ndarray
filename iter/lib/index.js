@@ -109,6 +109,15 @@ setReadOnly( ns, 'nditerRowEntries', require( './../../iter/row-entries' ) );
 setReadOnly( ns, 'nditerRows', require( './../../iter/rows' ) );
 
 /**
+* @name nditerSelectDimension
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/select-dimension}
+*/
+setReadOnly( ns, 'nditerSelectDimension', require( './../../iter/select-dimension' ) );
+
+/**
 * @name nditer2arrayEach
 * @memberof ns
 * @readonly
