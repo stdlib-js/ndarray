@@ -73,6 +73,15 @@ setReadOnly( ns, 'nditerEntries', require( './../../iter/entries' ) );
 setReadOnly( ns, 'nditerIndices', require( './../../iter/indices' ) );
 
 /**
+* @name nditerInterleaveSubarrays
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/iter/interleave-subarrays}
+*/
+setReadOnly( ns, 'nditerInterleaveSubarrays', require( './../../iter/interleave-subarrays' ) );
+
+/**
 * @name nditerMatrices
 * @memberof ns
 * @readonly
