@@ -446,6 +446,15 @@ setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-in
 setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buffer-index' ) );
 
 /**
+* @name ndarraylike2ndarray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ndarraylike2ndarray}
+*/
+setReadOnly( ns, 'ndarraylike2ndarray', require( './../../base/ndarraylike2ndarray' ) );
+
+/**
 * @name ndarraylike2object
 * @memberof ns
 * @readonly

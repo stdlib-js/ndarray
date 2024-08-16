@@ -37,7 +37,7 @@ var getData = require( './../../../base/data-buffer' );
 // MAIN //
 
 /**
-* Converts an ndarray-like to an object likely to have the same "shape".
+* Converts an ndarray-like object to an object likely to have the same "shape".
 *
 * ## Notes
 *
