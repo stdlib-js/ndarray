@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-11)
+## Unreleased (2024-08-16)
 
 <section class="packages">
 
@@ -344,6 +344,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-loop-interchange-order-unreleased">
+
+#### [@stdlib/ndarray/base/unary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-loop-interchange-order)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`0d360b3`](https://github.com/stdlib-js/stdlib/commit/0d360b33eba8019d2d638f265986d861ed22642a) - return index array as part of the results object
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -921,6 +943,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`0d360b3`](https://github.com/stdlib-js/stdlib/commit/0d360b33eba8019d2d638f265986d861ed22642a) - **feat:** return index array as part of the results object _(by Athan Reines)_
 -   [`6576f4f`](https://github.com/stdlib-js/stdlib/commit/6576f4f82a2f47b2c0ffa35731efcb15a22e158a) - **feat:** add `nditerInterleaveSubarrays` _(by Athan Reines)_
 -   [`25e87e4`](https://github.com/stdlib-js/stdlib/commit/25e87e46c052b2fb2bbd026a71a5ee10f4c50d3f) - **feat:** add `ndarray/iter/interleave-subarrays` _(by Athan Reines)_
 -   [`4289f78`](https://github.com/stdlib-js/stdlib/commit/4289f78da1d67c5671151413b4673ec32ede26c2) - **feat:** add `nditerStacks` to namespace _(by Athan Reines)_
