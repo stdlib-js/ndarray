@@ -120,6 +120,7 @@
 
 ##### Bug Fixes
 
+-   [`96c7ddf`](https://github.com/stdlib-js/stdlib/commit/96c7ddfdbcecc6ff60fcb56681db16463d19020e) - use computed order and fix strides in examples
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - update include paths
 
 </section>
@@ -339,7 +340,30 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`1375823`](https://github.com/stdlib-js/stdlib/commit/1375823f58c93aeac8c687147f40e78d52adec04) - use computed order and fix strides in examples
 -   [`cf3f92e`](https://github.com/stdlib-js/stdlib/commit/cf3f92eddd20ec1a4106c8a34f7d7705a9a99dbc) - update include paths
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-by-unreleased">
+
+#### [@stdlib/ndarray/base/unary-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`e2b7fb5`](https://github.com/stdlib-js/stdlib/commit/e2b7fb5df61f15ae7dbf148ec0c0412ff434b123) - use computed order and fix strides in examples
 
 </section>
 
@@ -943,6 +967,11 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`96c7ddf`](https://github.com/stdlib-js/stdlib/commit/96c7ddfdbcecc6ff60fcb56681db16463d19020e) - **fix:** use computed order and fix strides in examples _(by Athan Reines)_
+-   [`e2b7fb5`](https://github.com/stdlib-js/stdlib/commit/e2b7fb5df61f15ae7dbf148ec0c0412ff434b123) - **fix:** use computed order and fix strides in examples _(by Athan Reines)_
+-   [`1375823`](https://github.com/stdlib-js/stdlib/commit/1375823f58c93aeac8c687147f40e78d52adec04) - **fix:** use computed order and fix strides in examples _(by Athan Reines)_
+-   [`bc07347`](https://github.com/stdlib-js/stdlib/commit/bc07347c2ebd7ea17befbb91f3c422776acf0c42) - **docs:** fix strides _(by Athan Reines)_
+-   [`e261bc2`](https://github.com/stdlib-js/stdlib/commit/e261bc2c64bb3ac5236abc447b9ae3f40acf31ab) - **docs:** fix strides _(by Athan Reines)_
 -   [`0d360b3`](https://github.com/stdlib-js/stdlib/commit/0d360b33eba8019d2d638f265986d861ed22642a) - **feat:** return index array as part of the results object _(by Athan Reines)_
 -   [`6576f4f`](https://github.com/stdlib-js/stdlib/commit/6576f4f82a2f47b2c0ffa35731efcb15a22e158a) - **feat:** add `nditerInterleaveSubarrays` _(by Athan Reines)_
 -   [`25e87e4`](https://github.com/stdlib-js/stdlib/commit/25e87e46c052b2fb2bbd026a71a5ee10f4c50d3f) - **feat:** add `ndarray/iter/interleave-subarrays` _(by Athan Reines)_
