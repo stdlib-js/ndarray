@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-16)
+## Unreleased (2024-08-17)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`ba0c5d0`](https://github.com/stdlib-js/stdlib/commit/ba0c5d0a00c8f2b5eff6321b14dd62398be26be8) - add `ndarraylike2ndarray` to namespace
 -   [`de17de3`](https://github.com/stdlib-js/stdlib/commit/de17de32867461079aae166d5cecbecb1da7f922) - update namespace TypeScript declarations [(#2593)](https://github.com/stdlib-js/stdlib/pull/2593)
 -   [`b8bd516`](https://github.com/stdlib-js/stdlib/commit/b8bd51687cabdda74299cb37b9a5527fddd35aaa) - update namespace TypeScript declarations [(#2351)](https://github.com/stdlib-js/stdlib/pull/2351)
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
@@ -809,6 +810,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-ndarraylike2ndarray-unreleased">
+
+#### [@stdlib/ndarray/ndarraylike2ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ndarraylike2ndarray)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e7b56b1`](https://github.com/stdlib-js/stdlib/commit/e7b56b133fffc0bf83638ab267242c25eb8a359a) - add `ndarray/ndarraylike2ndarray`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-next-dtype-unreleased">
 
 #### [@stdlib/ndarray/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/next-dtype)
@@ -1012,6 +1035,9 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ba0c5d0`](https://github.com/stdlib-js/stdlib/commit/ba0c5d0a00c8f2b5eff6321b14dd62398be26be8) - **feat:** add `ndarraylike2ndarray` to namespace _(by Athan Reines)_
+-   [`e7b56b1`](https://github.com/stdlib-js/stdlib/commit/e7b56b133fffc0bf83638ab267242c25eb8a359a) - **feat:** add `ndarray/ndarraylike2ndarray` _(by Athan Reines)_
+-   [`453c7f9`](https://github.com/stdlib-js/stdlib/commit/453c7f9f7c8ac5b8817b1d81f98af42570f1d0a5) - **refactor:** allow array-like objects containing submodes _(by Athan Reines)_
 -   [`dd48932`](https://github.com/stdlib-js/stdlib/commit/dd489326b8dcee32f41f2ef7c2bafcaa4eb6ce46) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`54262c8`](https://github.com/stdlib-js/stdlib/commit/54262c89e70eae566591c6e87ece69b68ca09488) - **feat:** add `ndarraylike2ndarray` to namespace _(by Athan Reines)_
 -   [`5d01561`](https://github.com/stdlib-js/stdlib/commit/5d015616e9731e40d20f7d4dca6b136ae47cc9bc) - **feat:** add `ndarray/base/ndarraylike2ndarray` _(by Athan Reines)_
