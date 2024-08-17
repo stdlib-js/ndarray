@@ -1035,6 +1035,8 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`df3ed1e`](https://github.com/stdlib-js/stdlib/commit/df3ed1ee7fdc62c9f49bfa38eb1df240fb752a6e) - **docs:** update namespace ToCs _(by Athan Reines)_
+-   [`6a3b3d7`](https://github.com/stdlib-js/stdlib/commit/6a3b3d731ca697a62e3d58900e1b6cb06e7667dd) - **chore:** update directories meta data _(by Athan Reines)_
 -   [`ba0c5d0`](https://github.com/stdlib-js/stdlib/commit/ba0c5d0a00c8f2b5eff6321b14dd62398be26be8) - **feat:** add `ndarraylike2ndarray` to namespace _(by Athan Reines)_
 -   [`e7b56b1`](https://github.com/stdlib-js/stdlib/commit/e7b56b133fffc0bf83638ab267242c25eb8a359a) - **feat:** add `ndarray/ndarraylike2ndarray` _(by Athan Reines)_
 -   [`453c7f9`](https://github.com/stdlib-js/stdlib/commit/453c7f9f7c8ac5b8817b1d81f98af42570f1d0a5) - **refactor:** allow array-like objects containing submodes _(by Athan Reines)_
