@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.1">
+
+## 0.3.1 (2024-08-18)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="ndarray-unreleased">
+<section class="package" id="ndarray-v0.3.0">
 
 #### [@stdlib/ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray)
 
@@ -55,7 +65,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unreleased">
+<section class="package" id="ndarray-base-v0.3.0">
 
 #### [@stdlib/ndarray/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base)
 
@@ -80,7 +90,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-is-boolean--unreleased">
+<section class="package" id="ndarray-base-assert-is-boolean--v0.3.0">
 
 #### [@stdlib/ndarray/base/assert/is-boolean-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-boolean-)
 
@@ -102,7 +112,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assign-unreleased">
+<section class="package" id="ndarray-base-assign-v0.3.0">
 
 #### [@stdlib/ndarray/base/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assign)
 
@@ -135,7 +145,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-buffer-unreleased">
+<section class="package" id="ndarray-base-buffer-v0.3.0">
 
 #### [@stdlib/ndarray/base/buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer)
 
@@ -157,7 +167,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-buffer-ctors-unreleased">
+<section class="package" id="ndarray-base-buffer-ctors-v0.3.0">
 
 #### [@stdlib/ndarray/base/buffer-ctors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-ctors)
 
@@ -179,7 +189,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-buffer-dtype-unreleased">
+<section class="package" id="ndarray-base-buffer-dtype-v0.3.0">
 
 #### [@stdlib/ndarray/base/buffer-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/buffer-dtype)
 
@@ -201,7 +211,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-empty-unreleased">
+<section class="package" id="ndarray-base-empty-v0.3.0">
 
 #### [@stdlib/ndarray/base/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty)
 
@@ -223,7 +233,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-empty-like-unreleased">
+<section class="package" id="ndarray-base-empty-like-v0.3.0">
 
 #### [@stdlib/ndarray/base/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/empty-like)
 
@@ -245,7 +255,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-for-each-unreleased">
+<section class="package" id="ndarray-base-for-each-v0.3.0">
 
 #### [@stdlib/ndarray/base/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/for-each)
 
@@ -278,7 +288,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-map-unreleased">
+<section class="package" id="ndarray-base-map-v0.3.0">
 
 #### [@stdlib/ndarray/base/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/map)
 
@@ -300,7 +310,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-ndarraylike2ndarray-unreleased">
+<section class="package" id="ndarray-base-ndarraylike2ndarray-v0.3.0">
 
 #### [@stdlib/ndarray/base/ndarraylike2ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ndarraylike2ndarray)
 
@@ -322,7 +332,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-nullary-unreleased">
+<section class="package" id="ndarray-base-nullary-v0.3.0">
 
 #### [@stdlib/ndarray/base/nullary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/nullary)
 
@@ -366,7 +376,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-unreleased">
+<section class="package" id="ndarray-base-unary-v0.3.0">
 
 #### [@stdlib/ndarray/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary)
 
@@ -399,7 +409,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-by-unreleased">
+<section class="package" id="ndarray-base-unary-by-v0.3.0">
 
 #### [@stdlib/ndarray/base/unary-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-by)
 
@@ -421,7 +431,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-unary-loop-interchange-order-unreleased">
+<section class="package" id="ndarray-base-unary-loop-interchange-order-v0.3.0">
 
 #### [@stdlib/ndarray/base/unary-loop-interchange-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-loop-interchange-order)
 
@@ -443,7 +453,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-zeros-unreleased">
+<section class="package" id="ndarray-base-zeros-v0.3.0">
 
 #### [@stdlib/ndarray/base/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros)
 
@@ -465,7 +475,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-zeros-like-unreleased">
+<section class="package" id="ndarray-base-zeros-like-v0.3.0">
 
 #### [@stdlib/ndarray/base/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/zeros-like)
 
@@ -487,7 +497,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-ctor-unreleased">
+<section class="package" id="ndarray-ctor-v0.3.0">
 
 #### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
 
@@ -509,7 +519,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-defaults-unreleased">
+<section class="package" id="ndarray-defaults-v0.3.0">
 
 #### [@stdlib/ndarray/defaults](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/defaults)
 
@@ -531,7 +541,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-dtypes-unreleased">
+<section class="package" id="ndarray-dtypes-v0.3.0">
 
 #### [@stdlib/ndarray/dtypes](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/dtypes)
 
@@ -555,7 +565,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-empty-unreleased">
+<section class="package" id="ndarray-empty-v0.3.0">
 
 #### [@stdlib/ndarray/empty](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty)
 
@@ -577,7 +587,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-empty-like-unreleased">
+<section class="package" id="ndarray-empty-like-v0.3.0">
 
 #### [@stdlib/ndarray/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty-like)
 
@@ -599,7 +609,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-from-scalar-unreleased">
+<section class="package" id="ndarray-from-scalar-v0.3.0">
 
 #### [@stdlib/ndarray/from-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar)
 
@@ -641,7 +651,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-unreleased">
+<section class="package" id="ndarray-iter-v0.3.0">
 
 #### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
 
@@ -666,7 +676,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-interleave-subarrays-unreleased">
+<section class="package" id="ndarray-iter-interleave-subarrays-v0.3.0">
 
 #### [@stdlib/ndarray/iter/interleave-subarrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/interleave-subarrays)
 
@@ -688,7 +698,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-select-dimension-unreleased">
+<section class="package" id="ndarray-iter-select-dimension-v0.3.0">
 
 #### [@stdlib/ndarray/iter/select-dimension](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/select-dimension)
 
@@ -710,7 +720,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-stacks-unreleased">
+<section class="package" id="ndarray-iter-stacks-v0.3.0">
 
 #### [@stdlib/ndarray/iter/stacks](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/stacks)
 
@@ -732,7 +742,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-subarrays-unreleased">
+<section class="package" id="ndarray-iter-subarrays-v0.3.0">
 
 #### [@stdlib/ndarray/iter/subarrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/subarrays)
 
@@ -754,7 +764,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-min-dtype-unreleased">
+<section class="package" id="ndarray-min-dtype-v0.3.0">
 
 #### [@stdlib/ndarray/min-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/min-dtype)
 
@@ -788,7 +798,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-mostly-safe-casts-unreleased">
+<section class="package" id="ndarray-mostly-safe-casts-v0.3.0">
 
 #### [@stdlib/ndarray/mostly-safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/mostly-safe-casts)
 
@@ -810,7 +820,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-ndarraylike2ndarray-unreleased">
+<section class="package" id="ndarray-ndarraylike2ndarray-v0.3.0">
 
 #### [@stdlib/ndarray/ndarraylike2ndarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ndarraylike2ndarray)
 
@@ -832,7 +842,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-next-dtype-unreleased">
+<section class="package" id="ndarray-next-dtype-v0.3.0">
 
 #### [@stdlib/ndarray/next-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/next-dtype)
 
@@ -854,7 +864,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-promotion-rules-unreleased">
+<section class="package" id="ndarray-promotion-rules-v0.3.0">
 
 #### [@stdlib/ndarray/promotion-rules](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/promotion-rules)
 
@@ -876,7 +886,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-safe-casts-unreleased">
+<section class="package" id="ndarray-safe-casts-v0.3.0">
 
 #### [@stdlib/ndarray/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/safe-casts)
 
@@ -898,7 +908,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-same-kind-casts-unreleased">
+<section class="package" id="ndarray-same-kind-casts-v0.3.0">
 
 #### [@stdlib/ndarray/same-kind-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/same-kind-casts)
 
@@ -920,7 +930,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-zeros-unreleased">
+<section class="package" id="ndarray-zeros-v0.3.0">
 
 #### [@stdlib/ndarray/zeros](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros)
 
@@ -942,7 +952,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-zeros-like-unreleased">
+<section class="package" id="ndarray-zeros-like-v0.3.0">
 
 #### [@stdlib/ndarray/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros-like)
 
