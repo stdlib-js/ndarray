@@ -10,6 +10,28 @@
 
 ### Packages
 
+<section class="package" id="ndarray-base-fill-unreleased">
+
+#### [@stdlib/ndarray/base/fill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fill)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6a6bc1d`](https://github.com/stdlib-js/stdlib/commit/6a6bc1da925c3c3f24463cf0d381d0d38e84868b) - add `ndarray/base/fill` [(#2817)](https://github.com/stdlib-js/stdlib/pull/2817)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-reverse-unreleased">
 
 #### [@stdlib/ndarray/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse)
@@ -77,6 +99,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6a6bc1d`](https://github.com/stdlib-js/stdlib/commit/6a6bc1da925c3c3f24463cf0d381d0d38e84868b) - **feat:** add `ndarray/base/fill` [(#2817)](https://github.com/stdlib-js/stdlib/pull/2817) _(by Muhammad Haris, Athan Reines)_
 -   [`8bcb738`](https://github.com/stdlib-js/stdlib/commit/8bcb738f0fc355eae92b40541cc61550fda1fbef) - **feat:** add `ndarray/base/to-reversed` [(#2861)](https://github.com/stdlib-js/stdlib/pull/2861) _(by Muhammad Haris, Athan Reines)_
 
 </details>
