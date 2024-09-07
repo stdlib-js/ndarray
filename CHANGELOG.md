@@ -2,6 +2,93 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2024-09-07)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="ndarray-base-reverse-unreleased">
+
+#### [@stdlib/ndarray/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8bcb738`](https://github.com/stdlib-js/stdlib/commit/8bcb738f0fc355eae92b40541cc61550fda1fbef) - add `ndarray/base/to-reversed` [(#2861)](https://github.com/stdlib-js/stdlib/pull/2861)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-to-reversed-unreleased">
+
+#### [@stdlib/ndarray/base/to-reversed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-reversed)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8bcb738`](https://github.com/stdlib-js/stdlib/commit/8bcb738f0fc355eae92b40541cc61550fda1fbef) - add `ndarray/base/to-reversed` [(#2861)](https://github.com/stdlib-js/stdlib/pull/2861)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Muhammad Haris
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`8bcb738`](https://github.com/stdlib-js/stdlib/commit/8bcb738f0fc355eae92b40541cc61550fda1fbef) - **feat:** add `ndarray/base/to-reversed` [(#2861)](https://github.com/stdlib-js/stdlib/pull/2861) _(by Muhammad Haris, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.1">
 
 ## 0.3.1 (2024-08-18)
