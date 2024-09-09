@@ -4,11 +4,56 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-08)
+## Unreleased (2024-09-09)
 
 <section class="packages">
 
 ### Packages
+
+<section class="package" id="ndarray-base-assert-unreleased">
+
+#### [@stdlib/ndarray/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`98e4809`](https://github.com/stdlib-js/stdlib/commit/98e480997058c3f21d3016b97d25f4c4e62231b9) - add `isBooleanDataType` to namespace
+-   [`3e7f2ca`](https://github.com/stdlib-js/stdlib/commit/3e7f2ca3c987040575b732129281c384c453e0b8) - add `hasEqualShape` to namespace
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-has-equal-shape-unreleased">
+
+#### [@stdlib/ndarray/base/assert/has-equal-shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/has-equal-shape)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6e74647`](https://github.com/stdlib-js/stdlib/commit/6e74647839e3ca184dd7df80df9bd0ede9505469) - add `ndarray/base/assert/has-equal-shape`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
 
 <section class="package" id="ndarray-base-fill-unreleased">
 
@@ -100,6 +145,9 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`98e4809`](https://github.com/stdlib-js/stdlib/commit/98e480997058c3f21d3016b97d25f4c4e62231b9) - **feat:** add `isBooleanDataType` to namespace _(by Athan Reines)_
+-   [`3e7f2ca`](https://github.com/stdlib-js/stdlib/commit/3e7f2ca3c987040575b732129281c384c453e0b8) - **feat:** add `hasEqualShape` to namespace _(by Athan Reines)_
+-   [`6e74647`](https://github.com/stdlib-js/stdlib/commit/6e74647839e3ca184dd7df80df9bd0ede9505469) - **feat:** add `ndarray/base/assert/has-equal-shape` _(by Athan Reines)_
 -   [`5debe82`](https://github.com/stdlib-js/stdlib/commit/5debe8216a1449be68fad01af52d896e63163191) - **test:** add tests to `ndarray/base/map` [(#2810)](https://github.com/stdlib-js/stdlib/pull/2810) _(by Muhammad Haris, Athan Reines)_
 -   [`0c5f1bc`](https://github.com/stdlib-js/stdlib/commit/0c5f1bc12678832bf4aafddbf2a960e98612327b) - **chore:** rename folder from benchmarks to benchmark _(by Philipp Burckhardt)_
 -   [`6a6bc1d`](https://github.com/stdlib-js/stdlib/commit/6a6bc1da925c3c3f24463cf0d381d0d38e84868b) - **feat:** add `ndarray/base/fill` [(#2817)](https://github.com/stdlib-js/stdlib/pull/2817) _(by Muhammad Haris, Athan Reines)_
