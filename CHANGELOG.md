@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-21)
+## Unreleased (2024-09-22)
 
 <section class="packages">
 
@@ -145,6 +145,11 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`37ef5f4`](https://github.com/stdlib-js/stdlib/commit/37ef5f4f43d4fe03643b693a40b166420cbb07fd) - **refactor:** use dedicated array utility _(by Athan Reines)_
+-   [`2e00b1f`](https://github.com/stdlib-js/stdlib/commit/2e00b1f79b968e3436fbb2cf406b308029cd7156) - **refactor:** use dedicated array utility _(by Athan Reines)_
+-   [`bcc9d29`](https://github.com/stdlib-js/stdlib/commit/bcc9d29f11ad54bd388625ae257668304d829a5c) - **refactor:** use dedicated array utility _(by Athan Reines)_
+-   [`8436f67`](https://github.com/stdlib-js/stdlib/commit/8436f675a80d4824d8571b2b1ce91c5c17e3938d) - **refactor:** use dedicated array utility _(by Athan Reines)_
+-   [`b675172`](https://github.com/stdlib-js/stdlib/commit/b675172498c9449ca0e957f4af9694b8bc0f8dc6) - **refactor:** use dedicated array utility _(by Athan Reines)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`95ef049`](https://github.com/stdlib-js/stdlib/commit/95ef04997f2f0f98406dbdf59c5c0ff757c5637a) - **docs:** fix grammar _(by Athan Reines)_

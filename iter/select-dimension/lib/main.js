@@ -28,7 +28,7 @@ var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isReadOnly = require( './../../../base/assert/is-read-only' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var iteratorSymbol = require( '@stdlib/symbol/iterator' );
-var filled = require( '@stdlib/array/base/filled' );
+var nulls = require( '@stdlib/array/base/nulls' );
 var getShape = require( './../../../shape' );
 var normalizeIndex = require( './../../../base/normalize-index' );
 var numel = require( './../../../base/numel' );
@@ -143,7 +143,7 @@ function nditerSelectDimension( x, dim ) {
 	i = -1;
 
 	// Initialize an index array for generating slices:
-	idx = filled( null, ndims );
+	idx = nulls( ndims );
 
 	// Create an iterator protocol-compliant object:
 	iter = {};
