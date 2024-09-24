@@ -23,7 +23,7 @@
 var copy = require( '@stdlib/array/base/copy-indexed' );
 var ndarray = require( './../../../base/ctor' );
 var getShape = require( './../../../base/shape' );
-var getStrides = require('./../../../base/strides' );
+var getStrides = require( './../../../base/strides' );
 var getOffset = require( './../../../base/offset' );
 var getOrder = require( './../../../base/order' );
 var getDType = require( './../../../base/dtype' );
