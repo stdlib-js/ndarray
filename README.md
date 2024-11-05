@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.3.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { FancyArray, array, at, base, broadcastArray, broadcastArrays, castingModes, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, flag, flags, ind2sub, indexModes, iter, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarraylike2ndarray, ndims, ndsliceAssign, nextDataType, numel, numelDimension, offset, order, orders, outputDataTypePolicies, promotionRules, safeCasts, sameKindCasts, scalar2ndarray, shape, slice, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, stride, strides, sub2ind, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.3.2-esm/index.mjs';
+import { FancyArray, array, at, base, broadcastArray, broadcastArrays, castingModes, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, flag, flags, ind2sub, indexModes, iter, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarraylike2ndarray, ndims, ndsliceAssign, nextDataType, numel, numelDimension, offset, order, orders, outputDataTypePolicies, promotionRules, safeCasts, sameKindCasts, scalar2ndarray, shape, slice, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, stride, strides, sub2ind, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
 ```
 
 #### ns
@@ -163,7 +168,7 @@ In addition, the namespace contains the following multidimensional array utility
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.3.2-esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
