@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.3">
+
+## 0.3.3 (2024-11-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.2">
 
 ## 0.3.2 (2024-11-05)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="ndarray-base-assert-unreleased">
+<section class="package" id="ndarray-base-assert-v0.3.2">
 
 #### [@stdlib/ndarray/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert)
 
@@ -33,7 +43,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-assert-has-equal-shape-unreleased">
+<section class="package" id="ndarray-base-assert-has-equal-shape-v0.3.2">
 
 #### [@stdlib/ndarray/base/assert/has-equal-shape](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/has-equal-shape)
 
@@ -55,7 +65,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-fill-unreleased">
+<section class="package" id="ndarray-base-fill-v0.3.2">
 
 #### [@stdlib/ndarray/base/fill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fill)
 
@@ -77,7 +87,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-reverse-unreleased">
+<section class="package" id="ndarray-base-reverse-v0.3.2">
 
 #### [@stdlib/ndarray/base/reverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/reverse)
 
@@ -99,7 +109,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-dimension-from-unreleased">
+<section class="package" id="ndarray-base-slice-dimension-from-v0.3.2">
 
 #### [@stdlib/ndarray/base/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-from)
 
@@ -121,7 +131,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-slice-dimension-to-unreleased">
+<section class="package" id="ndarray-base-slice-dimension-to-v0.3.2">
 
 #### [@stdlib/ndarray/base/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/slice-dimension-to)
 
@@ -143,7 +153,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-to-reversed-unreleased">
+<section class="package" id="ndarray-base-to-reversed-v0.3.2">
 
 #### [@stdlib/ndarray/base/to-reversed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-reversed)
 
@@ -165,7 +175,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-base-transpose-unreleased">
+<section class="package" id="ndarray-base-transpose-v0.3.2">
 
 #### [@stdlib/ndarray/base/transpose](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/transpose)
 
@@ -187,7 +197,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-column-entries-unreleased">
+<section class="package" id="ndarray-iter-column-entries-v0.3.2">
 
 #### [@stdlib/ndarray/iter/column-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/column-entries)
 
@@ -209,7 +219,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-matrix-entries-unreleased">
+<section class="package" id="ndarray-iter-matrix-entries-v0.3.2">
 
 #### [@stdlib/ndarray/iter/matrix-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/matrix-entries)
 
@@ -231,7 +241,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-iter-row-entries-unreleased">
+<section class="package" id="ndarray-iter-row-entries-v0.3.2">
 
 #### [@stdlib/ndarray/iter/row-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/row-entries)
 
@@ -253,7 +263,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-dimension-from-unreleased">
+<section class="package" id="ndarray-slice-dimension-from-v0.3.2">
 
 #### [@stdlib/ndarray/slice-dimension-from](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-from)
 
@@ -275,7 +285,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="ndarray-slice-dimension-to-unreleased">
+<section class="package" id="ndarray-slice-dimension-to-v0.3.2">
 
 #### [@stdlib/ndarray/slice-dimension-to](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/slice-dimension-to)
 
