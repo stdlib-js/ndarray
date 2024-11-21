@@ -27,8 +27,8 @@ var pow = require( '@stdlib/math/base/special/pow' );
 var floor = require( '@stdlib/math/base/special/floor' );
 var filledarrayBy = require( '@stdlib/array/filled-by' );
 var shape2strides = require( './../../../base/shape2strides' );
-var pkg = require( './../../../base/fill/package.json' ).name;
-var fill = require( './../../../base/fill/lib' );
+var pkg = require( './../package.json' ).name;
+var fill = require( './../lib' );
 
 
 // VARIABLES //
