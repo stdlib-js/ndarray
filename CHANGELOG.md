@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-12)
+## Unreleased (2024-12-13)
 
 <section class="packages">
 
@@ -146,6 +146,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-map-unreleased">
+
+#### [@stdlib/ndarray/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/map)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3ea906b`](https://github.com/stdlib-js/stdlib/commit/3ea906bb64f93b4d323bc91f99a176d2729a2cc9) - add `ndarray/map` [(#3314)](https://github.com/stdlib-js/stdlib/pull/3314)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -166,8 +188,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   Muhammad Haris
 -   Philipp Burckhardt
 
 </section>
@@ -180,6 +204,7 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <details>
 
+-   [`3ea906b`](https://github.com/stdlib-js/stdlib/commit/3ea906bb64f93b4d323bc91f99a176d2729a2cc9) - **feat:** add `ndarray/map` [(#3314)](https://github.com/stdlib-js/stdlib/pull/3314) _(by Muhammad Haris, Athan Reines)_
 -   [`cf7d38a`](https://github.com/stdlib-js/stdlib/commit/cf7d38ae3e7bce92cf47778f7b1c3da731121d77) - **docs:** update related packages sections [(#3527)](https://github.com/stdlib-js/stdlib/pull/3527) _(by stdlib-bot)_
 -   [`bf5643f`](https://github.com/stdlib-js/stdlib/commit/bf5643fb1a3f32a60903d8e210f71571e609119f) - **docs:** update related packages sections [(#3404)](https://github.com/stdlib-js/stdlib/pull/3404) _(by stdlib-bot)_
 -   [`a80835b`](https://github.com/stdlib-js/stdlib/commit/a80835b8f9959a15751adfce5572bb2b29cfeeed) - **refactor:** declare parameters and pointer as const _(by Philipp Burckhardt)_
