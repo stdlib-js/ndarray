@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - add `filterMap` to namespace
 -   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - add `reject` to namespace
 -   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - add `map` and `filter` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
@@ -147,6 +148,28 @@
 ##### Features
 
 -   [`d481f26`](https://github.com/stdlib-js/stdlib/commit/d481f264f68deee3497bf73480c2c88efc3a725f) - add `ndarray/filter`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-filter-map-unreleased">
+
+#### [@stdlib/ndarray/filter-map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter-map)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6ff153f`](https://github.com/stdlib-js/stdlib/commit/6ff153f9023cffac527b3243489e6413e989e940) - add `ndarray/filter-map`
 
 </section>
 
@@ -294,6 +317,11 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - **feat:** add `filterMap` to namespace _(by Athan Reines)_
+-   [`6ff153f`](https://github.com/stdlib-js/stdlib/commit/6ff153f9023cffac527b3243489e6413e989e940) - **feat:** add `ndarray/filter-map` _(by Athan Reines)_
+-   [`8d1be60`](https://github.com/stdlib-js/stdlib/commit/8d1be60be03dae4a293d0a2967ab2539d759a498) - **refactor:** remove unnecessary variable _(by Athan Reines)_
+-   [`07c9202`](https://github.com/stdlib-js/stdlib/commit/07c92021666d2b439a239397d54a43e5785b3360) - **refactor:** remove unnecessary variable _(by Athan Reines)_
+-   [`4cc1f54`](https://github.com/stdlib-js/stdlib/commit/4cc1f54e1c601aefcf00bfa03948f2909eba60be) - **docs:** update example _(by Athan Reines)_
 -   [`3cd740e`](https://github.com/stdlib-js/stdlib/commit/3cd740ed3e550ee7411139fef930a96216cff5d9) - **docs:** add example _(by Athan Reines)_
 -   [`855b8c2`](https://github.com/stdlib-js/stdlib/commit/855b8c255abba003e9505aa3a80105a2e2b6b3a7) - **docs:** add example _(by Athan Reines)_
 -   [`47d03ca`](https://github.com/stdlib-js/stdlib/commit/47d03ca557edea6a39c8fa3cc3262ad85d04cd56) - **docs:** add example _(by Athan Reines)_

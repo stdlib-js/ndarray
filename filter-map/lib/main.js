@@ -39,24 +39,29 @@ var format = require( '@stdlib/string/format' );
 // MAIN //
 
 /**
-* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
+* Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
 *
 * @param {ndarray} x - input ndarray
 * @param {Options} [options] - function options
 * @param {string} [options.dtype] - output array data type
 * @param {boolean} [options.order] - index iteration order
-* @param {Callback} predicate - predicate function
-* @param {*} [thisArg] - predicate execution context
+* @param {Callback} fcn - callback function
+* @param {*} [thisArg] - callback execution context
 * @throws {TypeError} first argument must be an ndarray-like object
 * @throws {TypeError} callback argument must be a function
 * @throws {TypeError} options argument must be an object
 * @returns {ndarray} output ndarray
 *
 * @example
-* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
+*
+* function fcn( v ) {
+*     if ( v > 5.0 ) {
+*         return v * 10.0;
+*     }
+* }
 *
 * var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 * var shape = [ 2, 3 ];
@@ -66,13 +71,13 @@ var format = require( '@stdlib/string/format' );
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var y = reject( x, isOdd );
+* var y = filterMap( x, fcn );
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
-* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+* // returns [ 80.0, 90.0, 100.0 ]
 */
-function reject( x, options, predicate, thisArg ) {
+function filterMap( x, options, fcn, thisArg ) {
 	var hasOpts;
 	var ndims;
 	var cache;
@@ -98,16 +103,16 @@ function reject( x, options, predicate, thisArg ) {
 	} else if ( arguments.length === 3 ) {
 		if ( isFunction( options ) ) {
 			clbk = options;
-			ctx = predicate;
+			ctx = fcn;
 		} else {
 			hasOpts = true;
 			opts = options;
-			clbk = predicate;
+			clbk = fcn;
 		}
 	} else {
 		hasOpts = true;
 		opts = options;
-		clbk = predicate;
+		clbk = fcn;
 		ctx = thisArg;
 	}
 	if ( !isFunction( clbk ) ) {
@@ -159,18 +164,18 @@ function reject( x, options, predicate, thisArg ) {
 	// Initialize an index array workspace:
 	idx = zeros( ndims );
 
-	// Initialize a value cache for those elements which pass a predicate function (note: unfortunately, we use an associative array here, as no other good options. If we use a "generic" array, we are limited to 2^32-1 elements. If we allocate, say, a Float64Array buffer for storing indices, we risk materializing lazily-materialized input ndarray values again (e.g., lazy accessor ndarray), which could be expensive. If we allocate a workspace buffer of equal size to the input ndarray to store materialized values, we'd then need to perform another copy in order to shrink the buffer, as, otherwise, could be holding on to significantly more memory than needed for the returned ndarray. There are likely other options, but all involve complexity, so the simplest option is used here.):
+	// Initialize a value cache for those elements which pass a callback function (note: unfortunately, we use an associative array here, as no other good options. If we use a "generic" array, we are limited to 2^32-1 elements. If we allocate, say, a Float64Array buffer for storing indices, we risk materializing lazily-materialized input ndarray values again (e.g., lazy accessor ndarray), which could be expensive. If we allocate a workspace buffer of equal size to the input ndarray to store materialized values, we'd then need to perform another copy in order to shrink the buffer, as, otherwise, could be holding on to significantly more memory than needed for the returned ndarray. There are likely other options, but all involve complexity, so the simplest option is used here.):
 	cache = {
 		'length': 0
 	};
 
-	// Filter elements according to a predicate function...
+	// Filter and map elements according to a callback function...
 	for ( i = 0; i < N; i++ ) {
 		if ( i > 0 ) {
 			idx = nextCartesianIndex( sh, ord, idx, dim, idx );
 		}
-		v = x.get.apply( x, idx );
-		if ( !clbk.call( ctx, v, idx.slice(), x ) ) {
+		v = clbk.call( ctx, x.get.apply( x, idx ), idx.slice(), x );
+		if ( v !== void 0 ) {
 			cache[ cache.length ] = v;
 			cache.length += 1;
 		}
@@ -193,4 +198,4 @@ function reject( x, options, predicate, thisArg ) {
 
 // EXPORTS //
 
-module.exports = reject;
+module.exports = filterMap;
