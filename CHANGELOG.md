@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - add `map` and `filter` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 
 </section>
@@ -127,6 +128,28 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-filter-unreleased">
+
+#### [@stdlib/ndarray/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d481f26`](https://github.com/stdlib-js/stdlib/commit/d481f264f68deee3497bf73480c2c88efc3a725f) - add `ndarray/filter`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -248,6 +271,9 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - **feat:** add `map` and `filter` to namespace _(by Athan Reines)_
+-   [`d481f26`](https://github.com/stdlib-js/stdlib/commit/d481f264f68deee3497bf73480c2c88efc3a725f) - **feat:** add `ndarray/filter` _(by Athan Reines)_
+-   [`082a45a`](https://github.com/stdlib-js/stdlib/commit/082a45a9540b2af89f8cb3bc0b11e56b14e3ff8c) - **style:** fix missing empty line _(by Athan Reines)_
 -   [`849c335`](https://github.com/stdlib-js/stdlib/commit/849c33579ea43f853fee93368431275d5481140a) - **docs:** fix description _(by Athan Reines)_
 -   [`b4502fb`](https://github.com/stdlib-js/stdlib/commit/b4502fbc4da03910f86c66e68b53e93e99e3e933) - **fix:** remove perf logic in order to ensure expected indices in callback _(by Athan Reines)_
 -   [`59814ef`](https://github.com/stdlib-js/stdlib/commit/59814ef8589df3b9792a05f4ca46dcb92c9782e4) - **test:** add argument tests _(by Athan Reines)_
