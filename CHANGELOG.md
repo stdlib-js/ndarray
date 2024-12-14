@@ -271,6 +271,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`80542fd`](https://github.com/stdlib-js/stdlib/commit/80542fd459075dc2c49f6e529a21bd661129899e) - **docs:** remove note _(by Athan Reines)_
 -   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - **feat:** add `map` and `filter` to namespace _(by Athan Reines)_
 -   [`d481f26`](https://github.com/stdlib-js/stdlib/commit/d481f264f68deee3497bf73480c2c88efc3a725f) - **feat:** add `ndarray/filter` _(by Athan Reines)_
 -   [`082a45a`](https://github.com/stdlib-js/stdlib/commit/082a45a9540b2af89f8cb3bc0b11e56b14e3ff8c) - **style:** fix missing empty line _(by Athan Reines)_
