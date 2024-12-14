@@ -112,6 +112,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-map-unreleased">
+
+#### [@stdlib/ndarray/base/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/map)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`b4502fb`](https://github.com/stdlib-js/stdlib/commit/b4502fbc4da03910f86c66e68b53e93e99e3e933) - remove perf logic in order to ensure expected indices in callback
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-iter-unreleased">
 
 #### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
@@ -226,6 +248,8 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b4502fb`](https://github.com/stdlib-js/stdlib/commit/b4502fbc4da03910f86c66e68b53e93e99e3e933) - **fix:** remove perf logic in order to ensure expected indices in callback _(by Athan Reines)_
+-   [`59814ef`](https://github.com/stdlib-js/stdlib/commit/59814ef8589df3b9792a05f4ca46dcb92c9782e4) - **test:** add argument tests _(by Athan Reines)_
 -   [`2825b42`](https://github.com/stdlib-js/stdlib/commit/2825b42e8cd7483d15dfed1c6b389bfcb86d7ca0) - **docs:** update related packages sections [(#3898)](https://github.com/stdlib-js/stdlib/pull/3898) _(by stdlib-bot)_
 -   [`a299630`](https://github.com/stdlib-js/stdlib/commit/a299630d08a49ba51c6e3501fbd7d215338ca23a) - **fix:** avoid potential external mutation _(by Athan Reines)_
 -   [`2d9de13`](https://github.com/stdlib-js/stdlib/commit/2d9de13da6f54c36452274c5179e1354c7be3f34) - **docs:** fix description _(by Athan Reines)_
