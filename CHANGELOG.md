@@ -248,6 +248,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`849c335`](https://github.com/stdlib-js/stdlib/commit/849c33579ea43f853fee93368431275d5481140a) - **docs:** fix description _(by Athan Reines)_
 -   [`b4502fb`](https://github.com/stdlib-js/stdlib/commit/b4502fbc4da03910f86c66e68b53e93e99e3e933) - **fix:** remove perf logic in order to ensure expected indices in callback _(by Athan Reines)_
 -   [`59814ef`](https://github.com/stdlib-js/stdlib/commit/59814ef8589df3b9792a05f4ca46dcb92c9782e4) - **test:** add argument tests _(by Athan Reines)_
 -   [`2825b42`](https://github.com/stdlib-js/stdlib/commit/2825b42e8cd7483d15dfed1c6b389bfcb86d7ca0) - **docs:** update related packages sections [(#3898)](https://github.com/stdlib-js/stdlib/pull/3898) _(by stdlib-bot)_
