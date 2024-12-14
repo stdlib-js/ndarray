@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-13)
+## Unreleased (2024-12-14)
 
 <section class="packages">
 
@@ -204,6 +204,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`2d9de13`](https://github.com/stdlib-js/stdlib/commit/2d9de13da6f54c36452274c5179e1354c7be3f34) - **docs:** fix description _(by Athan Reines)_
 -   [`3ea906b`](https://github.com/stdlib-js/stdlib/commit/3ea906bb64f93b4d323bc91f99a176d2729a2cc9) - **feat:** add `ndarray/map` [(#3314)](https://github.com/stdlib-js/stdlib/pull/3314) _(by Muhammad Haris, Athan Reines)_
 -   [`cf7d38a`](https://github.com/stdlib-js/stdlib/commit/cf7d38ae3e7bce92cf47778f7b1c3da731121d77) - **docs:** update related packages sections [(#3527)](https://github.com/stdlib-js/stdlib/pull/3527) _(by stdlib-bot)_
 -   [`bf5643f`](https://github.com/stdlib-js/stdlib/commit/bf5643fb1a3f32a60903d8e210f71571e609119f) - **docs:** update related packages sections [(#3404)](https://github.com/stdlib-js/stdlib/pull/3404) _(by stdlib-bot)_
