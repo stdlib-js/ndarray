@@ -39,7 +39,7 @@ var format = require( '@stdlib/string/format' );
 // MAIN //
 
 /**
-* Returns a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.
+* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
 *
 * @param {ndarray} x - input ndarray
 * @param {Options} [options] - function options
@@ -53,7 +53,7 @@ var format = require( '@stdlib/string/format' );
 * @returns {ndarray} output ndarray
 *
 * @example
-* var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
 * var Float64Array = require( '@stdlib/array/float64' );
 * var ndarray = require( '@stdlib/ndarray/ctor' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
@@ -66,13 +66,13 @@ var format = require( '@stdlib/string/format' );
 * var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
-* var y = filter( x, isEven );
+* var y = reject( x, isOdd );
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
 * // returns [ 2.0, 4.0, 8.0, 10.0 ]
 */
-function filter( x, options, predicate, thisArg ) {
+function reject( x, options, predicate, thisArg ) {
 	var hasOpts;
 	var ndims;
 	var cache;
@@ -172,7 +172,7 @@ function filter( x, options, predicate, thisArg ) {
 			idx = nextCartesianIndex( sh, ord, idx, dim, idx );
 		}
 		v = x.get.apply( x, idx );
-		if ( clbk.call( ctx, v, idx.slice(), x ) ) {
+		if ( !clbk.call( ctx, v, idx.slice(), x ) ) {
 			cache.length += 1;
 			cidx += 1;
 			cache[ cidx ] = v;
@@ -196,4 +196,4 @@ function filter( x, options, predicate, thisArg ) {
 
 // EXPORTS //
 
-module.exports = filter;
+module.exports = reject;

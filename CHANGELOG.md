@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - add `reject` to namespace
 -   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - add `map` and `filter` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 
@@ -235,6 +236,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-reject-unreleased">
+
+#### [@stdlib/ndarray/reject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/reject)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`43ccbfb`](https://github.com/stdlib-js/stdlib/commit/43ccbfbf9cd0ffcdd92fbe6ae0cc60db4f46ea6e) - add `ndarray/reject`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -271,6 +294,10 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - **feat:** add `reject` to namespace _(by Athan Reines)_
+-   [`43ccbfb`](https://github.com/stdlib-js/stdlib/commit/43ccbfbf9cd0ffcdd92fbe6ae0cc60db4f46ea6e) - **feat:** add `ndarray/reject` _(by Athan Reines)_
+-   [`1cc3e09`](https://github.com/stdlib-js/stdlib/commit/1cc3e095080947f8fdd61ea2217f9b3031b9f93b) - **docs:** fix annotation _(by Athan Reines)_
+-   [`7efc6f3`](https://github.com/stdlib-js/stdlib/commit/7efc6f3c8f899974f7d11cb9e06f65f90d5caaa9) - **bench:** fix symbol name _(by Athan Reines)_
 -   [`17430f4`](https://github.com/stdlib-js/stdlib/commit/17430f4a7f15da00c9288b2b4d0577b6b7f8007f) - **docs:** add note _(by Athan Reines)_
 -   [`354a147`](https://github.com/stdlib-js/stdlib/commit/354a1472bd69ab26c020aa7ba1df043c88e985b2) - **docs:** add note _(by Athan Reines)_
 -   [`80542fd`](https://github.com/stdlib-js/stdlib/commit/80542fd459075dc2c49f6e529a21bd661129899e) - **docs:** remove note _(by Athan Reines)_

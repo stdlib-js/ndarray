@@ -22,15 +22,13 @@
 
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
-var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var sqrt = require( '@stdlib/math/base/special/sqrt' );
-var floor = require( '@stdlib/math/base/special/floor' );
+var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var shape2strides = require( './../../base/shape2strides' );
 var ndarray = require( './../../ctor' );
 var pkg = require( './../package.json' ).name;
-var filter = require( './../lib' );
+var reject = require( './../lib' );
 
 
 // VARIABLES //
@@ -59,7 +57,7 @@ function predicate( value ) {
 * Creates a benchmark function.
 *
 * @private
-* @param {PositiveInteger} len - ndarray length
+* @param {PositiveInteger} len - array length
 * @param {NonNegativeIntegerArray} shape - ndarray shape
 * @param {string} xtype - input ndarray data type
 * @param {string} ytype - output ndarray data type
@@ -71,7 +69,6 @@ function createBenchmark( len, shape, xtype, ytype, order ) {
 	var opts;
 	var xbuf;
 	var x;
-	var y;
 
 	xbuf = discreteUniform( len, -100, 100, {
 		'dtype': xtype
@@ -81,6 +78,7 @@ function createBenchmark( len, shape, xtype, ytype, order ) {
 	opts = {
 		'dtype': ytype
 	};
+
 	return benchmark;
 
 	/**
@@ -90,11 +88,12 @@ function createBenchmark( len, shape, xtype, ytype, order ) {
 	* @param {Benchmark} b - benchmark instance
 	*/
 	function benchmark( b ) {
+		var y;
 		var i;
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			y = filter( x, opts, predicate );
+			y = reject( x, opts, predicate );
 			if ( isnan( y.data[ i%y.length ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
@@ -140,17 +139,7 @@ function main() {
 			for ( i = min; i <= max; i++ ) {
 				len = pow( 10, i );
 
-				sh = [ len/2, 2 ];
-				f = createBenchmark( len, sh, t1, t2, ord );
-				bench( pkg+':ndims='+sh.length+',len='+len+',shape=['+sh.join(',')+'],xorder='+ord+',yorder='+ord+',xtype='+t1+',ytype='+t2, f );
-
-				sh = [ 2, len/2 ];
-				f = createBenchmark( len, sh, t1, t2, ord );
-				bench( pkg+':ndims='+sh.length+',len='+len+',shape=['+sh.join(',')+'],xorder='+ord+',yorder='+ord+',xtype='+t1+',ytype='+t2, f );
-
-				len = floor( sqrt( len ) );
-				sh = [ len, len ];
-				len *= len;
+				sh = [ len ];
 				f = createBenchmark( len, sh, t1, t2, ord );
 				bench( pkg+':ndims='+sh.length+',len='+len+',shape=['+sh.join(',')+'],xorder='+ord+',yorder='+ord+',xtype='+t1+',ytype='+t2, f );
 			}

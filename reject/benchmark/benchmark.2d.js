@@ -30,7 +30,7 @@ var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var shape2strides = require( './../../base/shape2strides' );
 var ndarray = require( './../../ctor' );
 var pkg = require( './../package.json' ).name;
-var filter = require( './../lib' );
+var reject = require( './../lib' );
 
 
 // VARIABLES //
@@ -94,7 +94,7 @@ function createBenchmark( len, shape, xtype, ytype, order ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			y = filter( x, opts, predicate );
+			y = reject( x, opts, predicate );
 			if ( isnan( y.data[ i%y.length ] ) ) {
 				b.fail( 'should not return NaN' );
 			}
