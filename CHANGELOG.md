@@ -294,6 +294,9 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`3cd740e`](https://github.com/stdlib-js/stdlib/commit/3cd740ed3e550ee7411139fef930a96216cff5d9) - **docs:** add example _(by Athan Reines)_
+-   [`855b8c2`](https://github.com/stdlib-js/stdlib/commit/855b8c255abba003e9505aa3a80105a2e2b6b3a7) - **docs:** add example _(by Athan Reines)_
+-   [`47d03ca`](https://github.com/stdlib-js/stdlib/commit/47d03ca557edea6a39c8fa3cc3262ad85d04cd56) - **docs:** add example _(by Athan Reines)_
 -   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - **feat:** add `reject` to namespace _(by Athan Reines)_
 -   [`43ccbfb`](https://github.com/stdlib-js/stdlib/commit/43ccbfbf9cd0ffcdd92fbe6ae0cc60db4f46ea6e) - **feat:** add `ndarray/reject` _(by Athan Reines)_
 -   [`1cc3e09`](https://github.com/stdlib-js/stdlib/commit/1cc3e095080947f8fdd61ea2217f9b3031b9f93b) - **docs:** fix annotation _(by Athan Reines)_
