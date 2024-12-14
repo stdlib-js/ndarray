@@ -146,6 +146,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-iter-indices-unreleased">
+
+#### [@stdlib/ndarray/iter/indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter/indices)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a299630`](https://github.com/stdlib-js/stdlib/commit/a299630d08a49ba51c6e3501fbd7d215338ca23a) - avoid potential external mutation
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-map-unreleased">
 
 #### [@stdlib/ndarray/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/map)
@@ -204,6 +226,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a299630`](https://github.com/stdlib-js/stdlib/commit/a299630d08a49ba51c6e3501fbd7d215338ca23a) - **fix:** avoid potential external mutation _(by Athan Reines)_
 -   [`2d9de13`](https://github.com/stdlib-js/stdlib/commit/2d9de13da6f54c36452274c5179e1354c7be3f34) - **docs:** fix description _(by Athan Reines)_
 -   [`3ea906b`](https://github.com/stdlib-js/stdlib/commit/3ea906bb64f93b4d323bc91f99a176d2729a2cc9) - **feat:** add `ndarray/map` [(#3314)](https://github.com/stdlib-js/stdlib/pull/3314) _(by Muhammad Haris, Athan Reines)_
 -   [`cf7d38a`](https://github.com/stdlib-js/stdlib/commit/cf7d38ae3e7bce92cf47778f7b1c3da731121d77) - **docs:** update related packages sections [(#3527)](https://github.com/stdlib-js/stdlib/pull/3527) _(by stdlib-bot)_
