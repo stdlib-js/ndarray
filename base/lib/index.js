@@ -311,6 +311,15 @@ setReadOnly( ns, 'emptyLike', require( './../../base/empty-like' ) );
 setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' ) );
 
 /**
+* @name fill
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/fill}
+*/
+setReadOnly( ns, 'fill', require( './../../base/fill' ) );
+
+/**
 * @name flag
 * @memberof ns
 * @readonly
@@ -392,6 +401,15 @@ setReadOnly( ns, 'ind2sub', require( './../../base/ind2sub' ) );
 setReadOnly( ns, 'iterationOrder', require( './../../base/iteration-order' ) );
 
 /**
+* @name map
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/map}
+*/
+setReadOnly( ns, 'map', require( './../../base/map' ) );
+
+/**
 * @name maxViewBufferIndex
 * @memberof ns
 * @readonly
@@ -426,6 +444,24 @@ setReadOnly( ns, 'maybeBroadcastArrays', require( './../../base/maybe-broadcast-
 * @see {@link module:@stdlib/ndarray/base/meta-data-props}
 */
 setReadOnly( ns, 'metaDataProps', require( './../../base/meta-data-props' ) );
+
+/**
+* @name minSignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/min-signed-integer-dtype}
+*/
+setReadOnly( ns, 'minSignedIntegerDataType', require( './../../base/min-signed-integer-dtype' ) );
+
+/**
+* @name minUnsignedIntegerDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/min-unsigned-integer-dtype}
+*/
+setReadOnly( ns, 'minUnsignedIntegerDataType', require( './../../base/min-unsigned-integer-dtype' ) );
 
 /**
 * @name minViewBufferIndex
@@ -786,6 +822,15 @@ setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 * @see {@link module:@stdlib/ndarray/base/to-array}
 */
 setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
+
+/**
+* @name toReversed
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-reversed}
+*/
+setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
 
 /**
 * @name transpose
