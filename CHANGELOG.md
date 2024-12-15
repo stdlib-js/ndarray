@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-14)
+## Unreleased (2024-12-15)
 
 <section class="packages">
 
@@ -317,6 +317,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`0d6bf75`](https://github.com/stdlib-js/stdlib/commit/0d6bf755cd3fcefbdf4751bc1f8e011bedefc057) - **refactor:** resolve error constructor and add todos _(by Athan Reines)_
 -   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - **feat:** add `filterMap` to namespace _(by Athan Reines)_
 -   [`6ff153f`](https://github.com/stdlib-js/stdlib/commit/6ff153f9023cffac527b3243489e6413e989e940) - **feat:** add `ndarray/filter-map` _(by Athan Reines)_
 -   [`8d1be60`](https://github.com/stdlib-js/stdlib/commit/8d1be60be03dae4a293d0a2967ab2539d759a498) - **refactor:** remove unnecessary variable _(by Athan Reines)_
