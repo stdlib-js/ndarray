@@ -363,6 +363,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ef82c21`](https://github.com/stdlib-js/stdlib/commit/ef82c2133cc2cb955eb1fc73da0209eda97de59a) - **docs:** update namespace table of contents [(#3918)](https://github.com/stdlib-js/stdlib/pull/3918) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - **feat:** add `fill`, `map`, and `toReversed` to namespace _(by Athan Reines)_
 -   [`a0d6619`](https://github.com/stdlib-js/stdlib/commit/a0d66193409576538d0f16aa89cbaeedec7898be) - **feat:** add `minSignedIntegerDataType` and `minUnsignedIntegerDataType` to namespace _(by Athan Reines)_
 -   [`97e8c1a`](https://github.com/stdlib-js/stdlib/commit/97e8c1aff4f7c1a3b0946d15354a926d82e2120a) - **feat:** add `ndarray/base/min-unsigned-integer-dtype` _(by Athan Reines)_
