@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,48 +18,24 @@
 
 'use strict';
 
-// MODULES //
-
-var isFunction = require( '@stdlib/assert/is-function' );
-
-
 // MAIN //
 
 /**
-* Returns the property value associated with a specified property.
+* Sets the value associated with a specified property.
 *
 * @private
 * @param {Object} target - target object
-* @param {(string|symbol)} property - property
+* @param {string} property - property
+* @param {*} value - new value
 * @param {Object} receiver - the proxy object or an object inheriting from the proxy
-* @returns {*} result
+* @returns {boolean} boolean indicating whether assignment succeeded
 */
-function getValue( target, property, receiver ) {
-	var value = target[ property ];
-	if ( isFunction( value ) ) {
-		return wrapper;
-	}
-	return value;
-
-	/**
-	* Method wrapper.
-	*
-	* @private
-	* @returns {*} results
-	*/
-	function wrapper() {
-		var args;
-		var i;
-
-		args = [];
-		for ( i = 0; i < arguments.length; i++ ) {
-			args.push( arguments[ i ] );
-		}
-		return value.apply( ( this === receiver ) ? target : this, args ); // eslint-disable-line no-invalid-this
-	}
+function setValue( target, property, value ) {
+	target[ property ] = value;
+	return true;
 }
 
 
 // EXPORTS //
 
-module.exports = getValue;
+module.exports = setValue;

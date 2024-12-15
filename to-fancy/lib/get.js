@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -31,10 +31,15 @@ var getSlice = require( './get_slice.js' );
 * Returns a trap for retrieving property values.
 *
 * @private
-* @param {Function} prop2slice - function for converting an indexing expression to a slice
+* @param {Object} ctx - context object
+* @param {boolean} ctx.strict - boolean indicating whether to enforce strict bounds checking
+* @param {Function} ctx.ctor - proxied ndarray constructor
+* @param {Function} ctx.postGetArray - function to process a retrieved ndarray
+* @param {Object} ctx.cache - cache for resolving array index objects
+* @param {Function} ctx.prop2slice - function for converting an indexing expression to a slice
 * @returns {Function} handler
 */
-function factory( prop2slice ) {
+function factory( ctx ) {
 	return get;
 
 	/**
@@ -45,14 +50,14 @@ function factory( prop2slice ) {
 	* @param {(string|symbol)} property - property name
 	* @param {Object} receiver - the proxy object or an object inheriting from the proxy
 	* @throws {Error} invalid slice operation
-	* @throws {RangeError} number of slice dimensions must match the number of array dimensions
+	* @throws {RangeError} number of slice dimensions must match the number of ndarray dimensions
 	* @returns {*} result
 	*/
 	function get( target, property, receiver ) {
 		if ( hasProperty( property ) ) {
 			return getValue( target, property, receiver );
 		}
-		return getSlice( target, property, receiver, prop2slice );
+		return getSlice( target, property, receiver, ctx.prop2slice );
 	}
 }
 

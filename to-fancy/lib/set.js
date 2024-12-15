@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -31,10 +31,15 @@ var setSlice = require( './set_slice.js' );
 * Returns a trap for setting property values.
 *
 * @private
-* @param {Function} prop2slice - function for converting an indexing expression to a slice
+* @param {Object} ctx - context object
+* @param {string} ctx.dtype - ndarray data type
+* @param {boolean} ctx.strict - boolean indicating whether to enforce strict bounds checking
+* @param {Function} ctx.validator - function for validating new values
+* @param {(Function|null)} ctx.preSetElement - function for normalizing new values (if necessary)
+* @param {Function} ctx.prop2slice - function for converting an indexing expression to a slice
 * @returns {Function} handler
 */
-function factory( prop2slice ) {
+function factory( ctx ) {
 	return set;
 
 	/**
@@ -46,16 +51,16 @@ function factory( prop2slice ) {
 	* @param {*} value - new value
 	* @param {Object} receiver - the proxy object or an object inheriting from the proxy
 	* @throws {Error} invalid slice operation
-	* @throws {RangeError} number of slice dimensions must match the number of array dimensions
-	* @throws {Error} assigned value must be broadcast compatible with output array view
-	* @throws {TypeError} assigned value cannot be safely cast to the output array data type
+	* @throws {RangeError} number of slice dimensions must match the number of ndarray dimensions
+	* @throws {Error} assigned value must be broadcast compatible with output ndarray view
+	* @throws {TypeError} assigned value cannot be safely cast to the output ndarray data type
 	* @returns {boolean} boolean indicating whether assignment succeeded
 	*/
 	function set( target, property, value, receiver ) {
 		if ( hasProperty( property ) ) {
 			return setValue( target, property, value );
 		}
-		return setSlice( target, property, value, receiver, prop2slice );
+		return setSlice( target, property, value, receiver, ctx.prop2slice );
 	}
 }
 

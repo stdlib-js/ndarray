@@ -328,6 +328,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-to-fancy-unreleased">
+
+#### [@stdlib/ndarray/to-fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/to-fancy)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`fb1ca76`](https://github.com/stdlib-js/stdlib/commit/fb1ca76ccf2f324c45b24411aa3fd1088a7a7b6e) - add `ndarray/to-fancy`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -364,6 +386,10 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`0546f39`](https://github.com/stdlib-js/stdlib/commit/0546f395abecb502fd703aa364e758bd733cd18e) - **docs:** disable lint rule _(by Athan Reines)_
+-   [`5079aa3`](https://github.com/stdlib-js/stdlib/commit/5079aa30f3aa11908c78aac6750b4272852dbb4d) - **docs:** disable lint rule _(by Athan Reines)_
+-   [`e81185b`](https://github.com/stdlib-js/stdlib/commit/e81185b4a0fa3537ab4a8a16644b7fa90bb184a3) - **refactor:** rely on `ndarray/to-fancy` for implementation logic _(by Athan Reines)_
+-   [`fb1ca76`](https://github.com/stdlib-js/stdlib/commit/fb1ca76ccf2f324c45b24411aa3fd1088a7a7b6e) - **feat:** add `ndarray/to-fancy` _(by Athan Reines)_
 -   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - **feat:** update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`ef82c21`](https://github.com/stdlib-js/stdlib/commit/ef82c2133cc2cb955eb1fc73da0209eda97de59a) - **docs:** update namespace table of contents [(#3918)](https://github.com/stdlib-js/stdlib/pull/3918) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - **feat:** add `fill`, `map`, and `toReversed` to namespace _(by Athan Reines)_

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,30 +18,23 @@
 
 'use strict';
 
+// MODULES //
+
+var Proxy = require( '@stdlib/proxy/ctor' );
+
+
 // MAIN //
 
 /**
-* Regular expression for testing whether a string is a subsequence string.
+* Boolean indicating if an environment has Proxy support.
 *
 * @private
-* @name RE_SUBSEQ
-* @type {RegExp}
-*
-* @example
-* var bool = RE_SUBSEQ.test( '0:10:2' );
-* // returns true
-*
-* @example
-* var bool = RE_SUBSEQ.test( '0' );
-* // returns false
-*
-* @example
-* var bool = RE_SUBSEQ.test( 'Slice(0,10,2)' );
-* // returns false
+* @name hasSupport
+* @type {boolean}
 */
-var RE_SUBSEQ = /:/;
+var hasSupport = ( typeof Proxy === 'function' ); // NOTE: cannot use `@stdlib/assert/has-proxy-support` here, as that API uses code evaluation and might violate CSPs; consequently, this is a relatively weak check for proxy support
 
 
 // EXPORTS //
 
-module.exports = RE_SUBSEQ;
+module.exports = hasSupport;

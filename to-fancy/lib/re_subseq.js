@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,25 +18,30 @@
 
 'use strict';
 
-// MODULES //
-
-var replace = require( '@stdlib/string/base/replace' );
-
-
 // MAIN //
 
 /**
-* Returns an updated error message for trapped errors.
+* Regular expression for testing whether a string is a subsequence string.
 *
 * @private
-* @param {string} msg - error message
-* @returns {string} updated message
+* @name RE_SUBSEQ
+* @type {RegExp}
+*
+* @example
+* var bool = RE_SUBSEQ.test( '0:10:2' );
+* // returns true
+*
+* @example
+* var bool = RE_SUBSEQ.test( '0' );
+* // returns false
+*
+* @example
+* var bool = RE_SUBSEQ.test( 'Slice(0,10,2)' );
+* // returns false
 */
-function errMessage( msg ) {
-	return replace( msg, /^invalid argument/, 'invalid operation' );
-}
+var RE_SUBSEQ = /:/;
 
 
 // EXPORTS //
 
-module.exports = errMessage;
+module.exports = RE_SUBSEQ;

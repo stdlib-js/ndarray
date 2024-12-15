@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,27 +21,23 @@
 // MAIN //
 
 /**
-* Regular expression for testing whether a string is an integer string.
+* Returns default options.
 *
 * @private
-* @name RE_INTEGER
-* @type {RegExp}
+* @returns {Object} default options
 *
 * @example
-* var bool = RE_INTEGER.test( '10' );
-* // returns true
-*
-* @example
-* var bool = RE_INTEGER.test( '-1' );
-* // returns true
-*
-* @example
-* var bool = RE_INTEGER.test( '0:10:2' );
-* // returns false
+* var o = defaults();
+* // returns {...}
 */
-var RE_INTEGER = /^-?[0-9]+$/;
+function defaults() {
+	return {
+		'cache': null, // FIXME: default index cache
+		'strict': false
+	};
+}
 
 
 // EXPORTS //
 
-module.exports = RE_INTEGER;
+module.exports = defaults;

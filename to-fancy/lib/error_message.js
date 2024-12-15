@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2024 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,24 +18,25 @@
 
 'use strict';
 
+// MODULES //
+
+var replace = require( '@stdlib/string/base/replace' );
+
+
 // MAIN //
 
 /**
-* Sets the value associated with a specified property.
+* Returns an updated error message for trapped errors.
 *
 * @private
-* @param {Object} target - target object
-* @param {string} property - property
-* @param {*} value - new value
-* @param {Object} receiver - the proxy object or an object inheriting from the proxy
-* @returns {boolean} boolean indicating whether assignment succeeded
+* @param {string} msg - error message
+* @returns {string} updated message
 */
-function setValue( target, property, value ) {
-	target[ property ] = value;
-	return true;
+function errMessage( msg ) {
+	return replace( msg, /^invalid argument/, 'invalid operation' );
 }
 
 
 // EXPORTS //
 
-module.exports = setValue;
+module.exports = errMessage;
