@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916)
 -   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - add `filterMap` to namespace
 -   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - add `reject` to namespace
 -   [`831de1b`](https://github.com/stdlib-js/stdlib/commit/831de1b4ba21cda245c073a5412bf1a2e9d7598d) - add `map` and `filter` to namespace
@@ -363,6 +364,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - **feat:** update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`ef82c21`](https://github.com/stdlib-js/stdlib/commit/ef82c2133cc2cb955eb1fc73da0209eda97de59a) - **docs:** update namespace table of contents [(#3918)](https://github.com/stdlib-js/stdlib/pull/3918) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - **feat:** add `fill`, `map`, and `toReversed` to namespace _(by Athan Reines)_
 -   [`a0d6619`](https://github.com/stdlib-js/stdlib/commit/a0d66193409576538d0f16aa89cbaeedec7898be) - **feat:** add `minSignedIntegerDataType` and `minUnsignedIntegerDataType` to namespace _(by Athan Reines)_

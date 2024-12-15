@@ -35,12 +35,15 @@ import dtypes = require( './../../dtypes' );
 import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
 import FancyArray = require( './../../fancy' );
+import filter = require( './../../filter' );
+import filterMap = require( './../../filter-map' );
 import flag = require( './../../flag' );
 import flags = require( './../../flags' );
 import scalar2ndarray = require( './../../from-scalar' );
 import ind2sub = require( './../../ind2sub' );
 import indexModes = require( './../../index-modes' );
 import iter = require( './../../iter' );
+import map = require( './../../map' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
 import maybeBroadcastArrays = require( './../../maybe-broadcast-arrays' );
 import minDataType = require( './../../min-dtype' );
@@ -55,6 +58,7 @@ import order = require( './../../order' );
 import orders = require( './../../orders' );
 import outputDataTypePolicies = require( './../../output-dtype-policies' );
 import promotionRules = require( './../../promotion-rules' );
+import reject = require( './../../reject' );
 import safeCasts = require( './../../safe-casts' );
 import sameKindCasts = require( './../../same-kind-casts' );
 import shape = require( './../../shape' );
@@ -564,6 +568,83 @@ interface Namespace {
 	FancyArray: typeof FancyArray;
 
 	/**
+	* Returns a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.
+	*
+	* @param x - input ndarray
+	* @param options - options
+	* @param options.dtype - output ndarray data type
+	* @param options.order - iteration order
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var shape = [ 2, 3 ];
+	* var strides = [ 6, 1 ];
+	* var offset = 1;
+	*
+	* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* var opts = {
+	*     'dtype': 'generic'
+	* };
+	* var y = ns.filter( x, opts, isEven );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+	*/
+	filter: typeof filter;
+
+	/**
+	* Filters and maps elements in an input ndarray to elements in a new output ndarray according to a callback function.
+	*
+	* @param x - input ndarray
+	* @param options - options
+	* @param options.dtype - output ndarray data type
+	* @param options.order - iteration order
+	* @param fcn - callback function
+	* @param thisArg - callback function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* function scale( z ) {
+	*     if ( z > 5.0 ) {
+	*         return z * 10.0;
+	*     }
+	* }
+	*
+	* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var shape = [ 2, 3 ];
+	* var strides = [ 6, 1 ];
+	* var offset = 1;
+	*
+	* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* var opts = {
+	*     'dtype': 'generic'
+	* };
+	* var y = ns.filterMap( x, opts, scale );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ 80.0, 90.0, 100.0 ]
+	*/
+	filterMap: typeof filterMap;
+
+	/**
 	* Returns a specified flag for a provided ndarray.
 	*
 	* @param x - input ndarray
@@ -692,6 +773,44 @@ interface Namespace {
 	* Multidimensional array iterators.
 	*/
 	iter: typeof iter;
+
+	/**
+	* Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
+	*
+	* @param x - input ndarray
+	* @param options - options
+	* @param options.dtype - output ndarray data type
+	* @param fcn - callback function
+	* @param thisArg - callback function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* function scale( z ) {
+	*     return z * 10.0;
+	* }
+	*
+	* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var shape = [ 2, 3 ];
+	* var strides = [ 6, 1 ];
+	* var offset = 1;
+	*
+	* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* var opts = {
+	*     'dtype': 'generic'
+	* };
+	* var y = ns.map( x, opts, scale );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
+	*/
+	map: typeof map;
 
 	/**
 	* Broadcasts an ndarray to a specified shape if and only if the specified shape differs from the provided ndarray's shape.
@@ -1018,6 +1137,42 @@ interface Namespace {
 	* // returns {...}
 	*/
 	promotionRules: typeof promotionRules;
+
+	/**
+	* Returns a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.
+	*
+	* @param x - input ndarray
+	* @param options - options
+	* @param options.dtype - output ndarray data type
+	* @param options.order - iteration order
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var isOdd = require( '@stdlib/assert/is-odd' ).isPrimitive;
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	* var shape = [ 2, 3 ];
+	* var strides = [ 6, 1 ];
+	* var offset = 1;
+	*
+	* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* var opts = {
+	*     'dtype': 'generic'
+	* };
+	* var y = ns.reject( x, opts, isOdd );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ 2.0, 4.0, 8.0, 10.0 ]
+	*/
+	reject: typeof reject;
 
 	/**
 	* Returns a list of ndarray data types to which a provided ndarray data type can be safely cast.
