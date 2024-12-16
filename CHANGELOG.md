@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-15)
+## Unreleased (2024-12-16)
 
 <section class="packages">
 
@@ -386,6 +386,8 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`58f02bf`](https://github.com/stdlib-js/stdlib/commit/58f02bf605d6879cd80152f11f913451df2ad494) - **docs:** fix comment _(by Athan Reines)_
+-   [`baffefb`](https://github.com/stdlib-js/stdlib/commit/baffefb25177147fa3bafa5c1d0562a7528d5054) - **docs:** fix comment _(by Athan Reines)_
 -   [`0546f39`](https://github.com/stdlib-js/stdlib/commit/0546f395abecb502fd703aa364e758bd733cd18e) - **docs:** disable lint rule _(by Athan Reines)_
 -   [`5079aa3`](https://github.com/stdlib-js/stdlib/commit/5079aa30f3aa11908c78aac6750b4272852dbb4d) - **docs:** disable lint rule _(by Athan Reines)_
 -   [`e81185b`](https://github.com/stdlib-js/stdlib/commit/e81185b4a0fa3537ab4a8a16644b7fa90bb184a3) - **refactor:** rely on `ndarray/to-fancy` for implementation logic _(by Athan Reines)_
