@@ -73,6 +73,7 @@ import stride = require( './../../stride' );
 import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
 import ndarray2array = require( './../../to-array' );
+import ndarray2json = require( './../../to-json' );
 import zeros = require( './../../zeros' );
 import zerosLike = require( './../../zeros-like' );
 
@@ -1598,6 +1599,27 @@ interface Namespace {
 	* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 	*/
 	ndarray2array: typeof ndarray2array;
+
+	/**
+	* Serializes an ndarray as a JSON object.
+	*
+	* ## Notes
+	*
+	* -   The function does **not** serialize data outside of the buffer region defined by the ndarray view.
+	*
+	* @param x - input ndarray
+	* @returns JSON object
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>
+	*
+	* var o = ns.ndarray2json( x );
+	* // returns {...}
+	*/
+	ndarray2json: typeof ndarray2json;
 
 	/**
 	* Creates a zero-filled array having a specified shape and data type.

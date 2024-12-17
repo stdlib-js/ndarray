@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`323e4e5`](https://github.com/stdlib-js/stdlib/commit/323e4e5e0f1af8130e8a6462abf619999c955f88) - update namespace TypeScript declarations [(#3977)](https://github.com/stdlib-js/stdlib/pull/3977)
 -   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - add `ndarray2json` to namespace
 -   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916)
 -   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - add `filterMap` to namespace
@@ -432,6 +433,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`323e4e5`](https://github.com/stdlib-js/stdlib/commit/323e4e5e0f1af8130e8a6462abf619999c955f88) - **feat:** update namespace TypeScript declarations [(#3977)](https://github.com/stdlib-js/stdlib/pull/3977) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`c5a9ae2`](https://github.com/stdlib-js/stdlib/commit/c5a9ae2f9d4076665eba406ab1d420ba9df1fbdc) - **docs:** update namespace table of contents [(#3979)](https://github.com/stdlib-js/stdlib/pull/3979) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - **feat:** add `ndarray2json` to namespace _(by Athan Reines)_
 -   [`ae80da2`](https://github.com/stdlib-js/stdlib/commit/ae80da29fdbfd1be7541df6607715b77b06f1019) - **feat:** add `ndarray/to-json` _(by Athan Reines)_
