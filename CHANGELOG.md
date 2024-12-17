@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-16)
+## Unreleased (2024-12-17)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - add `ndarray2json` to namespace
 -   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916)
 -   [`dbfd8f5`](https://github.com/stdlib-js/stdlib/commit/dbfd8f5c81d11be2142ebfc4f2f0bb0316ba7478) - add `filterMap` to namespace
 -   [`cbc4d3f`](https://github.com/stdlib-js/stdlib/commit/cbc4d3f7514b7213cad4f9d2ca5d916e13eeffa5) - add `reject` to namespace
@@ -58,6 +59,7 @@
 
 ##### Features
 
+-   [`58e795d`](https://github.com/stdlib-js/stdlib/commit/58e795db467b7bd1d3dc6c5847f91a97fed2ccff) - update namespace TypeScript declarations [(#3937)](https://github.com/stdlib-js/stdlib/pull/3937)
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - add `fill`, `map`, and `toReversed` to namespace
 -   [`a0d6619`](https://github.com/stdlib-js/stdlib/commit/a0d66193409576538d0f16aa89cbaeedec7898be) - add `minSignedIntegerDataType` and `minUnsignedIntegerDataType` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
@@ -111,6 +113,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-ctor-unreleased">
+
+#### [@stdlib/ndarray/base/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ctor)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`aea44c9`](https://github.com/stdlib-js/stdlib/commit/aea44c9c8699a4d748c0db70d4a60801bfc03c40) - update loop limit
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -350,6 +374,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-to-json-unreleased">
+
+#### [@stdlib/ndarray/to-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/to-json)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ae80da2`](https://github.com/stdlib-js/stdlib/commit/ae80da29fdbfd1be7541df6607715b77b06f1019) - add `ndarray/to-json`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -386,6 +432,10 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - **feat:** add `ndarray2json` to namespace _(by Athan Reines)_
+-   [`ae80da2`](https://github.com/stdlib-js/stdlib/commit/ae80da29fdbfd1be7541df6607715b77b06f1019) - **feat:** add `ndarray/to-json` _(by Athan Reines)_
+-   [`aea44c9`](https://github.com/stdlib-js/stdlib/commit/aea44c9c8699a4d748c0db70d4a60801bfc03c40) - **fix:** update loop limit _(by Athan Reines)_
+-   [`58e795d`](https://github.com/stdlib-js/stdlib/commit/58e795db467b7bd1d3dc6c5847f91a97fed2ccff) - **feat:** update namespace TypeScript declarations [(#3937)](https://github.com/stdlib-js/stdlib/pull/3937) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`c106b69`](https://github.com/stdlib-js/stdlib/commit/c106b69cc141efc8c32e79d55ad8acf07f3c9c0a) - **docs:** update namespace table of contents [(#3939)](https://github.com/stdlib-js/stdlib/pull/3939) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`58f02bf`](https://github.com/stdlib-js/stdlib/commit/58f02bf605d6879cd80152f11f913451df2ad494) - **docs:** fix comment _(by Athan Reines)_
 -   [`baffefb`](https://github.com/stdlib-js/stdlib/commit/baffefb25177147fa3bafa5c1d0562a7528d5054) - **docs:** fix comment _(by Athan Reines)_
