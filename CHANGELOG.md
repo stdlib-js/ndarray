@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-17)
+## Unreleased (2024-12-18)
 
 <section class="packages">
 
@@ -433,6 +433,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a1b543a`](https://github.com/stdlib-js/stdlib/commit/a1b543a2a1bdf4d1fb9438bd4a13cb971af62063) - **docs:** update related packages sections [(#4009)](https://github.com/stdlib-js/stdlib/pull/4009) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`323e4e5`](https://github.com/stdlib-js/stdlib/commit/323e4e5e0f1af8130e8a6462abf619999c955f88) - **feat:** update namespace TypeScript declarations [(#3977)](https://github.com/stdlib-js/stdlib/pull/3977) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`c5a9ae2`](https://github.com/stdlib-js/stdlib/commit/c5a9ae2f9d4076665eba406ab1d420ba9df1fbdc) - **docs:** update namespace table of contents [(#3979)](https://github.com/stdlib-js/stdlib/pull/3979) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - **feat:** add `ndarray2json` to namespace _(by Athan Reines)_
