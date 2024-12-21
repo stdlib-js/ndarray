@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-20)
+## Unreleased (2024-12-21)
 
 <section class="packages">
 
@@ -433,6 +433,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`8684eb4`](https://github.com/stdlib-js/stdlib/commit/8684eb429498a239bff9bdd72f443dd1cd981552) - **docs:** update related packages sections [(#4114)](https://github.com/stdlib-js/stdlib/pull/4114) _(by stdlib-bot, Athan Reines)_
 -   [`c322b66`](https://github.com/stdlib-js/stdlib/commit/c322b6647751b73a9d0fe12bf5665e8e2243d4ca) - **docs:** update related packages sections [(#4070)](https://github.com/stdlib-js/stdlib/pull/4070) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`a1b543a`](https://github.com/stdlib-js/stdlib/commit/a1b543a2a1bdf4d1fb9438bd4a13cb971af62063) - **docs:** update related packages sections [(#4009)](https://github.com/stdlib-js/stdlib/pull/4009) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`323e4e5`](https://github.com/stdlib-js/stdlib/commit/323e4e5e0f1af8130e8a6462abf619999c955f88) - **feat:** update namespace TypeScript declarations [(#3977)](https://github.com/stdlib-js/stdlib/pull/3977) _(by stdlib-bot, Philipp Burckhardt)_
