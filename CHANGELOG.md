@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-21)
+## Unreleased (2024-12-22)
 
 <section class="packages">
 
@@ -253,6 +253,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-for-each-unreleased">
+
+#### [@stdlib/ndarray/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/for-each)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ac735b1`](https://github.com/stdlib-js/stdlib/commit/ac735b1ee32aa14c3760551c3f9a4acf3843fd76) - add `ndarray/for-each` [(#3926)](https://github.com/stdlib-js/stdlib/pull/3926)
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-iter-unreleased">
 
 #### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
@@ -433,6 +455,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ac735b1`](https://github.com/stdlib-js/stdlib/commit/ac735b1ee32aa14c3760551c3f9a4acf3843fd76) - **feat:** add `ndarray/for-each` [(#3926)](https://github.com/stdlib-js/stdlib/pull/3926) _(by Muhammad Haris, Athan Reines)_
 -   [`8684eb4`](https://github.com/stdlib-js/stdlib/commit/8684eb429498a239bff9bdd72f443dd1cd981552) - **docs:** update related packages sections [(#4114)](https://github.com/stdlib-js/stdlib/pull/4114) _(by stdlib-bot, Athan Reines)_
 -   [`c322b66`](https://github.com/stdlib-js/stdlib/commit/c322b6647751b73a9d0fe12bf5665e8e2243d4ca) - **docs:** update related packages sections [(#4070)](https://github.com/stdlib-js/stdlib/pull/4070) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`a1b543a`](https://github.com/stdlib-js/stdlib/commit/a1b543a2a1bdf4d1fb9438bd4a13cb971af62063) - **docs:** update related packages sections [(#4009)](https://github.com/stdlib-js/stdlib/pull/4009) _(by stdlib-bot, Philipp Burckhardt)_
