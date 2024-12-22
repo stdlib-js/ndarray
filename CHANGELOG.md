@@ -455,6 +455,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`acb12c7`](https://github.com/stdlib-js/stdlib/commit/acb12c77fd8eca09956f62e052f79ce1a0d9c1d0) - **refactor:** improve type specificity for array provided to callback _(by Athan Reines)_
 -   [`5b71452`](https://github.com/stdlib-js/stdlib/commit/5b71452bd40811341a2e4eaab018c3cc17c5feac) - **docs:** update related packages sections [(#4135)](https://github.com/stdlib-js/stdlib/pull/4135) _(by stdlib-bot, Athan Reines)_
 -   [`ac735b1`](https://github.com/stdlib-js/stdlib/commit/ac735b1ee32aa14c3760551c3f9a4acf3843fd76) - **feat:** add `ndarray/for-each` [(#3926)](https://github.com/stdlib-js/stdlib/pull/3926) _(by Muhammad Haris, Athan Reines)_
 -   [`8684eb4`](https://github.com/stdlib-js/stdlib/commit/8684eb429498a239bff9bdd72f443dd1cd981552) - **docs:** update related packages sections [(#4114)](https://github.com/stdlib-js/stdlib/pull/4114) _(by stdlib-bot, Athan Reines)_
