@@ -20,6 +20,9 @@
 
 ##### Features
 
+-   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - add `ndarray2fancy` to namespace
+-   [`3f35e51`](https://github.com/stdlib-js/stdlib/commit/3f35e518a65e0cce1a8bcaf0ef6e4d45c08afc59) - add `forEach` to namespace
+-   [`413827b`](https://github.com/stdlib-js/stdlib/commit/413827b397945f584daa5b2b2380e36d2d833ac3) - add `ndindex` to namespace
 -   [`323e4e5`](https://github.com/stdlib-js/stdlib/commit/323e4e5e0f1af8130e8a6462abf619999c955f88) - update namespace TypeScript declarations [(#3977)](https://github.com/stdlib-js/stdlib/pull/3977)
 -   [`9d912a3`](https://github.com/stdlib-js/stdlib/commit/9d912a3e992cb9c5fe272a3aecc55293efbc0647) - add `ndarray2json` to namespace
 -   [`1a202e3`](https://github.com/stdlib-js/stdlib/commit/1a202e3605b10cd01bf9654f8356c72c5c8a8186) - update namespace TypeScript declarations [(#3916)](https://github.com/stdlib-js/stdlib/pull/3916)
@@ -298,6 +301,29 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-index-unreleased">
+
+#### [@stdlib/ndarray/index](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/index)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`4d1bbcd`](https://github.com/stdlib-js/stdlib/commit/4d1bbcd8bb4bc13bb77f7fcda7d7701ebadf765d) - add types for static methods
+-   [`0c85b4d`](https://github.com/stdlib-js/stdlib/commit/0c85b4d64aed91d8119330dd7aaa27fbc3629413) - add `ndarray/index`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-iter-unreleased">
 
 #### [@stdlib/ndarray/iter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/iter)
@@ -478,6 +504,11 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - **feat:** add `ndarray2fancy` to namespace _(by Athan Reines)_
+-   [`3f35e51`](https://github.com/stdlib-js/stdlib/commit/3f35e518a65e0cce1a8bcaf0ef6e4d45c08afc59) - **feat:** add `forEach` to namespace _(by Athan Reines)_
+-   [`413827b`](https://github.com/stdlib-js/stdlib/commit/413827b397945f584daa5b2b2380e36d2d833ac3) - **feat:** add `ndindex` to namespace _(by Athan Reines)_
+-   [`4d1bbcd`](https://github.com/stdlib-js/stdlib/commit/4d1bbcd8bb4bc13bb77f7fcda7d7701ebadf765d) - **feat:** add types for static methods _(by Athan Reines)_
+-   [`0c85b4d`](https://github.com/stdlib-js/stdlib/commit/0c85b4d64aed91d8119330dd7aaa27fbc3629413) - **feat:** add `ndarray/index` _(by Athan Reines)_
 -   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - **fix:** add missing boolean array support _(by Athan Reines)_
 -   [`be3e0b9`](https://github.com/stdlib-js/stdlib/commit/be3e0b984eb981caa758172dc7179cbd6a118a2e) - **fix:** treat generic accessor arrays similar to built-in generic arrays _(by Athan Reines)_
 -   [`8f2808d`](https://github.com/stdlib-js/stdlib/commit/8f2808dec8c8a6508841e86453fba823823efc6c) - **docs:** update related packages sections [(#4302)](https://github.com/stdlib-js/stdlib/pull/4302) _(by stdlib-bot)_
