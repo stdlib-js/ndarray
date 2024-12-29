@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-28)
+## Unreleased (2024-12-29)
 
 <section class="packages">
 
@@ -43,6 +43,28 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-array-unreleased">
+
+#### [@stdlib/ndarray/array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/array)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`be3e0b9`](https://github.com/stdlib-js/stdlib/commit/be3e0b984eb981caa758172dc7179cbd6a118a2e) - treat generic accessor arrays similar to built-in generic arrays
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -455,6 +477,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`be3e0b9`](https://github.com/stdlib-js/stdlib/commit/be3e0b984eb981caa758172dc7179cbd6a118a2e) - **fix:** treat generic accessor arrays similar to built-in generic arrays _(by Athan Reines)_
 -   [`8f2808d`](https://github.com/stdlib-js/stdlib/commit/8f2808dec8c8a6508841e86453fba823823efc6c) - **docs:** update related packages sections [(#4302)](https://github.com/stdlib-js/stdlib/pull/4302) _(by stdlib-bot)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`acb12c7`](https://github.com/stdlib-js/stdlib/commit/acb12c77fd8eca09956f62e052f79ce1a0d9c1d0) - **refactor:** improve type specificity for array provided to callback _(by Athan Reines)_
