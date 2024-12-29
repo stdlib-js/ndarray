@@ -153,6 +153,7 @@
 
 ##### Bug Fixes
 
+-   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - add missing boolean array support
 -   [`aea44c9`](https://github.com/stdlib-js/stdlib/commit/aea44c9c8699a4d748c0db70d4a60801bfc03c40) - update loop limit
 
 </section>
@@ -477,6 +478,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - **fix:** add missing boolean array support _(by Athan Reines)_
 -   [`be3e0b9`](https://github.com/stdlib-js/stdlib/commit/be3e0b984eb981caa758172dc7179cbd6a118a2e) - **fix:** treat generic accessor arrays similar to built-in generic arrays _(by Athan Reines)_
 -   [`8f2808d`](https://github.com/stdlib-js/stdlib/commit/8f2808dec8c8a6508841e86453fba823823efc6c) - **docs:** update related packages sections [(#4302)](https://github.com/stdlib-js/stdlib/pull/4302) _(by stdlib-bot)_
 -   [`4a70790`](https://github.com/stdlib-js/stdlib/commit/4a707903dfef7c2b56216000165706497d19a251) - **style:** add missing spaces _(by Philipp Burckhardt)_
