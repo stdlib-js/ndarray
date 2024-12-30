@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -126,9 +120,11 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`filter( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/filter]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`flag( x, name )`][@stdlib/ndarray/flag]</span><span class="delimiter">: </span><span class="description">return a specified flag for a provided ndarray.</span>
 -   <span class="signature">[`flags( x )`][@stdlib/ndarray/flags]</span><span class="delimiter">: </span><span class="description">return the flags of a provided ndarray.</span>
+-   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`ind2sub( shape, idx[, options] )`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
 -   <span class="signature">[`indexModes()`][@stdlib/ndarray/index-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray index modes.</span>
+-   <span class="signature">[`ndindex( x[, options] )`][@stdlib/ndarray/index]</span><span class="delimiter">: </span><span class="description">ndarray index constructor.</span>
 -   <span class="signature">[`map( x[, options], fcn[, thisArg] )`][@stdlib/ndarray/map]</span><span class="delimiter">: </span><span class="description">apply a callback function to elements in an input ndarray and assign results to elements in a new output ndarray.</span>
 -   <span class="signature">[`maybeBroadcastArray( x, shape )`][@stdlib/ndarray/maybe-broadcast-array]</span><span class="delimiter">: </span><span class="description">broadcast an ndarray to a specified shape if and only if the specified shape differs from the provided ndarray's shape.</span>
 -   <span class="signature">[`maybeBroadcastArrays( arrays )`][@stdlib/ndarray/maybe-broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
@@ -159,6 +155,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`strides( x )`][@stdlib/ndarray/strides]</span><span class="delimiter">: </span><span class="description">return the strides of a provided ndarray.</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
+-   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 -   <span class="signature">[`zerosLike( x[, options] )`][@stdlib/ndarray/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`zeros( shape[, options] )`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
@@ -179,21 +176,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -314,11 +301,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/flags]: https://github.com/stdlib-js/ndarray/tree/main/flags
 
+[@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
+
 [@stdlib/ndarray/from-scalar]: https://github.com/stdlib-js/ndarray/tree/main/from-scalar
 
 [@stdlib/ndarray/ind2sub]: https://github.com/stdlib-js/ndarray/tree/main/ind2sub
 
 [@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray/tree/main/index-modes
+
+[@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray/tree/main/index
 
 [@stdlib/ndarray/map]: https://github.com/stdlib-js/ndarray/tree/main/map
 
@@ -379,6 +370,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray/tree/main/sub2ind
 
 [@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
+
+[@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray/tree/main/to-fancy
 
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
 
