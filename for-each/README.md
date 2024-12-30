@@ -147,6 +147,12 @@ forEach( x, naryFunction( log, 2 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/ndarray/map`][@stdlib/ndarray/map]</span><span class="delimiter">: </span><span class="description">apply a callback to elements in an input ndarray and assign results to elements in a new output ndarray.</span>
+
 </section>
 
 <!-- /.related -->
@@ -156,6 +162,8 @@ forEach( x, naryFunction( log, 2 ) );
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 <!-- <related-links> -->
+
+[@stdlib/ndarray/map]: https://github.com/stdlib-js/ndarray/tree/main/map
 
 <!-- </related-links> -->
 
