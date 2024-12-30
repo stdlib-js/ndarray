@@ -39,8 +39,10 @@ import filter = require( './../../filter' );
 import filterMap = require( './../../filter-map' );
 import flag = require( './../../flag' );
 import flags = require( './../../flags' );
+import forEach = require( './../../for-each' );
 import scalar2ndarray = require( './../../from-scalar' );
 import ind2sub = require( './../../ind2sub' );
+import ndindex = require( './../../index' );
 import indexModes = require( './../../index-modes' );
 import iter = require( './../../iter' );
 import map = require( './../../map' );
@@ -675,6 +677,31 @@ interface Namespace {
 	flags: typeof flags;
 
 	/**
+	* Invokes a callback function once for each ndarray element.
+	*
+	* @param x - input ndarray
+	* @param fcn - callback function
+	* @param thisArg - callback function execution context
+	*
+	* @example
+	* var ndarray = require( './../../ctor' );
+	* var naryFunction = require( '@stdlib/utils/nary-function' );
+	* var log = require( '@stdlib/console/log' );
+	*
+	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ];
+	* var shape = [ 2, 3 ];
+	* var strides = [ 3, 1 ];
+	* var offset = 0;
+	*
+	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* // Apply the callback function:
+	* ns.forEach( x, naryFunction( log, 1 ) );
+	*/
+	forEach: typeof forEach;
+
+	/**
 	* Returns a zero-dimensional ndarray containing a provided scalar value.
 	*
 	* ## Notes
@@ -745,6 +772,44 @@ interface Namespace {
 	* // returns true
 	*/
 	ind2sub: typeof ind2sub;
+
+	/**
+	* ndarray index constructor.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.persist - boolean indicating whether to continue persisting an index object after first usage
+	* @param options.kind - specifies whether a provided ndarray is a specialized kind of integer input ndarray
+	* @returns ndindex instance
+	*
+	* @example
+	* var Uint8Array = require( '@stdlib/array/uint8' );
+	* var array = require( './../../array' );
+	*
+	* var x = array( new Uint8Array( [ 1, 0, 1, 0 ] ) );
+	*
+	* var idx = new ns.ndindex( x );
+	* // returns <ns.ndindex>
+	*
+	* @example
+	* var Int32Array = require( '@stdlib/array/int32' );
+	* var array = require( './../../array' );
+	*
+	* var x = array( new Int32Array( [ 1, 0, 1, 0 ] ) );
+	*
+	* var idx = ns.ndindex.cartesianIndex( x );
+	* // returns <ns.ndindex>
+	*
+	* @example
+	* var Int32Array = require( '@stdlib/array/int32' );
+	* var array = require( './../../array' );
+	*
+	* var x = array( new Int32Array( [ 1, 0, 1, 0 ] ) );
+	*
+	* var idx = ns.ndindex.linearIndex( x );
+	* // returns <ns.ndindex>
+	*/
+	ndindex: typeof ndindex;
 
 	/**
 	* Returns a list of ndarray index modes.

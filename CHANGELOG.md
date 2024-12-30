@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-29)
+## Unreleased (2024-12-30)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`25d8240`](https://github.com/stdlib-js/stdlib/commit/25d8240f51b27bd0ee85ca3ef70c89fd3778b902) - update namespace TypeScript declarations [(#4363)](https://github.com/stdlib-js/stdlib/pull/4363)
 -   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - add `ndarray2fancy` to namespace
 -   [`3f35e51`](https://github.com/stdlib-js/stdlib/commit/3f35e518a65e0cce1a8bcaf0ef6e4d45c08afc59) - add `forEach` to namespace
 -   [`413827b`](https://github.com/stdlib-js/stdlib/commit/413827b397945f584daa5b2b2380e36d2d833ac3) - add `ndindex` to namespace
@@ -504,6 +505,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`25d8240`](https://github.com/stdlib-js/stdlib/commit/25d8240f51b27bd0ee85ca3ef70c89fd3778b902) - **feat:** update namespace TypeScript declarations [(#4363)](https://github.com/stdlib-js/stdlib/pull/4363) _(by stdlib-bot)_
 -   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - **feat:** add `ndarray2fancy` to namespace _(by Athan Reines)_
 -   [`3f35e51`](https://github.com/stdlib-js/stdlib/commit/3f35e518a65e0cce1a8bcaf0ef6e4d45c08afc59) - **feat:** add `forEach` to namespace _(by Athan Reines)_
 -   [`413827b`](https://github.com/stdlib-js/stdlib/commit/413827b397945f584daa5b2b2380e36d2d833ac3) - **feat:** add `ndindex` to namespace _(by Athan Reines)_
