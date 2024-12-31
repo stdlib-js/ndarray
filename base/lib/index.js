@@ -374,6 +374,15 @@ setReadOnly( ns, 'forEach', require( './../../base/for-each' ) );
 setReadOnly( ns, 'scalar2ndarray', require( './../../base/from-scalar' ) );
 
 /**
+* @name scalar2ndarrayLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/from-scalar-like}
+*/
+setReadOnly( ns, 'scalar2ndarrayLike', require( './../../base/from-scalar-like' ) );
+
+/**
 * @name ind
 * @memberof ns
 * @readonly

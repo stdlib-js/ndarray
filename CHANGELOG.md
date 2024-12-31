@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-30)
+## Unreleased (2024-12-31)
 
 <section class="packages">
 
@@ -86,6 +86,7 @@
 
 ##### Features
 
+-   [`1ddeba9`](https://github.com/stdlib-js/stdlib/commit/1ddeba98295bb53fb8098d1016f0de4b7f544e96) - add `scalar2ndarrayLike` to namespace
 -   [`58e795d`](https://github.com/stdlib-js/stdlib/commit/58e795db467b7bd1d3dc6c5847f91a97fed2ccff) - update namespace TypeScript declarations [(#3937)](https://github.com/stdlib-js/stdlib/pull/3937)
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - add `fill`, `map`, and `toReversed` to namespace
 -   [`a0d6619`](https://github.com/stdlib-js/stdlib/commit/a0d66193409576538d0f16aa89cbaeedec7898be) - add `minSignedIntegerDataType` and `minUnsignedIntegerDataType` to namespace
@@ -163,6 +164,28 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-from-scalar-like-unreleased">
+
+#### [@stdlib/ndarray/base/from-scalar-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/from-scalar-like)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b2dcaa0`](https://github.com/stdlib-js/stdlib/commit/b2dcaa0d97eeb11585ab4cae5b7c319308e6b3c2) - add `ndarray/base/from-scalar-like`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -435,6 +458,7 @@
 
 ##### Features
 
+-   [`259b682`](https://github.com/stdlib-js/stdlib/commit/259b682b2fb67d03e2987ca02b57d0cbc631ae8e) - add support for specifying an array index cache and add support for linear indexing
 -   [`fb1ca76`](https://github.com/stdlib-js/stdlib/commit/fb1ca76ccf2f324c45b24411aa3fd1088a7a7b6e) - add `ndarray/to-fancy`
 
 </section>
@@ -505,9 +529,13 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`259b682`](https://github.com/stdlib-js/stdlib/commit/259b682b2fb67d03e2987ca02b57d0cbc631ae8e) - **feat:** add support for specifying an array index cache and add support for linear indexing _(by Athan Reines)_
+-   [`1ddeba9`](https://github.com/stdlib-js/stdlib/commit/1ddeba98295bb53fb8098d1016f0de4b7f544e96) - **feat:** add `scalar2ndarrayLike` to namespace _(by Athan Reines)_
+-   [`b2dcaa0`](https://github.com/stdlib-js/stdlib/commit/b2dcaa0d97eeb11585ab4cae5b7c319308e6b3c2) - **feat:** add `ndarray/base/from-scalar-like` _(by Athan Reines)_
 -   [`4301694`](https://github.com/stdlib-js/stdlib/commit/43016945387e02d6396d33cb7134c62c977b7fd8) - **docs:** update related packages sections [(#4362)](https://github.com/stdlib-js/stdlib/pull/4362) _(by stdlib-bot)_
 -   [`cdf5e79`](https://github.com/stdlib-js/stdlib/commit/cdf5e79d125ce5da53cfa18df6ffbe2df5fe4d9f) - **docs:** update namespace table of contents [(#4365)](https://github.com/stdlib-js/stdlib/pull/4365) _(by stdlib-bot)_
 -   [`25d8240`](https://github.com/stdlib-js/stdlib/commit/25d8240f51b27bd0ee85ca3ef70c89fd3778b902) - **feat:** update namespace TypeScript declarations [(#4363)](https://github.com/stdlib-js/stdlib/pull/4363) _(by stdlib-bot)_
+-   [`7dc5c14`](https://github.com/stdlib-js/stdlib/commit/7dc5c14b995c7c4bd286087d04a20497057c0e71) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - **feat:** add `ndarray2fancy` to namespace _(by Athan Reines)_
 -   [`3f35e51`](https://github.com/stdlib-js/stdlib/commit/3f35e518a65e0cce1a8bcaf0ef6e4d45c08afc59) - **feat:** add `forEach` to namespace _(by Athan Reines)_
 -   [`413827b`](https://github.com/stdlib-js/stdlib/commit/413827b397945f584daa5b2b2380e36d2d833ac3) - **feat:** add `ndindex` to namespace _(by Athan Reines)_

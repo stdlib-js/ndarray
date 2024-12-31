@@ -18,6 +18,11 @@
 
 'use strict';
 
+// MODULES //
+
+var ndindex = require( './../../index' );
+
+
 // MAIN //
 
 /**
@@ -32,7 +37,7 @@
 */
 function defaults() {
 	return {
-		'cache': null, // FIXME: default index cache
+		'cache': ndindex,
 		'strict': false
 	};
 }
