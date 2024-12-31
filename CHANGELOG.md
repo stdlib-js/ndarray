@@ -529,6 +529,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`e4a53d5`](https://github.com/stdlib-js/stdlib/commit/e4a53d5816f5918f7c7fc5135dce21d676835eca) - **docs:** update related packages sections [(#4399)](https://github.com/stdlib-js/stdlib/pull/4399) _(by stdlib-bot)_
 -   [`259b682`](https://github.com/stdlib-js/stdlib/commit/259b682b2fb67d03e2987ca02b57d0cbc631ae8e) - **feat:** add support for specifying an array index cache and add support for linear indexing _(by Athan Reines)_
 -   [`1ddeba9`](https://github.com/stdlib-js/stdlib/commit/1ddeba98295bb53fb8098d1016f0de4b7f544e96) - **feat:** add `scalar2ndarrayLike` to namespace _(by Athan Reines)_
 -   [`b2dcaa0`](https://github.com/stdlib-js/stdlib/commit/b2dcaa0d97eeb11585ab4cae5b7c319308e6b3c2) - **feat:** add `ndarray/base/from-scalar-like` _(by Athan Reines)_
