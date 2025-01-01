@@ -57,7 +57,6 @@ import fliplr = require( './../../../base/fliplr' );
 import flipud = require( './../../../base/flipud' );
 import forEach = require( './../../../base/for-each' );
 import scalar2ndarray = require( './../../../base/from-scalar' );
-import scalar2ndarrayLike = require( './../../../base/from-scalar-like' );
 import ind = require( './../../../base/ind' );
 import ind2sub = require( './../../../base/ind2sub' );
 import iterationOrder = require( './../../../base/iteration-order' );
@@ -1143,33 +1142,6 @@ interface Namespace {
 	* // returns 1.0
 	*/
 	scalar2ndarray: typeof scalar2ndarray;
-
-	/**
-	* Returns a zero-dimensional ndarray containing a provided scalar value and having the same data type as a provided input ndarray.
-	*
-	* @param x - input array
-	* @param value - scalar value
-	* @returns zero-dimensional ndarray
-	*
-	* @example
-	* var zeros = require( './../../../base/zeros' );
-	*
-	* var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
-	* // returns <ndarray>
-	*
-	* var y = ns.scalar2ndarrayLike( x, 1.0 );
-	* // returns <ndarray>
-	*
-	* var sh = y.shape;
-	* // returns []
-	*
-	* var dt = y.dtype;
-	* // returns 'generic'
-	*
-	* var v = y.get();
-	* // returns 1.0
-	*/
-	scalar2ndarrayLike: typeof scalar2ndarrayLike;
 
 	/**
 	* Returns an index given an index mode.

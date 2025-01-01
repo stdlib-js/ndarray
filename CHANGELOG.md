@@ -86,7 +86,6 @@
 
 ##### Features
 
--   [`33b46cb`](https://github.com/stdlib-js/stdlib/commit/33b46cbab14e25a72a7464d6d923f09a56ee0d44) - update namespace TypeScript declarations [(#4426)](https://github.com/stdlib-js/stdlib/pull/4426)
 -   [`1ddeba9`](https://github.com/stdlib-js/stdlib/commit/1ddeba98295bb53fb8098d1016f0de4b7f544e96) - add `scalar2ndarrayLike` to namespace
 -   [`58e795d`](https://github.com/stdlib-js/stdlib/commit/58e795db467b7bd1d3dc6c5847f91a97fed2ccff) - update namespace TypeScript declarations [(#3937)](https://github.com/stdlib-js/stdlib/pull/3937)
 -   [`14427c7`](https://github.com/stdlib-js/stdlib/commit/14427c79bc62f82b16cbadc9d34749901e48d105) - add `fill`, `map`, and `toReversed` to namespace
@@ -530,8 +529,6 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`8a15baa`](https://github.com/stdlib-js/stdlib/commit/8a15baa639e8c4f45479821cf7331715e0546e86) - **docs:** update related packages sections [(#4425)](https://github.com/stdlib-js/stdlib/pull/4425) _(by stdlib-bot)_
--   [`33b46cb`](https://github.com/stdlib-js/stdlib/commit/33b46cbab14e25a72a7464d6d923f09a56ee0d44) - **feat:** update namespace TypeScript declarations [(#4426)](https://github.com/stdlib-js/stdlib/pull/4426) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`edae311`](https://github.com/stdlib-js/stdlib/commit/edae3110b4b7cc1d675d44e211ffffcff77d6153) - **docs:** update namespace table of contents [(#4428)](https://github.com/stdlib-js/stdlib/pull/4428) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`e4a53d5`](https://github.com/stdlib-js/stdlib/commit/e4a53d5816f5918f7c7fc5135dce21d676835eca) - **docs:** update related packages sections [(#4399)](https://github.com/stdlib-js/stdlib/pull/4399) _(by stdlib-bot)_
 -   [`259b682`](https://github.com/stdlib-js/stdlib/commit/259b682b2fb67d03e2987ca02b57d0cbc631ae8e) - **feat:** add support for specifying an array index cache and add support for linear indexing _(by Athan Reines)_
