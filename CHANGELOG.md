@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-01)
+## Unreleased (2025-01-02)
 
 <section class="packages">
 
@@ -530,6 +530,13 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`84a3698`](https://github.com/stdlib-js/stdlib/commit/84a36981e85104c9ee4204a87d3d7b14f4141396) - **docs:** fix grammar _(by Athan Reines)_
+-   [`2764a32`](https://github.com/stdlib-js/stdlib/commit/2764a32b5942d2aff2d0fe8cfcb2cd6b9c184633) - **docs:** fix grammar _(by Athan Reines)_
+-   [`5e977ba`](https://github.com/stdlib-js/stdlib/commit/5e977ba129f9aa3e1d88ccba7db34a38f355f113) - **docs:** fix grammar and type annotation _(by Athan Reines)_
+-   [`f8777ec`](https://github.com/stdlib-js/stdlib/commit/f8777ec116247e8481a20c0798dccfa90baa6171) - **docs:** fix grammar _(by Athan Reines)_
+-   [`2bde288`](https://github.com/stdlib-js/stdlib/commit/2bde288643491a4c317a02fe6b835c81e05e2235) - **docs:** fix grammar _(by Athan Reines)_
+-   [`4b4fbbe`](https://github.com/stdlib-js/stdlib/commit/4b4fbbe10e081052684191d56965c57cc8f2785b) - **docs:** fix copy and dtype _(by Athan Reines)_
+-   [`8a15baa`](https://github.com/stdlib-js/stdlib/commit/8a15baa639e8c4f45479821cf7331715e0546e86) - **docs:** update related packages sections [(#4425)](https://github.com/stdlib-js/stdlib/pull/4425) _(by stdlib-bot)_
 -   [`33b46cb`](https://github.com/stdlib-js/stdlib/commit/33b46cbab14e25a72a7464d6d923f09a56ee0d44) - **feat:** update namespace TypeScript declarations [(#4426)](https://github.com/stdlib-js/stdlib/pull/4426) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`edae311`](https://github.com/stdlib-js/stdlib/commit/edae3110b4b7cc1d675d44e211ffffcff77d6153) - **docs:** update namespace table of contents [(#4428)](https://github.com/stdlib-js/stdlib/pull/4428) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`e4a53d5`](https://github.com/stdlib-js/stdlib/commit/e4a53d5816f5918f7c7fc5135dce21d676835eca) - **docs:** update related packages sections [(#4399)](https://github.com/stdlib-js/stdlib/pull/4399) _(by stdlib-bot)_
