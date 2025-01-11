@@ -307,6 +307,15 @@ console.log( toArray( y4 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array/to-fancy`][@stdlib/array/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an array to an object supporting fancy indexing.</span>
+-   <span class="package-name">[`@stdlib/ndarray/array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
+-   <span class="package-name">[`@stdlib/ndarray/ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray/fancy`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
+
 </section>
 
 <!-- /.related -->
@@ -330,6 +339,16 @@ console.log( toArray( y4 ) );
 [@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
 
 [@stdlib/slice/seq2multislice]: https://github.com/stdlib-js/slice-seq2multislice
+
+<!-- <related-links> -->
+
+[@stdlib/array/to-fancy]: https://github.com/stdlib-js/array-to-fancy
+
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray/tree/main/array
+
+[@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
+
+<!-- </related-links> -->
 
 </section>
 
