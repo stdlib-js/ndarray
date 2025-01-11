@@ -545,6 +545,15 @@ setReadOnly( ns, 'nonsingletonDimensions', require( './../../base/nonsingleton-d
 setReadOnly( ns, 'normalizeIndex', require( './../../base/normalize-index' ) );
 
 /**
+* @name normalizeIndices
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/normalize-indices}
+*/
+setReadOnly( ns, 'normalizeIndices', require( './../../base/normalize-indices' ) );
+
+/**
 * @name nullary
 * @memberof ns
 * @readonly
@@ -779,6 +788,15 @@ setReadOnly( ns, 'sliceFrom', require( './../../base/slice-from' ) );
 setReadOnly( ns, 'sliceTo', require( './../../base/slice-to' ) );
 
 /**
+* @name spreadDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/spread-dimensions}
+*/
+setReadOnly( ns, 'spreadDimensions', require( './../../base/spread-dimensions' ) );
+
+/**
 * @name stride
 * @memberof ns
 * @readonly
@@ -833,6 +851,15 @@ setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
 
 /**
+* @name toNormalizedIndices
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-normalized-indices}
+*/
+setReadOnly( ns, 'toNormalizedIndices', require( './../../base/to-normalized-indices' ) );
+
+/**
 * @name toReversed
 * @memberof ns
 * @readonly
@@ -840,6 +867,15 @@ setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
 * @see {@link module:@stdlib/ndarray/base/to-reversed}
 */
 setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
+
+/**
+* @name toUniqueNormalizedIndices
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-unique-normalized-indices}
+*/
+setReadOnly( ns, 'toUniqueNormalizedIndices', require( './../../base/to-unique-normalized-indices' ) );
 
 /**
 * @name transpose

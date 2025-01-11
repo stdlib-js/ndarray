@@ -109,6 +109,15 @@ setReadOnly( ns, 'isColumnMajor', require( './../../../base/assert/is-column-maj
 setReadOnly( ns, 'isColumnMajorContiguous', require( './../../../base/assert/is-column-major-contiguous' ) );
 
 /**
+* @name isColumnMajorString
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-column-major-string}
+*/
+setReadOnly( ns, 'isColumnMajorString', require( './../../../base/assert/is-column-major-string' ) );
+
+/**
 * @name isComplexFloatingPointDataType
 * @memberof ns
 * @readonly
@@ -233,6 +242,15 @@ setReadOnly( ns, 'isRowMajor', require( './../../../base/assert/is-row-major' ) 
 * @see {@link module:@stdlib/ndarray/base/assert/is-row-major-contiguous}
 */
 setReadOnly( ns, 'isRowMajorContiguous', require( './../../../base/assert/is-row-major-contiguous' ) );
+
+/**
+* @name isRowMajorString
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-row-major-string}
+*/
+setReadOnly( ns, 'isRowMajorString', require( './../../../base/assert/is-row-major-string' ) );
 
 /**
 * @name isSafeDataTypeCast

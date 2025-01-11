@@ -86,6 +86,10 @@
 
 ##### Features
 
+-   [`741b6f1`](https://github.com/stdlib-js/stdlib/commit/741b6f1df8ce11e77fb22c279cee6bbae3323176) - add `spreadDimensions` to namespace
+-   [`908239e`](https://github.com/stdlib-js/stdlib/commit/908239e7cc6b4b3e260d0cc1f5aebb9af35d83c6) - add `toUniqueNormalizedIndices` to namespace
+-   [`524e854`](https://github.com/stdlib-js/stdlib/commit/524e854202862d5b37d66470d719fac1270e33c1) - add `toNormalizedIndices` to namespace
+-   [`7bb4167`](https://github.com/stdlib-js/stdlib/commit/7bb4167cb5017f6ab6a1f4018bd1e0b28f57eb44) - add `normalizeIndices` to namespace
 -   [`33b46cb`](https://github.com/stdlib-js/stdlib/commit/33b46cbab14e25a72a7464d6d923f09a56ee0d44) - update namespace TypeScript declarations [(#4426)](https://github.com/stdlib-js/stdlib/pull/4426)
 -   [`1ddeba9`](https://github.com/stdlib-js/stdlib/commit/1ddeba98295bb53fb8098d1016f0de4b7f544e96) - add `scalar2ndarrayLike` to namespace
 -   [`58e795d`](https://github.com/stdlib-js/stdlib/commit/58e795db467b7bd1d3dc6c5847f91a97fed2ccff) - update namespace TypeScript declarations [(#3937)](https://github.com/stdlib-js/stdlib/pull/3937)
@@ -125,6 +129,8 @@
 
 ##### Features
 
+-   [`a94dcea`](https://github.com/stdlib-js/stdlib/commit/a94dceaa9469c774ee4622567e4c15a15e215bcf) - add `isColumnMajorString` to namespace
+-   [`5e1be08`](https://github.com/stdlib-js/stdlib/commit/5e1be08ff661fb981dc4a91c2e9d37d7396327f5) - add `isRowMajorString` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 
 </section>
@@ -149,6 +155,50 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-assert-is-column-major-string-unreleased">
+
+#### [@stdlib/ndarray/base/assert/is-column-major-string](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-column-major-string)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`76872c7`](https://github.com/stdlib-js/stdlib/commit/76872c76f1c655afe5e87d9d894be37f6a07c08b) - add `ndarray/base/assert/is-column-major-string`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-row-major-string-unreleased">
+
+#### [@stdlib/ndarray/base/assert/is-row-major-string](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-row-major-string)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8cce31a`](https://github.com/stdlib-js/stdlib/commit/8cce31aadb16c58d167e89b6b9f8483d9314715f) - add `ndarray/base/assert/is-row-major-string`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-ctor-unreleased">
 
 #### [@stdlib/ndarray/base/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ctor)
@@ -161,6 +211,28 @@
 
 -   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - add missing boolean array support
 -   [`aea44c9`](https://github.com/stdlib-js/stdlib/commit/aea44c9c8699a4d748c0db70d4a60801bfc03c40) - update loop limit
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-expand-dimensions-unreleased">
+
+#### [@stdlib/ndarray/base/expand-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/expand-dimensions)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`712a9a8`](https://github.com/stdlib-js/stdlib/commit/712a9a8554f59fdfe520c4e2daafdbfd93637c76) - compute singleton strides as if strides computed apriori
 
 </section>
 
@@ -249,6 +321,158 @@
 ##### Features
 
 -   [`97e8c1a`](https://github.com/stdlib-js/stdlib/commit/97e8c1aff4f7c1a3b0946d15354a926d82e2120a) - add `ndarray/base/min-unsigned-integer-dtype`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-normalize-indices-unreleased">
+
+#### [@stdlib/ndarray/base/normalize-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/normalize-indices)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8615f56`](https://github.com/stdlib-js/stdlib/commit/8615f568459d831a04b78034ec5141567f13d1d9) - add `ndarray/base/normalize-indices`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-spread-dimensions-unreleased">
+
+#### [@stdlib/ndarray/base/spread-dimensions](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/spread-dimensions)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3767255`](https://github.com/stdlib-js/stdlib/commit/3767255c7cfe85f09cea5c007e21297cd628245d) - add `ndarray/base/spread-dimensions`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-to-normalized-indices-unreleased">
+
+#### [@stdlib/ndarray/base/to-normalized-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-normalized-indices)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9f1d586`](https://github.com/stdlib-js/stdlib/commit/9f1d586a2c8d619deb5c6c6334e1c0fadb452075) - add `ndarray/base/to-normalized-indices`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-to-unique-normalized-indices-unreleased">
+
+#### [@stdlib/ndarray/base/to-unique-normalized-indices](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/to-unique-normalized-indices)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`494a92b`](https://github.com/stdlib-js/stdlib/commit/494a92bf8a9fba830cbffcc7017097fae36dd73b) - add `ndarray/base/to-unique-normalized-indices`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-accumulate-unreleased">
+
+#### [@stdlib/ndarray/base/unary-accumulate](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-accumulate)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`cc6f711`](https://github.com/stdlib-js/stdlib/commit/cc6f7116815dd33f196292a66017b832b6ff0e30) - add main entry point
+-   [`c90c354`](https://github.com/stdlib-js/stdlib/commit/c90c354affab090f1c91ce1401dcf3acf8320fbe) - add an n-d accessors accumulator
+-   [`064a8f9`](https://github.com/stdlib-js/stdlib/commit/064a8f9fdcc19b02659a44db6dd05b3d5b32a7b3) - add an n-d accumulator
+-   [`2d93dfb`](https://github.com/stdlib-js/stdlib/commit/2d93dfbfa7953c84fd9b03bda5df082b59b309e3) - add 9d blocked accessors accumulator
+-   [`fdc3131`](https://github.com/stdlib-js/stdlib/commit/fdc3131072c2b6c0804092cb8df9fc2860e01021) - add 9d blocked accumulator
+-   [`ea6b38c`](https://github.com/stdlib-js/stdlib/commit/ea6b38c252925110fa3240f8c9cab2aac7d4d0f4) - add 9d accessors accumulators
+-   [`3c51978`](https://github.com/stdlib-js/stdlib/commit/3c5197834ef9003436d9a6a2e65827649a28e97d) - add 9d accumulator
+-   [`24c8a3a`](https://github.com/stdlib-js/stdlib/commit/24c8a3a234cc9ba047815f21d4c994bf85989494) - add 8d blocked accessors accumulator
+-   [`e320953`](https://github.com/stdlib-js/stdlib/commit/e32095351dc5560b67c30e4d1e00282279a04edf) - add 8d blocked accumulator
+-   [`a995be8`](https://github.com/stdlib-js/stdlib/commit/a995be8e3cb2c9a80442ed24056abee15a21a4f4) - add 8d accessors accumulator
+-   [`0a6350e`](https://github.com/stdlib-js/stdlib/commit/0a6350e19d048ce3df15fcba526ad4572089e97d) - add 8d accumulator
+-   [`fe22938`](https://github.com/stdlib-js/stdlib/commit/fe2293857a27ba412cd1bfc7f757ec8b7ab78643) - add 7d blocked accessors accumulator
+-   [`1617255`](https://github.com/stdlib-js/stdlib/commit/1617255739ae2282d166b237c38b05f38303c9b4) - add 7d blocked accumulator
+-   [`627699c`](https://github.com/stdlib-js/stdlib/commit/627699ceb1abe555d9fa6320373c239750e82a9c) - add 7d accessors accumulator
+-   [`39f87db`](https://github.com/stdlib-js/stdlib/commit/39f87db060078addf749b53326670548e02eb34b) - add 7d accumulator
+-   [`c02cc5e`](https://github.com/stdlib-js/stdlib/commit/c02cc5ec7f4834b968878c80df04e6cd5390bc6c) - add 6d blocked accessors accumulator
+-   [`79a6c7c`](https://github.com/stdlib-js/stdlib/commit/79a6c7cc87aa714c9b9e900d532cc44906088743) - add 6d blocked accumulator
+-   [`70d0d2a`](https://github.com/stdlib-js/stdlib/commit/70d0d2aa36f0a3d430aaaf37e018c3b54fec7bb1) - add 6d accessors accumulator
+-   [`3e0c232`](https://github.com/stdlib-js/stdlib/commit/3e0c2323b5d09296cda154271dc0a775deb4bb61) - add 6d accumulator
+-   [`42e1358`](https://github.com/stdlib-js/stdlib/commit/42e13587ea8c874482ccd9d054914e7853c868e3) - add 5d blocked accessors accumulator
+-   [`828a6a6`](https://github.com/stdlib-js/stdlib/commit/828a6a659015cd0187b8b85a3a83105d2f50807c) - add 5d blocked accumulator
+-   [`298fb43`](https://github.com/stdlib-js/stdlib/commit/298fb438f7996eaef6ffb9069057b524d17c4a23) - add 5d accessors accumulator
+-   [`9678ff8`](https://github.com/stdlib-js/stdlib/commit/9678ff84f0823d1272b893c7c638d6b014b17523) - add 5d accumulator
+-   [`ace6b17`](https://github.com/stdlib-js/stdlib/commit/ace6b177e8e4ba85b47c6c3fae39540b70609e0c) - add 4d blocked accessors accumulator
+-   [`c686569`](https://github.com/stdlib-js/stdlib/commit/c68656944c4ff05c3cdcd6ff8f084354b207d86a) - add 4d blocked accumulator
+-   [`afe0d98`](https://github.com/stdlib-js/stdlib/commit/afe0d98c95b5ed839049014e161f368d81d6852f) - add 4d accessors accumulator
+-   [`714ab64`](https://github.com/stdlib-js/stdlib/commit/714ab64dcbc8911f317ffc4e3b315b1c48192eb6) - add 4d accumulator
+-   [`062be58`](https://github.com/stdlib-js/stdlib/commit/062be5859727da44f5af9d38cde6de39f61b51f7) - add 3d blocked accessors accumulator
+-   [`a78f2b1`](https://github.com/stdlib-js/stdlib/commit/a78f2b162c32840702e0b02e8d730ae1b568ae97) - add 3d blocked accumulator
+-   [`ea33936`](https://github.com/stdlib-js/stdlib/commit/ea339369e379fd22a635e1e11c7e9412a4385528) - add 3d accessors accumulator
+-   [`33036b0`](https://github.com/stdlib-js/stdlib/commit/33036b038cecaa5b98e1b4793d41077cc9168513) - add 3d accumulator
+-   [`45fe885`](https://github.com/stdlib-js/stdlib/commit/45fe885cc5f595cf68804bf605f5dc4fdc5a3580) - add 2d blocked accessors accumulator
+-   [`4c080fd`](https://github.com/stdlib-js/stdlib/commit/4c080fd599fdff49cade83dbd29d6b75f862c7bb) - add 2d blocked accumulator
+-   [`caf7397`](https://github.com/stdlib-js/stdlib/commit/caf7397f94553933295586c183275201e7df96e7) - add 2d accessors accumulator
+-   [`1a5172d`](https://github.com/stdlib-js/stdlib/commit/1a5172d9de881e97d4300b022201a154eb1e0ca0) - add 2d accumulator
+-   [`74d9fef`](https://github.com/stdlib-js/stdlib/commit/74d9fefaff44947b314862a3574857e0cdb7ab03) - add 1d accessors accumulator
+-   [`2d97fb5`](https://github.com/stdlib-js/stdlib/commit/2d97fb548f0d0c7722bc1d4c540b352b203ff236) - add 1d accumulator
+-   [`db61fca`](https://github.com/stdlib-js/stdlib/commit/db61fcae67ae7bb23ac2b9ce0084eb1f67b18cf6) - add 10d blocked accessor accumulator
+-   [`8bc84b3`](https://github.com/stdlib-js/stdlib/commit/8bc84b33f635d90af7c2da209bcf6fb4fce0e15f) - add 10d blocked accumulator
+-   [`b516586`](https://github.com/stdlib-js/stdlib/commit/b51658624b80eb39eddeb5d752b781f77a2c3b5a) - add 10d accessors accumulator
+-   [`f36a0ab`](https://github.com/stdlib-js/stdlib/commit/f36a0ab4aaa1cdf08748fcde1339fe41b335eca2) - add 10d accumulator
+-   [`7601be7`](https://github.com/stdlib-js/stdlib/commit/7601be773588756a38c537b4dbc48f1ae4d2c90a) - add 0d accessor accumulator
+-   [`a049375`](https://github.com/stdlib-js/stdlib/commit/a04937599dfcc1cb4dbd1c3998748f8fd72e7610) - add 0d accumulator
 
 </section>
 
@@ -530,7 +754,81 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`741b6f1`](https://github.com/stdlib-js/stdlib/commit/741b6f1df8ce11e77fb22c279cee6bbae3323176) - **feat:** add `spreadDimensions` to namespace _(by Athan Reines)_
+-   [`3767255`](https://github.com/stdlib-js/stdlib/commit/3767255c7cfe85f09cea5c007e21297cd628245d) - **feat:** add `ndarray/base/spread-dimensions` _(by Athan Reines)_
+-   [`712a9a8`](https://github.com/stdlib-js/stdlib/commit/712a9a8554f59fdfe520c4e2daafdbfd93637c76) - **fix:** compute singleton strides as if strides computed apriori _(by Athan Reines)_
+-   [`c634089`](https://github.com/stdlib-js/stdlib/commit/c634089f1fdf724c589c016b55da015a1d779709) - **refactor:** use ndarray utility to normalize an index _(by Athan Reines)_
 -   [`dbb338e`](https://github.com/stdlib-js/stdlib/commit/dbb338e80336515e9f7ef602188985bbbe9b9010) - **docs:** update related packages sections [(#4690)](https://github.com/stdlib-js/stdlib/pull/4690) _(by stdlib-bot)_
+-   [`a94dcea`](https://github.com/stdlib-js/stdlib/commit/a94dceaa9469c774ee4622567e4c15a15e215bcf) - **feat:** add `isColumnMajorString` to namespace _(by Athan Reines)_
+-   [`76872c7`](https://github.com/stdlib-js/stdlib/commit/76872c76f1c655afe5e87d9d894be37f6a07c08b) - **feat:** add `ndarray/base/assert/is-column-major-string` _(by Athan Reines)_
+-   [`5e1be08`](https://github.com/stdlib-js/stdlib/commit/5e1be08ff661fb981dc4a91c2e9d37d7396327f5) - **feat:** add `isRowMajorString` to namespace _(by Athan Reines)_
+-   [`8cce31a`](https://github.com/stdlib-js/stdlib/commit/8cce31aadb16c58d167e89b6b9f8483d9314715f) - **feat:** add `ndarray/base/assert/is-row-major-string` _(by Athan Reines)_
+-   [`851a95f`](https://github.com/stdlib-js/stdlib/commit/851a95f2201a21f8a1535f61cd002de260bd2236) - **bench:** simplify value selection _(by Athan Reines)_
+-   [`264a2fc`](https://github.com/stdlib-js/stdlib/commit/264a2fce5b1fcfdf53cb27fe16980f5414564baf) - **refactor:** use base array utility _(by Athan Reines)_
+-   [`e588900`](https://github.com/stdlib-js/stdlib/commit/e5889000cb438ee4ea7f1ba8c9a2922b71a9c462) - **chore:** fix meta data _(by Athan Reines)_
+-   [`11c2592`](https://github.com/stdlib-js/stdlib/commit/11c25926baf0e0c76912c482663b5c3daf4abd1d) - **chore:** fix meta data _(by Athan Reines)_
+-   [`838bb5b`](https://github.com/stdlib-js/stdlib/commit/838bb5be71f0e7f5304cc38c7769653df0d03bd1) - **chore:** fix meta data _(by Athan Reines)_
+-   [`908239e`](https://github.com/stdlib-js/stdlib/commit/908239e7cc6b4b3e260d0cc1f5aebb9af35d83c6) - **feat:** add `toUniqueNormalizedIndices` to namespace _(by Athan Reines)_
+-   [`494a92b`](https://github.com/stdlib-js/stdlib/commit/494a92bf8a9fba830cbffcc7017097fae36dd73b) - **feat:** add `ndarray/base/to-unique-normalized-indices` _(by Athan Reines)_
+-   [`14073ce`](https://github.com/stdlib-js/stdlib/commit/14073ce88718e9a4979110bb5390c9e6fd53a322) - **docs:** fix return type _(by Athan Reines)_
+-   [`abcceb2`](https://github.com/stdlib-js/stdlib/commit/abcceb2d29719b7f1ac25c9fa8dd7f41992a5553) - **docs:** fix example return value _(by Athan Reines)_
+-   [`524e854`](https://github.com/stdlib-js/stdlib/commit/524e854202862d5b37d66470d719fac1270e33c1) - **feat:** add `toNormalizedIndices` to namespace _(by Athan Reines)_
+-   [`9f1d586`](https://github.com/stdlib-js/stdlib/commit/9f1d586a2c8d619deb5c6c6334e1c0fadb452075) - **feat:** add `ndarray/base/to-normalized-indices` _(by Athan Reines)_
+-   [`5e72ffb`](https://github.com/stdlib-js/stdlib/commit/5e72ffbd59654061d22173d326e9d66dfe4ed0d3) - **refactor:** allow input to be any array-like object of numbers _(by Athan Reines)_
+-   [`7bb4167`](https://github.com/stdlib-js/stdlib/commit/7bb4167cb5017f6ab6a1f4018bd1e0b28f57eb44) - **feat:** add `normalizeIndices` to namespace _(by Athan Reines)_
+-   [`8615f56`](https://github.com/stdlib-js/stdlib/commit/8615f568459d831a04b78034ec5141567f13d1d9) - **feat:** add `ndarray/base/normalize-indices` _(by Athan Reines)_
+-   [`d2d8a05`](https://github.com/stdlib-js/stdlib/commit/d2d8a05f2b3de75e8a1537e8b71b00f32f71c57b) - **docs:** add TypeScript declarations _(by Athan Reines)_
+-   [`ad85c44`](https://github.com/stdlib-js/stdlib/commit/ad85c446105fdd4922bc89900e1cccc003e4ddf3) - **docs:** add repl help _(by Athan Reines)_
+-   [`a768ca7`](https://github.com/stdlib-js/stdlib/commit/a768ca7e554ff8224b58e7c9ca5abdbd4994bce2) - **docs:** add example _(by Athan Reines)_
+-   [`f706f53`](https://github.com/stdlib-js/stdlib/commit/f706f53580a821ca491a314462a09fd7ef72494e) - **chore:** update copyright years _(by Athan Reines)_
+-   [`cc6f711`](https://github.com/stdlib-js/stdlib/commit/cc6f7116815dd33f196292a66017b832b6ff0e30) - **feat:** add main entry point _(by Athan Reines)_
+-   [`c90c354`](https://github.com/stdlib-js/stdlib/commit/c90c354affab090f1c91ce1401dcf3acf8320fbe) - **feat:** add an n-d accessors accumulator _(by Athan Reines)_
+-   [`064a8f9`](https://github.com/stdlib-js/stdlib/commit/064a8f9fdcc19b02659a44db6dd05b3d5b32a7b3) - **feat:** add an n-d accumulator _(by Athan Reines)_
+-   [`2d93dfb`](https://github.com/stdlib-js/stdlib/commit/2d93dfbfa7953c84fd9b03bda5df082b59b309e3) - **feat:** add 9d blocked accessors accumulator _(by Athan Reines)_
+-   [`fdc3131`](https://github.com/stdlib-js/stdlib/commit/fdc3131072c2b6c0804092cb8df9fc2860e01021) - **feat:** add 9d blocked accumulator _(by Athan Reines)_
+-   [`ea6b38c`](https://github.com/stdlib-js/stdlib/commit/ea6b38c252925110fa3240f8c9cab2aac7d4d0f4) - **feat:** add 9d accessors accumulators _(by Athan Reines)_
+-   [`3c51978`](https://github.com/stdlib-js/stdlib/commit/3c5197834ef9003436d9a6a2e65827649a28e97d) - **feat:** add 9d accumulator _(by Athan Reines)_
+-   [`24c8a3a`](https://github.com/stdlib-js/stdlib/commit/24c8a3a234cc9ba047815f21d4c994bf85989494) - **feat:** add 8d blocked accessors accumulator _(by Athan Reines)_
+-   [`e320953`](https://github.com/stdlib-js/stdlib/commit/e32095351dc5560b67c30e4d1e00282279a04edf) - **feat:** add 8d blocked accumulator _(by Athan Reines)_
+-   [`a995be8`](https://github.com/stdlib-js/stdlib/commit/a995be8e3cb2c9a80442ed24056abee15a21a4f4) - **feat:** add 8d accessors accumulator _(by Athan Reines)_
+-   [`0a6350e`](https://github.com/stdlib-js/stdlib/commit/0a6350e19d048ce3df15fcba526ad4572089e97d) - **feat:** add 8d accumulator _(by Athan Reines)_
+-   [`fe22938`](https://github.com/stdlib-js/stdlib/commit/fe2293857a27ba412cd1bfc7f757ec8b7ab78643) - **feat:** add 7d blocked accessors accumulator _(by Athan Reines)_
+-   [`1617255`](https://github.com/stdlib-js/stdlib/commit/1617255739ae2282d166b237c38b05f38303c9b4) - **feat:** add 7d blocked accumulator _(by Athan Reines)_
+-   [`627699c`](https://github.com/stdlib-js/stdlib/commit/627699ceb1abe555d9fa6320373c239750e82a9c) - **feat:** add 7d accessors accumulator _(by Athan Reines)_
+-   [`39f87db`](https://github.com/stdlib-js/stdlib/commit/39f87db060078addf749b53326670548e02eb34b) - **feat:** add 7d accumulator _(by Athan Reines)_
+-   [`c02cc5e`](https://github.com/stdlib-js/stdlib/commit/c02cc5ec7f4834b968878c80df04e6cd5390bc6c) - **feat:** add 6d blocked accessors accumulator _(by Athan Reines)_
+-   [`79a6c7c`](https://github.com/stdlib-js/stdlib/commit/79a6c7cc87aa714c9b9e900d532cc44906088743) - **feat:** add 6d blocked accumulator _(by Athan Reines)_
+-   [`70d0d2a`](https://github.com/stdlib-js/stdlib/commit/70d0d2aa36f0a3d430aaaf37e018c3b54fec7bb1) - **feat:** add 6d accessors accumulator _(by Athan Reines)_
+-   [`3e0c232`](https://github.com/stdlib-js/stdlib/commit/3e0c2323b5d09296cda154271dc0a775deb4bb61) - **feat:** add 6d accumulator _(by Athan Reines)_
+-   [`42e1358`](https://github.com/stdlib-js/stdlib/commit/42e13587ea8c874482ccd9d054914e7853c868e3) - **feat:** add 5d blocked accessors accumulator _(by Athan Reines)_
+-   [`828a6a6`](https://github.com/stdlib-js/stdlib/commit/828a6a659015cd0187b8b85a3a83105d2f50807c) - **feat:** add 5d blocked accumulator _(by Athan Reines)_
+-   [`298fb43`](https://github.com/stdlib-js/stdlib/commit/298fb438f7996eaef6ffb9069057b524d17c4a23) - **feat:** add 5d accessors accumulator _(by Athan Reines)_
+-   [`9678ff8`](https://github.com/stdlib-js/stdlib/commit/9678ff84f0823d1272b893c7c638d6b014b17523) - **feat:** add 5d accumulator _(by Athan Reines)_
+-   [`ace6b17`](https://github.com/stdlib-js/stdlib/commit/ace6b177e8e4ba85b47c6c3fae39540b70609e0c) - **feat:** add 4d blocked accessors accumulator _(by Athan Reines)_
+-   [`c686569`](https://github.com/stdlib-js/stdlib/commit/c68656944c4ff05c3cdcd6ff8f084354b207d86a) - **feat:** add 4d blocked accumulator _(by Athan Reines)_
+-   [`afe0d98`](https://github.com/stdlib-js/stdlib/commit/afe0d98c95b5ed839049014e161f368d81d6852f) - **feat:** add 4d accessors accumulator _(by Athan Reines)_
+-   [`714ab64`](https://github.com/stdlib-js/stdlib/commit/714ab64dcbc8911f317ffc4e3b315b1c48192eb6) - **feat:** add 4d accumulator _(by Athan Reines)_
+-   [`062be58`](https://github.com/stdlib-js/stdlib/commit/062be5859727da44f5af9d38cde6de39f61b51f7) - **feat:** add 3d blocked accessors accumulator _(by Athan Reines)_
+-   [`a78f2b1`](https://github.com/stdlib-js/stdlib/commit/a78f2b162c32840702e0b02e8d730ae1b568ae97) - **feat:** add 3d blocked accumulator _(by Athan Reines)_
+-   [`ea33936`](https://github.com/stdlib-js/stdlib/commit/ea339369e379fd22a635e1e11c7e9412a4385528) - **feat:** add 3d accessors accumulator _(by Athan Reines)_
+-   [`33036b0`](https://github.com/stdlib-js/stdlib/commit/33036b038cecaa5b98e1b4793d41077cc9168513) - **feat:** add 3d accumulator _(by Athan Reines)_
+-   [`45fe885`](https://github.com/stdlib-js/stdlib/commit/45fe885cc5f595cf68804bf605f5dc4fdc5a3580) - **feat:** add 2d blocked accessors accumulator _(by Athan Reines)_
+-   [`4c080fd`](https://github.com/stdlib-js/stdlib/commit/4c080fd599fdff49cade83dbd29d6b75f862c7bb) - **feat:** add 2d blocked accumulator _(by Athan Reines)_
+-   [`35ef28d`](https://github.com/stdlib-js/stdlib/commit/35ef28d935caeb85d7369cfe0e8b984abb61ef8b) - **docs:** fix comment _(by Athan Reines)_
+-   [`48e9197`](https://github.com/stdlib-js/stdlib/commit/48e919759ec6c48d3c3f328014af204ee81c0981) - **docs:** fix comment _(by Athan Reines)_
+-   [`caf7397`](https://github.com/stdlib-js/stdlib/commit/caf7397f94553933295586c183275201e7df96e7) - **feat:** add 2d accessors accumulator _(by Athan Reines)_
+-   [`1a5172d`](https://github.com/stdlib-js/stdlib/commit/1a5172d9de881e97d4300b022201a154eb1e0ca0) - **feat:** add 2d accumulator _(by Athan Reines)_
+-   [`74d9fef`](https://github.com/stdlib-js/stdlib/commit/74d9fefaff44947b314862a3574857e0cdb7ab03) - **feat:** add 1d accessors accumulator _(by Athan Reines)_
+-   [`2d97fb5`](https://github.com/stdlib-js/stdlib/commit/2d97fb548f0d0c7722bc1d4c540b352b203ff236) - **feat:** add 1d accumulator _(by Athan Reines)_
+-   [`db61fca`](https://github.com/stdlib-js/stdlib/commit/db61fcae67ae7bb23ac2b9ce0084eb1f67b18cf6) - **feat:** add 10d blocked accessor accumulator _(by Athan Reines)_
+-   [`8bc84b3`](https://github.com/stdlib-js/stdlib/commit/8bc84b33f635d90af7c2da209bcf6fb4fce0e15f) - **feat:** add 10d blocked accumulator _(by Athan Reines)_
+-   [`b516586`](https://github.com/stdlib-js/stdlib/commit/b51658624b80eb39eddeb5d752b781f77a2c3b5a) - **feat:** add 10d accessors accumulator _(by Athan Reines)_
+-   [`f36a0ab`](https://github.com/stdlib-js/stdlib/commit/f36a0ab4aaa1cdf08748fcde1339fe41b335eca2) - **feat:** add 10d accumulator _(by Athan Reines)_
+-   [`7601be7`](https://github.com/stdlib-js/stdlib/commit/7601be773588756a38c537b4dbc48f1ae4d2c90a) - **feat:** add 0d accessor accumulator _(by Athan Reines)_
+-   [`a049375`](https://github.com/stdlib-js/stdlib/commit/a04937599dfcc1cb4dbd1c3998748f8fd72e7610) - **feat:** add 0d accumulator _(by Athan Reines)_
+-   [`e0af8c4`](https://github.com/stdlib-js/stdlib/commit/e0af8c4bf522a77f3c0073acbb0b1a0679575809) - **docs:** fix description _(by Athan Reines)_
+-   [`10a14b5`](https://github.com/stdlib-js/stdlib/commit/10a14b576aa39aba24959261860788f82efdcd26) - **docs:** fix description _(by Athan Reines)_
+-   [`9f49cfb`](https://github.com/stdlib-js/stdlib/commit/9f49cfb0e8047348ee5dc24d64bf82afbc7ca644) - **docs:** fix description _(by Athan Reines)_
 -   [`769b921`](https://github.com/stdlib-js/stdlib/commit/769b921be1ac5285f0becdaaae27cace376ee124) - **docs:** update related packages sections [(#4638)](https://github.com/stdlib-js/stdlib/pull/4638) _(by stdlib-bot, Athan Reines)_
 -   [`cc71dc2`](https://github.com/stdlib-js/stdlib/commit/cc71dc23c9335d7187844e6a020cff2594679e76) - **docs:** update related packages sections [(#4622)](https://github.com/stdlib-js/stdlib/pull/4622) _(by stdlib-bot)_
 -   [`f231799`](https://github.com/stdlib-js/stdlib/commit/f231799e1d40cfff7ceb79a6074166a08c4ba072) - **docs:** update related packages sections [(#4545)](https://github.com/stdlib-js/stdlib/pull/4545) _(by stdlib-bot)_
