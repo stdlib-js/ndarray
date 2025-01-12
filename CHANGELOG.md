@@ -86,7 +86,6 @@
 
 ##### Features
 
--   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`741b6f1`](https://github.com/stdlib-js/stdlib/commit/741b6f1df8ce11e77fb22c279cee6bbae3323176) - add `spreadDimensions` to namespace
 -   [`908239e`](https://github.com/stdlib-js/stdlib/commit/908239e7cc6b4b3e260d0cc1f5aebb9af35d83c6) - add `toUniqueNormalizedIndices` to namespace
 -   [`524e854`](https://github.com/stdlib-js/stdlib/commit/524e854202862d5b37d66470d719fac1270e33c1) - add `toNormalizedIndices` to namespace
@@ -130,7 +129,6 @@
 
 ##### Features
 
--   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`a94dcea`](https://github.com/stdlib-js/stdlib/commit/a94dceaa9469c774ee4622567e4c15a15e215bcf) - add `isColumnMajorString` to namespace
 -   [`5e1be08`](https://github.com/stdlib-js/stdlib/commit/5e1be08ff661fb981dc4a91c2e9d37d7396327f5) - add `isRowMajorString` to namespace
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
@@ -756,7 +754,6 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - **feat:** update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706) _(by stdlib-bot)_
 -   [`cff470f`](https://github.com/stdlib-js/stdlib/commit/cff470f9608165100c8c122fce70c40b1af864ec) - **docs:** update namespace table of contents (#4708) _(by stdlib-bot, Planeshifter)_
 -   [`741b6f1`](https://github.com/stdlib-js/stdlib/commit/741b6f1df8ce11e77fb22c279cee6bbae3323176) - **feat:** add `spreadDimensions` to namespace _(by Athan Reines)_
 -   [`3767255`](https://github.com/stdlib-js/stdlib/commit/3767255c7cfe85f09cea5c007e21297cd628245d) - **feat:** add `ndarray/base/spread-dimensions` _(by Athan Reines)_
