@@ -28,6 +28,7 @@ import isBufferLengthCompatibleShape = require( './../../../../base/assert/is-bu
 import isCastingMode = require( './../../../../base/assert/is-casting-mode' );
 import isColumnMajor = require( './../../../../base/assert/is-column-major' );
 import isColumnMajorContiguous = require( './../../../../base/assert/is-column-major-contiguous' );
+import isColumnMajorString = require( './../../../../base/assert/is-column-major-string' );
 import isComplexFloatingPointDataType = require( './../../../../base/assert/is-complex-floating-point-data-type' );
 import isContiguous = require( './../../../../base/assert/is-contiguous' );
 import isDataType = require( './../../../../base/assert/is-data-type' );
@@ -42,6 +43,7 @@ import isRealDataType = require( './../../../../base/assert/is-real-data-type' )
 import isRealFloatingPointDataType = require( './../../../../base/assert/is-real-floating-point-data-type' );
 import isRowMajor = require( './../../../../base/assert/is-row-major' );
 import isRowMajorContiguous = require( './../../../../base/assert/is-row-major-contiguous' );
+import isRowMajorString = require( './../../../../base/assert/is-row-major-string' );
 import isSafeDataTypeCast = require( './../../../../base/assert/is-safe-data-type-cast' );
 import isSameKindDataTypeCast = require( './../../../../base/assert/is-same-kind-data-type-cast' );
 import isSignedIntegerDataType = require( './../../../../base/assert/is-signed-integer-data-type' );
@@ -261,6 +263,24 @@ interface Namespace {
 	* // returns false
 	*/
 	isColumnMajorContiguous: typeof isColumnMajorContiguous;
+
+	/**
+	* Tests whether an input value is the string representing column-major order.
+	*
+	* @param v - value to test
+	* @returns boolean result
+	*
+	* @example
+	* var bool = ns.isColumnMajorString( 'column-major' );
+	* // returns true
+	*
+	* bool = ns.isColumnMajorString( 'row-major' );
+	* // returns false
+	*
+	* bool = ns.isColumnMajorString( 'foo' );
+	* // returns false
+	*/
+	isColumnMajorString: typeof isColumnMajorString;
 
 	/**
 	* Tests whether an input value is a supported ndarray complex-valued floating-point data type.
@@ -746,6 +766,24 @@ interface Namespace {
 	* // returns false
 	*/
 	isRowMajorContiguous: typeof isRowMajorContiguous;
+
+	/**
+	* Tests whether an input value is the string representing row-major order.
+	*
+	* @param v - value to test
+	* @returns boolean result
+	*
+	* @example
+	* var bool = ns.isRowMajorString( 'row-major' );
+	* // returns true
+	*
+	* bool = ns.isRowMajorString( 'column-major' );
+	* // returns false
+	*
+	* bool = ns.isRowMajorString( 'foo' );
+	* // returns false
+	*/
+	isRowMajorString: typeof isRowMajorString;
 
 	/**
 	* Returns a boolean indicating if a provided ndarray data type can be safely cast to another ndarray data type.

@@ -76,6 +76,7 @@ import ndims = require( './../../../base/ndims' );
 import nextCartesianIndex = require( './../../../base/next-cartesian-index' );
 import nonsingletonDimensions = require( './../../../base/nonsingleton-dimensions' );
 import normalizeIndex = require( './../../../base/normalize-index' );
+import normalizeIndices = require( './../../../base/normalize-indices' );
 import nullary = require( './../../../base/nullary' );
 import nullaryLoopOrder = require( './../../../base/nullary-loop-interchange-order' );
 import nullaryBlockSize = require( './../../../base/nullary-tiling-block-size' );
@@ -102,13 +103,16 @@ import sliceDimensionFrom = require( './../../../base/slice-dimension-from' );
 import sliceDimensionTo = require( './../../../base/slice-dimension-to' );
 import sliceFrom = require( './../../../base/slice-from' );
 import sliceTo = require( './../../../base/slice-to' );
+import spreadDimensions = require( './../../../base/spread-dimensions' );
 import stride = require( './../../../base/stride' );
 import strides = require( './../../../base/strides' );
 import strides2offset = require( './../../../base/strides2offset' );
 import strides2order = require( './../../../base/strides2order' );
 import sub2ind = require( './../../../base/sub2ind' );
 import ndarray2array = require( './../../../base/to-array' );
+import toNormalizedIndices = require( './../../../base/to-normalized-indices' );
 import toReversed = require( './../../../base/to-reversed' );
+import toUniqueNormalizedIndices = require( './../../../base/to-unique-normalized-indices' );
 import transpose = require( './../../../base/transpose' );
 import unary = require( './../../../base/unary' );
 import unaryBy = require( './../../../base/unary-by' );
@@ -1866,6 +1870,27 @@ interface Namespace {
 	normalizeIndex: typeof normalizeIndex;
 
 	/**
+	* Normalizes a list of indices to the interval `[0,max]`.
+	*
+	* ## Notes
+	*
+	* -   If provided an out-of-bounds index, the function returns `null`.
+	* -   The function mutates the input array, even when provided an out-of-bounds index.
+	*
+	* @param indices - indices
+	* @param max - maximum index
+	* @returns normalized indices or null
+	*
+	* @example
+	* var indices = ns.normalizeIndices( [ -2, 5 ], 10 );
+	* // returns [ 9, 5 ]
+	*
+	* indices = ns.normalizeIndices( [ -2, 15 ], 10 );
+	* // returns null
+	*/
+	normalizeIndices: typeof normalizeIndices;
+
+	/**
 	* Applies a nullary callback and assigns results to elements in an output ndarray.
 	*
 	* @param arrays - array-like object containing an output ndarray
@@ -2663,6 +2688,48 @@ interface Namespace {
 	sliceTo: typeof sliceTo;
 
 	/**
+	* Expands the shape of an array to a specified dimensionality by spreading its dimensions to specified dimension indices and inserting dimensions of size one for the remaining dimensions.
+	*
+	* ## Notes
+	*
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`. If provided a negative dimension index, the position at which to place a respective dimension is computed as `ndims + index`.
+	* -   Provided dimension indices must resolve to normalized dimension indices arranged in ascending order.
+	*
+	* @param ndims - number of dimensions in the output array
+	* @param x - input array
+	* @param dims - dimension indices
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../../array' );
+	*
+	* var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+	* // returns <ndarray>
+	*
+	* var shx = x.shape;
+	* // returns [ 2, 2 ]
+	*
+	* var y = ns.spreadDimensions( 5, x, [ 1, 3 ] );
+	* // returns <ndarray>
+	*
+	* var shy = y.shape;
+	* // returns [ 1, 2, 1, 2, 1 ]
+	*
+	* var v = y.get( 0, 0, 0, 0, 0 );
+	* // returns 1
+	*
+	* v = y.get( 0, 0, 0, 1, 0 );
+	* // returns 2
+	*
+	* v = y.get( 0, 1, 0, 0, 0 );
+	* // returns 3
+	*
+	* v = y.get( 0, 1, 0, 1, 0 );
+	* // returns 4
+	*/
+	spreadDimensions: typeof spreadDimensions;
+
+	/**
 	* Returns the stride along a specified dimension for a provided ndarray.
 	*
 	* ## Notes
@@ -2866,6 +2933,26 @@ interface Namespace {
 	ndarray2array: typeof ndarray2array;
 
 	/**
+	* Normalizes a list of indices to the interval `[0,max]`.
+	*
+	* ## Notes
+	*
+	* -   If provided an out-of-bounds index, the function normalizes the index to `-1`.
+	*
+	* @param indices - indices
+	* @param max - maximum index
+	* @returns normalized indices
+	*
+	* @example
+	* var indices = ns.toNormalizedIndices( [ -2, 5 ], 10 );
+	* // returns [ 9, 5 ]
+	*
+	* indices = ns.toNormalizedIndices( [ -2, 15 ], 10 );
+	* // returns [ 9, -1 ]
+	*/
+	toNormalizedIndices: typeof toNormalizedIndices;
+
+	/**
 	* Returns a new ndarray where the order of elements of an input ndarray is reversed along each dimension.
 	*
 	* @param x - input array
@@ -2900,6 +2987,26 @@ interface Namespace {
 	* // returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 	*/
 	toReversed: typeof toReversed;
+
+	/**
+	* Returns a list of unique indices after normalizing to the interval `[0,max]`.
+	*
+	* ## Notes
+	*
+	* -   If provided an out-of-bounds index, the function returns `null`.
+	*
+	* @param indices - indices
+	* @param max - maximum index
+	* @returns normalized indices (or null)
+	*
+	* @example
+	* var indices = ns.toUniqueNormalizedIndices( [ -2, 5 ], 10 );
+	* // returns [ 9, 5 ]
+	*
+	* indices = ns.toUniqueNormalizedIndices( [ -2, 15 ], 10 );
+	* // returns null
+	*/
+	toUniqueNormalizedIndices: typeof toUniqueNormalizedIndices;
 
 	/**
 	* Transposes a matrix (or a stack of matrices).
