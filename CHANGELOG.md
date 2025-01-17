@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-13)
+## Unreleased (2025-01-17)
 
 <section class="packages">
 
@@ -194,6 +194,28 @@
 </section>
 
 <!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assign-unreleased">
+
+#### [@stdlib/ndarray/base/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assign)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`52f7ac2`](https://github.com/stdlib-js/stdlib/commit/52f7ac26eff82f57ccfca5a3b04c15dbacad074e) - use correct stride
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -422,6 +444,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-unreleased">
+
+#### [@stdlib/ndarray/base/unary](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`e689326`](https://github.com/stdlib-js/stdlib/commit/e68932672651e213b4cf6500100d7055b794ba82) - use correct stride
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-unary-accumulate-unreleased">
 
 #### [@stdlib/ndarray/base/unary-accumulate](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-accumulate)
@@ -432,6 +476,15 @@
 
 ##### Features
 
+-   [`f75dcc2`](https://github.com/stdlib-js/stdlib/commit/f75dcc2318bdfb56f5372ea81683a0be2b26b7e9) - enable completed macros
+-   [`9f59d85`](https://github.com/stdlib-js/stdlib/commit/9f59d859b51df15f67ab19ee6b1b52c386c52a8c) - add dispatcher
+-   [`665d4fe`](https://github.com/stdlib-js/stdlib/commit/665d4fef52207ace1795cbcd226f4eccfd0b54e8) - add 3d accumulation macros
+-   [`05201fc`](https://github.com/stdlib-js/stdlib/commit/05201fc38530d538e5e6a6124d7406a9720e51f5) - add macros for 2d accumulation
+-   [`e3e0b26`](https://github.com/stdlib-js/stdlib/commit/e3e0b26c6cee0ceaef93c85895ad65e3178399db) - add header file
+-   [`4ccc539`](https://github.com/stdlib-js/stdlib/commit/4ccc5395a330137ccb62cfdd9e59035beb79c948) - add header file
+-   [`963a710`](https://github.com/stdlib-js/stdlib/commit/963a7106b0f2b895403ce28a6d384c2f0f80eae6) - add header files
+-   [`629d388`](https://github.com/stdlib-js/stdlib/commit/629d388f7cfee9c1d539c89ab0a401e5496074b2) - add headers for internal utilities
+-   [`9055997`](https://github.com/stdlib-js/stdlib/commit/90559976d2b8f3b825ad434dfdae86f8505a876f) - add internal utilities
 -   [`cc6f711`](https://github.com/stdlib-js/stdlib/commit/cc6f7116815dd33f196292a66017b832b6ff0e30) - add main entry point
 -   [`c90c354`](https://github.com/stdlib-js/stdlib/commit/c90c354affab090f1c91ce1401dcf3acf8320fbe) - add an n-d accessors accumulator
 -   [`064a8f9`](https://github.com/stdlib-js/stdlib/commit/064a8f9fdcc19b02659a44db6dd05b3d5b32a7b3) - add an n-d accumulator
@@ -479,6 +532,17 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`2e9ea06`](https://github.com/stdlib-js/stdlib/commit/2e9ea0690e40506e0c09764f40f8163fb0c7ff7c) - update signatures
+-   [`c82563a`](https://github.com/stdlib-js/stdlib/commit/c82563aa50c03568da53abce9420b97924f60e3f) - remove continuation
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -756,6 +820,43 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`421c4cf`](https://github.com/stdlib-js/stdlib/commit/421c4cfcd29b8dafd580ef8feecb1d664de64040) - **bench:** fix assertion _(by Athan Reines)_
+-   [`ad5e480`](https://github.com/stdlib-js/stdlib/commit/ad5e480824fd11be76a4ecd064a6f1e1f228162e) - **bench:** fix invocations _(by Athan Reines)_
+-   [`30f0e04`](https://github.com/stdlib-js/stdlib/commit/30f0e04aa6bac8f09661925a1975f8e065321a33) - **chore:** resolve lint errors _(by Athan Reines)_
+-   [`00b45b2`](https://github.com/stdlib-js/stdlib/commit/00b45b292b95bcaa1b47f4cd3b933c94bbf5f7be) - **docs:** update examples _(by Athan Reines)_
+-   [`2e9ea06`](https://github.com/stdlib-js/stdlib/commit/2e9ea0690e40506e0c09764f40f8163fb0c7ff7c) - **fix:** update signatures _(by Athan Reines)_
+-   [`f75dcc2`](https://github.com/stdlib-js/stdlib/commit/f75dcc2318bdfb56f5372ea81683a0be2b26b7e9) - **feat:** enable completed macros _(by Athan Reines)_
+-   [`390d7df`](https://github.com/stdlib-js/stdlib/commit/390d7df2e67aedbf14b148fa1bafa3963d93a7bf) - **docs:** update examples _(by Athan Reines)_
+-   [`59e3ecb`](https://github.com/stdlib-js/stdlib/commit/59e3ecbe6a175a51d5fdf9568c160c07640ded93) - **docs:** update examples _(by Athan Reines)_
+-   [`f55d93c`](https://github.com/stdlib-js/stdlib/commit/f55d93c0d2c8ff2fcb27ac1cec1f05648fbaf9e8) - **docs:** update comment _(by Athan Reines)_
+-   [`a30acad`](https://github.com/stdlib-js/stdlib/commit/a30acadd3b5501e87434d81a67da469dc669814b) - **docs:** update examples _(by Athan Reines)_
+-   [`510faa8`](https://github.com/stdlib-js/stdlib/commit/510faa8105a50136c0515b502538525cbd73a218) - **docs:** update copy _(by Athan Reines)_
+-   [`40580e2`](https://github.com/stdlib-js/stdlib/commit/40580e249115744f20e97bc85a8b4168a39596d8) - **build:** add source templates _(by Athan Reines)_
+-   [`e0729ac`](https://github.com/stdlib-js/stdlib/commit/e0729ac66ecdc917546e59767d037c33fdaebe63) - **build:** add manifest file _(by Athan Reines)_
+-   [`3552e0e`](https://github.com/stdlib-js/stdlib/commit/3552e0e05840ebfc2fe3455384ddc014b447c1ca) - **bench:** add 2d benchmarks _(by Athan Reines)_
+-   [`af2bd1f`](https://github.com/stdlib-js/stdlib/commit/af2bd1f4518bb0f599d3b3b4d598dd08829ae97d) - **bench:** add 1d benchmarks _(by Athan Reines)_
+-   [`d3e18e1`](https://github.com/stdlib-js/stdlib/commit/d3e18e1a37c524f1e7d7f3f4723cbc63977a9d03) - **bench:** add 11d benchmarks _(by Athan Reines)_
+-   [`8420c5a`](https://github.com/stdlib-js/stdlib/commit/8420c5aae35d63025cee62e5c4f8eee30f0b45dd) - **bench:** add 10d benchmarks _(by Athan Reines)_
+-   [`0a457b7`](https://github.com/stdlib-js/stdlib/commit/0a457b79efc50fca93946020d071b5f071c100bd) - **build:** add header template _(by Athan Reines)_
+-   [`8e40a3c`](https://github.com/stdlib-js/stdlib/commit/8e40a3c3c8bddb453028fa3a3800546657e18b4e) - **build:** add docs template _(by Athan Reines)_
+-   [`c645151`](https://github.com/stdlib-js/stdlib/commit/c6451519aad4497373b2ce803467673309f746af) - **chore:** add package meta data _(by Athan Reines)_
+-   [`fdbe9c2`](https://github.com/stdlib-js/stdlib/commit/fdbe9c218cfe554e8e929186f4ba4e70ba884c72) - **docs:** add README _(by Athan Reines)_
+-   [`9f59d85`](https://github.com/stdlib-js/stdlib/commit/9f59d859b51df15f67ab19ee6b1b52c386c52a8c) - **feat:** add dispatcher _(by Athan Reines)_
+-   [`74a1e24`](https://github.com/stdlib-js/stdlib/commit/74a1e244d67128d21fb053d3819c461ba682b804) - **docs:** add example _(by Athan Reines)_
+-   [`665d4fe`](https://github.com/stdlib-js/stdlib/commit/665d4fef52207ace1795cbcd226f4eccfd0b54e8) - **feat:** add 3d accumulation macros _(by Athan Reines)_
+-   [`c82563a`](https://github.com/stdlib-js/stdlib/commit/c82563aa50c03568da53abce9420b97924f60e3f) - **fix:** remove continuation _(by Athan Reines)_
+-   [`05201fc`](https://github.com/stdlib-js/stdlib/commit/05201fc38530d538e5e6a6124d7406a9720e51f5) - **feat:** add macros for 2d accumulation _(by Athan Reines)_
+-   [`77ad50a`](https://github.com/stdlib-js/stdlib/commit/77ad50a2c98aefbf161fbbf19c286c966259e72b) - **docs:** rename parameter _(by Athan Reines)_
+-   [`82a0d1b`](https://github.com/stdlib-js/stdlib/commit/82a0d1b2e045e08bc4bb5b8eb3c2e3e0c77e5ac1) - **refactor:** rename parameter _(by Athan Reines)_
+-   [`52f7ac2`](https://github.com/stdlib-js/stdlib/commit/52f7ac26eff82f57ccfca5a3b04c15dbacad074e) - **fix:** use correct stride _(by Athan Reines)_
+-   [`e689326`](https://github.com/stdlib-js/stdlib/commit/e68932672651e213b4cf6500100d7055b794ba82) - **fix:** use correct stride _(by Athan Reines)_
+-   [`e3e0b26`](https://github.com/stdlib-js/stdlib/commit/e3e0b26c6cee0ceaef93c85895ad65e3178399db) - **feat:** add header file _(by Athan Reines)_
+-   [`4ccc539`](https://github.com/stdlib-js/stdlib/commit/4ccc5395a330137ccb62cfdd9e59035beb79c948) - **feat:** add header file _(by Athan Reines)_
+-   [`963a710`](https://github.com/stdlib-js/stdlib/commit/963a7106b0f2b895403ce28a6d384c2f0f80eae6) - **feat:** add header files _(by Athan Reines)_
+-   [`629d388`](https://github.com/stdlib-js/stdlib/commit/629d388f7cfee9c1d539c89ab0a401e5496074b2) - **feat:** add headers for internal utilities _(by Athan Reines)_
+-   [`be03002`](https://github.com/stdlib-js/stdlib/commit/be030020b7201707258c67b8dc278792dabd2426) - **docs:** add folder README _(by Athan Reines)_
+-   [`9055997`](https://github.com/stdlib-js/stdlib/commit/90559976d2b8f3b825ad434dfdae86f8505a876f) - **feat:** add internal utilities _(by Athan Reines)_
+-   [`b0fecf0`](https://github.com/stdlib-js/stdlib/commit/b0fecf04e18fe12dccd1faa2b6f3871efa71bb8b) - **test:** add stub test file _(by Athan Reines)_
 -   [`efe1f05`](https://github.com/stdlib-js/stdlib/commit/efe1f05049247502e9b124957755ebc6d7974b4e) - **docs:** add note _(by Athan Reines)_
 -   [`fc93a7c`](https://github.com/stdlib-js/stdlib/commit/fc93a7c94279c57675c8fc695189200ec0129821) - **docs:** add note _(by Athan Reines)_
 -   [`1634973`](https://github.com/stdlib-js/stdlib/commit/16349736f27970606eda37417f4d2c868d9f1457) - **docs:** add note _(by Athan Reines)_
