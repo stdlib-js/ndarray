@@ -44,6 +44,7 @@
     "@stdlib/buffer": "github:stdlib-js/buffer#main",
     "@stdlib/complex": "github:stdlib-js/complex#main",
     "@stdlib/constants": "github:stdlib-js/constants#main",
+    "@stdlib/dstructs": "github:stdlib-js/dstructs#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/number": "github:stdlib-js/number#main",
     "@stdlib/object": "github:stdlib-js/object#main",
