@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,19 @@
 * limitations under the License.
 */
 
-import policies = require( './index' );
+import isOutputDataTypePolicy = require( './index' );
 
 
 // TESTS //
 
-// The function returns an array of strings...
+// The function returns a boolean...
 {
-	policies(); // $ExpectType Policies
+	isOutputDataTypePolicy( 'real' ); // $ExpectType boolean
+	isOutputDataTypePolicy( 'foo' ); // $ExpectType boolean
 }
 
-// The compiler throws an error if the function is provided any arguments...
+// The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	policies( 9 ); // $ExpectError
+	isOutputDataTypePolicy(); // $ExpectError
+	isOutputDataTypePolicy( undefined, 123 ); // $ExpectError
 }

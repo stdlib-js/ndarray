@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,17 +16,26 @@
 * limitations under the License.
 */
 
-import policies = require( './index' );
+'use strict';
 
+var isOutputDataTypePolicy = require( './../lib' );
 
-// TESTS //
+var bool = isOutputDataTypePolicy( 'boolean' );
+console.log( bool );
+// => true
 
-// The function returns an array of strings...
-{
-	policies(); // $ExpectType Policies
-}
+bool = isOutputDataTypePolicy( 'real' );
+console.log( bool );
+// => true
 
-// The compiler throws an error if the function is provided any arguments...
-{
-	policies( 9 ); // $ExpectError
-}
+bool = isOutputDataTypePolicy( 'numeric' );
+console.log( bool );
+// => true
+
+bool = isOutputDataTypePolicy( '' );
+console.log( bool );
+// => false
+
+bool = isOutputDataTypePolicy( 'foo' );
+console.log( bool );
+// => false

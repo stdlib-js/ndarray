@@ -130,6 +130,7 @@
 
 ##### Features
 
+-   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - add `isOutputDataTypePolicy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`a94dcea`](https://github.com/stdlib-js/stdlib/commit/a94dceaa9469c774ee4622567e4c15a15e215bcf) - add `isColumnMajorString` to namespace
 -   [`5e1be08`](https://github.com/stdlib-js/stdlib/commit/5e1be08ff661fb981dc4a91c2e9d37d7396327f5) - add `isRowMajorString` to namespace
@@ -168,6 +169,28 @@
 ##### Features
 
 -   [`76872c7`](https://github.com/stdlib-js/stdlib/commit/76872c76f1c655afe5e87d9d894be37f6a07c08b) - add `ndarray/base/assert/is-column-major-string`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-output--unreleased">
+
+#### [@stdlib/ndarray/base/assert/is-output-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-output-)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9cabe87`](https://github.com/stdlib-js/stdlib/commit/9cabe87a0ce5401967f41d91dc4479a722ba3288) - add `ndarray/base/assert/is-output-data-type-policy`
 
 </section>
 
@@ -550,6 +573,28 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-output-dtype-unreleased">
+
+#### [@stdlib/ndarray/base/unary-output-dtype](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-output-dtype)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f230249`](https://github.com/stdlib-js/stdlib/commit/f23024908c1d43ff5c2a8402a53cad2ff1054366) - add support for `_and_generic` data type policies
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-filter-unreleased">
 
 #### [@stdlib/ndarray/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter)
@@ -717,6 +762,38 @@
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-output-dtype-policies-unreleased">
+
+#### [@stdlib/ndarray/output-dtype-policies](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/output-dtype-policies)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2b8c0d7`](https://github.com/stdlib-js/stdlib/commit/2b8c0d7579975a2fffdcf8cd8607d93ab8fe5658) - add policies which support returning a \"generic\" data type
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`ba9b416`](https://github.com/stdlib-js/stdlib/commit/ba9b4160f16f1ae1a7f8603920ae0a9f43e6b29f) - rename `bool` to `boolean` to match data type kind and avoid conflict with `bool` data type
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-reject-unreleased">
 
 #### [@stdlib/ndarray/reject](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/reject)
@@ -821,6 +898,13 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - **feat:** add `isOutputDataTypePolicy` to namespace _(by Athan Reines)_
+-   [`9cabe87`](https://github.com/stdlib-js/stdlib/commit/9cabe87a0ce5401967f41d91dc4479a722ba3288) - **feat:** add `ndarray/base/assert/is-output-data-type-policy` _(by Athan Reines)_
+-   [`2632915`](https://github.com/stdlib-js/stdlib/commit/2632915e58a2949e11840ce39161f5056a700afc) - **test:** fix variable name _(by Athan Reines)_
+-   [`f230249`](https://github.com/stdlib-js/stdlib/commit/f23024908c1d43ff5c2a8402a53cad2ff1054366) - **feat:** add support for `_and_generic` data type policies _(by Athan Reines)_
+-   [`c27d672`](https://github.com/stdlib-js/stdlib/commit/c27d672d1d72d49c7331f44b9b00f6324d67f218) - **test:** fix tests due to upstream patches _(by Athan Reines)_
+-   [`ba9b416`](https://github.com/stdlib-js/stdlib/commit/ba9b4160f16f1ae1a7f8603920ae0a9f43e6b29f) - **fix:** rename `bool` to `boolean` to match data type kind and avoid conflict with `bool` data type _(by Athan Reines)_
+-   [`2b8c0d7`](https://github.com/stdlib-js/stdlib/commit/2b8c0d7579975a2fffdcf8cd8607d93ab8fe5658) - **feat:** add policies which support returning a \"generic\" data type _(by Athan Reines)_
 -   [`81e5755`](https://github.com/stdlib-js/stdlib/commit/81e5755a07adae5d75fbbd113f677d57247c94bc) - **refactor:** update path _(by Athan Reines)_
 -   [`d38fd36`](https://github.com/stdlib-js/stdlib/commit/d38fd36fcf6ac58240b13abe41ceb3046f36a8b2) - **style:** resolve lint errors _(by Athan Reines)_
 -   [`836170d`](https://github.com/stdlib-js/stdlib/commit/836170decec14309639deb41ae3a3c22256d68af) - **refactor:** update paths _(by Gururaj Gurram)_

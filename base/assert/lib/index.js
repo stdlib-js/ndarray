@@ -199,6 +199,15 @@ setReadOnly( ns, 'isNumericDataType', require( './../../../base/assert/is-numeri
 setReadOnly( ns, 'isOrder', require( './../../../base/assert/is-order' ) );
 
 /**
+* @name isOutputDataTypePolicy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-output-data-type-policy}
+*/
+setReadOnly( ns, 'isOutputDataTypePolicy', require( './../../../base/assert/is-output-data-type-policy' ) );
+
+/**
 * @name isReadOnly
 * @memberof ns
 * @readonly
