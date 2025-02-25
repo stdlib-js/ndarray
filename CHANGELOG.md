@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-24)
+## Unreleased (2025-02-25)
 
 <section class="packages">
 
@@ -898,6 +898,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9d532b5`](https://github.com/stdlib-js/stdlib/commit/9d532b5510055d80c5df8ba4c8e897c1670dcd1a) - **docs:** update namespace table of contents [(#5438)](https://github.com/stdlib-js/stdlib/pull/5438) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - **feat:** add `isOutputDataTypePolicy` to namespace _(by Athan Reines)_
 -   [`9cabe87`](https://github.com/stdlib-js/stdlib/commit/9cabe87a0ce5401967f41d91dc4479a722ba3288) - **feat:** add `ndarray/base/assert/is-output-data-type-policy` _(by Athan Reines)_
 -   [`2632915`](https://github.com/stdlib-js/stdlib/commit/2632915e58a2949e11840ce39161f5056a700afc) - **test:** fix variable name _(by Athan Reines)_
