@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-27)
+## Unreleased (2025-03-04)
 
 <section class="packages">
 
@@ -426,6 +426,30 @@
 </section>
 
 <!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-strides2offset-unreleased">
+
+#### [@stdlib/ndarray/base/strides2offset](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/strides2offset)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -891,16 +915,29 @@
 
 <!-- /.breaking-changes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="contributors">
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   ditsu
 
 </section>
 
@@ -912,6 +949,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - **feat:** update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436) _(by stdlib-bot)_
 -   [`9d532b5`](https://github.com/stdlib-js/stdlib/commit/9d532b5510055d80c5df8ba4c8e897c1670dcd1a) - **docs:** update namespace table of contents [(#5438)](https://github.com/stdlib-js/stdlib/pull/5438) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - **feat:** add `isOutputDataTypePolicy` to namespace _(by Athan Reines)_
