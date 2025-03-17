@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-11)
+## Unreleased (2025-03-17)
 
 <section class="packages">
 
@@ -974,6 +974,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`45a92db`](https://github.com/stdlib-js/stdlib/commit/45a92dba41673fda4e01deb4cfc74e7bcb28d50b) - **bench:** fix require expression _(by Athan Reines)_
 -   [`40b4245`](https://github.com/stdlib-js/stdlib/commit/40b4245a2a2ddc1fc8d93ea54a6f629102a037bc) - **chore:** fix EditorConfig lint errors [(#5970)](https://github.com/stdlib-js/stdlib/pull/5970) _(by Kaushikgtm)_
 -   [`a1e8f03`](https://github.com/stdlib-js/stdlib/commit/a1e8f03af0ee470d0783cb840878dc7cde0826c3) - **chore:** fix EditorConfig lint errors [(#5543)](https://github.com/stdlib-js/stdlib/pull/5543) _(by ditsu, Athan Reines, Philipp Burckhardt)_
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - **feat:** update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436) _(by stdlib-bot)_
