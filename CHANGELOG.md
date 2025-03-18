@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-03-18)
 
 <section class="packages">
 
@@ -979,9 +979,10 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Bhavishy Agrawal
 -   Gururaj Gurram
 -   Kaushikgtm
 -   Muhammad Haris
@@ -998,6 +999,7 @@ A total of 6 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`ea0fc20`](https://github.com/stdlib-js/stdlib/commit/ea0fc20c91111d85cc32c9d38bd7ce7a70b825f8) - **chore:** fix EditorConfig lint error [(#6135)](https://github.com/stdlib-js/stdlib/pull/6135) _(by Bhavishy Agrawal, Athan Reines)_
 -   [`b6a6575`](https://github.com/stdlib-js/stdlib/commit/b6a657548d4e7beacc37f26e7f49c77ae3ea2f0b) - **chore:** fix EditorConfig lint errors [(#6057)](https://github.com/stdlib-js/stdlib/pull/6057) _(by Kaushikgtm)_
 -   [`45a92db`](https://github.com/stdlib-js/stdlib/commit/45a92dba41673fda4e01deb4cfc74e7bcb28d50b) - **bench:** fix require expression _(by Athan Reines)_
 -   [`3938b26`](https://github.com/stdlib-js/stdlib/commit/3938b265e603116448c89fcaa58df70e79d40f59) - **refactor:** update paths _(by Gururaj Gurram)_
