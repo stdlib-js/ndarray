@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-18)
+## Unreleased (2025-03-20)
 
 <section class="packages">
 
@@ -292,6 +292,68 @@ This release closes the following issue:
 
 -   [`5e2bbef`](https://github.com/stdlib-js/stdlib/commit/5e2bbef14efd5937e23047c01af0e740e6cbd4f6) - add missing boolean array support
 -   [`aea44c9`](https://github.com/stdlib-js/stdlib/commit/aea44c9c8699a4d748c0db70d4a60801bfc03c40) - update loop limit
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-every-unreleased">
+
+#### [@stdlib/ndarray/base/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/every)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`af44236`](https://github.com/stdlib-js/stdlib/commit/af4423684f924575e9bedcb47348ab455b6db688) - add main header file
+-   [`1c01e33`](https://github.com/stdlib-js/stdlib/commit/1c01e334f75f28a39e08b89fab0117add60e3664) - add macros header
+-   [`608f79b`](https://github.com/stdlib-js/stdlib/commit/608f79be4c10e031e8cfb450561ced24eee221e3) - add 10d blocked macros
+-   [`552d565`](https://github.com/stdlib-js/stdlib/commit/552d565db6cf90e962da92793af6ac7f00846bd4) - add 5d blocked macros
+-   [`6f0da38`](https://github.com/stdlib-js/stdlib/commit/6f0da38194edf4a54349071f7b4704fde6059865) - add 6d blocked macros
+-   [`74fe0a2`](https://github.com/stdlib-js/stdlib/commit/74fe0a292a06f08be392bb231b4e28df6c73672d) - add 7d blocked macros
+-   [`03696ac`](https://github.com/stdlib-js/stdlib/commit/03696ac18aff30b250b446017ce04a92aad2e9d1) - add 8d blocked macros
+-   [`3764601`](https://github.com/stdlib-js/stdlib/commit/3764601d1c8ce115e1a068e9ff103d2dc53b1e4e) - add 9d blocked macros
+-   [`26395f5`](https://github.com/stdlib-js/stdlib/commit/26395f59c471187503619bdbd4339297012642b5) - add 4d blocked macros
+-   [`28aa078`](https://github.com/stdlib-js/stdlib/commit/28aa0787076a7f280df934d2fb3350736f8355c0) - add 3d blocked macros
+-   [`b611927`](https://github.com/stdlib-js/stdlib/commit/b6119272bb72f287656606032b38fdea3a89fcfb) - add n-d macros
+-   [`4695983`](https://github.com/stdlib-js/stdlib/commit/4695983369ab642e91c9cbed641bbac291d90bed) - add 10d macros
+-   [`44a361c`](https://github.com/stdlib-js/stdlib/commit/44a361c150864c56d06975a7d27368b49fe51766) - add 9d macros
+-   [`f33e9ce`](https://github.com/stdlib-js/stdlib/commit/f33e9ce577867ade65c8f46049909931f4364663) - add 8d macros
+-   [`1032827`](https://github.com/stdlib-js/stdlib/commit/1032827c6b8d735e596b586483ced0ab56c65733) - add 7d macros
+-   [`375cc14`](https://github.com/stdlib-js/stdlib/commit/375cc1414897521d2a08cf68431e9d9b57057d51) - add 6d macros
+-   [`ef5ac9c`](https://github.com/stdlib-js/stdlib/commit/ef5ac9c8be208e28126ca44197cf6eaf7022d343) - add 5d macros
+-   [`fb74648`](https://github.com/stdlib-js/stdlib/commit/fb74648f427a15f27765c46130aadb64a432f0b4) - add 4d macros
+-   [`92b4704`](https://github.com/stdlib-js/stdlib/commit/92b47045fe2b3d36a2a1ea802411b2c9bff221f9) - add 3d macros
+-   [`6126c56`](https://github.com/stdlib-js/stdlib/commit/6126c560ec19909e26ea9182b09e362805dcdad1) - add 2d blocked macros
+-   [`3609a6b`](https://github.com/stdlib-js/stdlib/commit/3609a6beacc5cecaad7b9906ee796c4897801892) - add 2d macros
+-   [`30a9f4d`](https://github.com/stdlib-js/stdlib/commit/30a9f4d177d487dd6211707a47a4197a736d24f0) - add 1d macros
+-   [`4194f20`](https://github.com/stdlib-js/stdlib/commit/4194f20366c7ad8ae0121a9e5cd1821f8edaaa6f) - add header for dispatch function
+-   [`5c412d3`](https://github.com/stdlib-js/stdlib/commit/5c412d3fbf47959a6b7d386fcb319dad664ddbde) - add constant macros
+-   [`f0dc809`](https://github.com/stdlib-js/stdlib/commit/f0dc80912cc1ad7ab94f05a90704e96c75aa69fc) - add typedefs
+-   [`242e3a9`](https://github.com/stdlib-js/stdlib/commit/242e3a9378662d968b32e65e5e15f0c545b79b7d) - add dispatch object header
+-   [`9f517d8`](https://github.com/stdlib-js/stdlib/commit/9f517d8d5d18593c7a60d0fb4d0b0fe51f7087d0) - add header files for internal C utilities
+-   [`7a58757`](https://github.com/stdlib-js/stdlib/commit/7a587578700738d61b0beddb311c967a8bf4c0f7) - add internal C utilities
+-   [`4b2a5de`](https://github.com/stdlib-js/stdlib/commit/4b2a5de6d1d42c0ab318f71d77af2ffa1b86b1fc) - add implementation for `ndarray/base/every`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`835bd41`](https://github.com/stdlib-js/stdlib/commit/835bd415145e4f72c46ec7222a2f90fbcc79b791) - remove extra slash
+-   [`c274741`](https://github.com/stdlib-js/stdlib/commit/c274741b9abb10df5dc8a887ca2500db5bb506c0) - define constant pointer
+-   [`e76a62f`](https://github.com/stdlib-js/stdlib/commit/e76a62fbd4563eaa921bbfe5e4b515ec8a2668bf) - set pointer to constant
 
 </section>
 
@@ -999,6 +1061,51 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`461ea5c`](https://github.com/stdlib-js/stdlib/commit/461ea5c11458392ef9310b6ef398b6138ccc3e4d) - **docs:** add README _(by Athan Reines)_
+-   [`4846eb1`](https://github.com/stdlib-js/stdlib/commit/4846eb195c29d2133d39717da261b73cbe9eac7c) - **style:** fix spacing _(by Athan Reines)_
+-   [`af44236`](https://github.com/stdlib-js/stdlib/commit/af4423684f924575e9bedcb47348ab455b6db688) - **feat:** add main header file _(by Athan Reines)_
+-   [`1c01e33`](https://github.com/stdlib-js/stdlib/commit/1c01e334f75f28a39e08b89fab0117add60e3664) - **feat:** add macros header _(by Athan Reines)_
+-   [`608f79b`](https://github.com/stdlib-js/stdlib/commit/608f79be4c10e031e8cfb450561ced24eee221e3) - **feat:** add 10d blocked macros _(by Athan Reines)_
+-   [`552d565`](https://github.com/stdlib-js/stdlib/commit/552d565db6cf90e962da92793af6ac7f00846bd4) - **feat:** add 5d blocked macros _(by Athan Reines)_
+-   [`6f0da38`](https://github.com/stdlib-js/stdlib/commit/6f0da38194edf4a54349071f7b4704fde6059865) - **feat:** add 6d blocked macros _(by Athan Reines)_
+-   [`74fe0a2`](https://github.com/stdlib-js/stdlib/commit/74fe0a292a06f08be392bb231b4e28df6c73672d) - **feat:** add 7d blocked macros _(by Athan Reines)_
+-   [`03696ac`](https://github.com/stdlib-js/stdlib/commit/03696ac18aff30b250b446017ce04a92aad2e9d1) - **feat:** add 8d blocked macros _(by Athan Reines)_
+-   [`3764601`](https://github.com/stdlib-js/stdlib/commit/3764601d1c8ce115e1a068e9ff103d2dc53b1e4e) - **feat:** add 9d blocked macros _(by Athan Reines)_
+-   [`26395f5`](https://github.com/stdlib-js/stdlib/commit/26395f59c471187503619bdbd4339297012642b5) - **feat:** add 4d blocked macros _(by Athan Reines)_
+-   [`28aa078`](https://github.com/stdlib-js/stdlib/commit/28aa0787076a7f280df934d2fb3350736f8355c0) - **feat:** add 3d blocked macros _(by Athan Reines)_
+-   [`b611927`](https://github.com/stdlib-js/stdlib/commit/b6119272bb72f287656606032b38fdea3a89fcfb) - **feat:** add n-d macros _(by Athan Reines)_
+-   [`4695983`](https://github.com/stdlib-js/stdlib/commit/4695983369ab642e91c9cbed641bbac291d90bed) - **feat:** add 10d macros _(by Athan Reines)_
+-   [`44a361c`](https://github.com/stdlib-js/stdlib/commit/44a361c150864c56d06975a7d27368b49fe51766) - **feat:** add 9d macros _(by Athan Reines)_
+-   [`f33e9ce`](https://github.com/stdlib-js/stdlib/commit/f33e9ce577867ade65c8f46049909931f4364663) - **feat:** add 8d macros _(by Athan Reines)_
+-   [`835bd41`](https://github.com/stdlib-js/stdlib/commit/835bd415145e4f72c46ec7222a2f90fbcc79b791) - **fix:** remove extra slash _(by Athan Reines)_
+-   [`1032827`](https://github.com/stdlib-js/stdlib/commit/1032827c6b8d735e596b586483ced0ab56c65733) - **feat:** add 7d macros _(by Athan Reines)_
+-   [`375cc14`](https://github.com/stdlib-js/stdlib/commit/375cc1414897521d2a08cf68431e9d9b57057d51) - **feat:** add 6d macros _(by Athan Reines)_
+-   [`ef5ac9c`](https://github.com/stdlib-js/stdlib/commit/ef5ac9c8be208e28126ca44197cf6eaf7022d343) - **feat:** add 5d macros _(by Athan Reines)_
+-   [`fb74648`](https://github.com/stdlib-js/stdlib/commit/fb74648f427a15f27765c46130aadb64a432f0b4) - **feat:** add 4d macros _(by Athan Reines)_
+-   [`92b4704`](https://github.com/stdlib-js/stdlib/commit/92b47045fe2b3d36a2a1ea802411b2c9bff221f9) - **feat:** add 3d macros _(by Athan Reines)_
+-   [`382eff4`](https://github.com/stdlib-js/stdlib/commit/382eff4642422f1e7a8ff0f1fb05b5ec9642384d) - **docs:** fix comment _(by Athan Reines)_
+-   [`6126c56`](https://github.com/stdlib-js/stdlib/commit/6126c560ec19909e26ea9182b09e362805dcdad1) - **feat:** add 2d blocked macros _(by Athan Reines)_
+-   [`c274741`](https://github.com/stdlib-js/stdlib/commit/c274741b9abb10df5dc8a887ca2500db5bb506c0) - **fix:** define constant pointer _(by Athan Reines)_
+-   [`e76a62f`](https://github.com/stdlib-js/stdlib/commit/e76a62fbd4563eaa921bbfe5e4b515ec8a2668bf) - **fix:** set pointer to constant _(by Athan Reines)_
+-   [`845e64a`](https://github.com/stdlib-js/stdlib/commit/845e64a2f7e12bd60729097230774569b2d4954e) - **refactor:** update paths _(by Gururaj Gurram)_
+-   [`3609a6b`](https://github.com/stdlib-js/stdlib/commit/3609a6beacc5cecaad7b9906ee796c4897801892) - **feat:** add 2d macros _(by Athan Reines)_
+-   [`30a9f4d`](https://github.com/stdlib-js/stdlib/commit/30a9f4d177d487dd6211707a47a4197a736d24f0) - **feat:** add 1d macros _(by Athan Reines)_
+-   [`b4d1f2a`](https://github.com/stdlib-js/stdlib/commit/b4d1f2acb831253107b9e6e4a11bf0660f3c1660) - **chore:** update copyright years _(by Athan Reines)_
+-   [`4194f20`](https://github.com/stdlib-js/stdlib/commit/4194f20366c7ad8ae0121a9e5cd1821f8edaaa6f) - **feat:** add header for dispatch function _(by Athan Reines)_
+-   [`7e4c3fc`](https://github.com/stdlib-js/stdlib/commit/7e4c3fcc009fa5d2681378249f0de42b0cb67920) - **docs:** add TypeScript declarations _(by Athan Reines)_
+-   [`5c412d3`](https://github.com/stdlib-js/stdlib/commit/5c412d3fbf47959a6b7d386fcb319dad664ddbde) - **feat:** add constant macros _(by Athan Reines)_
+-   [`f0dc809`](https://github.com/stdlib-js/stdlib/commit/f0dc80912cc1ad7ab94f05a90704e96c75aa69fc) - **feat:** add typedefs _(by Athan Reines)_
+-   [`242e3a9`](https://github.com/stdlib-js/stdlib/commit/242e3a9378662d968b32e65e5e15f0c545b79b7d) - **feat:** add dispatch object header _(by Athan Reines)_
+-   [`af95422`](https://github.com/stdlib-js/stdlib/commit/af954224f1ff50e950c27f9fb56e7453e6eca4b5) - **docs:** add folder README _(by Athan Reines)_
+-   [`de19c22`](https://github.com/stdlib-js/stdlib/commit/de19c2218e00215027ff8f57bcfaae326cf590ee) - **test:** add initial test file _(by Athan Reines)_
+-   [`ada26fc`](https://github.com/stdlib-js/stdlib/commit/ada26fc7215bcaef495b16f2db2c7a306d449d42) - **docs:** add package meta data _(by Athan Reines)_
+-   [`8f3b1e2`](https://github.com/stdlib-js/stdlib/commit/8f3b1e265eee6bcdd2b822c54e1742fdfd276240) - **docs:** add REPL help _(by Athan Reines)_
+-   [`7ca0425`](https://github.com/stdlib-js/stdlib/commit/7ca042590eea8a8d796bfa86e6662810d3176c6b) - **docs:** add example _(by Athan Reines)_
+-   [`1b340b4`](https://github.com/stdlib-js/stdlib/commit/1b340b4aba5c597ea2a1cae079264215b62c823c) - **bench:** add benchmarks _(by Athan Reines)_
+-   [`090d188`](https://github.com/stdlib-js/stdlib/commit/090d188f6925e3d6cdc98f63815996ef952bf249) - **build:** add header template _(by Athan Reines)_
+-   [`9f517d8`](https://github.com/stdlib-js/stdlib/commit/9f517d8d5d18593c7a60d0fb4d0b0fe51f7087d0) - **feat:** add header files for internal C utilities _(by Athan Reines)_
+-   [`7a58757`](https://github.com/stdlib-js/stdlib/commit/7a587578700738d61b0beddb311c967a8bf4c0f7) - **feat:** add internal C utilities _(by Athan Reines)_
+-   [`4b2a5de`](https://github.com/stdlib-js/stdlib/commit/4b2a5de6d1d42c0ab318f71d77af2ffa1b86b1fc) - **feat:** add implementation for `ndarray/base/every` _(by Athan Reines)_
 -   [`843fd22`](https://github.com/stdlib-js/stdlib/commit/843fd22b54dd151a98bf2dd9f145147a6e7f8522) - **docs:** fix example _(by Athan Reines)_
 -   [`d6437f7`](https://github.com/stdlib-js/stdlib/commit/d6437f72ff5f7b0b08c531e25826651f28757143) - **docs:** fix example _(by Athan Reines)_
 -   [`ea0fc20`](https://github.com/stdlib-js/stdlib/commit/ea0fc20c91111d85cc32c9d38bd7ce7a70b825f8) - **chore:** fix EditorConfig lint error [(#6135)](https://github.com/stdlib-js/stdlib/pull/6135) _(by Bhavishy Agrawal, Athan Reines)_
