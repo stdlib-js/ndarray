@@ -39,14 +39,29 @@ extern "C" {
 int8_t stdlib_ndarray_every_{{SIGNATURE}}( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a zero-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_0d( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in a zero-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_0d( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a one-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_1d( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in a one-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_1d( struct ndarray *arrays[], void *fcn );
 
 /**
 * Tests whether every element is truthy in a two-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
@@ -59,6 +74,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_2d( struct ndarray *arrays[], void *da
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_2d_blocked( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in a two-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_2d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a two-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_2d_blocked( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a three-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_3d( struct ndarray *arrays[], void *data );
@@ -67,6 +92,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_3d( struct ndarray *arrays[], void *da
 * Tests whether every element is truthy in a three-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_3d_blocked( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in a three-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_3d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a three-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_3d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Tests whether every element is truthy in a four-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
@@ -79,6 +114,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_4d( struct ndarray *arrays[], void *da
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_4d_blocked( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in a four-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_4d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a four-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_4d_blocked( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a five-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_5d( struct ndarray *arrays[], void *data );
@@ -87,6 +132,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_5d( struct ndarray *arrays[], void *da
 * Tests whether every element is truthy in a five-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_5d_blocked( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in a five-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_5d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a five-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_5d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Tests whether every element is truthy in a six-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
@@ -99,6 +154,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_6d( struct ndarray *arrays[], void *da
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_6d_blocked( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in a six-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_6d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a six-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_6d_blocked( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a seven-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_7d( struct ndarray *arrays[], void *data );
@@ -107,6 +172,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_7d( struct ndarray *arrays[], void *da
 * Tests whether every element is truthy in a seven-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_7d_blocked( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in a seven-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_7d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a seven-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_7d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Tests whether every element is truthy in an eight-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
@@ -119,6 +194,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_8d( struct ndarray *arrays[], void *da
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_8d_blocked( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in an eight-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_8d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in an eight-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_8d_blocked( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in a nine-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_9d( struct ndarray *arrays[], void *data );
@@ -127,6 +212,16 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_9d( struct ndarray *arrays[], void *da
 * Tests whether every element is truthy in a nine-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_9d_blocked( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in a nine-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_9d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a nine-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_9d_blocked( struct ndarray *arrays[], void *fcn );
 
 /**
 * Tests whether every element is truthy in a ten-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
@@ -139,9 +234,24 @@ int8_t stdlib_ndarray_every_{{SIGNATURE}}_10d( struct ndarray *arrays[], void *d
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_10d_blocked( struct ndarray *arrays[], void *data );
 
 /**
+* Tests whether every element is truthy in a ten-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_10d( struct ndarray *arrays[], void *fcn );
+
+/**
+* Tests whether every element is truthy in a ten-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_10d_blocked( struct ndarray *arrays[], void *fcn );
+
+/**
 * Tests whether every element is truthy in an n-dimensional input ndarray and assigns the result to a zero-dimensional output ndarray.
 */
 int8_t stdlib_ndarray_every_{{SIGNATURE}}_nd( struct ndarray *arrays[], void *data );
+
+/**
+* Tests whether every element is truthy in an n-dimensional input ndarray according to a predicate function and assigns the result to a zero-dimensional output ndarray.
+*/
+int8_t stdlib_ndarray_every_by_{{SIGNATURE}}_nd( struct ndarray *arrays[], void *fcn );
 
 #ifdef __cplusplus
 }
