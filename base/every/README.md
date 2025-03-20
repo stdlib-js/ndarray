@@ -165,7 +165,7 @@ Character codes for data types:
 Function name suffix naming convention:
 
 ```text
-stdlib_ndarray_<input_data_type>_<output_data_type>[_as_<callback_arg_data_type>_<callback_return_data_type>]
+stdlib_ndarray_every_<input_data_type>_<output_data_type>[_as_<callback_arg_data_type>_<callback_return_data_type>]
 ```
 
 For example,
@@ -176,6 +176,22 @@ For example,
 void stdlib_ndarray_every_d_x(...) {...}
 ```
 
+is a function which accepts one double-precision floating-point input ndarray and one boolean output ndarray.
+
+Function name suffix naming convention for applying a predicate function:
+
+```text
+stdlib_ndarray_every_by_<input_data_type>_<output_data_type>[_as_<callback_arg_data_type>_<callback_return_data_type>]
+```
+
+For example,
+
+<!-- run-disable -->
+
+```c
+void stdlib_ndarray_every_by_d_x(...) {...}
+```
+
 is a function which accepts one double-precision floating-point input ndarray and one boolean output ndarray. In other words, the suffix encodes the function type signature.
 
 To support callbacks whose input arguments are of a different data type than the input ndarray data type, the naming convention supports appending an `as` suffix. For example,
@@ -183,7 +199,7 @@ To support callbacks whose input arguments are of a different data type than the
 <!-- run-disable -->
 
 ```c
-void stdlib_ndarray_every_f_x_as_d_x(...) {...}
+void stdlib_ndarray_every_by_f_x_as_d_x(...) {...}
 ```
 
 is a function which accepts one single-precision floating-point input ndarray and one boolean output ndarray. However, the callback accepts double-precision floating-point numbers. Accordingly, the input values need to be cast using the following conversion sequence
@@ -276,12 +292,13 @@ static bool fcn( const uint8_t x ) {
 }
 
 int main( void ) {
-    // Define the ndarray data type:
-    enum STDLIB_NDARRAY_DTYPE dtype = STDLIB_NDARRAY_UINT8;
+    // Define the ndarray data types:
+    enum STDLIB_NDARRAY_DTYPE xdtype = STDLIB_NDARRAY_UINT8;
+    enum STDLIB_NDARRAY_DTYPE ydtype = STDLIB_NDARRAY_BOOL;
 
     // Create underlying byte arrays:
-    uint8_t xbuf[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-    bool ybuf[] = { false };
+    uint8_t xbuf[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+    uint8_t ybuf[] = { 0 };
 
     // Define the number of input array dimensions:
     int64_t ndims = 3;
@@ -309,14 +326,14 @@ int main( void ) {
     int64_t nsubmodes = 1;
 
     // Create an input ndarray:
-    struct ndarray *x = stdlib_ndarray_allocate( dtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
+    struct ndarray *x = stdlib_ndarray_allocate( xdtype, xbuf, ndims, shx, sx, ox, order, imode, nsubmodes, submodes );
     if ( x == NULL ) {
         fprintf( stderr, "Error allocating memory.\n" );
         exit( EXIT_FAILURE );
     }
 
     // Create an output ndarray:
-    struct ndarray *y = stdlib_ndarray_allocate( dtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
+    struct ndarray *y = stdlib_ndarray_allocate( ydtype, ybuf, 0, shy, sy, oy, order, imode, nsubmodes, submodes );
     if ( y == NULL ) {
         fprintf( stderr, "Error allocating memory.\n" );
         exit( EXIT_FAILURE );
@@ -326,7 +343,7 @@ int main( void ) {
     struct ndarray *arrays[] = { x, y };
 
     // Test elements:
-    int8_t status = stdlib_ndarray_every_b_x( arrays, (void *)fcn );
+    int8_t status = stdlib_ndarray_every_by_b_x( arrays, (void *)fcn );
     if ( status != 0 ) {
         fprintf( stderr, "Error during computation.\n" );
         exit( EXIT_FAILURE );

@@ -1061,6 +1061,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`5543e2c`](https://github.com/stdlib-js/stdlib/commit/5543e2c370163b6bce15115c6902c4c06d4705ba) - **docs:** document predicate interfaces _(by Athan Reines)_
 -   [`15931ac`](https://github.com/stdlib-js/stdlib/commit/15931ac3c7825db6951cad8470e8737618f7f18e) - **chore:** update template to include predicate function signatures _(by Athan Reines)_
 -   [`29c95a5`](https://github.com/stdlib-js/stdlib/commit/29c95a5095aa88870e3515b853eef6d6f6b67570) - **build:** add template for source files _(by Athan Reines)_
 -   [`461ea5c`](https://github.com/stdlib-js/stdlib/commit/461ea5c11458392ef9310b6ef398b6138ccc3e4d) - **docs:** add README _(by Athan Reines)_
