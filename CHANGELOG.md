@@ -1087,6 +1087,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`70d0be2`](https://github.com/stdlib-js/stdlib/commit/70d0be235297eecc69d8e7ec4aad484ac7d5aedc) - **test:** add 0d tests _(by Athan Reines)_
 -   [`d761114`](https://github.com/stdlib-js/stdlib/commit/d761114ce6f6f74f0befb8c445e4632c0265c150) - **docs:** update descriptions _(by Athan Reines)_
 -   [`59ab26d`](https://github.com/stdlib-js/stdlib/commit/59ab26d220e5950d2a4e1fa087602e73ce3e3b5b) - **docs:** add `c_x_as_z_x` example _(by Athan Reines)_
 -   [`ae76c53`](https://github.com/stdlib-js/stdlib/commit/ae76c53f6559c382a9843c62f2b767b59e2554d9) - **docs:** add `z_x` example _(by Athan Reines)_
