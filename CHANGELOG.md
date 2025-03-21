@@ -1087,6 +1087,19 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d761114`](https://github.com/stdlib-js/stdlib/commit/d761114ce6f6f74f0befb8c445e4632c0265c150) - **docs:** update descriptions _(by Athan Reines)_
+-   [`59ab26d`](https://github.com/stdlib-js/stdlib/commit/59ab26d220e5950d2a4e1fa087602e73ce3e3b5b) - **docs:** add `c_x_as_z_x` example _(by Athan Reines)_
+-   [`ae76c53`](https://github.com/stdlib-js/stdlib/commit/ae76c53f6559c382a9843c62f2b767b59e2554d9) - **docs:** add `z_x` example _(by Athan Reines)_
+-   [`86cff92`](https://github.com/stdlib-js/stdlib/commit/86cff928cc8c5915782aa0c0b93063a93232f812) - **docs:** add `c_x` example _(by Athan Reines)_
+-   [`f18745d`](https://github.com/stdlib-js/stdlib/commit/f18745d20d6b884c938e7705a3716b2c2fd143ce) - **docs:** add `s_x` example _(by Athan Reines)_
+-   [`8e9d2a2`](https://github.com/stdlib-js/stdlib/commit/8e9d2a20687de20c270bf55954d7b4dd50348ed2) - **docs:** add `t_x_as_u_x` example _(by Athan Reines)_
+-   [`219d06a`](https://github.com/stdlib-js/stdlib/commit/219d06a5fea5b198df3ed90c819785150154de8b) - **docs:** fix dtype _(by Athan Reines)_
+-   [`9a8e36f`](https://github.com/stdlib-js/stdlib/commit/9a8e36ffe63f3e0f56e1aa50c5eca95afb2e7a60) - **docs:** add `k_x_as_i_x` example _(by Athan Reines)_
+-   [`151d22e`](https://github.com/stdlib-js/stdlib/commit/151d22e924f6636065f2558bf76a4ca2fa85d153) - **docs:** add `u_x` example _(by Athan Reines)_
+-   [`e8891b5`](https://github.com/stdlib-js/stdlib/commit/e8891b597ced936af5e56ce7c928b41bec87afa6) - **docs:** add `i_x` example _(by Athan Reines)_
+-   [`20474dc`](https://github.com/stdlib-js/stdlib/commit/20474dce8d183aca11b2a6c78dc2e7eb04b2e7dd) - **docs:** update example _(by Athan Reines)_
+-   [`d3f3847`](https://github.com/stdlib-js/stdlib/commit/d3f384758b05eaf74d6d1ed81c8e4a7712e35c15) - **docs:** add `f_x` example _(by Athan Reines)_
+-   [`6f642bf`](https://github.com/stdlib-js/stdlib/commit/6f642bf515e928ca27a5245e1fa021484982c6f9) - **docs:** add `d_x` example _(by Athan Reines)_
 -   [`23f4cb5`](https://github.com/stdlib-js/stdlib/commit/23f4cb5d51eef16ca8229560d4d35c4537892c50) - **docs:** add `b_x` example _(by Athan Reines)_
 -   [`1e907c0`](https://github.com/stdlib-js/stdlib/commit/1e907c0e9fb203d0b045d04eb1109eb71a49a08e) - **docs:** document C APIs _(by Athan Reines)_
 -   [`6e315b0`](https://github.com/stdlib-js/stdlib/commit/6e315b07350876fcd04f83290fad4ac38c757e7b) - **build:** update manifest _(by Athan Reines)_
