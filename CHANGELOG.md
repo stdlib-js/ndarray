@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-20)
+## Unreleased (2025-03-21)
 
 <section class="packages">
 
@@ -313,6 +313,9 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`08aeae7`](https://github.com/stdlib-js/stdlib/commit/08aeae7804a6c7b95d1b18e2001854bfa5d98a03) - add loop implementations
+-   [`b71f305`](https://github.com/stdlib-js/stdlib/commit/b71f305ed0f5e7bd763adcc44c710c9f751e1f66) - add header files
+-   [`3677e41`](https://github.com/stdlib-js/stdlib/commit/3677e411f8dad66192e35cc15290e551a5534d4c) - add dispatch implementation
 -   [`af44236`](https://github.com/stdlib-js/stdlib/commit/af4423684f924575e9bedcb47348ab455b6db688) - add main header file
 -   [`1c01e33`](https://github.com/stdlib-js/stdlib/commit/1c01e334f75f28a39e08b89fab0117add60e3664) - add macros header
 -   [`608f79b`](https://github.com/stdlib-js/stdlib/commit/608f79be4c10e031e8cfb450561ced24eee221e3) - add 10d blocked macros
@@ -351,6 +354,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`5f03a9c`](https://github.com/stdlib-js/stdlib/commit/5f03a9c9c4192b27996e9fb22959ca948230396a) - update function names and fix buffer dtype
 -   [`835bd41`](https://github.com/stdlib-js/stdlib/commit/835bd415145e4f72c46ec7222a2f90fbcc79b791) - remove extra slash
 -   [`c274741`](https://github.com/stdlib-js/stdlib/commit/c274741b9abb10df5dc8a887ca2500db5bb506c0) - define constant pointer
 -   [`e76a62f`](https://github.com/stdlib-js/stdlib/commit/e76a62fbd4563eaa921bbfe5e4b515ec8a2668bf) - set pointer to constant
@@ -739,6 +743,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-ctor-unreleased">
+
+#### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`f22a9ab`](https://github.com/stdlib-js/stdlib/commit/f22a9ab1c1c50aacc3529b77401469c915f79aaf) - ensure support for allocating zero-dimensional ndarrays
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-filter-unreleased">
 
 #### [@stdlib/ndarray/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter)
@@ -1061,6 +1087,21 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`23f4cb5`](https://github.com/stdlib-js/stdlib/commit/23f4cb5d51eef16ca8229560d4d35c4537892c50) - **docs:** add `b_x` example _(by Athan Reines)_
+-   [`1e907c0`](https://github.com/stdlib-js/stdlib/commit/1e907c0e9fb203d0b045d04eb1109eb71a49a08e) - **docs:** document C APIs _(by Athan Reines)_
+-   [`6e315b0`](https://github.com/stdlib-js/stdlib/commit/6e315b07350876fcd04f83290fad4ac38c757e7b) - **build:** update manifest _(by Athan Reines)_
+-   [`08aeae7`](https://github.com/stdlib-js/stdlib/commit/08aeae7804a6c7b95d1b18e2001854bfa5d98a03) - **feat:** add loop implementations _(by Athan Reines)_
+-   [`1d26ae4`](https://github.com/stdlib-js/stdlib/commit/1d26ae441913819d1de434fc2dbfacf092cd0df2) - **build:** add loop generation scripts and refactor templates _(by Athan Reines)_
+-   [`b71f305`](https://github.com/stdlib-js/stdlib/commit/b71f305ed0f5e7bd763adcc44c710c9f751e1f66) - **feat:** add header files _(by Athan Reines)_
+-   [`5f03a9c`](https://github.com/stdlib-js/stdlib/commit/5f03a9c9c4192b27996e9fb22959ca948230396a) - **fix:** update function names and fix buffer dtype _(by Athan Reines)_
+-   [`7536870`](https://github.com/stdlib-js/stdlib/commit/75368709f4bdeb91221d08492b5a0bc9c94f5b71) - **docs:** fix example and update docs _(by Athan Reines)_
+-   [`f22a9ab`](https://github.com/stdlib-js/stdlib/commit/f22a9ab1c1c50aacc3529b77401469c915f79aaf) - **fix:** ensure support for allocating zero-dimensional ndarrays _(by Athan Reines)_
+-   [`6b2c525`](https://github.com/stdlib-js/stdlib/commit/6b2c525c004ce04def43ac37edace672d414916d) - **build:** add manifest file _(by Athan Reines)_
+-   [`3677e41`](https://github.com/stdlib-js/stdlib/commit/3677e411f8dad66192e35cc15290e551a5534d4c) - **feat:** add dispatch implementation _(by Athan Reines)_
+-   [`2c5c512`](https://github.com/stdlib-js/stdlib/commit/2c5c5127bd8bec569f88086096c65e39efc722c9) - **docs:** update comment _(by Athan Reines)_
+-   [`19ed652`](https://github.com/stdlib-js/stdlib/commit/19ed652198d5f219df78a46f8d4d0a5447ab2cb1) - **style:** reorder variable declarations to match ndarray/base/unary _(by Athan Reines)_
+-   [`2b67d75`](https://github.com/stdlib-js/stdlib/commit/2b67d75c6c85b360e539bc5316ad0607a08d9521) - **docs:** fix examples and resolve lint error _(by Athan Reines)_
+-   [`a934d8c`](https://github.com/stdlib-js/stdlib/commit/a934d8c2b9261053a94f90840c93cea9ea7bfc82) - **build:** add documentation template _(by Athan Reines)_
 -   [`5543e2c`](https://github.com/stdlib-js/stdlib/commit/5543e2c370163b6bce15115c6902c4c06d4705ba) - **docs:** document predicate interfaces _(by Athan Reines)_
 -   [`15931ac`](https://github.com/stdlib-js/stdlib/commit/15931ac3c7825db6951cad8470e8737618f7f18e) - **chore:** update template to include predicate function signatures _(by Athan Reines)_
 -   [`29c95a5`](https://github.com/stdlib-js/stdlib/commit/29c95a5095aa88870e3515b853eef6d6f6b67570) - **build:** add template for source files _(by Athan Reines)_
