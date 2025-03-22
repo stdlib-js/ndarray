@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2024 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -32,76 +32,66 @@ import { ComplexLike } from '@stdlib/types/complex';
 *
 * @param x - input ndarray
 * @param value - scalar value
+* @returns input ndarray
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
-* // Create a data buffer:
-* var xbuf = new Complex128Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-*
-* // Define the shape of the input array:
-* var shape = [ 3, 1, 2 ];
-*
-* // Define the array strides:
-* var sx = [ 2, 2, 1 ];
-*
-* // Define the index offset:
-* var ox = 0;
-*
-* // Create the input ndarray-like object:
-* var x = {
-*     'dtype': 'float64',
-*     'data': xbuf,
-*     'shape': shape,
-*     'strides': sx,
-*     'offset': ox,
-*     'order': 'row-major'
-* };
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'complex128'
+* });
 *
 * fill( x, 10.0 );
 *
-* console.log( x.data );
+* console.log( getData( x ) );
 * // => <Complex128Array>[ 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0 ]
 */
-declare function fill( x: complexndarray, value: number | ComplexLike ): void;
+declare function fill<T extends complexndarray>( x: T, value: number | ComplexLike ): T;
 
 /**
 * Fills an input ndarray with a specified value.
 *
 * @param x - input ndarray
 * @param value - scalar value
+* @returns input ndarray
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
-* // Create a data buffer:
-* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-*
-* // Define the shape of the input array:
-* var shape = [ 3, 1, 2 ];
-*
-* // Define the array strides:
-* var sx = [ 2, 2, 1 ];
-*
-* // Define the index offset:
-* var ox = 0;
-*
-* // Create the input ndarray-like object:
-* var x = {
-*     'dtype': 'float64',
-*     'data': xbuf,
-*     'shape': shape,
-*     'strides': sx,
-*     'offset': ox,
-*     'order': 'row-major'
-* };
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'generic'
+* });
 *
 * fill( x, 10.0 );
 *
-* console.log( x.data );
+* console.log( getData( x ) );
+* // => [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+*/
+declare function fill<T = unknown, U extends genericndarray<T> = genericndarray<T>>( x: U, value: T ): U;
+
+/**
+* Fills an input ndarray with a specified value.
+*
+* @param x - input ndarray
+* @param value - scalar value
+* @returns input ndarray
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
+*
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'float64'
+* });
+*
+* fill( x, 10.0 );
+*
+* console.log( getData( x ) );
 * // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 */
-declare function fill<T = unknown>( x: typedndarray<T> | genericndarray<T>, value: T ): void;
+declare function fill<T = unknown, U extends typedndarray<T> = typedndarray<T>>( x: U, value: T ): U;
 
 
 // EXPORTS //

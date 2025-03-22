@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`5e275bf`](https://github.com/stdlib-js/stdlib/commit/5e275bf225e7ea1cb233caef5336a062463342cb) - add `fill` to namespace
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436)
 -   [`25d8240`](https://github.com/stdlib-js/stdlib/commit/25d8240f51b27bd0ee85ca3ef70c89fd3778b902) - update namespace TypeScript declarations [(#4363)](https://github.com/stdlib-js/stdlib/pull/4363)
 -   [`44547ea`](https://github.com/stdlib-js/stdlib/commit/44547ead986e505d5fdffac47d44cd1d18480f8c) - add `ndarray2fancy` to namespace
@@ -382,6 +383,28 @@ This release closes the following issue:
 ##### Bug Fixes
 
 -   [`712a9a8`](https://github.com/stdlib-js/stdlib/commit/712a9a8554f59fdfe520c4e2daafdbfd93637c76) - compute singleton strides as if strides computed apriori
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-fill-unreleased">
+
+#### [@stdlib/ndarray/base/fill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fill)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`1aca9d3`](https://github.com/stdlib-js/stdlib/commit/1aca9d37e47e33c03b94bb5b128647c7387172e2) - update type defn
 
 </section>
 
@@ -789,6 +812,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-fill-unreleased">
+
+#### [@stdlib/ndarray/fill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/fill)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`f475f78`](https://github.com/stdlib-js/stdlib/commit/f475f7891aa4103a113c9569902311d3570a2751) - add `ndarray/fill`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-filter-unreleased">
 
 #### [@stdlib/ndarray/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter)
@@ -1111,6 +1156,10 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`40fc3a2`](https://github.com/stdlib-js/stdlib/commit/40fc3a218445c34a667237cadb74ae9417cc0392) - **chore:** add TODO _(by Athan Reines)_
+-   [`5e275bf`](https://github.com/stdlib-js/stdlib/commit/5e275bf225e7ea1cb233caef5336a062463342cb) - **feat:** add `fill` to namespace _(by Athan Reines)_
+-   [`1aca9d3`](https://github.com/stdlib-js/stdlib/commit/1aca9d37e47e33c03b94bb5b128647c7387172e2) - **fix:** update type defn _(by Athan Reines)_
+-   [`f475f78`](https://github.com/stdlib-js/stdlib/commit/f475f7891aa4103a113c9569902311d3570a2751) - **feat:** add `ndarray/fill` _(by Athan Reines)_
 -   [`1e48327`](https://github.com/stdlib-js/stdlib/commit/1e48327f169d8cd8adf1177f92d5147077edbfe7) - **fix:** handle zero-dimensional ndarrays _(by Athan Reines)_
 -   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`d29b55f`](https://github.com/stdlib-js/stdlib/commit/d29b55fd2f01608cf9cbff68eb5b6dad4ca1722b) - **feat:** add `ndarray/base/fill-by` _(by Athan Reines)_
