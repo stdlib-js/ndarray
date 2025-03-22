@@ -245,6 +245,7 @@
 
 ##### Bug Fixes
 
+-   [`1e48327`](https://github.com/stdlib-js/stdlib/commit/1e48327f169d8cd8adf1177f92d5147077edbfe7) - handle zero-dimensional ndarrays
 -   [`52f7ac2`](https://github.com/stdlib-js/stdlib/commit/52f7ac26eff82f57ccfca5a3b04c15dbacad074e) - use correct stride
 
 </section>
@@ -1110,6 +1111,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1e48327`](https://github.com/stdlib-js/stdlib/commit/1e48327f169d8cd8adf1177f92d5147077edbfe7) - **fix:** handle zero-dimensional ndarrays _(by Athan Reines)_
 -   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`d29b55f`](https://github.com/stdlib-js/stdlib/commit/d29b55fd2f01608cf9cbff68eb5b6dad4ca1722b) - **feat:** add `ndarray/base/fill-by` _(by Athan Reines)_
 -   [`266a064`](https://github.com/stdlib-js/stdlib/commit/266a064a8cc55b100a00d2ad98c84820d8f17653) - **style:** fix spacing _(by Athan Reines)_
