@@ -320,6 +320,15 @@ setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' )
 setReadOnly( ns, 'fill', require( './../../base/fill' ) );
 
 /**
+* @name fillBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/fill-by}
+*/
+setReadOnly( ns, 'fillBy', require( './../../base/fill-by' ) );
+
+/**
 * @name flag
 * @memberof ns
 * @readonly

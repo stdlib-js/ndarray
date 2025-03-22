@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-21)
+## Unreleased (2025-03-22)
 
 <section class="packages">
 
@@ -91,6 +91,7 @@
 
 ##### Features
 
+-   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - add `fillBy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`741b6f1`](https://github.com/stdlib-js/stdlib/commit/741b6f1df8ce11e77fb22c279cee6bbae3323176) - add `spreadDimensions` to namespace
 -   [`908239e`](https://github.com/stdlib-js/stdlib/commit/908239e7cc6b4b3e260d0cc1f5aebb9af35d83c6) - add `toUniqueNormalizedIndices` to namespace
@@ -384,6 +385,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-fill-by-unreleased">
+
+#### [@stdlib/ndarray/base/fill-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/fill-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d29b55f`](https://github.com/stdlib-js/stdlib/commit/d29b55fd2f01608cf9cbff68eb5b6dad4ca1722b) - add `ndarray/base/fill-by`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -1087,6 +1110,10 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
+-   [`d29b55f`](https://github.com/stdlib-js/stdlib/commit/d29b55fd2f01608cf9cbff68eb5b6dad4ca1722b) - **feat:** add `ndarray/base/fill-by` _(by Athan Reines)_
+-   [`266a064`](https://github.com/stdlib-js/stdlib/commit/266a064a8cc55b100a00d2ad98c84820d8f17653) - **style:** fix spacing _(by Athan Reines)_
+-   [`04f7752`](https://github.com/stdlib-js/stdlib/commit/04f77520acf685e9325bf4413be6da7543ed3cb5) - **refactor:** accommodate known array types for increased performance _(by Athan Reines)_
 -   [`70d0be2`](https://github.com/stdlib-js/stdlib/commit/70d0be235297eecc69d8e7ec4aad484ac7d5aedc) - **test:** add 0d tests _(by Athan Reines)_
 -   [`d761114`](https://github.com/stdlib-js/stdlib/commit/d761114ce6f6f74f0befb8c445e4632c0265c150) - **docs:** update descriptions _(by Athan Reines)_
 -   [`59ab26d`](https://github.com/stdlib-js/stdlib/commit/59ab26d220e5950d2a4e1fa087602e73ce3e3b5b) - **docs:** add `c_x_as_z_x` example _(by Athan Reines)_
