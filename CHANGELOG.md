@@ -140,6 +140,7 @@
 
 ##### Features
 
+-   [`1a18317`](https://github.com/stdlib-js/stdlib/commit/1a183174f05d99bf78be477639df489493c01e2b) - add `isScalarMostlySafeCompatible` to namespace
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436)
 -   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - add `isOutputDataTypePolicy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
@@ -228,6 +229,28 @@
 ##### Features
 
 -   [`8cce31a`](https://github.com/stdlib-js/stdlib/commit/8cce31aadb16c58d167e89b6b9f8483d9314715f) - add `ndarray/base/assert/is-row-major-string`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-assert-is-scalar-mostly-safe-compatible-unreleased">
+
+#### [@stdlib/ndarray/base/assert/is-scalar-mostly-safe-compatible](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/assert/is-scalar-mostly-safe-compatible)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`6003449`](https://github.com/stdlib-js/stdlib/commit/600344933e2836421aa15fb89d62e9a0a9266bd6) - add `ndarray/base/assert/is-scalar-mostly-safe-compatible`
 
 </section>
 
@@ -1191,6 +1214,9 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1a18317`](https://github.com/stdlib-js/stdlib/commit/1a183174f05d99bf78be477639df489493c01e2b) - **feat:** add `isScalarMostlySafeCompatible` to namespace _(by Athan Reines)_
+-   [`6003449`](https://github.com/stdlib-js/stdlib/commit/600344933e2836421aa15fb89d62e9a0a9266bd6) - **feat:** add `ndarray/base/assert/is-scalar-mostly-safe-compatible` _(by Athan Reines)_
+-   [`bc026be`](https://github.com/stdlib-js/stdlib/commit/bc026be819b804711432f11bbdbc369271a27a9b) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`41b3b21`](https://github.com/stdlib-js/stdlib/commit/41b3b214c891ac64926296439240e2bf5f85de3f) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - **feat:** update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315) _(by stdlib-bot)_
 -   [`e5d835c`](https://github.com/stdlib-js/stdlib/commit/e5d835cb9acbd4597f255246fecd52f024212fbb) - **feat:** add `ndarray/fill-by` _(by Athan Reines)_

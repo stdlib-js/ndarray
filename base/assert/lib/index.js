@@ -280,6 +280,15 @@ setReadOnly( ns, 'isSafeDataTypeCast', require( './../../../base/assert/is-safe-
 setReadOnly( ns, 'isSameKindDataTypeCast', require( './../../../base/assert/is-same-kind-data-type-cast' ) );
 
 /**
+* @name isScalarMostlySafeCompatible
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-scalar-mostly-safe-compatible}
+*/
+setReadOnly( ns, 'isScalarMostlySafeCompatible', require( './../../../base/assert/is-scalar-mostly-safe-compatible' ) );
+
+/**
 * @name isSignedIntegerDataType
 * @memberof ns
 * @readonly
