@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`41b3b21`](https://github.com/stdlib-js/stdlib/commit/41b3b214c891ac64926296439240e2bf5f85de3f) - add `fillBy` to namespace
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315)
 -   [`5e275bf`](https://github.com/stdlib-js/stdlib/commit/5e275bf225e7ea1cb233caef5336a062463342cb) - add `fill` to namespace
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436)
@@ -434,6 +435,16 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`54de8ff`](https://github.com/stdlib-js/stdlib/commit/54de8ff8a11f970858032265f2bc5caeba082479) - update default type
+
+</section>
+
+<!-- /.bug-fixes -->
+
 </details>
 
 </section>
@@ -836,6 +847,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-fill-by-unreleased">
+
+#### [@stdlib/ndarray/fill-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/fill-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`e5d835c`](https://github.com/stdlib-js/stdlib/commit/e5d835cb9acbd4597f255246fecd52f024212fbb) - add `ndarray/fill-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-filter-unreleased">
 
 #### [@stdlib/ndarray/filter](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/filter)
@@ -1158,8 +1191,11 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`41b3b21`](https://github.com/stdlib-js/stdlib/commit/41b3b214c891ac64926296439240e2bf5f85de3f) - **feat:** add `fillBy` to namespace _(by Athan Reines)_
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - **feat:** update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315) _(by stdlib-bot)_
+-   [`e5d835c`](https://github.com/stdlib-js/stdlib/commit/e5d835cb9acbd4597f255246fecd52f024212fbb) - **feat:** add `ndarray/fill-by` _(by Athan Reines)_
 -   [`bb5117c`](https://github.com/stdlib-js/stdlib/commit/bb5117c314dcc31b3c7100eacb1a693198962e3b) - **docs:** update namespace table of contents [(#6317)](https://github.com/stdlib-js/stdlib/pull/6317) _(by stdlib-bot)_
+-   [`54de8ff`](https://github.com/stdlib-js/stdlib/commit/54de8ff8a11f970858032265f2bc5caeba082479) - **fix:** update default type _(by Athan Reines)_
 -   [`40fc3a2`](https://github.com/stdlib-js/stdlib/commit/40fc3a218445c34a667237cadb74ae9417cc0392) - **chore:** add TODO _(by Athan Reines)_
 -   [`5e275bf`](https://github.com/stdlib-js/stdlib/commit/5e275bf225e7ea1cb233caef5336a062463342cb) - **feat:** add `fill` to namespace _(by Athan Reines)_
 -   [`1aca9d3`](https://github.com/stdlib-js/stdlib/commit/1aca9d37e47e33c03b94bb5b128647c7387172e2) - **fix:** update type defn _(by Athan Reines)_

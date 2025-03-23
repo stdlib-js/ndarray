@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { typedndarray, complexndarray } from '@stdlib/types/ndarray';
+import { typedndarray, complexndarray, genericndarray } from '@stdlib/types/ndarray';
 
 /**
 * Callback invoked for each ndarray element.
@@ -72,43 +72,26 @@ type Callback<T, U, V, ThisArg> = Nullary<U, ThisArg> | Unary<T, U, ThisArg> | B
 * @param x - input ndarray
 * @param fcn - callback function
 * @param thisArg - callback function execution context
+* @returns input ndarray
 *
 * @example
-* var Complex128Array = require( '@stdlib/array/complex128' );
-* var Complex128 = require( '@stdlib/complex/float64/ctor' );
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
 * function fcn() {
 *     return new Complex128( 10.0, 0.0 );
 * }
 *
-* // Create a data buffer:
-* var xbuf = new Complex128Array( [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ] );
-*
-* // Define the shape of the input array:
-* var shape = [ 3, 1, 2 ];
-*
-* // Define the array strides:
-* var sx = [ 2, 2, 1 ];
-*
-* // Define the index offset:
-* var ox = 0;
-*
-* // Create the input ndarray-like object:
-* var x = {
-*     'dtype': 'float64',
-*     'data': xbuf,
-*     'shape': shape,
-*     'strides': sx,
-*     'offset': ox,
-*     'order': 'row-major'
-* };
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'complex128'
+* });
 *
 * fillBy( x, fcn );
 *
-* console.log( x.data );
+* console.log( getData( x ) );
 * // => <Complex128Array>[ 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0, 10.0, 0.0 ]
 */
-declare function fillBy<T = unknown, U = unknown, V extends complexndarray = complexndarray, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;
+declare function fillBy<T = unknown, U = unknown, V extends complexndarray = complexndarray, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): V;
 
 /**
 * Fills an input ndarray according to a callback function.
@@ -116,42 +99,53 @@ declare function fillBy<T = unknown, U = unknown, V extends complexndarray = com
 * @param x - input ndarray
 * @param fcn - callback function
 * @param thisArg - callback function execution context
+* @returns input ndarray
 *
 * @example
-* var Float64Array = require( '@stdlib/array/float64' );
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
 *
 * function fcn() {
 *     return 10.0;
 * }
 *
-* // Create a data buffer:
-* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
-*
-* // Define the shape of the input array:
-* var shape = [ 3, 1, 2 ];
-*
-* // Define the array strides:
-* var sx = [ 2, 2, 1 ];
-*
-* // Define the index offset:
-* var ox = 0;
-*
-* // Create the input ndarray-like object:
-* var x = {
-*     'dtype': 'float64',
-*     'data': xbuf,
-*     'shape': shape,
-*     'strides': sx,
-*     'offset': ox,
-*     'order': 'row-major'
-* };
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'generic'
+* });
 *
 * fillBy( x, fcn );
 *
-* console.log( x.data );
+* console.log( getData( x ) );
+* // => [ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+*/
+declare function fillBy<T = unknown, U = unknown, V extends genericndarray<T> = genericndarray<T>, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): V;
+
+/**
+* Fills an input ndarray according to a callback function.
+*
+* @param x - input ndarray
+* @param fcn - callback function
+* @param thisArg - callback function execution context
+* @returns input ndarray
+*
+* @example
+* var zeros = require( '@stdlib/ndarray/zeros' );
+* var getData = require( '@stdlib/ndarray/data-buffer' );
+*
+* function fcn() {
+*     return 10.0;
+* }
+*
+* var x = zeros( [ 3, 1, 2 ], {
+*     'dtype': 'float64'
+* });
+*
+* fillBy( x, fcn );
+*
+* console.log( getData( x ) );
 * // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 */
-declare function fillBy<T = unknown, U = unknown, V extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): void;
+declare function fillBy<T = unknown, U = unknown, V extends typedndarray<T> = typedndarray<T>, ThisArg = unknown>( x: V, fcn: Callback<T, U, V, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, V, ThisArg>> ): V;
 
 
 // EXPORTS //
