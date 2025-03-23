@@ -35,6 +35,7 @@ import dtypes = require( './../../dtypes' );
 import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
 import FancyArray = require( './../../fancy' );
+import fill = require( './../../fill' );
 import filter = require( './../../filter' );
 import filterMap = require( './../../filter-map' );
 import flag = require( './../../flag' );
@@ -569,6 +570,28 @@ interface Namespace {
 	* var out = new ns.FancyArray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	*/
 	FancyArray: typeof FancyArray;
+
+	/**
+	* Fills an input ndarray with a specified value.
+	*
+	* @param x - input ndarray
+	* @param value - scalar value
+	* @returns input ndarray
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	* var getData = require( './../../data-buffer' );
+	*
+	* var x = zeros( [ 3, 1, 2 ], {
+	*     'dtype': 'float64'
+	* });
+	*
+	* ns.fill( x, 10.0 );
+	*
+	* console.log( getData( x ) );
+	* // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+	*/
+	fill: typeof fill;
 
 	/**
 	* Returns a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.
