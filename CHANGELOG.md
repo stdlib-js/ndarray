@@ -1214,6 +1214,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`bb0671b`](https://github.com/stdlib-js/stdlib/commit/bb0671b5a497770bbf71f1c2315cafcbb75f4a73) - **refactor:** enforce mostly safe casts _(by Athan Reines)_
+-   [`5cab853`](https://github.com/stdlib-js/stdlib/commit/5cab853c4f710e60d7dc1639e0cb5e9f00ad2134) - **refactor:** update to enforce mostly safe casts _(by Athan Reines)_
 -   [`1a18317`](https://github.com/stdlib-js/stdlib/commit/1a183174f05d99bf78be477639df489493c01e2b) - **feat:** add `isScalarMostlySafeCompatible` to namespace _(by Athan Reines)_
 -   [`6003449`](https://github.com/stdlib-js/stdlib/commit/600344933e2836421aa15fb89d62e9a0a9266bd6) - **feat:** add `ndarray/base/assert/is-scalar-mostly-safe-compatible` _(by Athan Reines)_
 -   [`bc026be`](https://github.com/stdlib-js/stdlib/commit/bc026be819b804711432f11bbdbc369271a27a9b) - **refactor:** use assertion utility _(by Athan Reines)_
