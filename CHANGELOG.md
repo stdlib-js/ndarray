@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-23)
+## Unreleased (2025-03-24)
 
 <section class="packages">
 
@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337)
 -   [`41b3b21`](https://github.com/stdlib-js/stdlib/commit/41b3b214c891ac64926296439240e2bf5f85de3f) - add `fillBy` to namespace
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315)
 -   [`5e275bf`](https://github.com/stdlib-js/stdlib/commit/5e275bf225e7ea1cb233caef5336a062463342cb) - add `fill` to namespace
@@ -94,6 +95,7 @@
 
 ##### Features
 
+-   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337)
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315)
 -   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - add `fillBy` to namespace
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
@@ -140,6 +142,7 @@
 
 ##### Features
 
+-   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337)
 -   [`1a18317`](https://github.com/stdlib-js/stdlib/commit/1a183174f05d99bf78be477639df489493c01e2b) - add `isScalarMostlySafeCompatible` to namespace
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1) - update namespace TypeScript declarations [(#5436)](https://github.com/stdlib-js/stdlib/pull/5436)
 -   [`c1b6794`](https://github.com/stdlib-js/stdlib/commit/c1b6794e36255d7df6795f5f5f4d3e493165f397) - add `isOutputDataTypePolicy` to namespace
@@ -1214,6 +1217,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - **feat:** update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337) _(by stdlib-bot)_
 -   [`bb0671b`](https://github.com/stdlib-js/stdlib/commit/bb0671b5a497770bbf71f1c2315cafcbb75f4a73) - **refactor:** enforce mostly safe casts _(by Athan Reines)_
 -   [`5cab853`](https://github.com/stdlib-js/stdlib/commit/5cab853c4f710e60d7dc1639e0cb5e9f00ad2134) - **refactor:** update to enforce mostly safe casts _(by Athan Reines)_
 -   [`1a18317`](https://github.com/stdlib-js/stdlib/commit/1a183174f05d99bf78be477639df489493c01e2b) - **feat:** add `isScalarMostlySafeCompatible` to namespace _(by Athan Reines)_
