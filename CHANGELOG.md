@@ -1217,6 +1217,11 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`442efb4`](https://github.com/stdlib-js/stdlib/commit/442efb4980c95c38eb1333c1d7a38b5e2ab4d2ec) - **chore:** resolve lint errors _(by Athan Reines)_
+-   [`3419f20`](https://github.com/stdlib-js/stdlib/commit/3419f20af1c819b14ab5ccf7b17379fa8f977399) - **chore:** resolve lint errors _(by Athan Reines)_
+-   [`47f726c`](https://github.com/stdlib-js/stdlib/commit/47f726ce566a85f054035c662768653bae07d25a) - **chore:** resolve lint errors _(by Athan Reines)_
+-   [`8aad405`](https://github.com/stdlib-js/stdlib/commit/8aad4050220ad7cff7b807f0913dcab3d8555fae) - **docs:** add markup _(by Athan Reines)_
+-   [`f8c4dad`](https://github.com/stdlib-js/stdlib/commit/f8c4dad867ebdc2182267a2b6e6f97a004c0f6a0) - **docs:** add markup _(by Athan Reines)_
 -   [`2e5d1fc`](https://github.com/stdlib-js/stdlib/commit/2e5d1fc2d31228deaf880f767324e73464a4ed65) - **docs:** update namespace table of contents [(#6339)](https://github.com/stdlib-js/stdlib/pull/6339) _(by stdlib-bot)_
 -   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - **feat:** update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337) _(by stdlib-bot)_
 -   [`bb0671b`](https://github.com/stdlib-js/stdlib/commit/bb0671b5a497770bbf71f1c2315cafcbb75f4a73) - **refactor:** enforce mostly safe casts _(by Athan Reines)_
