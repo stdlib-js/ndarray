@@ -1217,6 +1217,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`2e5d1fc`](https://github.com/stdlib-js/stdlib/commit/2e5d1fc2d31228deaf880f767324e73464a4ed65) - **docs:** update namespace table of contents [(#6339)](https://github.com/stdlib-js/stdlib/pull/6339) _(by stdlib-bot)_
 -   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - **feat:** update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337) _(by stdlib-bot)_
 -   [`bb0671b`](https://github.com/stdlib-js/stdlib/commit/bb0671b5a497770bbf71f1c2315cafcbb75f4a73) - **refactor:** enforce mostly safe casts _(by Athan Reines)_
 -   [`5cab853`](https://github.com/stdlib-js/stdlib/commit/5cab853c4f710e60d7dc1639e0cb5e9f00ad2134) - **refactor:** update to enforce mostly safe casts _(by Athan Reines)_
