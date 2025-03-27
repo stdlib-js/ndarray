@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-25)
+## Unreleased (2025-03-27)
 
 <section class="packages">
 
@@ -829,6 +829,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-reduce-subarray-unreleased">
+
+#### [@stdlib/ndarray/base/unary-reduce-subarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-subarray)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`935f698`](https://github.com/stdlib-js/stdlib/commit/935f698bd565928d3fc862dfdff14ab0e56aa478) - add initial implementation for `ndarray/base/unary-reduce-subarray`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-ctor-unreleased">
 
 #### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
@@ -1217,6 +1239,12 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9cb2473`](https://github.com/stdlib-js/stdlib/commit/9cb247321b8b2285713404fc4e43d43630163097) - **chore:** update directory list _(by Athan Reines)_
+-   [`0fc4015`](https://github.com/stdlib-js/stdlib/commit/0fc401573e94e99adbd3c31d7067c28ee2d270a1) - **docs:** add README and repl help _(by Athan Reines)_
+-   [`a331234`](https://github.com/stdlib-js/stdlib/commit/a33123481db5e24d5f0550b837b81bd0574d748e) - **test:** add initial test file _(by Athan Reines)_
+-   [`6d21670`](https://github.com/stdlib-js/stdlib/commit/6d21670d117320f7bc77b2b3ad4ce2fc51dbdd75) - **chore:** update directory list _(by Athan Reines)_
+-   [`935f698`](https://github.com/stdlib-js/stdlib/commit/935f698bd565928d3fc862dfdff14ab0e56aa478) - **feat:** add initial implementation for `ndarray/base/unary-reduce-subarray` _(by Athan Reines)_
+-   [`ad7c705`](https://github.com/stdlib-js/stdlib/commit/ad7c7056b95d52aac386e81209fbcd7fe8eac81f) - **refactor:** format error message _(by Athan Reines)_
 -   [`70bee88`](https://github.com/stdlib-js/stdlib/commit/70bee887bd024ca10b1676742e0f3b3051fa7b00) - **docs:** update namespace TypeScript declarations [(#6357)](https://github.com/stdlib-js/stdlib/pull/6357) _(by stdlib-bot)_
 -   [`442efb4`](https://github.com/stdlib-js/stdlib/commit/442efb4980c95c38eb1333c1d7a38b5e2ab4d2ec) - **chore:** resolve lint errors _(by Athan Reines)_
 -   [`3419f20`](https://github.com/stdlib-js/stdlib/commit/3419f20af1c819b14ab5ccf7b17379fa8f977399) - **chore:** resolve lint errors _(by Athan Reines)_
