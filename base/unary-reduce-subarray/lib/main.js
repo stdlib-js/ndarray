@@ -25,6 +25,7 @@ var normalizeIndices = require( './../../../base/to-unique-normalized-indices' )
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed2 = require( '@stdlib/array/base/take-indexed2' );
 var iterationOrder = require( './../../../base/iteration-order' );
+var numel = require( './../../../base/numel' );
 var join = require( '@stdlib/array/base/join' );
 var format = require( '@stdlib/string/format' );
 var initializeViews = require( './initialize_array_views.js' );
@@ -262,7 +263,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 		}
 	}
 	// Check whether we were provided empty ndarrays...
-	if ( len === 0 ) {
+	if ( len === 0 || numel( shc ) === 0 ) {
 		return;
 	}
 	// Initialize ndarray-like objects for representing sub-array views...
