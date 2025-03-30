@@ -323,7 +323,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 	}
 	// Determine whether we can avoid iteration altogether...
 	if ( K === 0 ) {
-		if ( x.accessorProtocol || y.accessorProtocol ) {
+		if ( y.accessorProtocol ) {
 			return ACCESSOR_UNARY[ K ]( fcn, arr, opts );
 		}
 		return UNARY[ K ]( fcn, arr, opts );
@@ -376,7 +376,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 
 	// Determine whether we only have one loop dimension and can thus readily perform one-dimensional iteration...
 	if ( K === 1 ) {
-		if ( x.accessorProtocol || y.accessorProtocol ) {
+		if ( y.accessorProtocol ) {
 			return ACCESSOR_UNARY[ K ]( fcn, arr, views, sl, opts );
 		}
 		return UNARY[ K ]( fcn, arr, views, sl, opts );
@@ -396,7 +396,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 			arr[ j ].strides = [ arr[j].strides[i] ];
 		}
 		sl = [ sl[i] ];
-		if ( x.accessorProtocol || y.accessorProtocol ) {
+		if ( y.accessorProtocol ) {
 			return ACCESSOR_UNARY[ 1 ]( fcn, arr, views, sl, opts );
 		}
 		return UNARY[ 1 ]( fcn, arr, views, sl, opts );
@@ -407,7 +407,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 	// Determine whether we can avoid blocked iteration...
 	if ( iox !== 0 && ioy !== 0 && iox === ioy && K <= MAX_DIMS ) {
 		// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
-		if ( x.accessorProtocol || y.accessorProtocol ) {
+		if ( y.accessorProtocol ) {
 			return ACCESSOR_UNARY[ K ]( fcn, arr, views, sl, opts );
 		}
 		return UNARY[ K ]( fcn, arr, views, sl, opts );
@@ -416,13 +416,13 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 
 	// Determine whether we can perform blocked iteration...
 	if ( K <= MAX_DIMS ) {
-		if ( x.accessorProtocol || y.accessorProtocol ) {
+		if ( y.accessorProtocol ) {
 			return BLOCKED_ACCESSOR_UNARY[ K-2 ]( fcn, arr, views, sl, opts );
 		}
 		return BLOCKED_UNARY[ K-2 ]( fcn, arr, views, sl, opts );
 	}
 	// Fall-through to linear view iteration without regard for how data is stored in memory (i.e., take the slow path)...
-	if ( x.accessorProtocol || y.accessorProtocol ) {
+	if ( y.accessorProtocol ) {
 		return accessorunarynd( fcn, arr, views, sl, opts );
 	}
 	unarynd( fcn, arr, views, sl, opts );

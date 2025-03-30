@@ -1250,6 +1250,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`9934f2c`](https://github.com/stdlib-js/stdlib/commit/9934f2ceb44cbcdc02c27d9a1a5fc231e24b10ff) - **refactor:** only branch when `y` is backed by an accessor array _(by Athan Reines)_
 -   [`7378f4d`](https://github.com/stdlib-js/stdlib/commit/7378f4db96fc059523a6f181388aa8f4fa202675) - **fix:** ensure support when providing no dimensions to reduce _(by Athan Reines)_
 -   [`abbc923`](https://github.com/stdlib-js/stdlib/commit/abbc923faa3036bb6b2bce8446a56926ef26163d) - **docs:** add example _(by Athan Reines)_
 -   [`91778b7`](https://github.com/stdlib-js/stdlib/commit/91778b7ca6ae2c6ee0c6017687426c3952d90098) - **fix:** handle scenario where a core dimension is zero _(by Athan Reines)_
