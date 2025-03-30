@@ -193,7 +193,7 @@ var v = y.get();
 The function accepts the following arguments:
 
 -   **x**: input [`ndarray`][@stdlib/ndarray/ctor].
--   **y**: output [`ndarray`][@stdlib/ndarray/ctor]. The output [`ndarray`][@stdlib/ndarray/ctor] must have a shape matching the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor].
+-   **out**: output [`ndarray`][@stdlib/ndarray/ctor]. The output [`ndarray`][@stdlib/ndarray/ctor] must have a shape matching the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 
 The function accepts the following `options`:
