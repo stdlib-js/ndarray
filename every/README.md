@@ -79,7 +79,7 @@ The function accepts the following `options`:
 -   **dims**: list of dimensions over which to perform a reduction.
 -   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned [`ndarray`][@stdlib/ndarray/ctor] as singleton dimensions. Default: `false`.
 
-By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, provide the `dims` option.
+By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
 <!-- eslint-disable max-len -->
 
@@ -200,7 +200,7 @@ The function accepts the following `options`:
 
 -   **dims**: list of dimensions over which to perform a reduction.
 
-By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, provide the `dims` option.
+By default, the function performs a reduction over all elements in a provided [`ndarray`][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
 <!-- eslint-disable max-len -->
 

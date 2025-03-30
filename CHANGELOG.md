@@ -1283,6 +1283,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`1e3aa40`](https://github.com/stdlib-js/stdlib/commit/1e3aa40c44b6d1fe63e8426c9c78ed00ffecc7f0) - **docs:** update copy _(by Athan Reines)_
+-   [`74b7a03`](https://github.com/stdlib-js/stdlib/commit/74b7a03f171a8241edb737fbd59d7822023a2263) - **docs:** update copy _(by Athan Reines)_
 -   [`eb9cf48`](https://github.com/stdlib-js/stdlib/commit/eb9cf4814a5902a7ca979b162977a43fc3bf17ce) - **bench:** fix duplicate assignment _(by Athan Reines)_
 -   [`6f61b2d`](https://github.com/stdlib-js/stdlib/commit/6f61b2dfab95f59ff05a07769b777f5012e1c193) - **fix:** handle edge case when `dims=[]` _(by Athan Reines)_
 -   [`ebb1ce8`](https://github.com/stdlib-js/stdlib/commit/ebb1ce814e9d9f56a93093c6997e5c0f4e927f2d) - **bench:** fix ndarray creation _(by Athan Reines)_
