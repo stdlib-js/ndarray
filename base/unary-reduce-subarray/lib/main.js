@@ -318,7 +318,7 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 	K = ndims - M;
 	for ( i = 1; i < N; i++ ) {
 		if ( arr[ i ].shape.length !== K ) {
-			throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of reduced dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), M, join( arr[ i ].shape, ',' ), i ) );
+			throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of non-reduced dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), K, join( arr[ i ].shape, ',' ), i ) );
 		}
 	}
 	// Determine whether we can avoid iteration altogether...
