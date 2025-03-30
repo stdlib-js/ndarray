@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-27)
+## Unreleased (2025-03-30)
 
 <section class="packages">
 
@@ -849,6 +849,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`7378f4d`](https://github.com/stdlib-js/stdlib/commit/7378f4db96fc059523a6f181388aa8f4fa202675) - ensure support when providing no dimensions to reduce
 -   [`91778b7`](https://github.com/stdlib-js/stdlib/commit/91778b7ca6ae2c6ee0c6017687426c3952d90098) - handle scenario where a core dimension is zero
 
 </section>
@@ -1249,6 +1250,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`7378f4d`](https://github.com/stdlib-js/stdlib/commit/7378f4db96fc059523a6f181388aa8f4fa202675) - **fix:** ensure support when providing no dimensions to reduce _(by Athan Reines)_
+-   [`abbc923`](https://github.com/stdlib-js/stdlib/commit/abbc923faa3036bb6b2bce8446a56926ef26163d) - **docs:** add example _(by Athan Reines)_
 -   [`91778b7`](https://github.com/stdlib-js/stdlib/commit/91778b7ca6ae2c6ee0c6017687426c3952d90098) - **fix:** handle scenario where a core dimension is zero _(by Athan Reines)_
 -   [`9cb2473`](https://github.com/stdlib-js/stdlib/commit/9cb247321b8b2285713404fc4e43d43630163097) - **chore:** update directory list _(by Athan Reines)_
 -   [`0fc4015`](https://github.com/stdlib-js/stdlib/commit/0fc401573e94e99adbd3c31d7067c28ee2d270a1) - **docs:** add README and repl help _(by Athan Reines)_
