@@ -148,7 +148,7 @@ var v = ndarray2array( out );
 // returns [ [ [ true ] ], [ [ true ] ], [ [ true ] ] ]
 ```
 
-#### every.assign( x\[, options] )
+#### every.assign( x, out\[, options] )
 
 Tests whether every element along one or more [`ndarray`][@stdlib/ndarray/ctor] dimensions is truthy and assigns results to a provided output [`ndarray`][@stdlib/ndarray/ctor].
 
