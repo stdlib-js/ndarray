@@ -126,7 +126,6 @@ function main() {
 					len = pow( 10, i );
 
 					sh = [ len ];
-					dims = [ 0 ];
 					f = createBenchmark( len, sh, t1, ord, dims );
 					bench( pkg+':ndims='+sh.length+',len='+len+',shape=['+sh.join(',')+'],xorder='+ord+',xtype='+t1+',dims=['+dims.join(',' )+']', f );
 				}
