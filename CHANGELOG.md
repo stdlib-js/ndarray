@@ -885,6 +885,38 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-every-unreleased">
+
+#### [@stdlib/ndarray/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/every)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`2690141`](https://github.com/stdlib-js/stdlib/commit/26901419b6a9b93f8e55216b4137e4a08ae57d28) - add `ndarray/every`
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`6f61b2d`](https://github.com/stdlib-js/stdlib/commit/6f61b2dfab95f59ff05a07769b777f5012e1c193) - handle edge case when `dims=[]`
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-fill-unreleased">
 
 #### [@stdlib/ndarray/fill](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/fill)
@@ -1251,6 +1283,9 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`6f61b2d`](https://github.com/stdlib-js/stdlib/commit/6f61b2dfab95f59ff05a07769b777f5012e1c193) - **fix:** handle edge case when `dims=[]` _(by Athan Reines)_
+-   [`ebb1ce8`](https://github.com/stdlib-js/stdlib/commit/ebb1ce814e9d9f56a93093c6997e5c0f4e927f2d) - **bench:** fix ndarray creation _(by Athan Reines)_
+-   [`2690141`](https://github.com/stdlib-js/stdlib/commit/26901419b6a9b93f8e55216b4137e4a08ae57d28) - **feat:** add `ndarray/every` _(by Athan Reines)_
 -   [`c533b6d`](https://github.com/stdlib-js/stdlib/commit/c533b6d0cf52949bc78141f23ebd58743f94a5a6) - **docs:** fix description _(by Athan Reines)_
 -   [`7ed649e`](https://github.com/stdlib-js/stdlib/commit/7ed649eccd8436c1f34ff3583e0623e2228b9db0) - **bench:** rename files _(by Athan Reines)_
 -   [`5768926`](https://github.com/stdlib-js/stdlib/commit/5768926be4fb253947f5d44bcf6b9d8bb5c75274) - **fix:** update error message _(by Athan Reines)_
