@@ -1251,6 +1251,8 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c533b6d`](https://github.com/stdlib-js/stdlib/commit/c533b6d0cf52949bc78141f23ebd58743f94a5a6) - **docs:** fix description _(by Athan Reines)_
+-   [`7ed649e`](https://github.com/stdlib-js/stdlib/commit/7ed649eccd8436c1f34ff3583e0623e2228b9db0) - **bench:** rename files _(by Athan Reines)_
 -   [`5768926`](https://github.com/stdlib-js/stdlib/commit/5768926be4fb253947f5d44bcf6b9d8bb5c75274) - **fix:** update error message _(by Athan Reines)_
 -   [`bdf4246`](https://github.com/stdlib-js/stdlib/commit/bdf4246934e957faced935c2cda4b1f30b7ac9e9) - **refactor:** update error messages _(by Athan Reines)_
 -   [`9934f2c`](https://github.com/stdlib-js/stdlib/commit/9934f2ceb44cbcdc02c27d9a1a5fc231e24b10ff) - **refactor:** only branch when `y` is backed by an accessor array _(by Athan Reines)_
