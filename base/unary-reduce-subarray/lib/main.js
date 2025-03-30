@@ -312,13 +312,13 @@ function unaryReduceSubarray( fcn, arrays, dims, options ) { // eslint-disable-l
 	}
 	// Check whether we've been provided a valid number of dimensions to reduce...
 	if ( M > ndims ) {
-		throw new RangeError( format( 'invalid argument. Number of specified dimensions cannot exceed the number of dimensions in the input array. ndims(x) == %d. Value: [%s].', ndims, join( dims, ',' ) ) );
+		throw new RangeError( format( 'invalid argument. Number of specified dimensions cannot exceed the number of dimensions in the input array. Number of dimensions: %d. Value: [%s].', ndims, join( dims, ',' ) ) );
 	}
 	// Verify that provided ndarrays have the expected number of dimensions...
 	K = ndims - M;
 	for ( i = 1; i < N; i++ ) {
 		if ( arr[ i ].shape.length !== K ) {
-			throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. ndims(x) == %d. Number of reduced dimensions: %d. ndims(arrays[%d]) == %d.', ndims, M, i, arr[ i ].shape.length ) );
+			throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of reduced dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), M, join( arr[ i ].shape, ',' ), i ) );
 		}
 	}
 	// Determine whether we can avoid iteration altogether...
