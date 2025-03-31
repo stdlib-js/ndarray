@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-30)
+## Unreleased (2025-03-31)
 
 <section class="packages">
 
@@ -281,6 +281,30 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-broadcast-arrays-unreleased">
+
+#### [@stdlib/ndarray/base/broadcast-arrays](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-arrays)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6457](https://github.com/stdlib-js/stdlib/issues/6457)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -1251,9 +1275,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6457](https://github.com/stdlib-js/stdlib/issues/6457)
 
 </section>
 
@@ -1263,7 +1287,7 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1272,6 +1296,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 -   Muhammad Haris
 -   Philipp Burckhardt
 -   ditsu
+-   lohithganni
 
 </section>
 
@@ -1283,6 +1308,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f0af2cb`](https://github.com/stdlib-js/stdlib/commit/f0af2cb05b0442f2ef20f5296cee2576191130e8) - **chore:** fix JavaScript lint errors [(#6463)](https://github.com/stdlib-js/stdlib/pull/6463) _(by lohithganni)_
 -   [`b28f85a`](https://github.com/stdlib-js/stdlib/commit/b28f85a0469dd2f4ace20c220f6718cce912eaea) - **refactor:** use assertion utility to check for row-major order _(by Athan Reines)_
 -   [`b47a8a7`](https://github.com/stdlib-js/stdlib/commit/b47a8a74795416cbf42790c89aedb5d1958c53b1) - **docs:** fix argument name _(by Athan Reines)_
 -   [`fdf4cc1`](https://github.com/stdlib-js/stdlib/commit/fdf4cc10816de43b8a73890e1f93f1635104c79f) - **docs:** fix signature _(by Athan Reines)_
