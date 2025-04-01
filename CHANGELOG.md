@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-31)
+## Unreleased (2025-04-01)
 
 <section class="packages">
 
@@ -352,6 +352,30 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-dtype2c-unreleased">
+
+#### [@stdlib/ndarray/base/dtype2c](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/dtype2c)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6456](https://github.com/stdlib-js/stdlib/issues/6456)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -1275,9 +1299,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 4 issues were closed in this release:
+A total of 5 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6457](https://github.com/stdlib-js/stdlib/issues/6457)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457)
 
 </section>
 
@@ -1287,7 +1311,7 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1295,6 +1319,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 -   Kaushikgtm
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Sai Avinash
 -   ditsu
 -   lohithganni
 
@@ -1308,6 +1333,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`89d16f9`](https://github.com/stdlib-js/stdlib/commit/89d16f95b188c5afb513af630134dd40cdad380b) - **chore:** fix JSON lint errors [(#6466)](https://github.com/stdlib-js/stdlib/pull/6466) _(by Sai Avinash)_
 -   [`f0af2cb`](https://github.com/stdlib-js/stdlib/commit/f0af2cb05b0442f2ef20f5296cee2576191130e8) - **chore:** fix JavaScript lint errors [(#6463)](https://github.com/stdlib-js/stdlib/pull/6463) _(by lohithganni)_
 -   [`b28f85a`](https://github.com/stdlib-js/stdlib/commit/b28f85a0469dd2f4ace20c220f6718cce912eaea) - **refactor:** use assertion utility to check for row-major order _(by Athan Reines)_
 -   [`b47a8a7`](https://github.com/stdlib-js/stdlib/commit/b47a8a74795416cbf42790c89aedb5d1958c53b1) - **docs:** fix argument name _(by Athan Reines)_
