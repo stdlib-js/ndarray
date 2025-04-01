@@ -887,6 +887,7 @@ This release closes the following issue:
 
 ##### Features
 
+-   [`998b3ba`](https://github.com/stdlib-js/stdlib/commit/998b3ba4e628e6d8564c6b33fe41925da2046b41) - add missing kernels to `ndarray/base/unary-reduce-subarray` [(#6421)](https://github.com/stdlib-js/stdlib/pull/6421)
 -   [`935f698`](https://github.com/stdlib-js/stdlib/commit/935f698bd565928d3fc862dfdff14ab0e56aa478) - add initial implementation for `ndarray/base/unary-reduce-subarray`
 
 </section>
@@ -1333,6 +1334,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`998b3ba`](https://github.com/stdlib-js/stdlib/commit/998b3ba4e628e6d8564c6b33fe41925da2046b41) - **feat:** add missing kernels to `ndarray/base/unary-reduce-subarray` [(#6421)](https://github.com/stdlib-js/stdlib/pull/6421) _(by Muhammad Haris)_
 -   [`89d16f9`](https://github.com/stdlib-js/stdlib/commit/89d16f95b188c5afb513af630134dd40cdad380b) - **chore:** fix JSON lint errors [(#6466)](https://github.com/stdlib-js/stdlib/pull/6466) _(by Sai Avinash)_
 -   [`f0af2cb`](https://github.com/stdlib-js/stdlib/commit/f0af2cb05b0442f2ef20f5296cee2576191130e8) - **chore:** fix JavaScript lint errors [(#6463)](https://github.com/stdlib-js/stdlib/pull/6463) _(by lohithganni)_
 -   [`b28f85a`](https://github.com/stdlib-js/stdlib/commit/b28f85a0469dd2f4ace20c220f6718cce912eaea) - **refactor:** use assertion utility to check for row-major order _(by Athan Reines)_

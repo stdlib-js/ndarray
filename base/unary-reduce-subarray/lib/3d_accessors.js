@@ -40,14 +40,16 @@ var offsets = require( './offsets.js' );
 * @returns {void}
 *
 * @example
+* var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
+* var accessors = require( '@stdlib/array/base/accessors' );
 * var Float64Array = require( '@stdlib/array/float64' );
 * var filled = require( '@stdlib/array/base/filled' );
 * var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 * var base = require( '@stdlib/ndarray/base/every' );
 *
 * // Create data buffers:
-* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-* var ybuf = filled( false, 3 );
+* var xbuf = toAccessorArray( new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] ) );
+* var ybuf = toAccessorArray( filled( false, 3 ) );
 *
 * // Define the array shapes:
 * var xsh = [ 1, 1, 3, 2, 2 ];
@@ -68,7 +70,8 @@ var offsets = require( './offsets.js' );
 *     'shape': xsh,
 *     'strides': sx,
 *     'offset': ox,
-*     'order': 'row-major'
+*     'order': 'row-major',
+*     'accessors': accessors( xbuf ).accessors
 * };
 *
 * // Create an output ndarray-like object:
@@ -78,7 +81,8 @@ var offsets = require( './offsets.js' );
 *     'shape': ysh,
 *     'strides': sy,
 *     'offset': oy,
-*     'order': 'row-major'
+*     'order': 'row-major',
+*     'accessors': accessors( ybuf ).accessors
 * };
 *
 * // Initialize ndarray-like objects representing sub-array views:
@@ -101,6 +105,7 @@ var offsets = require( './offsets.js' );
 */
 function unary3d( fcn, arrays, views, strides, opts ) {
 	var ybuf;
+	var set;
 	var dv0;
 	var dv1;
 	var dv2;
@@ -137,7 +142,7 @@ function unary3d( fcn, arrays, views, strides, opts ) {
 			dv1.push( sv[1] - ( S0*sv[2] ) );
 			dv2.push( sv[0] - ( S1*sv[1] ) );
 		}
-	} else { // order === 'column-major'
+	} else {
 		// For column-major ndarrays, the first dimensions have the fastest changing indices...
 		S0 = sh[ 0 ];
 		S1 = sh[ 1 ];
@@ -158,12 +163,15 @@ function unary3d( fcn, arrays, views, strides, opts ) {
 	// Cache a reference to the output ndarray buffer:
 	ybuf = y.data;
 
+	// Cache accessors:
+	set = y.accessors[ 1 ];
+
 	// Iterate over the non-reduced ndarray dimensions...
 	for ( i2 = 0; i2 < S2; i2++ ) {
 		for ( i1 = 0; i1 < S1; i1++ ) {
 			for ( i0 = 0; i0 < S0; i0++ ) {
 				setViewOffsets( views, iv );
-				ybuf[ iv[1] ] = fcn( views, opts );
+				set( ybuf, iv[ 1 ], fcn( views, opts ) );
 				incrementOffsets( iv, dv0 );
 			}
 			incrementOffsets( iv, dv1 );

@@ -50,12 +50,12 @@ var offsets = require( './offsets.js' );
 * var ybuf = filled( false, 3 );
 *
 * // Define the array shapes:
-* var xsh = [ 1, 1, 3, 2, 2 ];
-* var ysh = [ 1, 1, 3 ];
+* var xsh = [ 1, 1, 1, 3, 2, 2 ];
+* var ysh = [ 1, 1, 1, 3 ];
 *
 * // Define the array strides:
-* var sx = [ 12, 12, 4, 2, 1 ];
-* var sy = [ 3, 3, 1 ];
+* var sx = [ 12, 12, 12, 4, 2, 1 ];
+* var sy = [ 3, 3, 3, 1 ];
 *
 * // Define the index offsets:
 * var ox = 0;
@@ -94,25 +94,28 @@ var offsets = require( './offsets.js' );
 * ];
 *
 * // Perform a reduction:
-* unary3d( base, [ x, y ], views, [ 12, 12, 4 ], {} );
+* unary4d( base, [ x, y ], views, [ 12, 12, 12, 4 ], {} );
 *
 * var arr = ndarray2array( y.data, y.shape, y.strides, y.offset, y.order );
-* // returns [ [ [ true, false, true ] ] ]
+* // returns [ [ [ [ true, false, true ] ] ] ]
 */
-function unary3d( fcn, arrays, views, strides, opts ) {
+function unary4d( fcn, arrays, views, strides, opts ) {
 	var ybuf;
 	var dv0;
 	var dv1;
 	var dv2;
+	var dv3;
 	var sh;
 	var S0;
 	var S1;
 	var S2;
+	var S3;
 	var sv;
 	var iv;
 	var i0;
 	var i1;
 	var i2;
+	var i3;
 	var y;
 	var i;
 
@@ -125,31 +128,37 @@ function unary3d( fcn, arrays, views, strides, opts ) {
 	// Extract loop variables for purposes of loop interchange: dimensions and loop offset (pointer) increments...
 	if ( isRowMajor( y.order ) ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
-		S0 = sh[ 2 ];
-		S1 = sh[ 1 ];
-		S2 = sh[ 0 ];
-		dv0 = [ strides[2] ];                     // offset increment for innermost loop
-		dv1 = [ strides[1] - ( S0*strides[2] ) ];
-		dv2 = [ strides[0] - ( S1*strides[1] ) ]; // offset increment for outermost loop
+		S0 = sh[ 3 ];
+		S1 = sh[ 2 ];
+		S2 = sh[ 1 ];
+		S3 = sh[ 0 ];
+		dv0 = [ strides[3] ];                     // offset increment for innermost loop
+		dv1 = [ strides[2] - ( S0*strides[3] ) ];
+		dv2 = [ strides[1] - ( S1*strides[2] ) ];
+		dv3 = [ strides[0] - ( S2*strides[1] ) ]; // offset increment for outermost loop
 		for ( i = 1; i < arrays.length; i++ ) {
 			sv = arrays[ i ].strides;
-			dv0.push( sv[2] );
-			dv1.push( sv[1] - ( S0*sv[2] ) );
-			dv2.push( sv[0] - ( S1*sv[1] ) );
+			dv0.push( sv[3] );
+			dv1.push( sv[2] - ( S0*sv[3] ) );
+			dv2.push( sv[1] - ( S1*sv[2] ) );
+			dv3.push( sv[0] - ( S2*sv[1]) );
 		}
 	} else { // order === 'column-major'
 		// For column-major ndarrays, the first dimensions have the fastest changing indices...
 		S0 = sh[ 0 ];
 		S1 = sh[ 1 ];
 		S2 = sh[ 2 ];
+		S3 = sh[ 3 ];
 		dv0 = [ strides[0] ];                     // offset increment for innermost loop
 		dv1 = [ strides[1] - ( S0*strides[0] ) ];
-		dv2 = [ strides[2] - ( S1*strides[1] ) ]; // offset increment for outermost loop
+		dv2 = [ strides[2] - ( S1*strides[1] ) ];
+		dv3 = [ strides[3] - ( S2*strides[2] ) ]; // offset increment for outermost loop
 		for ( i = 1; i < arrays.length; i++ ) {
 			sv = arrays[ i ].strides;
 			dv0.push( sv[0] );
 			dv1.push( sv[1] - ( S0*sv[0] ) );
 			dv2.push( sv[2] - ( S1*sv[1] ) );
+			dv3.push( sv[3] - ( S2*sv[2] ) );
 		}
 	}
 	// Resolve a list of pointers to the first indexed elements in the respective ndarrays:
@@ -159,20 +168,23 @@ function unary3d( fcn, arrays, views, strides, opts ) {
 	ybuf = y.data;
 
 	// Iterate over the non-reduced ndarray dimensions...
-	for ( i2 = 0; i2 < S2; i2++ ) {
-		for ( i1 = 0; i1 < S1; i1++ ) {
-			for ( i0 = 0; i0 < S0; i0++ ) {
-				setViewOffsets( views, iv );
-				ybuf[ iv[1] ] = fcn( views, opts );
-				incrementOffsets( iv, dv0 );
+	for ( i3 = 0; i3 < S3; i3++ ) {
+		for ( i2 = 0; i2 < S2; i2++ ) {
+			for ( i1 = 0; i1 < S1; i1++ ) {
+				for ( i0 = 0; i0 < S0; i0++ ) {
+					setViewOffsets( views, iv );
+					ybuf[ iv[1] ] = fcn( views, opts );
+					incrementOffsets( iv, dv0 );
+				}
+				incrementOffsets( iv, dv1 );
 			}
-			incrementOffsets( iv, dv1 );
+			incrementOffsets( iv, dv2 );
 		}
-		incrementOffsets( iv, dv2 );
+		incrementOffsets( iv, dv3 );
 	}
 }
 
 
 // EXPORTS //
 
-module.exports = unary3d;
+module.exports = unary4d;
