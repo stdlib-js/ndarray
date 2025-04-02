@@ -1335,6 +1335,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b2db775`](https://github.com/stdlib-js/stdlib/commit/b2db7759e0779037cea020e7c80ce91740257f46) - **chore:** fix EditorConfig lint error [(#6180)](https://github.com/stdlib-js/stdlib/pull/6180) _(by MANI, Athan Reines)_
 -   [`5d57761`](https://github.com/stdlib-js/stdlib/commit/5d57761c446339e796d1add0c03b7febfa4253fd) - **chore:** fix EditorConfig lint errors [(#6178)](https://github.com/stdlib-js/stdlib/pull/6178) _(by MANI)_
 -   [`a464a60`](https://github.com/stdlib-js/stdlib/commit/a464a60568b819f813aff054ba0c32476192d269) - **chore:** fix EditorConfig lint errors [(#6246)](https://github.com/stdlib-js/stdlib/pull/6246) _(by MANI, Athan Reines)_
 -   [`d3289c3`](https://github.com/stdlib-js/stdlib/commit/d3289c3af88a698ed39ee5234c525cfec98c56f5) - **test:** use `zfill` rather than `gfill` to improve performance _(by Athan Reines)_
