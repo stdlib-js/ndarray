@@ -36,7 +36,7 @@ var shape2strides = require( './../../../base/shape2strides' );
 var strides2offset = require( './../../../base/strides2offset' );
 var numel = require( './../../../base/numel' );
 var dfill = require( '@stdlib/blas/ext/base/dfill' );
-var gfill = require( '@stdlib/blas/ext/base/gfill' );
+var zfill = require( '@stdlib/blas/ext/base/zfill' );
 var blockSize = require( './../../../base/unary-tiling-block-size' );
 var unary = require( './../lib' );
 
@@ -825,7 +825,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -860,7 +860,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -895,7 +895,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -930,7 +930,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -965,7 +965,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1000,7 +1000,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1035,7 +1035,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 6 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1829,7 +1829,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1864,7 +1864,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1899,7 +1899,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1934,7 +1934,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -1969,7 +1969,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -2004,7 +2004,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
@@ -2039,7 +2039,7 @@ tape( 'the function applies a unary callback to each indexed element of a 7-dime
 	unary( [ x, y ], scale );
 
 	expected = new Complex128Array( x.length*2 );
-	gfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
+	zfill( x.length, new Complex128( 10.0, 10.0 ), expected, st[ 0 ] );
 
 	t.strictEqual( isSameComplex128Array( y.data, expected ), true, 'returns expected value' );
 	t.end();
