@@ -1335,6 +1335,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`5d57761`](https://github.com/stdlib-js/stdlib/commit/5d57761c446339e796d1add0c03b7febfa4253fd) - **chore:** fix EditorConfig lint errors [(#6178)](https://github.com/stdlib-js/stdlib/pull/6178) _(by MANI)_
 -   [`a464a60`](https://github.com/stdlib-js/stdlib/commit/a464a60568b819f813aff054ba0c32476192d269) - **chore:** fix EditorConfig lint errors [(#6246)](https://github.com/stdlib-js/stdlib/pull/6246) _(by MANI, Athan Reines)_
 -   [`d3289c3`](https://github.com/stdlib-js/stdlib/commit/d3289c3af88a698ed39ee5234c525cfec98c56f5) - **test:** use `zfill` rather than `gfill` to improve performance _(by Athan Reines)_
 -   [`b96a6a2`](https://github.com/stdlib-js/stdlib/commit/b96a6a258f9c560073e252b9969095a12723074e) - **test:** add missing tests to `ndarray/base/unary` [(#5821)](https://github.com/stdlib-js/stdlib/pull/5821) _(by Muhammad Haris)_
