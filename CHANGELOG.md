@@ -1231,6 +1231,30 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-safe-casts-unreleased">
+
+#### [@stdlib/ndarray/safe-casts](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/safe-casts)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6473](https://github.com/stdlib-js/stdlib/issues/6473)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-to-fancy-unreleased">
 
 #### [@stdlib/ndarray/to-fancy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/to-fancy)
@@ -1300,9 +1324,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 7 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473)
 
 </section>
 
@@ -1312,7 +1336,7 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 11 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1320,6 +1344,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Kaushikgtm
 -   MANI
 -   Muhammad Haris
+-   Muhammad Taaha Tariq
 -   Philipp Burckhardt
 -   Sai Avinash
 -   ditsu
@@ -1335,6 +1360,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`13b7262`](https://github.com/stdlib-js/stdlib/commit/13b726232dfe12efc850f095633e373840f3e02a) - **chore:** fix EditorConfig lint errors [(#6541)](https://github.com/stdlib-js/stdlib/pull/6541) _(by Muhammad Taaha Tariq, Athan Reines)_
 -   [`b98c6a9`](https://github.com/stdlib-js/stdlib/commit/b98c6a93187e39c2db3958a2b6be92c2d50be593) - **docs:** update related packages sections [(#6538)](https://github.com/stdlib-js/stdlib/pull/6538) _(by stdlib-bot)_
 -   [`b2db775`](https://github.com/stdlib-js/stdlib/commit/b2db7759e0779037cea020e7c80ce91740257f46) - **chore:** fix EditorConfig lint error [(#6180)](https://github.com/stdlib-js/stdlib/pull/6180) _(by MANI, Athan Reines)_
 -   [`5d57761`](https://github.com/stdlib-js/stdlib/commit/5d57761c446339e796d1add0c03b7febfa4253fd) - **chore:** fix EditorConfig lint errors [(#6178)](https://github.com/stdlib-js/stdlib/pull/6178) _(by MANI)_
