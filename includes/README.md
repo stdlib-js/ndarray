@@ -72,7 +72,7 @@ var v = out.get();
 The function accepts the following arguments:
 
 -   **x**: input [`ndarray`][@stdlib/ndarray/ctor].
--   **searchElement**: search element. May be either a scalar or an [`ndarray`][@stdlib/ndarray/ctor]. Must be [broadcast-compatible][@stdlib/ndarray/base/broadcast-shapes] with the non-reduced dimensions of input [`ndarray`][@stdlib/ndarray/ctor]. Must have a [data type][@stdlib/ndarray/dtypes] which be (mostly) [safely cast][@stdlib/ndarray/mostly-safe-casts] to the data type of the input [`ndarray`][@stdlib/ndarray/ctor].
+-   **searchElement**: search element. May be either a scalar or an [`ndarray`][@stdlib/ndarray/ctor]. Must be [broadcast-compatible][@stdlib/ndarray/base/broadcast-shapes] with the non-reduced dimensions of input [`ndarray`][@stdlib/ndarray/ctor]. Must have a [data type][@stdlib/ndarray/dtypes] which can be (mostly) [safely cast][@stdlib/ndarray/mostly-safe-casts] to the data type of the input [`ndarray`][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 
 The function accepts the following `options`:
@@ -194,7 +194,7 @@ var v = y.get();
 The function accepts the following arguments:
 
 -   **x**: input [`ndarray`][@stdlib/ndarray/ctor].
--   **searchElement**: search element. May be either a scalar or an [`ndarray`][@stdlib/ndarray/ctor]. Must be [broadcast-compatible][@stdlib/ndarray/base/broadcast-shapes] with the non-reduced dimensions of input [`ndarray`][@stdlib/ndarray/ctor]. Must have a [data type][@stdlib/ndarray/dtypes] which be (mostly) [safely cast][@stdlib/ndarray/mostly-safe-casts] to the data type of the input [`ndarray`][@stdlib/ndarray/ctor].
+-   **searchElement**: search element. May be either a scalar or an [`ndarray`][@stdlib/ndarray/ctor]. Must be [broadcast-compatible][@stdlib/ndarray/base/broadcast-shapes] with the non-reduced dimensions of input [`ndarray`][@stdlib/ndarray/ctor]. Must have a [data type][@stdlib/ndarray/dtypes] which can be (mostly) [safely cast][@stdlib/ndarray/mostly-safe-casts] to the data type of the input [`ndarray`][@stdlib/ndarray/ctor].
 -   **out**: output [`ndarray`][@stdlib/ndarray/ctor]. The output [`ndarray`][@stdlib/ndarray/ctor] must have a shape matching the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor].
 -   **options**: function options (_optional_).
 

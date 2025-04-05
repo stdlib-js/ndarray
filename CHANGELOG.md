@@ -1421,6 +1421,8 @@ A total of 11 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b5bff35`](https://github.com/stdlib-js/stdlib/commit/b5bff35c7183d5ccd4cf0349c1a3be06b34e844f) - **docs:** update copy _(by Athan Reines)_
+-   [`fccf762`](https://github.com/stdlib-js/stdlib/commit/fccf76232823c1bbbef2152aa3c1488210a5a12b) - **docs:** update copy _(by Athan Reines)_
 -   [`3f4de77`](https://github.com/stdlib-js/stdlib/commit/3f4de77d333dea3962dec5f53858a4a2db86bd63) - **feat:** add `ndarray/includes` _(by Athan Reines)_
 -   [`f0d205d`](https://github.com/stdlib-js/stdlib/commit/f0d205d7073055c7a69f1ba7ccee95671ab762ba) - **fix:** address indexing error _(by Athan Reines)_
 -   [`043dc69`](https://github.com/stdlib-js/stdlib/commit/043dc69c76ea6780cbba2c223417fccda4685c7a) - **fix:** handle 0d edge case _(by Athan Reines)_
