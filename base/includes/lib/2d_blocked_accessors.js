@@ -20,19 +20,14 @@
 
 // MODULES //
 
-var numel = require( './../../../base/numel' );
-var vind2bind = require( './../../../base/vind2bind' );
-
-
-// VARIABLES //
-
-var MODE = 'throw';
+var loopOrder = require( './../../../base/nullary-loop-interchange-order' );
+var blockSize = require( './../../../base/nullary-tiling-block-size' );
 
 
 // MAIN //
 
 /**
-* Tests whether every element in an ndarray is truthy.
+* Tests whether an ndarray contains a specified value via loop blocking.
 *
 * @private
 * @param {Object} x - object containing ndarray meta data
@@ -43,6 +38,7 @@ var MODE = 'throw';
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} x.accessors - data buffer accessors
+* @param {*} value - search element
 * @returns {boolean} result
 *
 * @example
@@ -72,52 +68,94 @@ var MODE = 'throw';
 *     'accessors': accessors( xbuf ).accessors
 * };
 *
-* // Test elements:
-* var out = everynd( x );
+* // Perform reduction:
+* var out = blockedincludes2d( x, 6.0 );
 * // returns true
+*
+* out = blockedincludes2d( x, 100.0 );
+* // returns false
 */
-function everynd( x ) {
+function blockedincludes2d( x, value ) {
+	var bsize;
 	var xbuf;
-	var ordx;
-	var len;
 	var get;
+	var dx0;
+	var dx1;
+	var ox1;
 	var sh;
+	var s0;
+	var s1;
 	var sx;
 	var ox;
 	var ix;
-	var i;
+	var i0;
+	var i1;
+	var j0;
+	var j1;
+	var o;
 
-	sh = x.shape;
+	// Note on variable naming convention: s#, dx#, dy#, i#, j# where # corresponds to the loop number, with `0` being the innermost loop...
 
-	// Compute the total number of elements over which to iterate:
-	len = numel( sh );
+	// Resolve the loop interchange order:
+	o = loopOrder( x.shape, x.strides );
+	sh = o.sh;
+	sx = o.sx;
 
-	// Cache a reference to the output ndarray data buffer:
-	xbuf = x.data;
+	// Determine the block size:
+	bsize = blockSize( x.dtype );
 
-	// Cache a reference to the stride array:
-	sx = x.strides;
-
-	// Cache the index of the first indexed element:
+	// Set a pointer to the first indexed element:
 	ox = x.offset;
 
-	// Cache the array order:
-	ordx = x.order;
+	// Cache a reference to the input ndarray buffer:
+	xbuf = x.data;
+
+	// Cache the offset increment for the innermost loop:
+	dx0 = sx[0];
 
 	// Cache accessor:
-	get = x.accessors[ 0 ];
+	get = x.accessors[0];
 
-	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory...
-	for ( i = 0; i < len; i++ ) {
-		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		if ( !get( xbuf, ix ) ) {
-			return false;
+	// Iterate over blocks...
+	for ( j1 = sh[1]; j1 > 0; ) {
+		if ( j1 < bsize ) {
+			s1 = j1;
+			j1 = 0;
+		} else {
+			s1 = bsize;
+			j1 -= bsize;
+		}
+		ox1 = ox + ( j1*sx[1] );
+		for ( j0 = sh[0]; j0 > 0; ) {
+			if ( j0 < bsize ) {
+				s0 = j0;
+				j0 = 0;
+			} else {
+				s0 = bsize;
+				j0 -= bsize;
+			}
+			// Compute the index offset for the first input ndarray element in the current block:
+			ix = ox1 + ( j0*sx[0] );
+
+			// Compute the loop offset increment:
+			dx1 = sx[1] - ( s0*sx[0] );
+
+			// Iterate over the ndarray dimensions...
+			for ( i1 = 0; i1 < s1; i1++ ) {
+				for ( i0 = 0; i0 < s0; i0++ ) {
+					if ( get( xbuf, ix ) === value ) {
+						return true;
+					}
+					ix += dx0;
+				}
+				ix += dx1;
+			}
 		}
 	}
-	return true;
+	return false;
 }
 
 
 // EXPORTS //
 
-module.exports = everynd;
+module.exports = blockedincludes2d;

@@ -20,19 +20,13 @@
 
 // MODULES //
 
-var numel = require( './../../../base/numel' );
-var vind2bind = require( './../../../base/vind2bind' );
-
-
-// VARIABLES //
-
-var MODE = 'throw';
+var isRowMajor = require( './../../../base/assert/is-row-major-string' );
 
 
 // MAIN //
 
 /**
-* Tests whether every element in an ndarray is truthy.
+* Tests whether an ndarray contains a specified value.
 *
 * @private
 * @param {Object} x - object containing ndarray meta data
@@ -43,6 +37,7 @@ var MODE = 'throw';
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} x.accessors - data buffer accessors
+* @param {*} value - search element
 * @returns {boolean} result
 *
 * @example
@@ -53,10 +48,10 @@ var MODE = 'throw';
 * var xbuf = toAccessorArray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * // Define the shape of the input array:
-* var shape = [ 2, 2 ];
+* var shape = [ 1, 2, 2 ];
 *
 * // Define the array strides:
-* var sx = [ 4, 1 ];
+* var sx = [ 8, 4, 1 ];
 *
 * // Define the index offset:
 * var ox = 0;
@@ -72,52 +67,77 @@ var MODE = 'throw';
 *     'accessors': accessors( xbuf ).accessors
 * };
 *
-* // Test elements:
-* var out = everynd( x );
+* // Perform reduction:
+* var out = includes3d( x, 6.0 );
 * // returns true
+*
+* out = includes3d( x, 100.0 );
+* // returns false
 */
-function everynd( x ) {
+function includes3d( x, value ) {
 	var xbuf;
-	var ordx;
-	var len;
 	var get;
+	var dx0;
+	var dx1;
+	var dx2;
 	var sh;
+	var S0;
+	var S1;
+	var S2;
 	var sx;
-	var ox;
 	var ix;
-	var i;
+	var i0;
+	var i1;
+	var i2;
 
+	// Note on variable naming convention: S#, dx#, dy#, i# where # corresponds to the loop number, with `0` being the innermost loop...
+
+	// Extract loop variables for purposes of loop interchange: dimensions and loop offset (pointer) increments...
 	sh = x.shape;
-
-	// Compute the total number of elements over which to iterate:
-	len = numel( sh );
-
-	// Cache a reference to the output ndarray data buffer:
-	xbuf = x.data;
-
-	// Cache a reference to the stride array:
 	sx = x.strides;
+	if ( isRowMajor( x.order ) ) {
+		// For row-major ndarrays, the last dimensions have the fastest changing indices...
+		S0 = sh[ 2 ];
+		S1 = sh[ 1 ];
+		S2 = sh[ 0 ];
+		dx0 = sx[ 2 ];                // offset increment for innermost loop
+		dx1 = sx[ 1 ] - ( S0*sx[2] );
+		dx2 = sx[ 0 ] - ( S1*sx[1] ); // offset increment for outermost loop
+	} else { // order === 'column-major'
+		// For column-major ndarrays, the first dimensions have the fastest changing indices...
+		S0 = sh[ 0 ];
+		S1 = sh[ 1 ];
+		S2 = sh[ 2 ];
+		dx0 = sx[ 0 ];                // offset increment for innermost loop
+		dx1 = sx[ 1 ] - ( S0*sx[0] );
+		dx2 = sx[ 2 ] - ( S1*sx[1] ); // offset increment for outermost loop
+	}
+	// Set a pointer to the first indexed element:
+	ix = x.offset;
 
-	// Cache the index of the first indexed element:
-	ox = x.offset;
-
-	// Cache the array order:
-	ordx = x.order;
+	// Cache a reference to the input ndarray buffer:
+	xbuf = x.data;
 
 	// Cache accessor:
 	get = x.accessors[ 0 ];
 
-	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory...
-	for ( i = 0; i < len; i++ ) {
-		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		if ( !get( xbuf, ix ) ) {
-			return false;
+	// Iterate over the ndarray dimensions...
+	for ( i2 = 0; i2 < S2; i2++ ) {
+		for ( i1 = 0; i1 < S1; i1++ ) {
+			for ( i0 = 0; i0 < S0; i0++ ) {
+				if ( get( xbuf, ix ) === value ) {
+					return true;
+				}
+				ix += dx0;
+			}
+			ix += dx1;
 		}
+		ix += dx2;
 	}
-	return true;
+	return false;
 }
 
 
 // EXPORTS //
 
-module.exports = everynd;
+module.exports = includes3d;

@@ -32,7 +32,7 @@ var MODE = 'throw';
 // MAIN //
 
 /**
-* Tests whether every element in an ndarray is truthy.
+* Tests whether an ndarray contains a specified value.
 *
 * @private
 * @param {Object} x - object containing ndarray meta data
@@ -43,6 +43,7 @@ var MODE = 'throw';
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} x.accessors - data buffer accessors
+* @param {*} value - search element
 * @returns {boolean} result
 *
 * @example
@@ -72,11 +73,14 @@ var MODE = 'throw';
 *     'accessors': accessors( xbuf ).accessors
 * };
 *
-* // Test elements:
-* var out = everynd( x );
+* // Perform reduction:
+* var out = includesnd( x, 6.0 );
 * // returns true
+*
+* out = includesnd( x, 100.0 );
+* // returns false
 */
-function everynd( x ) {
+function includesnd( x, value ) {
 	var xbuf;
 	var ordx;
 	var len;
@@ -110,14 +114,14 @@ function everynd( x ) {
 	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory...
 	for ( i = 0; i < len; i++ ) {
 		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		if ( !get( xbuf, ix ) ) {
-			return false;
+		if ( get( xbuf, ix ) === value ) {
+			return true;
 		}
 	}
-	return true;
+	return false;
 }
 
 
 // EXPORTS //
 
-module.exports = everynd;
+module.exports = includesnd;

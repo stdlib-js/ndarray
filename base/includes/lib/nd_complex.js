@@ -32,7 +32,7 @@ var MODE = 'throw';
 // MAIN //
 
 /**
-* Tests whether every element in an ndarray is truthy.
+* Tests whether a reinterpreted complex number ndarray contains a specified value.
 *
 * @private
 * @param {Object} x - object containing ndarray meta data
@@ -42,45 +42,53 @@ var MODE = 'throw';
 * @param {IntegerArray} x.strides - stride lengths
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
-* @param {Array<Function>} x.accessors - data buffer accessors
+* @param {ComplexLike} value - search element
 * @returns {boolean} result
 *
 * @example
-* var toAccessorArray = require( '@stdlib/array/base/to-accessor-array' );
-* var accessors = require( '@stdlib/array/base/accessors' );
+* var Float64Array = require( '@stdlib/array/float64' );
 *
 * // Create a data buffer:
-* var xbuf = toAccessorArray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
+* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * // Define the shape of the input array:
 * var shape = [ 2, 2 ];
 *
 * // Define the array strides:
-* var sx = [ 4, 1 ];
+* var sx = [ 4, 2 ];
 *
 * // Define the index offset:
 * var ox = 0;
 *
 * // Create the input ndarray-like object:
 * var x = {
-*     'dtype': 'generic',
+*     'dtype': 'complex128',
 *     'data': xbuf,
 *     'shape': shape,
 *     'strides': sx,
 *     'offset': ox,
-*     'order': 'row-major',
-*     'accessors': accessors( xbuf ).accessors
+*     'order': 'row-major'
 * };
 *
-* // Test elements:
-* var out = everynd( x );
+* // Perform reduction:
+* var v = {
+*     're': 3.0,
+*     'im': 4.0
+* };
+* var out = includesnd( x, v );
 * // returns true
+*
+* v = {
+*     're': -3.0,
+*     'im': -4.0
+* };
+* out = includesnd( x, v );
+* // returns false
 */
-function everynd( x ) {
+function includesnd( x, value ) {
 	var xbuf;
 	var ordx;
 	var len;
-	var get;
 	var sh;
 	var sx;
 	var ox;
@@ -104,20 +112,17 @@ function everynd( x ) {
 	// Cache the array order:
 	ordx = x.order;
 
-	// Cache accessor:
-	get = x.accessors[ 0 ];
-
 	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory...
 	for ( i = 0; i < len; i++ ) {
 		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		if ( !get( xbuf, ix ) ) {
-			return false;
+		if ( xbuf[ ix ] === value.re && xbuf[ ix+1 ] === value.im ) {
+			return true;
 		}
 	}
-	return true;
+	return false;
 }
 
 
 // EXPORTS //
 
-module.exports = everynd;
+module.exports = includesnd;

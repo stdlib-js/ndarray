@@ -18,21 +18,10 @@
 
 'use strict';
 
-// MODULES //
-
-var numel = require( './../../../base/numel' );
-var vind2bind = require( './../../../base/vind2bind' );
-
-
-// VARIABLES //
-
-var MODE = 'throw';
-
-
 // MAIN //
 
 /**
-* Tests whether every element in an ndarray is truthy.
+* Tests whether an ndarray contains a specified value.
 *
 * @private
 * @param {Object} x - object containing ndarray meta data
@@ -43,6 +32,7 @@ var MODE = 'throw';
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} x.accessors - data buffer accessors
+* @param {*} value - search element
 * @returns {boolean} result
 *
 * @example
@@ -53,13 +43,13 @@ var MODE = 'throw';
 * var xbuf = toAccessorArray( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
 *
 * // Define the shape of the input array:
-* var shape = [ 2, 2 ];
+* var shape = [ 4 ];
 *
 * // Define the array strides:
-* var sx = [ 4, 1 ];
+* var sx = [ 2 ];
 *
 * // Define the index offset:
-* var ox = 0;
+* var ox = 1;
 *
 * // Create the input ndarray-like object:
 * var x = {
@@ -72,52 +62,47 @@ var MODE = 'throw';
 *     'accessors': accessors( xbuf ).accessors
 * };
 *
-* // Test elements:
-* var out = everynd( x );
+* // Perform reduction:
+* var out = includes1d( x, 6.0 );
 * // returns true
+*
+* out = includes1d( x, 100.0 );
+* // returns false
 */
-function everynd( x ) {
+function includes1d( x, value ) {
 	var xbuf;
-	var ordx;
-	var len;
 	var get;
-	var sh;
-	var sx;
-	var ox;
+	var dx0;
+	var S0;
 	var ix;
-	var i;
+	var i0;
 
-	sh = x.shape;
+	// Note on variable naming convention: S#, dx#, dy#, i# where # corresponds to the loop number, with `0` being the innermost loop...
 
-	// Compute the total number of elements over which to iterate:
-	len = numel( sh );
+	// Extract loop variables: dimensions and loop offset (pointer) increments...
+	S0 = x.shape[ 0 ];
+	dx0 = x.strides[ 0 ];
 
-	// Cache a reference to the output ndarray data buffer:
+	// Set a pointer to the first indexed element:
+	ix = x.offset;
+
+	// Cache a reference to the input ndarray buffer:
 	xbuf = x.data;
-
-	// Cache a reference to the stride array:
-	sx = x.strides;
-
-	// Cache the index of the first indexed element:
-	ox = x.offset;
-
-	// Cache the array order:
-	ordx = x.order;
 
 	// Cache accessor:
 	get = x.accessors[ 0 ];
 
-	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory...
-	for ( i = 0; i < len; i++ ) {
-		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		if ( !get( xbuf, ix ) ) {
-			return false;
+	// Iterate over the ndarray dimensions...
+	for ( i0 = 0; i0 < S0; i0++ ) {
+		if ( get( xbuf, ix ) === value ) {
+			return true;
 		}
+		ix += dx0;
 	}
-	return true;
+	return false;
 }
 
 
 // EXPORTS //
 
-module.exports = everynd;
+module.exports = includes1d;

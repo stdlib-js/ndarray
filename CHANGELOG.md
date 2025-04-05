@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-04)
+## Unreleased (2025-04-05)
 
 <section class="packages">
 
@@ -95,6 +95,19 @@
 
 ##### Features
 
+-   [`2ec7da5`](https://github.com/stdlib-js/stdlib/commit/2ec7da5371c0e94eec75db9374206753367761fd) - add package entry point
+-   [`7631d15`](https://github.com/stdlib-js/stdlib/commit/7631d157dbaa53d165e84335c1c656504387c22c) - add nd kernels
+-   [`9eb7bd3`](https://github.com/stdlib-js/stdlib/commit/9eb7bd359a705daeb1d2541db398e00d9c639786) - add 9d kernels
+-   [`175e813`](https://github.com/stdlib-js/stdlib/commit/175e813a98369656c2bc3c5e3dfcbd2a6a78d207) - add 8d kernels
+-   [`f13f725`](https://github.com/stdlib-js/stdlib/commit/f13f725463374ee53253ff45610ec68600b4f01d) - add 7d kernels
+-   [`6bdf8aa`](https://github.com/stdlib-js/stdlib/commit/6bdf8aaf476c44183ac333f9bab349ec5b23cde9) - add 6d kernels
+-   [`c907d71`](https://github.com/stdlib-js/stdlib/commit/c907d7194df26fab41665ec031de26d9c4716a99) - add 5d kernels
+-   [`dab4993`](https://github.com/stdlib-js/stdlib/commit/dab49934d6adb33a90ec6661027f638075a8fa7b) - add 4d kernels
+-   [`999d496`](https://github.com/stdlib-js/stdlib/commit/999d4968b54b50e41f1e0e3420afb87729b85b02) - add 3d kernels
+-   [`27cd3d9`](https://github.com/stdlib-js/stdlib/commit/27cd3d90b12b3f98c1032fb7130aceeb54ecc345) - add 2d kernels
+-   [`9dec091`](https://github.com/stdlib-js/stdlib/commit/9dec091d45d3c7272fc74267588891207a2f9048) - add 1d kernels
+-   [`8bb576b`](https://github.com/stdlib-js/stdlib/commit/8bb576b6d3f4f6421f2a0065f36c24a223b9803d) - add 10d kernels
+-   [`1392a91`](https://github.com/stdlib-js/stdlib/commit/1392a91b60c42b10757a4a2b187b58e648f8de98) - add 0d kernels
 -   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337)
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315)
 -   [`282d01f`](https://github.com/stdlib-js/stdlib/commit/282d01f86247ea1b4c8a3345493b6dc8ec034517) - add `fillBy` to namespace
@@ -1360,6 +1373,31 @@ A total of 11 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`128019a`](https://github.com/stdlib-js/stdlib/commit/128019a60f5fde63b21804d5914dba020e5d53a4) - **docs:** update examples _(by Athan Reines)_
+-   [`ac2b843`](https://github.com/stdlib-js/stdlib/commit/ac2b843dd8a6341d876c559cf8d79ab8bdf7ac46) - **bench:** fix invocations _(by Athan Reines)_
+-   [`1e0863b`](https://github.com/stdlib-js/stdlib/commit/1e0863b926876e26ad82a3d28ead805326de30d4) - **bench:** add benchmarks _(by Athan Reines)_
+-   [`4b9e117`](https://github.com/stdlib-js/stdlib/commit/4b9e11763d3684596e19cdb0ff8931dca41b49df) - **docs:** add README _(by Athan Reines)_
+-   [`9635155`](https://github.com/stdlib-js/stdlib/commit/9635155b8986f7cdbbeda766741deaab6ff76567) - **docs:** add example _(by Athan Reines)_
+-   [`5b99ffb`](https://github.com/stdlib-js/stdlib/commit/5b99ffb24c9dec39925e95e3a5992cef9283e4eb) - **docs:** fix text block _(by Athan Reines)_
+-   [`63f96e4`](https://github.com/stdlib-js/stdlib/commit/63f96e40cc84ff4d4636701eaad7182a5eee325b) - **test:** add initial tests _(by Athan Reines)_
+-   [`ba1be5d`](https://github.com/stdlib-js/stdlib/commit/ba1be5d4934296745fdbf2f45945ea4edaa302d8) - **docs:** add REPL help and TS declarations _(by Athan Reines)_
+-   [`f48027c`](https://github.com/stdlib-js/stdlib/commit/f48027ca63fab9c8cec60137439a7c9a741360a0) - **docs:** fix description _(by Athan Reines)_
+-   [`2ec7da5`](https://github.com/stdlib-js/stdlib/commit/2ec7da5371c0e94eec75db9374206753367761fd) - **feat:** add package entry point _(by Athan Reines)_
+-   [`7631d15`](https://github.com/stdlib-js/stdlib/commit/7631d157dbaa53d165e84335c1c656504387c22c) - **feat:** add nd kernels _(by Athan Reines)_
+-   [`9eb7bd3`](https://github.com/stdlib-js/stdlib/commit/9eb7bd359a705daeb1d2541db398e00d9c639786) - **feat:** add 9d kernels _(by Athan Reines)_
+-   [`175e813`](https://github.com/stdlib-js/stdlib/commit/175e813a98369656c2bc3c5e3dfcbd2a6a78d207) - **feat:** add 8d kernels _(by Athan Reines)_
+-   [`f13f725`](https://github.com/stdlib-js/stdlib/commit/f13f725463374ee53253ff45610ec68600b4f01d) - **feat:** add 7d kernels _(by Athan Reines)_
+-   [`6bdf8aa`](https://github.com/stdlib-js/stdlib/commit/6bdf8aaf476c44183ac333f9bab349ec5b23cde9) - **feat:** add 6d kernels _(by Athan Reines)_
+-   [`c907d71`](https://github.com/stdlib-js/stdlib/commit/c907d7194df26fab41665ec031de26d9c4716a99) - **feat:** add 5d kernels _(by Athan Reines)_
+-   [`6c1ccd3`](https://github.com/stdlib-js/stdlib/commit/6c1ccd3f507367f7ffa9cb40c15fe360682fd294) - **chore:** add package meta data _(by Athan Reines)_
+-   [`dab4993`](https://github.com/stdlib-js/stdlib/commit/dab49934d6adb33a90ec6661027f638075a8fa7b) - **feat:** add 4d kernels _(by Athan Reines)_
+-   [`999d496`](https://github.com/stdlib-js/stdlib/commit/999d4968b54b50e41f1e0e3420afb87729b85b02) - **feat:** add 3d kernels _(by Athan Reines)_
+-   [`27cd3d9`](https://github.com/stdlib-js/stdlib/commit/27cd3d90b12b3f98c1032fb7130aceeb54ecc345) - **feat:** add 2d kernels _(by Athan Reines)_
+-   [`9dec091`](https://github.com/stdlib-js/stdlib/commit/9dec091d45d3c7272fc74267588891207a2f9048) - **feat:** add 1d kernels _(by Athan Reines)_
+-   [`8bb576b`](https://github.com/stdlib-js/stdlib/commit/8bb576b6d3f4f6421f2a0065f36c24a223b9803d) - **feat:** add 10d kernels _(by Athan Reines)_
+-   [`1392a91`](https://github.com/stdlib-js/stdlib/commit/1392a91b60c42b10757a4a2b187b58e648f8de98) - **feat:** add 0d kernels _(by Athan Reines)_
+-   [`d2564c7`](https://github.com/stdlib-js/stdlib/commit/d2564c7c234ed2be3b8ea32ffa41cb937cc83289) - **docs:** update example _(by Athan Reines)_
+-   [`d070f40`](https://github.com/stdlib-js/stdlib/commit/d070f4068364ed50c796c7961d9b7d967b2079ab) - **docs:** fix example _(by Athan Reines)_
 -   [`13b7262`](https://github.com/stdlib-js/stdlib/commit/13b726232dfe12efc850f095633e373840f3e02a) - **chore:** fix EditorConfig lint errors [(#6541)](https://github.com/stdlib-js/stdlib/pull/6541) _(by Muhammad Taaha Tariq, Athan Reines)_
 -   [`b98c6a9`](https://github.com/stdlib-js/stdlib/commit/b98c6a93187e39c2db3958a2b6be92c2d50be593) - **docs:** update related packages sections [(#6538)](https://github.com/stdlib-js/stdlib/pull/6538) _(by stdlib-bot)_
 -   [`b2db775`](https://github.com/stdlib-js/stdlib/commit/b2db7759e0779037cea020e7c80ce91740257f46) - **chore:** fix EditorConfig lint error [(#6180)](https://github.com/stdlib-js/stdlib/pull/6180) _(by MANI, Athan Reines)_
