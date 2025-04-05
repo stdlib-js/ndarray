@@ -20,6 +20,7 @@
 
 ##### Features
 
+-   [`3f4de77`](https://github.com/stdlib-js/stdlib/commit/3f4de77d333dea3962dec5f53858a4a2db86bd63) - add `ndarray/includes`
 -   [`d8f2acf`](https://github.com/stdlib-js/stdlib/commit/d8f2acf4d31d3da271e7d2074ffb40a6317c4a23) - update namespace TypeScript declarations [(#6337)](https://github.com/stdlib-js/stdlib/pull/6337)
 -   [`41b3b21`](https://github.com/stdlib-js/stdlib/commit/41b3b214c891ac64926296439240e2bf5f85de3f) - add `fillBy` to namespace
 -   [`da8a676`](https://github.com/stdlib-js/stdlib/commit/da8a676ef0097af7ad60e7379b52930e03d65c95) - update namespace TypeScript declarations [(#6315)](https://github.com/stdlib-js/stdlib/pull/6315)
@@ -318,6 +319,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-broadcast-scalar-unreleased">
+
+#### [@stdlib/ndarray/base/broadcast-scalar](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/broadcast-scalar)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`043dc69`](https://github.com/stdlib-js/stdlib/commit/043dc69c76ea6780cbba2c223417fccda4685c7a) - handle 0d edge case
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -911,6 +934,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`f0d205d`](https://github.com/stdlib-js/stdlib/commit/f0d205d7073055c7a69f1ba7ccee95671ab762ba) - address indexing error
 -   [`5768926`](https://github.com/stdlib-js/stdlib/commit/5768926be4fb253947f5d44bcf6b9d8bb5c75274) - update error message
 -   [`7378f4d`](https://github.com/stdlib-js/stdlib/commit/7378f4db96fc059523a6f181388aa8f4fa202675) - ensure support when providing no dimensions to reduce
 -   [`91778b7`](https://github.com/stdlib-js/stdlib/commit/91778b7ca6ae2c6ee0c6017687426c3952d90098) - handle scenario where a core dimension is zero
@@ -1397,6 +1421,9 @@ A total of 11 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3f4de77`](https://github.com/stdlib-js/stdlib/commit/3f4de77d333dea3962dec5f53858a4a2db86bd63) - **feat:** add `ndarray/includes` _(by Athan Reines)_
+-   [`f0d205d`](https://github.com/stdlib-js/stdlib/commit/f0d205d7073055c7a69f1ba7ccee95671ab762ba) - **fix:** address indexing error _(by Athan Reines)_
+-   [`043dc69`](https://github.com/stdlib-js/stdlib/commit/043dc69c76ea6780cbba2c223417fccda4685c7a) - **fix:** handle 0d edge case _(by Athan Reines)_
 -   [`560e643`](https://github.com/stdlib-js/stdlib/commit/560e643d902d37529d503ba1c8bf5ac0dd88f926) - **chore:** fix EditorConfig lint errors [(#6549)](https://github.com/stdlib-js/stdlib/pull/6549) _(by Muhammad Taaha Tariq, Athan Reines)_
 -   [`128019a`](https://github.com/stdlib-js/stdlib/commit/128019a60f5fde63b21804d5914dba020e5d53a4) - **docs:** update examples _(by Athan Reines)_
 -   [`ac2b843`](https://github.com/stdlib-js/stdlib/commit/ac2b843dd8a6341d876c559cf8d79ab8bdf7ac46) - **bench:** fix invocations _(by Athan Reines)_
