@@ -302,6 +302,15 @@ setReadOnly( ns, 'empty', require( './../../base/empty' ) );
 setReadOnly( ns, 'emptyLike', require( './../../base/empty-like' ) );
 
 /**
+* @name every
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/every}
+*/
+setReadOnly( ns, 'every', require( './../../base/every' ) );
+
+/**
 * @name expandDimensions
 * @memberof ns
 * @readonly
@@ -390,6 +399,15 @@ setReadOnly( ns, 'scalar2ndarray', require( './../../base/from-scalar' ) );
 * @see {@link module:@stdlib/ndarray/base/from-scalar-like}
 */
 setReadOnly( ns, 'scalar2ndarrayLike', require( './../../base/from-scalar-like' ) );
+
+/**
+* @name includes
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/includes}
+*/
+setReadOnly( ns, 'includes', require( './../../base/includes' ) );
 
 /**
 * @name ind
@@ -905,6 +923,15 @@ setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
 setReadOnly( ns, 'unary', require( './../../base/unary' ) );
 
 /**
+* @name unaryAccumulate
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-accumulate}
+*/
+setReadOnly( ns, 'unaryAccumulate', require( './../../base/unary-accumulate' ) );
+
+/**
 * @name unaryBy
 * @memberof ns
 * @readonly
@@ -930,6 +957,15 @@ setReadOnly( ns, 'unaryLoopOrder', require( './../../base/unary-loop-interchange
 * @see {@link module:@stdlib/ndarray/base/unary-output-dtype}
 */
 setReadOnly( ns, 'unaryOutputDataType', require( './../../base/unary-output-dtype' ) );
+
+/**
+* @name unaryReduceSubarray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-subarray}
+*/
+setReadOnly( ns, 'unaryReduceSubarray', require( './../../base/unary-reduce-subarray' ) );
 
 /**
 * @name unaryBlockSize

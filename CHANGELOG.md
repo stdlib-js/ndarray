@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-06)
+## Unreleased (2025-04-09)
 
 <section class="packages">
 
@@ -96,6 +96,7 @@
 
 ##### Features
 
+-   [`a468fa8`](https://github.com/stdlib-js/stdlib/commit/a468fa85dd5a0bdf9bb98fd27fca221cac2cc465) - add `every`, `includes`, `unaryAccumulate`, and `unaryReduceSubarray` to namespace [(#6605)](https://github.com/stdlib-js/stdlib/pull/6605)
 -   [`2ec7da5`](https://github.com/stdlib-js/stdlib/commit/2ec7da5371c0e94eec75db9374206753367761fd) - add package entry point
 -   [`7631d15`](https://github.com/stdlib-js/stdlib/commit/7631d157dbaa53d165e84335c1c656504387c22c) - add nd kernels
 -   [`9eb7bd3`](https://github.com/stdlib-js/stdlib/commit/9eb7bd359a705daeb1d2541db398e00d9c639786) - add 9d kernels
@@ -139,6 +140,18 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+A total of 2 issues were closed in this release:
+
+[#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -1385,9 +1398,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 8 issues were closed in this release:
+A total of 10 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589)
 
 </section>
 
@@ -1397,7 +1410,7 @@ A total of 8 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1407,6 +1420,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 -   Muhammad Haris
 -   Muhammad Taaha Tariq
 -   Philipp Burckhardt
+-   Pravesh Kunwar
 -   Sai Avinash
 -   ditsu
 -   lohithganni
@@ -1421,6 +1435,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a468fa8`](https://github.com/stdlib-js/stdlib/commit/a468fa85dd5a0bdf9bb98fd27fca221cac2cc465) - **feat:** add `every`, `includes`, `unaryAccumulate`, and `unaryReduceSubarray` to namespace [(#6605)](https://github.com/stdlib-js/stdlib/pull/6605) _(by Pravesh Kunwar)_
 -   [`1ad09d5`](https://github.com/stdlib-js/stdlib/commit/1ad09d5c9437c763081275186e7517d3739da988) - **chore:** update package meta data [(#6576)](https://github.com/stdlib-js/stdlib/pull/6576) _(by stdlib-bot)_
 -   [`b5bff35`](https://github.com/stdlib-js/stdlib/commit/b5bff35c7183d5ccd4cf0349c1a3be06b34e844f) - **docs:** update copy _(by Athan Reines)_
 -   [`fccf762`](https://github.com/stdlib-js/stdlib/commit/fccf76232823c1bbbef2152aa3c1488210a5a12b) - **docs:** update copy _(by Athan Reines)_
