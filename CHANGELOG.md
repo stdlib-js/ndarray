@@ -1470,6 +1470,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b2eef05`](https://github.com/stdlib-js/stdlib/commit/b2eef05de589bc6dafb0f462fa0088c2eb1bf26d) - **docs:** update namespace table of contents [(#6631)](https://github.com/stdlib-js/stdlib/pull/6631) _(by stdlib-bot)_
 -   [`710e6dd`](https://github.com/stdlib-js/stdlib/commit/710e6dde3e7201cec996e3bdc70f8be3c0905416) - **refactor:** update signature to use `const` qualifier [(#6610)](https://github.com/stdlib-js/stdlib/pull/6610) _(by Pravesh Kunwar, Athan Reines)_
 -   [`605c582`](https://github.com/stdlib-js/stdlib/commit/605c5828fe6efeae442d8df17d29404d2acb759f) - **fix:** update error message _(by Athan Reines)_
 -   [`0836dce`](https://github.com/stdlib-js/stdlib/commit/0836dce5df85cb2cc185c65ca839aa99f30eb9e1) - **fix:** update error message _(by Athan Reines)_
