@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-09)
+## Unreleased (2025-04-10)
 
 <section class="packages">
 
@@ -41,6 +41,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`605c582`](https://github.com/stdlib-js/stdlib/commit/605c5828fe6efeae442d8df17d29404d2acb759f) - update error message
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="breaking-changes">
 
@@ -1004,6 +1014,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`0836dce`](https://github.com/stdlib-js/stdlib/commit/0836dce5df85cb2cc185c65ca839aa99f30eb9e1) - update error message
 -   [`6f61b2d`](https://github.com/stdlib-js/stdlib/commit/6f61b2dfab95f59ff05a07769b777f5012e1c193) - handle edge case when `dims=[]`
 
 </section>
@@ -1435,6 +1446,8 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`605c582`](https://github.com/stdlib-js/stdlib/commit/605c5828fe6efeae442d8df17d29404d2acb759f) - **fix:** update error message _(by Athan Reines)_
+-   [`0836dce`](https://github.com/stdlib-js/stdlib/commit/0836dce5df85cb2cc185c65ca839aa99f30eb9e1) - **fix:** update error message _(by Athan Reines)_
 -   [`a468fa8`](https://github.com/stdlib-js/stdlib/commit/a468fa85dd5a0bdf9bb98fd27fca221cac2cc465) - **feat:** add `every`, `includes`, `unaryAccumulate`, and `unaryReduceSubarray` to namespace [(#6605)](https://github.com/stdlib-js/stdlib/pull/6605) _(by Pravesh Kunwar)_
 -   [`1ad09d5`](https://github.com/stdlib-js/stdlib/commit/1ad09d5c9437c763081275186e7517d3739da988) - **chore:** update package meta data [(#6576)](https://github.com/stdlib-js/stdlib/pull/6576) _(by stdlib-bot)_
 -   [`b5bff35`](https://github.com/stdlib-js/stdlib/commit/b5bff35c7183d5ccd4cf0349c1a3be06b34e844f) - **docs:** update copy _(by Athan Reines)_
