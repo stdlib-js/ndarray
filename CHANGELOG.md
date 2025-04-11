@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-10)
+## Unreleased (2025-04-11)
 
 <section class="packages">
 
@@ -981,6 +981,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642)
 -   [`f0d205d`](https://github.com/stdlib-js/stdlib/commit/f0d205d7073055c7a69f1ba7ccee95671ab762ba) - address indexing error
 -   [`5768926`](https://github.com/stdlib-js/stdlib/commit/5768926be4fb253947f5d44bcf6b9d8bb5c75274) - update error message
 -   [`7378f4d`](https://github.com/stdlib-js/stdlib/commit/7378f4db96fc059523a6f181388aa8f4fa202675) - ensure support when providing no dimensions to reduce
@@ -1470,6 +1471,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - **fix:** add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642) _(by Muhammad Haris)_
 -   [`b2eef05`](https://github.com/stdlib-js/stdlib/commit/b2eef05de589bc6dafb0f462fa0088c2eb1bf26d) - **docs:** update namespace table of contents [(#6631)](https://github.com/stdlib-js/stdlib/pull/6631) _(by stdlib-bot)_
 -   [`710e6dd`](https://github.com/stdlib-js/stdlib/commit/710e6dde3e7201cec996e3bdc70f8be3c0905416) - **refactor:** update signature to use `const` qualifier [(#6610)](https://github.com/stdlib-js/stdlib/pull/6610) _(by Pravesh Kunwar, Athan Reines)_
 -   [`605c582`](https://github.com/stdlib-js/stdlib/commit/605c5828fe6efeae442d8df17d29404d2acb759f) - **fix:** update error message _(by Athan Reines)_
