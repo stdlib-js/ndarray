@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-11)
+## Unreleased (2025-04-14)
 
 <section class="packages">
 
@@ -1471,6 +1471,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`f9d3b79`](https://github.com/stdlib-js/stdlib/commit/f9d3b793f4100fcf1c9b7391550d3264bb395b00) - **docs:** update related packages sections [(#6670)](https://github.com/stdlib-js/stdlib/pull/6670) _(by stdlib-bot)_
 -   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - **fix:** add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642) _(by Muhammad Haris)_
 -   [`b2eef05`](https://github.com/stdlib-js/stdlib/commit/b2eef05de589bc6dafb0f462fa0088c2eb1bf26d) - **docs:** update namespace table of contents [(#6631)](https://github.com/stdlib-js/stdlib/pull/6631) _(by stdlib-bot)_
 -   [`710e6dd`](https://github.com/stdlib-js/stdlib/commit/710e6dde3e7201cec996e3bdc70f8be3c0905416) - **refactor:** update signature to use `const` qualifier [(#6610)](https://github.com/stdlib-js/stdlib/pull/6610) _(by Pravesh Kunwar, Athan Reines)_
