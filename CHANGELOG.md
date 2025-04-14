@@ -630,6 +630,30 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-ind-unreleased">
+
+#### [@stdlib/ndarray/base/ind](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/ind)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6663](https://github.com/stdlib-js/stdlib/issues/6663)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-map-unreleased">
 
 #### [@stdlib/ndarray/base/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/map)
@@ -1434,9 +1458,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 11 issues were closed in this release:
+A total of 12 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663)
 
 </section>
 
@@ -1446,10 +1470,11 @@ A total of 11 issues were closed in this release:
 
 ### Contributors
 
-A total of 12 people contributed to this release. Thank you to the following contributors:
+A total of 13 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
+-   Dipjyoti Das
 -   Gururaj Gurram
 -   Kaushikgtm
 -   MANI
@@ -1471,6 +1496,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9485c2b`](https://github.com/stdlib-js/stdlib/commit/9485c2b14a159557d8d097c2cfbd106db12a2210) - **chore:** fix EditorConfig lint errors (issue #6663) [(#6672)](https://github.com/stdlib-js/stdlib/pull/6672) _(by Dipjyoti Das)_
 -   [`f9d3b79`](https://github.com/stdlib-js/stdlib/commit/f9d3b793f4100fcf1c9b7391550d3264bb395b00) - **docs:** update related packages sections [(#6670)](https://github.com/stdlib-js/stdlib/pull/6670) _(by stdlib-bot)_
 -   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - **fix:** add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642) _(by Muhammad Haris)_
 -   [`b2eef05`](https://github.com/stdlib-js/stdlib/commit/b2eef05de589bc6dafb0f462fa0088c2eb1bf26d) - **docs:** update namespace table of contents [(#6631)](https://github.com/stdlib-js/stdlib/pull/6631) _(by stdlib-bot)_
