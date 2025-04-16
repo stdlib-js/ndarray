@@ -984,6 +984,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-reduce-strided1d-unreleased">
+
+#### [@stdlib/ndarray/base/unary-reduce-strided1d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-strided1d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`ca10e52`](https://github.com/stdlib-js/stdlib/commit/ca10e526a8d174acca07ea25631f3254a768690c) - add `ndarray/base/unary-reduce-strided1d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-unary-reduce-subarray-unreleased">
 
 #### [@stdlib/ndarray/base/unary-reduce-subarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-subarray)
@@ -1497,6 +1519,12 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`9d6cd84`](https://github.com/stdlib-js/stdlib/commit/9d6cd84404f09e09f22721d4e3bd1d083b8f83b1) - **chore:** add TODO _(by Athan Reines)_
+-   [`35612e9`](https://github.com/stdlib-js/stdlib/commit/35612e9369b15f22fc8be80a9da56cf73aee05d8) - **chore:** add TODO _(by Athan Reines)_
+-   [`ca10e52`](https://github.com/stdlib-js/stdlib/commit/ca10e526a8d174acca07ea25631f3254a768690c) - **feat:** add `ndarray/base/unary-reduce-strided1d` _(by Athan Reines)_
+-   [`999b4d7`](https://github.com/stdlib-js/stdlib/commit/999b4d7f258e8c9c20ef474b1839f62a9481c652) - **docs:** update note _(by Athan Reines)_
+-   [`a032199`](https://github.com/stdlib-js/stdlib/commit/a03219903da3dce11a6a290890078a969841e582) - **docs:** update description _(by Athan Reines)_
+-   [`29a39e8`](https://github.com/stdlib-js/stdlib/commit/29a39e8cb6562c29d96a91b3969ef35ae85b661a) - **chore:** update copyright year _(by Athan Reines)_
 -   [`cdc66ce`](https://github.com/stdlib-js/stdlib/commit/cdc66ce1876b95dd8c23aa2f869aebe9b842e86e) - **fix:** remove unused parameters _(by Athan Reines)_
 -   [`9485c2b`](https://github.com/stdlib-js/stdlib/commit/9485c2b14a159557d8d097c2cfbd106db12a2210) - **chore:** fix EditorConfig lint errors (issue #6663) [(#6672)](https://github.com/stdlib-js/stdlib/pull/6672) _(by Dipjyoti Das)_
 -   [`f9d3b79`](https://github.com/stdlib-js/stdlib/commit/f9d3b793f4100fcf1c9b7391550d3264bb395b00) - **docs:** update related packages sections [(#6670)](https://github.com/stdlib-js/stdlib/pull/6670) _(by stdlib-bot)_

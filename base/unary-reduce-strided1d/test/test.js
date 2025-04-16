@@ -21,14 +21,14 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var unaryReduceSubarray = require( './../lib' );
+var unaryReduceStrided1d = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof unaryReduceSubarray, 'function', 'main export is a function' );
+	t.strictEqual( typeof unaryReduceStrided1d, 'function', 'main export is a function' );
 	t.end();
 });
 

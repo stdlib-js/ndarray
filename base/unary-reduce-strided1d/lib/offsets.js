@@ -18,18 +18,25 @@
 
 'use strict';
 
-// MODULES //
+// MAIN //
 
-var tape = require( 'tape' );
-var unaryReduceSubarray = require( './../lib' );
+/**
+* Resolves index offsets from a list of ndarray-like objects.
+*
+* @private
+* @param {ArrayLikeObject<Object>} arrays - list of ndarray-like objects
+* @returns {NonNegativeIntegerArray} list of offsets
+*/
+function offsets( arrays ) {
+	var out = [];
+	var i;
+	for ( i = 0; i < arrays.length; i++ ) {
+		out.push( arrays[ i ].offset );
+	}
+	return out;
+}
 
 
-// TESTS //
+// EXPORTS //
 
-tape( 'main export is a function', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof unaryReduceSubarray, 'function', 'main export is a function' );
-	t.end();
-});
-
-// FIXME: add tests
+module.exports = offsets;

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# unaryReduceSubarray
+# unaryReduceStrided1d
 
-> Perform a reduction over a list of specified dimensions in an input ndarray and assign results to a provided output ndarray.
+> Perform a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assign results to a provided output ndarray.
 
 <section class="intro">
 
@@ -33,24 +33,32 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var unaryReduceSubarray = require( '@stdlib/ndarray/base/unary-reduce-subarray' );
+var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d' );
 ```
 
-#### unaryReduceSubarray( fcn, arrays, dims\[, options] )
+#### unaryReduceStrided1d( fcn, arrays, dims\[, options] )
 
-Performs a reduction over a list of specified dimensions in an input ndarray and assigns results to a provided output ndarray.
+Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assigns results to a provided output ndarray.
 
 <!-- eslint-disable max-len -->
 
 ```javascript
 var Float64Array = require( '@stdlib/array/float64' );
-var filled = require( '@stdlib/array/base/filled' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
-var every = require( '@stdlib/ndarray/base/every' );
+var getStride = require( '@stdlib/ndarray/base/stride' );
+var getOffset = require( '@stdlib/ndarray/base/offset' );
+var getData = require( '@stdlib/ndarray/base/data-buffer' );
+var numelDimension = require( '@stdlib/ndarray/base/numel-dimension' );
+var gsum = require( '@stdlib/blas/ext/base/gsum' ).ndarray;
+
+function wrapper( arrays ) {
+    var x = arrays[ 0 ];
+    return gsum( numelDimension( x, 0 ), getData( x ), getStride( x, 0 ), getOffset( x ) );
+}
 
 // Create data buffers:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
-var ybuf = filled( false, 3 );
+var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+var ybuf = new Float64Array( [ 0.0, 0.0, 0.0 ] );
 
 // Define the array shapes:
 var xsh = [ 1, 3, 2, 2 ];
@@ -76,7 +84,7 @@ var x = {
 
 // Create an output ndarray-like object:
 var y = {
-    'dtype': 'generic',
+    'dtype': 'float64',
     'data': ybuf,
     'shape': ysh,
     'strides': sy,
@@ -85,15 +93,15 @@ var y = {
 };
 
 // Perform a reduction:
-unaryReduceSubarray( every, [ x, y ], [ 2, 3 ] );
+unaryReduceStrided1d( wrapper, [ x, y ], [ 2, 3 ] );
 
 var arr = ndarray2array( y.data, y.shape, y.strides, y.offset, y.order );
-// returns [ [ true, false, true ] ]
+// returns [ [ 10.0, 26.0, 42.0 ] ]
 ```
 
 The function accepts the following arguments:
 
--   **fcn**: function which will be applied to a subarray and should reduce the subarray to a single scalar value.
+-   **fcn**: function which will be applied to a one-dimensional subarray and should reduce the subarray to a single scalar value.
 -   **arrays**: array-like object containing one input ndarray and one output ndarray, followed by any additional ndarray arguments.
 -   **dims**: list of dimensions over which to perform a reduction.
 -   **options**: function options which are passed through to `fcn` (_optional_).
@@ -127,7 +135,7 @@ Each provided ndarray should be an object with the following properties:
 
     where
 
-    -   **arrays**: array containing a subarray of the input ndarray and any additional ndarray arguments as zero-dimensional ndarrays.
+    -   **arrays**: array containing a one-dimensional subarray of the input ndarray and any additional ndarray arguments as zero-dimensional ndarrays.
     -   **options**: function options (_optional_).
 
 -   For very high-dimensional ndarrays which are non-contiguous, one should consider copying the underlying data to contiguous memory before performing a reduction in order to achieve better performance.
@@ -144,10 +152,19 @@ Each provided ndarray should be an object with the following properties:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
-var filled = require( '@stdlib/array/base/filled' );
+var zeros = require( '@stdlib/array/base/zeros' );
 var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
-var every = require( '@stdlib/ndarray/base/every' );
-var unaryReduceSubarray = require( '@stdlib/ndarray/base/unary-reduce-subarray' );
+var numelDimension = require( '@stdlib/ndarray/base/numel-dimension' );
+var getData = require( '@stdlib/ndarray/base/data-buffer' );
+var getStride = require( '@stdlib/ndarray/base/stride' );
+var getOffset = require( '@stdlib/ndarray/base/offset' );
+var gsum = require( '@stdlib/blas/ext/base/gsum' ).ndarray;
+var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d' );
+
+function wrapper( arrays ) {
+    var x = arrays[ 0 ];
+    return gsum( numelDimension( x, 0 ), getData( x ), getStride( x, 0 ), getOffset( x ) ); // eslint-disable-line max-len
+}
 
 var N = 10;
 var x = {
@@ -162,14 +179,14 @@ var x = {
 };
 var y = {
     'dtype': 'generic',
-    'data': filled( false, 2 ),
+    'data': zeros( 2 ),
     'shape': [ 1, 2 ],
     'strides': [ 2, 1 ],
     'offset': 0,
     'order': 'row-major'
 };
 
-unaryReduceSubarray( every, [ x, y ], [ 1 ] );
+unaryReduceStrided1d( wrapper, [ x, y ], [ 1 ] );
 
 console.log( ndarray2array( x.data, x.shape, x.strides, x.offset, x.order ) );
 console.log( ndarray2array( y.data, y.shape, y.strides, y.offset, y.order ) );

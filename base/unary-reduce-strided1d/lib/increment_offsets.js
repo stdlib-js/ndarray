@@ -18,18 +18,29 @@
 
 'use strict';
 
-// MODULES //
+// MAIN //
 
-var tape = require( 'tape' );
-var unaryReduceSubarray = require( './../lib' );
+/**
+* Increments index offsets according to a list of increments.
+*
+* ## Notes
+*
+* -   This function mutates the list of index offsets.
+*
+* @private
+* @param {NonNegativeIntegerArray} offsets - list of index offsets
+* @param {NonNegativeIntegerArray} inc - list of increments
+* @returns {NonNegativeIntegerArray} updated offsets
+*/
+function incrementOffsets( offsets, inc ) {
+	var i;
+	for ( i = 0; i < offsets.length; i++ ) {
+		offsets[ i ] += inc[ i ];
+	}
+	return offsets;
+}
 
 
-// TESTS //
+// EXPORTS //
 
-tape( 'main export is a function', function test( t ) {
-	t.ok( true, __filename );
-	t.strictEqual( typeof unaryReduceSubarray, 'function', 'main export is a function' );
-	t.end();
-});
-
-// FIXME: add tests
+module.exports = incrementOffsets;

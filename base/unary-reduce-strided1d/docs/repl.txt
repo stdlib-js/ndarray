@@ -1,7 +1,8 @@
 
 {{alias}}( fcn, arrays, dims[, options] )
     Performs a reduction over a list of specified dimensions in an input ndarray
-    and assigns results to a provided output ndarray.
+    via a one-dimensional strided array reduction function and assigns results
+    to a provided output ndarray.
 
     Each provided "ndarray" should be an object with the following properties:
 
@@ -21,16 +22,17 @@
     Parameters
     ----------
     fcn: Function
-        Function which will be applied to a subarray and should reduce the
-        subarray to a single scalar value. The function should have the
-        following signature:
+        Function which will be applied to a one-dimensional subarray and should
+        reduce the subarray to a single scalar value. The function should have
+        the following signature:
 
             fcn( arrays[, options] )
 
         where
 
-        - arrays: array containing a subarray of the input ndarray and any
-        additional ndarray arguments as zero-dimensional ndarrays.
+        - arrays: array containing a one-dimensional subarray of the input
+        ndarray and any additional ndarray arguments as zero-dimensional
+        ndarrays.
         - options: function options.
 
     arrays: ArrayLikeObject<ndarray>
@@ -57,8 +59,15 @@
     > var oy = 0;
     > var order = 'row-major';
 
-    // Define a trivial reduction function...
-    > function fcn( arrays ) { return arrays[0].data[ arrays[0].offset ]; };
+    // Define a wrapper for an extended BLAS function...
+    > function fcn( arrays ) {
+    ...    var x = arrays[ 0 ];
+    ...    var N = x.shape[ 0 ];
+    ...    var d = x.data;
+    ...    var s = x.strides[ 0 ];
+    ...    var o = x.offset;
+    ...    return {{alias:@stdlib/blas/ext/base/gsum}}.ndarray( N, d, s, o );
+    ... };
 
     // Using minimal ndarray-like objects...
     > x = {
@@ -79,7 +88,7 @@
     ... };
     > {{alias}}( fcn, [ x, y ], [ 0, 1 ] );
     > y.data
-    <Float64Array>[ 1.0 ]
+    <Float64Array>[ 10.0 ]
 
     See Also
     --------
