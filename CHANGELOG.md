@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-14)
+## Unreleased (2025-04-16)
 
 <section class="packages">
 
@@ -1005,6 +1005,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`cdc66ce`](https://github.com/stdlib-js/stdlib/commit/cdc66ce1876b95dd8c23aa2f869aebe9b842e86e) - remove unused parameters
 -   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642)
 -   [`f0d205d`](https://github.com/stdlib-js/stdlib/commit/f0d205d7073055c7a69f1ba7ccee95671ab762ba) - address indexing error
 -   [`5768926`](https://github.com/stdlib-js/stdlib/commit/5768926be4fb253947f5d44bcf6b9d8bb5c75274) - update error message
@@ -1496,6 +1497,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`cdc66ce`](https://github.com/stdlib-js/stdlib/commit/cdc66ce1876b95dd8c23aa2f869aebe9b842e86e) - **fix:** remove unused parameters _(by Athan Reines)_
 -   [`9485c2b`](https://github.com/stdlib-js/stdlib/commit/9485c2b14a159557d8d097c2cfbd106db12a2210) - **chore:** fix EditorConfig lint errors (issue #6663) [(#6672)](https://github.com/stdlib-js/stdlib/pull/6672) _(by Dipjyoti Das)_
 -   [`f9d3b79`](https://github.com/stdlib-js/stdlib/commit/f9d3b793f4100fcf1c9b7391550d3264bb395b00) - **docs:** update related packages sections [(#6670)](https://github.com/stdlib-js/stdlib/pull/6670) _(by stdlib-bot)_
 -   [`0ede0da`](https://github.com/stdlib-js/stdlib/commit/0ede0dafa46ddea7dfce7be63250ca9ae0c1c546) - **fix:** add missing imports in `ndarray/base/unary-reduce-subarray` [(#6642)](https://github.com/stdlib-js/stdlib/pull/6642) _(by Muhammad Haris)_
