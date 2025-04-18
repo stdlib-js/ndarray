@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-16)
+## Unreleased (2025-04-18)
 
 <section class="packages">
 
@@ -46,6 +46,7 @@
 
 ##### Bug Fixes
 
+-   [`07710f8`](https://github.com/stdlib-js/stdlib/commit/07710f849133f4414b37a19a96fb3ccdad7538d5) - check for duplicate indices
 -   [`605c582`](https://github.com/stdlib-js/stdlib/commit/605c5828fe6efeae442d8df17d29404d2acb759f) - update error message
 
 </section>
@@ -1066,6 +1067,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-empty-like-unreleased">
+
+#### [@stdlib/ndarray/empty-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/empty-like)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`046926b`](https://github.com/stdlib-js/stdlib/commit/046926b9a0ad4643802944ef110b1cfe1eb488c9) - ensure support for zero-dimensional shapes
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-every-unreleased">
 
 #### [@stdlib/ndarray/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/every)
@@ -1086,6 +1109,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`86632f3`](https://github.com/stdlib-js/stdlib/commit/86632f3d1a2de336941303b32e994c870bcaeb71) - check for duplicate indices
 -   [`0836dce`](https://github.com/stdlib-js/stdlib/commit/0836dce5df85cb2cc185c65ca839aa99f30eb9e1) - update error message
 -   [`6f61b2d`](https://github.com/stdlib-js/stdlib/commit/6f61b2dfab95f59ff05a07769b777f5012e1c193) - handle edge case when `dims=[]`
 
@@ -1457,6 +1481,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-zeros-like-unreleased">
+
+#### [@stdlib/ndarray/zeros-like](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/zeros-like)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`f7bb91c`](https://github.com/stdlib-js/stdlib/commit/f7bb91c2aa3b31c86ddd57cfd3396632c78d42c0) - ensure support for zero-dimensional shapes
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 </section>
 
 <!-- /.packages -->
@@ -1519,6 +1565,14 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`f7bb91c`](https://github.com/stdlib-js/stdlib/commit/f7bb91c2aa3b31c86ddd57cfd3396632c78d42c0) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
+-   [`046926b`](https://github.com/stdlib-js/stdlib/commit/046926b9a0ad4643802944ef110b1cfe1eb488c9) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
+-   [`b1d96c9`](https://github.com/stdlib-js/stdlib/commit/b1d96c95fce3e8692ec6cbb4436eacd1943a5528) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`f62c303`](https://github.com/stdlib-js/stdlib/commit/f62c303e990ecc605a34774772091dda14e3088f) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`86632f3`](https://github.com/stdlib-js/stdlib/commit/86632f3d1a2de336941303b32e994c870bcaeb71) - **fix:** check for duplicate indices _(by Athan Reines)_
+-   [`07710f8`](https://github.com/stdlib-js/stdlib/commit/07710f849133f4414b37a19a96fb3ccdad7538d5) - **fix:** check for duplicate indices _(by Athan Reines)_
+-   [`dcd9428`](https://github.com/stdlib-js/stdlib/commit/dcd9428900fbd2bdfe3505e71fa00ccd08a7efce) - **refactor:** fix argument _(by Athan Reines)_
+-   [`867f172`](https://github.com/stdlib-js/stdlib/commit/867f172f951619f7ca087c25f7944954198fabb0) - **refactor:** fix argument _(by Athan Reines)_
 -   [`9d6cd84`](https://github.com/stdlib-js/stdlib/commit/9d6cd84404f09e09f22721d4e3bd1d083b8f83b1) - **chore:** add TODO _(by Athan Reines)_
 -   [`35612e9`](https://github.com/stdlib-js/stdlib/commit/35612e9369b15f22fc8be80a9da56cf73aee05d8) - **chore:** add TODO _(by Athan Reines)_
 -   [`ca10e52`](https://github.com/stdlib-js/stdlib/commit/ca10e526a8d174acca07ea25631f3254a768690c) - **feat:** add `ndarray/base/unary-reduce-strided1d` _(by Athan Reines)_
