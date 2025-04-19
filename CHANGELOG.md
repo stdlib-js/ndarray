@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-18)
+## Unreleased (2025-04-19)
 
 <section class="packages">
 
@@ -526,6 +526,28 @@ This release closes the following issue:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-every-by-unreleased">
+
+#### [@stdlib/ndarray/base/every-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/every-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`00450cc`](https://github.com/stdlib-js/stdlib/commit/00450cc5a91760e1d2aba09bb942bb0a84bc9157) - add `ndarray/base/every-by` [(#6667)](https://github.com/stdlib-js/stdlib/pull/6667)
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -1565,6 +1587,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`00450cc`](https://github.com/stdlib-js/stdlib/commit/00450cc5a91760e1d2aba09bb942bb0a84bc9157) - **feat:** add `ndarray/base/every-by` [(#6667)](https://github.com/stdlib-js/stdlib/pull/6667) _(by Muhammad Haris, Athan Reines)_
 -   [`f7bb91c`](https://github.com/stdlib-js/stdlib/commit/f7bb91c2aa3b31c86ddd57cfd3396632c78d42c0) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
 -   [`046926b`](https://github.com/stdlib-js/stdlib/commit/046926b9a0ad4643802944ef110b1cfe1eb488c9) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
 -   [`b1d96c9`](https://github.com/stdlib-js/stdlib/commit/b1d96c95fce3e8692ec6cbb4436eacd1943a5528) - **refactor:** use assertion utility _(by Athan Reines)_
