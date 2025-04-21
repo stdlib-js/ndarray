@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-19)
+## Unreleased (2025-04-21)
 
 <section class="packages">
 
@@ -1587,6 +1587,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`6223529`](https://github.com/stdlib-js/stdlib/commit/62235292bcb59d6ee9a1af4418aec6afee619f6d) - **docs:** remove unused import in example _(by Athan Reines)_
 -   [`00450cc`](https://github.com/stdlib-js/stdlib/commit/00450cc5a91760e1d2aba09bb942bb0a84bc9157) - **feat:** add `ndarray/base/every-by` [(#6667)](https://github.com/stdlib-js/stdlib/pull/6667) _(by Muhammad Haris, Athan Reines)_
 -   [`f7bb91c`](https://github.com/stdlib-js/stdlib/commit/f7bb91c2aa3b31c86ddd57cfd3396632c78d42c0) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
 -   [`046926b`](https://github.com/stdlib-js/stdlib/commit/046926b9a0ad4643802944ef110b1cfe1eb488c9) - **fix:** ensure support for zero-dimensional shapes _(by Athan Reines)_
