@@ -1023,6 +1023,16 @@ This release closes the following issue:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`ad90a38`](https://github.com/stdlib-js/stdlib/commit/ad90a38e1d8eabd6476c7c086ac1f82f2742d386) - ensure correct shape and strides
+
+</section>
+
+<!-- /.bug-fixes -->
+
 </details>
 
 </section>
@@ -1082,6 +1092,16 @@ This release closes the following issue:
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`1d0c130`](https://github.com/stdlib-js/stdlib/commit/1d0c13090eff8e9802ebd43c8628529309895b11) - ensure correct shape and strides
+
+</section>
+
+<!-- /.bug-fixes -->
 
 </details>
 
@@ -1609,6 +1629,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ad90a38`](https://github.com/stdlib-js/stdlib/commit/ad90a38e1d8eabd6476c7c086ac1f82f2742d386) - **fix:** ensure correct shape and strides _(by Athan Reines)_
+-   [`1d0c130`](https://github.com/stdlib-js/stdlib/commit/1d0c13090eff8e9802ebd43c8628529309895b11) - **fix:** ensure correct shape and strides _(by Athan Reines)_
 -   [`d389d89`](https://github.com/stdlib-js/stdlib/commit/d389d8905c302347394f2df9d9553b3d02d4c759) - **feat:** add `ndarray/base/unary-strided1d` _(by Athan Reines)_
 -   [`4534d81`](https://github.com/stdlib-js/stdlib/commit/4534d81a85cc3b55592e807887a47c6aa233ac1b) - **docs:** update comment _(by Athan Reines)_
 -   [`6223529`](https://github.com/stdlib-js/stdlib/commit/62235292bcb59d6ee9a1af4418aec6afee619f6d) - **docs:** remove unused import in example _(by Athan Reines)_
