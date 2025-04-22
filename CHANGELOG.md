@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-21)
+## Unreleased (2025-04-22)
 
 <section class="packages">
 
@@ -1067,6 +1067,28 @@ This release closes the following issue:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-strided1d-unreleased">
+
+#### [@stdlib/ndarray/base/unary-strided1d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-strided1d)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`d389d89`](https://github.com/stdlib-js/stdlib/commit/d389d8905c302347394f2df9d9553b3d02d4c759) - add `ndarray/base/unary-strided1d`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-ctor-unreleased">
 
 #### [@stdlib/ndarray/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/ctor)
@@ -1587,6 +1609,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d389d89`](https://github.com/stdlib-js/stdlib/commit/d389d8905c302347394f2df9d9553b3d02d4c759) - **feat:** add `ndarray/base/unary-strided1d` _(by Athan Reines)_
 -   [`4534d81`](https://github.com/stdlib-js/stdlib/commit/4534d81a85cc3b55592e807887a47c6aa233ac1b) - **docs:** update comment _(by Athan Reines)_
 -   [`6223529`](https://github.com/stdlib-js/stdlib/commit/62235292bcb59d6ee9a1af4418aec6afee619f6d) - **docs:** remove unused import in example _(by Athan Reines)_
 -   [`00450cc`](https://github.com/stdlib-js/stdlib/commit/00450cc5a91760e1d2aba09bb942bb0a84bc9157) - **feat:** add `ndarray/base/every-by` [(#6667)](https://github.com/stdlib-js/stdlib/pull/6667) _(by Muhammad Haris, Athan Reines)_
