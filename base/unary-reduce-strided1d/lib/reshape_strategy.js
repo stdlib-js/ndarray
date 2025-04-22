@@ -69,6 +69,8 @@ function broadcast( x ) {
 * @returns {Function} function for returning an ndarray view
 */
 function squeeze( arr, index ) {
+	var sh = [ arr.shape[ index ] ];
+	var sx = [ arr.strides[ index ] ];
 	return reshape;
 
 	/**
@@ -83,8 +85,8 @@ function squeeze( arr, index ) {
 		return {
 			'dtype': x.dtype,
 			'data': x.data,
-			'shape': [ arr.shape[ index ] ],
-			'strides': [ arr.strides[ index ] ],
+			'shape': sh,
+			'strides': sx,
 			'offset': x.offset,
 			'order': x.order
 		};

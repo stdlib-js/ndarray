@@ -1629,6 +1629,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`bd6213b`](https://github.com/stdlib-js/stdlib/commit/bd6213b8c0aceedc4681ef581768820ff1911e4e) - **refactor:** precompute shape and strides _(by Athan Reines)_
+-   [`38e6862`](https://github.com/stdlib-js/stdlib/commit/38e6862ed900b11bde5596931df3adfd652118ee) - **refactor:** precompute shape and strides _(by Athan Reines)_
 -   [`ad90a38`](https://github.com/stdlib-js/stdlib/commit/ad90a38e1d8eabd6476c7c086ac1f82f2742d386) - **fix:** ensure correct shape and strides _(by Athan Reines)_
 -   [`1d0c130`](https://github.com/stdlib-js/stdlib/commit/1d0c13090eff8e9802ebd43c8628529309895b11) - **fix:** ensure correct shape and strides _(by Athan Reines)_
 -   [`d389d89`](https://github.com/stdlib-js/stdlib/commit/d389d8905c302347394f2df9d9553b3d02d4c759) - **feat:** add `ndarray/base/unary-strided1d` _(by Athan Reines)_
