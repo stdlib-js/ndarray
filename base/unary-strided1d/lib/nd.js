@@ -22,6 +22,7 @@
 
 var numel = require( './../../../base/numel' );
 var vind2bind = require( './../../../base/vind2bind' );
+var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
 var zeros = require( '@stdlib/array/base/zeros' );
 var setViewOffsets = require( './set_view_offsets.js' );
 var offsets = require( './offsets.js' );
@@ -169,18 +170,15 @@ var MODE = 'throw';
 */
 function unarynd( fcn, arrays, views, shape, stridesX, stridesY, strategyX, strategyY, opts ) { // eslint-disable-line max-len
 	var len;
+	var arr;
 	var iv;
 	var io;
 	var N;
 	var v;
-	var y;
 	var i;
 	var j;
 
 	N = arrays.length;
-
-	// Resolve the output ndarray:
-	y = arrays[ 1 ];
 
 	// Compute the total number of elements over which to iterate:
 	len = numel( shape );
@@ -188,18 +186,21 @@ function unarynd( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	// Resolve a list of pointers to the first indexed elements in the respective ndarrays:
 	iv = offsets( arrays );
 
+	// Shallow copy the list of views to an internal array so that we can update with reshaped views without impacting the original list of views:
+	v = copyIndexed( views );
+
 	// Iterate based on the linear **view** index, regardless as to how the data is stored in memory...
 	io = zeros( N );
 	for ( i = 0; i < len; i++ ) {
 		for ( j = 0; j < N; j++ ) {
-			v = arrays[ j ];
-			io[ j ] = vind2bind( shape, v.strides, iv[ j ], v.order, i, MODE );
+			arr = arrays[ j ];
+			io[ j ] = vind2bind( shape, arr.strides, iv[ j ], arr.order, i, MODE ); // eslint-disable-line max-len
 		}
 		setViewOffsets( views, io );
-		views[ 0 ] = strategyX.input( views[ 0 ] );
-		views[ 1 ] = strategyY.input( views[ 1 ] );
-		fcn( views, opts );
-		strategyY.output( y );
+		v[ 0 ] = strategyX.input( views[ 0 ] );
+		v[ 1 ] = strategyY.input( views[ 1 ] );
+		fcn( v, opts );
+		strategyY.output( views[ 1 ] );
 	}
 }
 

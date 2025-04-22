@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
 var isRowMajor = require( './../../../base/assert/is-row-major-string' );
 var incrementOffsets = require( './increment_offsets.js' );
 var setViewOffsets = require( './set_view_offsets.js' );
@@ -171,6 +172,7 @@ function unary2d( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	var i0;
 	var i1;
 	var y;
+	var v;
 	var i;
 
 	// Note on variable naming convention: S#, dv#, i# where # corresponds to the loop number, with `0` being the innermost loop...
@@ -217,14 +219,17 @@ function unary2d( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	// Resolve a list of pointers to the first indexed elements in the respective ndarrays:
 	iv = offsets( arrays );
 
+	// Shallow copy the list of views to an internal array so that we can update with reshaped views without impacting the original list of views:
+	v = copyIndexed( views );
+
 	// Iterate over the loop dimensions...
 	for ( i1 = 0; i1 < S1; i1++ ) {
 		for ( i0 = 0; i0 < S0; i0++ ) {
 			setViewOffsets( views, iv );
-			views[ 0 ] = strategyX.input( views[ 0 ] );
-			views[ 1 ] = strategyY.input( views[ 1 ] );
-			fcn( views, opts );
-			strategyY.output( y );
+			v[ 0 ] = strategyX.input( views[ 0 ] );
+			v[ 1 ] = strategyY.input( views[ 1 ] );
+			fcn( v, opts );
+			strategyY.output( views[ 1 ] );
 			incrementOffsets( iv, dv0 );
 		}
 		incrementOffsets( iv, dv1 );

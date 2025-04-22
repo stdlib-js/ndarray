@@ -23,6 +23,7 @@
 var loopOrder = require( './../../../base/unary-loop-interchange-order' );
 var blockSize = require( './../../../base/unary-tiling-block-size' );
 var takeIndexed = require( '@stdlib/array/base/take-indexed' );
+var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
 var zeros = require( '@stdlib/array/base/zeros' );
 var incrementOffsets = require( './increment_offsets.js' );
 var setViewOffsets = require( './set_view_offsets.js' );
@@ -182,6 +183,7 @@ function blockedunary2d( fcn, arrays, views, shape, stridesX, stridesY, strategy
 	var N;
 	var x;
 	var y;
+	var v;
 	var o;
 	var k;
 
@@ -214,6 +216,9 @@ function blockedunary2d( fcn, arrays, views, shape, stridesX, stridesY, strategy
 	dv1 = zeros( N );
 	iv = zeros( N );
 
+	// Shallow copy the list of views to an internal array so that we can update with reshaped views without impacting the original list of views:
+	v = copyIndexed( views );
+
 	// Iterate over blocks...
 	for ( j1 = sh[1]; j1 > 0; ) {
 		if ( j1 < bsize ) {
@@ -243,10 +248,10 @@ function blockedunary2d( fcn, arrays, views, shape, stridesX, stridesY, strategy
 			for ( i1 = 0; i1 < s1; i1++ ) {
 				for ( i0 = 0; i0 < s0; i0++ ) {
 					setViewOffsets( views, iv );
-					views[ 0 ] = strategyX.input( views[ 0 ] );
-					views[ 1 ] = strategyY.input( views[ 1 ] );
-					fcn( views, opts );
-					strategyY.output( y );
+					v[ 0 ] = strategyX.input( views[ 0 ] );
+					v[ 1 ] = strategyY.input( views[ 1 ] );
+					fcn( v, opts );
+					strategyY.output( views[ 1 ] );
 					incrementOffsets( iv, dv0 );
 				}
 				incrementOffsets( iv, dv1 );

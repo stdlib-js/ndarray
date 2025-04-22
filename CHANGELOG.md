@@ -1629,6 +1629,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`d923b6e`](https://github.com/stdlib-js/stdlib/commit/d923b6e9ae5449dd7d68bf267d498f968600e03b) - **refactor:** avoid mutating the list of views _(by Athan Reines)_
 -   [`bd6213b`](https://github.com/stdlib-js/stdlib/commit/bd6213b8c0aceedc4681ef581768820ff1911e4e) - **refactor:** precompute shape and strides _(by Athan Reines)_
 -   [`38e6862`](https://github.com/stdlib-js/stdlib/commit/38e6862ed900b11bde5596931df3adfd652118ee) - **refactor:** precompute shape and strides _(by Athan Reines)_
 -   [`ad90a38`](https://github.com/stdlib-js/stdlib/commit/ad90a38e1d8eabd6476c7c086ac1f82f2742d386) - **fix:** ensure correct shape and strides _(by Athan Reines)_

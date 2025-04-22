@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var copyIndexed = require( '@stdlib/array/base/copy-indexed' );
 var incrementOffsets = require( './increment_offsets.js' );
 var setViewOffsets = require( './set_view_offsets.js' );
 var offsets = require( './offsets.js' );
@@ -165,13 +166,10 @@ function unary1d( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	var S0;
 	var iv;
 	var i0;
-	var y;
+	var v;
 	var i;
 
 	// Note on variable naming convention: S#, dv#, i# where # corresponds to the loop number, with `0` being the innermost loop...
-
-	// Resolve the output ndarray:
-	y = arrays[ 1 ];
 
 	// Extract loop variables for purposes of loop interchange: dimensions and loop offset (pointer) increments...
 	S0 = shape[ 0 ];
@@ -185,13 +183,16 @@ function unary1d( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	// Resolve a list of pointers to the first indexed elements in the respective ndarrays:
 	iv = offsets( arrays );
 
+	// Shallow copy the list of views to an internal array so that we can update with reshaped views without impacting the original list of views:
+	v = copyIndexed( views );
+
 	// Iterate over the loop dimensions...
 	for ( i0 = 0; i0 < S0; i0++ ) {
 		setViewOffsets( views, iv );
-		views[ 0 ] = strategyX.input( views[ 0 ] );
-		views[ 1 ] = strategyY.input( views[ 1 ] );
-		fcn( views, opts );
-		strategyY.output( y );
+		v[ 0 ] = strategyX.input( views[ 0 ] );
+		v[ 1 ] = strategyY.input( views[ 1 ] );
+		fcn( v, opts );
+		strategyY.output( views[ 1 ] );
 		incrementOffsets( iv, dv0 );
 	}
 }
