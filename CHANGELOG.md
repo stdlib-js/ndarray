@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-22)
+## Unreleased (2025-04-23)
 
 <section class="packages">
 
@@ -1097,6 +1097,7 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
+-   [`0216d98`](https://github.com/stdlib-js/stdlib/commit/0216d98429db599b577ac3b5dd89bc6b72902e1c) - verify that input and output ndarrays have same number of dimensions
 -   [`1d0c130`](https://github.com/stdlib-js/stdlib/commit/1d0c13090eff8e9802ebd43c8628529309895b11) - ensure correct shape and strides
 
 </section>
@@ -1629,6 +1630,8 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`e00f861`](https://github.com/stdlib-js/stdlib/commit/e00f86162891392508f20d212cf2b3b01f111203) - **refactor:** ensure iteration happens according to memory layout of input ndarray _(by Athan Reines)_
+-   [`0216d98`](https://github.com/stdlib-js/stdlib/commit/0216d98429db599b577ac3b5dd89bc6b72902e1c) - **fix:** verify that input and output ndarrays have same number of dimensions _(by Athan Reines)_
 -   [`d19823e`](https://github.com/stdlib-js/stdlib/commit/d19823e71c410b6f6ff1db39a70fdf83ed7e4267) - **refactor:** avoid mutating the list of views _(by Athan Reines)_
 -   [`d923b6e`](https://github.com/stdlib-js/stdlib/commit/d923b6e9ae5449dd7d68bf267d498f968600e03b) - **refactor:** avoid mutating the list of views _(by Athan Reines)_
 -   [`bd6213b`](https://github.com/stdlib-js/stdlib/commit/bd6213b8c0aceedc4681ef581768820ff1911e4e) - **refactor:** precompute shape and strides _(by Athan Reines)_

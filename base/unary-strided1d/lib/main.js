@@ -304,7 +304,7 @@ var MAX_DIMS = UNARY.length - 1;
 * var arr = ndarray2array( y.data, y.shape, y.strides, y.offset, y.order );
 * // returns [ [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ], [ 7.0, 8.0 ] ], [ [ 9.0, 10.0 ], [ 11.0, 12.0 ] ] ]
 */
-function unaryStrided1d( fcn, arrays, dims, options ) {
+function unaryStrided1d( fcn, arrays, dims, options ) { // eslint-disable-line max-statements
 	var strategyX;
 	var strategyY;
 	var views;
@@ -375,8 +375,11 @@ function unaryStrided1d( fcn, arrays, dims, options ) {
 		}
 	}
 	// Verify that the input and output arrays have the same shape...
+	if ( ndims !== y.shape.length ) {
+		throw new Error( 'invalid arguments. Input and output arrays must have the same shape.' );
+	}
 	for ( i = 0; i < ndims; i++ ) {
-		if ( shx[ i ] !== arr[ 1 ].shape[ i ] ) {
+		if ( shx[ i ] !== y.shape[ i ] ) {
 			throw new Error( 'invalid arguments. Input and output arrays must have the same shape.' );
 		}
 	}

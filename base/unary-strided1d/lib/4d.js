@@ -177,17 +177,17 @@ function unary4d( fcn, arrays, views, shape, stridesX, stridesY, strategyX, stra
 	var i1;
 	var i2;
 	var i3;
-	var y;
+	var x;
 	var v;
 	var i;
 
 	// Note on variable naming convention: S#, dv#, i# where # corresponds to the loop number, with `0` being the innermost loop...
 
-	// Resolve the output ndarray:
-	y = arrays[ 1 ];
+	// Resolve the input ndarray:
+	x = arrays[ 0 ];
 
 	// Extract loop variables for purposes of loop interchange: dimensions and loop offset (pointer) increments...
-	if ( isRowMajor( y.order ) ) {
+	if ( isRowMajor( x.order ) ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = shape[ 3 ];
 		S1 = shape[ 2 ];
