@@ -1039,6 +1039,50 @@ A total of 2 issues were closed in this release:
 
 <!-- /.package -->
 
+<section class="package" id="ndarray-base-unary-reduce-strided1d-dispatch-unreleased">
+
+#### [@stdlib/ndarray/base/unary-reduce-strided1d-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-strided1d-dispatch)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`a374c5a`](https://github.com/stdlib-js/stdlib/commit/a374c5a0a41ce15ea957d6fa92d0a6b7fe6baa1f) - add `ndarray/base/unary-reduce-strided1d-dispatch`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-reduce-strided1d-dispatch-factory-unreleased">
+
+#### [@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-strided1d-dispatch-factory)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`9c1e5c9`](https://github.com/stdlib-js/stdlib/commit/9c1e5c9b5b87643d31668a7a0b9c009413fa4c05) - add `ndarray/base/unary-reduce-strided1d-dispatch-factory`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="ndarray-base-unary-reduce-subarray-unreleased">
 
 #### [@stdlib/ndarray/base/unary-reduce-subarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-reduce-subarray)
@@ -1103,6 +1147,50 @@ A total of 2 issues were closed in this release:
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-strided1d-dispatch-unreleased">
+
+#### [@stdlib/ndarray/base/unary-strided1d-dispatch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-strided1d-dispatch)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3036ccc`](https://github.com/stdlib-js/stdlib/commit/3036cccd1db41f0093555d2b7c890bdbd6f07cdf) - add `ndarray/base/unary-strided1d-dispatch`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="ndarray-base-unary-strided1d-dispatch-factory-unreleased">
+
+#### [@stdlib/ndarray/base/unary-strided1d-dispatch-factory](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/base/unary-strided1d-dispatch-factory)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`db7d60b`](https://github.com/stdlib-js/stdlib/commit/db7d60b388d19ab8a4b537ec3445f3181ef270b7) - add `ndarray/base/unary-strided1d-dispatch-factory`
+
+</section>
+
+<!-- /.features -->
 
 </details>
 
@@ -1631,6 +1719,10 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`db7d60b`](https://github.com/stdlib-js/stdlib/commit/db7d60b388d19ab8a4b537ec3445f3181ef270b7) - **feat:** add `ndarray/base/unary-strided1d-dispatch-factory` _(by Athan Reines)_
+-   [`3036ccc`](https://github.com/stdlib-js/stdlib/commit/3036cccd1db41f0093555d2b7c890bdbd6f07cdf) - **feat:** add `ndarray/base/unary-strided1d-dispatch` _(by Athan Reines)_
+-   [`9c1e5c9`](https://github.com/stdlib-js/stdlib/commit/9c1e5c9b5b87643d31668a7a0b9c009413fa4c05) - **feat:** add `ndarray/base/unary-reduce-strided1d-dispatch-factory` _(by Athan Reines)_
+-   [`a374c5a`](https://github.com/stdlib-js/stdlib/commit/a374c5a0a41ce15ea957d6fa92d0a6b7fe6baa1f) - **feat:** add `ndarray/base/unary-reduce-strided1d-dispatch` _(by Athan Reines)_
 -   [`3be1d66`](https://github.com/stdlib-js/stdlib/commit/3be1d666a8dffa16c58b4ab1b4186e0f7b1b15f9) - **chore:** address commit comments for commit `a1e8f03` [(#6784)](https://github.com/stdlib-js/stdlib/pull/6784) _(by devshree-bhati, stdlib-bot)_
 -   [`e00f861`](https://github.com/stdlib-js/stdlib/commit/e00f86162891392508f20d212cf2b3b01f111203) - **refactor:** ensure iteration happens according to memory layout of input ndarray _(by Athan Reines)_
 -   [`0216d98`](https://github.com/stdlib-js/stdlib/commit/0216d98429db599b577ac3b5dd89bc6b72902e1c) - **fix:** verify that input and output ndarrays have same number of dimensions _(by Athan Reines)_
