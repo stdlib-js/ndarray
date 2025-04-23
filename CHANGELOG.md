@@ -821,9 +821,9 @@ This release closes the following issue:
 
 ##### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788)
 
 </section>
 
@@ -1592,9 +1592,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 12 issues were closed in this release:
+A total of 13 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663)
 
 </section>
 
@@ -1604,7 +1604,7 @@ A total of 12 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 14 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1617,6 +1617,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Pravesh Kunwar
 -   Sai Avinash
+-   devshree-bhati
 -   ditsu
 -   lohithganni
 
@@ -1630,6 +1631,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`3be1d66`](https://github.com/stdlib-js/stdlib/commit/3be1d666a8dffa16c58b4ab1b4186e0f7b1b15f9) - **chore:** address commit comments for commit `a1e8f03` [(#6784)](https://github.com/stdlib-js/stdlib/pull/6784) _(by devshree-bhati, stdlib-bot)_
 -   [`e00f861`](https://github.com/stdlib-js/stdlib/commit/e00f86162891392508f20d212cf2b3b01f111203) - **refactor:** ensure iteration happens according to memory layout of input ndarray _(by Athan Reines)_
 -   [`0216d98`](https://github.com/stdlib-js/stdlib/commit/0216d98429db599b577ac3b5dd89bc6b72902e1c) - **fix:** verify that input and output ndarrays have same number of dimensions _(by Athan Reines)_
 -   [`d19823e`](https://github.com/stdlib-js/stdlib/commit/d19823e71c410b6f6ff1db39a70fdf83ed7e4267) - **refactor:** avoid mutating the list of views _(by Athan Reines)_
