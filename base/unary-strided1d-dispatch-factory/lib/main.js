@@ -29,14 +29,18 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 /**
 * Returns a function for applying a strided function a provided ndarray.
 *
-* @param {Object} table - dispatch table containing strided array functions
+* @param {Object} table - dispatch table
+* @param {Function} table.default - default strided function
+* @param {StringArray} [table.types] - one-dimensional list of ndarray data types describing specialized input and output ndarray argument signatures
+* @param {ArrayLikeObject<Function>} [table.fcns] - list of strided functions which are specific to specialized input and output ndarray argument signatures
 * @param {ArrayLikeObject<StringArray>} idtypes - list containing lists of supported input data types for each ndarray argument
 * @param {StringArray} odtypes - list of supported output data types
 * @param {string} policy - output data type policy
-* @throws {TypeError} first argument must be an object
+* @throws {TypeError} first argument must be an object having valid properties
 * @throws {TypeError} second argument must be an array containing arrays of supported data types
 * @throws {TypeError} third argument must be an array of supported data types
 * @throws {TypeError} fourth argument must be a supported output data type policy
+* @throws {Error} first argument must be an object having valid properties
 * @returns {Function} function for applying a strided function an ndarray
 *
 * @example

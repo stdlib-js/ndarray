@@ -84,17 +84,17 @@ interface BaseDispatchTable<T, U> {
 /**
 * Dispatch table.
 */
-type DispatchTable<T, U> = {
+interface DispatchTable<T, U> extends BaseDispatchTable<T, U> {
 	/**
-	* Default strided function.
+	* One-dimensional list of ndarray data types describing specialized input and output ndarray argument signatures.
 	*/
-	default: Unary<T, U> | UnaryWithAdditionalArrays<T, U>;
-} & {
+	types: ArrayLike<DataType>;
+
 	/**
-	* Strided functions specific to particular data types.
+	* List of strided functions which are specific to specialized input and output ndarray argument signatures.
 	*/
-	[ K in DataType ]?: Unary<T, U> | UnaryWithAdditionalArrays<T, U>;
-};
+	fcns: ArrayLike<Unary<T, U> | UnaryWithAdditionalArrays<T, U>>;
+}
 
 /**
 * Interface for applying an operation to an ndarray.
@@ -247,7 +247,7 @@ interface UnaryFunction<T, U> {
 * var arr = ndarray2array( y );
 * // returns [ -1.0, 2.0, 2.0 ]
 */
-declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryFunction<T, U>;
+declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryFunction<T, U>;
 
 
 // EXPORTS //

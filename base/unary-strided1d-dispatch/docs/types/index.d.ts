@@ -84,17 +84,17 @@ interface BaseDispatchTable<T, U> {
 /**
 * Dispatch table.
 */
-type DispatchTable<T, U> = {
+interface DispatchTable<T, U> extends BaseDispatchTable<T, U> {
 	/**
-	* Default strided function.
+	* One-dimensional list of ndarray data types describing specialized input and output ndarray argument signatures.
 	*/
-	default: Unary<T, U> | UnaryWithAdditionalArrays<T, U>;
-} & {
+	types: ArrayLike<DataType>;
+
 	/**
-	* Strided functions specific to particular data types.
+	* List of strided functions which are specific to specialized input and output ndarray argument signatures.
 	*/
-	[ K in DataType ]?: Unary<T, U> | UnaryWithAdditionalArrays<T, U>;
-};
+	fcns: ArrayLike<Unary<T, U> | UnaryWithAdditionalArrays<T, U>>;
+}
 
 /**
 * Class for applying a strided function to an input ndarray.
@@ -133,7 +133,7 @@ declare class UnaryStrided1dDispatch<T, U> {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	constructor( table: DispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy );
+	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy );
 
 	/**
 	* Applies a strided function to a provided input ndarray.
@@ -286,7 +286,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	new<T = unknown, U = unknown>( table: DispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
+	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
 
 	/**
 	* Constructor for applying a strided function to an input ndarray.
@@ -321,7 +321,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	<T = unknown, U = unknown>( table: DispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
+	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
 }
 
 /**

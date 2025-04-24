@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-23)
+## Unreleased (2025-04-24)
 
 <section class="packages">
 
@@ -1170,6 +1170,26 @@ A total of 2 issues were closed in this release:
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - ensure correct table validation
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`d287f8e`](https://github.com/stdlib-js/stdlib/commit/d287f8e4a80211270e9fa96e05a17d6d1a9d2655): modify dispatch table to support type signatures
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -1191,6 +1211,16 @@ A total of 2 issues were closed in this release:
 </section>
 
 <!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565): modify dispatch table to support type signatures
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1664,6 +1694,8 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565): modify dispatch table to support type signatures
+-   [`d287f8e`](https://github.com/stdlib-js/stdlib/commit/d287f8e4a80211270e9fa96e05a17d6d1a9d2655): modify dispatch table to support type signatures
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1): remove `mulf` symbol
 
     -   To migrate, users should access the same symbol via the `number/float32/base` namespace.
@@ -1719,6 +1751,9 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - **fix:** ensure correct table validation _(by Athan Reines)_
+-   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
+-   [`d287f8e`](https://github.com/stdlib-js/stdlib/commit/d287f8e4a80211270e9fa96e05a17d6d1a9d2655) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
 -   [`db7d60b`](https://github.com/stdlib-js/stdlib/commit/db7d60b388d19ab8a4b537ec3445f3181ef270b7) - **feat:** add `ndarray/base/unary-strided1d-dispatch-factory` _(by Athan Reines)_
 -   [`3036ccc`](https://github.com/stdlib-js/stdlib/commit/3036cccd1db41f0093555d2b7c890bdbd6f07cdf) - **feat:** add `ndarray/base/unary-strided1d-dispatch` _(by Athan Reines)_
 -   [`9c1e5c9`](https://github.com/stdlib-js/stdlib/commit/9c1e5c9b5b87643d31668a7a0b9c009413fa4c05) - **feat:** add `ndarray/base/unary-reduce-strided1d-dispatch-factory` _(by Athan Reines)_

@@ -16,8 +16,12 @@
 * limitations under the License.
 */
 
+/* eslint-disable array-element-newline */
+
 'use strict';
 
+var dcumax = require( '@stdlib/stats/base/ndarray/dcumax' );
+var scumax = require( '@stdlib/stats/base/ndarray/scumax' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dtypes = require( './../../../dtypes' );
@@ -35,6 +39,14 @@ var policy = 'same';
 
 // Define a dispatch table:
 var table = {
+	'types': [
+		'float64', 'float64', // input, output
+		'float32', 'float32'  // input, output
+	],
+	'fcns': [
+		dcumax,
+		scumax
+	],
 	'default': base
 };
 

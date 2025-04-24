@@ -51,9 +51,19 @@ var policy = 'same';
 var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
 ```
 
--   **table**: strided function dispatch table. Must have a `'default'` property and a corresponding strided function. May have additional properties corresponding to specific data types and associated specialized strided functions.
+-   strided function dispatch table. Must have the following properties:
+
+    -   **default**: default strided function which should be invoked when provided ndarrays have data types which do not have a corresponding specialized implementation.
+
+    A dispatch table may have the following additional properties:
+
+    -   **types**: one-dimensional list of ndarray data types describing specialized input and output ndarray argument signatures. Only the input and output ndarray argument data types should be specified. Additional ndarray argument data types should be omitted and are not considered during dispatch. The length of `types` must equal the number of strided functions specified by `fcns` multiplied by two (i.e., for every pair of input-output ndarray data types, there must be a corresponding strided function in `fcns`).
+    -   **fcns**: list of strided functions which are specific to specialized input and output ndarray argument signatures.
+
 -   **idtypes**: list containing lists of supported input data types for each input ndarray argument.
--   **odtypes**: list of supported input data types.
+
+-   **odtypes**: list of supported output data types.
+
 -   **policy**: output data type policy.
 
 #### unary( x\[, ...args]\[, options] )
@@ -184,6 +194,16 @@ The function accepts the following options:
 
 ## Notes
 
+-   A strided function should have the following signature:
+
+    ```text
+    f( arrays )
+    ```
+
+    where
+
+    -   **arrays**: array containing input and output ndarrays, along with any additional ndarray arguments.
+
 -   The output data type policy only applies to the function returned by `factory`. For the `assign` method, the output ndarray is allowed to have any data type.
 
 </section>
@@ -194,11 +214,13 @@ The function accepts the following options:
 
 ## Examples
 
-<!-- eslint-disable id-length, max-len -->
+<!-- eslint-disable id-length, max-len, array-element-newline -->
 
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var dcumax = require( '@stdlib/stats/base/ndarray/dcumax' );
+var scumax = require( '@stdlib/stats/base/ndarray/scumax' );
 var base = require( '@stdlib/stats/base/ndarray/cumax' );
 var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
@@ -216,6 +238,14 @@ var policy = 'same';
 
 // Define a dispatch table:
 var table = {
+    'types': [
+        'float64', 'float64', // input, output
+        'float32', 'float32'  // input, output
+    ],
+    'fcns': [
+        dcumax,
+        scumax
+    ],
     'default': base
 };
 
