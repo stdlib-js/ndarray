@@ -76,18 +76,17 @@ function types2enums( types ) {
 * Reorders a list of ndarrays such that the output ndarray is the second ndarray argument when passing along to a resolved lower-level strided function.
 *
 * @private
-* @param {NonNegativeInteger} N - number of ndarrays in `arrays` to reorder
-* @param {Array<ndarray>} arrays - list of ndarrays
+* @param {Array<ndarray>} arrays - list of input ndarrays
 * @param {ndarray} output - output ndarray
 * @returns {Array<ndarray>} reordered list
 */
-function reorder( N, arrays, output ) {
+function reorder( arrays, output ) {
 	var out;
 	var i;
 	var j;
 
 	out = [];
-	for ( i = 0, j = 0; i <= N; i++ ) {
+	for ( i = 0, j = 0; i <= arrays.length; i++ ) {
 		if ( i === 1 ) {
 			out.push( output );
 		} else {
@@ -310,7 +309,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	unaryStrided1d( f, reorder( args.length, args, y ), opts.dims );
+	unaryStrided1d( f, reorder( args, y ), opts.dims );
 
 	return y;
 });
@@ -413,8 +412,11 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	else if ( i < nargs-1 ) {
 		throw new TypeError( format( 'invalid argument. Argument %d must be an ndarray-like object. Value: `%s`.', i, arguments[ i ] ) );
 	}
+	// Cache a reference to the output ndarray:
+	y = args.pop();
+
 	// Verify that additional ndarray arguments have expected dtypes (note: we intentionally don't validate the output ndarray dtype in order to provide an escape hatch for a user wanting to have an output ndarray having a specific dtype that `apply` does not support)...
-	for ( i = 1; i < args.length-1; i++ ) {
+	for ( i = 1; i < args.length; i++ ) {
 		dt = getDType( args[ i ] );
 		if ( !contains( this._idtypes[ i ], dt ) ) {
 			throw new TypeError( format( 'invalid argument. Argument %d must have one of the following data types: "%s". Data type: `%s`.', i, join( this._idtypes[ i ], '", "' ), dt ) );
@@ -433,9 +435,6 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
-	// Cache a reference to the output ndarray:
-	y = args[ args.length-1 ];
-
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
 	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( y ) ) ];
 	idx = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
@@ -445,7 +444,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	unaryStrided1d( f, reorder( args.length-1, args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	unaryStrided1d( f, reorder( args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
 	return y;
 });
