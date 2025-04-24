@@ -1774,6 +1774,8 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`5fb7055`](https://github.com/stdlib-js/stdlib/commit/5fb70551ba3e223bbb24ca2166b81dbc4545786a) - **docs:** fix copy _(by Athan Reines)_
+-   [`8aea263`](https://github.com/stdlib-js/stdlib/commit/8aea26357040a545433c325c662239e2aa43fec1) - **docs:** fix copy _(by Athan Reines)_
 -   [`9ffa53e`](https://github.com/stdlib-js/stdlib/commit/9ffa53e1178f1e7c67f59d4d4e81e76602e4915b) - **docs:** update copy _(by Athan Reines)_
 -   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
 -   [`2b48dd6`](https://github.com/stdlib-js/stdlib/commit/2b48dd67916dc94703baac7f524b3136e8014f1c) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
