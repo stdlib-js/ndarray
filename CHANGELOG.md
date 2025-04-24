@@ -1751,6 +1751,8 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`70909a2`](https://github.com/stdlib-js/stdlib/commit/70909a23604547f4430a729bf811dcc0ee999055) - **docs:** use consistent terms _(by Athan Reines)_
+-   [`165c983`](https://github.com/stdlib-js/stdlib/commit/165c9830b22788f30213ae6e8df73bd2b683f332) - **docs:** use consistent terms _(by Athan Reines)_
 -   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - **fix:** ensure correct table validation _(by Athan Reines)_
 -   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
 -   [`d287f8e`](https://github.com/stdlib-js/stdlib/commit/d287f8e4a80211270e9fa96e05a17d6d1a9d2655) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_

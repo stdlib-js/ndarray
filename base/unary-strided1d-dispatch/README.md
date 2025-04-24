@@ -174,7 +174,7 @@ The method has the following parameters:
 -   **out**: output ndarray.
 -   **options**: function options (_optional_).
 
-The function accepts the following options:
+The method accepts the following options:
 
 -   **dims**: list of dimensions over which to perform an operation.
 
