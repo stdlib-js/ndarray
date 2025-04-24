@@ -1174,6 +1174,7 @@ A total of 2 issues were closed in this release:
 
 ##### Bug Fixes
 
+-   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - ensure correct ndarray argument order where output ndarray should be second ndarray argument
 -   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - ensure correct table validation
 
 </section>
@@ -1751,6 +1752,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - **fix:** ensure correct ndarray argument order where output ndarray should be second ndarray argument _(by Athan Reines)_
 -   [`70909a2`](https://github.com/stdlib-js/stdlib/commit/70909a23604547f4430a729bf811dcc0ee999055) - **docs:** use consistent terms _(by Athan Reines)_
 -   [`165c983`](https://github.com/stdlib-js/stdlib/commit/165c9830b22788f30213ae6e8df73bd2b683f332) - **docs:** use consistent terms _(by Athan Reines)_
 -   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - **fix:** ensure correct table validation _(by Athan Reines)_

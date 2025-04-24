@@ -72,6 +72,32 @@ function types2enums( types ) {
 	return out;
 }
 
+/**
+* Reorders a list of ndarrays such that the output ndarray is the second ndarray argument when passing along to a resolved lower-level strided function.
+*
+* @private
+* @param {NonNegativeInteger} N - number of ndarrays in `arrays` to reorder
+* @param {Array<ndarray>} arrays - list of ndarrays
+* @param {ndarray} output - output ndarray
+* @returns {Array<ndarray>} reordered list
+*/
+function reorder( N, arrays, output ) {
+	var out;
+	var i;
+	var j;
+
+	out = [];
+	for ( i = 0, j = 0; i <= N; i++ ) {
+		if ( i === 1 ) {
+			out.push( output );
+		} else {
+			out.push( arrays[ j ] );
+			j += 1;
+		}
+	}
+	return out;
+}
+
 
 // MAIN //
 
@@ -284,8 +310,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	args.push( y );
-	unaryStrided1d( f, args, opts.dims );
+	unaryStrided1d( f, reorder( args.length, args, y ), opts.dims );
 
 	return y;
 });
@@ -348,12 +373,12 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var args;
 	var arr;
 	var err;
-	var tmp;
 	var flg;
 	var idx;
 	var dt;
 	var N;
 	var f;
+	var y;
 	var i;
 
 	nargs = arguments.length;
@@ -408,13 +433,11 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
-	// Reorder the ndarray arguments such that the output ndarray is the second ndarray argument when passing along to the resolved lower-level strided function below:
-	tmp = args[ 1 ];
-	args[ 1 ] = args[ args.length-1 ];
-	args[ args.length-1 ] = tmp;
+	// Cache a reference to the output ndarray:
+	y = args[ args.length-1 ];
 
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
-	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( args[ 1 ] ) ) ];
+	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( y ) ) ];
 	idx = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
 	if ( idx >= 0 ) {
 		f = this._table.fcns[ idx ];
@@ -422,9 +445,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	unaryStrided1d( f, args, opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	unaryStrided1d( f, reorder( args.length-1, args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
-	return args[ 1 ];
+	return y;
 });
 
 
