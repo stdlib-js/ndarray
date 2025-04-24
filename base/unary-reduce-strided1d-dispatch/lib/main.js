@@ -23,15 +23,19 @@
 // MODULES //
 
 var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
+var hasProp = require( '@stdlib/assert/has-property' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isObject = require( '@stdlib/assert/is-object' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var isCollection = require( '@stdlib/assert/is-collection' );
+var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
+var isFunctionArray = require( '@stdlib/assert/is-function-array' );
 var isDataType = require( '@stdlib/array/base/assert/is-data-type' );
 var isOutputDataTypePolicy = require( './../../../base/assert/is-output-data-type-policy' );
 var contains = require( '@stdlib/array/base/assert/contains' );
 var unaryReduceStrided1d = require( './../../../base/unary-reduce-strided1d' );
 var unaryOutputDataType = require( './../../../base/unary-output-dtype' );
+var resolveEnum = require( './../../../base/dtype-resolve-enum' );
 var spreadDimensions = require( './../../../base/spread-dimensions' );
 var getShape = require( './../../../shape' ); // note: non-base accessor is intentional due to input ndarrays originating in userland
 var ndims = require( './../../../ndims' );
@@ -42,11 +46,59 @@ var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed = require( '@stdlib/array/base/take-indexed' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var join = require( '@stdlib/array/base/join' );
+var copy = require( '@stdlib/array/base/copy' );
 var everyBy = require( '@stdlib/array/base/every-by' );
 var objectAssign = require( '@stdlib/object/assign' );
 var format = require( '@stdlib/string/format' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
+var indexOfTypes = require( './index_of_types.js' );
+
+
+// FUNCTIONS //
+
+/**
+* Returns a list of data type enumeration constants.
+*
+* @private
+* @param {Collection} types - list of types
+* @returns {IntegerArray} list of data type enumeration constants
+*/
+function types2enums( types ) {
+	var out;
+	var i;
+
+	out = [];
+	for ( i = 0; i < types.length; i++ ) {
+		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
+	}
+	return out;
+}
+
+/**
+* Reorders a list of ndarrays such that the output ndarray is the second ndarray argument when passing along to a resolved lower-level strided function.
+*
+* @private
+* @param {Array<ndarray>} arrays - list of input ndarrays
+* @param {ndarray} output - output ndarray
+* @returns {Array<ndarray>} reordered list
+*/
+function reorder( arrays, output ) { // TODO: consider replacing with an `array/base/*` utility which expands an input array by inserting a specified value at a specified index and returns a new array
+	var out;
+	var i;
+	var j;
+
+	out = [];
+	for ( i = 0, j = 0; i <= arrays.length; i++ ) {
+		if ( i === 1 ) {
+			out.push( output );
+		} else {
+			out.push( arrays[ j ] );
+			j += 1;
+		}
+	}
+	return out;
+}
 
 
 // MAIN //
@@ -55,14 +107,18 @@ var validate = require( './validate.js' );
 * Constructor for performing a reduction on an input ndarray.
 *
 * @constructor
-* @param {Object} table - dispatch table containing strided array reduction functions
+* @param {Object} table - dispatch table
+* @param {Function} table.default - default strided reduction function
+* @param {StringArray} [table.types=[]] - one-dimensional list of ndarray data types describing specialized input ndarray argument signatures
+* @param {ArrayLikeObject<Function>} [table.fcns=[]] - list of strided reduction functions which are specific to specialized input ndarray argument signatures
 * @param {ArrayLikeObject<StringArray>} idtypes - list containing lists of supported input data types for each ndarray argument
 * @param {StringArray} odtypes - list of supported output data types
 * @param {string} policy - output data type policy
-* @throws {TypeError} first argument must be an object
+* @throws {TypeError} first argument must be an object having valid properties
 * @throws {TypeError} second argument must be an array containing arrays of supported data types
 * @throws {TypeError} third argument must be an array of supported data types
 * @throws {TypeError} fourth argument must be a supported output data type policy
+* @throws {Error} first argument must be an object having valid properties
 * @returns {UnaryStrided1dDispatch} instance
 *
 * @example
@@ -100,6 +156,12 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 	if ( !isFunction( table.default ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an object having a "default" property and an associated method.' ) );
 	}
+	if ( hasProp( table, 'types' ) && !isCollection( table.types ) && !isEmptyCollection( table.types ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be an object having a "types" property whose associated value is an array-like object.' ) );
+	}
+	if ( hasProp( table, 'fcns' ) && !isFunctionArray( table.fcns ) && !isEmptyCollection( table.fcns ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must be an object having a "fcns" property whose associated value is an array-like object containing functions.' ) );
+	}
 	if ( !isCollection( idtypes ) ) {
 		throw new TypeError( format( 'invalid argument. Second argument must be an array-like object. Value: `%s`.', idtypes ) );
 	}
@@ -123,7 +185,14 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 	if ( !isOutputDataTypePolicy( policy ) ) {
 		throw new TypeError( format( 'invalid argument. Fourth argument must be a supported output data type policy. Value: `%s`.', policy ) );
 	}
-	this._table = table;
+	this._table = {
+		'default': table.default,
+		'types': ( table.types ) ? types2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
+		'fcns': ( table.fcns ) ? copy( table.fcns ) : []
+	};
+	if ( this._table.types.length !== this._table.fcns.length ) {
+		throw new Error( 'invalid argument. First argument specifies an unexpected number of types. An input ndarray data type must be specified for each provided strided reduction function.' );
+	}
 	this._idtypes = idtypes;
 	this._odtypes = odtypes;
 	this._policy = policy;
@@ -174,6 +243,7 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 */
 setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	var options;
+	var dtypes;
 	var nargs;
 	var args;
 	var opts;
@@ -239,12 +309,16 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		'order': getOrder( x )
 	});
 
-	// Resolve the lower-level reduction function based on the data type of the input ndarray:
-	f = this._table[ dt ] || this._table.default;
-
+	// Resolve the lower-level strided function satisfying the input ndarray data type:
+	dtypes = [ resolveEnum( dt ) ];
+	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	if ( i >= 0 ) {
+		f = this._table.fcns[ i ];
+	} else {
+		f = this._table.default;
+	}
 	// Perform the reduction:
-	args.push( y );
-	unaryReduceStrided1d( f, args, opts.dims );
+	unaryReduceStrided1d( f, reorder( args, y ), opts.dims );
 
 	// Check whether we need to reinsert singleton dimensions which can be useful for broadcasting the returned output array to the shape of the original input array...
 	if ( opts.keepdims ) {
@@ -304,16 +378,17 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 */
 setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var options;
+	var dtypes;
 	var nargs;
 	var opts;
 	var args;
 	var arr;
 	var err;
-	var tmp;
 	var flg;
 	var dt;
 	var N;
 	var f;
+	var y;
 	var i;
 
 	nargs = arguments.length;
@@ -348,8 +423,11 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	else if ( i < nargs-1 ) {
 		throw new TypeError( format( 'invalid argument. Argument %d must be an ndarray-like object. Value: `%s`.', i, arguments[ i ] ) );
 	}
+	// Cache a reference to the output ndarray:
+	y = args.pop();
+
 	// Verify that additional ndarray arguments have expected dtypes (note: we intentionally don't validate the output ndarray dtype in order to provide an escape hatch for a user wanting to have an output ndarray having a specific dtype that `apply` does not support)...
-	for ( i = 1; i < args.length-1; i++ ) {
+	for ( i = 1; i < args.length; i++ ) {
 		dt = getDType( args[ i ] );
 		if ( !contains( this._idtypes[ i ], dt ) ) {
 			throw new TypeError( format( 'invalid argument. Argument %d must have one of the following data types: "%s". Data type: `%s`.', i, join( this._idtypes[ i ], '", "' ), dt ) );
@@ -368,18 +446,18 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
-	// Resolve the lower-level reduction function based on the data type of the input ndarray:
-	f = this._table[ dt ] || this._table.default;
-
-	// Ensure that the output ndarray is the second ndarray argument when passing along to the lower-level reduction function below:
-	tmp = args[ 1 ];
-	args[ 1 ] = args[ args.length-1 ];
-	args[ args.length-1 ] = tmp;
-
+	// Resolve the lower-level strided function satisfying the input ndarray data type:
+	dtypes = [ resolveEnum( dt ) ];
+	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	if ( i >= 0 ) {
+		f = this._table.fcns[ i ];
+	} else {
+		f = this._table.default;
+	}
 	// Perform the reduction:
-	unaryReduceStrided1d( f, args, opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	unaryReduceStrided1d( f, reorder( args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
-	return args[ 1 ];
+	return y;
 });
 
 

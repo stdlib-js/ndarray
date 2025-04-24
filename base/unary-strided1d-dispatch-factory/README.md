@@ -51,7 +51,9 @@ var policy = 'same';
 var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
 ```
 
--   strided function dispatch table. Must have the following properties:
+The function has the following parameters:
+
+-   **table**: strided function dispatch table. Must have the following properties:
 
     -   **default**: default strided function which should be invoked when provided ndarrays have data types which do not have a corresponding specialized implementation.
 

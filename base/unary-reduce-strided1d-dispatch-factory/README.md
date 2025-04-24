@@ -51,9 +51,21 @@ var policy = 'same';
 var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
 ```
 
--   **table**: strided reduction function dispatch table. Must have a `'default'` property and a corresponding strided reduction function. May have additional properties corresponding to specific data types and associated specialized strided reduction functions.
+The function has the following parameters:
+
+-   **table**: strided reduction function dispatch table. Must have the following properties:
+
+    -   **default**: default strided reduction function which should be invoked when provided ndarrays have data types which do not have a corresponding specialized implementation.
+
+    A dispatch table may have the following additional properties:
+
+    -   **types**: one-dimensional list of ndarray data types describing specialized input ndarray argument signatures. Only the input ndarray argument data types should be specified. Output ndarray and additional input ndarray argument data types should be omitted and are not considered during dispatch. The length of `types` must equal the number of strided functions specified by `fcns` (i.e., for every input ndarray data type, there must be a corresponding strided reduction function in `fcns`).
+    -   **fcns**: list of strided reduction functions which are specific to specialized input ndarray argument signatures.
+
 -   **idtypes**: list containing lists of supported input data types for each input ndarray argument.
--   **odtypes**: list of supported input data types.
+
+-   **odtypes**: list of supported output data types.
+
 -   **policy**: output data type policy.
 
 #### unary( x\[, ...args]\[, options] )
@@ -182,6 +194,16 @@ The function accepts the following options:
 
 ## Notes
 
+-   A strided reduction function should have the following signature:
+
+    ```text
+    f( arrays )
+    ```
+
+    where
+
+    -   **arrays**: array containing an input ndarray, followed by any additional ndarray arguments.
+
 -   The output data type policy only applies to the function returned by `factory`. For the `assign` method, the output ndarray is allowed to have any data type.
 
 </section>
@@ -197,6 +219,8 @@ The function accepts the following options:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var dmax = require( '@stdlib/stats/base/ndarray/dmax' );
+var smax = require( '@stdlib/stats/base/ndarray/smax' );
 var base = require( '@stdlib/stats/base/ndarray/max' );
 var uniform = require( '@stdlib/random/array/uniform' );
 var dtypes = require( '@stdlib/ndarray/dtypes' );
@@ -214,6 +238,14 @@ var policy = 'same';
 
 // Define a dispatch table:
 var table = {
+    'types': [
+        'float64', // input
+        'float32'  // input
+    ],
+    'fcns': [
+        dmax,
+        smax
+    ],
     'default': base
 };
 

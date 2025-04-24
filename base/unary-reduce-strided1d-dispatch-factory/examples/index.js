@@ -18,6 +18,8 @@
 
 'use strict';
 
+var dmax = require( '@stdlib/stats/base/ndarray/dmax' );
+var smax = require( '@stdlib/stats/base/ndarray/smax' );
 var base = require( '@stdlib/stats/base/ndarray/max' );
 var uniform = require( '@stdlib/random/array/uniform' );
 var dtypes = require( './../../../dtypes' );
@@ -35,6 +37,14 @@ var policy = 'same';
 
 // Define a dispatch table:
 var table = {
+	'types': [
+		'float64', // input
+		'float32'  // input
+	],
+	'fcns': [
+		dmax,
+		smax
+	],
 	'default': base
 };
 

@@ -4,8 +4,29 @@
 
     Parameters
     ----------
-    table: Function
-        Dispatch table containing strided array reduction functions.
+    table: Object
+        Dispatch table containing strided reduction functions. The table object
+        must have the following property:
+
+        - default: default strided reduction function to invoke when provided
+        ndarrays have data types which do not have a corresponding specialized
+        implementation.
+
+        The table may having the following additional properties:
+
+        - types: one-dimensional list of ndarray data types describing
+        specialized input ndarray argument signatures.
+        - fcns: list of strided reduction functions which are specific to
+        specialized input ndarray argument signatures.
+
+        A strided reduction function should have the following signature:
+
+            f( arrays )
+
+        where
+
+        - arrays: array containing an input ndarray, followed by any additional
+        ndarray arguments.
 
     idtypes: Array<Array<string>>
         List containing lists of supported input array data types for each input

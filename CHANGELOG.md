@@ -1055,6 +1055,16 @@ A total of 2 issues were closed in this release:
 
 <!-- /.features -->
 
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`2b48dd6`](https://github.com/stdlib-js/stdlib/commit/2b48dd67916dc94703baac7f524b3136e8014f1c): modify dispatch table to support type signatures
+
+</section>
+
+<!-- /.breaking-changes -->
+
 </details>
 
 </section>
@@ -1076,6 +1086,16 @@ A total of 2 issues were closed in this release:
 </section>
 
 <!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b): modify dispatch table to support type signatures
+
+</section>
+
+<!-- /.breaking-changes -->
 
 </details>
 
@@ -1695,6 +1715,8 @@ This release closes the following issue:
 
 ### BREAKING CHANGES
 
+-   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b): modify dispatch table to support type signatures
+-   [`2b48dd6`](https://github.com/stdlib-js/stdlib/commit/2b48dd67916dc94703baac7f524b3136e8014f1c): modify dispatch table to support type signatures
 -   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565): modify dispatch table to support type signatures
 -   [`d287f8e`](https://github.com/stdlib-js/stdlib/commit/d287f8e4a80211270e9fa96e05a17d6d1a9d2655): modify dispatch table to support type signatures
 -   [`2f0aa48`](https://github.com/stdlib-js/stdlib/commit/2f0aa48ef6d561779d4bd4c4a54fe00a5a26c0e1): remove `mulf` symbol
@@ -1752,6 +1774,10 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
+-   [`2b48dd6`](https://github.com/stdlib-js/stdlib/commit/2b48dd67916dc94703baac7f524b3136e8014f1c) - **refactor:** modify dispatch table to support type signatures _(by Athan Reines)_
+-   [`a99a19f`](https://github.com/stdlib-js/stdlib/commit/a99a19f59967df65f528167c8754cad9aed4c6ae) - **docs:** fix copy _(by Athan Reines)_
+-   [`03e37de`](https://github.com/stdlib-js/stdlib/commit/03e37de727a96025a60f60b910bd3029365b9bb6) - **refactor:** avoid unnecessary variable _(by Athan Reines)_
 -   [`a520c93`](https://github.com/stdlib-js/stdlib/commit/a520c939390ec43739c53df7f7720a36cf9a56a5) - **docs:** update copy _(by Athan Reines)_
 -   [`86165ae`](https://github.com/stdlib-js/stdlib/commit/86165ae550a1ada6f35aa760ab65c3f3e2440f7c) - **docs:** update copy _(by Athan Reines)_
 -   [`db2ad49`](https://github.com/stdlib-js/stdlib/commit/db2ad49f2600daac6a52b0c73bd6de2246d3cd5a) - **chore:** add todo _(by Athan Reines)_

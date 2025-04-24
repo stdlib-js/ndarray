@@ -248,7 +248,6 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	var err;
 	var shx;
 	var arr;
-	var idx;
 	var dt;
 	var f;
 	var N;
@@ -302,9 +301,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
 	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( y ) ) ];
-	idx = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
-	if ( idx >= 0 ) {
-		f = this._table.fcns[ idx ];
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	if ( i >= 0 ) {
+		f = this._table.fcns[ i ];
 	} else {
 		f = this._table.default;
 	}
@@ -373,7 +372,6 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var arr;
 	var err;
 	var flg;
-	var idx;
 	var dt;
 	var N;
 	var f;
@@ -437,9 +435,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	}
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
 	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( y ) ) ];
-	idx = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
-	if ( idx >= 0 ) {
-		f = this._table.fcns[ idx ];
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	if ( i >= 0 ) {
+		f = this._table.fcns[ i ];
 	} else {
 		f = this._table.default;
 	}
