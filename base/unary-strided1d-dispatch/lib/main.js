@@ -80,7 +80,7 @@ function types2enums( types ) {
 * @param {ndarray} output - output ndarray
 * @returns {Array<ndarray>} reordered list
 */
-function reorder( arrays, output ) {
+function reorder( arrays, output ) { // TODO: consider replacing with an `array/base/*` utility which expands an input array by inserting a specified value at a specified index and returns a new array
 	var out;
 	var i;
 	var j;

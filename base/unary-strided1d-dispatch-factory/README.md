@@ -202,7 +202,7 @@ The method accepts the following options:
 
     where
 
-    -   **arrays**: array containing input and output ndarrays, along with any additional ndarray arguments.
+    -   **arrays**: array containing an input and an output ndarray, followed by any additional ndarray arguments.
 
 -   The output data type policy only applies to the function returned by `factory`. For the `assign` method, the output ndarray is allowed to have any data type.
 

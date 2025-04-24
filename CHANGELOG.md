@@ -1752,6 +1752,9 @@ A total of 14 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a520c93`](https://github.com/stdlib-js/stdlib/commit/a520c939390ec43739c53df7f7720a36cf9a56a5) - **docs:** update copy _(by Athan Reines)_
+-   [`86165ae`](https://github.com/stdlib-js/stdlib/commit/86165ae550a1ada6f35aa760ab65c3f3e2440f7c) - **docs:** update copy _(by Athan Reines)_
+-   [`db2ad49`](https://github.com/stdlib-js/stdlib/commit/db2ad49f2600daac6a52b0c73bd6de2246d3cd5a) - **chore:** add todo _(by Athan Reines)_
 -   [`10cee20`](https://github.com/stdlib-js/stdlib/commit/10cee20847e51f75adc284d72a4908a2dc30c440) - **refactor:** remove unnecessary parameter _(by Athan Reines)_
 -   [`128c03a`](https://github.com/stdlib-js/stdlib/commit/128c03a400dafdd695172ce2597b0ad7da54f795) - **refactor:** use similar calling signatures _(by Athan Reines)_
 -   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - **fix:** ensure correct ndarray argument order where output ndarray should be second ndarray argument _(by Athan Reines)_

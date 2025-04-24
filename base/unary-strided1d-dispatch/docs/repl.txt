@@ -26,8 +26,8 @@
 
         where
 
-        - arrays: array containing input and output ndarrays, along with any
-        additional ndarray arguments.
+        - arrays: array containing an input and an output ndarray, followed by
+        any additional ndarray arguments.
 
     idtypes: Array<Array<string>>
         List containing lists of supported input array data types for each input
