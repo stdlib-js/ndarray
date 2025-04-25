@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`06667ad`](https://github.com/stdlib-js/stdlib/commit/06667ad3af114bad67b73ec1e78352044612186e) - add accumulation and index data type policies
+-   [`83b4397`](https://github.com/stdlib-js/stdlib/commit/83b4397ead81f62400301a333ada0882da688ee8) - add default `indexing` data type
+-   [`a76c12c`](https://github.com/stdlib-js/stdlib/commit/a76c12c36a3ec2c34ca6d9798f7e72e42f6d0597) - add `indexing` data type kind
 -   [`db7d60b`](https://github.com/stdlib-js/stdlib/commit/db7d60b388d19ab8a4b537ec3445f3181ef270b7) - add `ndarray/base/unary-strided1d-dispatch-factory`
 -   [`3036ccc`](https://github.com/stdlib-js/stdlib/commit/3036cccd1db41f0093555d2b7c890bdbd6f07cdf) - add `ndarray/base/unary-strided1d-dispatch`
 -   [`9c1e5c9`](https://github.com/stdlib-js/stdlib/commit/9c1e5c9b5b87643d31668a7a0b9c009413fa4c05) - add `ndarray/base/unary-reduce-strided1d-dispatch-factory`
@@ -185,6 +188,7 @@
 
 ### Bug Fixes
 
+-   [`ebe55b2`](https://github.com/stdlib-js/stdlib/commit/ebe55b2015d81d3b0f7288dc87451a2f0d362d47) - update hash table
 -   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - ensure correct ndarray argument order where output ndarray should be second ndarray argument
 -   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - ensure correct table validation
 -   [`0216d98`](https://github.com/stdlib-js/stdlib/commit/0216d98429db599b577ac3b5dd89bc6b72902e1c) - verify that input and output ndarrays have same number of dimensions
@@ -266,6 +270,12 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`06667ad`](https://github.com/stdlib-js/stdlib/commit/06667ad3af114bad67b73ec1e78352044612186e) - **feat:** add accumulation and index data type policies _(by Athan Reines)_
+-   [`ebe55b2`](https://github.com/stdlib-js/stdlib/commit/ebe55b2015d81d3b0f7288dc87451a2f0d362d47) - **fix:** update hash table _(by Athan Reines)_
+-   [`e842143`](https://github.com/stdlib-js/stdlib/commit/e8421431fa8e811d57761310af0460c6f0ea37b5) - **refactor:** rename `indexing` to `index` and add defaults for specialized index data types _(by Athan Reines)_
+-   [`2b5e9f1`](https://github.com/stdlib-js/stdlib/commit/2b5e9f129eb801afffded4df13b73dc4a5ae4963) - **refactor:** rename `indexing` to `index` and add specialized index data type kinds _(by Athan Reines)_
+-   [`83b4397`](https://github.com/stdlib-js/stdlib/commit/83b4397ead81f62400301a333ada0882da688ee8) - **feat:** add default `indexing` data type _(by Athan Reines)_
+-   [`a76c12c`](https://github.com/stdlib-js/stdlib/commit/a76c12c36a3ec2c34ca6d9798f7e72e42f6d0597) - **feat:** add `indexing` data type kind _(by Athan Reines)_
 -   [`998cea3`](https://github.com/stdlib-js/stdlib/commit/998cea3de3266730ae7e35905faf5570df1a4b29) - **docs:** fix equality check _(by Athan Reines)_
 -   [`5426105`](https://github.com/stdlib-js/stdlib/commit/5426105c564949702197dd622aab2e81cae79283) - **docs:** use C equality operator _(by Philipp Burckhardt)_
 -   [`5fb7055`](https://github.com/stdlib-js/stdlib/commit/5fb70551ba3e223bbb24ca2166b81dbc4545786a) - **docs:** fix copy _(by Athan Reines)_
