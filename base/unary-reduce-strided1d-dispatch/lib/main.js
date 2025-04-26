@@ -32,9 +32,11 @@ var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
 var isFunctionArray = require( '@stdlib/assert/is-function-array' );
 var isDataType = require( '@stdlib/array/base/assert/is-data-type' );
 var isOutputDataTypePolicy = require( './../../../base/assert/is-output-data-type-policy' );
+var isInputCastingPolicy = require( './../../../base/assert/is-input-casting-policy' );
 var contains = require( '@stdlib/array/base/assert/contains' );
 var unaryReduceStrided1d = require( './../../../base/unary-reduce-strided1d' );
 var unaryOutputDataType = require( './../../../base/unary-output-dtype' );
+var unaryInputCastingDataType = require( './../../../base/unary-input-casting-dtype' );
 var resolveEnum = require( './../../../base/dtype-resolve-enum' );
 var spreadDimensions = require( './../../../base/spread-dimensions' );
 var getShape = require( './../../../shape' ); // note: non-base accessor is intentional due to input ndarrays originating in userland
@@ -44,7 +46,6 @@ var getOrder = require( './../../../base/order' );
 var assign = require( './../../../base/assign' );
 var baseEmpty = require( './../../../base/empty' );
 var empty = require( './../../../empty' );
-var promotionRules = require( './../../../promotion-rules' );
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed = require( '@stdlib/array/base/take-indexed' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
@@ -116,11 +117,13 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 * @param {ArrayLikeObject<Function>} [table.fcns=[]] - list of strided reduction functions which are specific to specialized input ndarray argument signatures
 * @param {ArrayLikeObject<StringArray>} idtypes - list containing lists of supported input data types for each ndarray argument
 * @param {StringArray} odtypes - list of supported output data types
-* @param {string} policy - output data type policy
+* @param {Object} policies - policies
+* @param {string} policies.output - output data type policy
+* @param {string} policies.casting - input ndarray casting policy
 * @throws {TypeError} first argument must be an object having valid properties
 * @throws {TypeError} second argument must be an array containing arrays of supported data types
 * @throws {TypeError} third argument must be an array of supported data types
-* @throws {TypeError} fourth argument must be a supported output data type policy
+* @throws {TypeError} fourth argument must be an object having supported policies
 * @throws {Error} first argument must be an object having valid properties
 * @returns {UnaryStrided1dDispatch} instance
 *
@@ -131,12 +134,15 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -147,11 +153,11 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 * var v = y.get();
 * // returns 2.0
 */
-function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
+function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 	var dt;
 	var i;
 	if ( !( this instanceof UnaryStrided1dDispatch ) ) {
-		return new UnaryStrided1dDispatch( table, idtypes, odtypes, policy );
+		return new UnaryStrided1dDispatch( table, idtypes, odtypes, policies );
 	}
 	if ( !isObject( table ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an object. Value: `%s`.', table ) );
@@ -185,8 +191,14 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 	) {
 		throw new TypeError( format( 'invalid argument. Third argument must be an array of data types. Value: `%s`.', odtypes ) );
 	}
-	if ( !isOutputDataTypePolicy( policy ) ) {
-		throw new TypeError( format( 'invalid argument. Fourth argument must be a supported output data type policy. Value: `%s`.', policy ) );
+	if ( !isObject( policies ) ) {
+		throw new TypeError( format( 'invalid argument. Fourth argument must be an object. Value: `%s`.', table ) );
+	}
+	if ( !isOutputDataTypePolicy( policies.output ) ) {
+		throw new TypeError( format( 'invalid argument. Fourth argument must be an object having a supported output data type policy. Value: `%s`.', policies.output ) );
+	}
+	if ( !isInputCastingPolicy( policies.casting ) ) {
+		throw new TypeError( format( 'invalid argument. Fourth argument must be an object having a supported casting policy. Value: `%s`.', policies.casting ) );
 	}
 	this._table = {
 		'default': table.default,
@@ -198,7 +210,10 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 	}
 	this._idtypes = idtypes;
 	this._odtypes = odtypes;
-	this._policy = policy;
+	this._policies = {
+		'output': policies.output,
+		'casting': policies.casting
+	};
 	return this;
 }
 
@@ -228,12 +243,15 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policy ) {
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -310,22 +328,21 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	// Resolve the output array shape:
 	shy = takeIndexed( shx, idx );
 
-	// Initialize an output array whose shape matches that of the non-reduced dimensions and which has the same memory layout as the input array:
-	ydt = opts.dtype || unaryOutputDataType( xdt, this._policy );
+	// Initialize an output array whose shape matches that of the non-reduced dimensions and which has the same memory layout as the input ndarray:
+	ydt = opts.dtype || unaryOutputDataType( xdt, this._policies.output );
 	y = empty( shy, {
 		'dtype': ydt,
 		'order': getOrder( x )
 	});
 
-	// When performing an accumulation, such as a sum over many `int8` elements, we need to copy the input ndarray to a temporary workspace prior to performing a reduction whenever the promoted data type has a higher precision with the aim of guarding against overflow/underflow during intermediate computation (note: this follows similar guidance found in https://data-apis.org/array-api/latest/API_specification/generated/array_api.sum.html)...
-	if ( xdt !== ydt && this._policy === 'accumulation' ) {
-		dt = promotionRules( xdt, ydt );
-		if ( dt !== -1 && xdt !== dt ) { // note: only perform the cast when an input data type promotes to an output data type; this can lead to divergence between, e.g., uint32-complex128 and uint32-complex64, where the former promotes, but the latter stays in uint32; however, we only get there if a user has specifically requested an output data type and who are we to question the user :|
-			tmp = baseEmpty( dt, shx, getOrder( x ) );
-			assign( [ x, tmp ] );
-			args[ 0 ] = tmp;
-			xdt = dt;
-		}
+	// Determine whether we need to cast the input ndarray...
+	dt = unaryInputCastingDataType( xdt, ydt, this._policies.casting );
+	if ( xdt !== dt ) {
+		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
+		tmp = baseEmpty( dt, shx, getOrder( x ) );
+		assign( [ x, tmp ] );
+		args[ 0 ] = tmp;
+		xdt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
 	dtypes = [ resolveEnum( xdt ) ];
@@ -372,12 +389,15 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -404,7 +424,6 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var err;
 	var flg;
 	var xdt;
-	var ydt;
 	var tmp;
 	var dt;
 	var N;
@@ -467,16 +486,14 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
-	// When performing an accumulation, such as a sum over many `int8` elements, we need to copy the input ndarray to a temporary workspace prior to performing a reduction whenever the promoted data type has a higher precision with the aim of guarding against overflow/underflow during intermediate computation (note: this follows similar guidance found in https://data-apis.org/array-api/latest/API_specification/generated/array_api.sum.html)...
-	ydt = getDType( y );
-	if ( xdt !== ydt && this._policy === 'accumulation' ) {
-		dt = promotionRules( xdt, ydt );
-		if ( dt !== -1 && xdt !== dt ) { // note: only perform the cast when an input data type promotes to an output data type; this can lead to divergence between, e.g., uint32-complex128 and uint32-complex64, where the former promotes, but the latter stays in uint32; however, we only get there if a user has specifically provided an output array with a data type which doesn't promote and who are we to question the user :|
-			tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
-			assign( [ x, tmp ] );
-			args[ 0 ] = tmp;
-			xdt = dt;
-		}
+	// Determine whether we need to cast the input ndarray...
+	dt = unaryInputCastingDataType( xdt, getDType( y ), this._policies.casting ); // eslint-disable-line max-len
+	if ( xdt !== dt ) {
+		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
+		tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
+		assign( [ x, tmp ] );
+		args[ 0 ] = tmp;
+		xdt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
 	dtypes = [ resolveEnum( xdt ) ];

@@ -32,7 +32,7 @@ limitations under the License.
 var unaryStrided1dDispatchFactory = require( '@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-factory' );
 ```
 
-#### unaryStrided1dDispatchFactory( table, idtypes, odtypes, policy )
+#### unaryStrided1dDispatchFactory( table, idtypes, odtypes, policies )
 
 Returns a function for performing a reduction on an input ndarray.
 
@@ -46,9 +46,12 @@ var table = {
 };
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
-var policy = 'same';
+var policies = {
+    'output': 'same',
+    'casting': 'none'
+};
 
-var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
+var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policies );
 ```
 
 The function has the following parameters:
@@ -66,7 +69,10 @@ The function has the following parameters:
 
 -   **odtypes**: list of supported output data types.
 
--   **policy**: output data type policy.
+-   **policies**: dispatch policies. Must have the following properties:
+
+    -   **output**: output data type [policy][@stdlib/ndarray/output-dtype-policies].
+    -   **casting**: input ndarray casting [policy][@stdlib/ndarray/input-casting-policies].
 
 #### unary( x\[, ...args]\[, options] )
 
@@ -83,9 +89,12 @@ var table = {
 };
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
-var policy = 'same';
+var policies = {
+    'output': 'same',
+    'casting': 'none'
+};
 
-var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
+var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -123,9 +132,12 @@ var table = {
 };
 
 var dtypes = [ 'float64', 'float32', 'generic' ];
-var policy = 'same';
+var policies = {
+    'output': 'same',
+    'casting': 'none'
+};
 
-var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policy );
+var unary = unaryStrided1dDispatchFactory( table, [ dtypes ], dtypes, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -152,12 +164,15 @@ var ndarray = require( '@stdlib/ndarray/base/ctor' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = idt;
-var policy = 'same';
+var policies = {
+    'output': 'same',
+    'casting': 'none'
+};
 
 var table = {
     'default': base
 };
-var unary = unaryStrided1dDispatchFactory( table, [ idt ], odt, policy );
+var unary = unaryStrided1dDispatchFactory( table, [ idt ], odt, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -233,8 +248,11 @@ var unaryStrided1dDispatchFactory = require( '@stdlib/ndarray/base/unary-reduce-
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_and_generic' );
 
-// Define the policy mapping an input data type to an output data type:
-var policy = 'same';
+// Define dispatch policies:
+var policies = {
+    'output': 'same',
+    'casting': 'none'
+};
 
 // Define a dispatch table:
 var table = {
@@ -250,7 +268,7 @@ var table = {
 };
 
 // Create an interface for performing a reduction:
-var max = unaryStrided1dDispatchFactory( table, [ idt ], odt, policy );
+var max = unaryStrided1dDispatchFactory( table, [ idt ], odt, policies );
 
 // Generate an array of random numbers:
 var xbuf = uniform( 100, -1.0, 1.0, {
@@ -288,6 +306,10 @@ console.log( ndarray2array( y ) );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray/tree/main/output-dtype-policies
+
+[@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray/tree/main/input-casting-policies
 
 </section>
 

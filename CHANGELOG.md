@@ -254,6 +254,8 @@
 
 ### BREAKING CHANGES
 
+-   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb): replace policy string argument with a policy object
+-   [`a044e35`](https://github.com/stdlib-js/stdlib/commit/a044e354764d59dd965c90a4317f1b3898a83d6d): replace policy string argument with a policy object
 -   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b): modify dispatch table to support type signatures
 -   [`2b48dd6`](https://github.com/stdlib-js/stdlib/commit/2b48dd67916dc94703baac7f524b3136e8014f1c): modify dispatch table to support type signatures
 -   [`d4f8189`](https://github.com/stdlib-js/stdlib/commit/d4f8189e03d81f54c5483ffb016ca967a3888565): modify dispatch table to support type signatures
@@ -288,6 +290,8 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
+-   [`a044e35`](https://github.com/stdlib-js/stdlib/commit/a044e354764d59dd965c90a4317f1b3898a83d6d) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`19a94ba`](https://github.com/stdlib-js/stdlib/commit/19a94ba6becae6ee0d021a1ad11af0bfa6ffa116) - **feat:** add `unaryInputCastingDataType` to namespace _(by Athan Reines)_
 -   [`c6195ff`](https://github.com/stdlib-js/stdlib/commit/c6195ff858e3ba8b90a0560dd0af753be76b5d44) - **feat:** add `ndarray/base/unary-input-casting-dtype` _(by Athan Reines)_
 -   [`79f6ac4`](https://github.com/stdlib-js/stdlib/commit/79f6ac4a6aa789b2e012126b8b485c8173a89f11) - **fix:** accumulate in the default real-valued floating-point dtype _(by Athan Reines)_

@@ -32,8 +32,11 @@ var factory = require( './../lib' );
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_and_generic' );
 
-// Define the policy mapping an input data type to an output data type:
-var policy = 'same';
+// Define dispatch policies:
+var policies = {
+	'output': 'same',
+	'casting': 'none'
+};
 
 // Define a dispatch table:
 var table = {
@@ -49,7 +52,7 @@ var table = {
 };
 
 // Create an interface for performing a reduction:
-var max = factory( table, [ idt ], odt, policy );
+var max = factory( table, [ idt ], odt, policies );
 
 // Generate an array of random numbers:
 var xbuf = uniform( 100, -1.0, 1.0, {
