@@ -41,7 +41,10 @@ var getShape = require( './../../../shape' ); // note: non-base accessor is inte
 var ndims = require( './../../../ndims' );
 var getDType = require( './../../../base/dtype' );
 var getOrder = require( './../../../base/order' );
+var assign = require( './../../../base/assign' );
+var baseEmpty = require( './../../../base/empty' );
 var empty = require( './../../../empty' );
+var promotionRules = require( './../../../promotion-rules' );
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed = require( '@stdlib/array/base/take-indexed' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
@@ -252,6 +255,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	var shx;
 	var shy;
 	var arr;
+	var tmp;
+	var xdt;
+	var ydt;
 	var dt;
 	var f;
 	var N;
@@ -262,9 +268,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	if ( !isndarrayLike( x ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an ndarray-like object. Value: `%s`.', x ) );
 	}
-	dt = getDType( x );
-	if ( !contains( this._idtypes[ 0 ], dt ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must have one of the following data types: "%s". Data type: `%s`.', join( this._idtypes[ 0 ], '", "' ), dt ) );
+	xdt = getDType( x );
+	if ( !contains( this._idtypes[ 0 ], xdt ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must have one of the following data types: "%s". Data type: `%s`.', join( this._idtypes[ 0 ], '", "' ), xdt ) );
 	}
 	args = [ x ];
 	for ( i = 1; i < nargs; i++ ) {
@@ -276,6 +282,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		if ( !contains( this._idtypes[ i ], dt ) ) {
 			throw new TypeError( format( 'invalid argument. Argument %d must have one of the following data types: "%s". Data type: `%s`.', i, join( this._idtypes[ i ], '", "' ), dt ) );
 		}
+		// Note: we don't type promote additional ndarray arguments, as they are passed as scalars to the underlying strided reduction function...
 		args.push( arr );
 	}
 	// If we didn't make it up until the last argument, this means that we found a non-options argument which was not an ndarray...
@@ -293,7 +300,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 			throw err;
 		}
 	}
-	// When a list of dimensions is not provided, reduce the entire input array across all dimensions...
+	// When a list of dimensions is not provided, reduce the entire input ndarray across all dimensions...
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
@@ -304,13 +311,24 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	shy = takeIndexed( shx, idx );
 
 	// Initialize an output array whose shape matches that of the non-reduced dimensions and which has the same memory layout as the input array:
+	ydt = opts.dtype || unaryOutputDataType( xdt, this._policy );
 	y = empty( shy, {
-		'dtype': opts.dtype || unaryOutputDataType( dt, this._policy ),
+		'dtype': ydt,
 		'order': getOrder( x )
 	});
 
+	// When performing an accumulation, such as a sum over many `int8` elements, we need to copy the input ndarray to a temporary workspace prior to performing a reduction whenever the promoted data type has a higher precision with the aim of guarding against overflow/underflow during intermediate computation (note: this follows similar guidance found in https://data-apis.org/array-api/latest/API_specification/generated/array_api.sum.html)...
+	if ( xdt !== ydt && this._policy === 'accumulation' ) {
+		dt = promotionRules( xdt, ydt );
+		if ( dt !== -1 && xdt !== dt ) { // note: only perform the cast when an input data type promotes to an output data type; this can lead to divergence between, e.g., uint32-complex128 and uint32-complex64, where the former promotes, but the latter stays in uint32; however, we only get there if a user has specifically requested an output data type and who are we to question the user :|
+			tmp = baseEmpty( dt, shx, getOrder( x ) );
+			assign( [ x, tmp ] );
+			args[ 0 ] = tmp;
+			xdt = dt;
+		}
+	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
-	dtypes = [ resolveEnum( dt ) ];
+	dtypes = [ resolveEnum( xdt ) ];
 	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
@@ -385,6 +403,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var arr;
 	var err;
 	var flg;
+	var xdt;
+	var ydt;
+	var tmp;
 	var dt;
 	var N;
 	var f;
@@ -396,9 +417,9 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an ndarray-like object. Value: `%s`.', x ) );
 	}
 	// Validate the input ndarray data type in order to maintain similar behavior to `apply` above...
-	dt = getDType( x );
-	if ( !contains( this._idtypes[ 0 ], dt ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must have one of the following data types: "%s". Data type: `%s`.', join( this._idtypes[ 0 ], '", "' ), dt ) );
+	xdt = getDType( x );
+	if ( !contains( this._idtypes[ 0 ], xdt ) ) {
+		throw new TypeError( format( 'invalid argument. First argument must have one of the following data types: "%s". Data type: `%s`.', join( this._idtypes[ 0 ], '", "' ), xdt ) );
 	}
 	args = [ x ];
 
@@ -426,7 +447,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	// Cache a reference to the output ndarray:
 	y = args.pop();
 
-	// Verify that additional ndarray arguments have expected dtypes (note: we intentionally don't validate the output ndarray dtype in order to provide an escape hatch for a user wanting to have an output ndarray having a specific dtype that `apply` does not support)...
+	// Verify that additional ndarray arguments have expected dtypes (note: we intentionally don't validate the output ndarray dtype in order to provide an escape hatch for a user wanting to have an output ndarray having a specific dtype that `apply` does not support; note: we don't type promote additional ndarray arguments, as they are passed as scalars to the underlying strided reduction function)...
 	for ( i = 1; i < args.length; i++ ) {
 		dt = getDType( args[ i ] );
 		if ( !contains( this._idtypes[ i ], dt ) ) {
@@ -446,8 +467,19 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( opts.dims === null ) {
 		opts.dims = zeroTo( N );
 	}
+	// When performing an accumulation, such as a sum over many `int8` elements, we need to copy the input ndarray to a temporary workspace prior to performing a reduction whenever the promoted data type has a higher precision with the aim of guarding against overflow/underflow during intermediate computation (note: this follows similar guidance found in https://data-apis.org/array-api/latest/API_specification/generated/array_api.sum.html)...
+	ydt = getDType( y );
+	if ( xdt !== ydt && this._policy === 'accumulation' ) {
+		dt = promotionRules( xdt, ydt );
+		if ( dt !== -1 && xdt !== dt ) { // note: only perform the cast when an input data type promotes to an output data type; this can lead to divergence between, e.g., uint32-complex128 and uint32-complex64, where the former promotes, but the latter stays in uint32; however, we only get there if a user has specifically provided an output array with a data type which doesn't promote and who are we to question the user :|
+			tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
+			assign( [ x, tmp ] );
+			args[ 0 ] = tmp;
+			xdt = dt;
+		}
+	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
-	dtypes = [ resolveEnum( dt ) ];
+	dtypes = [ resolveEnum( xdt ) ];
 	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];

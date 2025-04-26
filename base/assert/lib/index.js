@@ -181,6 +181,15 @@ setReadOnly( ns, 'isIndexDataType', require( './../../../base/assert/is-index-da
 setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' ) );
 
 /**
+* @name isInputCastingPolicy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-input-casting-policy}
+*/
+setReadOnly( ns, 'isInputCastingPolicy', require( './../../../base/assert/is-input-casting-policy' ) );
+
+/**
 * @name isIntegerDataType
 * @memberof ns
 * @readonly

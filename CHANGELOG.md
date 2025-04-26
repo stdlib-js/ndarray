@@ -10,6 +10,11 @@
 
 ### Features
 
+-   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - add `isInputCastingPolicy` to namespace
+-   [`76720ca`](https://github.com/stdlib-js/stdlib/commit/76720ca15cf2ab2362923073da524e6d1b882afb) - add `ndarray/base/assert/is-input-casting-policy`
+-   [`edbd922`](https://github.com/stdlib-js/stdlib/commit/edbd9221b2d935e924f94052cc3c22c55c112173) - add `inputCastingPolicies` to namespace
+-   [`a4c7f4f`](https://github.com/stdlib-js/stdlib/commit/a4c7f4f5eed4b028a397e11a40e2c0cf80517703) - add `ndarray/input-casting-policies`
+-   [`38de753`](https://github.com/stdlib-js/stdlib/commit/38de753fb6f02cb74f8ba6f4dd23b8232c378565) - add logic supporting an accumulation policy
 -   [`1bbc59f`](https://github.com/stdlib-js/stdlib/commit/1bbc59f31cd81f3058f6c568567acdbd8056526b) - add `isBooleanIndexDataType` to namespace
 -   [`1281240`](https://github.com/stdlib-js/stdlib/commit/128124061f8609ef1a5eaec35e6872ee3e119671) - add `ndarray/base/assert/is-boolean-index-data-type`
 -   [`13702c8`](https://github.com/stdlib-js/stdlib/commit/13702c885f2a27bc95d4d563ebd4ed27f10103cc) - add `isMaskIndexDataType` to namespace
@@ -278,6 +283,12 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - **feat:** add `isInputCastingPolicy` to namespace _(by Athan Reines)_
+-   [`76720ca`](https://github.com/stdlib-js/stdlib/commit/76720ca15cf2ab2362923073da524e6d1b882afb) - **feat:** add `ndarray/base/assert/is-input-casting-policy` _(by Athan Reines)_
+-   [`edbd922`](https://github.com/stdlib-js/stdlib/commit/edbd9221b2d935e924f94052cc3c22c55c112173) - **feat:** add `inputCastingPolicies` to namespace _(by Athan Reines)_
+-   [`a4c7f4f`](https://github.com/stdlib-js/stdlib/commit/a4c7f4f5eed4b028a397e11a40e2c0cf80517703) - **feat:** add `ndarray/input-casting-policies` _(by Athan Reines)_
+-   [`38de753`](https://github.com/stdlib-js/stdlib/commit/38de753fb6f02cb74f8ba6f4dd23b8232c378565) - **feat:** add logic supporting an accumulation policy _(by Athan Reines)_
+-   [`2d63924`](https://github.com/stdlib-js/stdlib/commit/2d63924aea1ea500037ca025d8d405018907c8dd) - **docs:** update comment _(by Athan Reines)_
 -   [`b9d5fc2`](https://github.com/stdlib-js/stdlib/commit/b9d5fc27dcdc1d57f94f63be1d05276c63025c14) - **docs:** update namespace table of contents [(#6819)](https://github.com/stdlib-js/stdlib/pull/6819) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`1bbc59f`](https://github.com/stdlib-js/stdlib/commit/1bbc59f31cd81f3058f6c568567acdbd8056526b) - **feat:** add `isBooleanIndexDataType` to namespace _(by Athan Reines)_
 -   [`1281240`](https://github.com/stdlib-js/stdlib/commit/128124061f8609ef1a5eaec35e6872ee3e119671) - **feat:** add `ndarray/base/assert/is-boolean-index-data-type` _(by Athan Reines)_
