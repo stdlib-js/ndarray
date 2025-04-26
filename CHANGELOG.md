@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`19a94ba`](https://github.com/stdlib-js/stdlib/commit/19a94ba6becae6ee0d021a1ad11af0bfa6ffa116) - add `unaryInputCastingDataType` to namespace
+-   [`c6195ff`](https://github.com/stdlib-js/stdlib/commit/c6195ff858e3ba8b90a0560dd0af753be76b5d44) - add `ndarray/base/unary-input-casting-dtype`
+-   [`a127aaf`](https://github.com/stdlib-js/stdlib/commit/a127aaf3a0a12ec7f2ae62e5fbb2bed4d67f9794) - add support for accumulation and index policies
 -   [`0cf010e`](https://github.com/stdlib-js/stdlib/commit/0cf010ebd42bc5e06c935c023e41d98a2571300d) - add accumulation input casting policy
 -   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - add `isInputCastingPolicy` to namespace
 -   [`76720ca`](https://github.com/stdlib-js/stdlib/commit/76720ca15cf2ab2362923073da524e6d1b882afb) - add `ndarray/base/assert/is-input-casting-policy`
@@ -202,6 +205,7 @@
 
 ### Bug Fixes
 
+-   [`79f6ac4`](https://github.com/stdlib-js/stdlib/commit/79f6ac4a6aa789b2e012126b8b485c8173a89f11) - accumulate in the default real-valued floating-point dtype
 -   [`ebe55b2`](https://github.com/stdlib-js/stdlib/commit/ebe55b2015d81d3b0f7288dc87451a2f0d362d47) - update hash table
 -   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - ensure correct ndarray argument order where output ndarray should be second ndarray argument
 -   [`ac10964`](https://github.com/stdlib-js/stdlib/commit/ac109649d1cfad63800282f0d509aff419bfeb33) - ensure correct table validation
@@ -284,6 +288,11 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`19a94ba`](https://github.com/stdlib-js/stdlib/commit/19a94ba6becae6ee0d021a1ad11af0bfa6ffa116) - **feat:** add `unaryInputCastingDataType` to namespace _(by Athan Reines)_
+-   [`c6195ff`](https://github.com/stdlib-js/stdlib/commit/c6195ff858e3ba8b90a0560dd0af753be76b5d44) - **feat:** add `ndarray/base/unary-input-casting-dtype` _(by Athan Reines)_
+-   [`79f6ac4`](https://github.com/stdlib-js/stdlib/commit/79f6ac4a6aa789b2e012126b8b485c8173a89f11) - **fix:** accumulate in the default real-valued floating-point dtype _(by Athan Reines)_
+-   [`e4a213e`](https://github.com/stdlib-js/stdlib/commit/e4a213e0070ca858adef9c759627173a2c91370b) - **test:** add tests for newly added output policies _(by Athan Reines)_
+-   [`a127aaf`](https://github.com/stdlib-js/stdlib/commit/a127aaf3a0a12ec7f2ae62e5fbb2bed4d67f9794) - **feat:** add support for accumulation and index policies _(by Athan Reines)_
 -   [`9459c45`](https://github.com/stdlib-js/stdlib/commit/9459c452bfd439f732c3eaa20c6ab257c64b10bd) - **test:** add test case _(by Athan Reines)_
 -   [`0cf010e`](https://github.com/stdlib-js/stdlib/commit/0cf010ebd42bc5e06c935c023e41d98a2571300d) - **feat:** add accumulation input casting policy _(by Athan Reines)_
 -   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - **feat:** add `isInputCastingPolicy` to namespace _(by Athan Reines)_

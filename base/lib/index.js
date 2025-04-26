@@ -941,6 +941,15 @@ setReadOnly( ns, 'unaryAccumulate', require( './../../base/unary-accumulate' ) )
 setReadOnly( ns, 'unaryBy', require( './../../base/unary-by' ) );
 
 /**
+* @name unaryInputCastingDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-input-casting-dtype}
+*/
+setReadOnly( ns, 'unaryInputCastingDataType', require( './../../base/unary-input-casting-dtype' ) );
+
+/**
 * @name unaryLoopOrder
 * @memberof ns
 * @readonly
