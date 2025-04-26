@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`0cf010e`](https://github.com/stdlib-js/stdlib/commit/0cf010ebd42bc5e06c935c023e41d98a2571300d) - add accumulation input casting policy
 -   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - add `isInputCastingPolicy` to namespace
 -   [`76720ca`](https://github.com/stdlib-js/stdlib/commit/76720ca15cf2ab2362923073da524e6d1b882afb) - add `ndarray/base/assert/is-input-casting-policy`
 -   [`edbd922`](https://github.com/stdlib-js/stdlib/commit/edbd9221b2d935e924f94052cc3c22c55c112173) - add `inputCastingPolicies` to namespace
@@ -283,6 +284,8 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`9459c45`](https://github.com/stdlib-js/stdlib/commit/9459c452bfd439f732c3eaa20c6ab257c64b10bd) - **test:** add test case _(by Athan Reines)_
+-   [`0cf010e`](https://github.com/stdlib-js/stdlib/commit/0cf010ebd42bc5e06c935c023e41d98a2571300d) - **feat:** add accumulation input casting policy _(by Athan Reines)_
 -   [`d97a6dc`](https://github.com/stdlib-js/stdlib/commit/d97a6dce7cbaaeec6168a853a70038d49ca3bf9c) - **feat:** add `isInputCastingPolicy` to namespace _(by Athan Reines)_
 -   [`76720ca`](https://github.com/stdlib-js/stdlib/commit/76720ca15cf2ab2362923073da524e6d1b882afb) - **feat:** add `ndarray/base/assert/is-input-casting-policy` _(by Athan Reines)_
 -   [`edbd922`](https://github.com/stdlib-js/stdlib/commit/edbd9221b2d935e924f94052cc3c22c55c112173) - **feat:** add `inputCastingPolicies` to namespace _(by Athan Reines)_

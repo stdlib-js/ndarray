@@ -36,6 +36,9 @@ enum STDLIB_NDARRAY_INPUT_CASTING_POLICY {
 	// Cast an input ndarray to a promoted data type:
 	STDLIB_NDARRAY_INPUT_CASTING_POLICY_PROMOTED,
 
+	// Cast an input ndarray to a data type amenable to accumulation:
+	STDLIB_NDARRAY_INPUT_CASTING_POLICY_ACCUMULATION,
+
 	// Cast an input ndarray to the data type of the output ndarray:
 	STDLIB_NDARRAY_INPUT_CASTING_POLICY_OUTPUT,
 

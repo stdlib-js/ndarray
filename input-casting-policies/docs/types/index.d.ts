@@ -24,6 +24,7 @@
 type Policies = [
 	'none',
 	'promoted',
+	'accumulation',
 	'output'
 ];
 
@@ -36,6 +37,7 @@ type Policies = [
 *
 *     -   `none`: do not cast an input ndarray.
 *     -   `promoted`: cast an input ndarray to a promoted data type.
+*     -   `accumulation`: cast an input ndarray to a data type amenable to accumulation.
 *     -   `output`: cast an input ndarray to the data type of the output ndarray.
 *
 * @returns list of policies

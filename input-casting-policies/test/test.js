@@ -32,6 +32,7 @@ var policies = require( './../lib' );
 var POLICIES = [
 	'none',
 	'promoted',
+	'accumulation',
 	'output'
 ];
 

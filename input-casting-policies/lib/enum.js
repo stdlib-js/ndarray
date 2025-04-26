@@ -40,7 +40,8 @@ function enumeration() {
 	return {
 		'none': 0,
 		'promoted': 1,
-		'output': 2
+		'accumulation': 2,
+		'output': 3
 	};
 }
 

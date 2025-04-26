@@ -40,6 +40,7 @@ tape( 'the function returns `true` if provided a supported policy', function tes
 	values = [
 		'none',
 		'promoted',
+		'accumulation',
 		'output'
 	];
 	for ( i = 0; i < values.length; i++ ) {
