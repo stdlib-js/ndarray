@@ -30,7 +30,7 @@ extern "C" {
 * Enumeration of input ndarray casting policies.
 */
 enum STDLIB_NDARRAY_INPUT_CASTING_POLICY {
-	// Do not cast an input ndarray:
+	// No guidance on specific casting behavior, as an input ndarray may or may not be cast depending on the needs of an implementation:
 	STDLIB_NDARRAY_INPUT_CASTING_POLICY_NONE = 0,
 
 	// Cast an input ndarray to a promoted data type:

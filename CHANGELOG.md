@@ -290,6 +290,7 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`524b0ff`](https://github.com/stdlib-js/stdlib/commit/524b0ff24c657f76c638191ce996fdd99002b4f7) - **docs:** add use cases and notes _(by Athan Reines)_
 -   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`a044e35`](https://github.com/stdlib-js/stdlib/commit/a044e354764d59dd965c90a4317f1b3898a83d6d) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`19a94ba`](https://github.com/stdlib-js/stdlib/commit/19a94ba6becae6ee0d021a1ad11af0bfa6ffa116) - **feat:** add `unaryInputCastingDataType` to namespace _(by Athan Reines)_

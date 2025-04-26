@@ -35,7 +35,7 @@ type Policies = [
 *
 * -   The output array contains the following policies:
 *
-*     -   `none`: do not cast an input ndarray.
+*     -   `none`: no guidance on specific casting behavior. An input ndarray may or may not be cast depending on the needs of an implementation.
 *     -   `promoted`: cast an input ndarray to a promoted data type.
 *     -   `accumulation`: cast an input ndarray to a data type amenable to accumulation.
 *     -   `output`: cast an input ndarray to the data type of the output ndarray.

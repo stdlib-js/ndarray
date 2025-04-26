@@ -51,7 +51,7 @@ var out = policies();
 
 The output array contains the following policies:
 
--   `none`: do not cast an input ndarray.
+-   `none`: no guidance on specific casting behavior. An input ndarray may or may not be cast depending on the needs of an implementation.
 -   `promoted`: cast an input ndarray to a promoted data type.
 -   `accumulation`: cast an input ndarray to a data type amenable to accumulation.
 -   `output`: cast an input ndarray to the data type of the output ndarray.
@@ -63,6 +63,17 @@ The output array contains the following policies:
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   The following is some general guidance for the casting policies listed above:
+
+    -   **none**: applies whenever an input ndarray casting behavior should be entirely left up to an implementation. For example, an implementation may choose to cast internally in order to take advantage of specialized algorithms operating on specific data types.
+    -   **promoted**: applies whenever an input ndarray should be cast to the data type resolved from applying the rules of [type promotion][@stdlib/ndarray/promotion-rules] to an implementation's input and output ndarrays. For example, suppose an implementation is computing the sum and the data type of the input ndarray is `int32` and the data type of the output ndarray is `float32`. In this scenario, casting `int32` to `float32` is not desirable as not all `int32` values can be safely represented in `float32`, thus potentially leading to significant accumulated numerical error. Instead, we can promote `int32` to `float64`, compute the sum, and then downcast the result for more accurate summation.
+    -   **accumulation**: applies whenever an input ndarray should be cast to a data type amenable to accumulation, irrespective of the output ndarray or other input ndarrays. For example, suppose an implementation is computing the sum and determining whether the sum passes a threshold, and further suppose that the data type of the input ndarray is `int8` and the data type of the output ndarray is `bool`. In this scenario, as `int8` has a small range of values, computing the sum has a high risk of overflow, rending the results potentially meaningless, and type promotion is not applicable. As such, an implementation may prefer to internally cast `int8` to a data type more amenable to accumulation, such as `int32`.
+    -   **output**: applies whenever an input ndarray should always be cast to the data type of the output ndarray. This might apply whenever an implementation wraps a type homogeneous interface, such as those commonly found in BLAS/LAPACK routines.
+
+-   Whether an implementation supports a casting policy depends on the implementation. Supporting casting policies is mainly envisioned for generalized utilities wrapping lower-level APIs and needing to accommodate varied use cases (e.g., [`@stdlib/ndarray/base/unary-reduce-strided1d-dispatch`][@stdlib/ndarray/base/unary-reduce-strided1d-dispatch]). Exposing casting policies as part of user-facing APIs is generally not a good idea.
 
 </section>
 
@@ -125,6 +136,10 @@ bool = isPolicy( 'beep' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray/tree/main/promotion-rules
+
+[@stdlib/ndarray/base/unary-reduce-strided1d-dispatch]: https://github.com/stdlib-js/ndarray/tree/main/base/unary-reduce-strided1d-dispatch
 
 </section>
 
