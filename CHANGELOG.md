@@ -254,6 +254,8 @@
 
 ### BREAKING CHANGES
 
+-   [`7507be0`](https://github.com/stdlib-js/stdlib/commit/7507be008cc27aa0c74770a29cd4b4507eca6745): replace policy string argument with a policy object
+-   [`f0602e3`](https://github.com/stdlib-js/stdlib/commit/f0602e31fcfab3c05954ac9b3d37ae01d3f51b6b): replace policy string argument with a policy object
 -   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb): replace policy string argument with a policy object
 -   [`a044e35`](https://github.com/stdlib-js/stdlib/commit/a044e354764d59dd965c90a4317f1b3898a83d6d): replace policy string argument with a policy object
 -   [`270d773`](https://github.com/stdlib-js/stdlib/commit/270d77340c33be953ec29ca4d1924fffdb18df0b): modify dispatch table to support type signatures
@@ -290,6 +292,8 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`7507be0`](https://github.com/stdlib-js/stdlib/commit/7507be008cc27aa0c74770a29cd4b4507eca6745) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
+-   [`f0602e3`](https://github.com/stdlib-js/stdlib/commit/f0602e31fcfab3c05954ac9b3d37ae01d3f51b6b) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`bdc7714`](https://github.com/stdlib-js/stdlib/commit/bdc7714ba936acb59f48e22bc8773bb2eb51e9a1) - **docs:** fix grammar _(by Athan Reines)_
 -   [`524b0ff`](https://github.com/stdlib-js/stdlib/commit/524b0ff24c657f76c638191ce996fdd99002b4f7) - **docs:** add use cases and notes _(by Athan Reines)_
 -   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_

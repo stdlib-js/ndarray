@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { OutputPolicy, DataType, typedndarray } from '@stdlib/types/ndarray';
+import { OutputPolicy, InputCastingPolicy, DataType, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Input array.
@@ -97,6 +97,21 @@ interface DispatchTable<T, U> extends BaseDispatchTable<T, U> {
 }
 
 /**
+* Dispatch policies.
+*/
+interface Policies {
+	/**
+	* Output data type policy.
+	*/
+	output: OutputPolicy;
+
+	/**
+	* Input ndarray casting policy.
+	*/
+	casting: InputCastingPolicy;
+}
+
+/**
 * Interface for applying an operation to an ndarray.
 */
 interface UnaryFunction<T, U> {
@@ -115,7 +130,10 @@ interface UnaryFunction<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
@@ -149,7 +167,10 @@ interface UnaryFunction<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
@@ -189,7 +210,10 @@ interface UnaryFunction<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
@@ -220,7 +244,7 @@ interface UnaryFunction<T, U> {
 * @param table - dispatch table
 * @param idtypes - list containing lists of supported input data types for each ndarray argument
 * @param odtypes - list of supported output data types
-* @param policy - output data type policy
+* @param policies - dispatch policies
 * @returns function for applying a unary function
 *
 * @example
@@ -231,7 +255,10 @@ interface UnaryFunction<T, U> {
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
@@ -247,7 +274,7 @@ interface UnaryFunction<T, U> {
 * var arr = ndarray2array( y );
 * // returns [ -1.0, 2.0, 2.0 ]
 */
-declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryFunction<T, U>;
+declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryFunction<T, U>;
 
 
 // EXPORTS //

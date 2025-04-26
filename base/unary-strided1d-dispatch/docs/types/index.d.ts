@@ -21,7 +21,7 @@
 /// <reference types="@stdlib/types"/>
 
 import { ArrayLike } from '@stdlib/types/array';
-import { OutputPolicy, DataType, typedndarray } from '@stdlib/types/ndarray';
+import { OutputPolicy, InputCastingPolicy, DataType, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Input array.
@@ -97,6 +97,21 @@ interface DispatchTable<T, U> extends BaseDispatchTable<T, U> {
 }
 
 /**
+* Dispatch policies.
+*/
+interface Policies {
+	/**
+	* Output data type policy.
+	*/
+	output: OutputPolicy;
+
+	/**
+	* Input ndarray casting policy.
+	*/
+	casting: InputCastingPolicy;
+}
+
+/**
 * Class for applying a strided function to an input ndarray.
 */
 declare class UnaryStrided1dDispatch<T, U> {
@@ -106,7 +121,7 @@ declare class UnaryStrided1dDispatch<T, U> {
 	* @param table - dispatch table
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
-	* @param policy - output data type policy
+	* @param policies - dispatch policies
 	* @returns instance
 	*
 	* @example
@@ -117,12 +132,15 @@ declare class UnaryStrided1dDispatch<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -133,7 +151,7 @@ declare class UnaryStrided1dDispatch<T, U> {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy );
+	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies );
 
 	/**
 	* Applies a strided function to a provided input ndarray.
@@ -150,12 +168,15 @@ declare class UnaryStrided1dDispatch<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -184,12 +205,15 @@ declare class UnaryStrided1dDispatch<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -224,12 +248,15 @@ declare class UnaryStrided1dDispatch<T, U> {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -259,7 +286,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* @param table - dispatch table
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
-	* @param policy - output data type policy
+	* @param policies - dispatch policies
 	* @returns instance
 	*
 	* @example
@@ -270,12 +297,15 @@ interface UnaryStrided1dDispatchConstructor {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -286,7 +316,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
+	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatch<T, U>;
 
 	/**
 	* Constructor for applying a strided function to an input ndarray.
@@ -294,7 +324,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* @param table - dispatch table
 	* @param idtypes - list containing lists of supported input data types for each ndarray argument
 	* @param odtypes - list of supported output data types
-	* @param policy - output data type policy
+	* @param policies - dispatch policies
 	* @returns instance
 	*
 	* @example
@@ -305,12 +335,15 @@ interface UnaryStrided1dDispatchConstructor {
 	*
 	* var idt = dtypes( 'real_and_generic' );
 	* var odt = idt;
-	* var policy = 'same';
+	* var policies = {
+	*     'output': 'same',
+	*     'casting': 'none'
+	* };
 	*
 	* var table = {
 	*     'default': base
 	* };
-	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+	* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -321,7 +354,7 @@ interface UnaryStrided1dDispatchConstructor {
 	* var arr = ndarray2array( y );
 	* // returns [ -1.0, 2.0, 2.0 ]
 	*/
-	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policy: OutputPolicy ): UnaryStrided1dDispatch<T, U>;
+	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatch<T, U>;
 }
 
 /**
@@ -330,7 +363,7 @@ interface UnaryStrided1dDispatchConstructor {
 * @param table - dispatch table
 * @param idtypes - list containing lists of supported input data types for each ndarray argument
 * @param odtypes - list of supported output data types
-* @param policy - output data type policy
+* @param policies - dispatch policies
 * @returns instance
 *
 * @example
@@ -341,12 +374,15 @@ interface UnaryStrided1dDispatchConstructor {
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policy );
+* var cumax = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );

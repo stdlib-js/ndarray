@@ -35,11 +35,13 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 * @param {ArrayLikeObject<Function>} [table.fcns] - list of strided functions which are specific to specialized input and output ndarray argument signatures
 * @param {ArrayLikeObject<StringArray>} idtypes - list containing lists of supported input data types for each ndarray argument
 * @param {StringArray} odtypes - list of supported output data types
-* @param {string} policy - output data type policy
+* @param {Object} policies - policies
+* @param {string} policies.output - output data type policy
+* @param {string} policies.casting - input ndarray casting policy
 * @throws {TypeError} first argument must be an object having valid properties
 * @throws {TypeError} second argument must be an array containing arrays of supported data types
 * @throws {TypeError} third argument must be an array of supported data types
-* @throws {TypeError} fourth argument must be a supported output data type policy
+* @throws {TypeError} fourth argument must be an object having supported policies
 * @throws {Error} first argument must be an object having valid properties
 * @returns {Function} function for applying a strided function an ndarray
 *
@@ -51,12 +53,15 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var cumax = factory( table, [ idt ], odt, policy );
+* var cumax = factory( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -75,12 +80,15 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 *
 * var idt = dtypes( 'real_and_generic' );
 * var odt = idt;
-* var policy = 'same';
+* var policies = {
+*     'output': 'same',
+*     'casting': 'none'
+* };
 *
 * var table = {
 *     'default': base
 * };
-* var cumax = factory( table, [ idt ], odt, policy );
+* var cumax = factory( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -97,8 +105,8 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 * var bool = ( out === y );
 * // returns true
 */
-function factory( table, idtypes, odtypes, policy ) {
-	var f = new UnaryStrided1dDispatch( table, idtypes, odtypes, policy );
+function factory( table, idtypes, odtypes, policies ) {
+	var f = new UnaryStrided1dDispatch( table, idtypes, odtypes, policies );
 	setReadOnly( main, 'assign', assign );
 	return main;
 
