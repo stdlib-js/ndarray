@@ -4,12 +4,20 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-25)
+## Unreleased (2025-04-26)
 
 <section class="features">
 
 ### Features
 
+-   [`1bbc59f`](https://github.com/stdlib-js/stdlib/commit/1bbc59f31cd81f3058f6c568567acdbd8056526b) - add `isBooleanIndexDataType` to namespace
+-   [`1281240`](https://github.com/stdlib-js/stdlib/commit/128124061f8609ef1a5eaec35e6872ee3e119671) - add `ndarray/base/assert/is-boolean-index-data-type`
+-   [`13702c8`](https://github.com/stdlib-js/stdlib/commit/13702c885f2a27bc95d4d563ebd4ed27f10103cc) - add `isMaskIndexDataType` to namespace
+-   [`0feae39`](https://github.com/stdlib-js/stdlib/commit/0feae395dfe2c602d11ce118387dbe9270b3a270) - add `ndarray/base/assert/is-mask-index-data-type`
+-   [`9c59659`](https://github.com/stdlib-js/stdlib/commit/9c59659f08f6ce5e52a8ae97ed9840391832ac36) - add `isIntegerIndexDataType` to namespace
+-   [`262df73`](https://github.com/stdlib-js/stdlib/commit/262df739241e51bd92e21d5cb9168dc71972fec4) - add `ndarray/base/assert/is-integer-index-data-type`
+-   [`a61e5b4`](https://github.com/stdlib-js/stdlib/commit/a61e5b4d222cbb72e236f6293279edc87641eb91) - add `isIndexDataType` to namespace
+-   [`bd8958d`](https://github.com/stdlib-js/stdlib/commit/bd8958d43f54be203ffa1f6665a51f782a4aca6d) - add `ndarray/base/assert/is-index-data-type`
 -   [`06667ad`](https://github.com/stdlib-js/stdlib/commit/06667ad3af114bad67b73ec1e78352044612186e) - add accumulation and index data type policies
 -   [`83b4397`](https://github.com/stdlib-js/stdlib/commit/83b4397ead81f62400301a333ada0882da688ee8) - add default `indexing` data type
 -   [`a76c12c`](https://github.com/stdlib-js/stdlib/commit/a76c12c36a3ec2c34ca6d9798f7e72e42f6d0597) - add `indexing` data type kind
@@ -270,6 +278,14 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`1bbc59f`](https://github.com/stdlib-js/stdlib/commit/1bbc59f31cd81f3058f6c568567acdbd8056526b) - **feat:** add `isBooleanIndexDataType` to namespace _(by Athan Reines)_
+-   [`1281240`](https://github.com/stdlib-js/stdlib/commit/128124061f8609ef1a5eaec35e6872ee3e119671) - **feat:** add `ndarray/base/assert/is-boolean-index-data-type` _(by Athan Reines)_
+-   [`13702c8`](https://github.com/stdlib-js/stdlib/commit/13702c885f2a27bc95d4d563ebd4ed27f10103cc) - **feat:** add `isMaskIndexDataType` to namespace _(by Athan Reines)_
+-   [`0feae39`](https://github.com/stdlib-js/stdlib/commit/0feae395dfe2c602d11ce118387dbe9270b3a270) - **feat:** add `ndarray/base/assert/is-mask-index-data-type` _(by Athan Reines)_
+-   [`9c59659`](https://github.com/stdlib-js/stdlib/commit/9c59659f08f6ce5e52a8ae97ed9840391832ac36) - **feat:** add `isIntegerIndexDataType` to namespace _(by Athan Reines)_
+-   [`262df73`](https://github.com/stdlib-js/stdlib/commit/262df739241e51bd92e21d5cb9168dc71972fec4) - **feat:** add `ndarray/base/assert/is-integer-index-data-type` _(by Athan Reines)_
+-   [`a61e5b4`](https://github.com/stdlib-js/stdlib/commit/a61e5b4d222cbb72e236f6293279edc87641eb91) - **feat:** add `isIndexDataType` to namespace _(by Athan Reines)_
+-   [`bd8958d`](https://github.com/stdlib-js/stdlib/commit/bd8958d43f54be203ffa1f6665a51f782a4aca6d) - **feat:** add `ndarray/base/assert/is-index-data-type` _(by Athan Reines)_
 -   [`06667ad`](https://github.com/stdlib-js/stdlib/commit/06667ad3af114bad67b73ec1e78352044612186e) - **feat:** add accumulation and index data type policies _(by Athan Reines)_
 -   [`ebe55b2`](https://github.com/stdlib-js/stdlib/commit/ebe55b2015d81d3b0f7288dc87451a2f0d362d47) - **fix:** update hash table _(by Athan Reines)_
 -   [`e842143`](https://github.com/stdlib-js/stdlib/commit/e8421431fa8e811d57761310af0460c6f0ea37b5) - **refactor:** rename `indexing` to `index` and add defaults for specialized index data types _(by Athan Reines)_

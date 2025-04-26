@@ -64,6 +64,15 @@ setReadOnly( ns, 'isAllowedDataTypeCast', require( './../../../base/assert/is-al
 setReadOnly( ns, 'isBooleanDataType', require( './../../../base/assert/is-boolean-data-type' ) );
 
 /**
+* @name isBooleanIndexDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-boolean-index-data-type}
+*/
+setReadOnly( ns, 'isBooleanIndexDataType', require( './../../../base/assert/is-boolean-index-data-type' ) );
+
+/**
 * @name isBufferLengthCompatible
 * @memberof ns
 * @readonly
@@ -154,6 +163,15 @@ setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) 
 setReadOnly( ns, 'isFloatingPointDataType', require( './../../../base/assert/is-floating-point-data-type' ) );
 
 /**
+* @name isIndexDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-index-data-type}
+*/
+setReadOnly( ns, 'isIndexDataType', require( './../../../base/assert/is-index-data-type' ) );
+
+/**
 * @name isIndexMode
 * @memberof ns
 * @readonly
@@ -170,6 +188,24 @@ setReadOnly( ns, 'isIndexMode', require( './../../../base/assert/is-index-mode' 
 * @see {@link module:@stdlib/ndarray/base/assert/is-integer-data-type}
 */
 setReadOnly( ns, 'isIntegerDataType', require( './../../../base/assert/is-integer-data-type' ) );
+
+/**
+* @name isIntegerIndexDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-integer-index-data-type}
+*/
+setReadOnly( ns, 'isIntegerIndexDataType', require( './../../../base/assert/is-integer-index-data-type' ) );
+
+/**
+* @name isMaskIndexDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-mask-index-data-type}
+*/
+setReadOnly( ns, 'isMaskIndexDataType', require( './../../../base/assert/is-mask-index-data-type' ) );
 
 /**
 * @name isMostlySafeDataTypeCast
