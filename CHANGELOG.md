@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-26)
+## Unreleased (2025-04-27)
 
 <section class="features">
 
 ### Features
 
+-   [`b087d7b`](https://github.com/stdlib-js/stdlib/commit/b087d7b801c7cae56cb39587b295fb7433638405) - add support for enforcing traversal order
+-   [`d1bc036`](https://github.com/stdlib-js/stdlib/commit/d1bc0365ded44eefb0073b8ae9bf582041b49be5) - add support for enforcing traversal order
+-   [`aa7edbf`](https://github.com/stdlib-js/stdlib/commit/aa7edbf50d41cdea1f28b13537f2810fa84ef3c7) - add support for enforcing traversal order
 -   [`19a94ba`](https://github.com/stdlib-js/stdlib/commit/19a94ba6becae6ee0d021a1ad11af0bfa6ffa116) - add `unaryInputCastingDataType` to namespace
 -   [`c6195ff`](https://github.com/stdlib-js/stdlib/commit/c6195ff858e3ba8b90a0560dd0af753be76b5d44) - add `ndarray/base/unary-input-casting-dtype`
 -   [`a127aaf`](https://github.com/stdlib-js/stdlib/commit/a127aaf3a0a12ec7f2ae62e5fbb2bed4d67f9794) - add support for accumulation and index policies
@@ -205,6 +208,9 @@
 
 ### Bug Fixes
 
+-   [`ccba75e`](https://github.com/stdlib-js/stdlib/commit/ccba75ea9ec47fe7ccc85f87dff6c9759294094e) - address off-by-one error
+-   [`954292d`](https://github.com/stdlib-js/stdlib/commit/954292d127bf5dfd360df92ab5e73bac33a9b673) - address off-by-one error
+-   [`f3e3561`](https://github.com/stdlib-js/stdlib/commit/f3e3561a46cca1fbb13c0a1b5eb5f5475ef9b032) - address off-by-one error
 -   [`79f6ac4`](https://github.com/stdlib-js/stdlib/commit/79f6ac4a6aa789b2e012126b8b485c8173a89f11) - accumulate in the default real-valued floating-point dtype
 -   [`ebe55b2`](https://github.com/stdlib-js/stdlib/commit/ebe55b2015d81d3b0f7288dc87451a2f0d362d47) - update hash table
 -   [`b43db40`](https://github.com/stdlib-js/stdlib/commit/b43db40273306f34ee9cde05d82c7fb9207aeb2b) - ensure correct ndarray argument order where output ndarray should be second ndarray argument
@@ -292,6 +298,14 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`b087d7b`](https://github.com/stdlib-js/stdlib/commit/b087d7b801c7cae56cb39587b295fb7433638405) - **feat:** add support for enforcing traversal order _(by Athan Reines)_
+-   [`d1bc036`](https://github.com/stdlib-js/stdlib/commit/d1bc0365ded44eefb0073b8ae9bf582041b49be5) - **feat:** add support for enforcing traversal order _(by Athan Reines)_
+-   [`aa7edbf`](https://github.com/stdlib-js/stdlib/commit/aa7edbf50d41cdea1f28b13537f2810fa84ef3c7) - **feat:** add support for enforcing traversal order _(by Athan Reines)_
+-   [`ccba75e`](https://github.com/stdlib-js/stdlib/commit/ccba75ea9ec47fe7ccc85f87dff6c9759294094e) - **fix:** address off-by-one error _(by Athan Reines)_
+-   [`954292d`](https://github.com/stdlib-js/stdlib/commit/954292d127bf5dfd360df92ab5e73bac33a9b673) - **fix:** address off-by-one error _(by Athan Reines)_
+-   [`f3e3561`](https://github.com/stdlib-js/stdlib/commit/f3e3561a46cca1fbb13c0a1b5eb5f5475ef9b032) - **fix:** address off-by-one error _(by Athan Reines)_
+-   [`9db35a0`](https://github.com/stdlib-js/stdlib/commit/9db35a046ad390bb8d781c43641dc1b01fe20cbf) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`abc70f7`](https://github.com/stdlib-js/stdlib/commit/abc70f761f409120b8a44de8023bcab6138c9cc9) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`7507be0`](https://github.com/stdlib-js/stdlib/commit/7507be008cc27aa0c74770a29cd4b4507eca6745) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`f0602e3`](https://github.com/stdlib-js/stdlib/commit/f0602e31fcfab3c05954ac9b3d37ae01d3f51b6b) - **refactor:** replace policy string argument with a policy object _(by Athan Reines)_
 -   [`bdc7714`](https://github.com/stdlib-js/stdlib/commit/bdc7714ba936acb59f48e22bc8773bb2eb51e9a1) - **docs:** fix grammar _(by Athan Reines)_
