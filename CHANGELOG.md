@@ -284,9 +284,9 @@
 
 ### Closed Issues
 
-A total of 13 issues were closed in this release:
+A total of 14 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776)
 
 </section>
 
@@ -298,6 +298,7 @@ A total of 13 issues were closed in this release:
 
 <details>
 
+-   [`e1e45f6`](https://github.com/stdlib-js/stdlib/commit/e1e45f6323aa212a1ae7bbc0ac584131f7c87805) - **chore:** fix EditorConfig lint errors [(#6860)](https://github.com/stdlib-js/stdlib/pull/6860) _(by zhanggy)_
 -   [`6bf62ef`](https://github.com/stdlib-js/stdlib/commit/6bf62efb7fde322edbdf4e0b46a74473dbd62d60) - **refactor:** update error message _(by Athan Reines)_
 -   [`6464a4b`](https://github.com/stdlib-js/stdlib/commit/6464a4ba00ba9579a2da77a0e2282a0f03bfdc01) - **docs:** update namespace table of contents [(#6828)](https://github.com/stdlib-js/stdlib/pull/6828) _(by stdlib-bot)_
 -   [`25abfc6`](https://github.com/stdlib-js/stdlib/commit/25abfc67b400f646304fa1f10b239a051f6569f6) - **refactor:** support non-built-in shape and strides objects _(by Athan Reines)_
@@ -808,7 +809,7 @@ A total of 13 issues were closed in this release:
 
 ### Contributors
 
-A total of 14 people contributed to this release. Thank you to the following contributors:
+A total of 15 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -824,6 +825,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 -   devshree-bhati
 -   ditsu
 -   lohithganni
+-   zhanggy
 
 </section>
 
