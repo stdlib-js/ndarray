@@ -25,6 +25,7 @@ var isRealDataType = require( './../../../base/assert/is-real-data-type' );
 var isComplexArray = require( '@stdlib/array/base/assert/is-complex-typed-array' );
 var isBooleanArray = require( '@stdlib/array/base/assert/is-booleanarray' );
 var iterationOrder = require( './../../../base/iteration-order' );
+var strides2order = require( './../../../base/strides2order' );
 var castReturn = require( '@stdlib/complex/base/cast-return' );
 var complexCtors = require( '@stdlib/complex/ctors' );
 var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
@@ -351,7 +352,7 @@ function assign( arrays ) {
 	ioy = iterationOrder( sy ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && iox === ioy ) {
+	if ( iox !== 0 && ioy !== 0 && strides2order( sx ) === strides2order( sy ) ) { // eslint-disable-line max-len
 		// Determine the minimum and maximum linear indices which are accessible by the array views:
 		xmmv = minmaxViewBufferIndex( shx, sx, x.offset );
 		ymmv = minmaxViewBufferIndex( shy, sy, y.offset );

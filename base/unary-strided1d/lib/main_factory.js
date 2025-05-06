@@ -26,6 +26,7 @@ var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed2 = require( '@stdlib/array/base/take-indexed2' );
 var takeIndexed = require( '@stdlib/array/base/take-indexed' );
 var iterationOrder = require( './../../../base/iteration-order' );
+var strides2order = require( './../../../base/strides2order' );
 var numel = require( './../../../base/numel' );
 var join = require( '@stdlib/array/base/join' );
 var format = require( '@stdlib/string/format' );
@@ -500,8 +501,8 @@ function factory( options ) {
 		ioy = iterationOrder( sly ); // +/-1
 
 		// Determine whether we can avoid blocked iteration...
-		if ( iox !== 0 && ioy !== 0 && iox === ioy && K <= MAX_DIMS ) {
-			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
+		if ( iox !== 0 && ioy !== 0 && strides2order( slx ) === strides2order( sly ) && K <= MAX_DIMS ) { // eslint-disable-line max-len
+			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides) and the memory layouts are the same, we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			return UNARY[ K ]( fcn, arr, views, shl, slx, sly, strategyX, strategyY, opts ); // eslint-disable-line max-len
 		}
 		// Check whether blocked iteration is prohibited due to a requirement that the order of element traversal match the memory layout of a provided input ndarray...

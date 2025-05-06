@@ -21,6 +21,7 @@
 // MODULES //
 
 var iterationOrder = require( './../../../base/iteration-order' );
+var strides2order = require( './../../../base/strides2order' );
 var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
 var ndarray2object = require( './../../../base/ndarraylike2object' );
 var blockedaccessorunary2d = require( './2d_blocked_accessors.js' );
@@ -282,7 +283,7 @@ function unaryBy( arrays, fcn, clbk, thisArg ) {
 	ioy = iterationOrder( sy ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && iox === ioy ) {
+	if ( iox !== 0 && ioy !== 0 && strides2order( sx ) === strides2order( sy ) ) { // eslint-disable-line max-len
 		// Determine the minimum and maximum linear indices which are accessible by the array views:
 		xmmv = minmaxViewBufferIndex( shx, sx, x.offset );
 		ymmv = minmaxViewBufferIndex( shy, sy, y.offset );

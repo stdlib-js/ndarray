@@ -25,6 +25,7 @@ var normalizeIndices = require( './../../../base/to-unique-normalized-indices' )
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
 var takeIndexed2 = require( '@stdlib/array/base/take-indexed2' );
 var iterationOrder = require( './../../../base/iteration-order' );
+var strides2order = require( './../../../base/strides2order' );
 var numel = require( './../../../base/numel' );
 var join = require( '@stdlib/array/base/join' );
 var format = require( '@stdlib/string/format' );
@@ -466,8 +467,8 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) { // eslint-disable-
 	ioy = iterationOrder( sy ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && iox === ioy && K <= MAX_DIMS ) {
-		// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
+	if ( iox !== 0 && ioy !== 0 && strides2order( sl ) === strides2order( sy ) && K <= MAX_DIMS ) { // eslint-disable-line max-len
+		// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides) and the memory layouts are the same, we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 		if ( y.accessorProtocol ) {
 			return ACCESSOR_UNARY[ K ]( fcn, arr, views, sl, strategy, opts );
 		}
