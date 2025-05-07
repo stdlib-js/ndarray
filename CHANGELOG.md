@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-06)
+## Unreleased (2025-05-07)
 
 <section class="features">
 
@@ -350,6 +350,7 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`3dd8cb3`](https://github.com/stdlib-js/stdlib/commit/3dd8cb379ea22c4a92d610d146cdd662d3187e27) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`b403898`](https://github.com/stdlib-js/stdlib/commit/b403898016bc31f1331765bb5bfbcab94f0e1692) - **test:** add initial tests _(by Athan Reines)_
 -   [`590a7d9`](https://github.com/stdlib-js/stdlib/commit/590a7d9fc1e57249015e425c59201fc9e5daeb0c) - **docs:** add REPL help and TypeScript declarations _(by Athan Reines)_
 -   [`903ffa2`](https://github.com/stdlib-js/stdlib/commit/903ffa2ffea01672dd401cfe3c210a525c484590) - **docs:** add example _(by Athan Reines)_
