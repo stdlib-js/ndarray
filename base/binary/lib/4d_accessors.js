@@ -18,11 +18,6 @@
 
 'use strict';
 
-// MODULES //
-
-var isRowMajor = require( './../../../base/assert/is-row-major-string' );
-
-
 // MAIN //
 
 /**
@@ -53,6 +48,7 @@ var isRowMajor = require( './../../../base/assert/is-row-major-string' );
 * @param {NonNegativeInteger} z.offset - index offset
 * @param {string} z.order - specifies whether `z` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} z.accessors - data buffer accessors
+* @param {boolean} isRowMajor - boolean indicating if provided arrays are in row-major order
 * @param {Callback} fcn - binary callback
 * @returns {void}
 *
@@ -113,12 +109,12 @@ var isRowMajor = require( './../../../base/assert/is-row-major-string' );
 * };
 *
 * // Apply the binary function:
-* binary4d( x, y, z, fcn );
+* binary4d( x, y, z, true, fcn );
 *
 * console.log( copy( z.data ) );
 * // => [ 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0 ]
 */
-function binary4d( x, y, z, fcn ) {
+function binary4d( x, y, z, isRowMajor, fcn ) {
 	var xbuf;
 	var ybuf;
 	var zbuf;
@@ -160,7 +156,7 @@ function binary4d( x, y, z, fcn ) {
 	sx = x.strides;
 	sy = y.strides;
 	sz = z.strides;
-	if ( isRowMajor( x.order ) ) {
+	if ( isRowMajor ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 3 ];
 		S1 = sh[ 2 ];

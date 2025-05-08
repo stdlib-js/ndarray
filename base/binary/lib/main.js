@@ -24,6 +24,7 @@ var iterationOrder = require( './../../../base/iteration-order' );
 var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
 var ndarray2object = require( './../../../base/ndarraylike2object' );
 var strides2order = require( './../../../base/strides2order' );
+var anyIsEntryIn = require( '@stdlib/array/base/assert/any-is-entry-in' );
 var format = require( '@stdlib/string/format' );
 var blockedaccessorbinary2d = require( './2d_blocked_accessors.js' );
 var blockedaccessorbinary3d = require( './3d_blocked_accessors.js' );
@@ -134,7 +135,7 @@ var MAX_DIMS = BINARY.length - 1;
 * @returns {boolean} boolean indicating whether an ndarray data buffer implements the accessor protocol
 */
 function hasAccessors( x, y, z ) {
-	return ( x.accessorProtocol || y.accessorProtocol || z.accessorProtocol );
+	return anyIsEntryIn( [ x, y, z ], 'accessorProtocol', true );
 }
 
 
@@ -348,9 +349,9 @@ function binary( arrays, fcn ) { // eslint-disable-line max-statements
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( hasAccessors( x, y, z ) ) {
-				return ACCESSOR_BINARY[ ndims ]( x, y, z, fcn );
+				return ACCESSOR_BINARY[ ndims ]( x, y, z, ord === 1, fcn );
 			}
-			return BINARY[ ndims ]( x, y, z, fcn );
+			return BINARY[ ndims ]( x, y, z, ord === 1, fcn );
 		}
 		// Fall-through to blocked iteration...
 	}

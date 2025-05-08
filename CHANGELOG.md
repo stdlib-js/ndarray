@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-07)
+## Unreleased (2025-05-08)
 
 <section class="features">
 
@@ -251,6 +251,8 @@
 
 ### Bug Fixes
 
+-   [`18036a4`](https://github.com/stdlib-js/stdlib/commit/18036a4b73cbae2f90f5ce929645d1eb769138dc) - use resolved order when determining increment offsets
+-   [`3ce09af`](https://github.com/stdlib-js/stdlib/commit/3ce09af9819ae7dbaad178179264fc84c5db5690) - ensure separate array instance for each memory layout
 -   [`7c29c2d`](https://github.com/stdlib-js/stdlib/commit/7c29c2d3aea7b8d0396a77f6781d7d76bd7adde4) - use computed order
 -   [`8722299`](https://github.com/stdlib-js/stdlib/commit/8722299df603836eaf1aba2404e833f77db4ed0b) - use computed order
 -   [`e0a04fe`](https://github.com/stdlib-js/stdlib/commit/e0a04fe3cbdcab5adb4529158d2ccf085fb971a6) - use computed order
@@ -350,7 +352,13 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`18036a4`](https://github.com/stdlib-js/stdlib/commit/18036a4b73cbae2f90f5ce929645d1eb769138dc) - **fix:** use resolved order when determining increment offsets _(by Athan Reines)_
+-   [`ac7d5b4`](https://github.com/stdlib-js/stdlib/commit/ac7d5b41eeefdc2a27ffeb244442c2e29feb728c) - **refactor:** use assertion utility rather than hardcoded string _(by Athan Reines)_
+-   [`2464b78`](https://github.com/stdlib-js/stdlib/commit/2464b78c6e164fd048d04d13d57a3ba44707cac9) - **docs:** remove import _(by Athan Reines)_
+-   [`3ce09af`](https://github.com/stdlib-js/stdlib/commit/3ce09af9819ae7dbaad178179264fc84c5db5690) - **fix:** ensure separate array instance for each memory layout _(by Athan Reines)_
+-   [`974d32e`](https://github.com/stdlib-js/stdlib/commit/974d32e3dcd93a5d44360e185a8c66ebbc3e5076) - **refactor:** use base array utility _(by Athan Reines)_
 -   [`3dd8cb3`](https://github.com/stdlib-js/stdlib/commit/3dd8cb379ea22c4a92d610d146cdd662d3187e27) - **chore:** minor clean-up _(by Philipp Burckhardt)_
+-   [`2e62223`](https://github.com/stdlib-js/stdlib/commit/2e6222321d2f7e50afa459c0dc815c56ec83fdf5) - **chore:** remove directory until we have actually added benchmarks _(by Athan Reines)_
 -   [`b403898`](https://github.com/stdlib-js/stdlib/commit/b403898016bc31f1331765bb5bfbcab94f0e1692) - **test:** add initial tests _(by Athan Reines)_
 -   [`590a7d9`](https://github.com/stdlib-js/stdlib/commit/590a7d9fc1e57249015e425c59201fc9e5daeb0c) - **docs:** add REPL help and TypeScript declarations _(by Athan Reines)_
 -   [`903ffa2`](https://github.com/stdlib-js/stdlib/commit/903ffa2ffea01672dd401cfe3c210a525c484590) - **docs:** add example _(by Athan Reines)_
