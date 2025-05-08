@@ -15,7 +15,7 @@
   ],
   "main": "./lib",
   "directories": {
-    "benchmark": "benchmark",
+    "benchmark": "./benchmark",
     "doc": "./docs",
     "example": "./examples",
     "lib": "./lib",
