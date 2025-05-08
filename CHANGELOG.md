@@ -251,6 +251,13 @@
 
 ### Bug Fixes
 
+-   [`ae2b9a3`](https://github.com/stdlib-js/stdlib/commit/ae2b9a327b74ca7bdc03996cbb77a87053d19896) - use resolved order when computing loop variables
+-   [`9bc10d4`](https://github.com/stdlib-js/stdlib/commit/9bc10d4dc2b9afe6b55ca2b6e17c165e9dd2a88d) - use resolved order when computing loop variables
+-   [`ccc7890`](https://github.com/stdlib-js/stdlib/commit/ccc7890aee959303e2defbc627b32f66b18535eb) - check for row-major value
+-   [`d066ec9`](https://github.com/stdlib-js/stdlib/commit/d066ec94f0484e735ea8025e7c9339f248c8d450) - check for row-major value
+-   [`4795826`](https://github.com/stdlib-js/stdlib/commit/47958261521f7d00ccd325cb978e55af39b9cbe0) - check for row-major value
+-   [`a8bac64`](https://github.com/stdlib-js/stdlib/commit/a8bac644b23c4413a566f309b43857ad779f05cc) - check for row-major value
+-   [`7583774`](https://github.com/stdlib-js/stdlib/commit/7583774f4307a69b9e364a2e60c14ee034fa02a9) - use resolved order when computing loop variables
 -   [`b9e9eca`](https://github.com/stdlib-js/stdlib/commit/b9e9eca93c4611a77122090ab8e589e6ba82e47b) - use resolved order when computing loop variables
 -   [`1e0917b`](https://github.com/stdlib-js/stdlib/commit/1e0917b1bba1d273d93e8fa97cc8a060661bbbf0) - use resolved order when computing loop variables
 -   [`92bf1a1`](https://github.com/stdlib-js/stdlib/commit/92bf1a12b2398ec5823eb3094bdc89f88d9876a7) - use resolved order when computing loop variables
@@ -362,6 +369,18 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`f328b4f`](https://github.com/stdlib-js/stdlib/commit/f328b4f3b5bc69a79761c820e56c5849c7616dee) - **docs:** add README _(by Athan Reines)_
+-   [`c713f5a`](https://github.com/stdlib-js/stdlib/commit/c713f5a247329781c52833ae42b7b86b5a585637) - **bench:** add 1d and 2d benchmarks _(by Athan Reines)_
+-   [`ceb856d`](https://github.com/stdlib-js/stdlib/commit/ceb856d1e079781c58f713c2163b629cf561b963) - **test:** add 2d kernel tests _(by Athan Reines)_
+-   [`4901ce8`](https://github.com/stdlib-js/stdlib/commit/4901ce89f5f80c080ec2db7d7f6e7405340fec1a) - **test:** add 1d kernel tests _(by Athan Reines)_
+-   [`bcf1683`](https://github.com/stdlib-js/stdlib/commit/bcf1683a583934523896b342f8a1621d3aad9e1c) - **test:** add 0d kernel tests _(by Athan Reines)_
+-   [`ae2b9a3`](https://github.com/stdlib-js/stdlib/commit/ae2b9a327b74ca7bdc03996cbb77a87053d19896) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`9bc10d4`](https://github.com/stdlib-js/stdlib/commit/9bc10d4dc2b9afe6b55ca2b6e17c165e9dd2a88d) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`ccc7890`](https://github.com/stdlib-js/stdlib/commit/ccc7890aee959303e2defbc627b32f66b18535eb) - **fix:** check for row-major value _(by Athan Reines)_
+-   [`d066ec9`](https://github.com/stdlib-js/stdlib/commit/d066ec94f0484e735ea8025e7c9339f248c8d450) - **fix:** check for row-major value _(by Athan Reines)_
+-   [`4795826`](https://github.com/stdlib-js/stdlib/commit/47958261521f7d00ccd325cb978e55af39b9cbe0) - **fix:** check for row-major value _(by Athan Reines)_
+-   [`a8bac64`](https://github.com/stdlib-js/stdlib/commit/a8bac644b23c4413a566f309b43857ad779f05cc) - **fix:** check for row-major value _(by Athan Reines)_
+-   [`7583774`](https://github.com/stdlib-js/stdlib/commit/7583774f4307a69b9e364a2e60c14ee034fa02a9) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
 -   [`a616f66`](https://github.com/stdlib-js/stdlib/commit/a616f66172ea9e5ea730258daff8232f38675e39) - **refactor:** avoid duplicate computation _(by Athan Reines)_
 -   [`1d2c4e2`](https://github.com/stdlib-js/stdlib/commit/1d2c4e2ef621e2304c5d855c4c8b6ed2f9e9e1ad) - **refactor:** avoid duplicate computation _(by Athan Reines)_
 -   [`0fb7df7`](https://github.com/stdlib-js/stdlib/commit/0fb7df7fe84102add9858f53da605a6f2e0d42a9) - **docs:** document expected properties for accessor kernels _(by Athan Reines)_

@@ -320,9 +320,9 @@ function unaryBy( arrays, fcn, clbk, thisArg ) {
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( x.accessorProtocol || y.accessorProtocol ) {
-				return ACCESSOR_UNARY[ ndims ]( x, y, ord, fcn, clbk, thisArg );
+				return ACCESSOR_UNARY[ ndims ]( x, y, ord === 1, fcn, clbk, thisArg ); // eslint-disable-line max-len
 			}
-			return UNARY[ ndims ]( x, y, ord, fcn, clbk, thisArg );
+			return UNARY[ ndims ]( x, y, ord === 1, fcn, clbk, thisArg );
 		}
 		// Fall-through to blocked iteration...
 	}

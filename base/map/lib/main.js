@@ -252,9 +252,9 @@ function map( arrays, fcn, thisArg ) {
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( x.accessorProtocol || y.accessorProtocol ) {
-				return ACCESSOR_MAP[ ndims ]( x, y, ord, fcn, thisArg );
+				return ACCESSOR_MAP[ ndims ]( x, y, ord === 1, fcn, thisArg );
 			}
-			return MAP[ ndims ]( x, y, ord, fcn, thisArg );
+			return MAP[ ndims ]( x, y, ord === 1, fcn, thisArg );
 		}
 		// Fall-through to blocked iteration...
 	}

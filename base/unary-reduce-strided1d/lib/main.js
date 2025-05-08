@@ -326,6 +326,7 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) { // eslint-disable-
 	var shl;
 	var iox;
 	var ioy;
+	var ord;
 	var sc;
 	var sl;
 	var sy;
@@ -467,12 +468,13 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) { // eslint-disable-
 	ioy = iterationOrder( sy ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && strides2order( sl ) === strides2order( sy ) && K <= MAX_DIMS ) { // eslint-disable-line max-len
+	ord = strides2order( sl );
+	if ( iox !== 0 && ioy !== 0 && ord === strides2order( sy ) && K <= MAX_DIMS ) { // eslint-disable-line max-len
 		// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides) and the memory layouts are the same, we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 		if ( y.accessorProtocol ) {
-			return ACCESSOR_UNARY[ K ]( fcn, arr, views, sl, strategy, opts );
+			return ACCESSOR_UNARY[ K ]( fcn, arr, views, sl, ord === 1, strategy, opts ); // eslint-disable-line max-len
 		}
-		return UNARY[ K ]( fcn, arr, views, sl, strategy, opts );
+		return UNARY[ K ]( fcn, arr, views, sl, ord === 1, strategy, opts );
 	}
 	// At this point, we're either dealing with non-contiguous n-dimensional arrays, high dimensional n-dimensional arrays, and/or arrays having differing memory layouts, so our only hope is that we can still perform blocked iteration...
 

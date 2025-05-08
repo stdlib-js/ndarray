@@ -315,9 +315,9 @@ function unary( arrays, fcn ) {
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( x.accessorProtocol || y.accessorProtocol ) {
-				return ACCESSOR_UNARY[ ndims ]( x, y, ord, fcn );
+				return ACCESSOR_UNARY[ ndims ]( x, y, ord === 1, fcn );
 			}
-			return UNARY[ ndims ]( x, y, ord, fcn );
+			return UNARY[ ndims ]( x, y, ord === 1, fcn );
 		}
 		// Fall-through to blocked iteration...
 	}
