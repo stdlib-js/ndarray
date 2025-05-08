@@ -20,11 +20,6 @@
 
 'use strict';
 
-// MODULES //
-
-var strides2order = require( './../../../base/strides2order' );
-
-
 // MAIN //
 
 /**
@@ -45,6 +40,7 @@ var strides2order = require( './../../../base/strides2order' );
 * @param {IntegerArray} y.strides - stride lengths
 * @param {NonNegativeInteger} y.offset - index offset
 * @param {string} y.order - specifies whether `y` is row-major (C-style) or column-major (Fortran-style)
+* @param {boolean} isRowMajor - boolean indicating if provided arrays are in row-major order
 * @param {Callback} fcn - unary callback
 * @returns {void}
 *
@@ -89,12 +85,12 @@ var strides2order = require( './../../../base/strides2order' );
 * };
 *
 * // Apply the unary function:
-* unary6d( x, y, scale );
+* unary6d( x, y, true, scale );
 *
 * console.log( y.data );
 * // => <Float64Array>[ 20.0, 30.0, 60.0, 70.0, 100.0, 110.0 ]
 */
-function unary6d( x, y, fcn ) {
+function unary6d( x, y, isRowMajor, fcn ) {
 	var xbuf;
 	var ybuf;
 	var dx0;
@@ -133,7 +129,7 @@ function unary6d( x, y, fcn ) {
 	sh = x.shape;
 	sx = x.strides;
 	sy = y.strides;
-	if ( strides2order( sx ) === 1 ) {
+	if ( isRowMajor ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 5 ];
 		S1 = sh[ 4 ];

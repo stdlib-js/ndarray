@@ -199,6 +199,7 @@ function unary( arrays, fcn ) {
 	var iox;
 	var ioy;
 	var len;
+	var ord;
 	var sx;
 	var sy;
 	var ox;
@@ -278,7 +279,8 @@ function unary( arrays, fcn ) {
 	ioy = iterationOrder( sy ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && strides2order( sx ) === strides2order( sy ) ) { // eslint-disable-line max-len
+	ord = strides2order( sx );
+	if ( iox !== 0 && ioy !== 0 && ord === strides2order( sy ) ) {
 		// Determine the minimum and maximum linear indices which are accessible by the array views:
 		xmmv = minmaxViewBufferIndex( shx, sx, x.offset );
 		ymmv = minmaxViewBufferIndex( shy, sy, y.offset );
@@ -313,9 +315,9 @@ function unary( arrays, fcn ) {
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( x.accessorProtocol || y.accessorProtocol ) {
-				return ACCESSOR_UNARY[ ndims ]( x, y, fcn );
+				return ACCESSOR_UNARY[ ndims ]( x, y, ord, fcn );
 			}
-			return UNARY[ ndims ]( x, y, fcn );
+			return UNARY[ ndims ]( x, y, ord, fcn );
 		}
 		// Fall-through to blocked iteration...
 	}

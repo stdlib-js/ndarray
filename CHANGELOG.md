@@ -362,6 +362,10 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`a616f66`](https://github.com/stdlib-js/stdlib/commit/a616f66172ea9e5ea730258daff8232f38675e39) - **refactor:** avoid duplicate computation _(by Athan Reines)_
+-   [`1d2c4e2`](https://github.com/stdlib-js/stdlib/commit/1d2c4e2ef621e2304c5d855c4c8b6ed2f9e9e1ad) - **refactor:** avoid duplicate computation _(by Athan Reines)_
+-   [`0fb7df7`](https://github.com/stdlib-js/stdlib/commit/0fb7df7fe84102add9858f53da605a6f2e0d42a9) - **docs:** document expected properties for accessor kernels _(by Athan Reines)_
+-   [`529687d`](https://github.com/stdlib-js/stdlib/commit/529687d72291fe7c2f717e24bffe55130375139d) - **refactor:** avoid duplicate computation _(by Athan Reines)_
 -   [`b9e9eca`](https://github.com/stdlib-js/stdlib/commit/b9e9eca93c4611a77122090ab8e589e6ba82e47b) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
 -   [`1e0917b`](https://github.com/stdlib-js/stdlib/commit/1e0917b1bba1d273d93e8fa97cc8a060661bbbf0) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
 -   [`92bf1a1`](https://github.com/stdlib-js/stdlib/commit/92bf1a12b2398ec5823eb3094bdc89f88d9876a7) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_

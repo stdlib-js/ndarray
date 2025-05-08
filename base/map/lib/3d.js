@@ -20,7 +20,6 @@
 
 // MODULES //
 
-var strides2order = require( './../../../base/strides2order' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var reverse = require( '@stdlib/array/base/reverse' );
 var take = require( '@stdlib/array/base/take-indexed' );
@@ -47,6 +46,7 @@ var take = require( '@stdlib/array/base/take-indexed' );
 * @param {IntegerArray} y.strides - stride lengths
 * @param {NonNegativeInteger} y.offset - index offset
 * @param {string} y.order - specifies whether `y` is row-major (C-style) or column-major (Fortran-style)
+* @param {boolean} isRowMajor - boolean indicating if provided arrays are in row-major order
 * @param {Callback} fcn - callback function
 * @param {*} thisArg - callback execution context
 * @returns {void}
@@ -93,12 +93,12 @@ var take = require( '@stdlib/array/base/take-indexed' );
 * };
 *
 * // Apply the map function:
-* map3d( x, y, scale, {} );
+* map3d( x, y, true, scale, {} );
 *
 * console.log( y.data );
 * // => <Float64Array>[ 20.0, 30.0, 60.0, 70.0, 100.0, 110.0 ]
 */
-function map3d( x, y, fcn, thisArg ) {
+function map3d( x, y, isRowMajor, fcn, thisArg ) {
 	var xbuf;
 	var ybuf;
 	var dx0;
@@ -127,7 +127,7 @@ function map3d( x, y, fcn, thisArg ) {
 	sx = x.strides;
 	sy = y.strides;
 	idx = zeroTo( sh.length );
-	if ( strides2order( sx ) === 1 ) {
+	if ( isRowMajor ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 2 ];
 		S1 = sh[ 1 ];

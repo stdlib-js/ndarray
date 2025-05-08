@@ -196,6 +196,7 @@ function map( arrays, fcn, thisArg ) {
 	var iox;
 	var ioy;
 	var len;
+	var ord;
 	var x;
 	var y;
 	var i;
@@ -245,14 +246,15 @@ function map( arrays, fcn, thisArg ) {
 	ioy = iterationOrder( y.strides ); // +/-1
 
 	// Determine whether we can avoid blocked iteration...
-	if ( iox !== 0 && ioy !== 0 && strides2order( x.strides ) === strides2order( y.strides ) ) { // eslint-disable-line max-len
+	ord = strides2order( x.strides );
+	if ( iox !== 0 && ioy !== 0 && ord === strides2order( y.strides ) ) {
 		// Determine whether we can use simple nested loops...
 		if ( ndims <= MAX_DIMS ) {
 			// So long as iteration for each respective array always moves in the same direction (i.e., no mixed sign strides), we can leverage cache-optimal (i.e., normal) nested loops without resorting to blocked iteration...
 			if ( x.accessorProtocol || y.accessorProtocol ) {
-				return ACCESSOR_MAP[ ndims ]( x, y, fcn, thisArg );
+				return ACCESSOR_MAP[ ndims ]( x, y, ord, fcn, thisArg );
 			}
-			return MAP[ ndims ]( x, y, fcn, thisArg );
+			return MAP[ ndims ]( x, y, ord, fcn, thisArg );
 		}
 		// Fall-through to blocked iteration...
 	}

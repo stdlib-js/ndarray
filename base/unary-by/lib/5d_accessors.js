@@ -20,11 +20,6 @@
 
 'use strict';
 
-// MODULES //
-
-var strides2order = require( './../../../base/strides2order' );
-
-
 // MAIN //
 
 /**
@@ -47,6 +42,7 @@ var strides2order = require( './../../../base/strides2order' );
 * @param {NonNegativeInteger} y.offset - index offset
 * @param {string} y.order - specifies whether `y` is row-major (C-style) or column-major (Fortran-style)
 * @param {Array<Function>} y.accessors - data buffer accessors
+* @param {boolean} isRowMajor - boolean indicating if provided arrays are in row-major order
 * @param {Function} fcn - unary function to apply to callback return values
 * @param {Callback} clbk - callback
 * @param {*} [thisArg] - callback execution context
@@ -108,7 +104,7 @@ var strides2order = require( './../../../base/strides2order' );
 * };
 *
 * // Apply the unary function:
-* unary5d( x, y, scale, cidentityf );
+* unary5d( x, y, true, scale, cidentityf );
 *
 * var v = y.data.get( 0 );
 *
@@ -118,7 +114,7 @@ var strides2order = require( './../../../base/strides2order' );
 * var im = imagf( v );
 * // returns 20.0
 */
-function unary5d( x, y, fcn, clbk, thisArg ) {
+function unary5d( x, y, isRowMajor, fcn, clbk, thisArg ) {
 	var xbuf;
 	var ybuf;
 	var get;
@@ -157,7 +153,7 @@ function unary5d( x, y, fcn, clbk, thisArg ) {
 	sh = x.shape;
 	sx = x.strides;
 	sy = y.strides;
-	if ( strides2order( sx ) === 1 ) {
+	if ( isRowMajor ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 4 ];
 		S1 = sh[ 3 ];
