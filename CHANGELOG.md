@@ -251,6 +251,7 @@
 
 ### Bug Fixes
 
+-   [`ab22671`](https://github.com/stdlib-js/stdlib/commit/ab2267149121cf347c5be11d7bfc7ee64e4f663a) - use resolved order when computing loop variables
 -   [`18036a4`](https://github.com/stdlib-js/stdlib/commit/18036a4b73cbae2f90f5ce929645d1eb769138dc) - use resolved order when determining increment offsets
 -   [`3ce09af`](https://github.com/stdlib-js/stdlib/commit/3ce09af9819ae7dbaad178179264fc84c5db5690) - ensure separate array instance for each memory layout
 -   [`7c29c2d`](https://github.com/stdlib-js/stdlib/commit/7c29c2d3aea7b8d0396a77f6781d7d76bd7adde4) - use computed order
@@ -352,6 +353,10 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`25f29f8`](https://github.com/stdlib-js/stdlib/commit/25f29f85b888fd71646902ad9cda4f5f6aa62eff) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`3088dea`](https://github.com/stdlib-js/stdlib/commit/3088deabee417ce890ccb15e87066ef11c3f2305) - **test:** fix lint errors _(by Athan Reines)_
+-   [`b9d3f03`](https://github.com/stdlib-js/stdlib/commit/b9d3f03a8fc45fa0f65dc1ded1a5b40125a0a0fb) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`ab22671`](https://github.com/stdlib-js/stdlib/commit/ab2267149121cf347c5be11d7bfc7ee64e4f663a) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
 -   [`18036a4`](https://github.com/stdlib-js/stdlib/commit/18036a4b73cbae2f90f5ce929645d1eb769138dc) - **fix:** use resolved order when determining increment offsets _(by Athan Reines)_
 -   [`ac7d5b4`](https://github.com/stdlib-js/stdlib/commit/ac7d5b41eeefdc2a27ffeb244442c2e29feb728c) - **refactor:** use assertion utility rather than hardcoded string _(by Athan Reines)_
 -   [`2464b78`](https://github.com/stdlib-js/stdlib/commit/2464b78c6e164fd048d04d13d57a3ba44707cac9) - **docs:** remove import _(by Athan Reines)_
