@@ -369,6 +369,12 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`ccb3f8e`](https://github.com/stdlib-js/stdlib/commit/ccb3f8e33a29e6a09074d8bc7e54f0a6fa88a022) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`53de942`](https://github.com/stdlib-js/stdlib/commit/53de94256d47d502f47da4af97c0dfeb6ceb086e) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`b1ed7bc`](https://github.com/stdlib-js/stdlib/commit/b1ed7bc33de9d21119087820e0002a8803d97203) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`7321e29`](https://github.com/stdlib-js/stdlib/commit/7321e294d995d496b35f24f253055190ae6a78d5) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`ed2d89f`](https://github.com/stdlib-js/stdlib/commit/ed2d89f2c0c0950bfb6fad6375296173a7aee0b9) - **refactor:** use base assertion utility _(by Athan Reines)_
+-   [`f84a4f9`](https://github.com/stdlib-js/stdlib/commit/f84a4f981f22b7ac35f917941264e792f4ba854b) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`92b9956`](https://github.com/stdlib-js/stdlib/commit/92b99565374d44d5456a36871bd19a957e33a986) - **chore:** fix EditorConfig lint errors [(#6939)](https://github.com/stdlib-js/stdlib/pull/6939) _(by zhanggy)_
 -   [`3d355ab`](https://github.com/stdlib-js/stdlib/commit/3d355ab124de9c965171d08aebc8d14156fb9711) - **chore:** fix meta data _(by Athan Reines)_
 -   [`79338a4`](https://github.com/stdlib-js/stdlib/commit/79338a45542acc87c31fb6ad7220b8ecab4c467d) - **chore:** update meta data _(by Athan Reines)_

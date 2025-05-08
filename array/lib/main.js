@@ -31,6 +31,7 @@ var strides2offset = require( './../../base/strides2offset' );
 var strides2order = require( './../../base/strides2order' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
+var isColumnMajor = require( './../../base/assert/is-column-major-string' );
 var isDataType = require( './../../base/assert/is-data-type' );
 var isOrder = require( './../../base/assert/is-order' );
 var isCastingMode = require( './../../base/assert/is-casting-mode' );
@@ -321,7 +322,7 @@ function array() {
 		}
 	} else if ( buffer ) {
 		if ( btype === 'generic' && opts.flatten && isArray( buffer ) ) {
-			buffer = flatten( buffer, osh || arrayShape( buffer ), order === 'column-major' );
+			buffer = flatten( buffer, osh || arrayShape( buffer ), isColumnMajor( order ) );
 		}
 		if ( buffer.length !== len ) {
 			throw new RangeError( 'invalid arguments. Array shape is incompatible with provided data source. Number of data source elements does not match array shape.' );
