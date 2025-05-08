@@ -369,6 +369,8 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`48d8be1`](https://github.com/stdlib-js/stdlib/commit/48d8be17cb1fb81b2e30a0ce976391fcf622b4c3) - **test:** add tests _(by Athan Reines)_
+-   [`5bb21e7`](https://github.com/stdlib-js/stdlib/commit/5bb21e71dd19df4153a9e4e10640fa74f1fb9a0a) - **test:** add tests for when strides are transposed _(by Athan Reines)_
 -   [`ccb3f8e`](https://github.com/stdlib-js/stdlib/commit/ccb3f8e33a29e6a09074d8bc7e54f0a6fa88a022) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`53de942`](https://github.com/stdlib-js/stdlib/commit/53de94256d47d502f47da4af97c0dfeb6ceb086e) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`b1ed7bc`](https://github.com/stdlib-js/stdlib/commit/b1ed7bc33de9d21119087820e0002a8803d97203) - **refactor:** use base assertion utility _(by Athan Reines)_
