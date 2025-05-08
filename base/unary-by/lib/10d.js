@@ -20,6 +20,11 @@
 
 'use strict';
 
+// MODULES //
+
+var strides2order = require( './../../../base/strides2order' );
+
+
 // MAIN //
 
 /**
@@ -152,7 +157,7 @@ function unary10d( x, y, fcn, clbk, thisArg ) { // eslint-disable-line max-state
 	sh = x.shape;
 	sx = x.strides;
 	sy = y.strides;
-	if ( x.order === 'row-major' ) {
+	if ( strides2order( sx ) === 1 ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 9 ];
 		S1 = sh[ 8 ];

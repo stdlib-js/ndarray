@@ -18,6 +18,11 @@
 
 'use strict';
 
+// MODULES //
+
+var strides2order = require( './../../../base/strides2order' );
+
+
 // MAIN //
 
 /**
@@ -137,7 +142,7 @@ function unary3d( x, y, fcn ) {
 	sh = x.shape;
 	sx = x.strides;
 	sy = y.strides;
-	if ( x.order === 'row-major' ) {
+	if ( strides2order( sx ) === 1 ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 2 ];
 		S1 = sh[ 1 ];

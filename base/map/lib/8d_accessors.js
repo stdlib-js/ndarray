@@ -22,6 +22,7 @@
 
 // MODULES //
 
+var strides2order = require( './../../../base/strides2order' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var reverse = require( '@stdlib/array/base/reverse' );
 var take = require( '@stdlib/array/base/take-indexed' );
@@ -169,7 +170,7 @@ function map8d( x, y, fcn, thisArg ) { // eslint-disable-line max-statements
 	sx = x.strides;
 	sy = y.strides;
 	idx = zeroTo( sh.length );
-	if ( x.order === 'row-major' ) {
+	if ( strides2order( sx ) === 1 ) {
 		// For row-major ndarrays, the last dimensions have the fastest changing indices...
 		S0 = sh[ 7 ];
 		S1 = sh[ 6 ];

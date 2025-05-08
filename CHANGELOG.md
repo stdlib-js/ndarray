@@ -251,6 +251,15 @@
 
 ### Bug Fixes
 
+-   [`b9e9eca`](https://github.com/stdlib-js/stdlib/commit/b9e9eca93c4611a77122090ab8e589e6ba82e47b) - use resolved order when computing loop variables
+-   [`1e0917b`](https://github.com/stdlib-js/stdlib/commit/1e0917b1bba1d273d93e8fa97cc8a060661bbbf0) - use resolved order when computing loop variables
+-   [`92bf1a1`](https://github.com/stdlib-js/stdlib/commit/92bf1a12b2398ec5823eb3094bdc89f88d9876a7) - use resolved order when computing loop variables
+-   [`742b7ec`](https://github.com/stdlib-js/stdlib/commit/742b7ec1f60fc811148afcea78cfc36dc1018e24) - use resolved order when computing loop variables
+-   [`a19b8f2`](https://github.com/stdlib-js/stdlib/commit/a19b8f2405c62dd79247ef4c3a9a1cadda1f3576) - use resolved order when computing loop variables
+-   [`f7cf8ed`](https://github.com/stdlib-js/stdlib/commit/f7cf8ed8066b7b2fe18a9b9bc6ed1226eb1cc1ea) - use resolved order when computing loop variables
+-   [`f10dd8c`](https://github.com/stdlib-js/stdlib/commit/f10dd8ccbd1c245467d156a1b87f5eb2ba47e0ad) - use resolved order when computing loop variables
+-   [`6c09182`](https://github.com/stdlib-js/stdlib/commit/6c09182156a8a7d13e52660e278b52d9d6b0166a) - use resolved order when computing loop variables
+-   [`ca6378c`](https://github.com/stdlib-js/stdlib/commit/ca6378c56d971ae1c08f162bfda933b7b2fc04cf) - use resolved order when computing loop variables
 -   [`ab22671`](https://github.com/stdlib-js/stdlib/commit/ab2267149121cf347c5be11d7bfc7ee64e4f663a) - use resolved order when computing loop variables
 -   [`18036a4`](https://github.com/stdlib-js/stdlib/commit/18036a4b73cbae2f90f5ce929645d1eb769138dc) - use resolved order when determining increment offsets
 -   [`3ce09af`](https://github.com/stdlib-js/stdlib/commit/3ce09af9819ae7dbaad178179264fc84c5db5690) - ensure separate array instance for each memory layout
@@ -353,6 +362,15 @@ A total of 14 issues were closed in this release:
 
 <details>
 
+-   [`b9e9eca`](https://github.com/stdlib-js/stdlib/commit/b9e9eca93c4611a77122090ab8e589e6ba82e47b) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`1e0917b`](https://github.com/stdlib-js/stdlib/commit/1e0917b1bba1d273d93e8fa97cc8a060661bbbf0) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`92bf1a1`](https://github.com/stdlib-js/stdlib/commit/92bf1a12b2398ec5823eb3094bdc89f88d9876a7) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`742b7ec`](https://github.com/stdlib-js/stdlib/commit/742b7ec1f60fc811148afcea78cfc36dc1018e24) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`a19b8f2`](https://github.com/stdlib-js/stdlib/commit/a19b8f2405c62dd79247ef4c3a9a1cadda1f3576) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`f7cf8ed`](https://github.com/stdlib-js/stdlib/commit/f7cf8ed8066b7b2fe18a9b9bc6ed1226eb1cc1ea) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`f10dd8c`](https://github.com/stdlib-js/stdlib/commit/f10dd8ccbd1c245467d156a1b87f5eb2ba47e0ad) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`6c09182`](https://github.com/stdlib-js/stdlib/commit/6c09182156a8a7d13e52660e278b52d9d6b0166a) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
+-   [`ca6378c`](https://github.com/stdlib-js/stdlib/commit/ca6378c56d971ae1c08f162bfda933b7b2fc04cf) - **fix:** use resolved order when computing loop variables _(by Athan Reines)_
 -   [`25f29f8`](https://github.com/stdlib-js/stdlib/commit/25f29f85b888fd71646902ad9cda4f5f6aa62eff) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`3088dea`](https://github.com/stdlib-js/stdlib/commit/3088deabee417ce890ccb15e87066ef11c3f2305) - **test:** fix lint errors _(by Athan Reines)_
 -   [`b9d3f03`](https://github.com/stdlib-js/stdlib/commit/b9d3f03a8fc45fa0f65dc1ded1a5b40125a0a0fb) - **refactor:** use base assertion utility _(by Athan Reines)_
