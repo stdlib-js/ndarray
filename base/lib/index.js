@@ -59,6 +59,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'assign', require( './../../base/assign' ) );
 
 /**
+* @name binary
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/binary}
+*/
+setReadOnly( ns, 'binary', require( './../../base/binary' ) );
+
+/**
 * @name binaryLoopOrder
 * @memberof ns
 * @readonly
@@ -66,6 +75,15 @@ setReadOnly( ns, 'assign', require( './../../base/assign' ) );
 * @see {@link module:@stdlib/ndarray/base/binary-loop-interchange-order}
 */
 setReadOnly( ns, 'binaryLoopOrder', require( './../../base/binary-loop-interchange-order' ) );
+
+/**
+* @name binaryOutputDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/binary-output-dtype}
+*/
+setReadOnly( ns, 'binaryOutputDataType', require( './../../base/binary-output-dtype' ) );
 
 /**
 * @name binaryBlockSize
@@ -309,6 +327,15 @@ setReadOnly( ns, 'emptyLike', require( './../../base/empty-like' ) );
 * @see {@link module:@stdlib/ndarray/base/every}
 */
 setReadOnly( ns, 'every', require( './../../base/every' ) );
+
+/**
+* @name everyBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/every-by}
+*/
+setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
 
 /**
 * @name expandDimensions
@@ -968,6 +995,33 @@ setReadOnly( ns, 'unaryLoopOrder', require( './../../base/unary-loop-interchange
 setReadOnly( ns, 'unaryOutputDataType', require( './../../base/unary-output-dtype' ) );
 
 /**
+* @name unaryReduceStrided1d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d}
+*/
+setReadOnly( ns, 'unaryReduceStrided1d', require( './../../base/unary-reduce-strided1d' ) );
+
+/**
+* @name unaryReduceStrided1dDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-dispatch}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dDispatch', require( './../../base/unary-reduce-strided1d-dispatch' ) );
+
+/**
+* @name unaryReduceStrided1dDispatchFactory
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-factory}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dDispatchFactory', require( './../../base/unary-reduce-strided1d-dispatch-factory' ) );
+
+/**
 * @name unaryReduceSubarray
 * @memberof ns
 * @readonly
@@ -975,6 +1029,33 @@ setReadOnly( ns, 'unaryOutputDataType', require( './../../base/unary-output-dtyp
 * @see {@link module:@stdlib/ndarray/base/unary-reduce-subarray}
 */
 setReadOnly( ns, 'unaryReduceSubarray', require( './../../base/unary-reduce-subarray' ) );
+
+/**
+* @name unaryStrided1d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-strided1d}
+*/
+setReadOnly( ns, 'unaryStrided1d', require( './../../base/unary-strided1d' ) );
+
+/**
+* @name unaryStrided1dDispatch
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-strided1d-dispatch}
+*/
+setReadOnly( ns, 'unaryStrided1dDispatch', require( './../../base/unary-strided1d-dispatch' ) );
+
+/**
+* @name unaryStrided1dDispatchFactory
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-strided1d-dispatch-factory}
+*/
+setReadOnly( ns, 'unaryStrided1dDispatchFactory', require( './../../base/unary-strided1d-dispatch-factory' ) );
 
 /**
 * @name unaryBlockSize

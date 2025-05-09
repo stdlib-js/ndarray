@@ -4,12 +4,22 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-08)
+## Unreleased (2025-05-09)
 
 <section class="features">
 
 ### Features
 
+-   [`556e832`](https://github.com/stdlib-js/stdlib/commit/556e832729f770a48692fc796fb4d5c9b4b5ae34) - add `unaryStrided1dDispatchFactory` to namespace
+-   [`1133bce`](https://github.com/stdlib-js/stdlib/commit/1133bceaec004d01bf20932b6334529dc7a79648) - add `unaryStrided1dDispatch` to namespace
+-   [`8905452`](https://github.com/stdlib-js/stdlib/commit/890545242b456f9e6b85d744993d4e7c97cd0ae7) - add `unaryStrided1d` to namespace
+-   [`5c8cd3f`](https://github.com/stdlib-js/stdlib/commit/5c8cd3f6a140e0698ff623334c05951d34ecd6c3) - add `unaryReduceStrided1dDispatchFactory` to namespace
+-   [`53a52e9`](https://github.com/stdlib-js/stdlib/commit/53a52e9a773b443e13f39798746b55727053d92e) - add `unaryReduceStrided1dDispatch` to namespace
+-   [`d6b451d`](https://github.com/stdlib-js/stdlib/commit/d6b451d5777547244a171595c5f09cccfa4d8dd3) - add `unaryReduceStrided1d` to namespace
+-   [`3355982`](https://github.com/stdlib-js/stdlib/commit/33559820f55c0e1477017d2c09b2426f52659e1f) - add `everyBy` to namespace
+-   [`afc6368`](https://github.com/stdlib-js/stdlib/commit/afc6368796cba9bbfb9a0182251212248f0edea9) - add `binary` to namespace
+-   [`9501636`](https://github.com/stdlib-js/stdlib/commit/9501636c0d9198393a7aaf9691407402e80faead) - add `binaryOutputDataType` to namespace
+-   [`99449d7`](https://github.com/stdlib-js/stdlib/commit/99449d7fbbd16dbea7436b75153cbdb38099d03f) - add `ndarray/base/binary-output-dtype`
 -   [`a95ac02`](https://github.com/stdlib-js/stdlib/commit/a95ac027b1e359e28c27929db51793cbb297cf52) - add package entry point
 -   [`5358d7b`](https://github.com/stdlib-js/stdlib/commit/5358d7b9cd327ebbfa3cac61af5cd5684132ea88) - add nd accessors kernel
 -   [`9d4bbdf`](https://github.com/stdlib-js/stdlib/commit/9d4bbdfd17d977eb6bc1429abd760abe9d436210) - add 3d blocked accessors kernel
@@ -369,6 +379,16 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`556e832`](https://github.com/stdlib-js/stdlib/commit/556e832729f770a48692fc796fb4d5c9b4b5ae34) - **feat:** add `unaryStrided1dDispatchFactory` to namespace _(by Athan Reines)_
+-   [`1133bce`](https://github.com/stdlib-js/stdlib/commit/1133bceaec004d01bf20932b6334529dc7a79648) - **feat:** add `unaryStrided1dDispatch` to namespace _(by Athan Reines)_
+-   [`8905452`](https://github.com/stdlib-js/stdlib/commit/890545242b456f9e6b85d744993d4e7c97cd0ae7) - **feat:** add `unaryStrided1d` to namespace _(by Athan Reines)_
+-   [`5c8cd3f`](https://github.com/stdlib-js/stdlib/commit/5c8cd3f6a140e0698ff623334c05951d34ecd6c3) - **feat:** add `unaryReduceStrided1dDispatchFactory` to namespace _(by Athan Reines)_
+-   [`53a52e9`](https://github.com/stdlib-js/stdlib/commit/53a52e9a773b443e13f39798746b55727053d92e) - **feat:** add `unaryReduceStrided1dDispatch` to namespace _(by Athan Reines)_
+-   [`d6b451d`](https://github.com/stdlib-js/stdlib/commit/d6b451d5777547244a171595c5f09cccfa4d8dd3) - **feat:** add `unaryReduceStrided1d` to namespace _(by Athan Reines)_
+-   [`3355982`](https://github.com/stdlib-js/stdlib/commit/33559820f55c0e1477017d2c09b2426f52659e1f) - **feat:** add `everyBy` to namespace _(by Athan Reines)_
+-   [`afc6368`](https://github.com/stdlib-js/stdlib/commit/afc6368796cba9bbfb9a0182251212248f0edea9) - **feat:** add `binary` to namespace _(by Athan Reines)_
+-   [`9501636`](https://github.com/stdlib-js/stdlib/commit/9501636c0d9198393a7aaf9691407402e80faead) - **feat:** add `binaryOutputDataType` to namespace _(by Athan Reines)_
+-   [`99449d7`](https://github.com/stdlib-js/stdlib/commit/99449d7fbbd16dbea7436b75153cbdb38099d03f) - **feat:** add `ndarray/base/binary-output-dtype` _(by Athan Reines)_
 -   [`48d8be1`](https://github.com/stdlib-js/stdlib/commit/48d8be17cb1fb81b2e30a0ce976391fcf622b4c3) - **test:** add tests _(by Athan Reines)_
 -   [`5bb21e7`](https://github.com/stdlib-js/stdlib/commit/5bb21e71dd19df4153a9e4e10640fa74f1fb9a0a) - **test:** add tests for when strides are transposed _(by Athan Reines)_
 -   [`ccb3f8e`](https://github.com/stdlib-js/stdlib/commit/ccb3f8e33a29e6a09074d8bc7e54f0a6fa88a022) - **refactor:** use base assertion utility _(by Athan Reines)_
