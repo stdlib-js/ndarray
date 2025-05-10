@@ -379,6 +379,8 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`ad9966a`](https://github.com/stdlib-js/stdlib/commit/ad9966a5d6c560c6a4b2c785f2caafdd472b8399) - **refactor:** reuse existing logic by building on `ndarray/base/unary-output-dtype` _(by Athan Reines)_
+-   [`d2d6c1d`](https://github.com/stdlib-js/stdlib/commit/d2d6c1daa1671c5e174e815640efffe63c7f528f) - **refactor:** reduce code complexity by reducing branching logic _(by Athan Reines)_
 -   [`0973f6f`](https://github.com/stdlib-js/stdlib/commit/0973f6fd8117253edf90c856b82c97b4e3a9181b) - **docs:** update namespace table of contents [(#6968)](https://github.com/stdlib-js/stdlib/pull/6968) _(by stdlib-bot)_
 -   [`556e832`](https://github.com/stdlib-js/stdlib/commit/556e832729f770a48692fc796fb4d5c9b4b5ae34) - **feat:** add `unaryStrided1dDispatchFactory` to namespace _(by Athan Reines)_
 -   [`1133bce`](https://github.com/stdlib-js/stdlib/commit/1133bceaec004d01bf20932b6334529dc7a79648) - **feat:** add `unaryStrided1dDispatch` to namespace _(by Athan Reines)_

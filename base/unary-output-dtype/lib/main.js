@@ -48,7 +48,18 @@ var DEFAULT_SIGNED_INTEGER_DTYPE = defaults.get( 'dtypes.signed_integer' );
 var DEFAULT_UNSIGNED_INTEGER_DTYPE = defaults.get( 'dtypes.unsigned_integer' );
 var DEFAULT_REAL_FLOATING_POINT_DTYPE = defaults.get( 'dtypes.real_floating_point' );
 
-var POLICY_TABLE = {
+// Table where, for each respective policy, the value is a function which applies the policy to an input data type...
+var POLICY_TABLE1 = {
+	'default': defaultPolicy,
+	'default_index': defaultIndexPolicy,
+	'same': samePolicy,
+	'promoted': promotedPolicy,
+	'accumulation': accumulationPolicy
+};
+
+// Table where, for each respective policy, the value is an array whose first element is an assertion and whose second element is a fallback data type...
+var POLICY_TABLE2 = {
+	// Floating-point policies...
 	'floating_point': [
 		isFloatingPointDataType,
 		defaults.get( 'dtypes.floating_point' )
@@ -74,6 +85,7 @@ var POLICY_TABLE = {
 		defaults.get( 'dtypes.complex_floating_point' )
 	],
 
+	// Integer policies...
 	'integer': [
 		isIntegerDataType,
 		defaults.get( 'dtypes.integer' )
@@ -99,6 +111,7 @@ var POLICY_TABLE = {
 		DEFAULT_UNSIGNED_INTEGER_DTYPE
 	],
 
+	// Real-valued number policies...
 	'real': [
 		isRealDataType,
 		defaults.get( 'dtypes.real' )
@@ -108,6 +121,7 @@ var POLICY_TABLE = {
 		defaults.get( 'dtypes.real' )
 	],
 
+	// Real- and complex-valued number policies...
 	'numeric': [
 		isNumericDataType,
 		defaults.get( 'dtypes.numeric' )
@@ -117,6 +131,7 @@ var POLICY_TABLE = {
 		defaults.get( 'dtypes.numeric' )
 	],
 
+	// Boolean policies...
 	'boolean': [
 		isBooleanDataType,
 		defaults.get( 'dtypes.boolean' )
@@ -126,6 +141,7 @@ var POLICY_TABLE = {
 		defaults.get( 'dtypes.boolean' )
 	],
 
+	// Index policies...
 	'integer_index': [
 		isIntegerIndexDataType,
 		defaults.get( 'dtypes.integer_index' )
@@ -177,6 +193,73 @@ function wrap( fcn ) {
 	}
 }
 
+/**
+* Returns the default data type.
+*
+* @private
+* @returns {string} output ndarray data type
+*/
+function defaultPolicy() {
+	// When the policy is "default", the output data type should always be the default data type without consideration for the input data type:
+	return DEFAULT_DTYPE;
+}
+
+/**
+* Returns the default index data type.
+*
+* @private
+* @returns {string} output ndarray data type
+*/
+function defaultIndexPolicy() {
+	// When the policy is "default_index", the output data type should always be the default index data type without consideration for the input data type:
+	return DEFAULT_INDEX_DTYPE;
+}
+
+/**
+* Applies the "same" policy by returning the input data type.
+*
+* @private
+* @param {string} dtype - input ndarray data type
+* @returns {string} output ndarray data type
+*/
+function samePolicy( dtype ) {
+	return dtype;
+}
+
+/**
+* Applies the "promoted" policy by returning the input data type, as applying type promotion to a single data type is a no-op.
+*
+* @private
+* @param {string} dtype - input ndarray data type
+* @returns {string} output ndarray data type
+*/
+function promotedPolicy( dtype ) {
+	return dtype;
+}
+
+/**
+* Applies the "accumulation" policy to an input data type.
+*
+* @private
+* @param {string} dtype - input ndarray data type
+* @returns {string} output ndarray data type
+*/
+function accumulationPolicy( dtype ) {
+	// If the input data type is floating-point, allow accumulation in that data type as overflow/underflow is handled naturally as a built-in feature of that data type...
+	if ( isFloatingPointDataType( dtype ) || dtype === 'generic' ) { // NOTE: we may want to revisit this in the future for float16/complex32, where the value range is much more limited
+		return dtype;
+	}
+	// Unless the input data type value range is larger than the default un/signed integer data type, accumulate in the default un/signed integer data type, as accumulating in small range integer data types (e.g., `int8`) are at high risk for overflow, especially for ndarrays containing many elements...
+	if ( isUnsignedIntegerDataType( dtype ) ) {
+		return promotionRules( dtype, DEFAULT_UNSIGNED_INTEGER_DTYPE );
+	}
+	if ( isSignedIntegerDataType( dtype ) ) {
+		return promotionRules( dtype, DEFAULT_SIGNED_INTEGER_DTYPE );
+	}
+	// For all other input data types, accumulate in the default real-valued floating-point data type...
+	return DEFAULT_REAL_FLOATING_POINT_DTYPE;
+}
+
 
 // MAIN //
 
@@ -194,45 +277,21 @@ function wrap( fcn ) {
 * // returns <string>
 */
 function resolve( dtype, policy ) {
-	var p;
-	if ( policy === 'default' ) {
-		// When the policy is "default", the output data type should always be the default data type without consideration for the input data type:
-		return DEFAULT_DTYPE;
+	var p = POLICY_TABLE1[ policy ];
+	if ( p !== void 0 ) {
+		return p( dtype );
 	}
-	if ( policy === 'default_index' ) {
-		// When the policy is "default_index", the output data type should always be the default index data type without consideration for the input data type:
-		return DEFAULT_INDEX_DTYPE;
-	}
-	if ( policy === 'same' || policy === 'promoted' ) { // note: for unary APIs, the "promoted" data type is the same as the input data type
-		return dtype;
-	}
-	if ( policy === 'accumulation' ) {
-		// If the input data type is floating-point, allow accumulation in that data type as overflow/underflow is handled naturally as a built-in feature of that data type...
-		if ( isFloatingPointDataType( dtype ) || dtype === 'generic' ) { // NOTE: we may want to revisit this in the future for float16/complex32, where the value range is much more limited
+	p = POLICY_TABLE2[ policy ];
+	if ( p !== void 0 ) {
+		if ( p[ 0 ]( dtype ) ) {
 			return dtype;
 		}
-		// Unless the input data type value range is larger than the default un/signed integer data type, accumulate in the default un/signed integer data type, as accumulating in small range integer data types (e.g., `int8`) are at high risk for overflow, especially for ndarrays containing many elements...
-		if ( isUnsignedIntegerDataType( dtype ) ) {
-			return promotionRules( dtype, DEFAULT_UNSIGNED_INTEGER_DTYPE );
-		}
-		if ( isSignedIntegerDataType( dtype ) ) {
-			return promotionRules( dtype, DEFAULT_SIGNED_INTEGER_DTYPE );
-		}
-		// For all other input data types, accumulate in the default real-valued floating-point data type...
-		return DEFAULT_REAL_FLOATING_POINT_DTYPE;
+		return p[ 1 ];
 	}
-	p = POLICY_TABLE[ policy ];
-	if ( p === void 0 ) {
-		// Check for an explicit data type...
-		if ( isDataType( policy ) ) {
-			return policy;
-		}
-		throw new TypeError( format( 'invalid argument. Second argument must be a supported data type policy. Value: `%s`.', policy ) );
+	if ( isDataType( policy ) ) {
+		return policy;
 	}
-	if ( p[ 0 ]( dtype ) ) {
-		return dtype;
-	}
-	return p[ 1 ];
+	throw new TypeError( format( 'invalid argument. Second argument must be a supported data type policy. Value: `%s`.', policy ) );
 }
 
 
