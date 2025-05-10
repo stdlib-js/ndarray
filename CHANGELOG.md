@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-09)
+## Unreleased (2025-05-10)
 
 <section class="features">
 
@@ -379,6 +379,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`0973f6f`](https://github.com/stdlib-js/stdlib/commit/0973f6fd8117253edf90c856b82c97b4e3a9181b) - **docs:** update namespace table of contents [(#6968)](https://github.com/stdlib-js/stdlib/pull/6968) _(by stdlib-bot)_
 -   [`556e832`](https://github.com/stdlib-js/stdlib/commit/556e832729f770a48692fc796fb4d5c9b4b5ae34) - **feat:** add `unaryStrided1dDispatchFactory` to namespace _(by Athan Reines)_
 -   [`1133bce`](https://github.com/stdlib-js/stdlib/commit/1133bceaec004d01bf20932b6334529dc7a79648) - **feat:** add `unaryStrided1dDispatch` to namespace _(by Athan Reines)_
 -   [`8905452`](https://github.com/stdlib-js/stdlib/commit/890545242b456f9e6b85d744993d4e7c97cd0ae7) - **feat:** add `unaryStrided1d` to namespace _(by Athan Reines)_
