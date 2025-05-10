@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`e5ddc80`](https://github.com/stdlib-js/stdlib/commit/e5ddc80ad0e60653c61dfc8847ecc65dff6c69f2) - add `outputDataType` to namespace
+-   [`5e7af03`](https://github.com/stdlib-js/stdlib/commit/5e7af03b8d27240b12f4fbf7bbad86ff57b64917) - add `ndarray/base/output-dtype`
+-   [`1f3ebc8`](https://github.com/stdlib-js/stdlib/commit/1f3ebc857c1c4b98d4681867b0d738b572631bcd) - add `promoteDataTypes` to namespace
+-   [`ec51b4f`](https://github.com/stdlib-js/stdlib/commit/ec51b4f38e6bb9a1ad1d6ee7a2d35d0516312e48) - add `ndarray/base/promote-dtypes`
 -   [`556e832`](https://github.com/stdlib-js/stdlib/commit/556e832729f770a48692fc796fb4d5c9b4b5ae34) - add `unaryStrided1dDispatchFactory` to namespace
 -   [`1133bce`](https://github.com/stdlib-js/stdlib/commit/1133bceaec004d01bf20932b6334529dc7a79648) - add `unaryStrided1dDispatch` to namespace
 -   [`8905452`](https://github.com/stdlib-js/stdlib/commit/890545242b456f9e6b85d744993d4e7c97cd0ae7) - add `unaryStrided1d` to namespace
@@ -379,6 +383,12 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`26d65cd`](https://github.com/stdlib-js/stdlib/commit/26d65cd0dc57249b45b35032a3c251e715a9b8ce) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`b51882d`](https://github.com/stdlib-js/stdlib/commit/b51882d4f8acb7af8e93109c3b76ab36fcbb3b76) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`e5ddc80`](https://github.com/stdlib-js/stdlib/commit/e5ddc80ad0e60653c61dfc8847ecc65dff6c69f2) - **feat:** add `outputDataType` to namespace _(by Athan Reines)_
+-   [`5e7af03`](https://github.com/stdlib-js/stdlib/commit/5e7af03b8d27240b12f4fbf7bbad86ff57b64917) - **feat:** add `ndarray/base/output-dtype` _(by Athan Reines)_
+-   [`1f3ebc8`](https://github.com/stdlib-js/stdlib/commit/1f3ebc857c1c4b98d4681867b0d738b572631bcd) - **feat:** add `promoteDataTypes` to namespace _(by Athan Reines)_
+-   [`ec51b4f`](https://github.com/stdlib-js/stdlib/commit/ec51b4f38e6bb9a1ad1d6ee7a2d35d0516312e48) - **feat:** add `ndarray/base/promote-dtypes` _(by Athan Reines)_
 -   [`ad9966a`](https://github.com/stdlib-js/stdlib/commit/ad9966a5d6c560c6a4b2c785f2caafdd472b8399) - **refactor:** reuse existing logic by building on `ndarray/base/unary-output-dtype` _(by Athan Reines)_
 -   [`d2d6c1d`](https://github.com/stdlib-js/stdlib/commit/d2d6c1daa1671c5e174e815640efffe63c7f528f) - **refactor:** reduce code complexity by reducing branching logic _(by Athan Reines)_
 -   [`0973f6f`](https://github.com/stdlib-js/stdlib/commit/0973f6fd8117253edf90c856b82c97b4e3a9181b) - **docs:** update namespace table of contents [(#6968)](https://github.com/stdlib-js/stdlib/pull/6968) _(by stdlib-bot)_

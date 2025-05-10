@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,32 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="@stdlib/types"/>
 
-var outputDataType = require( './../../../base/output-dtype' );
-
-
-// MAIN //
+import { ArrayLike } from '@stdlib/types/array';
+import { DataType, OutputPolicy } from '@stdlib/types/ndarray';
 
 /**
-* Resolves the output ndarray data type for a unary function.
+* Resolves the output data type from a list of input ndarray data types.
 *
-* @param {string} dtype - input ndarray data type
-* @param {string} policy - output ndarray data type policy
-* @throws {TypeError} second argument must be a recognized data type policy
-* @returns {string} output ndarray data type
+* @param dtypes - input ndarray data types
+* @param policy - output ndarray data type policy
+* @returns output ndarray data type
 *
 * @example
-* var dt = resolve( 'float64', 'complex_floating_point' );
+* var dt = outputDataType( [ 'float64' ], 'complex_floating_point' );
 * // returns <string>
 */
-function resolve( dtype, policy ) {
-	return outputDataType( [ dtype ], policy );
-}
+declare function outputDataType( dtypes: ArrayLike<DataType>, policy: OutputPolicy | DataType ): DataType;
 
 
 // EXPORTS //
 
-module.exports = resolve;
+export = outputDataType;

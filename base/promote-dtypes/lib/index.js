@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,30 +18,26 @@
 
 'use strict';
 
-// MODULES //
-
-var outputDataType = require( './../../../base/output-dtype' );
-
-
-// MAIN //
-
 /**
-* Resolves the output ndarray data type for a unary function.
+* Resolve the data type that results from applying promotion rules to a provided list of data types.
 *
-* @param {string} dtype - input ndarray data type
-* @param {string} policy - output ndarray data type policy
-* @throws {TypeError} second argument must be a recognized data type policy
-* @returns {string} output ndarray data type
+* @module @stdlib/ndarray/base/promote-dtypes
 *
 * @example
-* var dt = resolve( 'float64', 'complex_floating_point' );
-* // returns <string>
+* var promoteDataTypes = require( '@stdlib/ndarray/base/promote-dtypes' );
+*
+* var dt = promoteDataTypes( [ 'float32', 'float64' ] );
+* // returns 'float64'
+*
+* dt = promoteDataTypes( [ 'binary', 'complex128' ] );
+* // returns null
 */
-function resolve( dtype, policy ) {
-	return outputDataType( [ dtype ], policy );
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = resolve;
+module.exports = main;

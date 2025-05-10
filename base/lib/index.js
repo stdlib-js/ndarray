@@ -671,6 +671,15 @@ setReadOnly( ns, 'offset', require( './../../base/offset' ) );
 setReadOnly( ns, 'order', require( './../../base/order' ) );
 
 /**
+* @name outputDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-dtype}
+*/
+setReadOnly( ns, 'outputDataType', require( './../../base/output-dtype' ) );
+
+/**
 * @name outputPolicyEnum2Str
 * @memberof ns
 * @readonly
@@ -714,6 +723,15 @@ setReadOnly( ns, 'outputPolicyStr2Enum', require( './../../base/output-policy-st
 * @see {@link module:@stdlib/ndarray/base/prepend-singleton-dimensions}
 */
 setReadOnly( ns, 'prependSingletonDimensions', require( './../../base/prepend-singleton-dimensions' ) );
+
+/**
+* @name promoteDataTypes
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/promote-dtypes}
+*/
+setReadOnly( ns, 'promoteDataTypes', require( './../../base/promote-dtypes' ) );
 
 /**
 * @name removeSingletonDimensions
