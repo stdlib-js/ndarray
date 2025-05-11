@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-10)
+## Unreleased (2025-05-11)
 
 <section class="features">
 
@@ -383,6 +383,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`9dbc485`](https://github.com/stdlib-js/stdlib/commit/9dbc4858e55015a26440f370643f322f4a63e41e) - **docs:** update namespace table of contents [(#6980)](https://github.com/stdlib-js/stdlib/pull/6980) _(by stdlib-bot)_
 -   [`26d65cd`](https://github.com/stdlib-js/stdlib/commit/26d65cd0dc57249b45b35032a3c251e715a9b8ce) - **refactor:** use generalized utility _(by Athan Reines)_
 -   [`b51882d`](https://github.com/stdlib-js/stdlib/commit/b51882d4f8acb7af8e93109c3b76ab36fcbb3b76) - **refactor:** use generalized utility _(by Athan Reines)_
 -   [`e5ddc80`](https://github.com/stdlib-js/stdlib/commit/e5ddc80ad0e60653c61dfc8847ecc65dff6c69f2) - **feat:** add `outputDataType` to namespace _(by Athan Reines)_
