@@ -196,10 +196,13 @@ tape( 'the function applies a callback to each indexed element in the input ndar
 	dfill.ndarray( x.length, 100.0, expected, st[2], expected.length/2 );
 
 	t.strictEqual( isSameFloat64Array( x.data, expected ), true, 'returns expected value' );
+	console.log( x.data );
+	console.log( expected );
 
 	t.end();
 
 	function scale( v, i ) {
+		console.log( sh, i );
 		x.set( i[0], i[1], i[2], v*10.0 );
 	}
 });

@@ -386,6 +386,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`f3198d2`](https://github.com/stdlib-js/stdlib/commit/f3198d2c29a5832a62b5438ea293af2d84006151) - **temp:** add console statements to debug on CI _(by Athan Reines)_
 -   [`a4f78ea`](https://github.com/stdlib-js/stdlib/commit/a4f78ea79e24bab68ce4f3381c8bc9fb685bd002) - **fix:** account for loop tiling when generating list of indices _(by Athan Reines)_
 -   [`e9070c8`](https://github.com/stdlib-js/stdlib/commit/e9070c86a713054a38eb6ae7ec330049c20b961c) - **docs:** update copy _(by Athan Reines)_
 -   [`7836149`](https://github.com/stdlib-js/stdlib/commit/78361499b7549bcca311892843d538d65c54a22d) - **docs:** add note and update copy _(by Athan Reines)_
