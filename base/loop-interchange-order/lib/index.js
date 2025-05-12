@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@
 /**
 * Reorder ndarray dimensions and associated strides for loop interchange.
 *
-* @module @stdlib/ndarray/base/binary-loop-interchange-order
+* @module @stdlib/ndarray/base/loop-interchange-order
 *
 * @example
-* var binaryLoopOrder = require( '@stdlib/ndarray/base/binary-loop-interchange-order' );
+* var loopOrder = require( '@stdlib/ndarray/base/loop-interchange-order' );
 *
 * var sh = [ 2, 3, 4 ];
 *
@@ -32,19 +32,19 @@
 * var sy = [ 24, 8, 1 ]; // row-major
 * var sz = [ 1, -2, 6 ]; // column-major
 *
-* var o = binaryLoopOrder( sh, sx, sy, sz );
-* // returns {...}
+* var o = loopOrder( sh, [ sx, sy, sz ] );
+* // returns [...]
 *
-* var ssh = o.sh;
+* var ssh = o[ 0 ];
 * // returns [ 4, 3, 2 ]
 *
-* var ssx = o.sx;
+* var ssx = o[ 1 ];
 * // returns [ 1, 4, 12 ]
 *
-* var ssy = o.sy;
+* var ssy = o[ 2 ];
 * // returns [ 1, 8, 24 ]
 *
-* var ssz = o.sz;
+* var ssz = o[ 3 ];
 * // returns [ 6, -2, 1 ]
 */
 

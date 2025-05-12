@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,14 +21,15 @@
 var array = require( './../../../array' );
 var getShape = require( './../../../shape' );
 var getStrides = require( './../../../strides' );
-var unaryLoopOrder = require( './../lib' );
+var loopOrder = require( './../lib' );
 
 // Create ndarrays:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-var y = array( [ [ 0, 0 ], [ 0, 0 ] ] );
+var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
+var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = unaryLoopOrder( getShape( x ), getStrides( x ), getStrides( y ) );
-// returns {...}
+var o = loopOrder( getShape( x ), [ getStrides( x ), getStrides( y ), getStrides( z ) ] ); // eslint-disable-line max-len
+// returns [...]
 
 console.log( o );

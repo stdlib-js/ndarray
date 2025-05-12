@@ -19,6 +19,8 @@
 'use strict';
 
 var array = require( './../../../array' );
+var getShape = require( './../../../shape' );
+var getStrides = require( './../../../strides' );
 var loopOrder = require( './../lib' );
 
 // Create ndarrays:
@@ -27,7 +29,7 @@ var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
 var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = loopOrder( x.shape, x.strides, y.strides, z.strides );
+var o = loopOrder( getShape( x ), getStrides( x ), getStrides( y ), getStrides( z ) ); // eslint-disable-line max-len
 // returns {...}
 
 console.log( o );

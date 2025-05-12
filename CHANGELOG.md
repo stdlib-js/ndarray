@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`9b0d852`](https://github.com/stdlib-js/stdlib/commit/9b0d8520418c2788d20d446b6a39471b6393a787) - add `loopOrder` to namespace
+-   [`bdc9110`](https://github.com/stdlib-js/stdlib/commit/bdc91105259200e3ebb60aea16e918718301ce4b) - add `ndarray/base/loop-interchange-order`
 -   [`e5ddc80`](https://github.com/stdlib-js/stdlib/commit/e5ddc80ad0e60653c61dfc8847ecc65dff6c69f2) - add `outputDataType` to namespace
 -   [`5e7af03`](https://github.com/stdlib-js/stdlib/commit/5e7af03b8d27240b12f4fbf7bbad86ff57b64917) - add `ndarray/base/output-dtype`
 -   [`1f3ebc8`](https://github.com/stdlib-js/stdlib/commit/1f3ebc857c1c4b98d4681867b0d738b572631bcd) - add `promoteDataTypes` to namespace
@@ -386,6 +388,11 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`603ba97`](https://github.com/stdlib-js/stdlib/commit/603ba974c88f33cb73ba53c69435183ca535ded9) - **docs:** fix parameter names _(by Athan Reines)_
+-   [`dcfb648`](https://github.com/stdlib-js/stdlib/commit/dcfb6488ac9624b23ec546f7c54a2da0156c6695) - **refactor:** use generalized utility for resolving loop data _(by Athan Reines)_
+-   [`d8fe0d8`](https://github.com/stdlib-js/stdlib/commit/d8fe0d87591079990591bd5727abdabaa81cd265) - **bench:** update value generation and update examples _(by Athan Reines)_
+-   [`9b0d852`](https://github.com/stdlib-js/stdlib/commit/9b0d8520418c2788d20d446b6a39471b6393a787) - **feat:** add `loopOrder` to namespace _(by Athan Reines)_
+-   [`bdc9110`](https://github.com/stdlib-js/stdlib/commit/bdc91105259200e3ebb60aea16e918718301ce4b) - **feat:** add `ndarray/base/loop-interchange-order` _(by Athan Reines)_
 -   [`09c158e`](https://github.com/stdlib-js/stdlib/commit/09c158e65824e081b5abef0454122e6c63a05586) - **docs:** update namespace table of contents [(#6987)](https://github.com/stdlib-js/stdlib/pull/6987) _(by stdlib-bot)_
 -   [`c1805ef`](https://github.com/stdlib-js/stdlib/commit/c1805eface6e530b09bfc77c800b249e6b321b2c) - **test:** fix broken tests _(by Athan Reines)_
 -   [`7ac3d7d`](https://github.com/stdlib-js/stdlib/commit/7ac3d7d0dbf2202eb1b1494ea91825fb46725df4) - **test:** remove console statements _(by Athan Reines)_

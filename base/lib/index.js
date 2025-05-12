@@ -464,6 +464,15 @@ setReadOnly( ns, 'ind2sub', require( './../../base/ind2sub' ) );
 setReadOnly( ns, 'iterationOrder', require( './../../base/iteration-order' ) );
 
 /**
+* @name loopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/loop-interchange-order}
+*/
+setReadOnly( ns, 'loopOrder', require( './../../base/loop-interchange-order' ) );
+
+/**
 * @name map
 * @memberof ns
 * @readonly

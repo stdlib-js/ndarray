@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,8 +21,7 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var isArray = require( '@stdlib/assert/is-array' );
-var shape2strides = require( './../../../base/shape2strides' );
+var isArrayArray = require( '@stdlib/assert/is-array-array' );
 var pkg = require( './../package.json' ).name;
 var loopOrder = require( './../lib' );
 
@@ -31,28 +30,27 @@ var loopOrder = require( './../lib' );
 
 bench( pkg+'::row-major', function benchmark( b ) {
 	var strides;
-	var factors;
 	var shape;
 	var out;
+	var st;
 	var i;
 
 	shape = [ 10, 10, 10 ];
-	strides = shape2strides( shape, 'row-major' );
-	factors = [
-		-1,
-		1
+	strides = [
+		[ 100, 10, 1 ],
+		[ 200, 20, 2 ]
 	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		strides[ i%shape.length ] *= factors[ i%factors.length ];
-		out = loopOrder( shape, strides, strides );
+		st = strides[ i%strides.length ];
+		out = loopOrder( shape, [ st, st, st ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( !isArray( out.sh ) || !isArray( out.sx ) || !isArray( out.sy ) ) {
+	if ( !isArrayArray( out ) ) {
 		b.fail( 'should return an array' );
 	}
 	b.pass( 'benchmark finished' );
@@ -61,28 +59,27 @@ bench( pkg+'::row-major', function benchmark( b ) {
 
 bench( pkg+'::column-major', function benchmark( b ) {
 	var strides;
-	var factors;
 	var shape;
 	var out;
+	var st;
 	var i;
 
 	shape = [ 10, 10, 10 ];
-	strides = shape2strides( shape, 'column-major' );
-	factors = [
-		-1,
-		1
+	strides = [
+		[ 1, 10, 100 ],
+		[ 2, 20, 200 ]
 	];
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		strides[ i%shape.length ] *= factors[ i%factors.length ];
-		out = loopOrder( shape, strides, strides );
+		st = strides[ i%strides.length ];
+		out = loopOrder( shape, [ st, st, st ] );
 		if ( typeof out !== 'object' ) {
 			b.fail( 'should return an object' );
 		}
 	}
 	b.toc();
-	if ( !isArray( out.sh ) || !isArray( out.sx ) || !isArray( out.sy ) ) {
+	if ( !isArrayArray( out ) ) {
 		b.fail( 'should return an array' );
 	}
 	b.pass( 'benchmark finished' );

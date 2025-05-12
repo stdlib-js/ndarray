@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2022 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# unaryLoopOrder
+# loopOrder
 
 > Reorder ndarray dimensions and associated strides for loop interchange.
 
@@ -37,10 +37,10 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var unaryLoopOrder = require( '@stdlib/ndarray/base/unary-loop-interchange-order' );
+var loopOrder = require( '@stdlib/ndarray/base/loop-interchange-order' );
 ```
 
-#### unaryLoopOrder( shape, stridesX, stridesY )
+#### loopOrder( shape, strides )
 
 Reorders [ndarray][@stdlib/ndarray/ctor] dimensions and associated strides for [loop interchange][loop-interchange].
 
@@ -48,23 +48,28 @@ Reorders [ndarray][@stdlib/ndarray/ctor] dimensions and associated strides for [
 // Define an array shape:
 var shape = [ 2, 2 ];
 
-// Define the strides for the input array:
+// Define the strides for the input arrays:
 var stridesX = [ 2, 1 ]; // row-major
+var stridesY = [ 4, 2 ]; // row-major
 
 // Define the strides for the output array:
-var stridesY = [ 1, 2 ]; // column-major
+var stridesZ = [ 1, 2 ]; // column-major
 
 // Resolve the loop interchange order:
-var o = unaryLoopOrder( shape, stridesX, stridesY );
-// returns {...}
+var o = loopOrder( shape, [ stridesX, stridesY, stridesZ ] );
+// returns [...]
 ```
 
-The function returns an object having the following properties:
+The function returns an array having the following elements:
 
--   **sh**: ordered dimensions.
--   **sx**: input array strides sorted in loop order.
--   **sy**: output array strides sorted in loop order.
--   **idx**: dimension indices sorted in loop order.
+```text
+[ <shape>, ...<strides> ]
+```
+
+where
+
+-   **shape**: dimensions sorted in loop order.
+-   **...strides**: strides for each respective ndarray sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 
@@ -80,9 +85,9 @@ For all returned arrays, the first element corresponds to the innermost loop, an
 
 -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, [loop interchange][loop-interchange] is a technique used in [loop nest optimization][loop-nest-optimization] to improve locality of reference and take advantage of CPU cache.
 
-    The purpose of this function is to order [ndarray][@stdlib/ndarray/ctor] dimensions according to the magnitude of **input array** strides. By using the ordered dimensions and associated strides, one can construct nested loops (one for each dimension) such that the innermost loop iterates over the dimension in which array elements are closest in memory and the outermost loop iterates over the dimension in which array elements are farthest apart in memory. As a consequence, element iteration is optimized to minimize cache misses and ensure locality of reference.
+    The purpose of this function is to order [ndarray][@stdlib/ndarray/ctor] dimensions according to the magnitude of array strides. By using the ordered dimensions and associated strides, one can construct nested loops (one for each dimension) such that the innermost loop iterates over the dimension in which array elements are closest in memory and the outermost loop iterates over the dimension in which array elements are farthest apart in memory. As a consequence, element iteration is optimized to minimize cache misses and ensure locality of reference.
 
--   Cache performance may be degraded if the layout order (i.e., row-major or column-major) differs for the input and output [ndarrays][@stdlib/ndarray/ctor]. This function is intended to optimize cache performance for the input [ndarray][@stdlib/ndarray/ctor]. If the output [ndarray][@stdlib/ndarray/ctor] has a different layout order (e.g., if the input [ndarray][@stdlib/ndarray/ctor] is row-major and the output [ndarray][@stdlib/ndarray/ctor] is column-major), cache misses are likely for the output [ndarray][@stdlib/ndarray/ctor]. In general, to ensure best performance, input and output [ndarrays][@stdlib/ndarray/ctor] should have the same layout order.
+-   Cache performance may be degraded if the layout order (i.e., row-major or column-major) differs for the input and output [ndarrays][@stdlib/ndarray/ctor]. This function is intended to optimize cache performance for the most common layout order. Accordingly, if the output [ndarray][@stdlib/ndarray/ctor] has a different layout order (e.g., if the input [ndarrays][@stdlib/ndarray/ctor] are row-major and the output [ndarray][@stdlib/ndarray/ctor] is column-major), cache misses are likely for the output [ndarray][@stdlib/ndarray/ctor]. In general, to ensure best performance, input and output [ndarrays][@stdlib/ndarray/ctor] should have the same layout order.
 
 -   The function assumes that the input and output [ndarrays][@stdlib/ndarray/ctor] have the same shape. Hence, loop interchange order should only be determined **after** broadcasting.
 
@@ -96,21 +101,24 @@ For all returned arrays, the first element corresponds to the innermost loop, an
 
 ## Examples
 
+<!-- eslint-disable max-len -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
 var array = require( '@stdlib/ndarray/array' );
 var getShape = require( '@stdlib/ndarray/shape' );
 var getStrides = require( '@stdlib/ndarray/strides' );
-var unaryLoopOrder = require( '@stdlib/ndarray/base/unary-loop-interchange-order' );
+var loopOrder = require( '@stdlib/ndarray/base/loop-interchange-order' );
 
 // Create ndarrays:
 var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-var y = array( [ [ 0, 0 ], [ 0, 0 ] ] );
+var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
+var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = unaryLoopOrder( getShape( x ), getStrides( x ), getStrides( y ) );
-// returns {...}
+var o = loopOrder( getShape( x ), [ getStrides( x ), getStrides( y ), getStrides( z ) ] );
+// returns [...]
 
 console.log( o );
 ```

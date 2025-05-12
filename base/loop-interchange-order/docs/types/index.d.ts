@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,41 +23,20 @@
 import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Interface describing loop interchange data.
-*/
-interface LoopOrderObject {
-	/**
-	* Dimensions sorted in loop order.
-	*/
-	sh: Array<number>;
-
-	/**
-	* First input array strides sorted in loop order.
-	*/
-	sx: Array<number>;
-
-	/**
-	* Second input array strides sorted in loop order.
-	*/
-	sy: Array<number>;
-
-	/**
-	* Output array strides sorted in loop order.
-	*/
-	sz: Array<number>;
-}
-
-/**
 * Reorders ndarray dimensions and associated strides for loop interchange.
 *
 * ## Notes
 *
-* -   The returned object has the following properties:
+* -   The returned array has the following elements:
 *
-*     -   **sh**: dimensions sorted in loop order.
-*     -   **sx**: first input ndarray strides sorted in loop order.
-*     -   **sy**: second input ndarray strides sorted in loop order.
-*     -   **sz**: output ndarray strides sorted in loop order.
+*     ```text
+*     [ <shape>, ...<strides> ]
+*     ```
+*
+*     where
+*
+*     -   **shape**: dimensions sorted in loop order.
+*     -   **...strides**: strides for each respective ndarray sorted in loop order.
 *
 * -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 *
@@ -68,9 +47,7 @@ interface LoopOrderObject {
 * -   The function assumes that the input and output ndarrays have the same shape. Hence, loop interchange order should only be determined **after** broadcasting.
 *
 * @param shape - array dimensions
-* @param stridesX - first input array stride lengths
-* @param stridesY - second input array stride lengths
-* @param stridesZ - output array stride lengths
+* @param strides - list of stride arrays containing the stride lengths for each input and output ndarray
 * @returns loop interchange data
 *
 * @example
@@ -80,24 +57,24 @@ interface LoopOrderObject {
 * var sy = [ 24, 8, 1 ]; // row-major
 * var sz = [ 1, -2, 6 ]; // column-major
 *
-* var o = binaryLoopOrder( sh, sx, sy, sz );
+* var o = loopOrder( shape, [ sx, sy, sz ] );
 * // returns {...}
 *
-* var ssh = o.sh;
+* var ssh = o[ 0 ];
 * // returns [ 4, 3, 2 ]
 *
-* var ssx = o.sx;
+* var ssx = o[ 1 ];
 * // returns [ 1, 4, 12 ]
 *
-* var ssy = o.sy;
+* var ssy = o[ 2 ];
 * // returns [ 1, 8, 24 ]
 *
-* var ssz = o.sz;
+* var ssz = o[ 3 ];
 * // returns [ 6, -2, 1 ]
 */
-declare function binaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number> ): LoopOrderObject;
+declare function loopOrder( shape: ArrayLike<number>, strides: ArrayLike<ArrayLike<number>> ): Array<Array<number>>;
 
 
 // EXPORTS //
 
-export = binaryLoopOrder;
+export = loopOrder;
