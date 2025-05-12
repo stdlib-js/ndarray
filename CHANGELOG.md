@@ -386,6 +386,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`09c158e`](https://github.com/stdlib-js/stdlib/commit/09c158e65824e081b5abef0454122e6c63a05586) - **docs:** update namespace table of contents [(#6987)](https://github.com/stdlib-js/stdlib/pull/6987) _(by stdlib-bot)_
 -   [`c1805ef`](https://github.com/stdlib-js/stdlib/commit/c1805eface6e530b09bfc77c800b249e6b321b2c) - **test:** fix broken tests _(by Athan Reines)_
 -   [`7ac3d7d`](https://github.com/stdlib-js/stdlib/commit/7ac3d7d0dbf2202eb1b1494ea91825fb46725df4) - **test:** remove console statements _(by Athan Reines)_
 -   [`f3198d2`](https://github.com/stdlib-js/stdlib/commit/f3198d2c29a5832a62b5438ea293af2d84006151) - **temp:** add console statements to debug on CI _(by Athan Reines)_
