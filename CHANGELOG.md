@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-11)
+## Unreleased (2025-05-12)
 
 <section class="features">
 
@@ -265,6 +265,9 @@
 
 ### Bug Fixes
 
+-   [`a4f78ea`](https://github.com/stdlib-js/stdlib/commit/a4f78ea79e24bab68ce4f3381c8bc9fb685bd002) - account for loop tiling when generating list of indices
+-   [`99be29d`](https://github.com/stdlib-js/stdlib/commit/99be29d87a59460302f43792e0f24b4dbe128dab) - account for loop tiling when generating list of indices
+-   [`9a1ee35`](https://github.com/stdlib-js/stdlib/commit/9a1ee35193c5c474720c58f34d9584f41108bc5c) - account for loop tiling when generating list of indices
 -   [`ae2b9a3`](https://github.com/stdlib-js/stdlib/commit/ae2b9a327b74ca7bdc03996cbb77a87053d19896) - use resolved order when computing loop variables
 -   [`9bc10d4`](https://github.com/stdlib-js/stdlib/commit/9bc10d4dc2b9afe6b55ca2b6e17c165e9dd2a88d) - use resolved order when computing loop variables
 -   [`ccc7890`](https://github.com/stdlib-js/stdlib/commit/ccc7890aee959303e2defbc627b32f66b18535eb) - check for row-major value
@@ -383,6 +386,14 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`a4f78ea`](https://github.com/stdlib-js/stdlib/commit/a4f78ea79e24bab68ce4f3381c8bc9fb685bd002) - **fix:** account for loop tiling when generating list of indices _(by Athan Reines)_
+-   [`e9070c8`](https://github.com/stdlib-js/stdlib/commit/e9070c86a713054a38eb6ae7ec330049c20b961c) - **docs:** update copy _(by Athan Reines)_
+-   [`7836149`](https://github.com/stdlib-js/stdlib/commit/78361499b7549bcca311892843d538d65c54a22d) - **docs:** add note and update copy _(by Athan Reines)_
+-   [`65748be`](https://github.com/stdlib-js/stdlib/commit/65748bea9a961babc95ff0f63b08f785097c79f9) - **docs:** fix parameter name _(by Athan Reines)_
+-   [`c67eb9f`](https://github.com/stdlib-js/stdlib/commit/c67eb9fb021a73f3417d80bf387f665e738b7135) - **docs:** update copy _(by Athan Reines)_
+-   [`417fdb8`](https://github.com/stdlib-js/stdlib/commit/417fdb8670894d84425db01e10a4e3910dca0d7b) - **docs:** add notes _(by Athan Reines)_
+-   [`99be29d`](https://github.com/stdlib-js/stdlib/commit/99be29d87a59460302f43792e0f24b4dbe128dab) - **fix:** account for loop tiling when generating list of indices _(by Athan Reines)_
+-   [`9a1ee35`](https://github.com/stdlib-js/stdlib/commit/9a1ee35193c5c474720c58f34d9584f41108bc5c) - **fix:** account for loop tiling when generating list of indices _(by Athan Reines)_
 -   [`9dbc485`](https://github.com/stdlib-js/stdlib/commit/9dbc4858e55015a26440f370643f322f4a63e41e) - **docs:** update namespace table of contents [(#6980)](https://github.com/stdlib-js/stdlib/pull/6980) _(by stdlib-bot)_
 -   [`26d65cd`](https://github.com/stdlib-js/stdlib/commit/26d65cd0dc57249b45b35032a3c251e715a9b8ce) - **refactor:** use generalized utility _(by Athan Reines)_
 -   [`b51882d`](https://github.com/stdlib-js/stdlib/commit/b51882d4f8acb7af8e93109c3b76ab36fcbb3b76) - **refactor:** use generalized utility _(by Athan Reines)_
