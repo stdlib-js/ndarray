@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-12)
+## Unreleased (2025-05-13)
 
 <section class="features">
 
@@ -388,6 +388,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`9b8f3a8`](https://github.com/stdlib-js/stdlib/commit/9b8f3a8e51b449803b683c7bf394d498de479a5f) - **docs:** update namespace table of contents [(#6996)](https://github.com/stdlib-js/stdlib/pull/6996) _(by stdlib-bot)_
 -   [`603ba97`](https://github.com/stdlib-js/stdlib/commit/603ba974c88f33cb73ba53c69435183ca535ded9) - **docs:** fix parameter names _(by Athan Reines)_
 -   [`dcfb648`](https://github.com/stdlib-js/stdlib/commit/dcfb6488ac9624b23ec546f7c54a2da0156c6695) - **refactor:** use generalized utility for resolving loop data _(by Athan Reines)_
 -   [`d8fe0d8`](https://github.com/stdlib-js/stdlib/commit/d8fe0d87591079990591bd5727abdabaa81cd265) - **bench:** update value generation and update examples _(by Athan Reines)_
