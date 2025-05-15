@@ -389,6 +389,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`d30fed0`](https://github.com/stdlib-js/stdlib/commit/d30fed0b3516e362f957aa15d1521b3b3fe6cefd) - **docs:** update examples _(by Athan Reines)_
 -   [`916b907`](https://github.com/stdlib-js/stdlib/commit/916b9073d6cf82262233e835f9bbbaca26d685f0) - **feat:** add `ndarray/vector/ctor` _(by Athan Reines)_
 -   [`9b8f3a8`](https://github.com/stdlib-js/stdlib/commit/9b8f3a8e51b449803b683c7bf394d498de479a5f) - **docs:** update namespace table of contents [(#6996)](https://github.com/stdlib-js/stdlib/pull/6996) _(by stdlib-bot)_
 -   [`603ba97`](https://github.com/stdlib-js/stdlib/commit/603ba974c88f33cb73ba53c69435183ca535ded9) - **docs:** fix parameter names _(by Athan Reines)_
