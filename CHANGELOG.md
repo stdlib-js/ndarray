@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-13)
+## Unreleased (2025-05-15)
 
 <section class="features">
 
 ### Features
 
+-   [`916b907`](https://github.com/stdlib-js/stdlib/commit/916b9073d6cf82262233e835f9bbbaca26d685f0) - add `ndarray/vector/ctor`
 -   [`9b0d852`](https://github.com/stdlib-js/stdlib/commit/9b0d8520418c2788d20d446b6a39471b6393a787) - add `loopOrder` to namespace
 -   [`bdc9110`](https://github.com/stdlib-js/stdlib/commit/bdc91105259200e3ebb60aea16e918718301ce4b) - add `ndarray/base/loop-interchange-order`
 -   [`e5ddc80`](https://github.com/stdlib-js/stdlib/commit/e5ddc80ad0e60653c61dfc8847ecc65dff6c69f2) - add `outputDataType` to namespace
@@ -388,6 +389,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`916b907`](https://github.com/stdlib-js/stdlib/commit/916b9073d6cf82262233e835f9bbbaca26d685f0) - **feat:** add `ndarray/vector/ctor` _(by Athan Reines)_
 -   [`9b8f3a8`](https://github.com/stdlib-js/stdlib/commit/9b8f3a8e51b449803b683c7bf394d498de479a5f) - **docs:** update namespace table of contents [(#6996)](https://github.com/stdlib-js/stdlib/pull/6996) _(by stdlib-bot)_
 -   [`603ba97`](https://github.com/stdlib-js/stdlib/commit/603ba974c88f33cb73ba53c69435183ca535ded9) - **docs:** fix parameter names _(by Athan Reines)_
 -   [`dcfb648`](https://github.com/stdlib-js/stdlib/commit/dcfb6488ac9624b23ec546f7c54a2da0156c6695) - **refactor:** use generalized utility for resolving loop data _(by Athan Reines)_
