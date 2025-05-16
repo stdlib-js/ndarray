@@ -116,9 +116,18 @@
 
 // MODULES //
 
+var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
+var factory = require( './factory.js' );
 var main = require( './main.js' );
+
+
+// MAIN //
+
+setReadOnly( main, 'factory', factory );
 
 
 // EXPORTS //
 
 module.exports = main;
+
+// exports: { "factory": "main.factory" }

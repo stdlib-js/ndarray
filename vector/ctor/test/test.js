@@ -21,6 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var isMethod = require( '@stdlib/assert/is-method' );
 var vector = require( './../lib' );
 
 
@@ -32,4 +33,9 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-// FIXME: add tests
+tape( 'attached to the main export is a `factory` method', function test( t ) {
+	t.strictEqual( isMethod( vector, 'factory' ), true, 'returns expected value' );
+	t.end();
+});
+
+// FIXME: add tests (see array/typed and ndarray/zeros)

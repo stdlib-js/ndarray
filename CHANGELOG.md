@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-15)
+## Unreleased (2025-05-16)
 
 <section class="features">
 
 ### Features
 
+-   [`848f226`](https://github.com/stdlib-js/stdlib/commit/848f226d45aad2d627453c8306ae192c75338ac3) - add `factory` method
 -   [`916b907`](https://github.com/stdlib-js/stdlib/commit/916b9073d6cf82262233e835f9bbbaca26d685f0) - add `ndarray/vector/ctor`
 -   [`9b0d852`](https://github.com/stdlib-js/stdlib/commit/9b0d8520418c2788d20d446b6a39471b6393a787) - add `loopOrder` to namespace
 -   [`bdc9110`](https://github.com/stdlib-js/stdlib/commit/bdc91105259200e3ebb60aea16e918718301ce4b) - add `ndarray/base/loop-interchange-order`
@@ -389,6 +390,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`848f226`](https://github.com/stdlib-js/stdlib/commit/848f226d45aad2d627453c8306ae192c75338ac3) - **feat:** add `factory` method _(by Athan Reines)_
 -   [`d30fed0`](https://github.com/stdlib-js/stdlib/commit/d30fed0b3516e362f957aa15d1521b3b3fe6cefd) - **docs:** update examples _(by Athan Reines)_
 -   [`916b907`](https://github.com/stdlib-js/stdlib/commit/916b9073d6cf82262233e835f9bbbaca26d685f0) - **feat:** add `ndarray/vector/ctor` _(by Athan Reines)_
 -   [`9b8f3a8`](https://github.com/stdlib-js/stdlib/commit/9b8f3a8e51b449803b683c7bf394d498de479a5f) - **docs:** update namespace table of contents [(#6996)](https://github.com/stdlib-js/stdlib/pull/6996) _(by stdlib-bot)_
