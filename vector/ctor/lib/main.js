@@ -309,14 +309,12 @@ function vectorWithDType( arg, dtype, options ) {
 	}
 	// Case: vector( Iterable )
 	if ( isIterableLike( arg ) ) {
-		if ( isGenericDataType( dtype ) ) {
-			buf = arg[ ITERATOR_SYMBOL ]();
-			buf = iterator2array( buf );
-		} else if ( isBinaryDataType( dtype ) ) {
-			buf = arg[ ITERATOR_SYMBOL ]();
-			buf = array2buffer( iterator2array( buf ) ); // note: the temporary array is necessary as we cannot allocate a `Buffer` in advance due to the iterator's indeterminate length
-		} else {
-			buf = typedarray( arg, dtype );
+		buf = arg[ ITERATOR_SYMBOL ]();
+		buf = iterator2array( buf );
+		if ( isBinaryDataType( dtype ) ) {
+			buf = array2buffer( buf );
+		} else if ( !isGenericDataType( dtype ) ) {
+			buf = typedarray( buf, dtype );
 		}
 		return new ndarray( dtype, buf, [ buf.length ], [ 1 ], 0, resolveOrder( opts ), opts );
 	}

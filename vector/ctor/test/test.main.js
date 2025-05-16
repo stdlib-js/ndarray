@@ -21,6 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var proxyquire = require( 'proxyquire' );
 var isndarrayLikeWithDataType = require( '@stdlib/assert/is-ndarray-like-with-data-type' );
 var isSameFloat64Array = require( '@stdlib/assert/is-same-float64array' );
 var isSameFloat32Array = require( '@stdlib/assert/is-same-float32array' );
@@ -34,6 +35,7 @@ var Complex128Array = require( '@stdlib/array/complex128' );
 var getData = require( './../../../data-buffer' );
 var array2buffer = require( '@stdlib/buffer/from-array' );
 var arraybuffer2buffer = require( '@stdlib/buffer/from-arraybuffer' );
+var array2iterator = require( '@stdlib/array/to-iterator' );
 var vector = require( './../lib' );
 
 
@@ -43,6 +45,691 @@ tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
 	t.strictEqual( typeof vector, 'function', 'main export is a function' );
 	t.end();
+});
+
+tape( 'the function throws an error if provided an invalid first argument', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 'float64', {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0 );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 'float64', {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, length)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 1 );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, length, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 1, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, length, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 1, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid first argument (byte offset, length, dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( value, 0, 1, 'float64', {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 'float64', {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (length)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 1 );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (length, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 1, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (length, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 1, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid byte offset argument (length, dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value, 1, 'float64', {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid length argument', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid length argument (dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, value, 'float64' );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid length argument (options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an invalid length argument (dtype, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		-5,
+		3.14,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		{},
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, value, 'float64', {} );
+		};
+	}
 });
 
 tape( 'the function throws an error if provided an unrecognized data type (only argument)', function test( t ) {
@@ -521,7 +1208,127 @@ tape( 'the function throws an error if provided an unrecognized data type (Array
 	}
 });
 
-tape( 'the function throws an error if provided an options argument which is not an object', function test( t ) {
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer, byteOffset)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), 0, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer, byteOffset, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), 0, value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer, byteOffset, length)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), 0, 1, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided a "generic" data type (ArrayBuffer, byteOffset, length, options)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'generic'
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 16 ), 0, 1, value, {} );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (dtype)', function test( t ) {
 	var values;
 	var i;
 
@@ -544,6 +1351,218 @@ tape( 'the function throws an error if provided an options argument which is not
 	function badValue( value ) {
 		return function badValue() {
 			vector( 'float64', value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (array)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( [], value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (array, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( [], 'float64', value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 'float64', value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer, byte offset)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer, byte offset, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, 'float64', value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer, byte offset, length)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, 1, value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument which is not an object (ArrayBuffer, byte offset, length, dtype)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		[],
+		function noop() {}
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			vector( new ArrayBuffer( 8 ), 0, 1, 'float64', value );
 		};
 	}
 });
@@ -977,6 +1996,326 @@ tape( 'the function returns a one-dimensional ndarray (dtype=float32, complex ty
 	t.strictEqual( out.length, 4, 'returns expected value' );
 	t.strictEqual( isSameFloat32Array( getData( out ), new Float32Array( [ 1.0, 2.0, 3.0, 4.0 ] ) ), true, 'returns expected value' );
 	t.end();
+});
+
+tape( 'the function returns a one-dimensional ndarray (default, iterable)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ) );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'float64' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameFloat64Array( getData( out ), new Float64Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (default, iterable, options)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), {} );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'float64' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameFloat64Array( getData( out ), new Float64Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=float64, iterable)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'float64' );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'float64' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameFloat64Array( getData( out ), new Float64Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=float64, iterable, options)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'float64', {} );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'float64' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameFloat64Array( getData( out ), new Float64Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=complex128, iterable)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'complex128' );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'complex128' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 2, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( getData( out ), new Complex128Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=complex128, iterable, options)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'complex128', {} );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'complex128' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 2, 'returns expected value' );
+	t.strictEqual( isSameComplex128Array( getData( out ), new Complex128Array( arr ) ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=binary, iterable)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1, 2, 3, 4 ];
+	out = vector( createIterable( arr ), 'binary' );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'binary' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.deepEqual( getData( out ), array2buffer( arr ), 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=binary, iterable, options)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1, 2, 3, 4 ];
+	out = vector( createIterable( arr ), 'binary', {} );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'binary' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.deepEqual( getData( out ), array2buffer( arr ), 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=generic, iterable)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'generic' );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'generic' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameArray( getData( out ), arr ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
+});
+
+tape( 'the function returns a one-dimensional ndarray (dtype=generic, iterable, options)', function test( t ) {
+	var vector;
+	var arr;
+	var out;
+
+	vector = proxyquire( './../lib/main.js', {
+		'@stdlib/assert/is-iterable-like': mock,
+		'@stdlib/symbol/iterator': '__SYMBOL_ITERATOR__'
+	});
+
+	arr = [ 1.0, 2.0, 3.0, 4.0 ];
+	out = vector( createIterable( arr ), 'generic', {} );
+	t.strictEqual( isndarrayLikeWithDataType( out, 'generic' ), true, 'returns expected value' );
+	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( isSameArray( getData( out ), arr ), true, 'returns expected value' );
+	t.end();
+
+	function createIterable( arr ) {
+		var it = {};
+		it[ '__SYMBOL_ITERATOR__' ] = iterable;
+		return it;
+
+		function iterable() {
+			return array2iterator( arr );
+		}
+	}
+
+	function mock() {
+		return true;
+	}
 });
 
 tape( 'the function returns a one-dimensional ndarray (default, buffer)', function test( t ) {

@@ -391,6 +391,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`63756c5`](https://github.com/stdlib-js/stdlib/commit/63756c5110a952dc6f7d874badb99f125312902a) - **test:** add tests _(by Athan Reines)_
 -   [`01544ae`](https://github.com/stdlib-js/stdlib/commit/01544aef20deb6e2b8c6826462cd29916ce3e45b) - **test:** add tests _(by Athan Reines)_
 -   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - **feat:** add custom `valueOf` method _(by Athan Reines)_
 -   [`848f226`](https://github.com/stdlib-js/stdlib/commit/848f226d45aad2d627453c8306ae192c75338ac3) - **feat:** add `factory` method _(by Athan Reines)_
