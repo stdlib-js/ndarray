@@ -40,7 +40,7 @@ limitations under the License.
 var Float32Vector = require( '@stdlib/ndarray/vector/float32' );
 ```
 
-#### Float32Vector( \[, options] )
+#### Float32Vector( \[options] )
 
 Returns a one-dimensional single-precision floating-point [ndarray][@stdlib/ndarray/ctor].
 

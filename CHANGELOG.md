@@ -392,6 +392,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`b599489`](https://github.com/stdlib-js/stdlib/commit/b5994896400e31d3850ba003a2eb016142bf6c9a) - **docs:** fix signature _(by Athan Reines)_
 -   [`e8064cd`](https://github.com/stdlib-js/stdlib/commit/e8064cdc716fc9381a143620ef291722dba49228) - **feat:** add `ndarray/vector/float32` _(by Athan Reines)_
 -   [`fbc6b85`](https://github.com/stdlib-js/stdlib/commit/fbc6b852fae5eb77c36e04208c4aad574d146459) - **docs:** fix comments _(by Athan Reines)_
 -   [`5471fc4`](https://github.com/stdlib-js/stdlib/commit/5471fc4ca1505d407bc2f0cb13cea076c73341c5) - **docs:** fix descriptions _(by Athan Reines)_
