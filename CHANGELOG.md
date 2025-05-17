@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-16)
+## Unreleased (2025-05-17)
 
 <section class="features">
 
@@ -391,6 +391,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`30e2005`](https://github.com/stdlib-js/stdlib/commit/30e2005330c027b33d1386afacdacc50b3a46c77) - **test:** add tests _(by Athan Reines)_
 -   [`63756c5`](https://github.com/stdlib-js/stdlib/commit/63756c5110a952dc6f7d874badb99f125312902a) - **test:** add tests _(by Athan Reines)_
 -   [`01544ae`](https://github.com/stdlib-js/stdlib/commit/01544aef20deb6e2b8c6826462cd29916ce3e45b) - **test:** add tests _(by Athan Reines)_
 -   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - **feat:** add custom `valueOf` method _(by Athan Reines)_
