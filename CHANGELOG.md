@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2501de9`](https://github.com/stdlib-js/stdlib/commit/2501de9d60e1239dc54568fff1c6ecdf2770e3fa) - add `ndarray/vector/float64`
 -   [`e8064cd`](https://github.com/stdlib-js/stdlib/commit/e8064cdc716fc9381a143620ef291722dba49228) - add `ndarray/vector/float32`
 -   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - add custom `valueOf` method
 -   [`848f226`](https://github.com/stdlib-js/stdlib/commit/848f226d45aad2d627453c8306ae192c75338ac3) - add `factory` method
@@ -392,6 +393,9 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`2501de9`](https://github.com/stdlib-js/stdlib/commit/2501de9d60e1239dc54568fff1c6ecdf2770e3fa) - **feat:** add `ndarray/vector/float64` _(by Athan Reines)_
+-   [`f75732b`](https://github.com/stdlib-js/stdlib/commit/f75732ba5e3117ae0f9336722834307243eca2be) - **docs:** update example _(by Athan Reines)_
+-   [`5662f92`](https://github.com/stdlib-js/stdlib/commit/5662f920d833b3033ac24e38ef2a13b7506f7495) - **docs:** update example _(by Athan Reines)_
 -   [`b599489`](https://github.com/stdlib-js/stdlib/commit/b5994896400e31d3850ba003a2eb016142bf6c9a) - **docs:** fix signature _(by Athan Reines)_
 -   [`e8064cd`](https://github.com/stdlib-js/stdlib/commit/e8064cdc716fc9381a143620ef291722dba49228) - **feat:** add `ndarray/vector/float32` _(by Athan Reines)_
 -   [`fbc6b85`](https://github.com/stdlib-js/stdlib/commit/fbc6b852fae5eb77c36e04208c4aad574d146459) - **docs:** fix comments _(by Athan Reines)_
