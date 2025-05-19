@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`54dc71e`](https://github.com/stdlib-js/stdlib/commit/54dc71e0ff4a2b5661d48a1bdee584507f66373f) - add `every` and `includes` to namespace
+-   [`2349a6e`](https://github.com/stdlib-js/stdlib/commit/2349a6edf849f8f7093a77bbdeb2fdd7d9955f89) - add `vector` to namespace
+-   [`1ab9f58`](https://github.com/stdlib-js/stdlib/commit/1ab9f58bcd109f19afd9ab08212d69bfe9d32bbe) - add `ndarray/vector` namespace
+-   [`c08c18d`](https://github.com/stdlib-js/stdlib/commit/c08c18d74faca63932755275c9f9bc08742f1fe6) - add `ndarray/vector/bool`
 -   [`34aa089`](https://github.com/stdlib-js/stdlib/commit/34aa08963d038cffbee304f6142f10dadfbf3d74) - add `ndarray/vector/uint8c`
 -   [`1456ea8`](https://github.com/stdlib-js/stdlib/commit/1456ea8d4f5a3519811261ebbaf4760600a4bc6e) - add `ndarray/vector/uint8`
 -   [`f9923b3`](https://github.com/stdlib-js/stdlib/commit/f9923b3b975f3fe14767d24dbd696bc704da762c) - add `ndarray/vector/uint16`
@@ -400,6 +404,10 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`54dc71e`](https://github.com/stdlib-js/stdlib/commit/54dc71e0ff4a2b5661d48a1bdee584507f66373f) - **feat:** add `every` and `includes` to namespace _(by Athan Reines)_
+-   [`2349a6e`](https://github.com/stdlib-js/stdlib/commit/2349a6edf849f8f7093a77bbdeb2fdd7d9955f89) - **feat:** add `vector` to namespace _(by Athan Reines)_
+-   [`1ab9f58`](https://github.com/stdlib-js/stdlib/commit/1ab9f58bcd109f19afd9ab08212d69bfe9d32bbe) - **feat:** add `ndarray/vector` namespace _(by Athan Reines)_
+-   [`c08c18d`](https://github.com/stdlib-js/stdlib/commit/c08c18d74faca63932755275c9f9bc08742f1fe6) - **feat:** add `ndarray/vector/bool` _(by Athan Reines)_
 -   [`34aa089`](https://github.com/stdlib-js/stdlib/commit/34aa08963d038cffbee304f6142f10dadfbf3d74) - **feat:** add `ndarray/vector/uint8c` _(by Athan Reines)_
 -   [`1456ea8`](https://github.com/stdlib-js/stdlib/commit/1456ea8d4f5a3519811261ebbaf4760600a4bc6e) - **feat:** add `ndarray/vector/uint8` _(by Athan Reines)_
 -   [`f9923b3`](https://github.com/stdlib-js/stdlib/commit/f9923b3b975f3fe14767d24dbd696bc704da762c) - **feat:** add `ndarray/vector/uint16` _(by Athan Reines)_
