@@ -404,6 +404,8 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`d002f3a`](https://github.com/stdlib-js/stdlib/commit/d002f3ae7d4f785a0d0d8c4c9f3b383776deea15) - **bench:** fix condition _(by Athan Reines)_
+-   [`468d6f7`](https://github.com/stdlib-js/stdlib/commit/468d6f7247367a32f73738a0cf7dfda28126eac2) - **bench:** fix assertion _(by Athan Reines)_
 -   [`54dc71e`](https://github.com/stdlib-js/stdlib/commit/54dc71e0ff4a2b5661d48a1bdee584507f66373f) - **feat:** add `every` and `includes` to namespace _(by Athan Reines)_
 -   [`2349a6e`](https://github.com/stdlib-js/stdlib/commit/2349a6edf849f8f7093a77bbdeb2fdd7d9955f89) - **feat:** add `vector` to namespace _(by Athan Reines)_
 -   [`1ab9f58`](https://github.com/stdlib-js/stdlib/commit/1ab9f58bcd109f19afd9ab08212d69bfe9d32bbe) - **feat:** add `ndarray/vector` namespace _(by Athan Reines)_
