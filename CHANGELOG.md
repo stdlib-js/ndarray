@@ -404,6 +404,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`a8d1b40`](https://github.com/stdlib-js/stdlib/commit/a8d1b40510aee43e3ce0e6e663ee79f149429390) - **test:** fix require path _(by Athan Reines)_
 -   [`d002f3a`](https://github.com/stdlib-js/stdlib/commit/d002f3ae7d4f785a0d0d8c4c9f3b383776deea15) - **bench:** fix condition _(by Athan Reines)_
 -   [`468d6f7`](https://github.com/stdlib-js/stdlib/commit/468d6f7247367a32f73738a0cf7dfda28126eac2) - **bench:** fix assertion _(by Athan Reines)_
 -   [`54dc71e`](https://github.com/stdlib-js/stdlib/commit/54dc71e0ff4a2b5661d48a1bdee584507f66373f) - **feat:** add `every` and `includes` to namespace _(by Athan Reines)_
