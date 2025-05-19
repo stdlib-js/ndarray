@@ -4,12 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-17)
+## Unreleased (2025-05-19)
 
 <section class="features">
 
 ### Features
 
+-   [`34aa089`](https://github.com/stdlib-js/stdlib/commit/34aa08963d038cffbee304f6142f10dadfbf3d74) - add `ndarray/vector/uint8c`
+-   [`1456ea8`](https://github.com/stdlib-js/stdlib/commit/1456ea8d4f5a3519811261ebbaf4760600a4bc6e) - add `ndarray/vector/uint8`
+-   [`f9923b3`](https://github.com/stdlib-js/stdlib/commit/f9923b3b975f3fe14767d24dbd696bc704da762c) - add `ndarray/vector/uint16`
+-   [`b7c276b`](https://github.com/stdlib-js/stdlib/commit/b7c276b5d4e32dd0409afb946319d4581b8f6ff1) - add `ndarray/vector/uint32`
+-   [`3e6bb9d`](https://github.com/stdlib-js/stdlib/commit/3e6bb9d2c5d0977b0e101d89d6db13772aabb17c) - add `ndarray/vector/int8`
+-   [`ea3f7af`](https://github.com/stdlib-js/stdlib/commit/ea3f7afc1eed9b9d6c7964b8e984dd1e205bcd24) - add `ndarray/vector/int16`
+-   [`031fecf`](https://github.com/stdlib-js/stdlib/commit/031fecf3ade6e37cf1cda50ea30303cd922310b3) - add `ndarray/vector/int32`
 -   [`2501de9`](https://github.com/stdlib-js/stdlib/commit/2501de9d60e1239dc54568fff1c6ecdf2770e3fa) - add `ndarray/vector/float64`
 -   [`e8064cd`](https://github.com/stdlib-js/stdlib/commit/e8064cdc716fc9381a143620ef291722dba49228) - add `ndarray/vector/float32`
 -   [`b2cefbe`](https://github.com/stdlib-js/stdlib/commit/b2cefbe2b2192cb705b85c43ffac2f57ca782c42) - add custom `valueOf` method
@@ -393,6 +400,13 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`34aa089`](https://github.com/stdlib-js/stdlib/commit/34aa08963d038cffbee304f6142f10dadfbf3d74) - **feat:** add `ndarray/vector/uint8c` _(by Athan Reines)_
+-   [`1456ea8`](https://github.com/stdlib-js/stdlib/commit/1456ea8d4f5a3519811261ebbaf4760600a4bc6e) - **feat:** add `ndarray/vector/uint8` _(by Athan Reines)_
+-   [`f9923b3`](https://github.com/stdlib-js/stdlib/commit/f9923b3b975f3fe14767d24dbd696bc704da762c) - **feat:** add `ndarray/vector/uint16` _(by Athan Reines)_
+-   [`b7c276b`](https://github.com/stdlib-js/stdlib/commit/b7c276b5d4e32dd0409afb946319d4581b8f6ff1) - **feat:** add `ndarray/vector/uint32` _(by Athan Reines)_
+-   [`3e6bb9d`](https://github.com/stdlib-js/stdlib/commit/3e6bb9d2c5d0977b0e101d89d6db13772aabb17c) - **feat:** add `ndarray/vector/int8` _(by Athan Reines)_
+-   [`ea3f7af`](https://github.com/stdlib-js/stdlib/commit/ea3f7afc1eed9b9d6c7964b8e984dd1e205bcd24) - **feat:** add `ndarray/vector/int16` _(by Athan Reines)_
+-   [`031fecf`](https://github.com/stdlib-js/stdlib/commit/031fecf3ade6e37cf1cda50ea30303cd922310b3) - **feat:** add `ndarray/vector/int32` _(by Athan Reines)_
 -   [`2501de9`](https://github.com/stdlib-js/stdlib/commit/2501de9d60e1239dc54568fff1c6ecdf2770e3fa) - **feat:** add `ndarray/vector/float64` _(by Athan Reines)_
 -   [`f75732b`](https://github.com/stdlib-js/stdlib/commit/f75732ba5e3117ae0f9336722834307243eca2be) - **docs:** update example _(by Athan Reines)_
 -   [`5662f92`](https://github.com/stdlib-js/stdlib/commit/5662f920d833b3033ac24e38ef2a13b7506f7495) - **docs:** update example _(by Athan Reines)_
