@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-20)
+## Unreleased (2025-05-21)
 
 <section class="features">
 
@@ -407,6 +407,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`cc20b2d`](https://github.com/stdlib-js/stdlib/commit/cc20b2de446f10e06216b84bdd5457ef473ffdd6) - **refactor:** update require path _(by Athan Reines)_
 -   [`5149a37`](https://github.com/stdlib-js/stdlib/commit/5149a3789bf321b18b1636b838ab086175b6c2ca) - **feat:** add `ndarray/base/unary-reduce-subarray-by` [(#7008)](https://github.com/stdlib-js/stdlib/pull/7008) _(by Muhammad Haris, Athan Reines)_
 -   [`89d9dc3`](https://github.com/stdlib-js/stdlib/commit/89d9dc316985aa3c194222afbf8146e58ff6d761) - **docs:** update namespace table of contents [(#7046)](https://github.com/stdlib-js/stdlib/pull/7046) _(by stdlib-bot)_
 -   [`a300862`](https://github.com/stdlib-js/stdlib/commit/a300862d4f05d4d8bd85f1e235db93ad5d35a767) - **fix:** address increment bugs _(by Athan Reines)_
