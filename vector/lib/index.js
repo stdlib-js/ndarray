@@ -46,6 +46,24 @@ var ns = {};
 setReadOnly( ns, 'BooleanVector', require( './../../vector/bool' ) );
 
 /**
+* @name Complex64Vector
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/vector/complex64}
+*/
+setReadOnly( ns, 'Complex64Vector', require( './../../vector/complex64' ) );
+
+/**
+* @name Complex128Vector
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/vector/complex128}
+*/
+setReadOnly( ns, 'Complex128Vector', require( './../../vector/complex128' ) );
+
+/**
 * @name vector
 * @memberof ns
 * @readonly

@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-21)
+## Unreleased (2025-05-27)
 
 <section class="features">
 
 ### Features
 
+-   [`138cc36`](https://github.com/stdlib-js/stdlib/commit/138cc36c180a676fc4ae8b675d77d58db8f02f26) - add `Complex64Vector` to namespace
+-   [`50dac78`](https://github.com/stdlib-js/stdlib/commit/50dac7824c40e9cf5c10b0ee576f44fba8b191a5) - add `ndarray/vector/complex64`
+-   [`0431d21`](https://github.com/stdlib-js/stdlib/commit/0431d211467c0ebfa57547a5da66f598870bbf33) - add `Complex128Vector` to namespace
+-   [`0183f29`](https://github.com/stdlib-js/stdlib/commit/0183f293bf9a127899492ad80a87394e8b18afc1) - add `ndarray/vector/complex128`
 -   [`5149a37`](https://github.com/stdlib-js/stdlib/commit/5149a3789bf321b18b1636b838ab086175b6c2ca) - add `ndarray/base/unary-reduce-subarray-by` [(#7008)](https://github.com/stdlib-js/stdlib/pull/7008)
 -   [`54dc71e`](https://github.com/stdlib-js/stdlib/commit/54dc71e0ff4a2b5661d48a1bdee584507f66373f) - add `every` and `includes` to namespace
 -   [`2349a6e`](https://github.com/stdlib-js/stdlib/commit/2349a6edf849f8f7093a77bbdeb2fdd7d9955f89) - add `vector` to namespace
@@ -407,6 +411,11 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`34f6c88`](https://github.com/stdlib-js/stdlib/commit/34f6c88797418bf412b222450bd1659e43b7a7c1) - **docs:** update namespace table of contents [(#7105)](https://github.com/stdlib-js/stdlib/pull/7105) _(by stdlib-bot)_
+-   [`138cc36`](https://github.com/stdlib-js/stdlib/commit/138cc36c180a676fc4ae8b675d77d58db8f02f26) - **feat:** add `Complex64Vector` to namespace _(by Athan Reines)_
+-   [`50dac78`](https://github.com/stdlib-js/stdlib/commit/50dac7824c40e9cf5c10b0ee576f44fba8b191a5) - **feat:** add `ndarray/vector/complex64` _(by Athan Reines)_
+-   [`0431d21`](https://github.com/stdlib-js/stdlib/commit/0431d211467c0ebfa57547a5da66f598870bbf33) - **feat:** add `Complex128Vector` to namespace _(by Athan Reines)_
+-   [`0183f29`](https://github.com/stdlib-js/stdlib/commit/0183f293bf9a127899492ad80a87394e8b18afc1) - **feat:** add `ndarray/vector/complex128` _(by Athan Reines)_
 -   [`cc20b2d`](https://github.com/stdlib-js/stdlib/commit/cc20b2de446f10e06216b84bdd5457ef473ffdd6) - **refactor:** update require path _(by Athan Reines)_
 -   [`5149a37`](https://github.com/stdlib-js/stdlib/commit/5149a3789bf321b18b1636b838ab086175b6c2ca) - **feat:** add `ndarray/base/unary-reduce-subarray-by` [(#7008)](https://github.com/stdlib-js/stdlib/pull/7008) _(by Muhammad Haris, Athan Reines)_
 -   [`89d9dc3`](https://github.com/stdlib-js/stdlib/commit/89d9dc316985aa3c194222afbf8146e58ff6d761) - **docs:** update namespace table of contents [(#7046)](https://github.com/stdlib-js/stdlib/pull/7046) _(by stdlib-bot)_
