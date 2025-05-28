@@ -411,6 +411,8 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`ff2a8c6`](https://github.com/stdlib-js/stdlib/commit/ff2a8c6de98066b13d14ee4a771f68fa8f99f586) - **docs:** update comment _(by Athan Reines)_
+-   [`388d79e`](https://github.com/stdlib-js/stdlib/commit/388d79e99d05a7de27b193de72f46618ccba1241) - **docs:** update comment _(by Athan Reines)_
 -   [`19164e7`](https://github.com/stdlib-js/stdlib/commit/19164e7d0f3cad9e5f3090ea12db115fda8628e9) - **docs:** update example _(by Athan Reines)_
 -   [`34f6c88`](https://github.com/stdlib-js/stdlib/commit/34f6c88797418bf412b222450bd1659e43b7a7c1) - **docs:** update namespace table of contents [(#7105)](https://github.com/stdlib-js/stdlib/pull/7105) _(by stdlib-bot)_
 -   [`138cc36`](https://github.com/stdlib-js/stdlib/commit/138cc36c180a676fc4ae8b675d77d58db8f02f26) - **feat:** add `Complex64Vector` to namespace _(by Athan Reines)_
