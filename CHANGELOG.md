@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-27)
+## Unreleased (2025-05-28)
 
 <section class="features">
 
@@ -411,6 +411,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`19164e7`](https://github.com/stdlib-js/stdlib/commit/19164e7d0f3cad9e5f3090ea12db115fda8628e9) - **docs:** update example _(by Athan Reines)_
 -   [`34f6c88`](https://github.com/stdlib-js/stdlib/commit/34f6c88797418bf412b222450bd1659e43b7a7c1) - **docs:** update namespace table of contents [(#7105)](https://github.com/stdlib-js/stdlib/pull/7105) _(by stdlib-bot)_
 -   [`138cc36`](https://github.com/stdlib-js/stdlib/commit/138cc36c180a676fc4ae8b675d77d58db8f02f26) - **feat:** add `Complex64Vector` to namespace _(by Athan Reines)_
 -   [`50dac78`](https://github.com/stdlib-js/stdlib/commit/50dac7824c40e9cf5c10b0ee576f44fba8b191a5) - **feat:** add `ndarray/vector/complex64` _(by Athan Reines)_
