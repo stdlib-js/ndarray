@@ -411,6 +411,8 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`92cf47b`](https://github.com/stdlib-js/stdlib/commit/92cf47b704f75a6a0074d4ee3b5f65de0dd411b2) - **bench:** fix typo in filename _(by Athan Reines)_
+-   [`11e6c60`](https://github.com/stdlib-js/stdlib/commit/11e6c608e47109a8576613435dc1c43ea2d9dbc8) - **bench:** fix typo in filename _(by Athan Reines)_
 -   [`ff2a8c6`](https://github.com/stdlib-js/stdlib/commit/ff2a8c6de98066b13d14ee4a771f68fa8f99f586) - **docs:** update comment _(by Athan Reines)_
 -   [`388d79e`](https://github.com/stdlib-js/stdlib/commit/388d79e99d05a7de27b193de72f46618ccba1241) - **docs:** update comment _(by Athan Reines)_
 -   [`19164e7`](https://github.com/stdlib-js/stdlib/commit/19164e7d0f3cad9e5f3090ea12db115fda8628e9) - **docs:** update example _(by Athan Reines)_
