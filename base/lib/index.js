@@ -203,6 +203,15 @@ setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
 setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
+* @name countTruthy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/count-truthy}
+*/
+setReadOnly( ns, 'countTruthy', require( './../../base/count-truthy' ) );
+
+/**
 * @name ndarray
 * @memberof ns
 * @readonly
@@ -1056,6 +1065,15 @@ setReadOnly( ns, 'unaryReduceStrided1dDispatchFactory', require( './../../base/u
 * @see {@link module:@stdlib/ndarray/base/unary-reduce-subarray}
 */
 setReadOnly( ns, 'unaryReduceSubarray', require( './../../base/unary-reduce-subarray' ) );
+
+/**
+* @name unaryReduceSubarrayBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-subarray-by}
+*/
+setReadOnly( ns, 'unaryReduceSubarrayBy', require( './../../base/unary-reduce-subarray-by' ) );
 
 /**
 * @name unaryStrided1d

@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-28)
+## Unreleased (2025-05-29)
 
 <section class="features">
 
 ### Features
 
+-   [`737ae65`](https://github.com/stdlib-js/stdlib/commit/737ae657cece40efaf246fdc2a33e84bfa314fe3) - add `unaryReduceSubarrayBy` to namespace
+-   [`6c567f0`](https://github.com/stdlib-js/stdlib/commit/6c567f0b8ae1c0987f30b08dc032dd0af800793d) - add `countTruthy` to namespace
+-   [`63796c4`](https://github.com/stdlib-js/stdlib/commit/63796c4bc3bc0d3cef746b97ea92e286abbc78c7) - add `ndarray/base/count-truthy`
 -   [`138cc36`](https://github.com/stdlib-js/stdlib/commit/138cc36c180a676fc4ae8b675d77d58db8f02f26) - add `Complex64Vector` to namespace
 -   [`50dac78`](https://github.com/stdlib-js/stdlib/commit/50dac7824c40e9cf5c10b0ee576f44fba8b191a5) - add `ndarray/vector/complex64`
 -   [`0431d21`](https://github.com/stdlib-js/stdlib/commit/0431d211467c0ebfa57547a5da66f598870bbf33) - add `Complex128Vector` to namespace
@@ -411,6 +414,10 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`737ae65`](https://github.com/stdlib-js/stdlib/commit/737ae657cece40efaf246fdc2a33e84bfa314fe3) - **feat:** add `unaryReduceSubarrayBy` to namespace _(by Athan Reines)_
+-   [`6c567f0`](https://github.com/stdlib-js/stdlib/commit/6c567f0b8ae1c0987f30b08dc032dd0af800793d) - **feat:** add `countTruthy` to namespace _(by Athan Reines)_
+-   [`63796c4`](https://github.com/stdlib-js/stdlib/commit/63796c4bc3bc0d3cef746b97ea92e286abbc78c7) - **feat:** add `ndarray/base/count-truthy` _(by Athan Reines)_
+-   [`b00bebf`](https://github.com/stdlib-js/stdlib/commit/b00bebf69833c3e4de2c280472c166fc79cfaf44) - **docs:** fix examples _(by Athan Reines)_
 -   [`7ecedc0`](https://github.com/stdlib-js/stdlib/commit/7ecedc01b6a480da62a659feb509c6f18c6d9d45) - **chore:** clean-up _(by Athan Reines)_
 -   [`92cf47b`](https://github.com/stdlib-js/stdlib/commit/92cf47b704f75a6a0074d4ee3b5f65de0dd411b2) - **bench:** fix typo in filename _(by Athan Reines)_
 -   [`11e6c60`](https://github.com/stdlib-js/stdlib/commit/11e6c608e47109a8576613435dc1c43ea2d9dbc8) - **bench:** fix typo in filename _(by Athan Reines)_
