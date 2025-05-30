@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-29)
+## Unreleased (2025-05-30)
 
 <section class="features">
 
@@ -414,6 +414,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`d7ff4d9`](https://github.com/stdlib-js/stdlib/commit/d7ff4d95ef2cc594f26213c09c8930620f3ca8f0) - **docs:** update namespace table of contents [(#7116)](https://github.com/stdlib-js/stdlib/pull/7116) _(by stdlib-bot)_
 -   [`737ae65`](https://github.com/stdlib-js/stdlib/commit/737ae657cece40efaf246fdc2a33e84bfa314fe3) - **feat:** add `unaryReduceSubarrayBy` to namespace _(by Athan Reines)_
 -   [`6c567f0`](https://github.com/stdlib-js/stdlib/commit/6c567f0b8ae1c0987f30b08dc032dd0af800793d) - **feat:** add `countTruthy` to namespace _(by Athan Reines)_
 -   [`63796c4`](https://github.com/stdlib-js/stdlib/commit/63796c4bc3bc0d3cef746b97ea92e286abbc78c7) - **feat:** add `ndarray/base/count-truthy` _(by Athan Reines)_
