@@ -402,9 +402,9 @@
 
 ### Closed Issues
 
-A total of 15 issues were closed in this release:
+A total of 16 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114)
 
 </section>
 
@@ -416,6 +416,7 @@ A total of 15 issues were closed in this release:
 
 <details>
 
+-   [`385ab25`](https://github.com/stdlib-js/stdlib/commit/385ab256cd1a74c103ed333727946183f9bf723c) - **chore:** fix EditorConfig lint errors [(#7118)](https://github.com/stdlib-js/stdlib/pull/7118) _(by Tushar Bhardwaj, Athan Reines, stdlib-bot)_
 -   [`fe062d3`](https://github.com/stdlib-js/stdlib/commit/fe062d37148ed8c6f474fafb36904f01b5903156) - **feat:** add `countFalsy` to namespace _(by Athan Reines)_
 -   [`6df26cb`](https://github.com/stdlib-js/stdlib/commit/6df26cb20720cc4d566f5667debe8c60cf706f8f) - **feat:** add `ndarray/base/count-falsy` _(by Athan Reines)_
 -   [`d7ff4d9`](https://github.com/stdlib-js/stdlib/commit/d7ff4d95ef2cc594f26213c09c8930620f3ca8f0) - **docs:** update namespace table of contents [(#7116)](https://github.com/stdlib-js/stdlib/pull/7116) _(by stdlib-bot)_
@@ -1134,7 +1135,7 @@ A total of 15 issues were closed in this release:
 
 ### Contributors
 
-A total of 15 people contributed to this release. Thank you to the following contributors:
+A total of 16 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1147,6 +1148,7 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Pravesh Kunwar
 -   Sai Avinash
+-   Tushar Bhardwaj
 -   devshree-bhati
 -   ditsu
 -   lohithganni
