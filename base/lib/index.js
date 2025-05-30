@@ -203,6 +203,15 @@ setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
 setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
+* @name countFalsy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/count-falsy}
+*/
+setReadOnly( ns, 'countFalsy', require( './../../base/count-falsy' ) );
+
+/**
 * @name countTruthy
 * @memberof ns
 * @readonly
