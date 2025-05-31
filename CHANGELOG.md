@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`350203f`](https://github.com/stdlib-js/stdlib/commit/350203f7cb6419700b7b07e558b677fb177828f8) - add `ndarray/base/some-by` [(#7087)](https://github.com/stdlib-js/stdlib/pull/7087)
 -   [`b933a8d`](https://github.com/stdlib-js/stdlib/commit/b933a8d4d5176d89e9efe541a65431275011a477) - add `countIf` to namespace
 -   [`4e85371`](https://github.com/stdlib-js/stdlib/commit/4e853712ccdbcce3faf40291446fee3f9cfb3d7f) - add `ndarray/count-if`
 -   [`4049106`](https://github.com/stdlib-js/stdlib/commit/40491061117827e6d9ce80b60c73fd3cc0859bb6) - add `countFalsy` to namespace
@@ -424,6 +425,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`350203f`](https://github.com/stdlib-js/stdlib/commit/350203f7cb6419700b7b07e558b677fb177828f8) - **feat:** add `ndarray/base/some-by` [(#7087)](https://github.com/stdlib-js/stdlib/pull/7087) _(by Muhammad Haris, Athan Reines)_
 -   [`b933a8d`](https://github.com/stdlib-js/stdlib/commit/b933a8d4d5176d89e9efe541a65431275011a477) - **feat:** add `countIf` to namespace _(by Athan Reines)_
 -   [`be08665`](https://github.com/stdlib-js/stdlib/commit/be08665312b7e55f04365176a4f6ea75aad8c70d) - **style:** enable lint rule _(by Athan Reines)_
 -   [`d9244bc`](https://github.com/stdlib-js/stdlib/commit/d9244bc1788da997f3c7029291dc19ba1116f0cc) - **docs:** update examples _(by Athan Reines)_
