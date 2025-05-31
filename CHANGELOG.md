@@ -402,9 +402,9 @@
 
 ### Closed Issues
 
-A total of 17 issues were closed in this release:
+A total of 16 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114)
 
 </section>
 
@@ -416,7 +416,6 @@ A total of 17 issues were closed in this release:
 
 <details>
 
--   [`a5f516c`](https://github.com/stdlib-js/stdlib/commit/a5f516c96d479568dca5099e24fe709977d3ec5b) - **chore:** fix EditorConfig lint errors [(#7137)](https://github.com/stdlib-js/stdlib/pull/7137) _(by Karan Vasudevamurthy)_
 -   [`7615f51`](https://github.com/stdlib-js/stdlib/commit/7615f51e363ddd06950c778d49abc2c60308fa61) - **docs:** update namespace table of contents [(#7139)](https://github.com/stdlib-js/stdlib/pull/7139) _(by stdlib-bot)_
 -   [`385ab25`](https://github.com/stdlib-js/stdlib/commit/385ab256cd1a74c103ed333727946183f9bf723c) - **chore:** fix EditorConfig lint errors [(#7118)](https://github.com/stdlib-js/stdlib/pull/7118) _(by Tushar Bhardwaj, Athan Reines, stdlib-bot)_
 -   [`fe062d3`](https://github.com/stdlib-js/stdlib/commit/fe062d37148ed8c6f474fafb36904f01b5903156) - **feat:** add `countFalsy` to namespace _(by Athan Reines)_
@@ -1137,13 +1136,12 @@ A total of 17 issues were closed in this release:
 
 ### Contributors
 
-A total of 17 people contributed to this release. Thank you to the following contributors:
+A total of 16 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
 -   Dipjyoti Das
 -   Gururaj Gurram
--   Karan Vasudevamurthy
 -   Kaushikgtm
 -   MANI
 -   Muhammad Haris
