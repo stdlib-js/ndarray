@@ -212,6 +212,15 @@ setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 setReadOnly( ns, 'countFalsy', require( './../../base/count-falsy' ) );
 
 /**
+* @name countIf
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/count-if}
+*/
+setReadOnly( ns, 'countIf', require( './../../base/count-if' ) );
+
+/**
 * @name countTruthy
 * @memberof ns
 * @readonly
