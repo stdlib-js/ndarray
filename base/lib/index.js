@@ -896,6 +896,15 @@ setReadOnly( ns, 'sliceFrom', require( './../../base/slice-from' ) );
 setReadOnly( ns, 'sliceTo', require( './../../base/slice-to' ) );
 
 /**
+* @name someBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/some-by}
+*/
+setReadOnly( ns, 'someBy', require( './../../base/some-by' ) );
+
+/**
 * @name spreadDimensions
 * @memberof ns
 * @readonly
