@@ -124,7 +124,7 @@ var MAX_DIMS = MAP.length -1;
 // MAIN //
 
 /**
-* Applies a callback function to the elements in an input ndarray and assigns results to the elements in an output ndarray.
+* Applies a callback function to elements in an input ndarray and assigns results to elements in an output ndarray.
 *
 * ## Notes
 *
@@ -184,7 +184,7 @@ var MAX_DIMS = MAP.length -1;
 *     'order': 'row-major'
 * };
 *
-* // Apply the map function:
+* // Apply function:
 * map( [ x, y ], scale );
 *
 * console.log( y.data );
