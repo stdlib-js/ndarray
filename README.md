@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { FancyArray, array, at, base, broadcastArray, broadcastArrays, castingModes, countFalsy, countIf, countTruthy, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, every, fill, fillBy, filter, filterMap, flag, flags, forEach, includes, ind2sub, indexModes, inputCastingPolicies, iter, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarraylike2ndarray, ndims, ndindex, ndsliceAssign, nextDataType, numel, numelDimension, offset, order, orders, outputDataTypePolicies, promotionRules, reject, safeCasts, sameKindCasts, scalar2ndarray, shape, slice, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, stride, strides, sub2ind, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -96,6 +108,9 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`broadcastArray( x, shape )`][@stdlib/ndarray/broadcast-array]</span><span class="delimiter">: </span><span class="description">broadcast an ndarray to a specified shape.</span>
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
 -   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`countFalsy( x[, options] )`][@stdlib/ndarray/count-falsy]</span><span class="delimiter">: </span><span class="description">count the number of falsy elements along one or more `ndarray` dimensions.</span>
+-   <span class="signature">[`countIf( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/count-if]</span><span class="delimiter">: </span><span class="description">count the number of truthy elements along one or more `ndarray` dimensions.</span>
+-   <span class="signature">[`countTruthy( x[, options] )`][@stdlib/ndarray/count-truthy]</span><span class="delimiter">: </span><span class="description">count the number of truthy elements along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`dataBuffer( x )`][@stdlib/ndarray/data-buffer]</span><span class="delimiter">: </span><span class="description">return the underlying data buffer of a provided ndarray.</span>
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
@@ -171,8 +186,8 @@ In addition, the namespace contains the following multidimensional array utility
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -198,7 +213,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -270,6 +285,12 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/broadcast-arrays]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-arrays
 
 [@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
+
+[@stdlib/ndarray/count-falsy]: https://github.com/stdlib-js/ndarray/tree/main/count-falsy
+
+[@stdlib/ndarray/count-if]: https://github.com/stdlib-js/ndarray/tree/main/count-if
+
+[@stdlib/ndarray/count-truthy]: https://github.com/stdlib-js/ndarray/tree/main/count-truthy
 
 [@stdlib/ndarray/data-buffer]: https://github.com/stdlib-js/ndarray/tree/main/data-buffer
 
