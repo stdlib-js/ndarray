@@ -426,6 +426,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`0367f1d`](https://github.com/stdlib-js/stdlib/commit/0367f1d22be37c646f5a354c6c34ee3a755b3aeb) - **refactor:** fix error messages and use string interpolation _(by Athan Reines)_
 -   [`f50db5b`](https://github.com/stdlib-js/stdlib/commit/f50db5b43e51607e188f38bd6fab7d0ad5098110) - **docs:** update namespace table of contents [(#7152)](https://github.com/stdlib-js/stdlib/pull/7152) _(by stdlib-bot)_
 -   [`4f41317`](https://github.com/stdlib-js/stdlib/commit/4f413178393495c6fb1a25d9ebcfd90132013ea5) - **docs:** update comments _(by Athan Reines)_
 -   [`63eaebc`](https://github.com/stdlib-js/stdlib/commit/63eaebc120e5588352cd7b78871eb5c1b736c9bc) - **docs:** update comment _(by Athan Reines)_

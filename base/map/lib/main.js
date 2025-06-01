@@ -23,6 +23,7 @@
 var iterationOrder = require( './../../../base/iteration-order' );
 var strides2order = require( './../../../base/strides2order' );
 var ndarray2object = require( './../../../base/ndarraylike2object' );
+var format = require( '@stdlib/string/format' );
 var blockedaccessormap2d = require( './2d_blocked_accessors.js' );
 var blockedaccessormap3d = require( './3d_blocked_accessors.js' );
 var blockedaccessormap4d = require( './4d_blocked_accessors.js' );
@@ -211,7 +212,7 @@ function map( arrays, fcn, thisArg ) {
 	shy = y.shape;
 	ndims = shx.length;
 	if ( ndims !== shy.length ) {
-		throw new Error( 'invalid arguments. Arrays must have the same number of dimensions (i.e., same rank). ndims(x) == '+ndims+'. ndims(y) == '+shy.length+'.' );
+		throw new Error( format( 'invalid arguments. Arrays must have the same number of dimensions (i.e., same rank). ndims(x) == %d. ndims(y) == %d.', ndims, shy.length ) );
 	}
 	// Determine whether we can avoid iteration altogether...
 	if ( ndims === 0 ) {
@@ -225,7 +226,7 @@ function map( arrays, fcn, thisArg ) {
 	for ( i = 0; i < ndims; i++ ) {
 		d = shx[ i ];
 		if ( d !== shy[ i ] ) {
-			throw new Error( 'invalid arguments. Array must have the same shape.' );
+			throw new Error( 'invalid arguments. Arrays must have the same shape.' );
 		}
 		// Note that, if one of the dimensions is `0`, the length will be `0`...
 		len *= d;
