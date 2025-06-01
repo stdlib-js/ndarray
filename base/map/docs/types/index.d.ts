@@ -109,7 +109,7 @@ type Callback<T, U, ThisArg> = Nullary<U, ThisArg> | Unary<T, U, ThisArg> | Bina
 * console.log( y.data );
 * // => <Float64Array>[ 20.0, 30.0, 60.0, 70.0, 100.0, 110.0 ]
 */
-declare function map<T = unknown, U = unknown, V = unknown>( arrays: ArrayLike<typedndarray<T>>, fcn: Callback<T, U, V>, thisArg?: ThisParameterType<Callback<T, U, V>> ): void;
+declare function map<T = unknown, U = unknown, ThisArg = unknown>( arrays: ArrayLike<typedndarray<T>>, fcn: Callback<T, U, ThisArg>, thisArg?: ThisParameterType<Callback<T, U, ThisArg>> ): void;
 
 
 // EXPORTS //

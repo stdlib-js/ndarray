@@ -426,6 +426,9 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`0643a79`](https://github.com/stdlib-js/stdlib/commit/0643a7936cfa4d916eb52b0f4ad89964ceb70560) - **bench:** fix call signatures _(by Athan Reines)_
+-   [`344834e`](https://github.com/stdlib-js/stdlib/commit/344834ebf6c9102b86aee2c7c45b9e60e8486576) - **refactor:** rename template parameter _(by Athan Reines)_
+-   [`37070e8`](https://github.com/stdlib-js/stdlib/commit/37070e8d3748ba83f8fcbf41f5a3dc9a4f2bd2a8) - **bench:** refactor value generation _(by Athan Reines)_
 -   [`2bec349`](https://github.com/stdlib-js/stdlib/commit/2bec349f607cc8fd3a4d05e6aca72c73b734c888) - **chore:** clean-up descriptions and comments _(by Athan Reines)_
 -   [`0367f1d`](https://github.com/stdlib-js/stdlib/commit/0367f1d22be37c646f5a354c6c34ee3a755b3aeb) - **refactor:** fix error messages and use string interpolation _(by Athan Reines)_
 -   [`f50db5b`](https://github.com/stdlib-js/stdlib/commit/f50db5b43e51607e188f38bd6fab7d0ad5098110) - **docs:** update namespace table of contents [(#7152)](https://github.com/stdlib-js/stdlib/pull/7152) _(by stdlib-bot)_
