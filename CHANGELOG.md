@@ -426,6 +426,8 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`bcfac3b`](https://github.com/stdlib-js/stdlib/commit/bcfac3b4e64b90de693948adfffe3658f9b99e99) - **docs:** update example _(by Athan Reines)_
+-   [`dc302b7`](https://github.com/stdlib-js/stdlib/commit/dc302b712bee9871320887a4473c707512dc9196) - **test:** fix broken tests _(by Athan Reines)_
 -   [`9168604`](https://github.com/stdlib-js/stdlib/commit/9168604c1138d438bee5c6856026cc36de35e705) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`49952f7`](https://github.com/stdlib-js/stdlib/commit/49952f7b2fbfdad1b20108aab89a34aeab73da48) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`d47c5ea`](https://github.com/stdlib-js/stdlib/commit/d47c5eab74c76573c9479de1bc7addf8a97483cb) - **docs:** update example _(by Athan Reines)_
