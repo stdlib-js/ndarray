@@ -426,6 +426,9 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`d76442e`](https://github.com/stdlib-js/stdlib/commit/d76442e623bf8b7e8e4d50b80e90315b84cbf771) - **refactor:** add missing assertion _(by Athan Reines)_
+-   [`aec1d1b`](https://github.com/stdlib-js/stdlib/commit/aec1d1b77f2f320cf740954b3c8147b1c90aded7) - **chore:** add TODO _(by Athan Reines)_
+-   [`f99ec78`](https://github.com/stdlib-js/stdlib/commit/f99ec78d011d093ea3a102371d615f636a643b0a) - **refactor:** add missing assertion _(by Athan Reines)_
 -   [`e031b1b`](https://github.com/stdlib-js/stdlib/commit/e031b1b5d6c8993087b34770ae694ba11c23532a) - **docs:** fix comment _(by Athan Reines)_
 -   [`bcfac3b`](https://github.com/stdlib-js/stdlib/commit/bcfac3b4e64b90de693948adfffe3658f9b99e99) - **docs:** update example _(by Athan Reines)_
 -   [`dc302b7`](https://github.com/stdlib-js/stdlib/commit/dc302b712bee9871320887a4473c707512dc9196) - **test:** fix broken tests _(by Athan Reines)_
