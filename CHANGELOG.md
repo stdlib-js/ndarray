@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-02)
+## Unreleased (2025-06-03)
 
 <section class="features">
 
 ### Features
 
+-   [`cc66d3b`](https://github.com/stdlib-js/stdlib/commit/cc66d3b709812126709d2d6c8232ffc2dbd8b576) - add `ndarray/some-by` [(#7145)](https://github.com/stdlib-js/stdlib/pull/7145)
 -   [`e05819a`](https://github.com/stdlib-js/stdlib/commit/e05819abfe0fbf982469653a85add02159e8b122) - add `someBy` to namespace
 -   [`350203f`](https://github.com/stdlib-js/stdlib/commit/350203f7cb6419700b7b07e558b677fb177828f8) - add `ndarray/base/some-by` [(#7087)](https://github.com/stdlib-js/stdlib/pull/7087)
 -   [`b933a8d`](https://github.com/stdlib-js/stdlib/commit/b933a8d4d5176d89e9efe541a65431275011a477) - add `countIf` to namespace
@@ -426,6 +427,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`cc66d3b`](https://github.com/stdlib-js/stdlib/commit/cc66d3b709812126709d2d6c8232ffc2dbd8b576) - **feat:** add `ndarray/some-by` [(#7145)](https://github.com/stdlib-js/stdlib/pull/7145) _(by Muhammad Haris, Athan Reines)_
 -   [`b3d811d`](https://github.com/stdlib-js/stdlib/commit/b3d811d4d6ba1aed9aa1c5e012bba252c99929b6) - **refactor:** reorder expressions _(by Athan Reines)_
 -   [`d76442e`](https://github.com/stdlib-js/stdlib/commit/d76442e623bf8b7e8e4d50b80e90315b84cbf771) - **refactor:** add missing assertion _(by Athan Reines)_
 -   [`aec1d1b`](https://github.com/stdlib-js/stdlib/commit/aec1d1b77f2f320cf740954b3c8147b1c90aded7) - **chore:** add TODO _(by Athan Reines)_
