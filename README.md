@@ -159,6 +159,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`sliceFrom( x, ...start[, options] )`][@stdlib/ndarray/slice-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input ndarray.</span>
 -   <span class="signature">[`sliceTo( x, ...stop[, options] )`][@stdlib/ndarray/slice-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input ndarray.</span>
 -   <span class="signature">[`slice( x, ...s[, options] )`][@stdlib/ndarray/slice]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input `ndarray`.</span>
+-   <span class="signature">[`someBy( x, n[, options], predicate[, thisArg] )`][@stdlib/ndarray/some-by]</span><span class="delimiter">: </span><span class="description">test whether at least `n` elements along one or more `ndarray` dimensions pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`stride( x, dim )`][@stdlib/ndarray/stride]</span><span class="delimiter">: </span><span class="description">return the stride along a specified dimension for a provided ndarray.</span>
 -   <span class="signature">[`strides( x )`][@stdlib/ndarray/strides]</span><span class="delimiter">: </span><span class="description">return the strides of a provided ndarray.</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
@@ -387,6 +388,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/slice-to]: https://github.com/stdlib-js/ndarray/tree/main/slice-to
 
 [@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray/tree/main/slice
+
+[@stdlib/ndarray/some-by]: https://github.com/stdlib-js/ndarray/tree/main/some-by
 
 [@stdlib/ndarray/stride]: https://github.com/stdlib-js/ndarray/tree/main/stride
 

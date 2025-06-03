@@ -429,6 +429,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`9a2b61d`](https://github.com/stdlib-js/stdlib/commit/9a2b61d04186d607367371e9ef345df179516692) - **docs:** update namespace table of contents [(#7187)](https://github.com/stdlib-js/stdlib/pull/7187) _(by stdlib-bot)_
 -   [`495669a`](https://github.com/stdlib-js/stdlib/commit/495669aaf5064ff0043a6ceab9216a3b8c1c84f1) - **fix:** update assertion _(by Athan Reines)_
 -   [`67e9602`](https://github.com/stdlib-js/stdlib/commit/67e9602131f6e714d98de70ce6809cd9d327b02f) - **feat:** add `someBy` to namespace _(by Athan Reines)_
 -   [`cc66d3b`](https://github.com/stdlib-js/stdlib/commit/cc66d3b709812126709d2d6c8232ffc2dbd8b576) - **feat:** add `ndarray/some-by` [(#7145)](https://github.com/stdlib-js/stdlib/pull/7145) _(by Muhammad Haris, Athan Reines)_
