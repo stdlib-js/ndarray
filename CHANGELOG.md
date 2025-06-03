@@ -305,6 +305,7 @@
 
 ### Bug Fixes
 
+-   [`495669a`](https://github.com/stdlib-js/stdlib/commit/495669aaf5064ff0043a6ceab9216a3b8c1c84f1) - update assertion
 -   [`a300862`](https://github.com/stdlib-js/stdlib/commit/a300862d4f05d4d8bd85f1e235db93ad5d35a767) - address increment bugs
 -   [`fab9873`](https://github.com/stdlib-js/stdlib/commit/fab9873a907807195f2f6673b5b97f09e383bd69) - address index bug
 -   [`a4f78ea`](https://github.com/stdlib-js/stdlib/commit/a4f78ea79e24bab68ce4f3381c8bc9fb685bd002) - account for loop tiling when generating list of indices
@@ -428,6 +429,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`495669a`](https://github.com/stdlib-js/stdlib/commit/495669aaf5064ff0043a6ceab9216a3b8c1c84f1) - **fix:** update assertion _(by Athan Reines)_
 -   [`67e9602`](https://github.com/stdlib-js/stdlib/commit/67e9602131f6e714d98de70ce6809cd9d327b02f) - **feat:** add `someBy` to namespace _(by Athan Reines)_
 -   [`cc66d3b`](https://github.com/stdlib-js/stdlib/commit/cc66d3b709812126709d2d6c8232ffc2dbd8b576) - **feat:** add `ndarray/some-by` [(#7145)](https://github.com/stdlib-js/stdlib/pull/7145) _(by Muhammad Haris, Athan Reines)_
 -   [`b3d811d`](https://github.com/stdlib-js/stdlib/commit/b3d811d4d6ba1aed9aa1c5e012bba252c99929b6) - **refactor:** reorder expressions _(by Athan Reines)_
