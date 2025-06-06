@@ -434,6 +434,8 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`dded8bb`](https://github.com/stdlib-js/stdlib/commit/dded8bb627d2634c2e244a9a74bc320511d66263) - **docs:** fix description _(by Athan Reines)_
+-   [`03e5c54`](https://github.com/stdlib-js/stdlib/commit/03e5c54b90e538bee276484281d2e4553d7ec83e) - **docs:** update namespace table of contents [(#7233)](https://github.com/stdlib-js/stdlib/pull/7233) _(by stdlib-bot)_
 -   [`2460ce8`](https://github.com/stdlib-js/stdlib/commit/2460ce82935de6512ee0979cc3b3918924af5ae1) - **feat:** add `unaryReduceStrided1dBy` to namespace _(by Athan Reines)_
 -   [`b228b5e`](https://github.com/stdlib-js/stdlib/commit/b228b5e89da183b38160c6cd6f9908a07918dd09) - **feat:** add `ndarray/base/unary-reduce-strided1d-by` [(#7214)](https://github.com/stdlib-js/stdlib/pull/7214) _(by Muhammad Haris, Athan Reines)_
 -   [`3f6c0ff`](https://github.com/stdlib-js/stdlib/commit/3f6c0ffd9568665b54d0547b0550b2c96505bed6) - **fix:** address increment bug _(by Athan Reines)_
