@@ -16,7 +16,7 @@
 * limitations under the License.
 */
 
-/* eslint-disable no-restricted-syntax, no-invalid-this */
+/* eslint-disable no-restricted-syntax, no-invalid-this, max-lines, max-len */
 
 'use strict';
 
@@ -34,7 +34,7 @@ var isDataType = require( './../../../base/assert/is-data-type' );
 var isOutputDataTypePolicy = require( './../../../base/assert/is-output-data-type-policy' );
 var isInputCastingPolicy = require( './../../../base/assert/is-input-casting-policy' );
 var contains = require( '@stdlib/array/base/assert/contains' );
-var unaryReduceStrided1d = require( './../../../base/unary-reduce-strided1d' );
+var unaryReduceStrided1dBy = require( './../../../base/unary-reduce-strided1d-by' );
 var unaryOutputDataType = require( './../../../base/unary-output-dtype' );
 var unaryInputCastingDataType = require( './../../../base/unary-input-casting-dtype' );
 var resolveEnum = require( './../../../base/dtype-resolve-enum' );
@@ -108,7 +108,7 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 // MAIN //
 
 /**
-* Constructor for performing a reduction on an input ndarray.
+* Constructor for performing a reduction on an input ndarray according to a callback function.
 *
 * @constructor
 * @param {Object} table - dispatch table
@@ -125,10 +125,10 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 * @throws {TypeError} third argument must be an array of supported data types
 * @throws {TypeError} fourth argument must be an object having supported policies
 * @throws {Error} first argument must be an object having valid properties
-* @returns {UnaryStrided1dDispatch} instance
+* @returns {UnaryStrided1dDispatchBy} instance
 *
 * @example
-* var base = require( '@stdlib/stats/base/ndarray/max' );
+* var base = require( '@stdlib/stats/base/ndarray/max-by' );
 * var dtypes = require( '@stdlib/ndarray/dtypes' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -142,22 +142,26 @@ function reorder( arrays, output ) { // TODO: consider replacing with an `array/
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
+* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 *
-* var y = max.apply( x );
+* function clbk( v ) {
+*     return v * 2.0;
+* }
+*
+* var y = maxBy.apply( x, clbk );
 * // returns <ndarray>
 *
 * var v = y.get();
-* // returns 2.0
+* // returns 4.0
 */
-function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
+function UnaryStrided1dDispatchBy( table, idtypes, odtypes, policies ) {
 	var dt;
 	var i;
-	if ( !( this instanceof UnaryStrided1dDispatch ) ) {
-		return new UnaryStrided1dDispatch( table, idtypes, odtypes, policies );
+	if ( !( this instanceof UnaryStrided1dDispatchBy ) ) {
+		return new UnaryStrided1dDispatchBy( table, idtypes, odtypes, policies );
 	}
 	if ( !isObject( table ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an object. Value: `%s`.', table ) );
@@ -218,10 +222,10 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 }
 
 /**
-* Performs a reduction on a provided input ndarray.
+* Performs a reduction on a provided input ndarray according to a callback function.
 *
 * @name apply
-* @memberof UnaryStrided1dDispatch.prototype
+* @memberof UnaryStrided1dDispatchBy.prototype
 * @type {Function}
 * @param {ndarrayLike} x - input ndarray
 * @param {...ndarrayLike} [args] - additional ndarray arguments
@@ -229,15 +233,18 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 * @param {IntegerArray} [options.dims] - list of dimensions over which to perform a reduction
 * @param {boolean} [options.keepdims=false] - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions
 * @param {string} [options.dtype] - output ndarray data type
+* @param {Function} clbk - callback function
+* @param {*} [thisArg] - callback function execution context
 * @throws {TypeError} first argument must be an ndarray-like object
 * @throws {TypeError} options argument must be an object
+* @throws {TypeError} callback argument must be a function
 * @throws {RangeError} dimension indices must not exceed input ndarray bounds
 * @throws {RangeError} number of dimension indices must not exceed the number of input ndarray dimensions
 * @throws {Error} must provide valid options
 * @returns {ndarray} output ndarray
 *
 * @example
-* var base = require( '@stdlib/stats/base/ndarray/max' );
+* var base = require( '@stdlib/stats/base/ndarray/max-by' );
 * var dtypes = require( '@stdlib/ndarray/dtypes' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -251,21 +258,27 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
+* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
 *
-* var y = max.apply( x );
+* function clbk( v ) {
+*     return v * 2.0;
+* }
+*
+* var y = maxBy.apply( x, clbk );
 * // returns <ndarray>
 *
 * var v = y.get();
-* // returns 2.0
+* // returns 4.0
 */
-setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
+setReadOnly( UnaryStrided1dDispatchBy.prototype, 'apply', function apply( x ) {
+	var thisArg;
 	var options;
 	var dtypes;
 	var nargs;
+	var clbk;
 	var args;
 	var opts;
 	var err;
@@ -276,6 +289,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	var tmp;
 	var xdt;
 	var ydt;
+	var flg;
 	var dt;
 	var f;
 	var N;
@@ -303,16 +317,51 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		// Note: we don't type promote additional ndarray arguments, as they are passed as scalars to the underlying strided reduction function...
 		args.push( arr );
 	}
-	// If we didn't make it up until the last argument, this means that we found a non-options argument which was not an ndarray...
-	if ( i < nargs-1 ) {
+	// Check whether we found a non-options argument which was not an ndarray...
+	if ( i < nargs-3 ) {
 		throw new TypeError( format( 'invalid argument. Argument %d must be an ndarray-like object. Value: `%s`.', i, arguments[ i ] ) );
+	}
+	// Case: ( ... )
+	if ( i === nargs ) {
+		throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', arguments[ nargs-1 ] ) );
+	}
+	// Case: ( ..., options, clbk, thisArg )
+	if ( i === nargs-3 ) {
+		flg = true;
+		options = arguments[ nargs-3 ];
+		clbk = arguments[ nargs-2 ];
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', clbk ) );
+		}
+		thisArg = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., clbk )
+	else if ( i === nargs-1 ) {
+		clbk = arguments[ nargs-1 ];
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', clbk ) );
+		}
+	}
+	// Case: ( ..., clbk, thisArg )
+	else if ( isFunction( arguments[ nargs-2 ] ) ) {
+		clbk = arguments[ nargs-2 ];
+		thisArg = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., options, clbk )
+	else if ( isFunction( arguments[ nargs-1 ] ) ) {
+		flg = true;
+		options = arguments[ nargs-2 ];
+		clbk = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., ???, ??? )
+	else {
+		throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', arguments[ nargs-2 ] ) );
 	}
 	shx = getShape( x );
 	N = shx.length;
 
 	opts = objectAssign( {}, defaults );
-	if ( nargs > i ) {
-		options = arguments[ nargs-1 ];
+	if ( flg ) {
 		err = validate( opts, N, this._odtypes, options );
 		if ( err ) {
 			throw err;
@@ -346,14 +395,14 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
 	dtypes = [ resolveEnum( xdt ) ];
-	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 );
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {
 		f = this._table.default;
 	}
 	// Perform the reduction:
-	unaryReduceStrided1d( f, reorder( args, y ), opts.dims );
+	unaryReduceStrided1dBy( f, reorder( args, y ), opts.dims, clbk, thisArg );
 
 	// Check whether we need to reinsert singleton dimensions which can be useful for broadcasting the returned output array to the shape of the original input array...
 	if ( opts.keepdims ) {
@@ -363,27 +412,30 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 });
 
 /**
-* Performs a reduction on a provided input ndarray and assigns results to a provided output ndarray.
+* Performs a reduction on a provided input ndarray according to a callback function and assigns results to a provided output ndarray.
 *
 * @name assign
-* @memberof UnaryStrided1dDispatch.prototype
+* @memberof UnaryStrided1dDispatchBy.prototype
 * @type {Function}
 * @param {ndarrayLike} x - input ndarray
 * @param {...ndarrayLike} [args] - additional ndarray arguments
 * @param {ndarrayLike} out - output ndarray
 * @param {Options} [options] - function options
 * @param {IntegerArray} [options.dims] - list of dimensions over which to perform a reduction
+* @param {Function} clbk - callback function
+* @param {*} [thisArg] - callback function execution context
 * @throws {TypeError} first argument must be an ndarray
 * @throws {TypeError} first argument must have a supported data type
 * @throws {TypeError} output argument must be an ndarray
 * @throws {TypeError} options argument must be an object
+* @throws {TypeError} callback argument must be a function
 * @throws {RangeError} dimension indices must not exceed input ndarray bounds
 * @throws {RangeError} number of dimension indices must not exceed the number of input ndarray dimensions
 * @throws {Error} must provide valid options
 * @returns {ndarrayLike} output ndarray
 *
 * @example
-* var base = require( '@stdlib/stats/base/ndarray/max' );
+* var base = require( '@stdlib/stats/base/ndarray/max-by' );
 * var dtypes = require( '@stdlib/ndarray/dtypes' );
 * var ndarray = require( '@stdlib/ndarray/base/ctor' );
 *
@@ -397,7 +449,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 * var table = {
 *     'default': base
 * };
-* var max = new UnaryStrided1dDispatch( table, [ idt ], odt, policies );
+* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -405,19 +457,25 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 * var ybuf = [ 0.0 ];
 * var y = new ndarray( 'generic', ybuf, [], [ 0 ], 0, 'row-major' );
 *
-* var out = max.assign( x, y );
+* function clbk( v ) {
+*     return v * 2.0;
+* }
+*
+* var out = maxBy.assign( x, y, clbk );
 * // returns <ndarray>
 *
 * var v = out.get();
-* // returns 2.0
+* // returns 4.0
 *
 * var bool = ( out === y );
 * // returns true
 */
-setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
+setReadOnly( UnaryStrided1dDispatchBy.prototype, 'assign', function assign( x ) {
+	var thisArg;
 	var options;
 	var dtypes;
 	var nargs;
+	var clbk;
 	var opts;
 	var args;
 	var arr;
@@ -454,14 +512,41 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( i < 2 ) {
 		throw new TypeError( format( 'invalid argument. Second argument must be an ndarray-like object. Value: `%s`.', arguments[ 1 ] ) );
 	}
-	// If we processed all but the last argument, assume that the last argument is an options argument...
-	else if ( i === nargs-1 ) {
-		options = arguments[ i ];
-		flg = true;
+	// Case: ( ..., out )
+	if ( i === nargs ) {
+		throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', arguments[ nargs-1 ] ) );
 	}
-	// Otherwise, if we have more than one argument remaining, then at least one argument is not an ndarray but should be...
-	else if ( i < nargs-1 ) {
-		throw new TypeError( format( 'invalid argument. Argument %d must be an ndarray-like object. Value: `%s`.', i, arguments[ i ] ) );
+	// Case: ( ..., out, options, clbk, thisArg )
+	if ( i === nargs-3 ) {
+		flg = true;
+		options = arguments[ nargs-3 ];
+		clbk = arguments[ nargs-2 ];
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', clbk ) );
+		}
+		thisArg = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., out, clbk )
+	else if ( i === nargs-1 ) {
+		clbk = arguments[ nargs-1 ];
+		if ( !isFunction( clbk ) ) {
+			throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', clbk ) );
+		}
+	}
+	// Case: ( ..., out, clbk, thisArg )
+	else if ( isFunction( arguments[ nargs-2 ] ) ) {
+		clbk = arguments[ nargs-2 ];
+		thisArg = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., out, options, clbk )
+	else if ( isFunction( arguments[ nargs-1 ] ) ) {
+		flg = true;
+		options = arguments[ nargs-2 ];
+		clbk = arguments[ nargs-1 ];
+	}
+	// Case: ( ..., out, ???, ??? )
+	else {
+		throw new TypeError( format( 'invalid argument. Callback argument must be a function. Value: `%s`.', arguments[ nargs-2 ] ) );
 	}
 	// Cache a reference to the output ndarray:
 	y = args.pop();
@@ -487,7 +572,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		opts.dims = zeroTo( N );
 	}
 	// Determine whether we need to cast the input ndarray...
-	dt = unaryInputCastingDataType( xdt, getDType( y ), this._policies.casting ); // eslint-disable-line max-len
+	dt = unaryInputCastingDataType( xdt, getDType( y ), this._policies.casting );
 	if ( xdt !== dt ) {
 		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
 		tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
@@ -497,14 +582,14 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
 	dtypes = [ resolveEnum( xdt ) ];
-	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 );
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {
 		f = this._table.default;
 	}
 	// Perform the reduction:
-	unaryReduceStrided1d( f, reorder( args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	unaryReduceStrided1dBy( f, reorder( args, y ), opts.dims, clbk, thisArg ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
 	return y;
 });
@@ -512,4 +597,4 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 
 // EXPORTS //
 
-module.exports = UnaryStrided1dDispatch;
+module.exports = UnaryStrided1dDispatchBy;

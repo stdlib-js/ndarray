@@ -1,7 +1,7 @@
 
 {{alias}}( table, idtypes, odtypes, policies )
     Returns an ndarray function interface for performing a reduction on an input
-    ndarray.
+    ndarray according to a callback function.
 
     Parameters
     ----------
@@ -22,12 +22,14 @@
 
         A strided reduction function should have the following signature:
 
-            f( arrays )
+            f( arrays, clbk, thisArg )
 
         where
 
         - arrays: array containing an input ndarray, followed by any additional
         ndarray arguments.
+        - clbk: callback function to apply to each element of an input ndarray.
+        - thisArg: callback function execution context.
 
     idtypes: Array<Array<string>>
         List containing lists of supported input array data types for each input
@@ -51,12 +53,13 @@
     --------
     > var dts = [ 'float64', 'float32', 'generic' ];
     > var p = { 'output': 'same', 'casting': 'none' };
-    > var t = { 'default': {{alias:@stdlib/stats/base/ndarray/max}} };
+    > var t = { 'default': {{alias:@stdlib/stats/base/ndarray/max-by}} };
     > var out = new {{alias}}( t, [ dts ], dts, p );
 
 
-{{alias}}.prototype.apply( x[, ...args][, options] )
-    Performs a reduction on a provided input ndarray.
+{{alias}}.prototype.apply( x[, ...args][, options], clbk[, thisArg] )
+    Performs a reduction on a provided input ndarray according to a callback
+    function.
 
     Parameters
     ----------
@@ -82,6 +85,12 @@
         Boolean indicating whether the reduced dimensions should be included in
         the returned ndarray as singleton dimensions. Default: false.
 
+    clbk: Function
+        Callback function to apply to each ndarray element.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
     Returns
     -------
     out: ndarray
@@ -100,14 +109,15 @@
     > var ox = 0;
     > var ord = 'row-major';
     > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
-    > var y = f.apply( x );
+    > function clbk( v ) { return v * 2.0; };
+    > var y = f.apply( x, clbk );
     > var v = y.get()
-    2.0
+    4.0
 
 
-{{alias}}.prototype.assign( x[, ...args], out[, options] )
-    Performs a reduction on a provided input ndarray and assigns results to a
-    provided output ndarray.
+{{alias}}.prototype.assign( x[, ...args], out[, options], clbk[, thisArg] )
+    Performs a reduction on a provided input ndarray according to a callback
+    function and assigns results to a provided output ndarray.
 
     Parameters
     ----------
@@ -128,6 +138,12 @@
         the function performs a reduction over all elements in a provided input
         ndarray.
 
+    clbk: Function
+        Callback function.
+
+    thisArg: any (optional)
+        Callback function execution context.
+
     Returns
     -------
     out: ndarray
@@ -147,12 +163,13 @@
     > var ord = 'row-major';
     > var x = new {{alias:@stdlib/ndarray/ctor}}( dt, buf, sh, sx, ox, ord );
     > var out = {{alias:@stdlib/ndarray/zeros}}( [], { 'dtype': dt } );
-    > var y = f.assign( x, out )
+    > function clbk( v ) { return v * 2.0; };
+    > var y = f.assign( x, out, clbk )
     <ndarray>
     > var bool = ( out === y )
     true
     > var v = out.get()
-    2.0
+    4.0
 
     See Also
     --------
