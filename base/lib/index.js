@@ -1085,6 +1085,24 @@ setReadOnly( ns, 'unaryReduceStrided1dBy', require( './../../base/unary-reduce-s
 setReadOnly( ns, 'unaryReduceStrided1dDispatch', require( './../../base/unary-reduce-strided1d-dispatch' ) );
 
 /**
+* @name unaryReduceStrided1dDispatchBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dDispatchBy', require( './../../base/unary-reduce-strided1d-dispatch-by' ) );
+
+/**
+* @name unaryReduceStrided1dDispatchByFactory
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by-factory}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dDispatchByFactory', require( './../../base/unary-reduce-strided1d-dispatch-by-factory' ) );
+
+/**
 * @name unaryReduceStrided1dDispatchFactory
 * @memberof ns
 * @readonly

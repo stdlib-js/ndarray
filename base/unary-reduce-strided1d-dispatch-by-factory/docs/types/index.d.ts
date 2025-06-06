@@ -194,55 +194,14 @@ interface Policies {
 }
 
 /**
-* Class for performing a reduction on an input ndarray according to a callback function.
+* Interface for performing a reduction on an ndarray according to a callback function.
 */
-declare class UnaryStrided1dDispatchBy<T, U> {
-	/**
-	* Constructor for performing a reduction on an input ndarray according to a callback function.
-	*
-	* @param table - dispatch table
-	* @param idtypes - list containing lists of supported input data types for each ndarray argument
-	* @param odtypes - list of supported output data types
-	* @param policies - dispatch policies
-	* @returns instance
-	*
-	* @example
-	* var base = require( '@stdlib/stats/base/ndarray/max-by' );
-	* var dtypes = require( './../../../../dtypes' );
-	* var ndarray = require( './../../../../base/ctor' );
-	*
-	* var idt = dtypes( 'real_and_generic' );
-	* var odt = idt;
-	* var policies = {
-	*     'output': 'same',
-	*     'casting': 'none'
-	* };
-	*
-	* var table = {
-	*     'default': base
-	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
-	*
-	* var xbuf = [ -1.0, 2.0, -3.0 ];
-	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-	*
-	* function clbk( v ) {
-	*     return v * 2.0;
-	* }
-	*
-	* var y = maxBy.apply( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 4.0
-	*/
-	constructor( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies );
-
+interface UnaryFunction<T, U> {
 	/**
 	* Performs a reduction on a provided input ndarray according to a callback function.
 	*
 	* @param x - input ndarray
-	* @param args - function options and additional ndarray arguments
+	* @param args - function options and additional array arguments
 	* @param clbk - callback function
 	* @param thisArg - callback function execution context
 	* @returns output ndarray
@@ -262,7 +221,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	* var maxBy = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -271,13 +230,13 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	*     return v * 2.0;
 	* }
 	*
-	* var y = maxBy.apply( x, clbk );
+	* var y = maxBy( x, clbk );
 	* // returns <ndarray>
 	*
 	* var v = y.get();
-	* // returns 4.0
+	* // returns 2.0
 	*/
-	apply<ThisArg = unknown>( x: InputArray<T>, ...args: Array<InputArray<T> | Options | Callback<T, U, ThisArg> | ThisParameterType<Callback<T, U, ThisArg>>> ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.
+	<ThisArg = unknown>( x: InputArray<T>, ...args: Array<InputArray<T> | Options | Callback<T, U, ThisArg> | ThisParameterType<Callback<T, U, ThisArg>>> ): OutputArray<U>; // NOTE: we lose type specificity here, but retaining specificity would likely be difficult and/or tedious to completely enumerate, as the output ndarray data type is dependent on how `x` interacts with output data type policy and whether that policy has been overridden by `options.dtype`. In principle, as well, based on the policy, it is possible to know more exactly which `InputArray` types are actually allowed.
 
 	/**
 	* Performs a reduction on a provided input ndarray according to a callback function and assigns results to a provided output ndarray.
@@ -303,7 +262,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	* var maxBy = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -319,7 +278,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 4.0
+	* // returns 2.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -351,7 +310,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	* var maxBy = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -367,7 +326,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 4.0
+	* // returns 2.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -379,7 +338,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	*
 	* @param x - input ndarray
 	* @param y - additional ndarray argument
-	* @param args - output ndarray, additional ndarray arguments, and function options
+	* @param args - output ndarray, additional array arguments, and function options
 	* @param clbk - callback function
 	* @param thisArg - callback function execution context
 	* @returns output ndarray
@@ -399,7 +358,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* var table = {
 	*     'default': base
 	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	* var maxBy = factory( table, [ idt ], odt, policies );
 	*
 	* var xbuf = [ -1.0, 2.0, -3.0 ];
 	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -415,7 +374,7 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 	* // returns <ndarray>
 	*
 	* var v = out.get();
-	* // returns 4.0
+	* // returns 2.0
 	*
 	* var bool = ( out === y );
 	* // returns true
@@ -424,100 +383,13 @@ declare class UnaryStrided1dDispatchBy<T, U> {
 }
 
 /**
-* Interface defining a constructor which is both "newable" and "callable".
-*/
-interface UnaryStrided1dDispatchByConstructor {
-	/**
-	* Constructor for performing a reduction on an input ndarray according to a callback function.
-	*
-	* @param table - dispatch table
-	* @param idtypes - list containing lists of supported input data types for each ndarray argument
-	* @param odtypes - list of supported output data types
-	* @param policies - dispatch policies
-	* @returns instance
-	*
-	* @example
-	* var base = require( '@stdlib/stats/base/ndarray/max-by' );
-	* var dtypes = require( './../../../../dtypes' );
-	* var ndarray = require( './../../../../base/ctor' );
-	*
-	* var idt = dtypes( 'real_and_generic' );
-	* var odt = idt;
-	* var policies = {
-	*     'output': 'same',
-	*     'casting': 'none'
-	* };
-	*
-	* var table = {
-	*     'default': base
-	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
-	*
-	* var xbuf = [ -1.0, 2.0, -3.0 ];
-	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-	*
-	* function clbk( v ) {
-	*     return v * 2.0;
-	* }
-	*
-	* var y = maxBy.apply( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 4.0
-	*/
-	new<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatchBy<T, U>;
-
-	/**
-	* Constructor for performing a reduction on an input ndarray according to a callback function.
-	*
-	* @param table - dispatch table
-	* @param idtypes - list containing lists of supported input data types for each ndarray argument
-	* @param odtypes - list of supported output data types
-	* @param policies - dispatch policies
-	* @returns instance
-	*
-	* @example
-	* var base = require( '@stdlib/stats/base/ndarray/max-by' );
-	* var dtypes = require( './../../../../dtypes' );
-	* var ndarray = require( './../../../../base/ctor' );
-	*
-	* var idt = dtypes( 'real_and_generic' );
-	* var odt = idt;
-	* var policies = {
-	*     'output': 'same',
-	*     'casting': 'none'
-	* };
-	*
-	* var table = {
-	*     'default': base
-	* };
-	* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
-	*
-	* var xbuf = [ -1.0, 2.0, -3.0 ];
-	* var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
-	*
-	* function clbk( v ) {
-	*     return v * 2.0;
-	* }
-	*
-	* var y = maxBy.apply( x, clbk );
-	* // returns <ndarray>
-	*
-	* var v = y.get();
-	* // returns 4.0
-	*/
-	<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryStrided1dDispatchBy<T, U>;
-}
-
-/**
-* Constructor for performing a reduction on an input ndarray according to a callback function.
+* Creates a function for performing a reduction on a provided ndarray according to a callback function.
 *
 * @param table - dispatch table
 * @param idtypes - list containing lists of supported input data types for each ndarray argument
 * @param odtypes - list of supported output data types
 * @param policies - dispatch policies
-* @returns instance
+* @returns function for applying a unary function
 *
 * @example
 * var base = require( '@stdlib/stats/base/ndarray/max-by' );
@@ -534,7 +406,7 @@ interface UnaryStrided1dDispatchByConstructor {
 * var table = {
 *     'default': base
 * };
-* var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+* var maxBy = factory( table, [ idt ], odt, policies );
 *
 * var xbuf = [ -1.0, 2.0, -3.0 ];
 * var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -543,15 +415,15 @@ interface UnaryStrided1dDispatchByConstructor {
 *     return v * 2.0;
 * }
 *
-* var y = maxBy.apply( x, clbk );
+* var y = maxBy( x, clbk );
 * // returns <ndarray>
 *
 * var v = y.get();
-* // returns 4.0
+* // returns 2.0
 */
-declare var ctor: UnaryStrided1dDispatchByConstructor;
+declare function factory<T = unknown, U = unknown>( table: DispatchTable<T, U> | BaseDispatchTable<T, U>, idtypes: ArrayLike<ArrayLike<DataType>>, odtypes: ArrayLike<DataType>, policies: Policies ): UnaryFunction<T, U>;
 
 
 // EXPORTS //
 
-export = ctor;
+export = factory;

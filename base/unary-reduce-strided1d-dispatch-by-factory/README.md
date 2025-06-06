@@ -18,23 +18,25 @@ limitations under the License.
 
 -->
 
-<!-- lint disable maximum-heading-length -->
+# unaryStrided1dDispatchByFactory
 
-# UnaryStrided1dDispatchBy
-
-> Constructor for performing a reduction on an input ndarray according to a callback function.
+> Create a function for performing a reduction on an input ndarray according to a callback function.
 
 <section class="usage">
 
 ## Usage
 
+<!-- eslint-disable id-length -->
+
 ```javascript
-var UnaryStrided1dDispatchBy = require( '@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by' );
+var unaryStrided1dDispatchByFactory = require( '@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by-factory' );
 ```
 
-#### UnaryStrided1dDispatchBy( table, idtypes, odtypes, policies )
+#### unaryStrided1dDispatchByFactory( table, idtypes, odtypes, policies )
 
-Constructor for performing a reduction on an input ndarray according to a callback function.
+Returns a function for performing a reduction on an input ndarray according to a callback function.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var base = require( '@stdlib/stats/base/ndarray/max-by' );
@@ -49,10 +51,10 @@ var policies = {
     'casting': 'none'
 };
 
-var unary = new UnaryStrided1dDispatchBy( table, [ dtypes ], dtypes, policies );
+var unary = unaryStrided1dDispatchByFactory( table, [ dtypes ], dtypes, policies );
 ```
 
-The constructor has the following parameters:
+The function has the following parameters:
 
 -   **table**: strided reduction function dispatch table. Must have the following properties:
 
@@ -72,9 +74,11 @@ The constructor has the following parameters:
     -   **output**: output data type [policy][@stdlib/ndarray/output-dtype-policies].
     -   **casting**: input ndarray casting [policy][@stdlib/ndarray/input-casting-policies].
 
-#### UnaryStrided1dDispatchBy.prototype.apply( x\[, ...args]\[, options], clbk\[, thisArg] )
+#### unary( x\[, ...args]\[, options], clbk\[, thisArg] )
 
 Performs a reduction on a provided input ndarray according to a callback function.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
@@ -90,7 +94,7 @@ var policies = {
     'casting': 'none'
 };
 
-var unary = new UnaryStrided1dDispatchBy( table, [ dtypes ], dtypes, policies );
+var unary = unaryStrided1dDispatchByFactory( table, [ dtypes ], dtypes, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -99,14 +103,14 @@ function clbk( v ) {
     return v * 2.0;
 }
 
-var y = unary.apply( x, clbk );
+var y = unary( x, clbk );
 // returns <ndarray>
 
 var v = y.get();
 // returns 4.0
 ```
 
-The method has the following parameters:
+The function has the following parameters:
 
 -   **x**: input ndarray.
 -   **...args**: additional input ndarray arguments (_optional_).
@@ -114,13 +118,15 @@ The method has the following parameters:
 -   **clbk**: callback function.
 -   **thisArg**: callback function execution context (_optional_).
 
-The method accepts the following options:
+The function accepts the following options:
 
 -   **dims**: list of dimensions over which to perform a reduction.
 -   **dtype**: output ndarray data type. Setting this option, overrides the output data type policy.
 -   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions. Default: `false`.
 
-By default, the method returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
+By default, the function returns an ndarray having a data type determined by the output data type policy. To override the default behavior, set the `dtype` option.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var ndarray = require( '@stdlib/ndarray/base/ctor' );
@@ -137,7 +143,7 @@ var policies = {
     'casting': 'none'
 };
 
-var unary = new UnaryStrided1dDispatchBy( table, [ dtypes ], dtypes, policies );
+var unary = unaryStrided1dDispatchByFactory( table, [ dtypes ], dtypes, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -149,16 +155,18 @@ function clbk( v ) {
 var opts = {
     'dtype': 'float64'
 };
-var y = unary.apply( x, opts, clbk );
+var y = unary( x, opts, clbk );
 // returns <ndarray>
 
 var dt = getDType( y );
 // returns 'float64'
 ```
 
-#### UnaryStrided1dDispatchBy.prototype.assign( x\[, ...args], out\[, options], clbk\[, thisArg] )
+#### unary.assign( x\[, ...args], out\[, options], clbk\[, thisArg] )
 
 Performs a reduction on a provided input ndarray according to a callback function and assigns results to a provided output ndarray.
+
+<!-- eslint-disable id-length -->
 
 ```javascript
 var base = require( '@stdlib/stats/base/ndarray/max-by' );
@@ -175,7 +183,7 @@ var policies = {
 var table = {
     'default': base
 };
-var unary = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+var unary = unaryStrided1dDispatchByFactory( table, [ idt ], odt, policies );
 
 var xbuf = [ -1.0, 2.0, -3.0 ];
 var x = new ndarray( 'generic', xbuf, [ xbuf.length ], [ 1 ], 0, 'row-major' );
@@ -230,7 +238,7 @@ The method accepts the following options:
     -   **clbk**: callback function.
     -   **thisArg**: callback function execution context.
 
--   The output data type policy only applies to the `apply` method. For the `assign` method, the output ndarray is allowed to have any supported output data type.
+-   The output data type policy only applies to the function returned by the main function. For the `assign` method, the output ndarray is allowed to have any supported output data type.
 
 </section>
 
@@ -239,6 +247,8 @@ The method accepts the following options:
 <section class="examples">
 
 ## Examples
+
+<!-- eslint-disable id-length, max-len -->
 
 <!-- eslint no-undef: "error" -->
 
@@ -250,7 +260,7 @@ var dtypes = require( '@stdlib/ndarray/dtypes' );
 var dtype = require( '@stdlib/ndarray/dtype' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var UnaryStrided1dDispatchBy = require( '@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by' );
+var unaryStrided1dDispatchByFactory = require( '@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-by-factory' );
 
 // Define the supported input and output data types:
 var idt = dtypes( 'real_and_generic' );
@@ -268,7 +278,7 @@ var table = {
 };
 
 // Create an interface for performing a reduction:
-var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+var maxBy = unaryStrided1dDispatchByFactory( table, [ idt ], odt, policies );
 
 // Define a function for creating an object with a random value:
 function random() {
@@ -292,7 +302,7 @@ function accessor( v ) {
 var opts = {
     'dims': [ 0 ]
 };
-var y = maxBy.apply( x, opts, accessor );
+var y = maxBy( x, opts, accessor );
 
 // Resolve the output array data type:
 var dt = dtype( y );

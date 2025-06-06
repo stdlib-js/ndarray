@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`9a30157`](https://github.com/stdlib-js/stdlib/commit/9a3015754f96452f5f205d91338bbc92def20249) - add `unaryReduceStrided1dDispatchByFactory` to namespace
+-   [`50ebfa6`](https://github.com/stdlib-js/stdlib/commit/50ebfa6340bddbb7627195e27bdf7ece3a6f1198) - add `unaryReduceStrided1dDispatchBy` to namespace
+-   [`64103e2`](https://github.com/stdlib-js/stdlib/commit/64103e22a2cf0fcad5914d53885d09e311fef6ee) - add `ndarray/base/unary-reduce-strided1d-dispatch-by-factory`
 -   [`34ed9af`](https://github.com/stdlib-js/stdlib/commit/34ed9af63e302a5f4a759c7ef9b4f048b3ef89d4) - add `ndarray/base/unary-reduce-strided1d-dispatch-by`
 -   [`2460ce8`](https://github.com/stdlib-js/stdlib/commit/2460ce82935de6512ee0979cc3b3918924af5ae1) - add `unaryReduceStrided1dBy` to namespace
 -   [`b228b5e`](https://github.com/stdlib-js/stdlib/commit/b228b5e89da183b38160c6cd6f9908a07918dd09) - add `ndarray/base/unary-reduce-strided1d-by` [(#7214)](https://github.com/stdlib-js/stdlib/pull/7214)
@@ -437,6 +440,13 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`71f1df4`](https://github.com/stdlib-js/stdlib/commit/71f1df4e7a7c70aa99e3ea52aaabaafa6d033878) - **docs:** update examples _(by Athan Reines)_
+-   [`9b376ef`](https://github.com/stdlib-js/stdlib/commit/9b376effa2bcc564e59814df6bb609b40370c303) - **docs:** update examples _(by Athan Reines)_
+-   [`da7f3a3`](https://github.com/stdlib-js/stdlib/commit/da7f3a3223a6f8cef6847d05ddc059825d93dbbd) - **docs:** fix require path _(by Athan Reines)_
+-   [`9a30157`](https://github.com/stdlib-js/stdlib/commit/9a3015754f96452f5f205d91338bbc92def20249) - **feat:** add `unaryReduceStrided1dDispatchByFactory` to namespace _(by Athan Reines)_
+-   [`50ebfa6`](https://github.com/stdlib-js/stdlib/commit/50ebfa6340bddbb7627195e27bdf7ece3a6f1198) - **feat:** add `unaryReduceStrided1dDispatchBy` to namespace _(by Athan Reines)_
+-   [`64103e2`](https://github.com/stdlib-js/stdlib/commit/64103e22a2cf0fcad5914d53885d09e311fef6ee) - **feat:** add `ndarray/base/unary-reduce-strided1d-dispatch-by-factory` _(by Athan Reines)_
+-   [`5b938ee`](https://github.com/stdlib-js/stdlib/commit/5b938eee513bfe9b1859cb2875aaed8d787daf74) - **docs:** update description _(by Athan Reines)_
 -   [`34ed9af`](https://github.com/stdlib-js/stdlib/commit/34ed9af63e302a5f4a759c7ef9b4f048b3ef89d4) - **feat:** add `ndarray/base/unary-reduce-strided1d-dispatch-by` _(by Athan Reines)_
 -   [`970b3be`](https://github.com/stdlib-js/stdlib/commit/970b3be65917ec995e5d8c0e06fbebd5870a4687) - **docs:** fix description _(by Athan Reines)_
 -   [`c86cb96`](https://github.com/stdlib-js/stdlib/commit/c86cb96872dce4d7b508daf43886e10c0fedad8f) - **fix:** update require path _(by Athan Reines)_

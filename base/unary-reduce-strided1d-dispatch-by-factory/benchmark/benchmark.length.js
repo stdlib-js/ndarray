@@ -23,13 +23,12 @@
 var bench = require( '@stdlib/bench' );
 var isnan = require( '@stdlib/math/base/assert/is-nan' );
 var pow = require( '@stdlib/math/base/special/pow' );
-var dtypes = require( '@stdlib/array/dtypes' );
+var dtypes = require( './../../../dtypes' );
 var uniform = require( '@stdlib/random/array/uniform' );
-var zeros = require( '@stdlib/array/zeros' );
 var ndarray = require( './../../../base/ctor' );
 var maxBy = require( '@stdlib/stats/base/ndarray/max-by' );
 var pkg = require( './../package.json' ).name;
-var UnaryStrided1dDispatchBy = require( './../lib' );
+var factory = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -56,7 +55,6 @@ function createBenchmark( len ) {
 	var policies;
 	var unary;
 	var table;
-	var out;
 	var idt;
 	var odt;
 	var x;
@@ -70,14 +68,12 @@ function createBenchmark( len ) {
 		'output': 'same',
 		'casting': 'none'
 	};
-	unary = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	unary = factory( table, [ idt ], odt, policies );
 
 	x = uniform( len, -50.0, 50.0, {
 		'dtype': 'float64'
 	});
 	x = new ndarray( 'float64', x, [ len ], [ 1 ], 0, 'row-major' );
-
-	out = new ndarray( 'float64', zeros( 1, 'float64' ), [], [ 0 ], 0, 'row-major' );
 
 	return benchmark;
 
@@ -93,7 +89,7 @@ function createBenchmark( len ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			o = unary.assign( x, out, accessor );
+			o = unary( x, accessor );
 			if ( typeof o !== 'object' ) {
 				b.fail( 'should return an ndarray' );
 			}
@@ -128,7 +124,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':assign:len='+len, f );
+		bench( pkg+'::apply:len='+len, f );
 	}
 }
 

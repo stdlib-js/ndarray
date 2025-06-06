@@ -29,7 +29,7 @@ var zeros = require( '@stdlib/array/zeros' );
 var ndarray = require( './../../../base/ctor' );
 var maxBy = require( '@stdlib/stats/base/ndarray/max-by' );
 var pkg = require( './../package.json' ).name;
-var UnaryStrided1dDispatchBy = require( './../lib' );
+var factory = require( './../lib' );
 
 
 // FUNCTIONS //
@@ -70,7 +70,7 @@ function createBenchmark( len ) {
 		'output': 'same',
 		'casting': 'none'
 	};
-	unary = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+	unary = factory( table, [ idt ], odt, policies );
 
 	x = uniform( len, -50.0, 50.0, {
 		'dtype': 'float64'

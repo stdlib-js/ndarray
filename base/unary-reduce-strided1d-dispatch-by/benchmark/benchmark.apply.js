@@ -62,7 +62,7 @@ function createBenchmark( len ) {
 	table = {
 		'default': maxBy
 	};
-	idt = dtypes();
+	idt = dtypes( 'real_and_generic' );
 	odt = dtypes( 'real_and_generic' );
 	policies = {
 		'output': 'same',

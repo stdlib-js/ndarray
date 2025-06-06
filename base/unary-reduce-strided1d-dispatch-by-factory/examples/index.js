@@ -25,7 +25,7 @@ var dtypes = require( './../../../dtypes' );
 var dtype = require( './../../../dtype' );
 var ndarray2array = require( './../../../to-array' );
 var ndarray = require( './../../../ctor' );
-var UnaryStrided1dDispatchBy = require( './../lib' );
+var factory = require( './../lib' );
 
 // Define the supported input and output data types:
 var idt = dtypes( 'real_and_generic' );
@@ -43,7 +43,7 @@ var table = {
 };
 
 // Create an interface for performing a reduction:
-var maxBy = new UnaryStrided1dDispatchBy( table, [ idt ], odt, policies );
+var maxBy = factory( table, [ idt ], odt, policies );
 
 // Define a function for creating an object with a random value:
 function random() {
@@ -67,7 +67,7 @@ function accessor( v ) {
 var opts = {
 	'dims': [ 0 ]
 };
-var y = maxBy.apply( x, opts, accessor );
+var y = maxBy( x, opts, accessor );
 
 // Resolve the output array data type:
 var dt = dtype( y );
