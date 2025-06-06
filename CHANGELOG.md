@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2460ce8`](https://github.com/stdlib-js/stdlib/commit/2460ce82935de6512ee0979cc3b3918924af5ae1) - add `unaryReduceStrided1dBy` to namespace
 -   [`b228b5e`](https://github.com/stdlib-js/stdlib/commit/b228b5e89da183b38160c6cd6f9908a07918dd09) - add `ndarray/base/unary-reduce-strided1d-by` [(#7214)](https://github.com/stdlib-js/stdlib/pull/7214)
 -   [`67e9602`](https://github.com/stdlib-js/stdlib/commit/67e9602131f6e714d98de70ce6809cd9d327b02f) - add `someBy` to namespace
 -   [`cc66d3b`](https://github.com/stdlib-js/stdlib/commit/cc66d3b709812126709d2d6c8232ffc2dbd8b576) - add `ndarray/some-by` [(#7145)](https://github.com/stdlib-js/stdlib/pull/7145)
@@ -433,6 +434,7 @@ A total of 17 issues were closed in this release:
 
 <details>
 
+-   [`2460ce8`](https://github.com/stdlib-js/stdlib/commit/2460ce82935de6512ee0979cc3b3918924af5ae1) - **feat:** add `unaryReduceStrided1dBy` to namespace _(by Athan Reines)_
 -   [`b228b5e`](https://github.com/stdlib-js/stdlib/commit/b228b5e89da183b38160c6cd6f9908a07918dd09) - **feat:** add `ndarray/base/unary-reduce-strided1d-by` [(#7214)](https://github.com/stdlib-js/stdlib/pull/7214) _(by Muhammad Haris, Athan Reines)_
 -   [`3f6c0ff`](https://github.com/stdlib-js/stdlib/commit/3f6c0ffd9568665b54d0547b0550b2c96505bed6) - **fix:** address increment bug _(by Athan Reines)_
 -   [`4d29349`](https://github.com/stdlib-js/stdlib/commit/4d29349017e6d62d7f72aa0c3a86a24fdd83e86a) - **fix:** address increment bug _(by Athan Reines)_

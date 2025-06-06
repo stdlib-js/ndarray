@@ -1067,6 +1067,15 @@ setReadOnly( ns, 'unaryOutputDataType', require( './../../base/unary-output-dtyp
 setReadOnly( ns, 'unaryReduceStrided1d', require( './../../base/unary-reduce-strided1d' ) );
 
 /**
+* @name unaryReduceStrided1dBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-by}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dBy', require( './../../base/unary-reduce-strided1d-by' ) );
+
+/**
 * @name unaryReduceStrided1dDispatch
 * @memberof ns
 * @readonly
