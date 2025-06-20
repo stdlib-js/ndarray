@@ -352,6 +352,15 @@ setReadOnly( ns, 'isSignedIntegerDataType', require( './../../../base/assert/is-
 setReadOnly( ns, 'isSingleSegmentCompatible', require( './../../../base/assert/is-single-segment-compatible' ) );
 
 /**
+* @name isStructDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-struct-data-type}
+*/
+setReadOnly( ns, 'isStructDataType', require( './../../../base/assert/is-struct-data-type' ) );
+
+/**
 * @name isUnsignedIntegerDataType
 * @memberof ns
 * @readonly

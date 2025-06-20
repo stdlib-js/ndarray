@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# isDataType
+# isStructDataType
 
-> Test if an input value is a supported ndarray data type.
+> Test if an input value is a supported ndarray struct data type.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,19 +37,28 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isDataType = require( '@stdlib/ndarray/base/assert/is-data-type' );
+var isStructDataType = require( '@stdlib/ndarray/base/assert/is-struct-data-type' );
 ```
 
-#### isDataType( value )
+#### isStructDataType( value )
 
-Tests if an input value is a supported ndarray data type.
+Tests if an input value is a supported ndarray struct data type.
 
 ```javascript
-var bool = isDataType( 'float32' );
+var structFactory = require( '@stdlib/dstructs/struct' );
+
+var Struct = structFactory([
+    {
+        'name': 'foo',
+        'type': 'float64'
+    }
+]);
+
+var bool = isStructDataType( Struct );
 // returns true
 
-bool = isDataType( 'int32' );
-// returns true
+bool = isStructDataType( 'int32' );
+// returns false
 ```
 
 </section>
@@ -59,10 +68,6 @@ bool = isDataType( 'int32' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   The function returns `true` when provided any supported ndarray [data type][@stdlib/ndarray/dtypes] and when provided a [struct][@stdlib/dstructs/struct] constructor describing a fixed-width composite data type.
 
 </section>
 
@@ -77,45 +82,56 @@ bool = isDataType( 'int32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var isDataType = require( '@stdlib/ndarray/base/assert/is-data-type' );
+var structFactory = require( '@stdlib/dstructs/struct' );
+var isStructDataType = require( '@stdlib/ndarray/base/assert/is-struct-data-type' );
 
-var bool = isDataType( 'binary' );
+var Struct = structFactory([
+    {
+        'name': 'foo',
+        'type': 'float64'
+    }
+]);
+
+var bool = isStructDataType( Struct );
 // returns true
 
-bool = isDataType( 'float32' );
-// returns true
-
-bool = isDataType( 'float64' );
-// returns true
-
-bool = isDataType( 'generic' );
-// returns true
-
-bool = isDataType( 'int16' );
-// returns true
-
-bool = isDataType( 'int32' );
-// returns true
-
-bool = isDataType( 'int8' );
-// returns true
-
-bool = isDataType( 'uint16' );
-// returns true
-
-bool = isDataType( 'uint32' );
-// returns true
-
-bool = isDataType( 'uint8' );
-// returns true
-
-bool = isDataType( 'uint8c' );
-// returns true
-
-bool = isDataType( '' );
+bool = isStructDataType( 'binary' );
 // returns false
 
-bool = isDataType( 'foo' );
+bool = isStructDataType( 'float32' );
+// returns false
+
+bool = isStructDataType( 'float64' );
+// returns false
+
+bool = isStructDataType( 'generic' );
+// returns false
+
+bool = isStructDataType( 'int16' );
+// returns false
+
+bool = isStructDataType( 'int32' );
+// returns false
+
+bool = isStructDataType( 'int8' );
+// returns false
+
+bool = isStructDataType( 'uint16' );
+// returns false
+
+bool = isStructDataType( 'uint32' );
+// returns false
+
+bool = isStructDataType( 'uint8' );
+// returns false
+
+bool = isStructDataType( 'uint8c' );
+// returns false
+
+bool = isStructDataType( '' );
+// returns false
+
+bool = isStructDataType( 'foo' );
 // returns false
 ```
 
@@ -142,10 +158,6 @@ bool = isDataType( 'foo' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
-
-[@stdlib/dstructs/struct]: https://github.com/stdlib-js/dstructs-struct
 
 </section>
 

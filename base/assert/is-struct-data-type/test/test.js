@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var structFactory = require( '@stdlib/dstructs/struct' );
-var isDataType = require( './../lib' );
+var isStructDataType = require( './../lib' );
 
 
 // VARIABLES //
@@ -39,46 +39,48 @@ var Struct = structFactory([
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isDataType, 'function', 'main export is a function' );
+	t.strictEqual( typeof isStructDataType, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function returns `true` if provided a supported ndarray data type', function test( t ) {
+tape( 'the function returns `true` if provided a supported ndarray struct data type', function test( t ) {
 	var values;
 	var bool;
 	var i;
 
 	values = [
-		'binary',
-		'complex64',
-		'complex128',
-		'float32',
-		'float64',
-		'generic',
-		'int16',
-		'int32',
-		'int8',
-		'uint16',
-		'uint32',
-		'uint8',
-		'uint8c',
-
-		// Custom struct dtypes:
 		Struct
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		bool = isDataType( values[ i ] );
+		bool = isStructDataType( values[ i ] );
 		t.strictEqual( bool, true, 'returns expected value when provided '+values[ i ] );
 	}
 	t.end();
 });
 
-tape( 'the function returns `false` if not provided a supported ndarray data type', function test( t ) {
+tape( 'the function returns `false` if not provided a supported ndarray struct data type', function test( t ) {
 	var values;
 	var bool;
 	var i;
 
 	values = [
+		// Supported dtypes:
+		'binary',
+		'complex64',
+		'complex128',
+		'float32',
+		'float64',
+		'int8',
+		'int16',
+		'uint16',
+		'uint32',
+		'uint8c',
+		'bool',
+		'int32',
+		'uint8',
+		'generic',
+
+		// Unsupported dtypes:
 		'float',
 		'int',
 		'bin',
@@ -98,7 +100,7 @@ tape( 'the function returns `false` if not provided a supported ndarray data typ
 		function noop() {}
 	];
 	for ( i = 0; i < values.length; i++ ) {
-		bool = isDataType( values[ i ] );
+		bool = isStructDataType( values[ i ] );
 		t.strictEqual( bool, false, 'returns expected value when provided '+values[ i ] );
 	}
 	t.end();

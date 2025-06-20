@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-19)
+## Unreleased (2025-06-20)
 
 <section class="features">
 
 ### Features
 
+-   [`eac188f`](https://github.com/stdlib-js/stdlib/commit/eac188f4def9fa545e9e0cfcd5731a66337fcd1a) - add support for struct data types
+-   [`99ecc69`](https://github.com/stdlib-js/stdlib/commit/99ecc6907e9c26dabe4dd8e8dfb3b08d10d622c3) - add `isStructDataType` to namespace
+-   [`d20a2ea`](https://github.com/stdlib-js/stdlib/commit/d20a2ea2cba39ea485abb500861a1fdc2088a36c) - add `ndarray/base/assert/is-struct-data-type`
 -   [`9a30157`](https://github.com/stdlib-js/stdlib/commit/9a3015754f96452f5f205d91338bbc92def20249) - add `unaryReduceStrided1dDispatchByFactory` to namespace
 -   [`50ebfa6`](https://github.com/stdlib-js/stdlib/commit/50ebfa6340bddbb7627195e27bdf7ece3a6f1198) - add `unaryReduceStrided1dDispatchBy` to namespace
 -   [`64103e2`](https://github.com/stdlib-js/stdlib/commit/64103e22a2cf0fcad5914d53885d09e311fef6ee) - add `ndarray/base/unary-reduce-strided1d-dispatch-by-factory`
@@ -440,6 +443,9 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`eac188f`](https://github.com/stdlib-js/stdlib/commit/eac188f4def9fa545e9e0cfcd5731a66337fcd1a) - **feat:** add support for struct data types _(by Athan Reines)_
+-   [`99ecc69`](https://github.com/stdlib-js/stdlib/commit/99ecc6907e9c26dabe4dd8e8dfb3b08d10d622c3) - **feat:** add `isStructDataType` to namespace _(by Athan Reines)_
+-   [`d20a2ea`](https://github.com/stdlib-js/stdlib/commit/d20a2ea2cba39ea485abb500861a1fdc2088a36c) - **feat:** add `ndarray/base/assert/is-struct-data-type` _(by Athan Reines)_
 -   [`599c41f`](https://github.com/stdlib-js/stdlib/commit/599c41f5fb2ec89c381b7902319b779be8cc6bd5) - **docs:** remove extra empty lines [(#7405)](https://github.com/stdlib-js/stdlib/pull/7405) _(by stdlib-bot)_
 -   [`3bc4c9f`](https://github.com/stdlib-js/stdlib/commit/3bc4c9f1bf064e7d07f3b2f62d8d0c3c1a305c05) - **chore:** fix C lint errors [(#7397)](https://github.com/stdlib-js/stdlib/pull/7397) _(by Lokesh Ranjan)_
 -   [`c68bdbf`](https://github.com/stdlib-js/stdlib/commit/c68bdbf98a4bb5a85cc6f04c26bc43b49b3218b7) - **chore:** fix EditorConfig lint errors [(#7310)](https://github.com/stdlib-js/stdlib/pull/7310) _(by Deepak Singh)_
