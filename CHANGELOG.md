@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-21)
+## Unreleased (2025-06-22)
 
 <section class="features">
 
@@ -443,6 +443,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`b479fcf`](https://github.com/stdlib-js/stdlib/commit/b479fcfb90c9c9cd56cc0908b2a60a5302f1710f) - **test:** add missing tests to `ndarray/base/every` [(#7235)](https://github.com/stdlib-js/stdlib/pull/7235) _(by Muhammad Haris)_
 -   [`3f4be91`](https://github.com/stdlib-js/stdlib/commit/3f4be91fd9025e696b72b5159fee981f47937c7f) - **docs:** update namespace table of contents [(#7433)](https://github.com/stdlib-js/stdlib/pull/7433) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`eac188f`](https://github.com/stdlib-js/stdlib/commit/eac188f4def9fa545e9e0cfcd5731a66337fcd1a) - **feat:** add support for struct data types _(by Athan Reines)_
 -   [`99ecc69`](https://github.com/stdlib-js/stdlib/commit/99ecc6907e9c26dabe4dd8e8dfb3b08d10d622c3) - **feat:** add `isStructDataType` to namespace _(by Athan Reines)_
