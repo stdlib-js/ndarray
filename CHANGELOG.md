@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`b1f7e33`](https://github.com/stdlib-js/stdlib/commit/b1f7e33277d00292ca5b45de636eaf80b3d45c22) - add `ndarraylike2scalar` to namespace
+-   [`7a8bc40`](https://github.com/stdlib-js/stdlib/commit/7a8bc400fc2e1dd6a5edabc750bb75f4f665c041) - add `ndarray/base/ndarraylike2scalar`
 -   [`eac188f`](https://github.com/stdlib-js/stdlib/commit/eac188f4def9fa545e9e0cfcd5731a66337fcd1a) - add support for struct data types
 -   [`99ecc69`](https://github.com/stdlib-js/stdlib/commit/99ecc6907e9c26dabe4dd8e8dfb3b08d10d622c3) - add `isStructDataType` to namespace
 -   [`d20a2ea`](https://github.com/stdlib-js/stdlib/commit/d20a2ea2cba39ea485abb500861a1fdc2088a36c) - add `ndarray/base/assert/is-struct-data-type`
@@ -443,6 +445,8 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`b1f7e33`](https://github.com/stdlib-js/stdlib/commit/b1f7e33277d00292ca5b45de636eaf80b3d45c22) - **feat:** add `ndarraylike2scalar` to namespace _(by Athan Reines)_
+-   [`7a8bc40`](https://github.com/stdlib-js/stdlib/commit/7a8bc400fc2e1dd6a5edabc750bb75f4f665c041) - **feat:** add `ndarray/base/ndarraylike2scalar` _(by Athan Reines)_
 -   [`1bb671f`](https://github.com/stdlib-js/stdlib/commit/1bb671f66c75cf8ec48146394fe2756831937853) - **refactor:** relax dtype type _(by Athan Reines)_
 -   [`e6a8b55`](https://github.com/stdlib-js/stdlib/commit/e6a8b554a64663970ed6f56b16532222543ddefd) - **refactor:** relax dtype type _(by Athan Reines)_
 -   [`b479fcf`](https://github.com/stdlib-js/stdlib/commit/b479fcfb90c9c9cd56cc0908b2a60a5302f1710f) - **test:** add missing tests to `ndarray/base/every` [(#7235)](https://github.com/stdlib-js/stdlib/pull/7235) _(by Muhammad Haris)_
