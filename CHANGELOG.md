@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - add `unaryReduceStrided1dToStruct` to namespace
 -   [`0f1545f`](https://github.com/stdlib-js/stdlib/commit/0f1545fc6d22ad051bdae2f081f26d1d56cc9538) - add package entry point
 -   [`142e477`](https://github.com/stdlib-js/stdlib/commit/142e4774ab7acbd79e76ff5f9f6e0ae47f70dae4) - add `factory` function
 -   [`a752e25`](https://github.com/stdlib-js/stdlib/commit/a752e25ef1735c0253d3d3feb95dda2d145d5f1e) - add main entry point
@@ -462,6 +463,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - **feat:** add `unaryReduceStrided1dToStruct` to namespace _(by Athan Reines)_
 -   [`b8cacc1`](https://github.com/stdlib-js/stdlib/commit/b8cacc136fceed774024cbbe0c24fc07f2675636) - **docs:** add README and fix docs _(by Athan Reines)_
 -   [`c2e0a60`](https://github.com/stdlib-js/stdlib/commit/c2e0a60dfb54b54cd60a1a3c510fec38abf74c49) - **test:** add initial test stub _(by Athan Reines)_
 -   [`43a64a5`](https://github.com/stdlib-js/stdlib/commit/43a64a54569efd99a3c03654f56e8e533d59dcfb) - **docs:** add examples _(by Athan Reines)_

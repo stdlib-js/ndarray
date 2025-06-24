@@ -1121,6 +1121,15 @@ setReadOnly( ns, 'unaryReduceStrided1dDispatchByFactory', require( './../../base
 setReadOnly( ns, 'unaryReduceStrided1dDispatchFactory', require( './../../base/unary-reduce-strided1d-dispatch-factory' ) );
 
 /**
+* @name unaryReduceStrided1dToStruct
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-to-struct}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dToStruct', require( './../../base/unary-reduce-strided1d-to-struct' ) );
+
+/**
 * @name unaryReduceSubarray
 * @memberof ns
 * @readonly
