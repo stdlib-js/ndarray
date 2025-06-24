@@ -27,6 +27,7 @@ var numelDimension = require( './../../../base/numel-dimension' );
 var getData = require( './../../../base/data-buffer' );
 var getStride = require( './../../../base/stride' );
 var getOffset = require( './../../../base/offset' );
+var ndarraylike2scalar = require( './../../../base/ndarraylike2scalar' );
 var gcusum = require( '@stdlib/blas/ext/base/gcusum' ).ndarray;
 var unaryStrided1d = require( './../lib' );
 
@@ -34,7 +35,7 @@ function wrapper( arrays ) {
 	var x = arrays[ 0 ];
 	var y = arrays[ 1 ];
 	var s = arrays[ 2 ];
-	return gcusum( numelDimension( x, 0 ), getData( s )[ getOffset( s ) ], getData( x ), getStride( x, 0 ), getOffset( x ), getData( y ), getStride( y, 0 ), getOffset( y ) );
+	return gcusum( numelDimension( x, 0 ), ndarraylike2scalar( s ), getData( x ), getStride( x, 0 ), getOffset( x ), getData( y ), getStride( y, 0 ), getOffset( y ) );
 }
 
 var N = 10;

@@ -445,6 +445,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`6bc3cd0`](https://github.com/stdlib-js/stdlib/commit/6bc3cd01d5760daa41777a070aae6a9d6b476d44) - **docs:** update examples _(by Athan Reines)_
 -   [`b1f7e33`](https://github.com/stdlib-js/stdlib/commit/b1f7e33277d00292ca5b45de636eaf80b3d45c22) - **feat:** add `ndarraylike2scalar` to namespace _(by Athan Reines)_
 -   [`7a8bc40`](https://github.com/stdlib-js/stdlib/commit/7a8bc400fc2e1dd6a5edabc750bb75f4f665c041) - **feat:** add `ndarray/base/ndarraylike2scalar` _(by Athan Reines)_
 -   [`1bb671f`](https://github.com/stdlib-js/stdlib/commit/1bb671f66c75cf8ec48146394fe2756831937853) - **refactor:** relax dtype type _(by Athan Reines)_
