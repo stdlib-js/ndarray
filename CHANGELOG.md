@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-24)
+## Unreleased (2025-06-25)
 
 <section class="features">
 
@@ -463,6 +463,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`708d82f`](https://github.com/stdlib-js/stdlib/commit/708d82f3743eb9e6433f517e54188a597068904e) - **docs:** update namespace table of contents [(#7479)](https://github.com/stdlib-js/stdlib/pull/7479) _(by stdlib-bot)_
 -   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - **feat:** add `unaryReduceStrided1dToStruct` to namespace _(by Athan Reines)_
 -   [`b8cacc1`](https://github.com/stdlib-js/stdlib/commit/b8cacc136fceed774024cbbe0c24fc07f2675636) - **docs:** add README and fix docs _(by Athan Reines)_
 -   [`c2e0a60`](https://github.com/stdlib-js/stdlib/commit/c2e0a60dfb54b54cd60a1a3c510fec38abf74c49) - **test:** add initial test stub _(by Athan Reines)_
