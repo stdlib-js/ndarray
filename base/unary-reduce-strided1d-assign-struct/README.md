@@ -20,7 +20,7 @@ limitations under the License.
 
 # unaryReduceStrided1d
 
-> Perform a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assign results to a provided output ndarray.
+> Perform a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function which accepts an output [`struct`][@stdlib/dstructs/struct] object and assign results to a provided output ndarray.
 
 <section class="intro">
 
@@ -33,12 +33,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d-to-struct' );
+var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d-assign-struct' );
 ```
 
 #### unaryReduceStrided1d( fcn, arrays, dims\[, options] )
 
-Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assigns results to a provided output ndarray.
+Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function which accepts an output [`struct`][@stdlib/dstructs/struct] object and assigns results to a provided output ndarray.
 
 <!-- eslint-disable max-len -->
 
@@ -185,7 +185,7 @@ var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
 var Float64Results = require( '@stdlib/stats/base/ztest/one-sample/results/float64' );
 var structFactory = require( '@stdlib/array/struct-factory' );
 var ztest = require( '@stdlib/stats/base/ndarray/ztest' );
-var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d-to-struct' );
+var unaryReduceStrided1d = require( '@stdlib/ndarray/base/unary-reduce-strided1d-assign-struct' );
 
 var ResultsArray = structFactory( Float64Results );
 

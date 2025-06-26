@@ -1076,6 +1076,15 @@ setReadOnly( ns, 'unaryOutputDataType', require( './../../base/unary-output-dtyp
 setReadOnly( ns, 'unaryReduceStrided1d', require( './../../base/unary-reduce-strided1d' ) );
 
 /**
+* @name unaryReduceStrided1dAssignStruct
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-assign-struct}
+*/
+setReadOnly( ns, 'unaryReduceStrided1dAssignStruct', require( './../../base/unary-reduce-strided1d-assign-struct' ) );
+
+/**
 * @name unaryReduceStrided1dBy
 * @memberof ns
 * @readonly
@@ -1119,15 +1128,6 @@ setReadOnly( ns, 'unaryReduceStrided1dDispatchByFactory', require( './../../base
 * @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-dispatch-factory}
 */
 setReadOnly( ns, 'unaryReduceStrided1dDispatchFactory', require( './../../base/unary-reduce-strided1d-dispatch-factory' ) );
-
-/**
-* @name unaryReduceStrided1dToStruct
-* @memberof ns
-* @readonly
-* @type {Function}
-* @see {@link module:@stdlib/ndarray/base/unary-reduce-strided1d-to-struct}
-*/
-setReadOnly( ns, 'unaryReduceStrided1dToStruct', require( './../../base/unary-reduce-strided1d-to-struct' ) );
 
 /**
 * @name unaryReduceSubarray

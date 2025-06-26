@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-25)
+## Unreleased (2025-06-26)
 
 <section class="features">
 
 ### Features
 
+-   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f) - rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct`
+-   [`03299d1`](https://github.com/stdlib-js/stdlib/commit/03299d15a76284c8e22e357794686a837faefb7e) - add `ndarray/base/unary-reduce-strided1d-assign-struct`
 -   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - add `unaryReduceStrided1dToStruct` to namespace
 -   [`0f1545f`](https://github.com/stdlib-js/stdlib/commit/0f1545fc6d22ad051bdae2f081f26d1d56cc9538) - add package entry point
 -   [`142e477`](https://github.com/stdlib-js/stdlib/commit/142e4774ab7acbd79e76ff5f9f6e0ae47f70dae4) - add `factory` function
@@ -425,6 +427,12 @@
 
 ### BREAKING CHANGES
 
+-   [`97834dd`](https://github.com/stdlib-js/stdlib/commit/97834ddd6f863bd8e9b30ce10966f5db8a1f48b2): remove package
+
+    -   To migrate, users should use `ndarray/base/unary-reduce-strided1d-assign-struct`
+        which provides the exact same API and behavior.
+
+-   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f): rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct`
 -   [`7507be0`](https://github.com/stdlib-js/stdlib/commit/7507be008cc27aa0c74770a29cd4b4507eca6745): replace policy string argument with a policy object
 -   [`f0602e3`](https://github.com/stdlib-js/stdlib/commit/f0602e31fcfab3c05954ac9b3d37ae01d3f51b6b): replace policy string argument with a policy object
 -   [`9f35a29`](https://github.com/stdlib-js/stdlib/commit/9f35a299838dee39db10a82b498884bc045383bb): replace policy string argument with a policy object
@@ -463,6 +471,9 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`97834dd`](https://github.com/stdlib-js/stdlib/commit/97834ddd6f863bd8e9b30ce10966f5db8a1f48b2) - **remove:** remove `ndarray/base/unary-reduce-strided1d-struct` _(by Athan Reines)_
+-   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f) - **feat:** rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct` _(by Athan Reines)_
+-   [`03299d1`](https://github.com/stdlib-js/stdlib/commit/03299d15a76284c8e22e357794686a837faefb7e) - **feat:** add `ndarray/base/unary-reduce-strided1d-assign-struct` _(by Athan Reines)_
 -   [`708d82f`](https://github.com/stdlib-js/stdlib/commit/708d82f3743eb9e6433f517e54188a597068904e) - **docs:** update namespace table of contents [(#7479)](https://github.com/stdlib-js/stdlib/pull/7479) _(by stdlib-bot)_
 -   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - **feat:** add `unaryReduceStrided1dToStruct` to namespace _(by Athan Reines)_
 -   [`b8cacc1`](https://github.com/stdlib-js/stdlib/commit/b8cacc136fceed774024cbbe0c24fc07f2675636) - **docs:** add README and fix docs _(by Athan Reines)_

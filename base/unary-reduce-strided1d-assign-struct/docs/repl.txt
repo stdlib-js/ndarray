@@ -1,8 +1,8 @@
 
 {{alias}}( fcn, arrays, dims[, options] )
     Performs a reduction over a list of specified dimensions in an input ndarray
-    via a one-dimensional strided array reduction function and assigns results
-    to a provided output ndarray.
+    via a one-dimensional strided array reduction function which accepts an
+    output struct object and assigns results to a provided output ndarray.
 
     Each provided "ndarray" should be an object with the following properties:
 

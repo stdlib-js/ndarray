@@ -28,7 +28,7 @@ var reduce = require( './main.js' );
 // MAIN //
 
 /**
-* Return a function for performing a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assigning results to a provided output ndarray.
+* Return a function for performing a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function which accepts an output `struct` object and assigning results to a provided output ndarray.
 *
 * @param {Function} fcn - wrapper for a one-dimensional strided array reduction function
 * @throws {TypeError} first argument must be a function
@@ -130,7 +130,7 @@ function factory( fcn ) {
 	return reducer;
 
 	/**
-	* Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assigns results to a provided output ndarray.
+	* Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function which accepts an output `struct` object and assigns results to a provided output ndarray.
 	*
 	* @private
 	* @param {ArrayLikeObject<Object>} arrays - array-like object containing ndarrays

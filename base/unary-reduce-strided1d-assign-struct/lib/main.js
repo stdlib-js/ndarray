@@ -86,7 +86,7 @@ var MAX_DIMS = UNARY.length - 1;
 // MAIN //
 
 /**
-* Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function and assigns results to a provided output ndarray.
+* Performs a reduction over a list of specified dimensions in an input ndarray via a one-dimensional strided array reduction function which accepts an output `struct` object and assigns results to a provided output ndarray.
 *
 * @private
 * @param {Function} fcn - wrapper for a one-dimensional strided array reduction function
