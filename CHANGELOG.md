@@ -471,6 +471,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`da1761d`](https://github.com/stdlib-js/stdlib/commit/da1761d4f0a218f85d7db082086709662a09df44) - **docs:** update namespace table of contents [(#7491)](https://github.com/stdlib-js/stdlib/pull/7491) _(by stdlib-bot)_
 -   [`97834dd`](https://github.com/stdlib-js/stdlib/commit/97834ddd6f863bd8e9b30ce10966f5db8a1f48b2) - **remove:** remove `ndarray/base/unary-reduce-strided1d-struct` _(by Athan Reines)_
 -   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f) - **feat:** rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct` _(by Athan Reines)_
 -   [`03299d1`](https://github.com/stdlib-js/stdlib/commit/03299d15a76284c8e22e357794686a837faefb7e) - **feat:** add `ndarray/base/unary-reduce-strided1d-assign-struct` _(by Athan Reines)_
