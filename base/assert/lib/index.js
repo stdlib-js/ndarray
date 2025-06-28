@@ -154,6 +154,15 @@ setReadOnly( ns, 'isContiguous', require( './../../../base/assert/is-contiguous'
 setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) );
 
 /**
+* @name isDataTypeString
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-data-type-string}
+*/
+setReadOnly( ns, 'isDataTypeString', require( './../../../base/assert/is-data-type-string' ) );
+
+/**
 * @name isFloatingPointDataType
 * @memberof ns
 * @readonly

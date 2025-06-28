@@ -4,12 +4,18 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-26)
+## Unreleased (2025-06-28)
 
 <section class="features">
 
 ### Features
 
+-   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - add 16-bit data types
+-   [`787d8da`](https://github.com/stdlib-js/stdlib/commit/787d8da9caf55181afa9e7d198f7622660397b7d) - add half-precision data types
+-   [`9a4ffa0`](https://github.com/stdlib-js/stdlib/commit/9a4ffa071ed1a891b0520088ff8e6b5815142f20) - add half-precision complex data type
+-   [`6540f29`](https://github.com/stdlib-js/stdlib/commit/6540f29cc83ec1fb172986f87e14730b5973e94f) - add support for 16-bit data types
+-   [`1390cf3`](https://github.com/stdlib-js/stdlib/commit/1390cf3c36b931394e470c7ba4950399b249c5f9) - add `isDataTypeString` to namespace
+-   [`0ef0986`](https://github.com/stdlib-js/stdlib/commit/0ef098649fc4c4d64d8b5c06316e0793d8974651) - add `ndarray/base/assert/is-data-type-string`
 -   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f) - rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct`
 -   [`03299d1`](https://github.com/stdlib-js/stdlib/commit/03299d15a76284c8e22e357794686a837faefb7e) - add `ndarray/base/unary-reduce-strided1d-assign-struct`
 -   [`636e9ba`](https://github.com/stdlib-js/stdlib/commit/636e9ba626fb59ebd2abe0fb5562fd34bca253d3) - add `unaryReduceStrided1dToStruct` to namespace
@@ -471,6 +477,13 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`3045045`](https://github.com/stdlib-js/stdlib/commit/30450455fd87ca90d4c020faadfdb42234ff5eec) - **docs:** update dtype list _(by Athan Reines)_
+-   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - **feat:** add 16-bit data types _(by Athan Reines)_
+-   [`787d8da`](https://github.com/stdlib-js/stdlib/commit/787d8da9caf55181afa9e7d198f7622660397b7d) - **feat:** add half-precision data types _(by Athan Reines)_
+-   [`9a4ffa0`](https://github.com/stdlib-js/stdlib/commit/9a4ffa071ed1a891b0520088ff8e6b5815142f20) - **feat:** add half-precision complex data type _(by Athan Reines)_
+-   [`6540f29`](https://github.com/stdlib-js/stdlib/commit/6540f29cc83ec1fb172986f87e14730b5973e94f) - **feat:** add support for 16-bit data types _(by Athan Reines)_
+-   [`1390cf3`](https://github.com/stdlib-js/stdlib/commit/1390cf3c36b931394e470c7ba4950399b249c5f9) - **feat:** add `isDataTypeString` to namespace _(by Athan Reines)_
+-   [`0ef0986`](https://github.com/stdlib-js/stdlib/commit/0ef098649fc4c4d64d8b5c06316e0793d8974651) - **feat:** add `ndarray/base/assert/is-data-type-string` _(by Athan Reines)_
 -   [`da1761d`](https://github.com/stdlib-js/stdlib/commit/da1761d4f0a218f85d7db082086709662a09df44) - **docs:** update namespace table of contents [(#7491)](https://github.com/stdlib-js/stdlib/pull/7491) _(by stdlib-bot)_
 -   [`97834dd`](https://github.com/stdlib-js/stdlib/commit/97834ddd6f863bd8e9b30ce10966f5db8a1f48b2) - **remove:** remove `ndarray/base/unary-reduce-strided1d-struct` _(by Athan Reines)_
 -   [`4115e86`](https://github.com/stdlib-js/stdlib/commit/4115e8662062db0f878fe9cf33293fbf308d352f) - **feat:** rename alias from `unaryReduceStrided1dToStruct` to `unaryReduceStrided1dAssignStruct` _(by Athan Reines)_
