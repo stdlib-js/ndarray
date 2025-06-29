@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304)
 -   [`f7c56f9`](https://github.com/stdlib-js/stdlib/commit/f7c56f9f6bdc0a64518d7ed0def31c9a3753b206) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
 -   [`d979fb3`](https://github.com/stdlib-js/stdlib/commit/d979fb33794fae5c14e2bbc78a77387ab8a407cb) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
 -   [`6ccfa0f`](https://github.com/stdlib-js/stdlib/commit/6ccfa0fe61914f7812d55608d963affdb4500b2d) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
@@ -482,6 +483,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - **feat:** add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304) _(by Muhammad Haris, Athan Reines)_
 -   [`82ef59a`](https://github.com/stdlib-js/stdlib/commit/82ef59aadd8de578d9a57780108e3ff4cb440dfe) - **bench:** ensure values are within bounds _(by Athan Reines)_
 -   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - **fix:** add missing table _(by Athan Reines)_
 -   [`f7c56f9`](https://github.com/stdlib-js/stdlib/commit/f7c56f9f6bdc0a64518d7ed0def31c9a3753b206) - **feat:** add support for `float16`, `complex32`, `int64`, and `uint64` dtypes _(by Athan Reines)_
