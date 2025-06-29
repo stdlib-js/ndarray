@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-28)
+## Unreleased (2025-06-29)
 
 <section class="features">
 
 ### Features
 
+-   [`f7c56f9`](https://github.com/stdlib-js/stdlib/commit/f7c56f9f6bdc0a64518d7ed0def31c9a3753b206) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
+-   [`d979fb3`](https://github.com/stdlib-js/stdlib/commit/d979fb33794fae5c14e2bbc78a77387ab8a407cb) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
+-   [`6ccfa0f`](https://github.com/stdlib-js/stdlib/commit/6ccfa0fe61914f7812d55608d963affdb4500b2d) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
+-   [`64309b8`](https://github.com/stdlib-js/stdlib/commit/64309b8af78e2bb0e1841552024626d4f403a3ab) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
 -   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - add 16-bit data types
 -   [`787d8da`](https://github.com/stdlib-js/stdlib/commit/787d8da9caf55181afa9e7d198f7622660397b7d) - add half-precision data types
 -   [`9a4ffa0`](https://github.com/stdlib-js/stdlib/commit/9a4ffa071ed1a891b0520088ff8e6b5815142f20) - add half-precision complex data type
@@ -342,6 +346,7 @@
 
 ### Bug Fixes
 
+-   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - add missing table
 -   [`c86cb96`](https://github.com/stdlib-js/stdlib/commit/c86cb96872dce4d7b508daf43886e10c0fedad8f) - update require path
 -   [`0ddb52b`](https://github.com/stdlib-js/stdlib/commit/0ddb52b2f0719c4dce9aa2e5a7fd1d1112dae6e5) - update require path
 -   [`3f6c0ff`](https://github.com/stdlib-js/stdlib/commit/3f6c0ffd9568665b54d0547b0550b2c96505bed6) - address increment bug
@@ -477,6 +482,12 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`82ef59a`](https://github.com/stdlib-js/stdlib/commit/82ef59aadd8de578d9a57780108e3ff4cb440dfe) - **bench:** ensure values are within bounds _(by Athan Reines)_
+-   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - **fix:** add missing table _(by Athan Reines)_
+-   [`f7c56f9`](https://github.com/stdlib-js/stdlib/commit/f7c56f9f6bdc0a64518d7ed0def31c9a3753b206) - **feat:** add support for `float16`, `complex32`, `int64`, and `uint64` dtypes _(by Athan Reines)_
+-   [`d979fb3`](https://github.com/stdlib-js/stdlib/commit/d979fb33794fae5c14e2bbc78a77387ab8a407cb) - **feat:** add support for `float16`, `complex32`, `int64`, and `uint64` dtypes _(by Athan Reines)_
+-   [`6ccfa0f`](https://github.com/stdlib-js/stdlib/commit/6ccfa0fe61914f7812d55608d963affdb4500b2d) - **feat:** add support for `float16`, `complex32`, `int64`, and `uint64` dtypes _(by Athan Reines)_
+-   [`64309b8`](https://github.com/stdlib-js/stdlib/commit/64309b8af78e2bb0e1841552024626d4f403a3ab) - **feat:** add support for `float16`, `complex32`, `int64`, and `uint64` dtypes _(by Athan Reines)_
 -   [`3045045`](https://github.com/stdlib-js/stdlib/commit/30450455fd87ca90d4c020faadfdb42234ff5eec) - **docs:** update dtype list _(by Athan Reines)_
 -   [`aa50d4a`](https://github.com/stdlib-js/stdlib/commit/aa50d4a9df711679416201559c4a0513281b874e) - **feat:** add 16-bit data types _(by Athan Reines)_
 -   [`787d8da`](https://github.com/stdlib-js/stdlib/commit/787d8da9caf55181afa9e7d198f7622660397b7d) - **feat:** add half-precision data types _(by Athan Reines)_
