@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-29)
+## Unreleased (2025-07-01)
 
 <section class="features">
 
@@ -347,6 +347,7 @@
 
 ### Bug Fixes
 
+-   [`8df8042`](https://github.com/stdlib-js/stdlib/commit/8df804279a206bd3b8f2e2fd7016170836ca9381) - add newly supported data types
 -   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - add missing table
 -   [`c86cb96`](https://github.com/stdlib-js/stdlib/commit/c86cb96872dce4d7b508daf43886e10c0fedad8f) - update require path
 -   [`0ddb52b`](https://github.com/stdlib-js/stdlib/commit/0ddb52b2f0719c4dce9aa2e5a7fd1d1112dae6e5) - update require path
@@ -483,6 +484,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`8df8042`](https://github.com/stdlib-js/stdlib/commit/8df804279a206bd3b8f2e2fd7016170836ca9381) - **fix:** add newly supported data types _(by Philipp Burckhardt)_
 -   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - **feat:** add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304) _(by Muhammad Haris, Athan Reines)_
 -   [`82ef59a`](https://github.com/stdlib-js/stdlib/commit/82ef59aadd8de578d9a57780108e3ff4cb440dfe) - **bench:** ensure values are within bounds _(by Athan Reines)_
 -   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - **fix:** add missing table _(by Athan Reines)_
