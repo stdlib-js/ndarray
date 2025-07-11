@@ -21,10 +21,10 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var ones = require( '@stdlib/array/ones' );
-var zeros = require( '@stdlib/array/zeros' );
+var Complex128 = require( '@stdlib/complex/float64/ctor' );
+var real = require( '@stdlib/complex/float64/real' );
+var imag = require( '@stdlib/complex/float64/imag' );
 var scalar2ndarray = require( './../../../from-scalar' );
-var ndarray = require( './../../../ctor' );
 var someBy = require( './../lib' );
 
 
@@ -32,22 +32,30 @@ var someBy = require( './../lib' );
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof someBy, 'function', 'main export is a function' );
+	t.strictEqual( typeof someBy, 'function', 'main export is a function');
 	t.end();
 });
 
-tape( 'the function returns `false` if provided an empty input ndarray', function test( t ) {
+tape( 'the function tests whether at least `n` elements in a 0-dimensional ndarray pass a test implemented by a predicate function', function test( t ) {
 	var actual;
 	var x;
 	var n;
 
-	x = ndarray( 'float64', ones( 8, 'float64' ), [ 0 ], [ 1 ], 0, 'row-major' );
 	n = scalar2ndarray( 1, {
 		'dtype': 'generic'
 	});
 
+	x = scalar2ndarray( 0.0, {
+		'dtype': 'float64'
+	});
 	actual = someBy( [ x, n ], clbk );
 	t.strictEqual( actual, false, 'returns expected value' );
+
+	x = scalar2ndarray( 1.0, {
+		'dtype': 'float64'
+	});
+	actual = someBy( [ x, n ], clbk );
+	t.strictEqual( actual, true, 'returns expected value' );
 
 	t.end();
 
@@ -56,22 +64,30 @@ tape( 'the function returns `false` if provided an empty input ndarray', functio
 	}
 });
 
-tape( 'the function returns `true` if a provided `n` parameter is less than zero', function test( t ) {
+tape( 'the function tests whether at least `n` elements in a 0-dimensional ndarray pass a test implemented by a predicate function (accessors)', function test( t ) {
 	var actual;
 	var x;
 	var n;
 
-	x = ndarray( 'float64', zeros( 2, 'float64' ), [ 2 ], [ 1 ], 0, 'row-major' );
-	n = scalar2ndarray( -1, {
+	n = scalar2ndarray( 1, {
 		'dtype': 'generic'
 	});
 
+	x = scalar2ndarray( new Complex128( 0.0, 0.0 ), {
+		'dtype': 'complex128'
+	});
+	actual = someBy( [ x, n ], clbk );
+	t.strictEqual( actual, false, 'returns expected value' );
+
+	x = scalar2ndarray( new Complex128( 1.0, 1.0 ), {
+		'dtype': 'complex128'
+	});
 	actual = someBy( [ x, n ], clbk );
 	t.strictEqual( actual, true, 'returns expected value' );
 
 	t.end();
 
 	function clbk( v ) {
-		return v !== 0.0;
+		return ( real( v ) !== 0.0 && imag( v ) !== 0.0 );
 	}
 });
