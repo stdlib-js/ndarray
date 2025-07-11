@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-06)
+## Unreleased (2025-07-11)
 
 <section class="features">
 
@@ -484,6 +484,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`e995411`](https://github.com/stdlib-js/stdlib/commit/e995411cf68fa5d1d0960ce0eff8d3dda3297cd8) - **test:** add tests to `ndarray/base/every-by` [(#7285)](https://github.com/stdlib-js/stdlib/pull/7285) _(by Muhammad Haris)_
 -   [`15fa50d`](https://github.com/stdlib-js/stdlib/commit/15fa50ddc789259ce8c21fe70d85e26fbb54cf44) - **chore:** fix C lint errors [(#7568)](https://github.com/stdlib-js/stdlib/pull/7568) _(by zhanggy, Athan Reines)_
 -   [`8df8042`](https://github.com/stdlib-js/stdlib/commit/8df804279a206bd3b8f2e2fd7016170836ca9381) - **fix:** add newly supported data types _(by Philipp Burckhardt)_
 -   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - **feat:** add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304) _(by Muhammad Haris, Athan Reines)_
