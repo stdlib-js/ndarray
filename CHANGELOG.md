@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-11)
+## Unreleased (2025-07-12)
 
 <section class="features">
 
@@ -470,9 +470,9 @@
 
 ### Closed Issues
 
-A total of 21 issues were closed in this release:
+A total of 22 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626)
 
 </section>
 
@@ -484,6 +484,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`097c6fb`](https://github.com/stdlib-js/stdlib/commit/097c6fbd4f91e243d6c8a62f5e2abed0ee3d82df) - **chore:** fix C lint errors [(#7630)](https://github.com/stdlib-js/stdlib/pull/7630) _(by GeoDaoyu, Athan Reines)_
 -   [`f5b05ea`](https://github.com/stdlib-js/stdlib/commit/f5b05eab62b82810bc657081dd4d97edf8c779a7) - **test:** add tests to `ndarray/base/some-by` [(#7305)](https://github.com/stdlib-js/stdlib/pull/7305) _(by Muhammad Haris, Athan Reines)_
 -   [`e995411`](https://github.com/stdlib-js/stdlib/commit/e995411cf68fa5d1d0960ce0eff8d3dda3297cd8) - **test:** add tests to `ndarray/base/every-by` [(#7285)](https://github.com/stdlib-js/stdlib/pull/7285) _(by Muhammad Haris)_
 -   [`15fa50d`](https://github.com/stdlib-js/stdlib/commit/15fa50ddc789259ce8c21fe70d85e26fbb54cf44) - **chore:** fix C lint errors [(#7568)](https://github.com/stdlib-js/stdlib/pull/7568) _(by zhanggy, Athan Reines)_
@@ -1341,12 +1342,13 @@ A total of 21 issues were closed in this release:
 
 ### Contributors
 
-A total of 19 people contributed to this release. Thank you to the following contributors:
+A total of 20 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
 -   Deepak Singh
 -   Dipjyoti Das
+-   GeoDaoyu
 -   Gururaj Gurram
 -   Karan Vasudevamurthy
 -   Kaushikgtm
