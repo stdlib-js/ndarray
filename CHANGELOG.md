@@ -484,7 +484,9 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`b8933b0`](https://github.com/stdlib-js/stdlib/commit/b8933b0c7fbabd051657132f49cb6eb603ad69db) - **docs:** fix return value description _(by Philipp Burckhardt)_
 -   [`097c6fb`](https://github.com/stdlib-js/stdlib/commit/097c6fbd4f91e243d6c8a62f5e2abed0ee3d82df) - **chore:** fix C lint errors [(#7630)](https://github.com/stdlib-js/stdlib/pull/7630) _(by GeoDaoyu, Athan Reines)_
+-   [`a937794`](https://github.com/stdlib-js/stdlib/commit/a937794d19a04066bdc0b63349283d2e0af5a350) - **docs:** update signature _(by Athan Reines)_
 -   [`f5b05ea`](https://github.com/stdlib-js/stdlib/commit/f5b05eab62b82810bc657081dd4d97edf8c779a7) - **test:** add tests to `ndarray/base/some-by` [(#7305)](https://github.com/stdlib-js/stdlib/pull/7305) _(by Muhammad Haris, Athan Reines)_
 -   [`e995411`](https://github.com/stdlib-js/stdlib/commit/e995411cf68fa5d1d0960ce0eff8d3dda3297cd8) - **test:** add tests to `ndarray/base/every-by` [(#7285)](https://github.com/stdlib-js/stdlib/pull/7285) _(by Muhammad Haris)_
 -   [`15fa50d`](https://github.com/stdlib-js/stdlib/commit/15fa50ddc789259ce8c21fe70d85e26fbb54cf44) - **chore:** fix C lint errors [(#7568)](https://github.com/stdlib-js/stdlib/pull/7568) _(by zhanggy, Athan Reines)_
