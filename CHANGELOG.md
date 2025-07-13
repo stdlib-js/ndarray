@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-12)
+## Unreleased (2025-07-13)
 
 <section class="features">
 
@@ -347,6 +347,7 @@
 
 ### Bug Fixes
 
+-   [`e4dd1ed`](https://github.com/stdlib-js/stdlib/commit/e4dd1ed8bf809ec7c8c34fd8c5dae03f5ed7cdf3) - use correct name in package.json
 -   [`8df8042`](https://github.com/stdlib-js/stdlib/commit/8df804279a206bd3b8f2e2fd7016170836ca9381) - add newly supported data types
 -   [`bd03989`](https://github.com/stdlib-js/stdlib/commit/bd03989d684053a787d91f33dc9f7e5963d8f478) - add missing table
 -   [`c86cb96`](https://github.com/stdlib-js/stdlib/commit/c86cb96872dce4d7b508daf43886e10c0fedad8f) - update require path
@@ -484,6 +485,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`e4dd1ed`](https://github.com/stdlib-js/stdlib/commit/e4dd1ed8bf809ec7c8c34fd8c5dae03f5ed7cdf3) - **fix:** use correct name in package.json _(by Philipp Burckhardt)_
 -   [`b8933b0`](https://github.com/stdlib-js/stdlib/commit/b8933b0c7fbabd051657132f49cb6eb603ad69db) - **docs:** fix return value description _(by Philipp Burckhardt)_
 -   [`097c6fb`](https://github.com/stdlib-js/stdlib/commit/097c6fbd4f91e243d6c8a62f5e2abed0ee3d82df) - **chore:** fix C lint errors [(#7630)](https://github.com/stdlib-js/stdlib/pull/7630) _(by GeoDaoyu, Athan Reines)_
 -   [`a937794`](https://github.com/stdlib-js/stdlib/commit/a937794d19a04066bdc0b63349283d2e0af5a350) - **docs:** update signature _(by Athan Reines)_
