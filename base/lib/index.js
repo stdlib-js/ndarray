@@ -437,6 +437,15 @@ setReadOnly( ns, 'flipud', require( './../../base/flipud' ) );
 setReadOnly( ns, 'forEach', require( './../../base/for-each' ) );
 
 /**
+* @name array2ndarray
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/from-array}
+*/
+setReadOnly( ns, 'array2ndarray', require( './../../base/from-array' ) );
+
+/**
 * @name scalar2ndarray
 * @memberof ns
 * @readonly

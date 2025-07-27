@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-13)
+## Unreleased (2025-07-27)
 
 <section class="features">
 
 ### Features
 
+-   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - add `array2ndarray` to namespace
+-   [`485fd08`](https://github.com/stdlib-js/stdlib/commit/485fd086608ee3b2457da777a8a9d6f0dcd28d94) - add `ndarray/base/from-array`
 -   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304)
 -   [`f7c56f9`](https://github.com/stdlib-js/stdlib/commit/f7c56f9f6bdc0a64518d7ed0def31c9a3753b206) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
 -   [`d979fb3`](https://github.com/stdlib-js/stdlib/commit/d979fb33794fae5c14e2bbc78a77387ab8a407cb) - add support for `float16`, `complex32`, `int64`, and `uint64` dtypes
@@ -485,6 +487,8 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - **feat:** add `array2ndarray` to namespace _(by Athan Reines)_
+-   [`485fd08`](https://github.com/stdlib-js/stdlib/commit/485fd086608ee3b2457da777a8a9d6f0dcd28d94) - **feat:** add `ndarray/base/from-array` _(by Athan Reines)_
 -   [`e4dd1ed`](https://github.com/stdlib-js/stdlib/commit/e4dd1ed8bf809ec7c8c34fd8c5dae03f5ed7cdf3) - **fix:** use correct name in package.json _(by Philipp Burckhardt)_
 -   [`b8933b0`](https://github.com/stdlib-js/stdlib/commit/b8933b0c7fbabd051657132f49cb6eb603ad69db) - **docs:** fix return value description _(by Philipp Burckhardt)_
 -   [`097c6fb`](https://github.com/stdlib-js/stdlib/commit/097c6fbd4f91e243d6c8a62f5e2abed0ee3d82df) - **chore:** fix C lint errors [(#7630)](https://github.com/stdlib-js/stdlib/pull/7630) _(by GeoDaoyu, Athan Reines)_
