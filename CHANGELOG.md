@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-27)
+## Unreleased (2025-07-29)
 
 <section class="features">
 
 ### Features
 
+-   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - add `zip2views1d` to namespace
+-   [`36f3f0c`](https://github.com/stdlib-js/stdlib/commit/36f3f0cdf92b3a63c67c9ed79a2b9f15855d3800) - add `ndarray/base/zip2views1d`
 -   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - add `array2ndarray` to namespace
 -   [`485fd08`](https://github.com/stdlib-js/stdlib/commit/485fd086608ee3b2457da777a8a9d6f0dcd28d94) - add `ndarray/base/from-array`
 -   [`76ea5a8`](https://github.com/stdlib-js/stdlib/commit/76ea5a8e8d964f78aa953ae4822345d3c1e3a6ae) - add missing tests to `ndarray/base/includes` [(#7304)](https://github.com/stdlib-js/stdlib/pull/7304)
@@ -487,6 +489,8 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - **feat:** add `zip2views1d` to namespace _(by Athan Reines)_
+-   [`36f3f0c`](https://github.com/stdlib-js/stdlib/commit/36f3f0cdf92b3a63c67c9ed79a2b9f15855d3800) - **feat:** add `ndarray/base/zip2views1d` _(by Athan Reines)_
 -   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - **feat:** add `array2ndarray` to namespace _(by Athan Reines)_
 -   [`485fd08`](https://github.com/stdlib-js/stdlib/commit/485fd086608ee3b2457da777a8a9d6f0dcd28d94) - **feat:** add `ndarray/base/from-array` _(by Athan Reines)_
 -   [`e4dd1ed`](https://github.com/stdlib-js/stdlib/commit/e4dd1ed8bf809ec7c8c34fd8c5dae03f5ed7cdf3) - **fix:** use correct name in package.json _(by Philipp Burckhardt)_

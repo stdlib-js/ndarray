@@ -1228,6 +1228,15 @@ setReadOnly( ns, 'zeros', require( './../../base/zeros' ) );
 */
 setReadOnly( ns, 'zerosLike', require( './../../base/zeros-like' ) );
 
+/**
+* @name zip2views1d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/zip2views1d}
+*/
+setReadOnly( ns, 'zip2views1d', require( './../../base/zip2views1d' ) );
+
 
 // EXPORTS //
 
