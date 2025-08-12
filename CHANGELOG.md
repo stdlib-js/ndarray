@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-29)
+## Unreleased (2025-08-12)
 
 <section class="features">
 
@@ -489,7 +489,13 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
+-   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`153c9c1`](https://github.com/stdlib-js/stdlib/commit/153c9c19e7e5bc138e18500cea598365d6df55d8) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`09ffc3c`](https://github.com/stdlib-js/stdlib/commit/09ffc3c9d3609ca545f2e4509eb81151a10c45b1) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
+-   [`2c927e4`](https://github.com/stdlib-js/stdlib/commit/2c927e403da0ed8841b6ce19296262a88c9856e0) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`fd9f8d2`](https://github.com/stdlib-js/stdlib/commit/fd9f8d2b7cb5d4a8c7f2a9cef97e7a0b246523f6) - **chore:** fix C lint errors [(#7769)](https://github.com/stdlib-js/stdlib/pull/7769) _(by GeoDaoyu)_
+-   [`e7a0669`](https://github.com/stdlib-js/stdlib/commit/e7a0669e9a196f7d59a0937d1ee7076dbcd8256e) - **refactor:** normalize input ndarrays to ensure expected get/set methods _(by Athan Reines)_
 -   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - **feat:** add `zip2views1d` to namespace _(by Athan Reines)_
 -   [`36f3f0c`](https://github.com/stdlib-js/stdlib/commit/36f3f0cdf92b3a63c67c9ed79a2b9f15855d3800) - **feat:** add `ndarray/base/zip2views1d` _(by Athan Reines)_
 -   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - **feat:** add `array2ndarray` to namespace _(by Athan Reines)_
