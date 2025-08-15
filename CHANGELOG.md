@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c42febe`](https://github.com/stdlib-js/stdlib/commit/c42febe4bb7062771a68d869eff02b40e3644f6d) - add `ndarray/base/binary-reduce-strided1d` [(#7813)](https://github.com/stdlib-js/stdlib/pull/7813)
 -   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - add `zip2views1d` to namespace
 -   [`36f3f0c`](https://github.com/stdlib-js/stdlib/commit/36f3f0cdf92b3a63c67c9ed79a2b9f15855d3800) - add `ndarray/base/zip2views1d`
 -   [`724d6be`](https://github.com/stdlib-js/stdlib/commit/724d6be1abb00700577700905dd847f6ab98812d) - add `array2ndarray` to namespace
@@ -351,6 +352,10 @@
 
 ### Bug Fixes
 
+-   [`73e569f`](https://github.com/stdlib-js/stdlib/commit/73e569fd71650dbd2c18ce3fec9c373767fcb027) - address assignment bug
+-   [`b00978b`](https://github.com/stdlib-js/stdlib/commit/b00978b67f6f32f7f6a343f29685ff4da30bd89d) - address assignment bug
+-   [`5efa5d7`](https://github.com/stdlib-js/stdlib/commit/5efa5d79b4e9348e431e35cbd2657982a78455cc) - address assignment bug
+-   [`5bd6766`](https://github.com/stdlib-js/stdlib/commit/5bd6766b5f833dfeded978ddf8078909d6b526be) - address assignment bug
 -   [`cae1beb`](https://github.com/stdlib-js/stdlib/commit/cae1bebbed3f299a18e786a150625582b54763a2) - address assignment bug
 -   [`f2f4cba`](https://github.com/stdlib-js/stdlib/commit/f2f4cba93e4b45064b4197f7c90f22abf8f3fb8c) - address assignment bug
 -   [`e4dd1ed`](https://github.com/stdlib-js/stdlib/commit/e4dd1ed8bf809ec7c8c34fd8c5dae03f5ed7cdf3) - use correct name in package.json
@@ -491,6 +496,11 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`73e569f`](https://github.com/stdlib-js/stdlib/commit/73e569fd71650dbd2c18ce3fec9c373767fcb027) - **fix:** address assignment bug _(by Athan Reines)_
+-   [`b00978b`](https://github.com/stdlib-js/stdlib/commit/b00978b67f6f32f7f6a343f29685ff4da30bd89d) - **fix:** address assignment bug _(by Athan Reines)_
+-   [`5efa5d7`](https://github.com/stdlib-js/stdlib/commit/5efa5d79b4e9348e431e35cbd2657982a78455cc) - **fix:** address assignment bug _(by Athan Reines)_
+-   [`5bd6766`](https://github.com/stdlib-js/stdlib/commit/5bd6766b5f833dfeded978ddf8078909d6b526be) - **fix:** address assignment bug _(by Athan Reines)_
+-   [`c42febe`](https://github.com/stdlib-js/stdlib/commit/c42febe4bb7062771a68d869eff02b40e3644f6d) - **feat:** add `ndarray/base/binary-reduce-strided1d` [(#7813)](https://github.com/stdlib-js/stdlib/pull/7813) _(by Gururaj Gurram, Athan Reines)_
 -   [`cae1beb`](https://github.com/stdlib-js/stdlib/commit/cae1bebbed3f299a18e786a150625582b54763a2) - **fix:** address assignment bug _(by Athan Reines)_
 -   [`f2f4cba`](https://github.com/stdlib-js/stdlib/commit/f2f4cba93e4b45064b4197f7c90f22abf8f3fb8c) - **fix:** address assignment bug _(by Athan Reines)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
