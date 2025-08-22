@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-15)
+## Unreleased (2025-08-22)
 
 <section class="features">
 
@@ -496,6 +496,7 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`8a6dbd7`](https://github.com/stdlib-js/stdlib/commit/8a6dbd7bf692bcd9ce166a7370eda0a7410da3b0) - **docs:** fix example code and return annotation values _(by Philipp Burckhardt)_
 -   [`73e569f`](https://github.com/stdlib-js/stdlib/commit/73e569fd71650dbd2c18ce3fec9c373767fcb027) - **fix:** address assignment bug _(by Athan Reines)_
 -   [`b00978b`](https://github.com/stdlib-js/stdlib/commit/b00978b67f6f32f7f6a343f29685ff4da30bd89d) - **fix:** address assignment bug _(by Athan Reines)_
 -   [`5efa5d7`](https://github.com/stdlib-js/stdlib/commit/5efa5d79b4e9348e431e35cbd2657982a78455cc) - **fix:** address assignment bug _(by Athan Reines)_
