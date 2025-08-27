@@ -496,6 +496,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`dd7b58d`](https://github.com/stdlib-js/stdlib/commit/dd7b58d5281732fc9ba4153d7f9bbc31a3766ed9) - **bench:** fix copy-paste mistake _(by Athan Reines)_
 -   [`c4cc264`](https://github.com/stdlib-js/stdlib/commit/c4cc264996ce9f4241476c857c4c985fb6612c84) - **docs:** update markup _(by Athan Reines)_
 -   [`8aea8a0`](https://github.com/stdlib-js/stdlib/commit/8aea8a04b6be1b2cb1ddc5dd15e76f4423a4f50b) - **chore:** fix C lint errors [(#7974)](https://github.com/stdlib-js/stdlib/pull/7974) _(by GeoDaoyu, Athan Reines)_
 -   [`8a6dbd7`](https://github.com/stdlib-js/stdlib/commit/8a6dbd7bf692bcd9ce166a7370eda0a7410da3b0) - **docs:** fix example code and return annotation values _(by Philipp Burckhardt)_
