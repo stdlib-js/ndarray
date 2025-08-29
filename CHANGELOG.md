@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640)
 -   [`c42febe`](https://github.com/stdlib-js/stdlib/commit/c42febe4bb7062771a68d869eff02b40e3644f6d) - add `ndarray/base/binary-reduce-strided1d` [(#7813)](https://github.com/stdlib-js/stdlib/pull/7813)
 -   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - add `zip2views1d` to namespace
 -   [`36f3f0c`](https://github.com/stdlib-js/stdlib/commit/36f3f0cdf92b3a63c67c9ed79a2b9f15855d3800) - add `ndarray/base/zip2views1d`
@@ -496,6 +497,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - **feat:** add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640) _(by Muhammad Haris, Athan Reines)_
 -   [`3b77033`](https://github.com/stdlib-js/stdlib/commit/3b7703363c530e1d485912a441c9ef36b14640cd) - **docs:** update example _(by Athan Reines)_
 -   [`dd7b58d`](https://github.com/stdlib-js/stdlib/commit/dd7b58d5281732fc9ba4153d7f9bbc31a3766ed9) - **bench:** fix copy-paste mistake _(by Athan Reines)_
 -   [`c4cc264`](https://github.com/stdlib-js/stdlib/commit/c4cc264996ce9f4241476c857c4c985fb6612c84) - **docs:** update markup _(by Athan Reines)_
