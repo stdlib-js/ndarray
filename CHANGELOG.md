@@ -498,6 +498,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`3091a38`](https://github.com/stdlib-js/stdlib/commit/3091a3891a9bc2755cde60001cc45a1168fca6d9) - **refactor:** use utility _(by Athan Reines)_
 -   [`f043c89`](https://github.com/stdlib-js/stdlib/commit/f043c893ac0fe9392f7b764167899a482d84708e) - **feat:** add `ndarray/base/nullary-strided1d` [(#7772)](https://github.com/stdlib-js/stdlib/pull/7772) _(by Muhammad Haris, Athan Reines)_
 -   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - **feat:** add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640) _(by Muhammad Haris, Athan Reines)_
 -   [`3b77033`](https://github.com/stdlib-js/stdlib/commit/3b7703363c530e1d485912a441c9ef36b14640cd) - **docs:** update example _(by Athan Reines)_
