@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`f043c89`](https://github.com/stdlib-js/stdlib/commit/f043c893ac0fe9392f7b764167899a482d84708e) - add `ndarray/base/nullary-strided1d` [(#7772)](https://github.com/stdlib-js/stdlib/pull/7772)
 -   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640)
 -   [`c42febe`](https://github.com/stdlib-js/stdlib/commit/c42febe4bb7062771a68d869eff02b40e3644f6d) - add `ndarray/base/binary-reduce-strided1d` [(#7813)](https://github.com/stdlib-js/stdlib/pull/7813)
 -   [`51e49b8`](https://github.com/stdlib-js/stdlib/commit/51e49b83cdb5c0d37d9e64864d6319655518dc25) - add `zip2views1d` to namespace
@@ -497,6 +498,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`f043c89`](https://github.com/stdlib-js/stdlib/commit/f043c893ac0fe9392f7b764167899a482d84708e) - **feat:** add `ndarray/base/nullary-strided1d` [(#7772)](https://github.com/stdlib-js/stdlib/pull/7772) _(by Muhammad Haris, Athan Reines)_
 -   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - **feat:** add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640) _(by Muhammad Haris, Athan Reines)_
 -   [`3b77033`](https://github.com/stdlib-js/stdlib/commit/3b7703363c530e1d485912a441c9ef36b14640cd) - **docs:** update example _(by Athan Reines)_
 -   [`dd7b58d`](https://github.com/stdlib-js/stdlib/commit/dd7b58d5281732fc9ba4153d7f9bbc31a3766ed9) - **bench:** fix copy-paste mistake _(by Athan Reines)_
