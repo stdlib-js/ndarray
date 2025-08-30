@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-29)
+## Unreleased (2025-08-30)
 
 <section class="features">
 
 ### Features
 
+-   [`8e8e3a4`](https://github.com/stdlib-js/stdlib/commit/8e8e3a410a266afa887a1c9f9df7f98833bfa4ea) - add `ndarray/with` [(#7971)](https://github.com/stdlib-js/stdlib/pull/7971)
 -   [`f043c89`](https://github.com/stdlib-js/stdlib/commit/f043c893ac0fe9392f7b764167899a482d84708e) - add `ndarray/base/nullary-strided1d` [(#7772)](https://github.com/stdlib-js/stdlib/pull/7772)
 -   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640)
 -   [`c42febe`](https://github.com/stdlib-js/stdlib/commit/c42febe4bb7062771a68d869eff02b40e3644f6d) - add `ndarray/base/binary-reduce-strided1d` [(#7813)](https://github.com/stdlib-js/stdlib/pull/7813)
@@ -498,6 +499,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`8e8e3a4`](https://github.com/stdlib-js/stdlib/commit/8e8e3a410a266afa887a1c9f9df7f98833bfa4ea) - **feat:** add `ndarray/with` [(#7971)](https://github.com/stdlib-js/stdlib/pull/7971) _(by Muhammad Haris, Athan Reines)_
 -   [`3091a38`](https://github.com/stdlib-js/stdlib/commit/3091a3891a9bc2755cde60001cc45a1168fca6d9) - **refactor:** use utility _(by Athan Reines)_
 -   [`f043c89`](https://github.com/stdlib-js/stdlib/commit/f043c893ac0fe9392f7b764167899a482d84708e) - **feat:** add `ndarray/base/nullary-strided1d` [(#7772)](https://github.com/stdlib-js/stdlib/pull/7772) _(by Muhammad Haris, Athan Reines)_
 -   [`3174a3b`](https://github.com/stdlib-js/stdlib/commit/3174a3b0243e1976487cd1dea54decec9caaa3f8) - **feat:** add `ndarray/base/any` [(#7640)](https://github.com/stdlib-js/stdlib/pull/7640) _(by Muhammad Haris, Athan Reines)_
