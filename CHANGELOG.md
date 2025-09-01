@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-31)
+## Unreleased (2025-09-01)
 
 <section class="features">
 
@@ -500,6 +500,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`9be4cfa`](https://github.com/stdlib-js/stdlib/commit/9be4cfa08c56d4d736bece90bb713d339db3d9cc) - **docs:** update range to match the one used in example file _(by Philipp Burckhardt)_
 -   [`b7b141b`](https://github.com/stdlib-js/stdlib/commit/b7b141b93a4d030ce23c6ebe50264bd910e5fdf2) - **feat:** add `ndarray/base/any-by` [(#7664)](https://github.com/stdlib-js/stdlib/pull/7664) _(by Muhammad Haris, Athan Reines)_
 -   [`8e8e3a4`](https://github.com/stdlib-js/stdlib/commit/8e8e3a410a266afa887a1c9f9df7f98833bfa4ea) - **feat:** add `ndarray/with` [(#7971)](https://github.com/stdlib-js/stdlib/pull/7971) _(by Muhammad Haris, Athan Reines)_
 -   [`3091a38`](https://github.com/stdlib-js/stdlib/commit/3091a3891a9bc2755cde60001cc45a1168fca6d9) - **refactor:** use utility _(by Athan Reines)_

@@ -175,7 +175,7 @@ function clbk( value ) {
 
 var x = {
     'dtype': 'generic',
-    'data': discreteUniform( 10, -5, 10, {
+    'data': discreteUniform( 10, -5, 5, {
         'dtype': 'generic'
     }),
     'shape': [ 5, 2 ],
