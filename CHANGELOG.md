@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-01)
+## Unreleased (2025-09-03)
 
 <section class="features">
 
 ### Features
 
+-   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - add missing exports to `ndarray` namespaces
 -   [`50b84b5`](https://github.com/stdlib-js/stdlib/commit/50b84b54ffdfc65c9c92498f51120ef3a363a69e) - add `ndarray/base/find` [(#7426)](https://github.com/stdlib-js/stdlib/pull/7426)
 -   [`b7b141b`](https://github.com/stdlib-js/stdlib/commit/b7b141b93a4d030ce23c6ebe50264bd910e5fdf2) - add `ndarray/base/any-by` [(#7664)](https://github.com/stdlib-js/stdlib/pull/7664)
 -   [`8e8e3a4`](https://github.com/stdlib-js/stdlib/commit/8e8e3a410a266afa887a1c9f9df7f98833bfa4ea) - add `ndarray/with` [(#7971)](https://github.com/stdlib-js/stdlib/pull/7971)
@@ -501,6 +502,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - **feat:** add missing exports to `ndarray` namespaces _(by Philipp Burckhardt)_
 -   [`50b84b5`](https://github.com/stdlib-js/stdlib/commit/50b84b54ffdfc65c9c92498f51120ef3a363a69e) - **feat:** add `ndarray/base/find` [(#7426)](https://github.com/stdlib-js/stdlib/pull/7426) _(by Muhammad Haris, Athan Reines)_
 -   [`9be4cfa`](https://github.com/stdlib-js/stdlib/commit/9be4cfa08c56d4d736bece90bb713d339db3d9cc) - **docs:** update range to match the one used in example file _(by Philipp Burckhardt)_
 -   [`b7b141b`](https://github.com/stdlib-js/stdlib/commit/b7b141b93a4d030ce23c6ebe50264bd910e5fdf2) - **feat:** add `ndarray/base/any-by` [(#7664)](https://github.com/stdlib-js/stdlib/pull/7664) _(by Muhammad Haris, Athan Reines)_

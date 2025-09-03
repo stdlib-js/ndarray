@@ -41,6 +41,24 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name any
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/any}
+*/
+setReadOnly( ns, 'any', require( './../../base/any' ) );
+
+/**
+* @name anyBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/any-by}
+*/
+setReadOnly( ns, 'anyBy', require( './../../base/any-by' ) );
+
+/**
 * @name assert
 * @memberof ns
 * @readonly
@@ -84,6 +102,15 @@ setReadOnly( ns, 'binaryLoopOrder', require( './../../base/binary-loop-interchan
 * @see {@link module:@stdlib/ndarray/base/binary-output-dtype}
 */
 setReadOnly( ns, 'binaryOutputDataType', require( './../../base/binary-output-dtype' ) );
+
+/**
+* @name binaryReduceStrided1d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/binary-reduce-strided1d}
+*/
+setReadOnly( ns, 'binaryReduceStrided1d', require( './../../base/binary-reduce-strided1d' ) );
 
 /**
 * @name binaryBlockSize
@@ -392,6 +419,15 @@ setReadOnly( ns, 'fill', require( './../../base/fill' ) );
 setReadOnly( ns, 'fillBy', require( './../../base/fill-by' ) );
 
 /**
+* @name find
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/find}
+*/
+setReadOnly( ns, 'find', require( './../../base/find' ) );
+
+/**
 * @name flag
 * @memberof ns
 * @readonly
@@ -678,6 +714,15 @@ setReadOnly( ns, 'nullary', require( './../../base/nullary' ) );
 * @see {@link module:@stdlib/ndarray/base/nullary-loop-interchange-order}
 */
 setReadOnly( ns, 'nullaryLoopOrder', require( './../../base/nullary-loop-interchange-order' ) );
+
+/**
+* @name nullaryStrided1d
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nullary-strided1d}
+*/
+setReadOnly( ns, 'nullaryStrided1d', require( './../../base/nullary-strided1d' ) );
 
 /**
 * @name nullaryBlockSize
