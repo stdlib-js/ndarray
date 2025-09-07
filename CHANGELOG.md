@@ -503,6 +503,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`1aebcbc`](https://github.com/stdlib-js/stdlib/commit/1aebcbc907b6ab1ed9760a08edfc5704c995faa3) - **test:** fix failing tests _(by Athan Reines)_
+-   [`45cae52`](https://github.com/stdlib-js/stdlib/commit/45cae5273df53dbddc94ef799b9b09933ea1d9f4) - **test:** fix element access _(by Athan Reines)_
+-   [`239b567`](https://github.com/stdlib-js/stdlib/commit/239b567f8984cd6cbc0c0719fee21574ea82dac7) - **test:** fix property name _(by Athan Reines)_
 -   [`52807fc`](https://github.com/stdlib-js/stdlib/commit/52807fce11e6cb69dc6f7e82622844eada14d232) - **refactor:** consolidate overloads _(by Athan Reines)_
 -   [`dab9a78`](https://github.com/stdlib-js/stdlib/commit/dab9a78e04f346de096fd66b9c5129d6123aab95) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - **feat:** add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853) _(by Muhammad Haris, Athan Reines)_
