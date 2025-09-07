@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-06)
+## Unreleased (2025-09-07)
 
 <section class="features">
 
 ### Features
 
+-   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853)
 -   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - add missing exports to `ndarray` namespaces
 -   [`50b84b5`](https://github.com/stdlib-js/stdlib/commit/50b84b54ffdfc65c9c92498f51120ef3a363a69e) - add `ndarray/base/find` [(#7426)](https://github.com/stdlib-js/stdlib/pull/7426)
 -   [`b7b141b`](https://github.com/stdlib-js/stdlib/commit/b7b141b93a4d030ce23c6ebe50264bd910e5fdf2) - add `ndarray/base/any-by` [(#7664)](https://github.com/stdlib-js/stdlib/pull/7664)
@@ -502,6 +503,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - **feat:** add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853) _(by Muhammad Haris, Athan Reines)_
 -   [`b44e0a7`](https://github.com/stdlib-js/stdlib/commit/b44e0a71e52944270193e56c6cff4507bb085144) - **docs:** clean-up TSDoc examples _(by Philipp Burckhardt)_
 -   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - **feat:** add missing exports to `ndarray` namespaces _(by Philipp Burckhardt)_
 -   [`50b84b5`](https://github.com/stdlib-js/stdlib/commit/50b84b54ffdfc65c9c92498f51120ef3a363a69e) - **feat:** add `ndarray/base/find` [(#7426)](https://github.com/stdlib-js/stdlib/pull/7426) _(by Muhammad Haris, Athan Reines)_
