@@ -392,12 +392,6 @@ tape( 'the function broadcasts an input array (same number of dimensions)', func
 
 		v = y.get( i, 0, 1 );
 		t.strictEqual( v, x.get( i, 0, 1 ), 'returns expected value for element ('+i+',0,1)' );
-
-		v = y.get( i, 0, 0 );
-		t.strictEqual( v, x.get( i, 0, 0 ), 'returns expected value for element ('+i+',0,0)' );
-
-		v = y.get( i, 0, 1 );
-		t.strictEqual( v, x.get( i, 0, 1 ), 'returns expected value for element ('+i+',0,1)' );
 	}
 	t.end();
 });

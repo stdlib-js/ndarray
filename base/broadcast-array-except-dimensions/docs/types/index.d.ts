@@ -53,7 +53,7 @@ import { typedndarray } from '@stdlib/types/ndarray';
 * var shx = getShape( x );
 * // returns [ 1, 3 ]
 *
-* var y = broadcastArrayExceptDimensionsExceptDimensions( x, [ 2, 2, 3 ], [ -2 ] );
+* var y = broadcastArrayExceptDimensions( x, [ 2, 2, 3 ], [ -2 ] );
 * // returns <ndarray>
 *
 * var shy = getShape( y );

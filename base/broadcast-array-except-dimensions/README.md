@@ -105,7 +105,7 @@ var broadcastArrayExceptDimensions = require( '@stdlib/ndarray/base/broadcast-ar
 var x = array( [ [ 1, 2, 3 ] ] );
 // returns <ndarray>
 
-// Broadcast the array to 3x2x2:
+// Broadcast the array to 2x1x3:
 var y = broadcastArrayExceptDimensions( x, [ 2, 2, 3 ], [ -2 ] );
 // returns <ndarray>
 

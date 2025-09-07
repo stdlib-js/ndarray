@@ -503,6 +503,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`dab9a78`](https://github.com/stdlib-js/stdlib/commit/dab9a78e04f346de096fd66b9c5129d6123aab95) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - **feat:** add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853) _(by Muhammad Haris, Athan Reines)_
 -   [`b44e0a7`](https://github.com/stdlib-js/stdlib/commit/b44e0a71e52944270193e56c6cff4507bb085144) - **docs:** clean-up TSDoc examples _(by Philipp Burckhardt)_
 -   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - **feat:** add missing exports to `ndarray` namespaces _(by Philipp Burckhardt)_
