@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-07)
+## Unreleased (2025-09-08)
 
 <section class="features">
 
 ### Features
 
+-   [`266240f`](https://github.com/stdlib-js/stdlib/commit/266240fa85bf508e01e6583809a1cd49c229a8b2) - add `ndarray/base/binary-input-casting-dtype` [(#7904)](https://github.com/stdlib-js/stdlib/pull/7904)
 -   [`4b805c3`](https://github.com/stdlib-js/stdlib/commit/4b805c31b957d75521e7d9ede972b0c6d85614ff) - add `ndarray/fill-slice` [(#7911)](https://github.com/stdlib-js/stdlib/pull/7911)
 -   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853)
 -   [`2bcc0ba`](https://github.com/stdlib-js/stdlib/commit/2bcc0ba8dc6a3eee179e5e556bf4171afd35d3cf) - add missing exports to `ndarray` namespaces
@@ -504,6 +505,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`266240f`](https://github.com/stdlib-js/stdlib/commit/266240fa85bf508e01e6583809a1cd49c229a8b2) - **feat:** add `ndarray/base/binary-input-casting-dtype` [(#7904)](https://github.com/stdlib-js/stdlib/pull/7904) _(by Gururaj Gurram, Athan Reines)_
 -   [`4b805c3`](https://github.com/stdlib-js/stdlib/commit/4b805c31b957d75521e7d9ede972b0c6d85614ff) - **feat:** add `ndarray/fill-slice` [(#7911)](https://github.com/stdlib-js/stdlib/pull/7911) _(by Muhammad Haris, Athan Reines)_
 -   [`1aebcbc`](https://github.com/stdlib-js/stdlib/commit/1aebcbc907b6ab1ed9760a08edfc5704c995faa3) - **test:** fix failing tests _(by Athan Reines)_
 -   [`45cae52`](https://github.com/stdlib-js/stdlib/commit/45cae5273df53dbddc94ef799b9b09933ea1d9f4) - **test:** fix element access _(by Athan Reines)_
