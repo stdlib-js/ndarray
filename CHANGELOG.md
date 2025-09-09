@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021)
 -   [`11c01f2`](https://github.com/stdlib-js/stdlib/commit/11c01f20be688370014f77248a2f6cf423dfbdc2) - add `flattenShape` to namespace
 -   [`83e21a1`](https://github.com/stdlib-js/stdlib/commit/83e21a1df8d8a4eee47f055ee762ec048cc99364) - add `ndarray/base/flatten-shape`
 -   [`266240f`](https://github.com/stdlib-js/stdlib/commit/266240fa85bf508e01e6583809a1cd49c229a8b2) - add `ndarray/base/binary-input-casting-dtype` [(#7904)](https://github.com/stdlib-js/stdlib/pull/7904)
@@ -508,6 +509,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - **feat:** add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021) _(by Muhammad Haris, Athan Reines)_
 -   [`4f0bbc6`](https://github.com/stdlib-js/stdlib/commit/4f0bbc61e1be1b422966710f4fd7a4a09e4605a6) - **bench:** remove `const` qualifiers _(by Athan Reines)_
 -   [`ccbe916`](https://github.com/stdlib-js/stdlib/commit/ccbe91618e58d7955db65dcf29cdcb2651408857) - **fix:** remove stray include _(by Athan Reines)_
 -   [`11c01f2`](https://github.com/stdlib-js/stdlib/commit/11c01f20be688370014f77248a2f6cf423dfbdc2) - **feat:** add `flattenShape` to namespace _(by Athan Reines)_
