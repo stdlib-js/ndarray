@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-08)
+## Unreleased (2025-09-09)
 
 <section class="features">
 
 ### Features
 
+-   [`11c01f2`](https://github.com/stdlib-js/stdlib/commit/11c01f20be688370014f77248a2f6cf423dfbdc2) - add `flattenShape` to namespace
+-   [`83e21a1`](https://github.com/stdlib-js/stdlib/commit/83e21a1df8d8a4eee47f055ee762ec048cc99364) - add `ndarray/base/flatten-shape`
 -   [`266240f`](https://github.com/stdlib-js/stdlib/commit/266240fa85bf508e01e6583809a1cd49c229a8b2) - add `ndarray/base/binary-input-casting-dtype` [(#7904)](https://github.com/stdlib-js/stdlib/pull/7904)
 -   [`4b805c3`](https://github.com/stdlib-js/stdlib/commit/4b805c31b957d75521e7d9ede972b0c6d85614ff) - add `ndarray/fill-slice` [(#7911)](https://github.com/stdlib-js/stdlib/pull/7911)
 -   [`e74334e`](https://github.com/stdlib-js/stdlib/commit/e74334e2080a9956240f376147f5d072e63e7ca0) - add `ndarray/base/broadcast-array-except-dimensions` [(#7853)](https://github.com/stdlib-js/stdlib/pull/7853)
@@ -361,6 +363,7 @@
 
 ### Bug Fixes
 
+-   [`ccbe916`](https://github.com/stdlib-js/stdlib/commit/ccbe91618e58d7955db65dcf29cdcb2651408857) - remove stray include
 -   [`73e569f`](https://github.com/stdlib-js/stdlib/commit/73e569fd71650dbd2c18ce3fec9c373767fcb027) - address assignment bug
 -   [`b00978b`](https://github.com/stdlib-js/stdlib/commit/b00978b67f6f32f7f6a343f29685ff4da30bd89d) - address assignment bug
 -   [`5efa5d7`](https://github.com/stdlib-js/stdlib/commit/5efa5d79b4e9348e431e35cbd2657982a78455cc) - address assignment bug
@@ -505,6 +508,10 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`4f0bbc6`](https://github.com/stdlib-js/stdlib/commit/4f0bbc61e1be1b422966710f4fd7a4a09e4605a6) - **bench:** remove `const` qualifiers _(by Athan Reines)_
+-   [`ccbe916`](https://github.com/stdlib-js/stdlib/commit/ccbe91618e58d7955db65dcf29cdcb2651408857) - **fix:** remove stray include _(by Athan Reines)_
+-   [`11c01f2`](https://github.com/stdlib-js/stdlib/commit/11c01f20be688370014f77248a2f6cf423dfbdc2) - **feat:** add `flattenShape` to namespace _(by Athan Reines)_
+-   [`83e21a1`](https://github.com/stdlib-js/stdlib/commit/83e21a1df8d8a4eee47f055ee762ec048cc99364) - **feat:** add `ndarray/base/flatten-shape` _(by Athan Reines)_
 -   [`266240f`](https://github.com/stdlib-js/stdlib/commit/266240fa85bf508e01e6583809a1cd49c229a8b2) - **feat:** add `ndarray/base/binary-input-casting-dtype` [(#7904)](https://github.com/stdlib-js/stdlib/pull/7904) _(by Gururaj Gurram, Athan Reines)_
 -   [`4b805c3`](https://github.com/stdlib-js/stdlib/commit/4b805c31b957d75521e7d9ede972b0c6d85614ff) - **feat:** add `ndarray/fill-slice` [(#7911)](https://github.com/stdlib-js/stdlib/pull/7911) _(by Muhammad Haris, Athan Reines)_
 -   [`1aebcbc`](https://github.com/stdlib-js/stdlib/commit/1aebcbc907b6ab1ed9760a08edfc5704c995faa3) - **test:** fix failing tests _(by Athan Reines)_

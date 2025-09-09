@@ -446,6 +446,15 @@ setReadOnly( ns, 'flag', require( './../../base/flag' ) );
 setReadOnly( ns, 'flags', require( './../../base/flags' ) );
 
 /**
+* @name flattenShape
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/flatten-shape}
+*/
+setReadOnly( ns, 'flattenShape', require( './../../base/flatten-shape' ) );
+
+/**
 * @name fliplr
 * @memberof ns
 * @readonly
