@@ -510,6 +510,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`565ae6c`](https://github.com/stdlib-js/stdlib/commit/565ae6c872ce74c4853618182fc33c8a30371d42) - **docs:** update description _(by Athan Reines)_
 -   [`d9d7221`](https://github.com/stdlib-js/stdlib/commit/d9d7221f237eefbf51e55782acc2d068f616d9ae) - **fix:** remove double semicolon in TypeScript example _(by Philipp Burckhardt)_
 -   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - **feat:** add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021) _(by Muhammad Haris, Athan Reines)_
 -   [`4f0bbc6`](https://github.com/stdlib-js/stdlib/commit/4f0bbc61e1be1b422966710f4fd7a4a09e4605a6) - **bench:** remove `const` qualifiers _(by Athan Reines)_
