@@ -511,6 +511,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`5feedbc`](https://github.com/stdlib-js/stdlib/commit/5feedbcf7d1de8ab6259c96fa39a2fdc50e2c895) - **docs:** do not pass in options object to avoid cast error _(by Philipp Burckhardt)_
+-   [`da9d08b`](https://github.com/stdlib-js/stdlib/commit/da9d08b99b9662e7421722b5c2af30f6bfb1bbf5) - **docs:** add missing require to TSDoc example code _(by Philipp Burckhardt)_
 -   [`cfe870b`](https://github.com/stdlib-js/stdlib/commit/cfe870b5ab3798377068aba5e239bf50f730f116) - **feat:** add `ndarray/base/nullary-strided1d-dispatch` [(#7821)](https://github.com/stdlib-js/stdlib/pull/7821) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`e11eb77`](https://github.com/stdlib-js/stdlib/commit/e11eb777e6ca3c2f0b9bdccdffeee5cf25dac9f1) - **docs:** add empty intro section _(by Athan Reines)_
 -   [`565ae6c`](https://github.com/stdlib-js/stdlib/commit/565ae6c872ce74c4853618182fc33c8a30371d42) - **docs:** update description _(by Athan Reines)_
