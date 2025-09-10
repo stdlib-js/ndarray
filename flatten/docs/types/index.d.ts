@@ -69,7 +69,7 @@ interface Options {
 * var array = require( '@stdlib/ndarray/array' );
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
-* var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );;
+* var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
 * // return <ndarray>
 *
 * var y = flatten( x );

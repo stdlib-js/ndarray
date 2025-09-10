@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-09)
+## Unreleased (2025-09-10)
 
 <section class="features">
 
@@ -364,6 +364,7 @@
 
 ### Bug Fixes
 
+-   [`d9d7221`](https://github.com/stdlib-js/stdlib/commit/d9d7221f237eefbf51e55782acc2d068f616d9ae) - remove double semicolon in TypeScript example
 -   [`ccbe916`](https://github.com/stdlib-js/stdlib/commit/ccbe91618e58d7955db65dcf29cdcb2651408857) - remove stray include
 -   [`73e569f`](https://github.com/stdlib-js/stdlib/commit/73e569fd71650dbd2c18ce3fec9c373767fcb027) - address assignment bug
 -   [`b00978b`](https://github.com/stdlib-js/stdlib/commit/b00978b67f6f32f7f6a343f29685ff4da30bd89d) - address assignment bug
@@ -509,6 +510,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`d9d7221`](https://github.com/stdlib-js/stdlib/commit/d9d7221f237eefbf51e55782acc2d068f616d9ae) - **fix:** remove double semicolon in TypeScript example _(by Philipp Burckhardt)_
 -   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - **feat:** add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021) _(by Muhammad Haris, Athan Reines)_
 -   [`4f0bbc6`](https://github.com/stdlib-js/stdlib/commit/4f0bbc61e1be1b422966710f4fd7a4a09e4605a6) - **bench:** remove `const` qualifiers _(by Athan Reines)_
 -   [`ccbe916`](https://github.com/stdlib-js/stdlib/commit/ccbe91618e58d7955db65dcf29cdcb2651408857) - **fix:** remove stray include _(by Athan Reines)_
