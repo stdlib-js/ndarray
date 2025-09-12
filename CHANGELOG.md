@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-11)
+## Unreleased (2025-09-12)
 
 <section class="features">
 
@@ -514,6 +514,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`fb46eb4`](https://github.com/stdlib-js/stdlib/commit/fb46eb45105af0689c8f7089672340de742efedd) - **docs:** fix comment _(by Athan Reines)_
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - **fix:** use correct variable _(by Athan Reines)_
 -   [`69e5523`](https://github.com/stdlib-js/stdlib/commit/69e5523ca6858e8488fe671f61b9a8c16e7044c7) - **fix:** use correct variable _(by Athan Reines)_
 -   [`04c9415`](https://github.com/stdlib-js/stdlib/commit/04c941540b13db13db7f312a6f91dd120940cdc2) - **fix:** use correct variable _(by Athan Reines)_
