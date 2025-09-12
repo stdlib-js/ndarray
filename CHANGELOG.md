@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b18f473`](https://github.com/stdlib-js/stdlib/commit/b18f47378813b1a5dd0f4d669913c86cdd525ce4) - add `ndarray/base/unary-addon-dispatch`
 -   [`cfe870b`](https://github.com/stdlib-js/stdlib/commit/cfe870b5ab3798377068aba5e239bf50f730f116) - add `ndarray/base/nullary-strided1d-dispatch` [(#7821)](https://github.com/stdlib-js/stdlib/pull/7821)
 -   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021)
 -   [`11c01f2`](https://github.com/stdlib-js/stdlib/commit/11c01f20be688370014f77248a2f6cf423dfbdc2) - add `flattenShape` to namespace
@@ -514,6 +515,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`b18f473`](https://github.com/stdlib-js/stdlib/commit/b18f47378813b1a5dd0f4d669913c86cdd525ce4) - **feat:** add `ndarray/base/unary-addon-dispatch` _(by Athan Reines)_
 -   [`fb46eb4`](https://github.com/stdlib-js/stdlib/commit/fb46eb45105af0689c8f7089672340de742efedd) - **docs:** fix comment _(by Athan Reines)_
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - **fix:** use correct variable _(by Athan Reines)_
 -   [`69e5523`](https://github.com/stdlib-js/stdlib/commit/69e5523ca6858e8488fe671f61b9a8c16e7044c7) - **fix:** use correct variable _(by Athan Reines)_
