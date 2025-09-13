@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`ce2a417`](https://github.com/stdlib-js/stdlib/commit/ce2a4171ac366e3023a240d01c154f8e9bfdfa5e) - add `ndarray/base/binary-reduce-strided1d-dispatch` [(#7908)](https://github.com/stdlib-js/stdlib/pull/7908)
 -   [`17e89e8`](https://github.com/stdlib-js/stdlib/commit/17e89e85928ef1e38ad554975c62ea96c15c6c04) - generate loops for mostly safe casts
 -   [`b18f473`](https://github.com/stdlib-js/stdlib/commit/b18f47378813b1a5dd0f4d669913c86cdd525ce4) - add `ndarray/base/unary-addon-dispatch`
 -   [`cfe870b`](https://github.com/stdlib-js/stdlib/commit/cfe870b5ab3798377068aba5e239bf50f730f116) - add `ndarray/base/nullary-strided1d-dispatch` [(#7821)](https://github.com/stdlib-js/stdlib/pull/7821)
@@ -517,6 +518,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`ce2a417`](https://github.com/stdlib-js/stdlib/commit/ce2a4171ac366e3023a240d01c154f8e9bfdfa5e) - **feat:** add `ndarray/base/binary-reduce-strided1d-dispatch` [(#7908)](https://github.com/stdlib-js/stdlib/pull/7908) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`794dcb3`](https://github.com/stdlib-js/stdlib/commit/794dcb39a1a97b958b56f2a56ada615344a0d993) - **docs:** fix examples _(by Athan Reines)_
 -   [`725ba50`](https://github.com/stdlib-js/stdlib/commit/725ba500a8ac24922b4a764acd65a035a4993032) - **docs:** fix comment _(by Athan Reines)_
 -   [`b937bc4`](https://github.com/stdlib-js/stdlib/commit/b937bc453930ccb515898c2e2040c65f9f9ae2ad) - **docs:** fix comment _(by Athan Reines)_
