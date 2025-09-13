@@ -518,6 +518,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`626b52b`](https://github.com/stdlib-js/stdlib/commit/626b52bc5f30d90237d82055095814a5f6e75546) - **docs:** remove comma _(by Athan Reines)_
 -   [`0b84dbb`](https://github.com/stdlib-js/stdlib/commit/0b84dbba9791d2033079cecb12a33f9e66640e54) - **docs:** update description _(by Athan Reines)_
 -   [`5ba8e94`](https://github.com/stdlib-js/stdlib/commit/5ba8e94230c744e76b6c13e5d534019bab83591f) - **docs:** update description _(by Athan Reines)_
 -   [`6e295d6`](https://github.com/stdlib-js/stdlib/commit/6e295d6318d437bd1d139a9ef036195d09562c83) - **docs:** update description _(by Athan Reines)_
