@@ -518,6 +518,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`0b84dbb`](https://github.com/stdlib-js/stdlib/commit/0b84dbba9791d2033079cecb12a33f9e66640e54) - **docs:** update description _(by Athan Reines)_
+-   [`5ba8e94`](https://github.com/stdlib-js/stdlib/commit/5ba8e94230c744e76b6c13e5d534019bab83591f) - **docs:** update description _(by Athan Reines)_
+-   [`6e295d6`](https://github.com/stdlib-js/stdlib/commit/6e295d6318d437bd1d139a9ef036195d09562c83) - **docs:** update description _(by Athan Reines)_
 -   [`ce2a417`](https://github.com/stdlib-js/stdlib/commit/ce2a4171ac366e3023a240d01c154f8e9bfdfa5e) - **feat:** add `ndarray/base/binary-reduce-strided1d-dispatch` [(#7908)](https://github.com/stdlib-js/stdlib/pull/7908) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`794dcb3`](https://github.com/stdlib-js/stdlib/commit/794dcb39a1a97b958b56f2a56ada615344a0d993) - **docs:** fix examples _(by Athan Reines)_
 -   [`725ba50`](https://github.com/stdlib-js/stdlib/commit/725ba500a8ac24922b4a764acd65a035a4993032) - **docs:** fix comment _(by Athan Reines)_
