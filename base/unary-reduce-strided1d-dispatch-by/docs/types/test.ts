@@ -153,7 +153,7 @@ function clbk( v: number ): number {
 	unary<number, number>( table, [ dtypes ], ( x: number ): number => x, policies ); // $ExpectError
 }
 
-// The compiler throws an error if the function is provided a fourth argument which is invalid policies object...
+// The compiler throws an error if the function is provided a fourth argument which is an invalid policies object...
 {
 	const dtypes: Array<DataType> = [ 'float64', 'float32' ];
 	const table = {
