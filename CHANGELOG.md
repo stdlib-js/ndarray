@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`17e89e8`](https://github.com/stdlib-js/stdlib/commit/17e89e85928ef1e38ad554975c62ea96c15c6c04) - generate loops for mostly safe casts
 -   [`b18f473`](https://github.com/stdlib-js/stdlib/commit/b18f47378813b1a5dd0f4d669913c86cdd525ce4) - add `ndarray/base/unary-addon-dispatch`
 -   [`cfe870b`](https://github.com/stdlib-js/stdlib/commit/cfe870b5ab3798377068aba5e239bf50f730f116) - add `ndarray/base/nullary-strided1d-dispatch` [(#7821)](https://github.com/stdlib-js/stdlib/pull/7821)
 -   [`7944b3f`](https://github.com/stdlib-js/stdlib/commit/7944b3f8ddcaf5f073dd6f304c30d6f385f94d23) - add `ndarray/flatten` [(#8021)](https://github.com/stdlib-js/stdlib/pull/8021)
@@ -516,6 +517,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`17e89e8`](https://github.com/stdlib-js/stdlib/commit/17e89e85928ef1e38ad554975c62ea96c15c6c04) - **feat:** generate loops for mostly safe casts _(by Athan Reines)_
 -   [`dcfeda4`](https://github.com/stdlib-js/stdlib/commit/dcfeda41070dee08be0ddd2be3d23d82b1658f4b) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
 -   [`1829650`](https://github.com/stdlib-js/stdlib/commit/18296504e866597848ac12d2bd609ab8077372d2) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
 -   [`d5e1c28`](https://github.com/stdlib-js/stdlib/commit/d5e1c28e6821d21da0b79090ebd3cf903f036aae) - **fix:** maintain floating-point precision _(by Athan Reines)_
