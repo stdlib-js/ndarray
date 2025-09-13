@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-12)
+## Unreleased (2025-09-13)
 
 <section class="features">
 
@@ -366,6 +366,7 @@
 
 ### Bug Fixes
 
+-   [`d5e1c28`](https://github.com/stdlib-js/stdlib/commit/d5e1c28e6821d21da0b79090ebd3cf903f036aae) - maintain floating-point precision
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - use correct variable
 -   [`69e5523`](https://github.com/stdlib-js/stdlib/commit/69e5523ca6858e8488fe671f61b9a8c16e7044c7) - use correct variable
 -   [`04c9415`](https://github.com/stdlib-js/stdlib/commit/04c941540b13db13db7f312a6f91dd120940cdc2) - use correct variable
@@ -515,6 +516,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`dcfeda4`](https://github.com/stdlib-js/stdlib/commit/dcfeda41070dee08be0ddd2be3d23d82b1658f4b) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
+-   [`1829650`](https://github.com/stdlib-js/stdlib/commit/18296504e866597848ac12d2bd609ab8077372d2) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
+-   [`d5e1c28`](https://github.com/stdlib-js/stdlib/commit/d5e1c28e6821d21da0b79090ebd3cf903f036aae) - **fix:** maintain floating-point precision _(by Athan Reines)_
 -   [`b18f473`](https://github.com/stdlib-js/stdlib/commit/b18f47378813b1a5dd0f4d669913c86cdd525ce4) - **feat:** add `ndarray/base/unary-addon-dispatch` _(by Athan Reines)_
 -   [`fb46eb4`](https://github.com/stdlib-js/stdlib/commit/fb46eb45105af0689c8f7089672340de742efedd) - **docs:** fix comment _(by Athan Reines)_
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - **fix:** use correct variable _(by Athan Reines)_
