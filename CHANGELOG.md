@@ -517,6 +517,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`7ff8051`](https://github.com/stdlib-js/stdlib/commit/7ff805189d4e18714abb7ad430e409bae2db442b) - **docs:** fix comment _(by Athan Reines)_
+-   [`29c6ea7`](https://github.com/stdlib-js/stdlib/commit/29c6ea7cc602a60ec0351b12dad6508f84a822ff) - **docs:** fix comment _(by Athan Reines)_
+-   [`c8cc121`](https://github.com/stdlib-js/stdlib/commit/c8cc12198846d498a7999e0c0622fa4721f66e0d) - **docs:** fix comment _(by Athan Reines)_
 -   [`17e89e8`](https://github.com/stdlib-js/stdlib/commit/17e89e85928ef1e38ad554975c62ea96c15c6c04) - **feat:** generate loops for mostly safe casts _(by Athan Reines)_
 -   [`dcfeda4`](https://github.com/stdlib-js/stdlib/commit/dcfeda41070dee08be0ddd2be3d23d82b1658f4b) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
 -   [`1829650`](https://github.com/stdlib-js/stdlib/commit/18296504e866597848ac12d2bd609ab8077372d2) - **test:** fix broken tests due to upstream changes _(by Athan Reines)_
