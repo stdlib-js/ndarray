@@ -48,6 +48,7 @@ var empty = require( './../../../empty' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var join = require( '@stdlib/array/base/join' );
 var copy = require( '@stdlib/array/base/copy' );
+var insertAt = require( '@stdlib/array/base/insert-at' );
 var everyBy = require( '@stdlib/array/base/every-by' );
 var objectAssign = require( '@stdlib/object/assign' );
 var format = require( '@stdlib/string/format' );
@@ -72,31 +73,6 @@ function types2enums( types ) {
 	out = [];
 	for ( i = 0; i < types.length; i++ ) {
 		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
-	}
-	return out;
-}
-
-/**
-* Reorders a list of ndarrays such that the output ndarray is the second ndarray argument when passing along to a resolved lower-level strided function.
-*
-* @private
-* @param {Array<ndarray>} arrays - list of input ndarrays
-* @param {ndarray} output - output ndarray
-* @returns {Array<ndarray>} reordered list
-*/
-function reorder( arrays, output ) { // TODO: consider replacing with an `array/base/*` utility which expands an input array by inserting a specified value at a specified index and returns a new array
-	var out;
-	var i;
-	var j;
-
-	out = [];
-	for ( i = 0, j = 0; i <= arrays.length; i++ ) {
-		if ( i === 1 ) {
-			out.push( output );
-		} else {
-			out.push( arrays[ j ] );
-			j += 1;
-		}
 	}
 	return out;
 }
@@ -354,7 +330,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	this._apply( f, reorder( args, y ), opts.dims );
+	this._apply( f, insertAt( args, 1, y ), opts.dims );
 
 	return y;
 });
@@ -502,7 +478,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		f = this._table.default;
 	}
 	// Perform operation:
-	this._apply( f, reorder( args, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	this._apply( f, insertAt( args, 1, y ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
 	return y;
 });

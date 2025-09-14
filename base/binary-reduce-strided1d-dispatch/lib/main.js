@@ -51,6 +51,7 @@ var takeIndexed = require( '@stdlib/array/base/take-indexed' );
 var zeroTo = require( '@stdlib/array/base/zero-to' );
 var join = require( '@stdlib/array/base/join' );
 var copy = require( '@stdlib/array/base/copy' );
+var insertAt = require( '@stdlib/array/base/insert-at' );
 var everyBy = require( '@stdlib/array/base/every-by' );
 var objectAssign = require( '@stdlib/object/assign' );
 var format = require( '@stdlib/string/format' );
@@ -81,31 +82,6 @@ function types2enums( types ) {
 	out = [];
 	for ( i = 0; i < types.length; i++ ) {
 		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
-	}
-	return out;
-}
-
-/**
-* Reorders a list of ndarrays such that the output ndarray is the third ndarray argument when passing along to a resolved lower-level strided function.
-*
-* @private
-* @param {Array<ndarray>} arrays - list of input ndarrays
-* @param {ndarray} output - output ndarray
-* @returns {Array<ndarray>} reordered list
-*/
-function reorder( arrays, output ) { // TODO: consider replacing with an `array/base/*` utility which expands an input array by inserting a specified value at a specified index and returns a new array
-	var out;
-	var i;
-	var j;
-
-	out = [];
-	for ( i = 0, j = 0; i <= arrays.length; i++ ) {
-		if ( i === 2 ) {
-			out.push( output );
-		} else {
-			out.push( arrays[ j ] );
-			j += 1;
-		}
 	}
 	return out;
 }
@@ -407,7 +383,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'apply', function apply( x, y ) 
 		f = this._table.default;
 	}
 	// Perform the reduction:
-	binaryReduceStrided1d( f, reorder( args, z ), opts.dims );
+	binaryReduceStrided1d( f, insertAt( args, 2, z ), opts.dims );
 
 	// Check whether we need to reinsert singleton dimensions which can be useful for broadcasting the returned output array to the shape of the original input array...
 	if ( opts.keepdims ) {
@@ -597,7 +573,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'assign', function assign( x, y 
 		f = this._table.default;
 	}
 	// Perform the reduction:
-	binaryReduceStrided1d( f, reorder( args, z ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
+	binaryReduceStrided1d( f, insertAt( args, 2, z ), opts.dims ); // note: we assume that this lower-level function handles further validation of the output ndarray (e.g., expected shape, etc)
 
 	return z;
 });

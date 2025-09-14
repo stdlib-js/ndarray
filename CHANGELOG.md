@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-13)
+## Unreleased (2025-09-14)
 
 <section class="features">
 
@@ -519,6 +519,10 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`1e5c77a`](https://github.com/stdlib-js/stdlib/commit/1e5c77a53d8b81c99ca0be177b1e828dbfc12173) - **refactor:** use array utility _(by Athan Reines)_
+-   [`351db28`](https://github.com/stdlib-js/stdlib/commit/351db2889ebd45eb0dc55efd4edb1e4d6e20daa7) - **refactor:** use array utility _(by Athan Reines)_
+-   [`01bc84c`](https://github.com/stdlib-js/stdlib/commit/01bc84cc252dbb2e46ff575e10ceb45a9a19cb92) - **refactor:** use array utility _(by Athan Reines)_
+-   [`997af88`](https://github.com/stdlib-js/stdlib/commit/997af882f60adc86118f03b0af433d0b2df78799) - **refactor:** use array utility _(by Athan Reines)_
 -   [`cc715fa`](https://github.com/stdlib-js/stdlib/commit/cc715fa508b46f9bc8fbf516ce5185050adc4cf8) - **feat:** add `ndarray/base/binary-reduce-strided1d-dispatch-factory` [(#7950)](https://github.com/stdlib-js/stdlib/pull/7950) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`626b52b`](https://github.com/stdlib-js/stdlib/commit/626b52bc5f30d90237d82055095814a5f6e75546) - **docs:** remove comma _(by Athan Reines)_
 -   [`0b84dbb`](https://github.com/stdlib-js/stdlib/commit/0b84dbba9791d2033079cecb12a33f9e66640e54) - **docs:** update description _(by Athan Reines)_
