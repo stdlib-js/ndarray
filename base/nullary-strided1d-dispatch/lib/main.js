@@ -41,11 +41,11 @@ var zeroTo = require( '@stdlib/array/base/zero-to' );
 var join = require( '@stdlib/array/base/join' );
 var copy = require( '@stdlib/array/base/copy' );
 var everyBy = require( '@stdlib/array/base/every-by' );
+var gindexOfRow = require( '@stdlib/blas/ext/base/gindex-of-row' ).ndarray;
 var objectAssign = require( '@stdlib/object/assign' );
 var format = require( '@stdlib/string/format' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
-var indexOfTypes = require( './index_of_types.js' );
 
 
 // MAIN //
@@ -270,7 +270,7 @@ setReadOnly( NullaryStrided1dDispatch.prototype, 'assign', function assign( out 
 	}
 	// Resolve the lower-level strided function satisfying the output ndarray data type:
 	dtypes = [ resolveEnum( odt ) ];
-	i = indexOfTypes( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = gindexOfRow( this._table.fcns.length, 1, this._table.types, 1, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {

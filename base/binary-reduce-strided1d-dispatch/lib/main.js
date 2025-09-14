@@ -53,12 +53,12 @@ var join = require( '@stdlib/array/base/join' );
 var copy = require( '@stdlib/array/base/copy' );
 var insertAt = require( '@stdlib/array/base/insert-at' );
 var everyBy = require( '@stdlib/array/base/every-by' );
+var gindexOfRow = require( '@stdlib/blas/ext/base/gindex-of-row' ).ndarray;
 var objectAssign = require( '@stdlib/object/assign' );
 var format = require( '@stdlib/string/format' );
 var defaults = require( './../../../defaults' );
 var DEFAULTS = require( './defaults.json' );
 var validate = require( './validate.js' );
-var indexOfTypes = require( './index_of_types.js' );
 
 
 // VARIABLES //
@@ -353,7 +353,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'apply', function apply( x, y ) 
 		ydt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data types:
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
+	i = gindexOfRow( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {
@@ -541,7 +541,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'assign', function assign( x, y 
 		ydt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
+	i = gindexOfRow( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {

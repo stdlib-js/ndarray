@@ -31,7 +31,7 @@ var format = require( '@stdlib/string/format' );
 var getDType = require( './../../dtype' );
 var resolveEnum = require( './../../base/dtype-resolve-enum' );
 var dtypes2enums = require( './../../base/dtypes2enums' );
-var indexOfTypes = require( './index_of_types.js' );
+var gindexOfRow = require( '@stdlib/blas/ext/base/gindex-of-row' ).ndarray;
 
 
 // MAIN //
@@ -193,7 +193,7 @@ function dispatchBy( fcns, types, data, nargs, nin, nout ) {
 			dtypes.push( resolveEnum( getDType( v ) ) );
 		}
 		// Resolve the ndarray function satisfying the input array types:
-		idx = indexOfTypes( nfcns, narrays, types, narrays, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+		idx = gindexOfRow( nfcns, narrays, types, narrays, 1, 0, dtypes, 1, 0 );
 
 		// Check whether we were able to successfully resolve an ndarray function:
 		if ( idx < 0 ) {
