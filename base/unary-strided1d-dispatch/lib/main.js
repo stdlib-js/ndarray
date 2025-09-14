@@ -37,7 +37,7 @@ var contains = require( '@stdlib/array/base/assert/contains' );
 var unaryStrided1d = require( './../../../base/unary-strided1d' );
 var unaryOutputDataType = require( './../../../base/unary-output-dtype' );
 var unaryInputCastingDataType = require( './../../../base/unary-input-casting-dtype' );
-var resolveEnum = require( './../../../base/dtype-resolve-enum' );
+var dtypes2enums = require( './../../../base/dtypes2enums' );
 var getShape = require( './../../../shape' ); // note: non-base accessor is intentional due to input ndarrays originating in userland
 var ndims = require( './../../../ndims' );
 var getDType = require( './../../../base/dtype' );
@@ -55,27 +55,6 @@ var format = require( '@stdlib/string/format' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var indexOfTypes = require( './index_of_types.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Returns a list of data type enumeration constants.
-*
-* @private
-* @param {Collection} types - list of types
-* @returns {IntegerArray} list of data type enumeration constants
-*/
-function types2enums( types ) {
-	var out;
-	var i;
-
-	out = [];
-	for ( i = 0; i < types.length; i++ ) {
-		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
-	}
-	return out;
-}
 
 
 // MAIN //
@@ -183,7 +162,7 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies, options ) {
 	}
 	this._table = {
 		'default': table.default,
-		'types': ( table.types ) ? types2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
+		'types': ( table.types ) ? dtypes2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
 		'fcns': ( table.fcns ) ? copy( table.fcns ) : []
 	};
 	if ( this._table.types.length !== this._table.fcns.length*2 ) {
@@ -250,7 +229,6 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies, options ) {
 */
 setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	var options;
-	var dtypes;
 	var nargs;
 	var args;
 	var opts;
@@ -322,8 +300,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 		xdt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
-	dtypes = [ resolveEnum( xdt ), resolveEnum( ydt ) ];
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {
@@ -390,7 +367,6 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 */
 setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var options;
-	var dtypes;
 	var nargs;
 	var opts;
 	var args;
@@ -398,6 +374,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	var err;
 	var flg;
 	var xdt;
+	var ydt;
 	var tmp;
 	var dt;
 	var N;
@@ -461,7 +438,8 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		opts.dims = zeroTo( N );
 	}
 	// Determine whether we need to cast the input ndarray...
-	dt = unaryInputCastingDataType( xdt, getDType( y ), this._policies.casting ); // eslint-disable-line max-len
+	ydt = getDType( y );
+	dt = unaryInputCastingDataType( xdt, ydt, this._policies.casting );
 	if ( xdt !== dt ) {
 		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
 		tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
@@ -470,8 +448,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 		xdt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input and output ndarray data types:
-	dtypes = [ resolveEnum( dt ), resolveEnum( getDType( y ) ) ];
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {

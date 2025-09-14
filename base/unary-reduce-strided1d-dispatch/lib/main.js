@@ -38,6 +38,7 @@ var unaryReduceStrided1d = require( './../../../base/unary-reduce-strided1d' );
 var unaryOutputDataType = require( './../../../base/unary-output-dtype' );
 var unaryInputCastingDataType = require( './../../../base/unary-input-casting-dtype' );
 var resolveEnum = require( './../../../base/dtype-resolve-enum' );
+var dtypes2enums = require( './../../../base/dtypes2enums' );
 var spreadDimensions = require( './../../../base/spread-dimensions' );
 var getShape = require( './../../../shape' ); // note: non-base accessor is intentional due to input ndarrays originating in userland
 var ndims = require( './../../../ndims' );
@@ -58,27 +59,6 @@ var format = require( '@stdlib/string/format' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var indexOfTypes = require( './index_of_types.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Returns a list of data type enumeration constants.
-*
-* @private
-* @param {Collection} types - list of types
-* @returns {IntegerArray} list of data type enumeration constants
-*/
-function types2enums( types ) {
-	var out;
-	var i;
-
-	out = [];
-	for ( i = 0; i < types.length; i++ ) {
-		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
-	}
-	return out;
-}
 
 
 // MAIN //
@@ -178,7 +158,7 @@ function UnaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 	}
 	this._table = {
 		'default': table.default,
-		'types': ( table.types ) ? types2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
+		'types': ( table.types ) ? dtypes2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
 		'fcns': ( table.fcns ) ? copy( table.fcns ) : []
 	};
 	if ( this._table.types.length !== this._table.fcns.length ) {

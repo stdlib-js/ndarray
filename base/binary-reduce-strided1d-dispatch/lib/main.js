@@ -37,7 +37,7 @@ var contains = require( '@stdlib/array/base/assert/contains' );
 var binaryReduceStrided1d = require( './../../../base/binary-reduce-strided1d' );
 var binaryOutputDataType = require( './../../../base/binary-output-dtype' );
 var binaryInputCastingDataType = require( './../../../base/binary-input-casting-dtype' );
-var resolveEnum = require( './../../../base/dtype-resolve-enum' );
+var dtypes2enums = require( './../../../base/dtypes2enums' );
 var spreadDimensions = require( './../../../base/spread-dimensions' );
 var getShape = require( './../../../shape' ); // note: non-base accessor is intentional due to input ndarrays originating in userland
 var ndims = require( './../../../ndims' );
@@ -64,27 +64,6 @@ var indexOfTypes = require( './index_of_types.js' );
 // VARIABLES //
 
 var DEFAULT_ORDER = defaults.get( 'order' );
-
-
-// FUNCTIONS //
-
-/**
-* Returns a list of data type enumeration constants.
-*
-* @private
-* @param {Collection} types - list of types
-* @returns {IntegerArray} list of data type enumeration constants
-*/
-function types2enums( types ) {
-	var out;
-	var i;
-
-	out = [];
-	for ( i = 0; i < types.length; i++ ) {
-		out.push( resolveEnum( types[ i ] ) ); // note: we're assuming that `types[i]` is a known data type; otherwise, the resolved enum will be `null`
-	}
-	return out;
-}
 
 
 // MAIN //
@@ -187,7 +166,7 @@ function BinaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 	}
 	this._table = {
 		'default': table.default,
-		'types': ( table.types ) ? types2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
+		'types': ( table.types ) ? dtypes2enums( table.types ) : [], // note: convert to enums (i.e., integers) to ensure faster comparisons
 		'fcns': ( table.fcns ) ? copy( table.fcns ) : []
 	};
 	if ( this._table.types.length !== 2 * this._table.fcns.length ) {
@@ -254,7 +233,6 @@ function BinaryStrided1dDispatch( table, idtypes, odtypes, policies ) {
 */
 setReadOnly( BinaryStrided1dDispatch.prototype, 'apply', function apply( x, y ) {
 	var options;
-	var dtypes;
 	var nargs;
 	var args;
 	var opts;
@@ -375,8 +353,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'apply', function apply( x, y ) 
 		ydt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data types:
-	dtypes = [ resolveEnum( xdt ), resolveEnum( ydt ) ];
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {
@@ -452,7 +429,6 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'apply', function apply( x, y ) 
 */
 setReadOnly( BinaryStrided1dDispatch.prototype, 'assign', function assign( x, y ) {
 	var options;
-	var dtypes;
 	var nargs;
 	var opts;
 	var args;
@@ -565,8 +541,7 @@ setReadOnly( BinaryStrided1dDispatch.prototype, 'assign', function assign( x, y 
 		ydt = dt;
 	}
 	// Resolve the lower-level strided function satisfying the input ndarray data type:
-	dtypes = [ resolveEnum( xdt ), resolveEnum( ydt ) ];
-	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes, 1, 0 ); // eslint-disable-line max-len
+	i = indexOfTypes( this._table.fcns.length, 2, this._table.types, 2, 1, 0, dtypes2enums( [ xdt, ydt ] ), 1, 0 ); // eslint-disable-line max-len
 	if ( i >= 0 ) {
 		f = this._table.fcns[ i ];
 	} else {

@@ -30,28 +30,8 @@ var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var format = require( '@stdlib/string/format' );
 var getDType = require( './../../dtype' );
 var resolveEnum = require( './../../base/dtype-resolve-enum' );
+var dtypes2enums = require( './../../base/dtypes2enums' );
 var indexOfTypes = require( './index_of_types.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Returns a list of data type enumeration constants.
-*
-* @private
-* @param {Collection} types - list of types
-* @returns {IntegerArray} list of data type enumeration constants
-*/
-function types2enums( types ) {
-	var out;
-	var i;
-
-	out = [];
-	for ( i = 0; i < types.length; i++ ) {
-		out.push( resolveEnum( types[ i ] ) );
-	}
-	return out;
-}
 
 
 // MAIN //
@@ -151,7 +131,7 @@ function dispatchBy( fcns, types, data, nargs, nin, nout ) {
 	if ( data && data.length !== nfcns ) {
 		throw new Error( 'invalid argument. The third argument must have the same number of elements as the first argument.' );
 	}
-	types = types2enums( types );
+	types = dtypes2enums( types );
 	return dispatcher;
 
 	/**
