@@ -10,6 +10,14 @@
 
 ### Features
 
+-   [`24c59ca`](https://github.com/stdlib-js/stdlib/commit/24c59ca8f9c70b81c705f4cd981dfd4816c29137) - add `broadcastArrayExceptDimensions` to namespace
+-   [`0afeede`](https://github.com/stdlib-js/stdlib/commit/0afeedeeaff3c0d7f394b79125d633454fa7f9e3) - add `unaryAddonDispatch` to namespace
+-   [`8917ae2`](https://github.com/stdlib-js/stdlib/commit/8917ae2818c6864d62edc83cc5b74013d6dfc672) - add `nullaryStrided1dDispatch` to namespace
+-   [`4da672a`](https://github.com/stdlib-js/stdlib/commit/4da672aa92eaebdef7407e74663126c7c2db6d4a) - add `binaryReduceStrided1dDispatchFactory` to namespace
+-   [`c611553`](https://github.com/stdlib-js/stdlib/commit/c611553443ef655ec5f0ed8ab9dbe983b7248af1) - add `binaryReduceStrided1dDispatch` to namespace
+-   [`154866d`](https://github.com/stdlib-js/stdlib/commit/154866dc56a678fbc3d349cd8d2964fe2ef2301d) - add `binaryInputCastingDataType` to namespace
+-   [`f2c44fb`](https://github.com/stdlib-js/stdlib/commit/f2c44fb0b3c470367bb3f4ff8aef32eaf72e58c3) - add `dtypes2enums` to namespace
+-   [`882ff45`](https://github.com/stdlib-js/stdlib/commit/882ff45ea084b274ef5efe3e8eed537300162ba6) - add `ndarray/base/dtypes2enums`
 -   [`cc715fa`](https://github.com/stdlib-js/stdlib/commit/cc715fa508b46f9bc8fbf516ce5185050adc4cf8) - add `ndarray/base/binary-reduce-strided1d-dispatch-factory` [(#7950)](https://github.com/stdlib-js/stdlib/pull/7950)
 -   [`ce2a417`](https://github.com/stdlib-js/stdlib/commit/ce2a4171ac366e3023a240d01c154f8e9bfdfa5e) - add `ndarray/base/binary-reduce-strided1d-dispatch` [(#7908)](https://github.com/stdlib-js/stdlib/pull/7908)
 -   [`17e89e8`](https://github.com/stdlib-js/stdlib/commit/17e89e85928ef1e38ad554975c62ea96c15c6c04) - generate loops for mostly safe casts
@@ -519,6 +527,14 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`24c59ca`](https://github.com/stdlib-js/stdlib/commit/24c59ca8f9c70b81c705f4cd981dfd4816c29137) - **feat:** add `broadcastArrayExceptDimensions` to namespace _(by Athan Reines)_
+-   [`0afeede`](https://github.com/stdlib-js/stdlib/commit/0afeedeeaff3c0d7f394b79125d633454fa7f9e3) - **feat:** add `unaryAddonDispatch` to namespace _(by Athan Reines)_
+-   [`8917ae2`](https://github.com/stdlib-js/stdlib/commit/8917ae2818c6864d62edc83cc5b74013d6dfc672) - **feat:** add `nullaryStrided1dDispatch` to namespace _(by Athan Reines)_
+-   [`4da672a`](https://github.com/stdlib-js/stdlib/commit/4da672aa92eaebdef7407e74663126c7c2db6d4a) - **feat:** add `binaryReduceStrided1dDispatchFactory` to namespace _(by Athan Reines)_
+-   [`c611553`](https://github.com/stdlib-js/stdlib/commit/c611553443ef655ec5f0ed8ab9dbe983b7248af1) - **feat:** add `binaryReduceStrided1dDispatch` to namespace _(by Athan Reines)_
+-   [`154866d`](https://github.com/stdlib-js/stdlib/commit/154866dc56a678fbc3d349cd8d2964fe2ef2301d) - **feat:** add `binaryInputCastingDataType` to namespace _(by Athan Reines)_
+-   [`f2c44fb`](https://github.com/stdlib-js/stdlib/commit/f2c44fb0b3c470367bb3f4ff8aef32eaf72e58c3) - **feat:** add `dtypes2enums` to namespace _(by Athan Reines)_
+-   [`882ff45`](https://github.com/stdlib-js/stdlib/commit/882ff45ea084b274ef5efe3e8eed537300162ba6) - **feat:** add `ndarray/base/dtypes2enums` _(by Athan Reines)_
 -   [`1e5c77a`](https://github.com/stdlib-js/stdlib/commit/1e5c77a53d8b81c99ca0be177b1e828dbfc12173) - **refactor:** use array utility _(by Athan Reines)_
 -   [`351db28`](https://github.com/stdlib-js/stdlib/commit/351db2889ebd45eb0dc55efd4edb1e4d6e20daa7) - **refactor:** use array utility _(by Athan Reines)_
 -   [`01bc84c`](https://github.com/stdlib-js/stdlib/commit/01bc84cc252dbb2e46ff575e10ceb45a9a19cb92) - **refactor:** use array utility _(by Athan Reines)_
