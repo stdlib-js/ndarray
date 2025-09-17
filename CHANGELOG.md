@@ -380,6 +380,7 @@
 
 ### Bug Fixes
 
+-   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - ensure correct type when providing a `dtype` option
 -   [`57a9400`](https://github.com/stdlib-js/stdlib/commit/57a9400329d0570d2b25ad6b87d4d9a74d7fc28b) - avoid strict equality check
 -   [`d5e1c28`](https://github.com/stdlib-js/stdlib/commit/d5e1c28e6821d21da0b79090ebd3cf903f036aae) - maintain floating-point precision
 -   [`8983f46`](https://github.com/stdlib-js/stdlib/commit/8983f46c72781a991814dcf9a6e08db27cd12e39) - use correct variable
@@ -531,6 +532,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - **fix:** ensure correct type when providing a `dtype` option _(by Athan Reines)_
 -   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - **feat:** add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091) _(by Muhammad Haris, Athan Reines)_
 -   [`724283b`](https://github.com/stdlib-js/stdlib/commit/724283b0bc5d2eb8bf48491c954c6a119330c1f5) - **feat:** add `ndarray/base/nullary-strided1d-dispatch-factory` [(#7828)](https://github.com/stdlib-js/stdlib/pull/7828) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`2743732`](https://github.com/stdlib-js/stdlib/commit/27437323cb1d22c53c91f152d6d05153630bc123) - **docs:** fix description _(by Athan Reines)_

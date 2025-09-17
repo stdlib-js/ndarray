@@ -31,6 +31,10 @@ import flatten = require( './index' );
 	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), {} ); // $ExpectType float64ndarray
 	flatten( zeros( 'complex128', [ 2, 2, 2 ], 'row-major' ), {} ); // $ExpectType complex128ndarray
 	flatten( zeros( 'generic', [ 2, 2, 2 ], 'row-major' ), {} ); // $ExpectType genericndarray<number>
+
+	flatten( zeros( 'float64', [ 2, 2, 2 ], 'row-major' ), { 'dtype': 'float32' } ); // $ExpectType float32ndarray
+	flatten( zeros( 'int32', [ 2, 2, 2 ], 'row-major' ), { 'dtype': 'float64' } ); // $ExpectType float64ndarray
+	flatten( zeros( 'int32', [ 2, 2, 2 ], 'row-major' ), { 'dtype': 'generic' } ); // $ExpectType genericndarray<number>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray-like object...
