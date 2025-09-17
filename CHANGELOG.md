@@ -529,6 +529,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2743732`](https://github.com/stdlib-js/stdlib/commit/27437323cb1d22c53c91f152d6d05153630bc123) - **docs:** fix description _(by Athan Reines)_
 -   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - **feat:** add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078) _(by Muhammad Haris, Athan Reines)_
 -   [`57a9400`](https://github.com/stdlib-js/stdlib/commit/57a9400329d0570d2b25ad6b87d4d9a74d7fc28b) - **fix:** avoid strict equality check _(by Athan Reines)_
 -   [`905019c`](https://github.com/stdlib-js/stdlib/commit/905019c024611308865950e3d1dd51c642176e82) - **docs:** fix grammar in function descriptions _(by Philipp Burckhardt)_
