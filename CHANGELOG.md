@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078)
 -   [`24c59ca`](https://github.com/stdlib-js/stdlib/commit/24c59ca8f9c70b81c705f4cd981dfd4816c29137) - add `broadcastArrayExceptDimensions` to namespace
 -   [`0afeede`](https://github.com/stdlib-js/stdlib/commit/0afeedeeaff3c0d7f394b79125d633454fa7f9e3) - add `unaryAddonDispatch` to namespace
 -   [`8917ae2`](https://github.com/stdlib-js/stdlib/commit/8917ae2818c6864d62edc83cc5b74013d6dfc672) - add `nullaryStrided1dDispatch` to namespace
@@ -528,6 +529,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - **feat:** add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078) _(by Muhammad Haris, Athan Reines)_
 -   [`57a9400`](https://github.com/stdlib-js/stdlib/commit/57a9400329d0570d2b25ad6b87d4d9a74d7fc28b) - **fix:** avoid strict equality check _(by Athan Reines)_
 -   [`905019c`](https://github.com/stdlib-js/stdlib/commit/905019c024611308865950e3d1dd51c642176e82) - **docs:** fix grammar in function descriptions _(by Philipp Burckhardt)_
 -   [`5dde2ff`](https://github.com/stdlib-js/stdlib/commit/5dde2ff115443aa143dd19022e5593e022401920) - **refactor:** use extended BLAS utility _(by Athan Reines)_
