@@ -196,9 +196,7 @@ function someBy( arrays, predicate, thisArg ) {
 
 	// Resolve the success criterion:
 	N = n.accessors[ 0 ]( n.data, n.offset );
-	if ( N < 1 ) {
-		return true;
-	}
+
 	// Determine whether we can avoid iteration altogether...
 	if ( ndims === 0 ) {
 		if ( x.accessorProtocol ) {

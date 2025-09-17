@@ -381,6 +381,7 @@
 
 ### Bug Fixes
 
+-   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - remove conditional
 -   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - ensure correct type when providing a `dtype` option
 -   [`57a9400`](https://github.com/stdlib-js/stdlib/commit/57a9400329d0570d2b25ad6b87d4d9a74d7fc28b) - avoid strict equality check
 -   [`d5e1c28`](https://github.com/stdlib-js/stdlib/commit/d5e1c28e6821d21da0b79090ebd3cf903f036aae) - maintain floating-point precision
@@ -533,6 +534,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - **fix:** remove conditional _(by Athan Reines)_
 -   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - **feat:** add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094) _(by Muhammad Haris, Athan Reines)_
 -   [`9b660ce`](https://github.com/stdlib-js/stdlib/commit/9b660ceda07c2d62d1faccfe619da11579f631c6) - **test:** add `dtype` test _(by Athan Reines)_
 -   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - **fix:** ensure correct type when providing a `dtype` option _(by Athan Reines)_

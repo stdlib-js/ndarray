@@ -56,7 +56,7 @@ tape( 'the function returns `false` if provided an empty input ndarray', functio
 	}
 });
 
-tape( 'the function returns `true` if a provided `n` parameter is less than zero', function test( t ) {
+tape( 'the function returns `false` if a provided `n` parameter is less than zero', function test( t ) {
 	var actual;
 	var x;
 	var n;
@@ -67,7 +67,7 @@ tape( 'the function returns `true` if a provided `n` parameter is less than zero
 	});
 
 	actual = someBy( [ x, n ], clbk );
-	t.strictEqual( actual, true, 'returns expected value' );
+	t.strictEqual( actual, false, 'returns expected value' );
 
 	t.end();
 
