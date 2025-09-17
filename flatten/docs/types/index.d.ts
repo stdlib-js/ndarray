@@ -20,7 +20,7 @@
 
 /// <reference types="@stdlib/types"/>
 
-import { ndarray, Order } from '@stdlib/types/ndarray';
+import { ndarray, Order, DataType } from '@stdlib/types/ndarray';
 
 /**
 * Interface defining function options.
@@ -50,6 +50,15 @@ interface Options {
 	* -   Default: 'row-major'.
 	*/
 	order?: Order | 'same' | 'any';
+
+	/**
+	* Output ndarray data type.
+	*
+	* ## Notes
+	*
+	* -   By default, the function returns an ndarray having the same data type as a provided input ndarray.
+	*/
+	dtype?: DataType;
 }
 
 /**

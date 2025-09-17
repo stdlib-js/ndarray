@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091)
 -   [`724283b`](https://github.com/stdlib-js/stdlib/commit/724283b0bc5d2eb8bf48491c954c6a119330c1f5) - add `ndarray/base/nullary-strided1d-dispatch-factory` [(#7828)](https://github.com/stdlib-js/stdlib/pull/7828)
 -   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078)
 -   [`24c59ca`](https://github.com/stdlib-js/stdlib/commit/24c59ca8f9c70b81c705f4cd981dfd4816c29137) - add `broadcastArrayExceptDimensions` to namespace
@@ -530,6 +531,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - **feat:** add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091) _(by Muhammad Haris, Athan Reines)_
 -   [`724283b`](https://github.com/stdlib-js/stdlib/commit/724283b0bc5d2eb8bf48491c954c6a119330c1f5) - **feat:** add `ndarray/base/nullary-strided1d-dispatch-factory` [(#7828)](https://github.com/stdlib-js/stdlib/pull/7828) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`2743732`](https://github.com/stdlib-js/stdlib/commit/27437323cb1d22c53c91f152d6d05153630bc123) - **docs:** fix description _(by Athan Reines)_
 -   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - **feat:** add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078) _(by Muhammad Haris, Athan Reines)_
