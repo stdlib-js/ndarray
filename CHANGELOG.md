@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094)
 -   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091)
 -   [`724283b`](https://github.com/stdlib-js/stdlib/commit/724283b0bc5d2eb8bf48491c954c6a119330c1f5) - add `ndarray/base/nullary-strided1d-dispatch-factory` [(#7828)](https://github.com/stdlib-js/stdlib/pull/7828)
 -   [`c8652f3`](https://github.com/stdlib-js/stdlib/commit/c8652f3a3ca317179b46596787eb4db4966c154a) - add `ndarray/flatten-by` [(#8078)](https://github.com/stdlib-js/stdlib/pull/8078)
@@ -532,6 +533,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - **feat:** add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094) _(by Muhammad Haris, Athan Reines)_
 -   [`9b660ce`](https://github.com/stdlib-js/stdlib/commit/9b660ceda07c2d62d1faccfe619da11579f631c6) - **test:** add `dtype` test _(by Athan Reines)_
 -   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - **fix:** ensure correct type when providing a `dtype` option _(by Athan Reines)_
 -   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - **feat:** add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091) _(by Muhammad Haris, Athan Reines)_

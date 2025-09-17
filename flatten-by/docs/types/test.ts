@@ -86,6 +86,11 @@ function identity( x: any ): any {
 	flattenBy( zeros( 'generic', sh, ord ), {}, identity ); // $ExpectType genericndarray<number>
 	flattenBy( zeros( 'generic', sh, ord ), identity, {} ); // $ExpectType genericndarray<number>
 	flattenBy( zeros( 'generic', sh, ord ), {}, identity, {} ); // $ExpectType genericndarray<number>
+
+	flattenBy( zeros( 'float64', sh, ord ), { 'dtype': 'float32' }, identity ); // $ExpectType float32ndarray
+	flattenBy( zeros( 'float64', sh, ord ), { 'dtype': 'generic' }, identity ); // $ExpectType genericndarray<any>
+	flattenBy( zeros( 'generic', sh, ord ), { 'dtype': 'float64' }, identity ); // $ExpectType float64ndarray
+	flattenBy( zeros( 'generic', sh, ord ), { 'dtype': 'generic' }, identity ); // $ExpectType genericndarray<any>
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an ndarray...
@@ -176,6 +181,23 @@ function identity( x: any ): any {
 	flattenBy( x, { 'order': false }, identity, {} ); // $ExpectError
 	flattenBy( x, { 'order': null }, identity, {} ); // $ExpectError
 	flattenBy( x, { 'order': [ 1 ] }, identity, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a second argument with invalid `dtype` option...
+{
+	const x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
+
+	flattenBy( x, { 'dtype': '5' }, identity ); // $ExpectError
+	flattenBy( x, { 'dtype': true }, identity ); // $ExpectError
+	flattenBy( x, { 'dtype': false }, identity ); // $ExpectError
+	flattenBy( x, { 'dtype': null }, identity ); // $ExpectError
+	flattenBy( x, { 'dtype': [ 1 ] }, identity ); // $ExpectError
+
+	flattenBy( x, { 'dtype': '5' }, identity, {} ); // $ExpectError
+	flattenBy( x, { 'dtype': true }, identity, {} ); // $ExpectError
+	flattenBy( x, { 'dtype': false }, identity, {} ); // $ExpectError
+	flattenBy( x, { 'dtype': null }, identity, {} ); // $ExpectError
+	flattenBy( x, { 'dtype': [ 1 ] }, identity, {} ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a callback which is not a function...
