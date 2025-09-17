@@ -301,7 +301,7 @@ function flatten( x, options ) {
 	};
 
 	// Resolve function options...
-	if ( nargs === 2 ) {
+	if ( nargs > 1 ) {
 		if ( !isPlainObject( options ) ) {
 			throw new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
 		}
