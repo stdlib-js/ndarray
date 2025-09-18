@@ -545,6 +545,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`e700afd`](https://github.com/stdlib-js/stdlib/commit/e700afd0526ff2cc8f78cdb8743c749eceb09dd6) - **docs:** update type _(by Athan Reines)_
+-   [`4a1b036`](https://github.com/stdlib-js/stdlib/commit/4a1b0361b7491efedfd3983f4a686601ba12c673) - **docs:** update type _(by Athan Reines)_
 -   [`1285c82`](https://github.com/stdlib-js/stdlib/commit/1285c82a9767afae6ddf57df797eeff5ed1e49f3) - **docs:** update examples _(by Athan Reines)_
 -   [`44e8ba9`](https://github.com/stdlib-js/stdlib/commit/44e8ba9168ad3babb155b78e5e8a091759567c66) - **docs:** update type _(by Athan Reines)_
 -   [`3acf6f6`](https://github.com/stdlib-js/stdlib/commit/3acf6f69dd646f330a80cb299737133c06ca0dc8) - **test:** use functional APIs for accessing ndarray properties _(by Athan Reines)_
