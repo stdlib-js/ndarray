@@ -68,7 +68,7 @@ var defaults = getDefaults();
 * @param {(ArrayLikeObject|TypedArrayLike|Buffer|ndarrayLike)} [buffer] - data source
 * @param {Options} [options] - function options
 * @param {(ArrayLikeObject|TypedArrayLike|Buffer|ndarrayLike)} [options.buffer] - data source
-* @param {string} [options.dtype="float64"] - underlying storage data type (if the input data is not of the same type, this option specifies the data type to which to cast the input data)
+* @param {*} [options.dtype="float64"] - underlying storage data type (if the input data is not of the same type, this option specifies the data type to which to cast the input data)
 * @param {string} [options.order="row-major"] - specifies the memory layout of the array as either row-major (C-style) or column-major (Fortran-style)
 * @param {NonNegativeIntegerArray} [options.shape] - array shape
 * @param {string} [options.mode="throw"] - specifies how to handle indices which exceed array dimensions
@@ -206,6 +206,7 @@ function array() {
 		if ( !isDataType( dtype ) ) {
 			throw new TypeError( format( 'invalid option. `%s` option must be a recognized data type. Option: `%s`.', 'dtype', dtype ) );
 		}
+		dtype = String( dtype );
 		if ( btype && !isAllowedCast( btype, dtype, opts.casting ) ) {
 			throw new Error( format( 'invalid option. Data type cast is not allowed. Casting mode: `%s`. From: `%s`. To: `%s`.', opts.casting, btype, dtype ) );
 		}
