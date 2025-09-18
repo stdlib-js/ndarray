@@ -38,7 +38,7 @@
 * int8_t out = stdlib_ndarray_dtype_alignment( STDLIB_NDARRAY_FLOAT64 );
 * // returns 8
 */
-uint8_t stdlib_ndarray_dtype_alignment( enum STDLIB_NDARRAY_DTYPE dtype ) {
+int8_t stdlib_ndarray_dtype_alignment( enum STDLIB_NDARRAY_DTYPE dtype ) {
 	switch ( dtype ) {
 	case STDLIB_NDARRAY_FLOAT64:
 		return STDLIB_NDARRAY_FLOAT64_ALIGNMENT;
