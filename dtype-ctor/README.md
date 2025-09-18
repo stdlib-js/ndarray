@@ -237,7 +237,7 @@ console.log( 'char: %s', dt.char );
 // => 'char: z'
 
 console.log( 'JSON: %s', JSON.stringify( dt ) );
-// e.g., => 'JSON: {"type": "DataType","value":"float64","byteOrder":"host",...}'
+// e.g., => 'JSON: {"type": "DataType","value":"complex128","byteOrder":"host",...}'
 ```
 
 </section>
