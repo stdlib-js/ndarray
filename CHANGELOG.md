@@ -545,6 +545,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`dcfa4df`](https://github.com/stdlib-js/stdlib/commit/dcfa4df5171c24115771b773205ddf2fa06d669f) - **docs:** update type _(by Athan Reines)_
+-   [`33dc96a`](https://github.com/stdlib-js/stdlib/commit/33dc96a398f87940f6c69fb2c70409bc5715398d) - **docs:** update type _(by Athan Reines)_
+-   [`0e246db`](https://github.com/stdlib-js/stdlib/commit/0e246db52925591bd3b2ea56ac34ec5e40da65e3) - **refactor:** resolve dtype string and update documented type _(by Athan Reines)_
 -   [`88745e0`](https://github.com/stdlib-js/stdlib/commit/88745e0ec1040dcb70585877c2e64aafd9dfe79d) - **docs:** update type _(by Athan Reines)_
 -   [`e9d58ab`](https://github.com/stdlib-js/stdlib/commit/e9d58abd0288a87700361673ba08d816a11d68fa) - **refactor:** resolve dtype string and update documented type _(by Athan Reines)_
 -   [`2c42c06`](https://github.com/stdlib-js/stdlib/commit/2c42c06899b8274a4cbb93928affe62062309308) - **docs:** update type _(by Athan Reines)_
