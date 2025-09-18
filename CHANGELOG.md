@@ -382,6 +382,7 @@
 
 ### Bug Fixes
 
+-   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - update return type
 -   [`97d7e56`](https://github.com/stdlib-js/stdlib/commit/97d7e567e463ab9942c9d1188bc0c5786827e09b) - update return type
 -   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - add missing argument to format strings
 -   [`2b5e5c6`](https://github.com/stdlib-js/stdlib/commit/2b5e5c6be9fe4b9f1a0e235a6b50c4fe5554707b) - account for edge case where `n <= 0`
@@ -538,6 +539,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - **fix:** update return type _(by Athan Reines)_
 -   [`97d7e56`](https://github.com/stdlib-js/stdlib/commit/97d7e567e463ab9942c9d1188bc0c5786827e09b) - **fix:** update return type _(by Athan Reines)_
 -   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - **fix:** add missing argument to format strings _(by Philipp Burckhardt)_
 -   [`f709450`](https://github.com/stdlib-js/stdlib/commit/f70945029cc35797e0af5ec1de2fda369b5c222a) - **docs:** correct grammar in JSDoc comments _(by Philipp Burckhardt)_

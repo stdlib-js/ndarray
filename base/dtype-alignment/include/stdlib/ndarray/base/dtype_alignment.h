@@ -66,7 +66,7 @@ enum STDLIB_NDARRAY_DTYPE_ALIGNMENT {
 /**
 * Returns the alignment (in bytes) for a given data type.
 */
-uint8_t stdlib_ndarray_dtype_alignment( enum STDLIB_NDARRAY_DTYPE dtype );
+int8_t stdlib_ndarray_dtype_alignment( enum STDLIB_NDARRAY_DTYPE dtype );
 
 #ifdef __cplusplus
 }
