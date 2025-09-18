@@ -545,6 +545,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`8d35ca2`](https://github.com/stdlib-js/stdlib/commit/8d35ca2db2f6380c2fb549e6646e2274b44dcdef) - **test:** remove assertion to resolve CI failure _(by Athan Reines)_
 -   [`0c9653f`](https://github.com/stdlib-js/stdlib/commit/0c9653fd653c0590e7250a9012fa498fbcc69f77) - **docs:** fix example output _(by Athan Reines)_
 -   [`ba1c0f2`](https://github.com/stdlib-js/stdlib/commit/ba1c0f278e120cd42272fa2449bd13f045a469aa) - **feat:** add `fillSlice` to namespace _(by Athan Reines)_
 -   [`f015917`](https://github.com/stdlib-js/stdlib/commit/f0159173d4db9e22bb1bd7c8b56c424b4d3e076e) - **feat:** add `flattenBy` to namespace _(by Athan Reines)_

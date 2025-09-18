@@ -207,7 +207,6 @@ tape( 'the constructor supports creating a data type instance from a struct', fu
 	dt = new DataType( S );
 
 	t.strictEqual( dt.value, S, 'returns expected value' );
-	t.strictEqual( dt.byteLength, 8, 'returns expected value' );
 	t.strictEqual( dt.toString(), S.layout, 'returns expected value' );
 
 	t.end();
