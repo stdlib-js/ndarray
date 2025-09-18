@@ -10,6 +10,11 @@
 
 ### Features
 
+-   [`ba1c0f2`](https://github.com/stdlib-js/stdlib/commit/ba1c0f278e120cd42272fa2449bd13f045a469aa) - add `fillSlice` to namespace
+-   [`f015917`](https://github.com/stdlib-js/stdlib/commit/f0159173d4db9e22bb1bd7c8b56c424b4d3e076e) - add `flattenBy` to namespace
+-   [`8f440d7`](https://github.com/stdlib-js/stdlib/commit/8f440d7aeadc895a5a7a348e935389619d408a0e) - add `flatten` to namespace
+-   [`c72e7c8`](https://github.com/stdlib-js/stdlib/commit/c72e7c87b41b3b9102a562928a43165e00b16f7b) - add `DataType` to namespace
+-   [`8d411b1`](https://github.com/stdlib-js/stdlib/commit/8d411b127d3f42432f0fb1e91c7cccb7a61e848c) - add `ndarray/dtype-ctor`
 -   [`44c2368`](https://github.com/stdlib-js/stdlib/commit/44c23684fef779a6e62dc18dd01192b192785a41) - add `ndarray/base/dtype-alignment`
 -   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094)
 -   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091)
@@ -382,6 +387,7 @@
 
 ### Bug Fixes
 
+-   [`f8e5205`](https://github.com/stdlib-js/stdlib/commit/f8e520591bc2a8d8436ebb4fbe1604a7376105cd) - use correct `sliceAssign` alias
 -   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - update return type
 -   [`97d7e56`](https://github.com/stdlib-js/stdlib/commit/97d7e567e463ab9942c9d1188bc0c5786827e09b) - update return type
 -   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - add missing argument to format strings
@@ -539,6 +545,12 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`ba1c0f2`](https://github.com/stdlib-js/stdlib/commit/ba1c0f278e120cd42272fa2449bd13f045a469aa) - **feat:** add `fillSlice` to namespace _(by Athan Reines)_
+-   [`f015917`](https://github.com/stdlib-js/stdlib/commit/f0159173d4db9e22bb1bd7c8b56c424b4d3e076e) - **feat:** add `flattenBy` to namespace _(by Athan Reines)_
+-   [`8f440d7`](https://github.com/stdlib-js/stdlib/commit/8f440d7aeadc895a5a7a348e935389619d408a0e) - **feat:** add `flatten` to namespace _(by Athan Reines)_
+-   [`f8e5205`](https://github.com/stdlib-js/stdlib/commit/f8e520591bc2a8d8436ebb4fbe1604a7376105cd) - **fix:** use correct `sliceAssign` alias _(by Athan Reines)_
+-   [`c72e7c8`](https://github.com/stdlib-js/stdlib/commit/c72e7c87b41b3b9102a562928a43165e00b16f7b) - **feat:** add `DataType` to namespace _(by Athan Reines)_
+-   [`8d411b1`](https://github.com/stdlib-js/stdlib/commit/8d411b127d3f42432f0fb1e91c7cccb7a61e848c) - **feat:** add `ndarray/dtype-ctor` _(by Athan Reines)_
 -   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - **fix:** update return type _(by Athan Reines)_
 -   [`97d7e56`](https://github.com/stdlib-js/stdlib/commit/97d7e567e463ab9942c9d1188bc0c5786827e09b) - **fix:** update return type _(by Athan Reines)_
 -   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - **fix:** add missing argument to format strings _(by Philipp Burckhardt)_
