@@ -47,7 +47,7 @@ var UnaryStrided1dDispatch = require( './../../../base/unary-strided1d-dispatch'
 * @throws {TypeError} fourth argument must be an object having supported policies
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
-* @returns {Function} function for applying a strided function an ndarray
+* @returns {Function} function for applying a strided function to an ndarray
 *
 * @example
 * var base = require( '@stdlib/stats/base/ndarray/cumax' );

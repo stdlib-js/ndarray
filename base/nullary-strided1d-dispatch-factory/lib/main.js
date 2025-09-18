@@ -42,7 +42,7 @@ var NullaryStrided1dDispatch = require( './../../../base/nullary-strided1d-dispa
 * @throws {TypeError} third argument must be an array of supported data types
 * @throws {TypeError} options argument must be an object
 * @throws {TypeError} must provide valid options
-* @returns {Function} function for applying a strided function an ndarray
+* @returns {Function} function for applying a strided function to an ndarray
 *
 * @example
 * var base = require( '@stdlib/blas/ext/base/ndarray/gsorthp' );

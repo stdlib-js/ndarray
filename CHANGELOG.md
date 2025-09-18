@@ -382,6 +382,7 @@
 
 ### Bug Fixes
 
+-   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - add missing argument to format strings
 -   [`2b5e5c6`](https://github.com/stdlib-js/stdlib/commit/2b5e5c6be9fe4b9f1a0e235a6b50c4fe5554707b) - account for edge case where `n <= 0`
 -   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - remove conditional
 -   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - ensure correct type when providing a `dtype` option
@@ -536,6 +537,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`6f6da0a`](https://github.com/stdlib-js/stdlib/commit/6f6da0afaa12ef31691ae659f6a005f140d81cd1) - **fix:** add missing argument to format strings _(by Philipp Burckhardt)_
+-   [`f709450`](https://github.com/stdlib-js/stdlib/commit/f70945029cc35797e0af5ec1de2fda369b5c222a) - **docs:** correct grammar in JSDoc comments _(by Philipp Burckhardt)_
 -   [`44c2368`](https://github.com/stdlib-js/stdlib/commit/44c23684fef779a6e62dc18dd01192b192785a41) - **feat:** add `ndarray/base/dtype-alignment` _(by Athan Reines)_
 -   [`e5bf4a1`](https://github.com/stdlib-js/stdlib/commit/e5bf4a1e92052b705774cbb08bc74295cea3c5fc) - **docs:** update example _(by Athan Reines)_
 -   [`8b85764`](https://github.com/stdlib-js/stdlib/commit/8b8576416a1925647193338763722d58d8c8752e) - **chore:** clean-up _(by Athan Reines)_

@@ -309,7 +309,7 @@ function flatten( x, options ) {
 		}
 		if ( hasOwnProp( options, 'depth' ) ) {
 			if ( !isNonNegativeInteger( options.depth ) ) {
-				throw new TypeError( format( 'invalid option. `%s` option must be a nonnegative integer. Option: `%s`.', options.depth ) );
+				throw new TypeError( format( 'invalid option. `%s` option must be a nonnegative integer. Option: `%s`.', 'depth', options.depth ) );
 			}
 			opts.depth = options.depth;
 		}
