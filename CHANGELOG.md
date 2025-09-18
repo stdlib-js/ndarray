@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-17)
+## Unreleased (2025-09-18)
 
 <section class="features">
 
@@ -534,6 +534,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`a3e7978`](https://github.com/stdlib-js/stdlib/commit/a3e79786217bf1c9a84875203251af82cc93a222) - **docs:** update markup _(by Athan Reines)_
 -   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - **fix:** remove conditional _(by Athan Reines)_
 -   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - **feat:** add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094) _(by Muhammad Haris, Athan Reines)_
 -   [`9b660ce`](https://github.com/stdlib-js/stdlib/commit/9b660ceda07c2d62d1faccfe619da11579f631c6) - **test:** add `dtype` test _(by Athan Reines)_
