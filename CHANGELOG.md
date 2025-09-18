@@ -381,6 +381,7 @@
 
 ### Bug Fixes
 
+-   [`2b5e5c6`](https://github.com/stdlib-js/stdlib/commit/2b5e5c6be9fe4b9f1a0e235a6b50c4fe5554707b) - account for edge case where `n <= 0`
 -   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - remove conditional
 -   [`6d74243`](https://github.com/stdlib-js/stdlib/commit/6d742438beb8e7fe0de4ecfbc82083da16a0a83c) - ensure correct type when providing a `dtype` option
 -   [`57a9400`](https://github.com/stdlib-js/stdlib/commit/57a9400329d0570d2b25ad6b87d4d9a74d7fc28b) - avoid strict equality check
@@ -534,6 +535,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2b5e5c6`](https://github.com/stdlib-js/stdlib/commit/2b5e5c6be9fe4b9f1a0e235a6b50c4fe5554707b) - **fix:** account for edge case where `n <= 0` _(by Athan Reines)_
 -   [`a3e7978`](https://github.com/stdlib-js/stdlib/commit/a3e79786217bf1c9a84875203251af82cc93a222) - **docs:** update markup _(by Athan Reines)_
 -   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - **fix:** remove conditional _(by Athan Reines)_
 -   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - **feat:** add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094) _(by Muhammad Haris, Athan Reines)_

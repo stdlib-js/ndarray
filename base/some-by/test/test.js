@@ -22,7 +22,6 @@
 
 var tape = require( 'tape' );
 var ones = require( '@stdlib/array/ones' );
-var zeros = require( '@stdlib/array/zeros' );
 var scalar2ndarray = require( './../../../from-scalar' );
 var ndarray = require( './../../../ctor' );
 var someBy = require( './../lib' );
@@ -43,26 +42,6 @@ tape( 'the function returns `false` if provided an empty input ndarray', functio
 
 	x = ndarray( 'float64', ones( 8, 'float64' ), [ 0 ], [ 1 ], 0, 'row-major' );
 	n = scalar2ndarray( 1, {
-		'dtype': 'generic'
-	});
-
-	actual = someBy( [ x, n ], clbk );
-	t.strictEqual( actual, false, 'returns expected value' );
-
-	t.end();
-
-	function clbk( v ) {
-		return v !== 0.0;
-	}
-});
-
-tape( 'the function returns `false` if a provided `n` parameter is less than zero', function test( t ) {
-	var actual;
-	var x;
-	var n;
-
-	x = ndarray( 'float64', zeros( 2, 'float64' ), [ 2 ], [ 1 ], 0, 'row-major' );
-	n = scalar2ndarray( -1, {
 		'dtype': 'generic'
 	});
 
