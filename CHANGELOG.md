@@ -545,6 +545,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2c42c06`](https://github.com/stdlib-js/stdlib/commit/2c42c06899b8274a4cbb93928affe62062309308) - **docs:** update type _(by Athan Reines)_
 -   [`d83cf12`](https://github.com/stdlib-js/stdlib/commit/d83cf12d9e3a532a3378264da0ba530c0b2d95dd) - **docs:** update type _(by Athan Reines)_
 -   [`ab2e77b`](https://github.com/stdlib-js/stdlib/commit/ab2e77bb82f0c6e7854e3279429a1ec8c6ff5603) - **docs:** update type _(by Athan Reines)_
 -   [`8d35ca2`](https://github.com/stdlib-js/stdlib/commit/8d35ca2db2f6380c2fb549e6646e2274b44dcdef) - **test:** remove assertion to resolve CI failure _(by Athan Reines)_
