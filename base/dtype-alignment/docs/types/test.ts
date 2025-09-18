@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,24 +16,18 @@
 * limitations under the License.
 */
 
-'use strict';
+import dtypeAlignment = require( './index' );
 
-var logEachMap = require( '@stdlib/console/log-each-map' );
-var dtypeChar = require( './../lib' );
 
-var dtypes = [
-	'float64',
-	'float32',
-	'int8',
-	'uint8',
-	'uint8c',
-	'int16',
-	'uint16',
-	'int32',
-	'uint32',
-	'binary',
-	'generic',
-	'foobar'
-];
+// TESTS //
 
-logEachMap( '%s => %s', dtypes, dtypeChar );
+// The function returns a table if not provided a data type string...
+{
+	dtypeAlignment(); // $ExpectType Table
+}
+
+// The function returns a number or null if provided a data type string...
+{
+	dtypeAlignment( 'float64' ); // $ExpectType number | null
+	dtypeAlignment( 'generic' ); // $ExpectType number | null
+}

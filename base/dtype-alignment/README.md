@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# dtypeChar
+# dtypeAlignment
 
-> Return the single letter abbreviation for an underlying [array data type][@stdlib/ndarray/dtypes].
+> Return the alignment (in bytes) for an underlying [array data type][@stdlib/ndarray/dtypes].
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,32 +37,32 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
+var dtypeAlignment = require( '@stdlib/ndarray/base/dtype-alignment' );
 ```
 
-#### dtypeChar( \[dtype] )
+#### dtypeAlignment( \[dtype] )
 
-Returns the single letter character abbreviation for an underlying [array data type][@stdlib/ndarray/dtypes].
+Returns the alignment (in bytes) for an underlying [array data type][@stdlib/ndarray/dtypes].
 
 ```javascript
-var ch = dtypeChar( 'float64' );
-// returns 'd'
+var out = dtypeAlignment( 'float64' );
+// returns 8
 
-ch = dtypeChar( 'generic' );
-// returns 'o'
+out = dtypeAlignment( 'generic' );
+// returns null
 ```
 
 If provided an unknown or unsupported data type, the function returns `null`.
 
 ```javascript
-var ch = dtypeChar( 'foobar' );
+var out = dtypeAlignment( 'foobar' );
 // returns null
 ```
 
-If not provided a [data type][@stdlib/ndarray/dtypes] value, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to single letter character abbreviations.
+If not provided a [data type][@stdlib/ndarray/dtypes] value, the function returns an object mapping [data type][@stdlib/ndarray/dtypes] strings to alignments (in bytes).
 
 ```javascript
-var obj = dtypeChar();
+var obj = dtypeAlignment();
 // returns {...}
 ```
 
@@ -88,7 +88,7 @@ var obj = dtypeChar();
 
 ```javascript
 var logEachMap = require( '@stdlib/console/log-each-map' );
-var dtypeChar = require( '@stdlib/ndarray/base/dtype-char' );
+var dtypeAlignment = require( '@stdlib/ndarray/base/dtype-alignment' );
 
 var dtypes = [
     'float64',
@@ -105,7 +105,7 @@ var dtypes = [
     'foobar'
 ];
 
-logEachMap( '%s => %s', dtypes, dtypeChar );
+logEachMap( '%s => %s', dtypes, dtypeAlignment );
 ```
 
 </section>

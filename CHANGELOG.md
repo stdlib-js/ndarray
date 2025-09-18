@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`44c2368`](https://github.com/stdlib-js/stdlib/commit/44c23684fef779a6e62dc18dd01192b192785a41) - add `ndarray/base/dtype-alignment`
 -   [`6fe6a73`](https://github.com/stdlib-js/stdlib/commit/6fe6a7362f3e6cc18790ee1c4f7388cbce187cb3) - add `dtype` option support in `ndarray/flatten-by` [(#8094)](https://github.com/stdlib-js/stdlib/pull/8094)
 -   [`0ed631d`](https://github.com/stdlib-js/stdlib/commit/0ed631d96dae3b796882c441f79505275afbc4c0) - add `dtype` option support in `ndarray/flatten` [(#8091)](https://github.com/stdlib-js/stdlib/pull/8091)
 -   [`724283b`](https://github.com/stdlib-js/stdlib/commit/724283b0bc5d2eb8bf48491c954c6a119330c1f5) - add `ndarray/base/nullary-strided1d-dispatch-factory` [(#7828)](https://github.com/stdlib-js/stdlib/pull/7828)
@@ -535,6 +536,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`44c2368`](https://github.com/stdlib-js/stdlib/commit/44c23684fef779a6e62dc18dd01192b192785a41) - **feat:** add `ndarray/base/dtype-alignment` _(by Athan Reines)_
+-   [`e5bf4a1`](https://github.com/stdlib-js/stdlib/commit/e5bf4a1e92052b705774cbb08bc74295cea3c5fc) - **docs:** update example _(by Athan Reines)_
+-   [`8b85764`](https://github.com/stdlib-js/stdlib/commit/8b8576416a1925647193338763722d58d8c8752e) - **chore:** clean-up _(by Athan Reines)_
 -   [`2b5e5c6`](https://github.com/stdlib-js/stdlib/commit/2b5e5c6be9fe4b9f1a0e235a6b50c4fe5554707b) - **fix:** account for edge case where `n <= 0` _(by Athan Reines)_
 -   [`a3e7978`](https://github.com/stdlib-js/stdlib/commit/a3e79786217bf1c9a84875203251af82cc93a222) - **docs:** update markup _(by Athan Reines)_
 -   [`fd9991b`](https://github.com/stdlib-js/stdlib/commit/fd9991b94b618d3adfd81f177ddda412388bf1df) - **fix:** remove conditional _(by Athan Reines)_
