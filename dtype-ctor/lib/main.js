@@ -350,6 +350,25 @@ setReadOnly( DataType.prototype, 'toString', function toString() {
 	return ( this._type === 'struct' ) ? this._value.layout : String( this._value );
 });
 
+/**
+* Converts a data type instance to a primitive value.
+*
+* @name valueOf
+* @memberof DataType.prototype
+* @type {Function}
+* @returns {string} primitive value
+*
+* @example
+* var dt = new DataType( 'float64' );
+* // returns <DataType>
+*
+* var v = dt.valueOf();
+* // returns 'float64'
+*/
+setReadOnly( DataType.prototype, 'valueOf', function valueOf() {
+	return this.toString();
+});
+
 
 // EXPORTS //
 

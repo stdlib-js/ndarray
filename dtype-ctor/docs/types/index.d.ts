@@ -199,6 +199,24 @@ declare class DataType<T = unknown> {
 	* // returns 'float64'
 	*/
 	toString(): string;
+
+	/**
+	* Converts a data type instance to a primitive value.
+	*
+	* ## Notes
+	*
+	* -   This method returns the same value as `#.toString()`.
+	*
+	* @returns primitive value
+	*
+	* @example
+	* var dt = new DataType( 'float64' );
+	* // returns <DataType>
+	*
+	* var v = dt.valueOf();
+	* // returns 'float64'
+	*/
+	valueOf(): string;
 }
 
 

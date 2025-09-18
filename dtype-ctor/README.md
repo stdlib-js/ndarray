@@ -194,6 +194,20 @@ var str = dt.toString();
 // returns 'float64'
 ```
 
+#### DataType.prototype.valueOf()
+
+Converts a `DataType` instance to a primitive value.
+
+```javascript
+var dt = new DataType( 'float64' );
+// returns <DataType>
+
+var str = dt.valueOf();
+// returns 'float64'
+```
+
+This method returns the same value as `#.toString()`.
+
 </section>
 
 <!-- /.usage -->

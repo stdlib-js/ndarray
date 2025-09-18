@@ -192,6 +192,23 @@
     > dt.toString()
     'float64'
 
+
+{{alias}}.prototype.valueOf()
+    Converts a data type instance to a primitive.
+
+    This method returns the same value as `#.toString()`.
+
+    Returns
+    -------
+    out: string
+        Primitive value.
+
+    Examples
+    --------
+    > var dt = new {{alias}}( 'float64' );
+    > dt.valueOf()
+    'float64'
+
     See Also
     --------
 

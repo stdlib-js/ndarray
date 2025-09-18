@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`a814ceb`](https://github.com/stdlib-js/stdlib/commit/a814cebcda3422f9d2eebf58b57c955157c8422c) - add custom `valueOf` method
 -   [`ba1c0f2`](https://github.com/stdlib-js/stdlib/commit/ba1c0f278e120cd42272fa2449bd13f045a469aa) - add `fillSlice` to namespace
 -   [`f015917`](https://github.com/stdlib-js/stdlib/commit/f0159173d4db9e22bb1bd7c8b56c424b4d3e076e) - add `flattenBy` to namespace
 -   [`8f440d7`](https://github.com/stdlib-js/stdlib/commit/8f440d7aeadc895a5a7a348e935389619d408a0e) - add `flatten` to namespace
@@ -545,6 +546,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`a814ceb`](https://github.com/stdlib-js/stdlib/commit/a814cebcda3422f9d2eebf58b57c955157c8422c) - **feat:** add custom `valueOf` method _(by Athan Reines)_
 -   [`e700afd`](https://github.com/stdlib-js/stdlib/commit/e700afd0526ff2cc8f78cdb8743c749eceb09dd6) - **docs:** update type _(by Athan Reines)_
 -   [`4a1b036`](https://github.com/stdlib-js/stdlib/commit/4a1b0361b7491efedfd3983f4a686601ba12c673) - **docs:** update type _(by Athan Reines)_
 -   [`1285c82`](https://github.com/stdlib-js/stdlib/commit/1285c82a9767afae6ddf57df797eeff5ed1e49f3) - **docs:** update examples _(by Athan Reines)_
