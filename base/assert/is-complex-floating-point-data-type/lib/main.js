@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'complex_floating_point' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray complex-valued floating-point data type.
 *
-* @name isComplexFloatingPointDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray complex-valued floating-point data type
 *
@@ -77,7 +80,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isComplexFloatingPointDataType( 'foo' );
 * // returns false
 */
-var isComplexFloatingPointDataType = contains( dtypes( 'complex_floating_point' ) ); // eslint-disable-line id-length
+function isComplexFloatingPointDataType( v ) { // eslint-disable-line id-length
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

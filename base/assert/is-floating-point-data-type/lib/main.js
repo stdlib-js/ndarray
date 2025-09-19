@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'floating_point' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray floating-point data type.
 *
-* @name isFloatingPointDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray floating-point data type
 *
@@ -71,7 +74,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isFloatingPointDataType( 'foo' );
 * // returns false
 */
-var isFloatingPointDataType = contains( dtypes( 'floating_point' ) );
+function isFloatingPointDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

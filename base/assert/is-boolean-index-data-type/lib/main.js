@@ -34,8 +34,6 @@ var isDataType = contains( dtypes( 'boolean_index' ) );
 /**
 * Tests whether an input value is a supported ndarray boolean index data type.
 *
-* @name isBooleanIndexDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray boolean index data type
 *

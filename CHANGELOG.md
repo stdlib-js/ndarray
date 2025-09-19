@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`8e7dc95`](https://github.com/stdlib-js/stdlib/commit/8e7dc9562192062ab1e016d45ba32b9c3592fe97) - add support for non-string data types
+-   [`70dda4f`](https://github.com/stdlib-js/stdlib/commit/70dda4f47b6613531ee298231ea60630174f3dcc) - add support for non-string data types
 -   [`06bd6e0`](https://github.com/stdlib-js/stdlib/commit/06bd6e03ba8aae02b35f9a4da6724d686cf34da4) - add support for non-string data types
 -   [`be5553d`](https://github.com/stdlib-js/stdlib/commit/be5553d64471b61353e42499666ab50502ab136b) - add support for non-string data types
 -   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - add support for `struct` and `DataType` dtype values
@@ -560,6 +562,11 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`8e7dc95`](https://github.com/stdlib-js/stdlib/commit/8e7dc9562192062ab1e016d45ba32b9c3592fe97) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`bdd0013`](https://github.com/stdlib-js/stdlib/commit/bdd0013af7bb684e818bedaf287389165858105b) - **docs:** update JSDoc _(by Athan Reines)_
+-   [`374953a`](https://github.com/stdlib-js/stdlib/commit/374953a8333a7467c5c8df1e1fc8d6763c4f33aa) - **docs:** update JSDoc _(by Athan Reines)_
+-   [`f2d7632`](https://github.com/stdlib-js/stdlib/commit/f2d76323bdd92003f5b1f8457d884f589ef76bd5) - **docs:** update JSDoc _(by Athan Reines)_
+-   [`70dda4f`](https://github.com/stdlib-js/stdlib/commit/70dda4f47b6613531ee298231ea60630174f3dcc) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`06bd6e0`](https://github.com/stdlib-js/stdlib/commit/06bd6e03ba8aae02b35f9a4da6724d686cf34da4) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`be5553d`](https://github.com/stdlib-js/stdlib/commit/be5553d64471b61353e42499666ab50502ab136b) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`3cb98f3`](https://github.com/stdlib-js/stdlib/commit/3cb98f3aa714b97cb714d45688421e9ac416d31c) - **test:** add tests for full branch coverage _(by Athan Reines)_
