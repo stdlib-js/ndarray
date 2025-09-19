@@ -50,7 +50,7 @@ function resolve( dtype ) {
 	if ( t === 'string' ) {
 		return str2enum( dtype );
 	}
-	if ( t === 'object' && isInteger( dtype.enum ) ) {
+	if ( t === 'object' && dtype && isInteger( dtype.enum ) ) {
 		return dtype.enum;
 	}
 	if ( isStructConstructorLike( dtype ) ) {

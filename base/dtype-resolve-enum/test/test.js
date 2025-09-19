@@ -155,7 +155,10 @@ tape( 'the function returns `null` if unable to resolve an enumeration constant'
 		'bar',
 		-99999999,
 		-9999999999,
-		-9999999999999
+		-9999999999999,
+		null,
+		true,
+		false
 	];
 	for ( i = 0; i < values.length; i++ ) {
 		t.strictEqual( resolve( values[ i ] ), null, 'returns expected value' );

@@ -558,6 +558,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`27f1ef7`](https://github.com/stdlib-js/stdlib/commit/27f1ef7f2cc984271a6de66ad2dff042651e750a) - **test:** ensure full branch coverage _(by Athan Reines)_
 -   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
 -   [`a83bb3d`](https://github.com/stdlib-js/stdlib/commit/a83bb3d053dd235dff135913f0c582e5c4391b80) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - **feat:** add support for struct arrays _(by Athan Reines)_
