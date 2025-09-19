@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - add support for `struct` and `DataType` dtype values
 -   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - add support for struct arrays
 -   [`f660e38`](https://github.com/stdlib-js/stdlib/commit/f660e38225095ed8c07324924ff37098d6f96851) - add support for `struct` and `DataType` dtype values
 -   [`fa26ede`](https://github.com/stdlib-js/stdlib/commit/fa26ede9709b9243a4c8032f0fdc8f37b8bf6053) - add support for struct arrays
@@ -557,6 +558,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
+-   [`a83bb3d`](https://github.com/stdlib-js/stdlib/commit/a83bb3d053dd235dff135913f0c582e5c4391b80) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - **feat:** add support for struct arrays _(by Athan Reines)_
 -   [`3c4e7f2`](https://github.com/stdlib-js/stdlib/commit/3c4e7f277c952afa9feb1dd4b4a1061c2ffda881) - **docs:** update examples _(by Athan Reines)_
 -   [`f660e38`](https://github.com/stdlib-js/stdlib/commit/f660e38225095ed8c07324924ff37098d6f96851) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
