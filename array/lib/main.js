@@ -26,16 +26,17 @@ var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isArray = require( '@stdlib/assert/is-array' );
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
-var shape2strides = require( './../../base/shape2strides' );
-var strides2offset = require( './../../base/strides2offset' );
-var strides2order = require( './../../base/strides2order' );
-var numel = require( './../../base/numel' );
-var ndarray = require( './../../ctor' );
+var isEqualDataType = require( './../../base/assert/is-equal-data-type' );
 var isColumnMajor = require( './../../base/assert/is-column-major-string' );
 var isDataType = require( './../../base/assert/is-data-type' );
 var isOrder = require( './../../base/assert/is-order' );
 var isCastingMode = require( './../../base/assert/is-casting-mode' );
 var isAllowedCast = require( './../../base/assert/is-allowed-data-type-cast' );
+var shape2strides = require( './../../base/shape2strides' );
+var strides2offset = require( './../../base/strides2offset' );
+var strides2order = require( './../../base/strides2order' );
+var numel = require( './../../base/numel' );
+var ndarray = require( './../../ctor' );
 var createBuffer = require( './../../base/buffer' );
 var getBufferDType = require( './../../base/buffer-dtype' );
 var getDType = require( './../../dtype' );
@@ -204,9 +205,8 @@ function array() {
 	if ( hasOwnProp( options, 'dtype' ) ) {
 		dtype = options.dtype;
 		if ( !isDataType( dtype ) ) {
-			throw new TypeError( format( 'invalid option. `%s` option must be a recognized data type. Option: `%s`.', 'dtype', dtype ) );
+			throw new TypeError( format( 'invalid option. `%s` option must be a supported data type. Option: `%s`.', 'dtype', dtype ) );
 		}
-		dtype = String( dtype );
 		if ( btype && !isAllowedCast( btype, dtype, opts.casting ) ) {
 			throw new Error( format( 'invalid option. Data type cast is not allowed. Casting mode: `%s`. From: `%s`. To: `%s`.', opts.casting, btype, dtype ) );
 		}
@@ -214,7 +214,7 @@ function array() {
 		// TODO: reconcile difference in behavior when provided a generic array and no `dtype` option. Currently, we cast here, but do not allow casting a generic array (by default) when explicitly providing a `dtype` option.
 
 		// Only cast generic array data sources when not provided an ndarray...
-		if ( !FLG && btype === 'generic' ) {
+		if ( !FLG && isEqualDataType( btype, 'generic' ) ) {
 			dtype = defaults.dtype;
 		} else {
 			dtype = btype;
@@ -310,7 +310,7 @@ function array() {
 		if ( numel( buffer.shape ) !== len ) {
 			throw new RangeError( 'invalid arguments. Array shape is incompatible with provided data source. Number of data source elements does not match array shape.' );
 		}
-		if ( btype !== dtype || opts.copy ) {
+		if ( !isEqualDataType( btype, dtype ) || opts.copy ) {
 			buffer = copyView( buffer, dtype );
 		} else {
 			strides = getStrides( buffer );
@@ -322,13 +322,13 @@ function array() {
 			}
 		}
 	} else if ( buffer ) {
-		if ( btype === 'generic' && opts.flatten && isArray( buffer ) ) {
+		if ( isEqualDataType( btype, 'generic' ) && opts.flatten && isArray( buffer ) ) {
 			buffer = flatten( buffer, osh || arrayShape( buffer ), isColumnMajor( order ) );
 		}
 		if ( buffer.length !== len ) {
 			throw new RangeError( 'invalid arguments. Array shape is incompatible with provided data source. Number of data source elements does not match array shape.' );
 		}
-		if ( btype !== dtype || opts.copy ) {
+		if ( !isEqualDataType( btype, dtype ) || opts.copy ) {
 			buffer = castBuffer( buffer, len, dtype );
 		}
 	} else {
