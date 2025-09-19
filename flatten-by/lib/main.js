@@ -73,7 +73,7 @@ var COL_MAJOR = 'column-major';
 * }
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flattenBy( x, scale );
 * // returns <ndarray>

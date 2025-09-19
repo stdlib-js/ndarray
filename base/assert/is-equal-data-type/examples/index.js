@@ -41,7 +41,7 @@ bool = isEqualDataType( 'int16', 'int32' );
 console.log( bool );
 // => false
 
-bool = isEqualDataType( 'int32', new DataType( 'int16') );
+bool = isEqualDataType( 'int32', new DataType( 'int16' ) );
 console.log( bool );
 // => false
 

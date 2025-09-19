@@ -91,7 +91,7 @@ bool = isEqualDataType( 'generic', new DataType( 'generic' ) );
 bool = isEqualDataType( 'int16', 'int32' );
 // returns false
 
-bool = isEqualDataType( 'int32', new DataType( 'int16') );
+bool = isEqualDataType( 'int32', new DataType( 'int16' ) );
 // returns false
 
 bool = isEqualDataType( 'foo', 'foo' );

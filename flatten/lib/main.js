@@ -65,7 +65,7 @@ var COL_MAJOR = 'column-major';
 * var ndarray2array = require( '@stdlib/ndarray/to-array' );
 *
 * var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -81,7 +81,7 @@ var COL_MAJOR = 'column-major';
 *     'shape': [ 2, 3 ],
 *     'order': 'column-major'
 * });
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -97,7 +97,7 @@ var COL_MAJOR = 'column-major';
 *     'shape': [ 2, 3 ],
 *     'order': 'row-major'
 * });
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'column-major'
@@ -115,7 +115,7 @@ var COL_MAJOR = 'column-major';
 *     'shape': [ 2, 3 ],
 *     'order': 'column-major'
 * });
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'row-major'
@@ -133,7 +133,7 @@ var COL_MAJOR = 'column-major';
 *     'shape': [ 2, 3 ],
 *     'order': 'row-major'
 * });
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'same'
@@ -151,7 +151,7 @@ var COL_MAJOR = 'column-major';
 *     'shape': [ 2, 3 ],
 *     'order': 'column-major'
 * });
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'same'
@@ -168,7 +168,7 @@ var COL_MAJOR = 'column-major';
 * var xbuf = [ 1.0, null, 2.0, null, 3.0, null, 4.0, null, 5.0, null, 6.0, null ];
 *
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -6, -2 ], 10, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -184,7 +184,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is column-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -6, -2 ], 10, 'column-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -200,7 +200,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is column-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -6, -2 ], 10, 'column-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'same'
@@ -218,7 +218,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is column-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -6, -2 ], 10, 'column-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'any'
@@ -236,7 +236,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is row-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -2, -4 ], 10, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x );
 * // returns <ndarray>
@@ -252,7 +252,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is row-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -2, -4 ], 10, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'same'
@@ -270,7 +270,7 @@ var COL_MAJOR = 'column-major';
 *
 * // Create an ndarray whose stated order is row-major, but which has been transposed:
 * var x = new ndarray( 'generic', xbuf, [ 2, 3 ], [ -2, -4 ], 10, 'row-major' );
-* // return <ndarray>
+* // returns <ndarray>
 *
 * var y = flatten( x, {
 *     'order': 'any'

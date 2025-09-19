@@ -552,6 +552,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`ecde0da`](https://github.com/stdlib-js/stdlib/commit/ecde0dab6fa80df5a13632b83ef780ba46861dd8) - **chore:** fix return annotation comments and spacing _(by Philipp Burckhardt)_
 -   [`29bbe63`](https://github.com/stdlib-js/stdlib/commit/29bbe6352ed375283da50d7363cc537b72736765) - **refactor:** allow non-string dtypes and delegate to `ndarray/base/assign` for copying ndarray views _(by Athan Reines)_
 -   [`fc43bac`](https://github.com/stdlib-js/stdlib/commit/fc43bac47c9c2419da27a568dce6d05e05dc904a) - **feat:** add `isEqualDataType` to namespace _(by Athan Reines)_
 -   [`aa727fa`](https://github.com/stdlib-js/stdlib/commit/aa727fa586eed12d282eb46e49cdbd8e28e18712) - **feat:** add `ndarray/base/assert/is-equal-data-type` _(by Athan Reines)_
