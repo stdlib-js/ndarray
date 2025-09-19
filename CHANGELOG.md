@@ -558,6 +558,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`3cb98f3`](https://github.com/stdlib-js/stdlib/commit/3cb98f3aa714b97cb714d45688421e9ac416d31c) - **test:** add tests for full branch coverage _(by Athan Reines)_
+-   [`71a48b0`](https://github.com/stdlib-js/stdlib/commit/71a48b0b0ad86ba66a8109852f3b305e8caa06a0) - **refactor:** guard against `null` and `undefined` input values _(by Athan Reines)_
 -   [`3ab207e`](https://github.com/stdlib-js/stdlib/commit/3ab207e1606e1b763451994fcf50dfcfc8e7f135) - **test:** update require path _(by Athan Reines)_
 -   [`9088669`](https://github.com/stdlib-js/stdlib/commit/9088669147241ff682f034b0a2c1382d53650936) - **test:** provide missing argument _(by Athan Reines)_
 -   [`3304071`](https://github.com/stdlib-js/stdlib/commit/33040719d3718582bd866243ced74fb7f5b67a7c) - **test:** provide missing argument _(by Athan Reines)_
