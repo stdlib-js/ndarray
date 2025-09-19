@@ -60,9 +60,11 @@ function bytesPerElement( dtype ) {
 	if ( isString( dtype ) ) {
 		return BYTES_PER_ELEMENT[ dtype ] || null;
 	}
-	v = dtype.byteLength;
-	if ( isPositiveInteger( v ) ) {
-		return v;
+	if ( dtype ) {
+		v = dtype.byteLength;
+		if ( isPositiveInteger( v ) ) {
+			return v;
+		}
 	}
 	return null;
 }
