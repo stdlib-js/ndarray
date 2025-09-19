@@ -24,6 +24,11 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'boolean' ) );
+
+
 // MAIN //
 
 /**
@@ -74,7 +79,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isBooleanDataType( 'foo' );
 * // returns false
 */
-var isBooleanDataType = contains( dtypes( 'boolean' ) );
+function isBooleanDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

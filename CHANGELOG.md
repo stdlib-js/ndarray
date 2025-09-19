@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`06bd6e0`](https://github.com/stdlib-js/stdlib/commit/06bd6e03ba8aae02b35f9a4da6724d686cf34da4) - add support for non-string data types
+-   [`be5553d`](https://github.com/stdlib-js/stdlib/commit/be5553d64471b61353e42499666ab50502ab136b) - add support for non-string data types
 -   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - add support for `struct` and `DataType` dtype values
 -   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - add support for struct arrays
 -   [`f660e38`](https://github.com/stdlib-js/stdlib/commit/f660e38225095ed8c07324924ff37098d6f96851) - add support for `struct` and `DataType` dtype values
@@ -558,6 +560,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`06bd6e0`](https://github.com/stdlib-js/stdlib/commit/06bd6e03ba8aae02b35f9a4da6724d686cf34da4) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`be5553d`](https://github.com/stdlib-js/stdlib/commit/be5553d64471b61353e42499666ab50502ab136b) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`3cb98f3`](https://github.com/stdlib-js/stdlib/commit/3cb98f3aa714b97cb714d45688421e9ac416d31c) - **test:** add tests for full branch coverage _(by Athan Reines)_
 -   [`71a48b0`](https://github.com/stdlib-js/stdlib/commit/71a48b0b0ad86ba66a8109852f3b305e8caa06a0) - **refactor:** guard against `null` and `undefined` input values _(by Athan Reines)_
 -   [`3ab207e`](https://github.com/stdlib-js/stdlib/commit/3ab207e1606e1b763451994fcf50dfcfc8e7f135) - **test:** update require path _(by Athan Reines)_
