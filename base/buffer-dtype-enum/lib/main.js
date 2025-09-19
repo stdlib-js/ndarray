@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var str2enum = require( './../../../base/dtype-str2enum' );
+var resolveEnum = require( './../../../base/dtype-resolve-enum' );
 var dtype = require( './../../../base/buffer-dtype' );
 
 
@@ -29,7 +29,7 @@ var dtype = require( './../../../base/buffer-dtype' );
 /**
 * Returns the data type enumeration constant for a provided ndarray data buffer.
 *
-* @param {Collection} arr - strided array
+* @param {Collection} arr - ndarray data buffer
 * @returns {(integer|null)} data type enumeration constant or null
 *
 * @example
@@ -43,7 +43,7 @@ var dtype = require( './../../../base/buffer-dtype' );
 function dtypeEnum( arr ) {
 	var dt = dtype( arr );
 	if ( dt ) {
-		return str2enum( dt );
+		return resolveEnum( dt );
 	}
 	return null;
 }

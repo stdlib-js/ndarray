@@ -10,6 +10,11 @@
 
 ### Features
 
+-   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - add support for struct arrays
+-   [`f660e38`](https://github.com/stdlib-js/stdlib/commit/f660e38225095ed8c07324924ff37098d6f96851) - add support for `struct` and `DataType` dtype values
+-   [`fa26ede`](https://github.com/stdlib-js/stdlib/commit/fa26ede9709b9243a4c8032f0fdc8f37b8bf6053) - add support for struct arrays
+-   [`8d28862`](https://github.com/stdlib-js/stdlib/commit/8d28862f79b21b726cd80d47f85c73cf6d2d2d5c) - add support for `struct` and `DataType` dtype values
+-   [`af83db7`](https://github.com/stdlib-js/stdlib/commit/af83db75a1e8d88d239111fe08f323d6bcc4f016) - add support for `DataType` instances having a `Struct` value
 -   [`fc43bac`](https://github.com/stdlib-js/stdlib/commit/fc43bac47c9c2419da27a568dce6d05e05dc904a) - add `isEqualDataType` to namespace
 -   [`aa727fa`](https://github.com/stdlib-js/stdlib/commit/aa727fa586eed12d282eb46e49cdbd8e28e18712) - add `ndarray/base/assert/is-equal-data-type`
 -   [`34a957c`](https://github.com/stdlib-js/stdlib/commit/34a957cac3f76bac1f00c5366802096b05c30e65) - add support for `DataType` instances
@@ -552,7 +557,14 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`ae21126`](https://github.com/stdlib-js/stdlib/commit/ae2112615cd460c39161a41c32d18b7ab600c885) - **feat:** add support for struct arrays _(by Athan Reines)_
+-   [`3c4e7f2`](https://github.com/stdlib-js/stdlib/commit/3c4e7f277c952afa9feb1dd4b4a1061c2ffda881) - **docs:** update examples _(by Athan Reines)_
+-   [`f660e38`](https://github.com/stdlib-js/stdlib/commit/f660e38225095ed8c07324924ff37098d6f96851) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
+-   [`fa26ede`](https://github.com/stdlib-js/stdlib/commit/fa26ede9709b9243a4c8032f0fdc8f37b8bf6053) - **feat:** add support for struct arrays _(by Athan Reines)_
+-   [`04c434a`](https://github.com/stdlib-js/stdlib/commit/04c434ac661b2f006a1ab737efb1dec2a72b0efd) - **docs:** update type _(by Athan Reines)_
+-   [`8d28862`](https://github.com/stdlib-js/stdlib/commit/8d28862f79b21b726cd80d47f85c73cf6d2d2d5c) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
 -   [`ecde0da`](https://github.com/stdlib-js/stdlib/commit/ecde0dab6fa80df5a13632b83ef780ba46861dd8) - **chore:** fix return annotation comments and spacing _(by Philipp Burckhardt)_
+-   [`af83db7`](https://github.com/stdlib-js/stdlib/commit/af83db75a1e8d88d239111fe08f323d6bcc4f016) - **feat:** add support for `DataType` instances having a `Struct` value _(by Athan Reines)_
 -   [`29bbe63`](https://github.com/stdlib-js/stdlib/commit/29bbe6352ed375283da50d7363cc537b72736765) - **refactor:** allow non-string dtypes and delegate to `ndarray/base/assign` for copying ndarray views _(by Athan Reines)_
 -   [`fc43bac`](https://github.com/stdlib-js/stdlib/commit/fc43bac47c9c2419da27a568dce6d05e05dc904a) - **feat:** add `isEqualDataType` to namespace _(by Athan Reines)_
 -   [`aa727fa`](https://github.com/stdlib-js/stdlib/commit/aa727fa586eed12d282eb46e49cdbd8e28e18712) - **feat:** add `ndarray/base/assert/is-equal-data-type` _(by Athan Reines)_
