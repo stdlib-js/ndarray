@@ -154,6 +154,15 @@ setReadOnly( ns, 'isContiguous', require( './../../../base/assert/is-contiguous'
 setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) );
 
 /**
+* @name isDataTypeObject
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-data-type-object}
+*/
+setReadOnly( ns, 'isDataTypeObject', require( './../../../base/assert/is-data-type-object' ) );
+
+/**
 * @name isDataTypeString
 * @memberof ns
 * @readonly
@@ -161,6 +170,15 @@ setReadOnly( ns, 'isDataType', require( './../../../base/assert/is-data-type' ) 
 * @see {@link module:@stdlib/ndarray/base/assert/is-data-type-string}
 */
 setReadOnly( ns, 'isDataTypeString', require( './../../../base/assert/is-data-type-string' ) );
+
+/**
+* @name isEqualDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-equal-data-type}
+*/
+setReadOnly( ns, 'isEqualDataType', require( './../../../base/assert/is-equal-data-type' ) );
 
 /**
 * @name isFloatingPointDataType

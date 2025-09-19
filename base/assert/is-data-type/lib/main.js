@@ -20,14 +20,9 @@
 
 // MODULES //
 
+var isDataTypeString = require( './../../../../base/assert/is-data-type-string' );
+var isDataTypeObject = require( './../../../../base/assert/is-data-type-object' );
 var isStructDataType = require( './../../../../base/assert/is-struct-data-type' );
-var contains = require( '@stdlib/array/base/assert/contains' ).factory;
-var dtypes = require( './../../../../dtypes' );
-
-
-// VARIABLES //
-
-var isDType = contains( dtypes() );
 
 
 // MAIN //
@@ -76,7 +71,11 @@ var isDType = contains( dtypes() );
 * // returns false
 */
 function isDataType( v ) {
-	return ( isDType( v ) || isStructDataType( v ) );
+	return (
+		isDataTypeString( v ) ||
+		isDataTypeObject( v ) ||
+		isStructDataType( v )
+	);
 }
 
 

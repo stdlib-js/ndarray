@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2018 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# isDataType
+# isDataTypeObject
 
-> Test if an input value is a supported ndarray data type.
+> Test if an input value is an ndarray data type object.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,19 +37,21 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var isDataType = require( '@stdlib/ndarray/base/assert/is-data-type' );
+var isDataTypeObject = require( '@stdlib/ndarray/base/assert/is-data-type-object' );
 ```
 
-#### isDataType( value )
+#### isDataTypeObject( value )
 
-Tests if an input value is a supported ndarray data type.
+Tests if an input value is an ndarray data type object.
 
 ```javascript
-var bool = isDataType( 'float32' );
+var DataType = require( '@stdlib/ndarray/dtype-ctor' );
+
+var bool = isDataTypeObject( new DataType( 'float64' ) );
 // returns true
 
-bool = isDataType( 'int32' );
-// returns true
+bool = isDataTypeObject( 'int32' );
+// returns false
 ```
 
 </section>
@@ -59,10 +61,6 @@ bool = isDataType( 'int32' );
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
-
-## Notes
-
--   The function returns `true` when provided any supported ndarray [data type][@stdlib/ndarray/dtypes], a [struct][@stdlib/dstructs/struct] constructor describing a fixed-width composite data type, or a [`DataType`][@stdlib/ndarray/dtype-ctor] instance.
 
 </section>
 
@@ -77,45 +75,16 @@ bool = isDataType( 'int32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var isDataType = require( '@stdlib/ndarray/base/assert/is-data-type' );
+var DataType = require( '@stdlib/ndarray/dtype-ctor' );
+var isDataTypeObject = require( '@stdlib/ndarray/base/assert/is-data-type-object' );
 
-var bool = isDataType( 'binary' );
+var bool = isDataTypeObject( new DataType( 'float64' ) );
 // returns true
 
-bool = isDataType( 'float32' );
-// returns true
-
-bool = isDataType( 'float64' );
-// returns true
-
-bool = isDataType( 'generic' );
-// returns true
-
-bool = isDataType( 'int16' );
-// returns true
-
-bool = isDataType( 'int32' );
-// returns true
-
-bool = isDataType( 'int8' );
-// returns true
-
-bool = isDataType( 'uint16' );
-// returns true
-
-bool = isDataType( 'uint32' );
-// returns true
-
-bool = isDataType( 'uint8' );
-// returns true
-
-bool = isDataType( 'uint8c' );
-// returns true
-
-bool = isDataType( '' );
+bool = isDataTypeObject( 'float64' );
 // returns false
 
-bool = isDataType( 'foo' );
+bool = isDataTypeObject( {} );
 // returns false
 ```
 
@@ -142,12 +111,6 @@ bool = isDataType( 'foo' );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
-
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
-
-[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray/tree/main/dtype-ctor
-
-[@stdlib/dstructs/struct]: https://github.com/stdlib-js/dstructs-struct
 
 </section>
 

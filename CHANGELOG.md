@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-18)
+## Unreleased (2025-09-19)
 
 <section class="features">
 
 ### Features
 
+-   [`fc43bac`](https://github.com/stdlib-js/stdlib/commit/fc43bac47c9c2419da27a568dce6d05e05dc904a) - add `isEqualDataType` to namespace
+-   [`aa727fa`](https://github.com/stdlib-js/stdlib/commit/aa727fa586eed12d282eb46e49cdbd8e28e18712) - add `ndarray/base/assert/is-equal-data-type`
+-   [`34a957c`](https://github.com/stdlib-js/stdlib/commit/34a957cac3f76bac1f00c5366802096b05c30e65) - add support for `DataType` instances
+-   [`f89403b`](https://github.com/stdlib-js/stdlib/commit/f89403b0b93f16037e7a5c6aa7752efe9f7dd854) - add `isDataTypeObject` to namespace
+-   [`c31794b`](https://github.com/stdlib-js/stdlib/commit/c31794b5f6f6c60db2c2f0f11ed274039db837a2) - add `ndarray/base/assert/is-data-type-object`
 -   [`a814ceb`](https://github.com/stdlib-js/stdlib/commit/a814cebcda3422f9d2eebf58b57c955157c8422c) - add custom `valueOf` method
 -   [`ba1c0f2`](https://github.com/stdlib-js/stdlib/commit/ba1c0f278e120cd42272fa2449bd13f045a469aa) - add `fillSlice` to namespace
 -   [`f015917`](https://github.com/stdlib-js/stdlib/commit/f0159173d4db9e22bb1bd7c8b56c424b4d3e076e) - add `flattenBy` to namespace
@@ -388,6 +393,7 @@
 
 ### Bug Fixes
 
+-   [`a278663`](https://github.com/stdlib-js/stdlib/commit/a2786634547c68e950444c8a16d522d2ab79e335) - ensure \"generic\" data type objects are considered valid
 -   [`f8e5205`](https://github.com/stdlib-js/stdlib/commit/f8e520591bc2a8d8436ebb4fbe1604a7376105cd) - use correct `sliceAssign` alias
 -   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - update return type
 -   [`97d7e56`](https://github.com/stdlib-js/stdlib/commit/97d7e567e463ab9942c9d1188bc0c5786827e09b) - update return type
@@ -546,6 +552,12 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`fc43bac`](https://github.com/stdlib-js/stdlib/commit/fc43bac47c9c2419da27a568dce6d05e05dc904a) - **feat:** add `isEqualDataType` to namespace _(by Athan Reines)_
+-   [`aa727fa`](https://github.com/stdlib-js/stdlib/commit/aa727fa586eed12d282eb46e49cdbd8e28e18712) - **feat:** add `ndarray/base/assert/is-equal-data-type` _(by Athan Reines)_
+-   [`a278663`](https://github.com/stdlib-js/stdlib/commit/a2786634547c68e950444c8a16d522d2ab79e335) - **fix:** ensure \"generic\" data type objects are considered valid _(by Athan Reines)_
+-   [`34a957c`](https://github.com/stdlib-js/stdlib/commit/34a957cac3f76bac1f00c5366802096b05c30e65) - **feat:** add support for `DataType` instances _(by Athan Reines)_
+-   [`f89403b`](https://github.com/stdlib-js/stdlib/commit/f89403b0b93f16037e7a5c6aa7752efe9f7dd854) - **feat:** add `isDataTypeObject` to namespace _(by Athan Reines)_
+-   [`c31794b`](https://github.com/stdlib-js/stdlib/commit/c31794b5f6f6c60db2c2f0f11ed274039db837a2) - **feat:** add `ndarray/base/assert/is-data-type-object` _(by Athan Reines)_
 -   [`a814ceb`](https://github.com/stdlib-js/stdlib/commit/a814cebcda3422f9d2eebf58b57c955157c8422c) - **feat:** add custom `valueOf` method _(by Athan Reines)_
 -   [`e700afd`](https://github.com/stdlib-js/stdlib/commit/e700afd0526ff2cc8f78cdb8743c749eceb09dd6) - **docs:** update type _(by Athan Reines)_
 -   [`4a1b036`](https://github.com/stdlib-js/stdlib/commit/4a1b0361b7491efedfd3983f4a686601ba12c673) - **docs:** update type _(by Athan Reines)_
