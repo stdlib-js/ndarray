@@ -558,6 +558,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`3304071`](https://github.com/stdlib-js/stdlib/commit/33040719d3718582bd866243ced74fb7f5b67a7c) - **test:** provide missing argument _(by Athan Reines)_
 -   [`d705c4c`](https://github.com/stdlib-js/stdlib/commit/d705c4ce5bd726a4be870909e5c62b87927858c5) - **refactor:** guard against `null` and `undefined` _(by Athan Reines)_
 -   [`27f1ef7`](https://github.com/stdlib-js/stdlib/commit/27f1ef7f2cc984271a6de66ad2dff042651e750a) - **test:** ensure full branch coverage _(by Athan Reines)_
 -   [`1908bae`](https://github.com/stdlib-js/stdlib/commit/1908bae6fe4852798ed12f620b59af50f762f2e5) - **feat:** add support for `struct` and `DataType` dtype values _(by Athan Reines)_
