@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`8526ef8`](https://github.com/stdlib-js/stdlib/commit/8526ef82af7ab10a98d22bd59796840cc81c22a4) - add support for non-string data types
+-   [`8ae1c5e`](https://github.com/stdlib-js/stdlib/commit/8ae1c5e4a80d231ef27df9100efe5337f0be7e11) - add support for non-string data types
 -   [`4b6bce8`](https://github.com/stdlib-js/stdlib/commit/4b6bce89254cfbbe7a008167ce7b4eccceaaea7e) - add support for non-string data types
 -   [`55e56f0`](https://github.com/stdlib-js/stdlib/commit/55e56f0b239268c250b9e64d46f5914d24229e1b) - add support for non-string data types
 -   [`a74c0e2`](https://github.com/stdlib-js/stdlib/commit/a74c0e2e7efd0b76b251d895f43d5c197512ba2b) - add support for non-string data types
@@ -571,6 +573,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`8526ef8`](https://github.com/stdlib-js/stdlib/commit/8526ef82af7ab10a98d22bd59796840cc81c22a4) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`8ae1c5e`](https://github.com/stdlib-js/stdlib/commit/8ae1c5e4a80d231ef27df9100efe5337f0be7e11) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`4b6bce8`](https://github.com/stdlib-js/stdlib/commit/4b6bce89254cfbbe7a008167ce7b4eccceaaea7e) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`55e56f0`](https://github.com/stdlib-js/stdlib/commit/55e56f0b239268c250b9e64d46f5914d24229e1b) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`a74c0e2`](https://github.com/stdlib-js/stdlib/commit/a74c0e2e7efd0b76b251d895f43d5c197512ba2b) - **feat:** add support for non-string data types _(by Athan Reines)_

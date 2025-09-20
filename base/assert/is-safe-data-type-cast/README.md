@@ -42,7 +42,7 @@ var isSafeCast = require( '@stdlib/ndarray/base/assert/is-safe-data-type-cast' )
 
 #### isSafeCast( from, to )
 
-Returns a `boolean` indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be safely cast to another ndarray [data type][@stdlib/ndarray/dtypes].
+Returns a boolean indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be safely cast to another ndarray [data type][@stdlib/ndarray/dtypes].
 
 ```javascript
 var bool = isSafeCast( 'float32', 'float64' );

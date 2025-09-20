@@ -42,7 +42,7 @@ var isSameKindCast = require( '@stdlib/ndarray/base/assert/is-same-kind-data-typ
 
 #### isSameKindCast( from, to )
 
-Returns a `boolean` indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be safely cast to, or is of the same "kind" as, another ndarray [data type][@stdlib/ndarray/dtypes] (e.g., casting between signed integers or between floats).
+Returns a boolean indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be safely cast to, or is of the same "kind" as, another ndarray [data type][@stdlib/ndarray/dtypes] (e.g., casting between signed integers or between floats).
 
 ```javascript
 var bool = isSameKindCast( 'float32', 'float64' );
