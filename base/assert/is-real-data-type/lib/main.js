@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'real' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray real-valued data type.
 *
-* @name isRealDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray real-valued data type
 *
@@ -74,7 +77,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isRealDataType( 'foo' );
 * // returns false
 */
-var isRealDataType = contains( dtypes( 'real' ) );
+function isRealDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

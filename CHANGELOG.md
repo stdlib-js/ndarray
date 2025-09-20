@@ -10,6 +10,11 @@
 
 ### Features
 
+-   [`4b6bce8`](https://github.com/stdlib-js/stdlib/commit/4b6bce89254cfbbe7a008167ce7b4eccceaaea7e) - add support for non-string data types
+-   [`55e56f0`](https://github.com/stdlib-js/stdlib/commit/55e56f0b239268c250b9e64d46f5914d24229e1b) - add support for non-string data types
+-   [`a74c0e2`](https://github.com/stdlib-js/stdlib/commit/a74c0e2e7efd0b76b251d895f43d5c197512ba2b) - add support for non-string data types
+-   [`6dd3bf6`](https://github.com/stdlib-js/stdlib/commit/6dd3bf6252e3808803c6a5ea00925247b592bd01) - add support for non-string data types
+-   [`96ea877`](https://github.com/stdlib-js/stdlib/commit/96ea8778698f2979de10ac6d62d91b0d6bd65cae) - add support for struct and data type objects
 -   [`25164a7`](https://github.com/stdlib-js/stdlib/commit/25164a7ae8ac5285255e2d8097f3e123d9db3a38) - add support for non-string data types
 -   [`c6ce94c`](https://github.com/stdlib-js/stdlib/commit/c6ce94c5cf69a183cbe369a56411192d8d99abe1) - add support for non-string data types
 -   [`360ed63`](https://github.com/stdlib-js/stdlib/commit/360ed63a0e83c2cc4261df2b6075e1cc2c8f5dec) - add support for non-string data tpes
@@ -566,6 +571,13 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`4b6bce8`](https://github.com/stdlib-js/stdlib/commit/4b6bce89254cfbbe7a008167ce7b4eccceaaea7e) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`55e56f0`](https://github.com/stdlib-js/stdlib/commit/55e56f0b239268c250b9e64d46f5914d24229e1b) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`a74c0e2`](https://github.com/stdlib-js/stdlib/commit/a74c0e2e7efd0b76b251d895f43d5c197512ba2b) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`2d8848b`](https://github.com/stdlib-js/stdlib/commit/2d8848b0a7e94aca604317a6d1e83b110d82f143) - **docs:** add comment _(by Athan Reines)_
+-   [`6dd3bf6`](https://github.com/stdlib-js/stdlib/commit/6dd3bf6252e3808803c6a5ea00925247b592bd01) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`96ea877`](https://github.com/stdlib-js/stdlib/commit/96ea8778698f2979de10ac6d62d91b0d6bd65cae) - **feat:** add support for struct and data type objects _(by Athan Reines)_
+-   [`7b1d601`](https://github.com/stdlib-js/stdlib/commit/7b1d6010a2b93231101815666acb7620185b650a) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`25164a7`](https://github.com/stdlib-js/stdlib/commit/25164a7ae8ac5285255e2d8097f3e123d9db3a38) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`c6ce94c`](https://github.com/stdlib-js/stdlib/commit/c6ce94c5cf69a183cbe369a56411192d8d99abe1) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`360ed63`](https://github.com/stdlib-js/stdlib/commit/360ed63a0e83c2cc4261df2b6075e1cc2c8f5dec) - **feat:** add support for non-string data tpes _(by Athan Reines)_
