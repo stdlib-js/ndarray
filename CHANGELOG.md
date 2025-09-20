@@ -4,12 +4,16 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-19)
+## Unreleased (2025-09-20)
 
 <section class="features">
 
 ### Features
 
+-   [`25164a7`](https://github.com/stdlib-js/stdlib/commit/25164a7ae8ac5285255e2d8097f3e123d9db3a38) - add support for non-string data types
+-   [`c6ce94c`](https://github.com/stdlib-js/stdlib/commit/c6ce94c5cf69a183cbe369a56411192d8d99abe1) - add support for non-string data types
+-   [`360ed63`](https://github.com/stdlib-js/stdlib/commit/360ed63a0e83c2cc4261df2b6075e1cc2c8f5dec) - add support for non-string data tpes
+-   [`b60d327`](https://github.com/stdlib-js/stdlib/commit/b60d327ae58661ce0eb20d503aca140c683f9406) - add support for non-string data types
 -   [`8e7dc95`](https://github.com/stdlib-js/stdlib/commit/8e7dc9562192062ab1e016d45ba32b9c3592fe97) - add support for non-string data types
 -   [`70dda4f`](https://github.com/stdlib-js/stdlib/commit/70dda4f47b6613531ee298231ea60630174f3dcc) - add support for non-string data types
 -   [`06bd6e0`](https://github.com/stdlib-js/stdlib/commit/06bd6e03ba8aae02b35f9a4da6724d686cf34da4) - add support for non-string data types
@@ -562,6 +566,10 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`25164a7`](https://github.com/stdlib-js/stdlib/commit/25164a7ae8ac5285255e2d8097f3e123d9db3a38) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`c6ce94c`](https://github.com/stdlib-js/stdlib/commit/c6ce94c5cf69a183cbe369a56411192d8d99abe1) - **feat:** add support for non-string data types _(by Athan Reines)_
+-   [`360ed63`](https://github.com/stdlib-js/stdlib/commit/360ed63a0e83c2cc4261df2b6075e1cc2c8f5dec) - **feat:** add support for non-string data tpes _(by Athan Reines)_
+-   [`b60d327`](https://github.com/stdlib-js/stdlib/commit/b60d327ae58661ce0eb20d503aca140c683f9406) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`8e7dc95`](https://github.com/stdlib-js/stdlib/commit/8e7dc9562192062ab1e016d45ba32b9c3592fe97) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`bdd0013`](https://github.com/stdlib-js/stdlib/commit/bdd0013af7bb684e818bedaf287389165858105b) - **docs:** update JSDoc _(by Athan Reines)_
 -   [`374953a`](https://github.com/stdlib-js/stdlib/commit/374953a8333a7467c5c8df1e1fc8d6763c4f33aa) - **docs:** update JSDoc _(by Athan Reines)_

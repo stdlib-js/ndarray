@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'integer_index' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray integer index data type.
 *
-* @name isIntegerIndexDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray integer index data type
 *
@@ -71,7 +74,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isIntegerIndexDataType( 'foo' );
 * // returns false
 */
-var isIntegerIndexDataType = contains( dtypes( 'integer_index' ) );
+function isIntegerIndexDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

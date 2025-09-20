@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'mask_index' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray mask index data type.
 *
-* @name isMaskIndexDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray mask index data type
 *
@@ -71,7 +74,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isMaskIndexDataType( 'foo' );
 * // returns false
 */
-var isMaskIndexDataType = contains( dtypes( 'mask_index' ) );
+function isMaskIndexDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //
