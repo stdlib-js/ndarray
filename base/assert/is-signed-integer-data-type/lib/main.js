@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'signed_integer' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray signed integer data type.
 *
-* @name isSignedIntegerDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray signed integer data type
 *
@@ -71,7 +74,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isSignedIntegerDataType( 'foo' );
 * // returns false
 */
-var isSignedIntegerDataType = contains( dtypes( 'signed_integer' ) );
+function isSignedIntegerDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //

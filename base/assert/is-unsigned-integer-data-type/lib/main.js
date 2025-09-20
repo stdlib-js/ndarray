@@ -24,13 +24,16 @@ var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var dtypes = require( './../../../../dtypes' );
 
 
+// VARIABLES //
+
+var isDataType = contains( dtypes( 'unsigned_integer' ) );
+
+
 // MAIN //
 
 /**
 * Tests whether an input value is a supported ndarray unsigned integer data type.
 *
-* @name isUnsignedIntegerDataType
-* @type {Function}
 * @param {*} v - value to test
 * @returns {boolean} boolean indicating whether an input value is a supported ndarray unsigned integer data type
 *
@@ -71,7 +74,9 @@ var dtypes = require( './../../../../dtypes' );
 * bool = isUnsignedIntegerDataType( 'foo' );
 * // returns false
 */
-var isUnsignedIntegerDataType = contains( dtypes( 'unsigned_integer' ) );
+function isUnsignedIntegerDataType( v ) {
+	return isDataType( String( v ) );
+}
 
 
 // EXPORTS //
