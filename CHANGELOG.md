@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`e45fd64`](https://github.com/stdlib-js/stdlib/commit/e45fd643c455293c39224899a16bcb4f8ea9e3db) - update `ndarray` TypeScript declarations
+-   [`3590e0f`](https://github.com/stdlib-js/stdlib/commit/3590e0f954650d8129ca31cd2cbf3c6c3cfc097f) - update `ndarray/iter` TypeScript declarations
+-   [`4352654`](https://github.com/stdlib-js/stdlib/commit/43526545d5bc73d7f7620dc7cc85bb456e5f37f1) - update `ndarray/base` TypeScript declarations
+-   [`e76eee3`](https://github.com/stdlib-js/stdlib/commit/e76eee36993ff476d8329e7b9a5131e29960ffc2) - update `ndarray/base/assert` TypeScript declarations
 -   [`6f68eff`](https://github.com/stdlib-js/stdlib/commit/6f68effedeecde36720abe994269424b692d2663) - add `dtypeObjects` to namespace
 -   [`57e97ae`](https://github.com/stdlib-js/stdlib/commit/57e97ae489b90d630a5f6789154eca2c92740bf9) - add `ndarray/base/dtype-objects`
 -   [`45e2822`](https://github.com/stdlib-js/stdlib/commit/45e2822d8f257cfeb3911a40961ba6e95d437ed3) - add `dtypeEnums` to namespace
@@ -584,6 +588,12 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`a86f514`](https://github.com/stdlib-js/stdlib/commit/a86f514dee23ab0536fe9e697e48a0fb2a9c5a22) - **test:** tweak test description _(by Philipp Burckhardt)_
+-   [`00f16f2`](https://github.com/stdlib-js/stdlib/commit/00f16f2e8c6f5b675e586e8f1434eae9441787ac) - **test:** fix test description _(by Philipp Burckhardt)_
+-   [`e45fd64`](https://github.com/stdlib-js/stdlib/commit/e45fd643c455293c39224899a16bcb4f8ea9e3db) - **feat:** update `ndarray` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`3590e0f`](https://github.com/stdlib-js/stdlib/commit/3590e0f954650d8129ca31cd2cbf3c6c3cfc097f) - **feat:** update `ndarray/iter` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`4352654`](https://github.com/stdlib-js/stdlib/commit/43526545d5bc73d7f7620dc7cc85bb456e5f37f1) - **feat:** update `ndarray/base` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`e76eee3`](https://github.com/stdlib-js/stdlib/commit/e76eee36993ff476d8329e7b9a5131e29960ffc2) - **feat:** update `ndarray/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`31cb339`](https://github.com/stdlib-js/stdlib/commit/31cb339eecada54f0bba379206c4d97ef6f367bb) - **refactor:** add instanceof check to increase perf _(by Athan Reines)_
 -   [`d6074e2`](https://github.com/stdlib-js/stdlib/commit/d6074e22f1bc049ded9d4a37e1d3ecbe64ee3f7e) - **docs:** fix require path _(by Athan Reines)_
 -   [`9a85422`](https://github.com/stdlib-js/stdlib/commit/9a85422a57096503cb099dbc2a1b893ec9dc32f5) - **docs:** fix require path _(by Athan Reines)_

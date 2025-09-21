@@ -26,26 +26,36 @@ import base = require( './../../base' );
 import broadcastArray = require( './../../broadcast-array' );
 import broadcastArrays = require( './../../broadcast-arrays' );
 import castingModes = require( './../../casting-modes' );
+import countFalsy = require( './../../count-falsy' );
+import countIf = require( './../../count-if' );
+import countTruthy = require( './../../count-truthy' );
 import ndarray = require( './../../ctor' );
 import dataBuffer = require( './../../data-buffer' );
 import defaults = require( './../../defaults' );
 import dispatch = require( './../../dispatch' );
 import dtype = require( './../../dtype' );
+import DataType = require( './../../dtype-ctor' );
 import dtypes = require( './../../dtypes' );
 import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
+import every = require( './../../every' );
 import FancyArray = require( './../../fancy' );
 import fill = require( './../../fill' );
 import fillBy = require( './../../fill-by' );
+import fillSlice = require( './../../fill-slice' );
 import filter = require( './../../filter' );
 import filterMap = require( './../../filter-map' );
 import flag = require( './../../flag' );
 import flags = require( './../../flags' );
+import flatten = require( './../../flatten' );
+import flattenBy = require( './../../flatten-by' );
 import forEach = require( './../../for-each' );
 import scalar2ndarray = require( './../../from-scalar' );
+import includes = require( './../../includes' );
 import ind2sub = require( './../../ind2sub' );
 import ndindex = require( './../../index' );
 import indexModes = require( './../../index-modes' );
+import inputCastingPolicies = require( './../../input-casting-policies' );
 import iter = require( './../../iter' );
 import map = require( './../../map' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
@@ -67,17 +77,20 @@ import safeCasts = require( './../../safe-casts' );
 import sameKindCasts = require( './../../same-kind-casts' );
 import shape = require( './../../shape' );
 import slice = require( './../../slice' );
-import ndsliceAssign = require( './../../slice-assign' );
+import sliceAssign = require( './../../slice-assign' );
 import sliceDimension = require( './../../slice-dimension' );
 import sliceDimensionFrom = require( './../../slice-dimension-from' );
 import sliceDimensionTo = require( './../../slice-dimension-to' );
 import sliceFrom = require( './../../slice-from' );
 import sliceTo = require( './../../slice-to' );
+import someBy = require( './../../some-by' );
 import stride = require( './../../stride' );
 import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
 import ndarray2array = require( './../../to-array' );
 import ndarray2json = require( './../../to-json' );
+import vector = require( './../../vector' );
+import ndarrayWith = require( './../../with' );
 import zeros = require( './../../zeros' );
 import zerosLike = require( './../../zeros-like' );
 
@@ -326,6 +339,223 @@ interface Namespace {
 	castingModes: typeof castingModes;
 
 	/**
+	* Counts the number of falsy elements along one or more ndarray dimensions.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.countFalsy( x );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 1
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'int32'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.countFalsy.assign( x, y );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 1
+	*/
+	countFalsy: typeof countFalsy;
+
+	/**
+	* Counts the number of elements along one or more ndarray dimensions which pass a test implemented by a predicate function.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @param predicate - predicate function
+	* @param thisArg - predicate function execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* function predicate( value ) {
+	*    return value > 0.0;
+	* }
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.countIf( x, predicate );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 5
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* function predicate( value ) {
+	*    return value > 0.0;
+	* }
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'int32'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.countIf.assign( x, y, predicate );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 5
+	*/
+	countIf: typeof countIf;
+
+	/**
+	* Counts the number of truthy elements along one or more ndarray dimensions.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.countTruthy( x );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 5
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 0.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'int32'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.countTruthy.assign( x, y );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns 5
+	*/
+	countTruthy: typeof countTruthy;
+
+	/**
 	* ndarray constructor.
 	*
 	* @param dtype - data type
@@ -462,6 +692,11 @@ interface Namespace {
 	dtype: typeof dtype;
 
 	/**
+	* Data type.
+	*/
+	DataType: typeof DataType;
+
+	/**
 	* Returns a list of ndarray data types.
 	*
 	* @param kind - data type kind
@@ -536,6 +771,75 @@ interface Namespace {
 	* // returns 'generic'
 	*/
 	emptyLike: typeof emptyLike;
+
+	/**
+	* Tests whether every element along one or more ndarray dimensions is truthy.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.every( x );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'bool'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.every.assign( x, y );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*/
+	every: typeof every;
 
 	/**
 	* Fancy array constructor.
@@ -624,6 +928,40 @@ interface Namespace {
 	* // => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 	*/
 	fillBy: typeof fillBy;
+
+	/**
+	* Fills an input ndarray view with a specified value.
+	*
+	* @param x - input ndarray
+	* @param value - fill value
+	* @param args - slice and option arguments
+	* @returns input ndarray
+	*
+	* @example
+	* var zeros = require( './../../zeros' );
+	* var MultiSlice = require( '@stdlib/slice/multi' );
+	* var Slice = require( '@stdlib/slice/ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* var x = zeros( [ 3, 4 ], {
+	*     'dtype': 'generic'
+	* });
+	*
+	* // Specify the fill region:
+	* var s0 = new Slice( 1, 3 );
+	* var s1 = new Slice( 2, 4 );
+	*
+	* // Fill the slice:
+	* var y = ns.fillSlice( x, 5.0, s0, s1 );
+	* // returns <ndarray>
+	*
+	* var bool = ( y === x );
+	* // returns true
+	*
+	* var arr = ndarray2array( x );
+	* // returns [ [ 0, 0, 0, 0 ], [ 0, 0, 5, 5 ], [ 0, 0, 5, 5 ] ]
+	*/
+	fillSlice: typeof fillSlice;
 
 	/**
 	* Returns a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.
@@ -732,6 +1070,76 @@ interface Namespace {
 	flags: typeof flags;
 
 	/**
+	* Returns a flattened copy of an input ndarray.
+	*
+	* ## Notes
+	*
+	* -   The function **always** returns a copy of input ndarray data, even when an input ndarray already has the desired number of dimensions.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.depth - maximum number of dimensions to flatten
+	* @param options.order - order in which input ndarray elements should be flattened
+	* @param options.dtype - output ndarray data type
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+	* // returns <ndarray>
+	*
+	* var y = ns.flatten( x );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+	*/
+	flatten: typeof flatten;
+
+	/**
+	* Flattens an ndarray according to a callback function.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.depth - maximum number of dimensions to flatten
+	* @param options.order - order in which input ndarray elements should be flattened
+	* @param options.dtype - output ndarray data type
+	* @param fcn - callback function
+	* @param thisArg - callback execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var ndarray2array = require( './../../to-array' );
+	*
+	* function scale( value ) {
+	*     return value * 2.0;
+	* }
+	*
+	* var buffer = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* var shape = [ 3, 1, 2 ];
+	* var strides = [ 2, 2, 1 ];
+	* var offset = 0;
+	*
+	* var x = ndarray( 'float64', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>
+	*
+	* var opts = {
+	*      'depth': 2
+	* };
+	*
+	* var y = ns.flattenBy( x, opts, scale );
+	* // returns <ndarray>
+	*
+	* var arr = ndarray2array( y );
+	* // returns [ 2.0, 4.0, 6.0, 8.0, 10.0, 12.0 ]
+	*/
+	flattenBy: typeof flattenBy;
+
+	/**
 	* Invokes a callback function once for each ndarray element.
 	*
 	* @param x - input ndarray
@@ -789,6 +1197,76 @@ interface Namespace {
 	* // returns 1.0
 	*/
 	scalar2ndarray: typeof scalar2ndarray;
+
+	/**
+	* Tests whether an ndarray contains a specified value along one or more dimensions.
+	*
+	* @param x - input ndarray
+	* @param searchElement - search element
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.includes( x, 6.0 );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'bool'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.includes.assign( x, 6.0, y );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*/
+	includes: typeof includes;
 
 	/**
 	* Converts a linear index to an array of subscripts.
@@ -889,6 +1367,26 @@ interface Namespace {
 	* // returns [ 'throw', 'normalize', 'clamp', 'wrap' ]
 	*/
 	indexModes: typeof indexModes;
+
+	/**
+	* Returns a list of input ndarray casting policies.
+	*
+	* ## Notes
+	*
+	* -   The output array contains the following policies:
+	*
+	*     -   `none`: no guidance on specific casting behavior. An input ndarray may or may not be cast depending on the needs of an implementation.
+	*     -   `promoted`: cast an input ndarray to a promoted data type.
+	*     -   `accumulation`: cast an input ndarray to a data type amenable to accumulation.
+	*     -   `output`: cast an input ndarray to the data type of the output ndarray.
+	*
+	* @returns list of policies
+	*
+	* @example
+	* var list = ns.inputCastingPolicies();
+	* // returns [...]
+	*/
+	inputCastingPolicies: typeof inputCastingPolicies;
 
 	/**
 	* Multidimensional array iterators.
@@ -1229,6 +1727,7 @@ interface Namespace {
 	*
 	*     -   `same`: return the same data type.
 	*     -   `promoted`: return a promoted data type.
+	*     -   `accumulation`: return a data type amenable to accumulation.
 	*     -   `boolean`: return a boolean data type.
 	*     -   `boolean_and_generic`: return a boolean or "generic" data type.
 	*     -   `signed_integer`: return a signed integer data type.
@@ -1247,7 +1746,14 @@ interface Namespace {
 	*     -   `real_and_generic`: return a real-valued or "generic" data type.
 	*     -   `numeric`: return a numeric data type.
 	*     -   `numeric_and_generic`: return a numeric or "generic" data type.
+	*     -   `integer_index`: return an integer index data type.
+	*     -   `integer_index_and_generic`: return an integer index or "generic" data type.
+	*     -   `boolean_index`: return a boolean index data type.
+	*     -   `boolean_index_and_generic`: return a boolean index or "generic" data type.
+	*     -   `mask_index`: return a mask index data type.
+	*     -   `mask_index_and_generic`: return a mask index or "generic" data type.
 	*     -   `default`: return the default data type.
+	*     -   `default_index`: return the default index data type.
 	*
 	* @returns list of data type policies
 	*
@@ -1405,9 +1911,7 @@ interface Namespace {
 	*
 	* @param x - input array
 	* @param y - output array
-	* @param slices - slice arguments
-	* @param options - function options
-	* @param options.strict - boolean indicating whether to enforce strict bounds checking
+	* @param args - slice and option arguments
 	* @returns output array
 	*
 	* @example
@@ -1444,7 +1948,7 @@ interface Namespace {
 	* // returns <MultiSlice>
 	*
 	* // Perform assignment:
-	* var out = ns.ndsliceAssign( x, y, s0, s1, s2 );
+	* var out = ns.sliceAssign( x, y, s0, s1, s2 );
 	* // returns <ndarray>
 	*
 	* var bool = ( out === y );
@@ -1453,7 +1957,7 @@ interface Namespace {
 	* arr = ndarray2array( y );
 	* // returns [ [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ], [ [ 6, 5 ], [ 4, 3 ], [ 2, 1 ] ] ]
 	*/
-	ndsliceAssign: typeof ndsliceAssign;
+	sliceAssign: typeof sliceAssign;
 
 	/**
 	* Returns a read-only view of an input ndarray when sliced along a specified dimension.
@@ -1653,6 +2157,80 @@ interface Namespace {
 	sliceTo: typeof sliceTo;
 
 	/**
+	* Tests whether at least `n` elements along one or more ndarray dimensions pass a test implemented by a predicate function.
+	*
+	* @param x - input ndarray
+	* @param n - number of elements which must pass a test
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @param predicate - predicate function
+	* @param thisArg - predicate execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+	* var ndarray = require( './../../ctor' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.someBy( x, 3, isEven );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+	* var empty = require( './../../empty' );
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'bool'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.someBy.assign( x, 3, y, isEven );
+	* // returns <ndarray>
+	*
+	* var v = out.get();
+	* // returns true
+	*/
+	someBy: typeof someBy;
+
+	/**
 	* Returns the stride along a specified dimension for a provided ndarray.
 	*
 	* ## Notes
@@ -1749,6 +2327,38 @@ interface Namespace {
 	* // returns {...}
 	*/
 	ndarray2json: typeof ndarray2json;
+
+	/**
+	* Vector constructors and associated utilities.
+	*/
+	vector: typeof vector;
+
+	/**
+	* Returns a new ndarray with the element at a specified index replaced by a provided value.
+	*
+	* @param x - input ndarray
+	* @param indices - indices of the element to replace
+	* @param value - value to set
+	* @returns output ndarray
+	*
+	* @example
+	* var ndarray = require( './../../ctor' );
+	*
+	* var buffer = [ 1, 2, 3, 4 ];
+	* var shape = [ 2, 2 ];
+	* var order = 'row-major';
+	* var strides = [ 2, 1 ];
+	* var offset = 0;
+	*
+	* var x = ndarray( 'generic', buffer, shape, strides, offset, order  );
+	*
+	* var out = ns.with( x, [ 0, 0 ], 5 );
+	* // returns <ndarray>
+	*
+	* var v = out.get( 0, 0 );
+	* // returns 5
+	*/
+	with: typeof ndarrayWith;
 
 	/**
 	* Creates a zero-filled array having a specified shape and data type.
