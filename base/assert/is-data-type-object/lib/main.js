@@ -23,6 +23,7 @@
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var hasProp = require( '@stdlib/assert/has-property' );
+var DataType = require( './../../../../dtype-ctor' );
 
 
 // MAIN //
@@ -47,14 +48,17 @@ var hasProp = require( '@stdlib/assert/has-property' );
 */
 function isDataTypeObject( value ) {
 	return (
-		typeof value === 'object' &&
-		value !== null &&
-		isInteger( value.alignment ) &&
-		isInteger( value.byteLength ) &&
-		isString( value.byteOrder ) &&
-		isString( value.char ) &&
-		isInteger( value.enum ) &&
-		hasProp( value, 'value' )
+		value instanceof DataType ||
+		(
+			typeof value === 'object' &&
+			value !== null &&
+			isInteger( value.alignment ) &&
+			isInteger( value.byteLength ) &&
+			isString( value.byteOrder ) &&
+			isString( value.char ) &&
+			isInteger( value.enum ) &&
+			hasProp( value, 'value' )
+		)
 	);
 }
 

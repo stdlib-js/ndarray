@@ -584,6 +584,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`31cb339`](https://github.com/stdlib-js/stdlib/commit/31cb339eecada54f0bba379206c4d97ef6f367bb) - **refactor:** add instanceof check to increase perf _(by Athan Reines)_
 -   [`d6074e2`](https://github.com/stdlib-js/stdlib/commit/d6074e22f1bc049ded9d4a37e1d3ecbe64ee3f7e) - **docs:** fix require path _(by Athan Reines)_
 -   [`9a85422`](https://github.com/stdlib-js/stdlib/commit/9a85422a57096503cb099dbc2a1b893ec9dc32f5) - **docs:** fix require path _(by Athan Reines)_
 -   [`3d09030`](https://github.com/stdlib-js/stdlib/commit/3d09030cc4f13ac5fa69ce4a0fe2546464cdbf0c) - **docs:** document exported data type instances _(by Athan Reines)_
