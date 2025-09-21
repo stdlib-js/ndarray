@@ -21,7 +21,7 @@
 // MODULES //
 
 var contains = require( '@stdlib/array/base/assert/contains' ).factory;
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 
 
 // MAIN //

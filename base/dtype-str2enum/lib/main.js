@@ -21,12 +21,12 @@
 // MODULES //
 
 var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
-var enumeration = require( './../../../dtypes' ).enum;
+var dtypeEnums = require( './../../../base/dtype-enums' );
 
 
 // VARIABLES //
 
-var ENUM = enumeration();
+var ENUM = dtypeEnums();
 
 
 // MAIN //

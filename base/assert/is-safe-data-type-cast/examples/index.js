@@ -19,7 +19,7 @@
 'use strict';
 
 var cartesianSquare = require( '@stdlib/array/cartesian-square' );
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var isSafeCast = require( './../lib' );
 
 // Generate a list of dtype pairs:

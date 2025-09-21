@@ -25,7 +25,7 @@
 var tape = require( 'tape' );
 var DataType = require( './../../../../dtype-ctor' );
 var structFactory = require( '@stdlib/dstructs/struct' );
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var sameKindCasts = require( './../../../../same-kind-casts' );
 var str2enum = require( './../../../../base/dtype-str2enum' );
 var isSameKindCast = require( './../lib' );

@@ -18,7 +18,7 @@
 
 'use strict';
 
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var isScalarMostlySafeCompatible = require( './../lib' ); // eslint-disable-line id-length
 

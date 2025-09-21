@@ -24,7 +24,7 @@ var IS_LITTLE_ENDIAN = require( '@stdlib/assert/is-little-endian' );
 var ArrayBuffer = require( '@stdlib/array/buffer' );
 var DataView = require( '@stdlib/array/dataview' );
 var BigInt = require( '@stdlib/bigint/ctor' );
-var dtypes = require( './../../../dtypes' ).enum;
+var dtypes = require( './../../../base/dtype-enums' );
 var orders = require( './../../../orders' ).enum;
 var modes = require( './../../../index-modes' ).enum;
 

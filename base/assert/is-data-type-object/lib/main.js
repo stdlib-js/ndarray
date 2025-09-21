@@ -20,7 +20,6 @@
 
 // MODULES //
 
-var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var isInteger = require( '@stdlib/assert/is-integer' ).isPrimitive;
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var hasProp = require( '@stdlib/assert/has-property' );
@@ -54,7 +53,7 @@ function isDataTypeObject( value ) {
 		isInteger( value.byteLength ) &&
 		isString( value.byteOrder ) &&
 		isString( value.char ) &&
-		isPositiveInteger( value.enum ) &&
+		isInteger( value.enum ) &&
 		hasProp( value, 'value' )
 	);
 }

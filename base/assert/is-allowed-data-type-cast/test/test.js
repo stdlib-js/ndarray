@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var DataType = require( './../../../../dtype-ctor' );
 var structFactory = require( '@stdlib/dstructs/struct' );
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var isSafeCast = require( './../../../../base/assert/is-safe-data-type-cast' );
 var isMostlySafeCast = require( './../../../../base/assert/is-mostly-safe-data-type-cast' );
 var isSameKindCast = require( './../../../../base/assert/is-same-kind-data-type-cast' );

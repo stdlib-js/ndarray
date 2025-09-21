@@ -22,7 +22,7 @@
 
 var bench = require( '@stdlib/bench' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var pkg = require( './../package.json' ).name;
 var isScalarMostlySafeCompatible = require( './../lib' ); // eslint-disable-line id-length
 

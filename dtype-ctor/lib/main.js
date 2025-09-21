@@ -35,7 +35,6 @@ var dtype2desc = require( './../../base/dtype-desc' );
 var dtype2char = require( './../../base/dtype-char' );
 var dtype2alignment = require( './../../base/dtype-alignment' );
 var bytesPerElement = require( './../../base/bytes-per-element' );
-var dtypes = require( './../../dtypes' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -50,13 +49,16 @@ var format = require( '@stdlib/string/format' );
 */
 function isDataType( value ) {
 	return (
-		typeof value === 'object' &&
-		value !== null &&
-		value.constructor.name === 'DataType' &&
-		isString( value.char ) &&
-		isString( value.description ) &&
-		isString( value.byteOrder ) &&
-		hasProp( value, 'value' )
+		value instanceof DataType ||
+		(
+			typeof value === 'object' &&
+			value !== null &&
+			value.constructor.name === 'DataType' &&
+			isString( value.char ) &&
+			isString( value.description ) &&
+			isString( value.byteOrder ) &&
+			hasProp( value, 'value' )
+		)
 	);
 }
 
@@ -96,13 +98,13 @@ function DataType( value, options ) {
 	}
 	if ( isDataTypeString( value ) ) {
 		type = 'builtin';
-	} else if ( isStructConstructorLike( value ) ) {
-		type = 'struct';
 	} else if ( isDataType( value ) ) {
 		// Clone the input data type:
 		return new DataType( value.value, {
 			'description': value.description
 		});
+	} else if ( isStructConstructorLike( value ) ) {
+		type = 'struct';
 	} else {
 		throw new TypeError( format( 'invalid argument. First argument must be either a supported data type string, a struct constructor, or another data type instance. Value: `%s`.', value ) );
 	}
@@ -117,14 +119,14 @@ function DataType( value, options ) {
 	} else {
 		opts = {};
 	}
-	this._value = value;
-	this._description = opts.description || ( dtype2desc( value ) || '' );
-	this._char = dtype2char( value ) || '';
-	this._enum = resolveEnum( value ) || dtypes.userdefined_type;
-	this._alignment = dtype2alignment( value ) || -1;
-	this._byteLength = bytesPerElement( value ) || -1;
-	this._byteOrder = 'host'; // TODO: consider supporting little-endian and big-endian byte orders
-	this._type = type;
+	setReadOnly( this, '_value', value );
+	setReadOnly( this, '_description', opts.description || ( dtype2desc( value ) || '' ) );
+	setReadOnly( this, '_char', dtype2char( value ) || '' );
+	setReadOnly( this, '_enum', resolveEnum( value ) || -1 );
+	setReadOnly( this, '_alignment', dtype2alignment( value ) || -1 );
+	setReadOnly( this, '_byteLength', bytesPerElement( value ) || -1 );
+	setReadOnly( this, '_byteOrder', 'host' ); // TODO: consider supporting little-endian and big-endian byte orders
+	setReadOnly( this, '_type', type );
 	return this;
 }
 
@@ -266,12 +268,12 @@ setReadOnlyAccessor( DataType.prototype, 'description', function get() {
 *
 * ## Notes
 *
-* -   If a data type does not have a corresponding known enumeration constant, the returned value is the enumeration constant for a user-defined data type.
+* -   If a data type does not have a corresponding known enumeration constant, the returned value is `-1`.
 *
 * @name enum
 * @memberof DataType.prototype
 * @readonly
-* @type {NonNegativeInteger}
+* @type {integer}
 *
 * @example
 * var dt = new DataType( 'float64' );

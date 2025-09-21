@@ -4,12 +4,18 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-20)
+## Unreleased (2025-09-21)
 
 <section class="features">
 
 ### Features
 
+-   [`6f68eff`](https://github.com/stdlib-js/stdlib/commit/6f68effedeecde36720abe994269424b692d2663) - add `dtypeObjects` to namespace
+-   [`57e97ae`](https://github.com/stdlib-js/stdlib/commit/57e97ae489b90d630a5f6789154eca2c92740bf9) - add `ndarray/base/dtype-objects`
+-   [`45e2822`](https://github.com/stdlib-js/stdlib/commit/45e2822d8f257cfeb3911a40961ba6e95d437ed3) - add `dtypeEnums` to namespace
+-   [`a263d70`](https://github.com/stdlib-js/stdlib/commit/a263d7026590a59eb0aba0c80b27df80733a4489) - add `ndarray/base/dtype-enums`
+-   [`b141f04`](https://github.com/stdlib-js/stdlib/commit/b141f0413f4893571f82c746453d128174a26137) - add `dtypeStrings` to namespace
+-   [`1c38368`](https://github.com/stdlib-js/stdlib/commit/1c383680d297a2b8b3dd12c0db0e40a6a796e1e4) - add `ndarray/base/dtype-strings`
 -   [`ffe223b`](https://github.com/stdlib-js/stdlib/commit/ffe223b04476eb50c17cc7b94943ede80296aaa5) - add support for non-string data types
 -   [`599cf73`](https://github.com/stdlib-js/stdlib/commit/599cf7317ccf5c97d7d110e0d38f4f7db14ad0d2) - add support for non-string data types
 -   [`41fca83`](https://github.com/stdlib-js/stdlib/commit/41fca8339a466eed84400b23652fd60bd9c36e54) - add support for non-string data types
@@ -418,6 +424,7 @@
 
 ### Bug Fixes
 
+-   [`5b491c9`](https://github.com/stdlib-js/stdlib/commit/5b491c98f454c2413c23eaa901543bef9e3642f2) - allow enums to be nonpositive integers
 -   [`a278663`](https://github.com/stdlib-js/stdlib/commit/a2786634547c68e950444c8a16d522d2ab79e335) - ensure \"generic\" data type objects are considered valid
 -   [`f8e5205`](https://github.com/stdlib-js/stdlib/commit/f8e520591bc2a8d8436ebb4fbe1604a7376105cd) - use correct `sliceAssign` alias
 -   [`08c21f1`](https://github.com/stdlib-js/stdlib/commit/08c21f19a3dc1c7352e4760c19c1ec8aab714b54) - update return type
@@ -577,6 +584,25 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`d6074e2`](https://github.com/stdlib-js/stdlib/commit/d6074e22f1bc049ded9d4a37e1d3ecbe64ee3f7e) - **docs:** fix require path _(by Athan Reines)_
+-   [`9a85422`](https://github.com/stdlib-js/stdlib/commit/9a85422a57096503cb099dbc2a1b893ec9dc32f5) - **docs:** fix require path _(by Athan Reines)_
+-   [`3d09030`](https://github.com/stdlib-js/stdlib/commit/3d09030cc4f13ac5fa69ce4a0fe2546464cdbf0c) - **docs:** document exported data type instances _(by Athan Reines)_
+-   [`6f68eff`](https://github.com/stdlib-js/stdlib/commit/6f68effedeecde36720abe994269424b692d2663) - **feat:** add `dtypeObjects` to namespace _(by Athan Reines)_
+-   [`57e97ae`](https://github.com/stdlib-js/stdlib/commit/57e97ae489b90d630a5f6789154eca2c92740bf9) - **feat:** add `ndarray/base/dtype-objects` _(by Athan Reines)_
+-   [`2cbcb64`](https://github.com/stdlib-js/stdlib/commit/2cbcb64f40cca8ac4b0328e48abcf247abe4717d) - **docs:** access enum values via data type objects _(by Athan Reines)_
+-   [`49013b4`](https://github.com/stdlib-js/stdlib/commit/49013b4760a464c19a9c858479d8d8c1344caa58) - **docs:** access enum values via data type objects _(by Athan Reines)_
+-   [`ddccd36`](https://github.com/stdlib-js/stdlib/commit/ddccd36b228566f4b5c3287ecfb855f68970cf58) - **refactor:** make internal properties read-only and add instance check _(by Athan Reines)_
+-   [`bd31cd9`](https://github.com/stdlib-js/stdlib/commit/bd31cd9ab358b0f2cecd1c82d42cd394e75bad75) - **refactor:** use internal utility and expose DataType instances, rather than enums _(by Athan Reines)_
+-   [`5b491c9`](https://github.com/stdlib-js/stdlib/commit/5b491c98f454c2413c23eaa901543bef9e3642f2) - **fix:** allow enums to be nonpositive integers _(by Athan Reines)_
+-   [`61d37ac`](https://github.com/stdlib-js/stdlib/commit/61d37acb4507de68f39331a22657278ae8eb78c3) - **refactor:** update require paths _(by Athan Reines)_
+-   [`944c779`](https://github.com/stdlib-js/stdlib/commit/944c779002753edbe3ba889b01b555ae7863385e) - **refactor:** update require paths _(by Athan Reines)_
+-   [`978698b`](https://github.com/stdlib-js/stdlib/commit/978698b1e3e7ddb8eed1a6b2540ece7139d20cdd) - **refactor:** update require path _(by Athan Reines)_
+-   [`476b018`](https://github.com/stdlib-js/stdlib/commit/476b0181203eb4c523ebfb1390ad8c39dd509b24) - **refactor:** update require path _(by Athan Reines)_
+-   [`45e2822`](https://github.com/stdlib-js/stdlib/commit/45e2822d8f257cfeb3911a40961ba6e95d437ed3) - **feat:** add `dtypeEnums` to namespace _(by Athan Reines)_
+-   [`a263d70`](https://github.com/stdlib-js/stdlib/commit/a263d7026590a59eb0aba0c80b27df80733a4489) - **feat:** add `ndarray/base/dtype-enums` _(by Athan Reines)_
+-   [`bcc1af5`](https://github.com/stdlib-js/stdlib/commit/bcc1af5db7947fcef9a41c727843453d14a9ced1) - **refactor:** update require paths to use lower-level utility _(by Athan Reines)_
+-   [`b141f04`](https://github.com/stdlib-js/stdlib/commit/b141f0413f4893571f82c746453d128174a26137) - **feat:** add `dtypeStrings` to namespace _(by Athan Reines)_
+-   [`1c38368`](https://github.com/stdlib-js/stdlib/commit/1c383680d297a2b8b3dd12c0db0e40a6a796e1e4) - **feat:** add `ndarray/base/dtype-strings` _(by Athan Reines)_
 -   [`832da9f`](https://github.com/stdlib-js/stdlib/commit/832da9fbeec39f4bb00ad8ca14d322a1bc399faa) - **test:** fix require path _(by Athan Reines)_
 -   [`ffe223b`](https://github.com/stdlib-js/stdlib/commit/ffe223b04476eb50c17cc7b94943ede80296aaa5) - **feat:** add support for non-string data types _(by Athan Reines)_
 -   [`599cf73`](https://github.com/stdlib-js/stdlib/commit/599cf7317ccf5c97d7d110e0d38f4f7db14ad0d2) - **feat:** add support for non-string data types _(by Athan Reines)_

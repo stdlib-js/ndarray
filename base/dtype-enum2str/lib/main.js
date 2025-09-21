@@ -22,12 +22,12 @@
 
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var objectInverse = require( '@stdlib/utils/object-inverse' );
-var enumeration = require( './../../../dtypes' ).enum;
+var dtypeEnums = require( './../../../base/dtype-enums' );
 
 
 // VARIABLES //
 
-var hash = objectInverse( enumeration(), {
+var hash = objectInverse( dtypeEnums(), {
 	'duplicates': false
 });
 

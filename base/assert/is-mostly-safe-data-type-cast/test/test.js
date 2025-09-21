@@ -25,7 +25,7 @@
 var tape = require( 'tape' );
 var DataType = require( './../../../../dtype-ctor' );
 var structFactory = require( '@stdlib/dstructs/struct' );
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var casts = require( './../../../../mostly-safe-casts' );
 var str2enum = require( './../../../../base/dtype-str2enum' );
 var isMostlySafeCast = require( './../lib' );

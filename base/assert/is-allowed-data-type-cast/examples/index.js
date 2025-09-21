@@ -20,7 +20,7 @@
 
 var nCartesianProduct = require( '@stdlib/array/base/n-cartesian-product' );
 var unzip = require( '@stdlib/utils/unzip' );
-var dtypes = require( './../../../../dtypes' );
+var dtypes = require( './../../../../base/dtype-strings' );
 var modes = require( './../../../../casting-modes' );
 var logEachMap = require( '@stdlib/console/log-each-map' );
 var isAllowedCast = require( './../lib' );

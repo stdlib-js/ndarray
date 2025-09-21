@@ -347,6 +347,24 @@ setReadOnly( ns, 'dtypeDesc', require( './../../base/dtype-desc' ) );
 setReadOnly( ns, 'dtypeEnum2Str', require( './../../base/dtype-enum2str' ) );
 
 /**
+* @name dtypeEnums
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-enums}
+*/
+setReadOnly( ns, 'dtypeEnums', require( './../../base/dtype-enums' ) );
+
+/**
+* @name dtypeObjects
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-objects}
+*/
+setReadOnly( ns, 'dtypeObjects', require( './../../base/dtype-objects' ) );
+
+/**
 * @name dtypeResolveEnum
 * @memberof ns
 * @readonly
@@ -372,6 +390,15 @@ setReadOnly( ns, 'dtypeResolveStr', require( './../../base/dtype-resolve-str' ) 
 * @see {@link module:@stdlib/ndarray/base/dtype-str2enum}
 */
 setReadOnly( ns, 'dtypeStr2Enum', require( './../../base/dtype-str2enum' ) );
+
+/**
+* @name dtypeStrings
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-strings}
+*/
+setReadOnly( ns, 'dtypeStrings', require( './../../base/dtype-strings' ) );
 
 /**
 * @name dtype2c
