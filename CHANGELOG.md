@@ -591,6 +591,7 @@ A total of 24 issues were closed in this release:
 <details>
 
 -   [`70e9b6c`](https://github.com/stdlib-js/stdlib/commit/70e9b6c1b5b3521412ed4a8fed9ab3de337ab661) - **feat:** add `ndarray/base/pop` [(#8108)](https://github.com/stdlib-js/stdlib/pull/8108) _(by Muhammad Haris, Athan Reines)_
+-   [`bef69f1`](https://github.com/stdlib-js/stdlib/commit/bef69f1647b16c21cec08955ed3b26b41937ebd2) - **style:** resolve lint errors _(by Athan Reines)_
 -   [`d3aa7cd`](https://github.com/stdlib-js/stdlib/commit/d3aa7cd53d20216c70ee74a8d4de32a80e97be71) - **feat:** add `ndarray/any` [(#8113)](https://github.com/stdlib-js/stdlib/pull/8113) _(by Muhammad Haris, Athan Reines)_
 -   [`d13a0fc`](https://github.com/stdlib-js/stdlib/commit/d13a0fca7737b8aa0206943ff11a5ca4f0cb3527) - **refactor:** remove unreachable path _(by Athan Reines)_
 -   [`ce50d3e`](https://github.com/stdlib-js/stdlib/commit/ce50d3ecca395ef29f3883a70d8fbf1b3e7f38c1) - **docs:** fix grammar _(by Athan Reines)_
