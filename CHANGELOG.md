@@ -588,6 +588,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`d13a0fc`](https://github.com/stdlib-js/stdlib/commit/d13a0fca7737b8aa0206943ff11a5ca4f0cb3527) - **refactor:** remove unreachable path _(by Athan Reines)_
 -   [`ce50d3e`](https://github.com/stdlib-js/stdlib/commit/ce50d3ecca395ef29f3883a70d8fbf1b3e7f38c1) - **docs:** fix grammar _(by Athan Reines)_
 -   [`a86f514`](https://github.com/stdlib-js/stdlib/commit/a86f514dee23ab0536fe9e697e48a0fb2a9c5a22) - **test:** tweak test description _(by Philipp Burckhardt)_
 -   [`00f16f2`](https://github.com/stdlib-js/stdlib/commit/00f16f2e8c6f5b675e586e8f1434eae9441787ac) - **test:** fix test description _(by Philipp Burckhardt)_
