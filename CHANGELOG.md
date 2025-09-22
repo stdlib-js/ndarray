@@ -590,6 +590,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`7ac6058`](https://github.com/stdlib-js/stdlib/commit/7ac6058fdc8d3eede7ff5bb4e02fcba4b54e0211) - **docs:** add comment _(by Athan Reines)_
 -   [`0af16c9`](https://github.com/stdlib-js/stdlib/commit/0af16c9618cb9bf7f5f3c521a8dbfc3e3f640b42) - **style:** resolve lint errors _(by Athan Reines)_
 -   [`70e9b6c`](https://github.com/stdlib-js/stdlib/commit/70e9b6c1b5b3521412ed4a8fed9ab3de337ab661) - **feat:** add `ndarray/base/pop` [(#8108)](https://github.com/stdlib-js/stdlib/pull/8108) _(by Muhammad Haris, Athan Reines)_
 -   [`bef69f1`](https://github.com/stdlib-js/stdlib/commit/bef69f1647b16c21cec08955ed3b26b41937ebd2) - **style:** resolve lint errors _(by Athan Reines)_
