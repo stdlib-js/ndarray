@@ -590,6 +590,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`5b42c46`](https://github.com/stdlib-js/stdlib/commit/5b42c466e82c41e5ef0d52bac26a1d4fa03ac31a) - **test:** fix description _(by Athan Reines)_
 -   [`bf13b2e`](https://github.com/stdlib-js/stdlib/commit/bf13b2e3801d56c8ec137e4160834c424af5f40f) - **test:** fix descriptions _(by Athan Reines)_
 -   [`2f5f302`](https://github.com/stdlib-js/stdlib/commit/2f5f3024197771149f91359080983ae86191caba) - **test:** fix description _(by Athan Reines)_
 -   [`7ac6058`](https://github.com/stdlib-js/stdlib/commit/7ac6058fdc8d3eede7ff5bb4e02fcba4b54e0211) - **docs:** add comment _(by Athan Reines)_
