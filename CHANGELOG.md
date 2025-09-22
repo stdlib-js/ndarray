@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127)
 -   [`70e9b6c`](https://github.com/stdlib-js/stdlib/commit/70e9b6c1b5b3521412ed4a8fed9ab3de337ab661) - add `ndarray/base/pop` [(#8108)](https://github.com/stdlib-js/stdlib/pull/8108)
 -   [`d3aa7cd`](https://github.com/stdlib-js/stdlib/commit/d3aa7cd53d20216c70ee74a8d4de32a80e97be71) - add `ndarray/any` [(#8113)](https://github.com/stdlib-js/stdlib/pull/8113)
 -   [`e45fd64`](https://github.com/stdlib-js/stdlib/commit/e45fd643c455293c39224899a16bcb4f8ea9e3db) - update `ndarray` TypeScript declarations
@@ -590,6 +591,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - **feat:** update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127) _(by stdlib-bot)_
 -   [`5c3691e`](https://github.com/stdlib-js/stdlib/commit/5c3691efad0d8f75effc471424caa0473cb264ac) - **test:** add tests to `ndarray/every` for complete test coverage [(#8124)](https://github.com/stdlib-js/stdlib/pull/8124) _(by Muhammad Haris, Athan Reines)_
 -   [`5b42c46`](https://github.com/stdlib-js/stdlib/commit/5b42c466e82c41e5ef0d52bac26a1d4fa03ac31a) - **test:** fix description _(by Athan Reines)_
 -   [`bf13b2e`](https://github.com/stdlib-js/stdlib/commit/bf13b2e3801d56c8ec137e4160834c424af5f40f) - **test:** fix descriptions _(by Athan Reines)_

@@ -53,9 +53,12 @@ import dtype = require( './../../../base/dtype' );
 import dtypeChar = require( './../../../base/dtype-char' );
 import dtypeDesc = require( './../../../base/dtype-desc' );
 import dtypeEnum2Str = require( './../../../base/dtype-enum2str' );
+import dtypeEnums = require( './../../../base/dtype-enums' );
+import dtypeObjects = require( './../../../base/dtype-objects' );
 import dtypeResolveEnum = require( './../../../base/dtype-resolve-enum' );
 import dtypeResolveStr = require( './../../../base/dtype-resolve-str' );
 import dtypeStr2Enum = require( './../../../base/dtype-str2enum' );
+import dtypeStrings = require( './../../../base/dtype-strings' );
 import dtype2c = require( './../../../base/dtype2c' );
 import dtypes2enums = require( './../../../base/dtypes2enums' );
 import dtypes2signatures = require( './../../../base/dtypes2signatures' );
@@ -1194,6 +1197,33 @@ interface Namespace {
 	dtypeEnum2Str: typeof dtypeEnum2Str;
 
 	/**
+	* Returns an object mapping supported data type strings to enumeration constants.
+	*
+	* ## Notes
+	*
+	* -   Downstream consumers of this mapping should **not** rely on specific integer values (e.g., `INT8 == 0`). Instead, the object should be used in an opaque manner.
+	* -   The main purpose of this function is JavaScript and C inter-operation of ndarray objects.
+	*
+	* @returns object mapping supported data type strings to enumeration constants
+	*
+	* @example
+	* var o = ns.dtypeEnums();
+	* // returns {...}
+	*/
+	dtypeEnums: typeof dtypeEnums;
+
+	/**
+	* Returns an object mapping supported data type strings to data type objects.
+	*
+	* @returns object mapping supported data type strings to data type objects
+	*
+	* @example
+	* var o = ns.dtypeObjects();
+	* // returns {...}
+	*/
+	dtypeObjects: typeof dtypeObjects;
+
+	/**
 	* Returns the enumeration constant associated with an ndarray data type value.
 	*
 	* ## Notes
@@ -1238,6 +1268,22 @@ interface Namespace {
 	* // returns <number>
 	*/
 	dtypeStr2Enum: typeof dtypeStr2Enum;
+
+	/**
+	* Returns a list of ndarray data type strings.
+	*
+	* @param kind - data type kind
+	* @returns list of ndarray data type strings
+	*
+	* @example
+	* var list = ns.dtypeStrings();
+	* // returns [...]
+	*
+	* @example
+	* var list = ns.dtypeStrings( 'floating_point' );
+	* // returns [...]
+	*/
+	dtypeStrings: typeof dtypeStrings;
 
 	/**
 	* Returns the C data type associated with a provided data type value.
