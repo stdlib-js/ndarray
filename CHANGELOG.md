@@ -431,6 +431,7 @@
 
 ### Bug Fixes
 
+-   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - improve type specificity, remove unreachable path, and fix docs
 -   [`5b491c9`](https://github.com/stdlib-js/stdlib/commit/5b491c98f454c2413c23eaa901543bef9e3642f2) - allow enums to be nonpositive integers
 -   [`a278663`](https://github.com/stdlib-js/stdlib/commit/a2786634547c68e950444c8a16d522d2ab79e335) - ensure \"generic\" data type objects are considered valid
 -   [`f8e5205`](https://github.com/stdlib-js/stdlib/commit/f8e520591bc2a8d8436ebb4fbe1604a7376105cd) - use correct `sliceAssign` alias
@@ -591,6 +592,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - **fix:** improve type specificity, remove unreachable path, and fix docs _(by Athan Reines)_
 -   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - **feat:** update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127) _(by stdlib-bot)_
 -   [`5c3691e`](https://github.com/stdlib-js/stdlib/commit/5c3691efad0d8f75effc471424caa0473cb264ac) - **test:** add tests to `ndarray/every` for complete test coverage [(#8124)](https://github.com/stdlib-js/stdlib/pull/8124) _(by Muhammad Haris, Athan Reines)_
 -   [`5b42c46`](https://github.com/stdlib-js/stdlib/commit/5b42c466e82c41e5ef0d52bac26a1d4fa03ac31a) - **test:** fix description _(by Athan Reines)_
