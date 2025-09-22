@@ -590,6 +590,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`5c3691e`](https://github.com/stdlib-js/stdlib/commit/5c3691efad0d8f75effc471424caa0473cb264ac) - **test:** add tests to `ndarray/every` for complete test coverage [(#8124)](https://github.com/stdlib-js/stdlib/pull/8124) _(by Muhammad Haris, Athan Reines)_
 -   [`5b42c46`](https://github.com/stdlib-js/stdlib/commit/5b42c466e82c41e5ef0d52bac26a1d4fa03ac31a) - **test:** fix description _(by Athan Reines)_
 -   [`bf13b2e`](https://github.com/stdlib-js/stdlib/commit/bf13b2e3801d56c8ec137e4160834c424af5f40f) - **test:** fix descriptions _(by Athan Reines)_
 -   [`2f5f302`](https://github.com/stdlib-js/stdlib/commit/2f5f3024197771149f91359080983ae86191caba) - **test:** fix description _(by Athan Reines)_
