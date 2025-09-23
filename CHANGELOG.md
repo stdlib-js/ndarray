@@ -593,6 +593,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`2ebf45f`](https://github.com/stdlib-js/stdlib/commit/2ebf45f557a99301791e2d4dbf23609372711f9b) - **docs:** update comments _(by Athan Reines)_
 -   [`f84c1a6`](https://github.com/stdlib-js/stdlib/commit/f84c1a6ecbaf68b7dfbeef4576111bc277885d1a) - **fix:** remove unused parameter _(by Athan Reines)_
 -   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - **fix:** improve type specificity, remove unreachable path, and fix docs _(by Athan Reines)_
 -   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - **feat:** update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127) _(by stdlib-bot)_
