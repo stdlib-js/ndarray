@@ -594,6 +594,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`fa53483`](https://github.com/stdlib-js/stdlib/commit/fa534835906f659a1b322a1c2e5c7e3328db43ce) - **docs:** update Markdown stdlib package URLs [(#8131)](https://github.com/stdlib-js/stdlib/pull/8131) _(by stdlib-bot)_
 -   [`ba14b89`](https://github.com/stdlib-js/stdlib/commit/ba14b8911df283cc272c48d8d382df60f1a3e750) - **feat:** add `ndarray/any-by` [(#8110)](https://github.com/stdlib-js/stdlib/pull/8110) _(by Muhammad Haris, Athan Reines)_
 -   [`2ebf45f`](https://github.com/stdlib-js/stdlib/commit/2ebf45f557a99301791e2d4dbf23609372711f9b) - **docs:** update comments _(by Athan Reines)_
 -   [`f84c1a6`](https://github.com/stdlib-js/stdlib/commit/f84c1a6ecbaf68b7dfbeef4576111bc277885d1a) - **fix:** remove unused parameter _(by Athan Reines)_
