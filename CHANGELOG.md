@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`ba14b89`](https://github.com/stdlib-js/stdlib/commit/ba14b8911df283cc272c48d8d382df60f1a3e750) - add `ndarray/any-by` [(#8110)](https://github.com/stdlib-js/stdlib/pull/8110)
 -   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127)
 -   [`70e9b6c`](https://github.com/stdlib-js/stdlib/commit/70e9b6c1b5b3521412ed4a8fed9ab3de337ab661) - add `ndarray/base/pop` [(#8108)](https://github.com/stdlib-js/stdlib/pull/8108)
 -   [`d3aa7cd`](https://github.com/stdlib-js/stdlib/commit/d3aa7cd53d20216c70ee74a8d4de32a80e97be71) - add `ndarray/any` [(#8113)](https://github.com/stdlib-js/stdlib/pull/8113)
@@ -593,6 +594,7 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`ba14b89`](https://github.com/stdlib-js/stdlib/commit/ba14b8911df283cc272c48d8d382df60f1a3e750) - **feat:** add `ndarray/any-by` [(#8110)](https://github.com/stdlib-js/stdlib/pull/8110) _(by Muhammad Haris, Athan Reines)_
 -   [`2ebf45f`](https://github.com/stdlib-js/stdlib/commit/2ebf45f557a99301791e2d4dbf23609372711f9b) - **docs:** update comments _(by Athan Reines)_
 -   [`f84c1a6`](https://github.com/stdlib-js/stdlib/commit/f84c1a6ecbaf68b7dfbeef4576111bc277885d1a) - **fix:** remove unused parameter _(by Athan Reines)_
 -   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - **fix:** improve type specificity, remove unreachable path, and fix docs _(by Athan Reines)_
