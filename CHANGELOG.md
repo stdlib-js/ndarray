@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-24)
+## Unreleased (2025-09-25)
 
 <section class="features">
 
@@ -594,6 +594,7 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`2798013`](https://github.com/stdlib-js/stdlib/commit/2798013a8edf4eb58a762928e8625089eef0f4f5) - **docs:** update example _(by Athan Reines)_
 -   [`4dba8a6`](https://github.com/stdlib-js/stdlib/commit/4dba8a659480c7c39382084ba3bb7fdace936609) - **chore:** fix JavaScript lint errors [(#8134)](https://github.com/stdlib-js/stdlib/pull/8134) _(by Payal Goswami, Athan Reines)_
 -   [`fa53483`](https://github.com/stdlib-js/stdlib/commit/fa534835906f659a1b322a1c2e5c7e3328db43ce) - **docs:** update Markdown stdlib package URLs [(#8131)](https://github.com/stdlib-js/stdlib/pull/8131) _(by stdlib-bot)_
 -   [`ba14b89`](https://github.com/stdlib-js/stdlib/commit/ba14b8911df283cc272c48d8d382df60f1a3e750) - **feat:** add `ndarray/any-by` [(#8110)](https://github.com/stdlib-js/stdlib/pull/8110) _(by Muhammad Haris, Athan Reines)_
