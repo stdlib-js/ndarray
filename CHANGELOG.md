@@ -432,6 +432,7 @@
 
 ### Bug Fixes
 
+-   [`b7368a4`](https://github.com/stdlib-js/stdlib/commit/b7368a45d5b0cc0bbdf695291837eee3d726da0a) - handle edge case when provided an empty ndarray
 -   [`f84c1a6`](https://github.com/stdlib-js/stdlib/commit/f84c1a6ecbaf68b7dfbeef4576111bc277885d1a) - remove unused parameter
 -   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - improve type specificity, remove unreachable path, and fix docs
 -   [`5b491c9`](https://github.com/stdlib-js/stdlib/commit/5b491c98f454c2413c23eaa901543bef9e3642f2) - allow enums to be nonpositive integers
@@ -594,6 +595,7 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`b7368a4`](https://github.com/stdlib-js/stdlib/commit/b7368a45d5b0cc0bbdf695291837eee3d726da0a) - **fix:** handle edge case when provided an empty ndarray _(by Athan Reines)_
 -   [`2798013`](https://github.com/stdlib-js/stdlib/commit/2798013a8edf4eb58a762928e8625089eef0f4f5) - **docs:** update example _(by Athan Reines)_
 -   [`4dba8a6`](https://github.com/stdlib-js/stdlib/commit/4dba8a659480c7c39382084ba3bb7fdace936609) - **chore:** fix JavaScript lint errors [(#8134)](https://github.com/stdlib-js/stdlib/pull/8134) _(by Payal Goswami, Athan Reines)_
 -   [`fa53483`](https://github.com/stdlib-js/stdlib/commit/fa534835906f659a1b322a1c2e5c7e3328db43ce) - **docs:** update Markdown stdlib package URLs [(#8131)](https://github.com/stdlib-js/stdlib/pull/8131) _(by stdlib-bot)_
