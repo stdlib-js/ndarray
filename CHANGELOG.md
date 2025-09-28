@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`4520512`](https://github.com/stdlib-js/stdlib/commit/45205122924bc8f8c38b3552430ef0fabc6647ab) - add `ndarray/base/flatten-shape-from` [(#8151)](https://github.com/stdlib-js/stdlib/pull/8151)
 -   [`534fbd0`](https://github.com/stdlib-js/stdlib/commit/534fbd0fab785e6e2b439cdf5966f0cbef47f570) - add `ndarray/base/shift` [(#8118)](https://github.com/stdlib-js/stdlib/pull/8118)
 -   [`ba14b89`](https://github.com/stdlib-js/stdlib/commit/ba14b8911df283cc272c48d8d382df60f1a3e750) - add `ndarray/any-by` [(#8110)](https://github.com/stdlib-js/stdlib/pull/8110)
 -   [`b5a916e`](https://github.com/stdlib-js/stdlib/commit/b5a916e413d8658977ab2383ec6fe411f90c557d) - update `ndarray/base` TypeScript declarations [(#8127)](https://github.com/stdlib-js/stdlib/pull/8127)
@@ -596,6 +597,7 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`4520512`](https://github.com/stdlib-js/stdlib/commit/45205122924bc8f8c38b3552430ef0fabc6647ab) - **feat:** add `ndarray/base/flatten-shape-from` [(#8151)](https://github.com/stdlib-js/stdlib/pull/8151) _(by Muhammad Haris, Athan Reines)_
 -   [`8d55a46`](https://github.com/stdlib-js/stdlib/commit/8d55a4641a5e936d764313ebc470aa2ae38cfd17) - **docs:** update type _(by Athan Reines)_
 -   [`534fbd0`](https://github.com/stdlib-js/stdlib/commit/534fbd0fab785e6e2b439cdf5966f0cbef47f570) - **feat:** add `ndarray/base/shift` [(#8118)](https://github.com/stdlib-js/stdlib/pull/8118) _(by Muhammad Haris, Athan Reines)_
 -   [`95e69dc`](https://github.com/stdlib-js/stdlib/commit/95e69dce83d0cfb84e270e9db302ae35178728bd) - **test:** add tests to `ndarray/some-by` for complete test coverage [(#8125)](https://github.com/stdlib-js/stdlib/pull/8125) _(by Muhammad Haris, Athan Reines)_
