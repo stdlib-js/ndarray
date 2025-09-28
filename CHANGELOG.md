@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-25)
+## Unreleased (2025-09-28)
 
 <section class="features">
 
@@ -596,6 +596,7 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`8d55a46`](https://github.com/stdlib-js/stdlib/commit/8d55a4641a5e936d764313ebc470aa2ae38cfd17) - **docs:** update type _(by Athan Reines)_
 -   [`534fbd0`](https://github.com/stdlib-js/stdlib/commit/534fbd0fab785e6e2b439cdf5966f0cbef47f570) - **feat:** add `ndarray/base/shift` [(#8118)](https://github.com/stdlib-js/stdlib/pull/8118) _(by Muhammad Haris, Athan Reines)_
 -   [`95e69dc`](https://github.com/stdlib-js/stdlib/commit/95e69dce83d0cfb84e270e9db302ae35178728bd) - **test:** add tests to `ndarray/some-by` for complete test coverage [(#8125)](https://github.com/stdlib-js/stdlib/pull/8125) _(by Muhammad Haris, Athan Reines)_
 -   [`b7368a4`](https://github.com/stdlib-js/stdlib/commit/b7368a45d5b0cc0bbdf695291837eee3d726da0a) - **fix:** handle edge case when provided an empty ndarray _(by Athan Reines)_
