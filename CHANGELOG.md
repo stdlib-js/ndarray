@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147)
 -   [`6760298`](https://github.com/stdlib-js/stdlib/commit/6760298d2f7e38a975e2f27b24edb0d258c9c218) - add `ndarray/pop` [(#8145)](https://github.com/stdlib-js/stdlib/pull/8145)
 -   [`4520512`](https://github.com/stdlib-js/stdlib/commit/45205122924bc8f8c38b3552430ef0fabc6647ab) - add `ndarray/base/flatten-shape-from` [(#8151)](https://github.com/stdlib-js/stdlib/pull/8151)
 -   [`534fbd0`](https://github.com/stdlib-js/stdlib/commit/534fbd0fab785e6e2b439cdf5966f0cbef47f570) - add `ndarray/base/shift` [(#8118)](https://github.com/stdlib-js/stdlib/pull/8118)
@@ -598,6 +599,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - **feat:** add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147) _(by Muhammad Haris, Athan Reines)_
 -   [`08a671a`](https://github.com/stdlib-js/stdlib/commit/08a671a9e339db0bfbd5953891c9a9c3e1f5beb2) - **docs:** add note _(by Athan Reines)_
 -   [`e49d1a0`](https://github.com/stdlib-js/stdlib/commit/e49d1a00ad07054f006f0a9a3fd52dbce217ea84) - **docs:** add note _(by Athan Reines)_
 -   [`4583470`](https://github.com/stdlib-js/stdlib/commit/45834700742e84b03646e769e94d498ee66c65b4) - **docs:** add note _(by Athan Reines)_
