@@ -598,6 +598,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`d55cb4b`](https://github.com/stdlib-js/stdlib/commit/d55cb4bbda9f3810f92a2535fdbb60a62c60e161) - **docs:** add missing decimals _(by Athan Reines)_
 -   [`607adbe`](https://github.com/stdlib-js/stdlib/commit/607adbe9aba4c11a689408c62930ca3901db5f7d) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`29d3bbb`](https://github.com/stdlib-js/stdlib/commit/29d3bbb5241884d149b000c3a76d59227686728f) - **chore:** fix C lint errors [(#8157)](https://github.com/stdlib-js/stdlib/pull/8157) _(by GeoDaoyu, Athan Reines)_
 -   [`6760298`](https://github.com/stdlib-js/stdlib/commit/6760298d2f7e38a975e2f27b24edb0d258c9c218) - **feat:** add `ndarray/pop` [(#8145)](https://github.com/stdlib-js/stdlib/pull/8145) _(by Muhammad Haris, Athan Reines)_
