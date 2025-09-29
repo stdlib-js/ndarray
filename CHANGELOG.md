@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-28)
+## Unreleased (2025-09-29)
 
 <section class="features">
 
@@ -597,6 +597,8 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`23d7b87`](https://github.com/stdlib-js/stdlib/commit/23d7b87841cfebba942d5c35728dcd28a8336159) - **docs:** update example _(by Athan Reines)_
+-   [`bf71563`](https://github.com/stdlib-js/stdlib/commit/bf7156340c62ef965aaa6f08bf156d8b414f8e96) - **docs:** update example _(by Athan Reines)_
 -   [`4520512`](https://github.com/stdlib-js/stdlib/commit/45205122924bc8f8c38b3552430ef0fabc6647ab) - **feat:** add `ndarray/base/flatten-shape-from` [(#8151)](https://github.com/stdlib-js/stdlib/pull/8151) _(by Muhammad Haris, Athan Reines)_
 -   [`8d55a46`](https://github.com/stdlib-js/stdlib/commit/8d55a4641a5e936d764313ebc470aa2ae38cfd17) - **docs:** update type _(by Athan Reines)_
 -   [`534fbd0`](https://github.com/stdlib-js/stdlib/commit/534fbd0fab785e6e2b439cdf5966f0cbef47f570) - **feat:** add `ndarray/base/shift` [(#8118)](https://github.com/stdlib-js/stdlib/pull/8118) _(by Muhammad Haris, Athan Reines)_
