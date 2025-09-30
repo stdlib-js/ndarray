@@ -39,7 +39,7 @@ var format = require( '@stdlib/string/format' );
 * @throws {TypeError} first argument must be an ndarray having one or more dimensions
 * @throws {RangeError} dimension index exceeds the number of dimensions
 * @throws {TypeError} options argument must be an object
-* * @throws {TypeError} must provide valid options
+* @throws {TypeError} must provide valid options
 * @returns {Array<ndarray>} a list of ndarray views
 *
 * @example
@@ -83,7 +83,7 @@ function shift( x ) {
 		}
 		if ( hasOwnProp( options, 'dim' ) ) {
 			if ( !isInteger( options.dim ) ) {
-				throw new TypeError( format( 'invalid option. `%s` option must be an integer. Option: `%s`.', 'strict', options.dim ) );
+				throw new TypeError( format( 'invalid option. `%s` option must be an integer. Option: `%s`.', 'dim', options.dim ) );
 			}
 			opts.dim = options.dim;
 		}

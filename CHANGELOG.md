@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-29)
+## Unreleased (2025-09-30)
 
 <section class="features">
 
@@ -599,6 +599,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`5d2dca1`](https://github.com/stdlib-js/stdlib/commit/5d2dca1fb86de3ac7e2b15c56ff948a9969d5abb) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - **feat:** add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147) _(by Muhammad Haris, Athan Reines)_
 -   [`08a671a`](https://github.com/stdlib-js/stdlib/commit/08a671a9e339db0bfbd5953891c9a9c3e1f5beb2) - **docs:** add note _(by Athan Reines)_
 -   [`e49d1a0`](https://github.com/stdlib-js/stdlib/commit/e49d1a00ad07054f006f0a9a3fd52dbce217ea84) - **docs:** add note _(by Athan Reines)_

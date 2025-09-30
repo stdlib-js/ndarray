@@ -60,7 +60,7 @@ var y = shift( x );
 // returns [ <ndarray>, <ndarray> ]
 
 arr = ndarray2array( y[ 0 ] );
-// returns [ [ 2.0], [ 4.0 ], [ 6.0 ] ]
+// returns [ [ 2.0 ], [ 4.0 ], [ 6.0 ] ]
 
 arr = ndarray2array( y[ 1 ] );
 // returns [ [ 1.0 ], [ 3.0 ], [ 5.0 ] ]
