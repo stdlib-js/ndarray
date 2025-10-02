@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186)
 -   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149)
 -   [`53374b7`](https://github.com/stdlib-js/stdlib/commit/53374b70682123e2b0dab22b6f642a544bf31513) - add `ndarray/reverse` [(#8148)](https://github.com/stdlib-js/stdlib/pull/8148)
 -   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147)
@@ -601,6 +602,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - **feat:** add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186) _(by Muhammad Haris, Athan Reines)_
 -   [`bc45275`](https://github.com/stdlib-js/stdlib/commit/bc4527566e313868d308532a06d9257156361e32) - **refactor:** simplify declarations by using generic _(by Athan Reines)_
 -   [`50438e4`](https://github.com/stdlib-js/stdlib/commit/50438e4da3cedc7d964e8b80e4e7c602b9a04f90) - **style:** disable lint rule _(by Athan Reines)_
 -   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - **feat:** add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149) _(by Muhammad Haris, Athan Reines)_
