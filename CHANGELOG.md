@@ -588,9 +588,9 @@
 
 ### Closed Issues
 
-A total of 26 issues were closed in this release:
+A total of 27 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156), [#8159](https://github.com/stdlib-js/stdlib/issues/8159)
 
 </section>
 
@@ -602,6 +602,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`17b3ee2`](https://github.com/stdlib-js/stdlib/commit/17b3ee291d0ff12089dcf3ff881771b41325ff28) - **chore:** fix C lint errors [(#8181)](https://github.com/stdlib-js/stdlib/pull/8181) _(by Piyush Goel, Athan Reines)_
 -   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - **feat:** add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186) _(by Muhammad Haris, Athan Reines)_
 -   [`bc45275`](https://github.com/stdlib-js/stdlib/commit/bc4527566e313868d308532a06d9257156361e32) - **refactor:** simplify declarations by using generic _(by Athan Reines)_
 -   [`50438e4`](https://github.com/stdlib-js/stdlib/commit/50438e4da3cedc7d964e8b80e4e7c602b9a04f90) - **style:** disable lint rule _(by Athan Reines)_
@@ -1709,7 +1710,7 @@ A total of 26 issues were closed in this release:
 
 ### Contributors
 
-A total of 21 people contributed to this release. Thank you to the following contributors:
+A total of 22 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1725,6 +1726,7 @@ A total of 21 people contributed to this release. Thank you to the following con
 -   Muhammad Taaha Tariq
 -   Payal Goswami
 -   Philipp Burckhardt
+-   Piyush Goel
 -   Pravesh Kunwar
 -   Sai Avinash
 -   Tushar Bhardwaj
