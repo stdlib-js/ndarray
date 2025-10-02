@@ -601,6 +601,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`bc45275`](https://github.com/stdlib-js/stdlib/commit/bc4527566e313868d308532a06d9257156361e32) - **refactor:** simplify declarations by using generic _(by Athan Reines)_
 -   [`50438e4`](https://github.com/stdlib-js/stdlib/commit/50438e4da3cedc7d964e8b80e4e7c602b9a04f90) - **style:** disable lint rule _(by Athan Reines)_
 -   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - **feat:** add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149) _(by Muhammad Haris, Athan Reines)_
 -   [`53374b7`](https://github.com/stdlib-js/stdlib/commit/53374b70682123e2b0dab22b6f642a544bf31513) - **feat:** add `ndarray/reverse` [(#8148)](https://github.com/stdlib-js/stdlib/pull/8148) _(by Muhammad Haris, Athan Reines)_
