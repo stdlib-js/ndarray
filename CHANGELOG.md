@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-30)
+## Unreleased (2025-10-02)
 
 <section class="features">
 
 ### Features
 
+-   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149)
 -   [`53374b7`](https://github.com/stdlib-js/stdlib/commit/53374b70682123e2b0dab22b6f642a544bf31513) - add `ndarray/reverse` [(#8148)](https://github.com/stdlib-js/stdlib/pull/8148)
 -   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147)
 -   [`6760298`](https://github.com/stdlib-js/stdlib/commit/6760298d2f7e38a975e2f27b24edb0d258c9c218) - add `ndarray/pop` [(#8145)](https://github.com/stdlib-js/stdlib/pull/8145)
@@ -600,6 +601,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - **feat:** add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149) _(by Muhammad Haris, Athan Reines)_
 -   [`53374b7`](https://github.com/stdlib-js/stdlib/commit/53374b70682123e2b0dab22b6f642a544bf31513) - **feat:** add `ndarray/reverse` [(#8148)](https://github.com/stdlib-js/stdlib/pull/8148) _(by Muhammad Haris, Athan Reines)_
 -   [`5d2dca1`](https://github.com/stdlib-js/stdlib/commit/5d2dca1fb86de3ac7e2b15c56ff948a9969d5abb) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`29cde0f`](https://github.com/stdlib-js/stdlib/commit/29cde0f6f44f4a6a4a70ff59b4ca2d2aab0ab4aa) - **feat:** add `ndarray/shift` [(#8147)](https://github.com/stdlib-js/stdlib/pull/8147) _(by Muhammad Haris, Athan Reines)_
