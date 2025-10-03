@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153)
 -   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186)
 -   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149)
 -   [`53374b7`](https://github.com/stdlib-js/stdlib/commit/53374b70682123e2b0dab22b6f642a544bf31513) - add `ndarray/reverse` [(#8148)](https://github.com/stdlib-js/stdlib/pull/8148)
@@ -602,6 +603,7 @@ A total of 27 issues were closed in this release:
 
 <details>
 
+-   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - **feat:** add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153) _(by Muhammad Haris, Athan Reines)_
 -   [`06be0fa`](https://github.com/stdlib-js/stdlib/commit/06be0fad3ca61038f88e603e39e33504be481ed8) - **refactor:** use base constructor and fix comments _(by Athan Reines)_
 -   [`6c6b466`](https://github.com/stdlib-js/stdlib/commit/6c6b466ce5d2dff9110a56322009f3d7f1944f8b) - **refactor:** use base constructor _(by Athan Reines)_
 -   [`9889c81`](https://github.com/stdlib-js/stdlib/commit/9889c81a20c4f0d6115dcf2f65a1bf9f1072cf26) - **refactor:** remove unnecessary variable _(by Athan Reines)_
