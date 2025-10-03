@@ -589,9 +589,9 @@
 
 ### Closed Issues
 
-A total of 27 issues were closed in this release:
+A total of 28 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156), [#8159](https://github.com/stdlib-js/stdlib/issues/8159)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156), [#8159](https://github.com/stdlib-js/stdlib/issues/8159), [#8189](https://github.com/stdlib-js/stdlib/issues/8189)
 
 </section>
 
@@ -603,6 +603,7 @@ A total of 27 issues were closed in this release:
 
 <details>
 
+-   [`88af477`](https://github.com/stdlib-js/stdlib/commit/88af477a176c4eac745a0324892324611de6d494) - **chore:** address Javascript lint errors [(#8193)](https://github.com/stdlib-js/stdlib/pull/8193) _(by Shubham, Athan Reines)_
 -   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - **feat:** add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153) _(by Muhammad Haris, Athan Reines)_
 -   [`06be0fa`](https://github.com/stdlib-js/stdlib/commit/06be0fad3ca61038f88e603e39e33504be481ed8) - **refactor:** use base constructor and fix comments _(by Athan Reines)_
 -   [`6c6b466`](https://github.com/stdlib-js/stdlib/commit/6c6b466ce5d2dff9110a56322009f3d7f1944f8b) - **refactor:** use base constructor _(by Athan Reines)_
@@ -1717,7 +1718,7 @@ A total of 27 issues were closed in this release:
 
 ### Contributors
 
-A total of 22 people contributed to this release. Thank you to the following contributors:
+A total of 23 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1736,6 +1737,7 @@ A total of 22 people contributed to this release. Thank you to the following con
 -   Piyush Goel
 -   Pravesh Kunwar
 -   Sai Avinash
+-   Shubham
 -   Tushar Bhardwaj
 -   devshree-bhati
 -   ditsu
