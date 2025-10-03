@@ -290,7 +290,7 @@ function flatten( x, options ) {
 	var y;
 
 	if ( !isndarrayLike( x ) ) {
-		throw new TypeError( format( 'invalid argument. First argument must be an ndarray-like object. Value: `%s`.', x ) );
+		throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
 	}
 	nargs = arguments.length;
 	xsh = getShape( x );
