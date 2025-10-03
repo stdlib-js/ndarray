@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-02)
+## Unreleased (2025-10-03)
 
 <section class="features">
 
@@ -602,6 +602,7 @@ A total of 27 issues were closed in this release:
 
 <details>
 
+-   [`157f4f4`](https://github.com/stdlib-js/stdlib/commit/157f4f4cd7cc3ce680dbfb538b3d8cbcfe5852dd) - **docs:** update comments _(by Athan Reines)_
 -   [`17b3ee2`](https://github.com/stdlib-js/stdlib/commit/17b3ee291d0ff12089dcf3ff881771b41325ff28) - **chore:** fix C lint errors [(#8181)](https://github.com/stdlib-js/stdlib/pull/8181) _(by Piyush Goel, Athan Reines)_
 -   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - **feat:** add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186) _(by Muhammad Haris, Athan Reines)_
 -   [`bc45275`](https://github.com/stdlib-js/stdlib/commit/bc4527566e313868d308532a06d9257156361e32) - **refactor:** simplify declarations by using generic _(by Athan Reines)_

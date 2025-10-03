@@ -349,7 +349,7 @@ function flatten( x, options ) {
 		'dtype': opts.dtype
 	});
 
-	// Create a view on top of output ndarray having the same shape as the input ndarray:
+	// Create a view on top of the output ndarray having the same shape as the input ndarray:
 	st = ( xsh.length > 0 ) ? shape2strides( xsh, opts.order ) : [ 0 ];
 	view = ndarray( opts.dtype, getData( y ), xsh, st, 0, opts.order );
 
