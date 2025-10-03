@@ -602,6 +602,8 @@ A total of 27 issues were closed in this release:
 
 <details>
 
+-   [`06be0fa`](https://github.com/stdlib-js/stdlib/commit/06be0fad3ca61038f88e603e39e33504be481ed8) - **refactor:** use base constructor and fix comments _(by Athan Reines)_
+-   [`6c6b466`](https://github.com/stdlib-js/stdlib/commit/6c6b466ce5d2dff9110a56322009f3d7f1944f8b) - **refactor:** use base constructor _(by Athan Reines)_
 -   [`9889c81`](https://github.com/stdlib-js/stdlib/commit/9889c81a20c4f0d6115dcf2f65a1bf9f1072cf26) - **refactor:** remove unnecessary variable _(by Athan Reines)_
 -   [`0023e16`](https://github.com/stdlib-js/stdlib/commit/0023e164329d4c737ab86ea2654adec96a217f86) - **refactor:** update error message _(by Athan Reines)_
 -   [`157f4f4`](https://github.com/stdlib-js/stdlib/commit/157f4f4cd7cc3ce680dbfb538b3d8cbcfe5852dd) - **docs:** update comments _(by Athan Reines)_

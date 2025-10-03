@@ -34,8 +34,8 @@ var shape2strides = require( './../../base/shape2strides' );
 var strides2order = require( './../../base/strides2order' );
 var flattenShape = require( './../../base/flatten-shape' );
 var assign = require( './../../base/assign' );
+var ndarray = require( './../../base/ctor' );
 var emptyLike = require( './../../empty-like' );
-var ndarray = require( './../../ctor' );
 var format = require( '@stdlib/string/format' );
 
 
@@ -349,7 +349,7 @@ function flatten( x, options ) {
 
 	// Create a view on top of the output ndarray having the same shape as the input ndarray:
 	st = ( xsh.length > 0 ) ? shape2strides( xsh, opts.order ) : [ 0 ];
-	view = ndarray( opts.dtype, getData( y ), xsh, st, 0, opts.order );
+	view = new ndarray( opts.dtype, getData( y ), xsh, st, 0, opts.order );
 
 	// Copy elements to the output ndarray:
 	assign( [ x, view ] );
