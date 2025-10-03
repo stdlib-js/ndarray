@@ -281,7 +281,6 @@ var COL_MAJOR = 'column-major';
 * // returns [ 6.0, 5.0, 4.0, 3.0, 2.0, 1.0 ]
 */
 function flatten( x, options ) {
-	var nargs;
 	var view;
 	var opts;
 	var xsh;
@@ -292,7 +291,6 @@ function flatten( x, options ) {
 	if ( !isndarrayLike( x ) ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an ndarray. Value: `%s`.', x ) );
 	}
-	nargs = arguments.length;
 	xsh = getShape( x );
 
 	// Define default options:
@@ -303,7 +301,7 @@ function flatten( x, options ) {
 	};
 
 	// Resolve function options...
-	if ( nargs > 1 ) {
+	if ( arguments.length > 1 ) {
 		if ( !isPlainObject( options ) ) {
 			throw new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
 		}
