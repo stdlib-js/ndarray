@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-03)
+## Unreleased (2025-10-05)
 
 <section class="features">
 
@@ -603,6 +603,7 @@ A total of 28 issues were closed in this release:
 
 <details>
 
+-   [`72317f7`](https://github.com/stdlib-js/stdlib/commit/72317f741a54745b3025f656e124c272e8bdf344) - **docs:** update related packages sections [(#8203)](https://github.com/stdlib-js/stdlib/pull/8203) _(by stdlib-bot)_
 -   [`88af477`](https://github.com/stdlib-js/stdlib/commit/88af477a176c4eac745a0324892324611de6d494) - **chore:** address Javascript lint errors [(#8193)](https://github.com/stdlib-js/stdlib/pull/8193) _(by Shubham, Athan Reines)_
 -   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - **feat:** add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153) _(by Muhammad Haris, Athan Reines)_
 -   [`06be0fa`](https://github.com/stdlib-js/stdlib/commit/06be0fad3ca61038f88e603e39e33504be481ed8) - **refactor:** use base constructor and fix comments _(by Athan Reines)_
