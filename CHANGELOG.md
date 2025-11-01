@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653)
 -   [`f8c51b3`](https://github.com/stdlib-js/stdlib/commit/f8c51b3a7653d158c23babe3b0986bb20b8b4029) - add `ndarray/find` [(#4398)](https://github.com/stdlib-js/stdlib/pull/4398)
 -   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329)
 -   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153)
@@ -609,6 +610,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - **feat:** add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653) _(by Muhammad Haris, Athan Reines)_
 -   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - **fix:** address off-by-one bug _(by Athan Reines)_
 -   [`95313b8`](https://github.com/stdlib-js/stdlib/commit/95313b80fc669b87cf31298db9e03ff25cfdd312) - **fix:** address off-by-one bug _(by Athan Reines)_
 -   [`c52126b`](https://github.com/stdlib-js/stdlib/commit/c52126b350f55f8d0b6a2622e367acdad9920dd6) - **fix:** address off-by-one bug _(by Athan Reines)_
