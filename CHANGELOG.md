@@ -604,6 +604,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`4667d97`](https://github.com/stdlib-js/stdlib/commit/4667d97da041e8685f8f8c25a5345fa289dbaf9c) - **docs:** update type _(by Athan Reines)_
 -   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - **feat:** add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329) _(by Muhammad Haris, Athan Reines)_
 -   [`4b9391c`](https://github.com/stdlib-js/stdlib/commit/4b9391cd318c753562d9c670fe2946e012fb15cb) - **chore:** fix C lint errors [(#8309)](https://github.com/stdlib-js/stdlib/pull/8309) _(by Navyansh Kesarwani, Athan Reines)_
 -   [`a0de0e6`](https://github.com/stdlib-js/stdlib/commit/a0de0e64cebbdca08b7625a8357902c08268e92e) - **chore:** fix JavaScript lint errors [(#8226)](https://github.com/stdlib-js/stdlib/pull/8226) _(by Bhupesh Kumar, Athan Reines)_
