@@ -442,6 +442,10 @@
 
 ### Bug Fixes
 
+-   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - address off-by-one bug
+-   [`95313b8`](https://github.com/stdlib-js/stdlib/commit/95313b80fc669b87cf31298db9e03ff25cfdd312) - address off-by-one bug
+-   [`c52126b`](https://github.com/stdlib-js/stdlib/commit/c52126b350f55f8d0b6a2622e367acdad9920dd6) - address off-by-one bug
+-   [`12d0130`](https://github.com/stdlib-js/stdlib/commit/12d013004ea30a7d6eaf515df4875eee42feee89) - address off-by-one bug
 -   [`b7368a4`](https://github.com/stdlib-js/stdlib/commit/b7368a45d5b0cc0bbdf695291837eee3d726da0a) - handle edge case when provided an empty ndarray
 -   [`f84c1a6`](https://github.com/stdlib-js/stdlib/commit/f84c1a6ecbaf68b7dfbeef4576111bc277885d1a) - remove unused parameter
 -   [`2848c77`](https://github.com/stdlib-js/stdlib/commit/2848c77bb0cf8fd2fc78fe72095a1aad2e545a36) - improve type specificity, remove unreachable path, and fix docs
@@ -605,6 +609,10 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - **fix:** address off-by-one bug _(by Athan Reines)_
+-   [`95313b8`](https://github.com/stdlib-js/stdlib/commit/95313b80fc669b87cf31298db9e03ff25cfdd312) - **fix:** address off-by-one bug _(by Athan Reines)_
+-   [`c52126b`](https://github.com/stdlib-js/stdlib/commit/c52126b350f55f8d0b6a2622e367acdad9920dd6) - **fix:** address off-by-one bug _(by Athan Reines)_
+-   [`12d0130`](https://github.com/stdlib-js/stdlib/commit/12d013004ea30a7d6eaf515df4875eee42feee89) - **fix:** address off-by-one bug _(by Athan Reines)_
 -   [`f8c51b3`](https://github.com/stdlib-js/stdlib/commit/f8c51b3a7653d158c23babe3b0986bb20b8b4029) - **feat:** add `ndarray/find` [(#4398)](https://github.com/stdlib-js/stdlib/pull/4398) _(by Gururaj Gurram, Athan Reines, stdlib-bot, Muhammad Haris)_
 -   [`4667d97`](https://github.com/stdlib-js/stdlib/commit/4667d97da041e8685f8f8c25a5345fa289dbaf9c) - **docs:** update type _(by Athan Reines)_
 -   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - **feat:** add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329) _(by Muhammad Haris, Athan Reines)_
