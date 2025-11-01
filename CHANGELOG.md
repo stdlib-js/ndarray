@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-30)
+## Unreleased (2025-11-01)
 
 <section class="features">
 
 ### Features
 
+-   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329)
 -   [`9d84704`](https://github.com/stdlib-js/stdlib/commit/9d8470471bc66b3a98da174b72a3ab4f9302744f) - add `ndarray/flatten-from` [(#8153)](https://github.com/stdlib-js/stdlib/pull/8153)
 -   [`cb7cf8c`](https://github.com/stdlib-js/stdlib/commit/cb7cf8ce407731354c5b2861ffa659c8adbc3149) - add `ndarray/reverse-dimension` [(#8186)](https://github.com/stdlib-js/stdlib/pull/8186)
 -   [`92b9d26`](https://github.com/stdlib-js/stdlib/commit/92b9d26a38360ed2b4b7a8f1fe21b31efc9192c8) - add `ndarray/to-reversed` [(#8149)](https://github.com/stdlib-js/stdlib/pull/8149)
@@ -603,6 +604,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - **feat:** add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329) _(by Muhammad Haris, Athan Reines)_
 -   [`4b9391c`](https://github.com/stdlib-js/stdlib/commit/4b9391cd318c753562d9c670fe2946e012fb15cb) - **chore:** fix C lint errors [(#8309)](https://github.com/stdlib-js/stdlib/pull/8309) _(by Navyansh Kesarwani, Athan Reines)_
 -   [`a0de0e6`](https://github.com/stdlib-js/stdlib/commit/a0de0e64cebbdca08b7625a8357902c08268e92e) - **chore:** fix JavaScript lint errors [(#8226)](https://github.com/stdlib-js/stdlib/pull/8226) _(by Bhupesh Kumar, Athan Reines)_
 -   [`0ccda74`](https://github.com/stdlib-js/stdlib/commit/0ccda74155ae15d3258c06cef82cbd08f5f3a730) - **chore:** fix C lint errors [(#8199)](https://github.com/stdlib-js/stdlib/pull/8199) _(by Geo Daoyu, Athan Reines)_
