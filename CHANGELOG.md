@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-02)
+## Unreleased (2025-11-03)
 
 <section class="features">
 
@@ -610,6 +610,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`36fb4b9`](https://github.com/stdlib-js/stdlib/commit/36fb4b93d268a41fc21accf0af15fc815b00813e) - **docs:** update Markdown stdlib package URLs [(#8347)](https://github.com/stdlib-js/stdlib/pull/8347) _(by stdlib-bot)_
 -   [`e07ebc2`](https://github.com/stdlib-js/stdlib/commit/e07ebc2ed009ef1fcf98ad476c6077c3a02a782f) - **docs:** update examples _(by Athan Reines)_
 -   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - **feat:** add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653) _(by Muhammad Haris, Athan Reines)_
 -   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - **fix:** address off-by-one bug _(by Athan Reines)_
