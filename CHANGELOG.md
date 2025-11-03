@@ -611,6 +611,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`542bbf7`](https://github.com/stdlib-js/stdlib/commit/542bbf774737915ba7cd359d904e007239e397f6) - **refactor:** pass ndarray view to internal function _(by Athan Reines)_
 -   [`1a6e701`](https://github.com/stdlib-js/stdlib/commit/1a6e701ed9749678827c69b83d4780bd96d78015) - **feat:** add `ndarray/concat` [(#7969)](https://github.com/stdlib-js/stdlib/pull/7969) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`36fb4b9`](https://github.com/stdlib-js/stdlib/commit/36fb4b93d268a41fc21accf0af15fc815b00813e) - **docs:** update Markdown stdlib package URLs [(#8347)](https://github.com/stdlib-js/stdlib/pull/8347) _(by stdlib-bot)_
 -   [`e07ebc2`](https://github.com/stdlib-js/stdlib/commit/e07ebc2ed009ef1fcf98ad476c6077c3a02a782f) - **docs:** update examples _(by Athan Reines)_
