@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1a6e701`](https://github.com/stdlib-js/stdlib/commit/1a6e701ed9749678827c69b83d4780bd96d78015) - add `ndarray/concat` [(#7969)](https://github.com/stdlib-js/stdlib/pull/7969)
 -   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653)
 -   [`f8c51b3`](https://github.com/stdlib-js/stdlib/commit/f8c51b3a7653d158c23babe3b0986bb20b8b4029) - add `ndarray/find` [(#4398)](https://github.com/stdlib-js/stdlib/pull/4398)
 -   [`4b8a736`](https://github.com/stdlib-js/stdlib/commit/4b8a736be3db63bd001c4b556bf69f60045a9df2) - add `ndarray/base/copy` [(#8329)](https://github.com/stdlib-js/stdlib/pull/8329)
@@ -610,6 +611,7 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`1a6e701`](https://github.com/stdlib-js/stdlib/commit/1a6e701ed9749678827c69b83d4780bd96d78015) - **feat:** add `ndarray/concat` [(#7969)](https://github.com/stdlib-js/stdlib/pull/7969) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`36fb4b9`](https://github.com/stdlib-js/stdlib/commit/36fb4b93d268a41fc21accf0af15fc815b00813e) - **docs:** update Markdown stdlib package URLs [(#8347)](https://github.com/stdlib-js/stdlib/pull/8347) _(by stdlib-bot)_
 -   [`e07ebc2`](https://github.com/stdlib-js/stdlib/commit/e07ebc2ed009ef1fcf98ad476c6077c3a02a782f) - **docs:** update examples _(by Athan Reines)_
 -   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - **feat:** add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653) _(by Muhammad Haris, Athan Reines)_
