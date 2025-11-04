@@ -266,6 +266,15 @@ setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
 setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
+* @name copy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/copy}
+*/
+setReadOnly( ns, 'copy', require( './../../base/copy' ) );
+
+/**
 * @name countFalsy
 * @memberof ns
 * @readonly
@@ -320,6 +329,15 @@ setReadOnly( ns, 'data', require( './../../base/data-buffer' ) );
 setReadOnly( ns, 'dtype', require( './../../base/dtype' ) );
 
 /**
+* @name dtypeAlignment
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-alignment}
+*/
+setReadOnly( ns, 'dtypeAlignment', require( './../../base/dtype-alignment' ) );
+
+/**
 * @name dtypeChar
 * @memberof ns
 * @readonly
@@ -327,6 +345,15 @@ setReadOnly( ns, 'dtype', require( './../../base/dtype' ) );
 * @see {@link module:@stdlib/ndarray/base/dtype-char}
 */
 setReadOnly( ns, 'dtypeChar', require( './../../base/dtype-char' ) );
+
+/**
+* @name dtypeChars
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtype-chars}
+*/
+setReadOnly( ns, 'dtypeChars', require( './../../base/dtype-chars' ) );
 
 /**
 * @name dtypeDesc
@@ -525,6 +552,15 @@ setReadOnly( ns, 'flags', require( './../../base/flags' ) );
 * @see {@link module:@stdlib/ndarray/base/flatten-shape}
 */
 setReadOnly( ns, 'flattenShape', require( './../../base/flatten-shape' ) );
+
+/**
+* @name flattenShapeFrom
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/flatten-shape-from}
+*/
+setReadOnly( ns, 'flattenShapeFrom', require( './../../base/flatten-shape-from' ) );
 
 /**
 * @name fliplr
@@ -815,6 +851,15 @@ setReadOnly( ns, 'nullaryStrided1d', require( './../../base/nullary-strided1d' )
 setReadOnly( ns, 'nullaryStrided1dDispatch', require( './../../base/nullary-strided1d-dispatch' ) );
 
 /**
+* @name nullaryStrided1dDispatchFactory
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nullary-strided1d-dispatch-factory}
+*/
+setReadOnly( ns, 'nullaryStrided1dDispatchFactory', require( './../../base/nullary-strided1d-dispatch-factory' ) );
+
+/**
 * @name nullaryBlockSize
 * @memberof ns
 * @readonly
@@ -905,6 +950,15 @@ setReadOnly( ns, 'outputPolicyResolveStr', require( './../../base/output-policy-
 setReadOnly( ns, 'outputPolicyStr2Enum', require( './../../base/output-policy-str2enum' ) );
 
 /**
+* @name pop
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/pop}
+*/
+setReadOnly( ns, 'pop', require( './../../base/pop' ) );
+
+/**
 * @name prependSingletonDimensions
 * @memberof ns
 * @readonly
@@ -977,6 +1031,15 @@ setReadOnly( ns, 'shape', require( './../../base/shape' ) );
 setReadOnly( ns, 'shape2strides', require( './../../base/shape2strides' ) );
 
 /**
+* @name shift
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/shift}
+*/
+setReadOnly( ns, 'shift', require( './../../base/shift' ) );
+
+/**
 * @name singletonDimensions
 * @memberof ns
 * @readonly
@@ -1047,6 +1110,15 @@ setReadOnly( ns, 'sliceFrom', require( './../../base/slice-from' ) );
 * @see {@link module:@stdlib/ndarray/base/slice-to}
 */
 setReadOnly( ns, 'sliceTo', require( './../../base/slice-to' ) );
+
+/**
+* @name some
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/some}
+*/
+setReadOnly( ns, 'some', require( './../../base/some' ) );
 
 /**
 * @name someBy

@@ -4,12 +4,21 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-03)
+## Unreleased (2025-11-04)
 
 <section class="features">
 
 ### Features
 
+-   [`a07dba7`](https://github.com/stdlib-js/stdlib/commit/a07dba7671e5c34b32277a26e8f2aa014f0868b4) - add `nullaryStrided1dDispatchFactory` to namespace
+-   [`c2512eb`](https://github.com/stdlib-js/stdlib/commit/c2512eb60c1fea33fa164753e784a9ab3bd57451) - add `some` to namespace
+-   [`8a3e72b`](https://github.com/stdlib-js/stdlib/commit/8a3e72b3478beaf05ef0f18326c6403debc51827) - add `shift` to namespace
+-   [`8932249`](https://github.com/stdlib-js/stdlib/commit/8932249481c46eedb61ffc6e822560824ce26060) - add `pop` to namespace
+-   [`c2ec9e2`](https://github.com/stdlib-js/stdlib/commit/c2ec9e21057480aa045e006da6c78babbeb29eee) - add `flattenShapeFrom` to namespace
+-   [`136a4f7`](https://github.com/stdlib-js/stdlib/commit/136a4f78781b449c5c333f79768f6452c3084163) - add `dtypeAlignment` to namespace
+-   [`9125dc2`](https://github.com/stdlib-js/stdlib/commit/9125dc20850e80b80ef9afbd6431b932b2924cef) - add `copy` to namespace
+-   [`2b62970`](https://github.com/stdlib-js/stdlib/commit/2b62970851dfbb69e2c2d94ecb098fa741bc6617) - add `dtypeChars` to namespace
+-   [`d5cb7ec`](https://github.com/stdlib-js/stdlib/commit/d5cb7ec32e06766b70f0c057472977a01c6643f1) - add `ndarray/base/dtype-chars`
 -   [`1a6e701`](https://github.com/stdlib-js/stdlib/commit/1a6e701ed9749678827c69b83d4780bd96d78015) - add `ndarray/concat` [(#7969)](https://github.com/stdlib-js/stdlib/pull/7969)
 -   [`dcafcbc`](https://github.com/stdlib-js/stdlib/commit/dcafcbc6ddad41e4cd12d46dad426fe80bf7eab3) - add `ndarray/base/some` [(#7653)](https://github.com/stdlib-js/stdlib/pull/7653)
 -   [`f8c51b3`](https://github.com/stdlib-js/stdlib/commit/f8c51b3a7653d158c23babe3b0986bb20b8b4029) - add `ndarray/find` [(#4398)](https://github.com/stdlib-js/stdlib/pull/4398)
@@ -444,6 +453,7 @@
 
 ### Bug Fixes
 
+-   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - address copy-paste mistake
 -   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - address off-by-one bug
 -   [`95313b8`](https://github.com/stdlib-js/stdlib/commit/95313b80fc669b87cf31298db9e03ff25cfdd312) - address off-by-one bug
 -   [`c52126b`](https://github.com/stdlib-js/stdlib/commit/c52126b350f55f8d0b6a2622e367acdad9920dd6) - address off-by-one bug
@@ -611,6 +621,16 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - **fix:** address copy-paste mistake _(by Athan Reines)_
+-   [`a07dba7`](https://github.com/stdlib-js/stdlib/commit/a07dba7671e5c34b32277a26e8f2aa014f0868b4) - **feat:** add `nullaryStrided1dDispatchFactory` to namespace _(by Athan Reines)_
+-   [`c2512eb`](https://github.com/stdlib-js/stdlib/commit/c2512eb60c1fea33fa164753e784a9ab3bd57451) - **feat:** add `some` to namespace _(by Athan Reines)_
+-   [`8a3e72b`](https://github.com/stdlib-js/stdlib/commit/8a3e72b3478beaf05ef0f18326c6403debc51827) - **feat:** add `shift` to namespace _(by Athan Reines)_
+-   [`8932249`](https://github.com/stdlib-js/stdlib/commit/8932249481c46eedb61ffc6e822560824ce26060) - **feat:** add `pop` to namespace _(by Athan Reines)_
+-   [`c2ec9e2`](https://github.com/stdlib-js/stdlib/commit/c2ec9e21057480aa045e006da6c78babbeb29eee) - **feat:** add `flattenShapeFrom` to namespace _(by Athan Reines)_
+-   [`136a4f7`](https://github.com/stdlib-js/stdlib/commit/136a4f78781b449c5c333f79768f6452c3084163) - **feat:** add `dtypeAlignment` to namespace _(by Athan Reines)_
+-   [`9125dc2`](https://github.com/stdlib-js/stdlib/commit/9125dc20850e80b80ef9afbd6431b932b2924cef) - **feat:** add `copy` to namespace _(by Athan Reines)_
+-   [`2b62970`](https://github.com/stdlib-js/stdlib/commit/2b62970851dfbb69e2c2d94ecb098fa741bc6617) - **feat:** add `dtypeChars` to namespace _(by Athan Reines)_
+-   [`d5cb7ec`](https://github.com/stdlib-js/stdlib/commit/d5cb7ec32e06766b70f0c057472977a01c6643f1) - **feat:** add `ndarray/base/dtype-chars` _(by Athan Reines)_
 -   [`542bbf7`](https://github.com/stdlib-js/stdlib/commit/542bbf774737915ba7cd359d904e007239e397f6) - **refactor:** pass ndarray view to internal function _(by Athan Reines)_
 -   [`1a6e701`](https://github.com/stdlib-js/stdlib/commit/1a6e701ed9749678827c69b83d4780bd96d78015) - **feat:** add `ndarray/concat` [(#7969)](https://github.com/stdlib-js/stdlib/pull/7969) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`36fb4b9`](https://github.com/stdlib-js/stdlib/commit/36fb4b93d268a41fc21accf0af15fc815b00813e) - **docs:** update Markdown stdlib package URLs [(#8347)](https://github.com/stdlib-js/stdlib/pull/8347) _(by stdlib-bot)_
