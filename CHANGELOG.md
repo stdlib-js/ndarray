@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`cad6845`](https://github.com/stdlib-js/stdlib/commit/cad68452e8d2a52ebe1ebfd74117d98197a4a568) - add `isComplexFloatingPointDataTypeChar` to namespace
+-   [`b8c50f8`](https://github.com/stdlib-js/stdlib/commit/b8c50f8cb3942eeb670d144cb4089ff30ed7370b) - add `ndarray/base/assert/is-complex-floating-point-data-type-char`
 -   [`a07dba7`](https://github.com/stdlib-js/stdlib/commit/a07dba7671e5c34b32277a26e8f2aa014f0868b4) - add `nullaryStrided1dDispatchFactory` to namespace
 -   [`c2512eb`](https://github.com/stdlib-js/stdlib/commit/c2512eb60c1fea33fa164753e784a9ab3bd57451) - add `some` to namespace
 -   [`8a3e72b`](https://github.com/stdlib-js/stdlib/commit/8a3e72b3478beaf05ef0f18326c6403debc51827) - add `shift` to namespace
@@ -621,6 +623,8 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`cad6845`](https://github.com/stdlib-js/stdlib/commit/cad68452e8d2a52ebe1ebfd74117d98197a4a568) - **feat:** add `isComplexFloatingPointDataTypeChar` to namespace _(by Athan Reines)_
+-   [`b8c50f8`](https://github.com/stdlib-js/stdlib/commit/b8c50f8cb3942eeb670d144cb4089ff30ed7370b) - **feat:** add `ndarray/base/assert/is-complex-floating-point-data-type-char` _(by Athan Reines)_
 -   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - **fix:** address copy-paste mistake _(by Athan Reines)_
 -   [`a07dba7`](https://github.com/stdlib-js/stdlib/commit/a07dba7671e5c34b32277a26e8f2aa014f0868b4) - **feat:** add `nullaryStrided1dDispatchFactory` to namespace _(by Athan Reines)_
 -   [`c2512eb`](https://github.com/stdlib-js/stdlib/commit/c2512eb60c1fea33fa164753e784a9ab3bd57451) - **feat:** add `some` to namespace _(by Athan Reines)_

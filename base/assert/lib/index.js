@@ -136,6 +136,15 @@ setReadOnly( ns, 'isColumnMajorString', require( './../../../base/assert/is-colu
 setReadOnly( ns, 'isComplexFloatingPointDataType', require( './../../../base/assert/is-complex-floating-point-data-type' ) );
 
 /**
+* @name isComplexFloatingPointDataTypeChar
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-complex-floating-point-data-type-char}
+*/
+setReadOnly( ns, 'isComplexFloatingPointDataTypeChar', require( './../../../base/assert/is-complex-floating-point-data-type-char' ) );
+
+/**
 * @name isContiguous
 * @memberof ns
 * @readonly
