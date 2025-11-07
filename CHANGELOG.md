@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-04)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
@@ -455,6 +455,7 @@
 
 ### Bug Fixes
 
+-   [`97fb507`](https://github.com/stdlib-js/stdlib/commit/97fb507addda8bf32be3a3f376d387e528672149) - handle mostly safe casts and refactor loop generation
 -   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - address copy-paste mistake
 -   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - address off-by-one bug
 -   [`95313b8`](https://github.com/stdlib-js/stdlib/commit/95313b80fc669b87cf31298db9e03ff25cfdd312) - address off-by-one bug
@@ -623,6 +624,8 @@ A total of 31 issues were closed in this release:
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
+-   [`97fb507`](https://github.com/stdlib-js/stdlib/commit/97fb507addda8bf32be3a3f376d387e528672149) - **fix:** handle mostly safe casts and refactor loop generation _(by Athan Reines)_
 -   [`cad6845`](https://github.com/stdlib-js/stdlib/commit/cad68452e8d2a52ebe1ebfd74117d98197a4a568) - **feat:** add `isComplexFloatingPointDataTypeChar` to namespace _(by Athan Reines)_
 -   [`b8c50f8`](https://github.com/stdlib-js/stdlib/commit/b8c50f8cb3942eeb670d144cb4089ff30ed7370b) - **feat:** add `ndarray/base/assert/is-complex-floating-point-data-type-char` _(by Athan Reines)_
 -   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - **fix:** address copy-paste mistake _(by Athan Reines)_

@@ -114,6 +114,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`dataBuffer( x )`][@stdlib/ndarray/data-buffer]</span><span class="delimiter">: </span><span class="description">return the underlying data buffer of a provided ndarray.</span>
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
+-   <span class="signature">[`DataType( value[, options] )`][@stdlib/ndarray/dtype-ctor]</span><span class="delimiter">: </span><span class="description">data type constructor.</span>
 -   <span class="signature">[`dtype( x )`][@stdlib/ndarray/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of a provided ndarray.</span>
 -   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
@@ -121,11 +122,14 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`every( x[, options] )`][@stdlib/ndarray/every]</span><span class="delimiter">: </span><span class="description">test whether every element along one or more `ndarray` dimensions is truthy.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`fillBy( x, fcn[, thisArg] )`][@stdlib/ndarray/fill-by]</span><span class="delimiter">: </span><span class="description">fill an input ndarray according to a callback function.</span>
+-   <span class="signature">[`fillSlice( x, value, ...s[, options] )`][@stdlib/ndarray/fill-slice]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` view with a specified value.</span>
 -   <span class="signature">[`fill( x, value )`][@stdlib/ndarray/fill]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` with a specified value.</span>
 -   <span class="signature">[`filterMap( x[, options], fcn[, thisArg] )`][@stdlib/ndarray/filter-map]</span><span class="delimiter">: </span><span class="description">filter and map elements in an input ndarray to elements in a new output ndarray according to a callback function.</span>
 -   <span class="signature">[`filter( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/filter]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`flag( x, name )`][@stdlib/ndarray/flag]</span><span class="delimiter">: </span><span class="description">return a specified flag for a provided ndarray.</span>
 -   <span class="signature">[`flags( x )`][@stdlib/ndarray/flags]</span><span class="delimiter">: </span><span class="description">return the flags of a provided ndarray.</span>
+-   <span class="signature">[`flattenBy( x[, options], fcn[, thisArg] )`][@stdlib/ndarray/flatten-by]</span><span class="delimiter">: </span><span class="description">flatten an ndarray according to a callback function.</span>
+-   <span class="signature">[`flatten( x[, options] )`][@stdlib/ndarray/flatten]</span><span class="delimiter">: </span><span class="description">return a flattened copy of an input ndarray.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`includes( x, searchElement[, options] )`][@stdlib/ndarray/includes]</span><span class="delimiter">: </span><span class="description">test whether an `ndarray` contains a specified value along one or more dimensions.</span>
@@ -167,6 +171,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 -   <span class="signature">[`vector`][@stdlib/ndarray/vector]</span><span class="delimiter">: </span><span class="description">vector constructors and associated utilities.</span>
+-   <span class="signature">[`with( x, indices, value )`][@stdlib/ndarray/with]</span><span class="delimiter">: </span><span class="description">return a new ndarray with the element at a specified index replaced by a provided value.</span>
 -   <span class="signature">[`zerosLike( x[, options] )`][@stdlib/ndarray/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`zeros( shape[, options] )`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
 
@@ -299,6 +304,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
 
+[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray/tree/main/dtype-ctor
+
 [@stdlib/ndarray/dtype]: https://github.com/stdlib-js/ndarray/tree/main/dtype
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
@@ -313,6 +320,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/fill-by]: https://github.com/stdlib-js/ndarray/tree/main/fill-by
 
+[@stdlib/ndarray/fill-slice]: https://github.com/stdlib-js/ndarray/tree/main/fill-slice
+
 [@stdlib/ndarray/fill]: https://github.com/stdlib-js/ndarray/tree/main/fill
 
 [@stdlib/ndarray/filter-map]: https://github.com/stdlib-js/ndarray/tree/main/filter-map
@@ -322,6 +331,10 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/flag]: https://github.com/stdlib-js/ndarray/tree/main/flag
 
 [@stdlib/ndarray/flags]: https://github.com/stdlib-js/ndarray/tree/main/flags
+
+[@stdlib/ndarray/flatten-by]: https://github.com/stdlib-js/ndarray/tree/main/flatten-by
+
+[@stdlib/ndarray/flatten]: https://github.com/stdlib-js/ndarray/tree/main/flatten
 
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
@@ -404,6 +417,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
 
 [@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
+
+[@stdlib/ndarray/with]: https://github.com/stdlib-js/ndarray/tree/main/with
 
 [@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray/tree/main/zeros-like
 
