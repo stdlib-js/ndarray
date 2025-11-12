@@ -638,6 +638,10 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`037800a`](https://github.com/stdlib-js/stdlib/commit/037800a4294184df000d19e2ded62351016dce42) - **test:** use assertion utility and update example _(by Athan Reines)_
+-   [`6d0ad29`](https://github.com/stdlib-js/stdlib/commit/6d0ad290fdb48864de0c09c5dd55c9eff7a22586) - **test:** use assertion utility and update example _(by Athan Reines)_
+-   [`e091542`](https://github.com/stdlib-js/stdlib/commit/e091542b1f458f3dfb68bdae82314930575404c7) - **docs:** update example _(by Athan Reines)_
+-   [`7378ba6`](https://github.com/stdlib-js/stdlib/commit/7378ba6e3b77e50e90d4ea34cfecc263fdf8e65c) - **test:** use assertion utility _(by Athan Reines)_
 -   [`ba6c568`](https://github.com/stdlib-js/stdlib/commit/ba6c568030bf47a3b8c8b2297e5d87fc093ed93b) - **feat:** add `toReversed` to namespace _(by Athan Reines)_
 -   [`853fe75`](https://github.com/stdlib-js/stdlib/commit/853fe75bce7b8374fd7545c493cc89391b20636f) - **feat:** add `shift` to namespace _(by Athan Reines)_
 -   [`e7715c7`](https://github.com/stdlib-js/stdlib/commit/e7715c7f1f74f3734ba9b7d5d367ea02b415b66e) - **feat:** add `reverseDimension` to namespace _(by Athan Reines)_
