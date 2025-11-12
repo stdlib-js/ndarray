@@ -10,6 +10,17 @@
 
 ### Features
 
+-   [`ba6c568`](https://github.com/stdlib-js/stdlib/commit/ba6c568030bf47a3b8c8b2297e5d87fc093ed93b) - add `toReversed` to namespace
+-   [`853fe75`](https://github.com/stdlib-js/stdlib/commit/853fe75bce7b8374fd7545c493cc89391b20636f) - add `shift` to namespace
+-   [`e7715c7`](https://github.com/stdlib-js/stdlib/commit/e7715c7f1f74f3734ba9b7d5d367ea02b415b66e) - add `reverseDimension` to namespace
+-   [`d07a5e1`](https://github.com/stdlib-js/stdlib/commit/d07a5e192a71096281f503feafa37869eb3748d8) - add `reverse` to namespace
+-   [`1fb2b08`](https://github.com/stdlib-js/stdlib/commit/1fb2b0825c39f1684e43d13c021250d18e39a0ac) - add `pop` to namespace
+-   [`bcedc5c`](https://github.com/stdlib-js/stdlib/commit/bcedc5c77b7bf65e93889ed4eea5b4476a738c4a) - add `flattenFrom` to namespace
+-   [`c556b67`](https://github.com/stdlib-js/stdlib/commit/c556b67ae35b5c82e6620c2b3d3c91a22ac041d2) - add `find` to namespace
+-   [`4365728`](https://github.com/stdlib-js/stdlib/commit/436572826828fdd56092f08ea927f6d25ad3aa02) - add `concat` to namespace
+-   [`8b5a852`](https://github.com/stdlib-js/stdlib/commit/8b5a852ce0854b3676ea6f6dc6ed03008b502883) - add `anyBy` to namespace
+-   [`6509ab5`](https://github.com/stdlib-js/stdlib/commit/6509ab543ec9b712cccb2f1d2527b0257bda88c0) - add `any` to namespace
+-   [`8e0d78b`](https://github.com/stdlib-js/stdlib/commit/8e0d78b71b20d19c573df9730e3891eaba82c1d3) - add `copy` to namespace
 -   [`e23e0c4`](https://github.com/stdlib-js/stdlib/commit/e23e0c4afb1a711ddc091197ea4dac8888aca03f) - add `ndarray/copy` [(#8490)](https://github.com/stdlib-js/stdlib/pull/8490)
 -   [`cad6845`](https://github.com/stdlib-js/stdlib/commit/cad68452e8d2a52ebe1ebfd74117d98197a4a568) - add `isComplexFloatingPointDataTypeChar` to namespace
 -   [`b8c50f8`](https://github.com/stdlib-js/stdlib/commit/b8c50f8cb3942eeb670d144cb4089ff30ed7370b) - add `ndarray/base/assert/is-complex-floating-point-data-type-char`
@@ -456,6 +467,8 @@
 
 ### Bug Fixes
 
+-   [`83a01e7`](https://github.com/stdlib-js/stdlib/commit/83a01e723e9037a2c402c1e60b54bc678ef27078) - enforce mostly-safe casting
+-   [`e33ce98`](https://github.com/stdlib-js/stdlib/commit/e33ce98738a5fb62a81d17dbcd8b1b2606c6f208) - enforce mostly-safe casting
 -   [`97fb507`](https://github.com/stdlib-js/stdlib/commit/97fb507addda8bf32be3a3f376d387e528672149) - handle mostly safe casts and refactor loop generation
 -   [`ef3f025`](https://github.com/stdlib-js/stdlib/commit/ef3f025dad7f2b8a5a451b9cc3ec822cc66c1c2a) - address copy-paste mistake
 -   [`186033e`](https://github.com/stdlib-js/stdlib/commit/186033e3cccf7faffaad1c101404de68f688027e) - address off-by-one bug
@@ -625,6 +638,19 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`ba6c568`](https://github.com/stdlib-js/stdlib/commit/ba6c568030bf47a3b8c8b2297e5d87fc093ed93b) - **feat:** add `toReversed` to namespace _(by Athan Reines)_
+-   [`853fe75`](https://github.com/stdlib-js/stdlib/commit/853fe75bce7b8374fd7545c493cc89391b20636f) - **feat:** add `shift` to namespace _(by Athan Reines)_
+-   [`e7715c7`](https://github.com/stdlib-js/stdlib/commit/e7715c7f1f74f3734ba9b7d5d367ea02b415b66e) - **feat:** add `reverseDimension` to namespace _(by Athan Reines)_
+-   [`d07a5e1`](https://github.com/stdlib-js/stdlib/commit/d07a5e192a71096281f503feafa37869eb3748d8) - **feat:** add `reverse` to namespace _(by Athan Reines)_
+-   [`1fb2b08`](https://github.com/stdlib-js/stdlib/commit/1fb2b0825c39f1684e43d13c021250d18e39a0ac) - **feat:** add `pop` to namespace _(by Athan Reines)_
+-   [`bcedc5c`](https://github.com/stdlib-js/stdlib/commit/bcedc5c77b7bf65e93889ed4eea5b4476a738c4a) - **feat:** add `flattenFrom` to namespace _(by Athan Reines)_
+-   [`c556b67`](https://github.com/stdlib-js/stdlib/commit/c556b67ae35b5c82e6620c2b3d3c91a22ac041d2) - **feat:** add `find` to namespace _(by Athan Reines)_
+-   [`4365728`](https://github.com/stdlib-js/stdlib/commit/436572826828fdd56092f08ea927f6d25ad3aa02) - **feat:** add `concat` to namespace _(by Athan Reines)_
+-   [`8b5a852`](https://github.com/stdlib-js/stdlib/commit/8b5a852ce0854b3676ea6f6dc6ed03008b502883) - **feat:** add `anyBy` to namespace _(by Athan Reines)_
+-   [`6509ab5`](https://github.com/stdlib-js/stdlib/commit/6509ab543ec9b712cccb2f1d2527b0257bda88c0) - **feat:** add `any` to namespace _(by Athan Reines)_
+-   [`8e0d78b`](https://github.com/stdlib-js/stdlib/commit/8e0d78b71b20d19c573df9730e3891eaba82c1d3) - **feat:** add `copy` to namespace _(by Athan Reines)_
+-   [`83a01e7`](https://github.com/stdlib-js/stdlib/commit/83a01e723e9037a2c402c1e60b54bc678ef27078) - **fix:** enforce mostly-safe casting _(by Athan Reines)_
+-   [`e33ce98`](https://github.com/stdlib-js/stdlib/commit/e33ce98738a5fb62a81d17dbcd8b1b2606c6f208) - **fix:** enforce mostly-safe casting _(by Athan Reines)_
 -   [`73b90f9`](https://github.com/stdlib-js/stdlib/commit/73b90f98e772d959db84ae6c7e680469e3641e45) - **docs:** update examples _(by Athan Reines)_
 -   [`3041dd6`](https://github.com/stdlib-js/stdlib/commit/3041dd64033596c03a6ed59f1a3e638fd48d4540) - **test:** use accessor functions and update docs _(by Athan Reines)_
 -   [`e23e0c4`](https://github.com/stdlib-js/stdlib/commit/e23e0c4afb1a711ddc091197ea4dac8888aca03f) - **feat:** add `ndarray/copy` [(#8490)](https://github.com/stdlib-js/stdlib/pull/8490) _(by Muhammad Haris, Athan Reines)_
