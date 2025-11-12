@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-11)
+## Unreleased (2025-11-12)
 
 <section class="features">
 
 ### Features
 
+-   [`e23e0c4`](https://github.com/stdlib-js/stdlib/commit/e23e0c4afb1a711ddc091197ea4dac8888aca03f) - add `ndarray/copy` [(#8490)](https://github.com/stdlib-js/stdlib/pull/8490)
 -   [`cad6845`](https://github.com/stdlib-js/stdlib/commit/cad68452e8d2a52ebe1ebfd74117d98197a4a568) - add `isComplexFloatingPointDataTypeChar` to namespace
 -   [`b8c50f8`](https://github.com/stdlib-js/stdlib/commit/b8c50f8cb3942eeb670d144cb4089ff30ed7370b) - add `ndarray/base/assert/is-complex-floating-point-data-type-char`
 -   [`a07dba7`](https://github.com/stdlib-js/stdlib/commit/a07dba7671e5c34b32277a26e8f2aa014f0868b4) - add `nullaryStrided1dDispatchFactory` to namespace
@@ -624,6 +625,7 @@ A total of 32 issues were closed in this release:
 
 <details>
 
+-   [`e23e0c4`](https://github.com/stdlib-js/stdlib/commit/e23e0c4afb1a711ddc091197ea4dac8888aca03f) - **feat:** add `ndarray/copy` [(#8490)](https://github.com/stdlib-js/stdlib/pull/8490) _(by Muhammad Haris, Athan Reines)_
 -   [`9e78d0f`](https://github.com/stdlib-js/stdlib/commit/9e78d0f090816b652f837318212b91117f5cbd9a) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`12eb3ae`](https://github.com/stdlib-js/stdlib/commit/12eb3aee1baf1aa53cea76e8149c59d8c702b0b2) - **test:** add missing parentheses to descriptions _(by Philipp Burckhardt)_
 -   [`ce97f8e`](https://github.com/stdlib-js/stdlib/commit/ce97f8e6b4c85870b9b983d930820c98de7b3c2b) - **chore:** fix C lint errors [(#8486)](https://github.com/stdlib-js/stdlib/pull/8486) _(by Geo Daoyu, Athan Reines)_
