@@ -18,12 +18,13 @@
 
 'use strict';
 
+var getData = require( './../../data-buffer' );
 var dtypes = require( './../../dtypes' );
 var empty = require( './../../empty' );
 var emptyLike = require( './../lib' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate uninitialized arrays...
 var x;
@@ -34,5 +35,5 @@ for ( i = 0; i < dt.length; i++ ) {
 		'dtype': dt[ i ]
 	});
 	y = emptyLike( x );
-	console.log( y.data );
+	console.log( getData( y ) );
 }
