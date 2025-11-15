@@ -266,6 +266,15 @@ setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
 setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
+* @name complementShape
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/complement-shape}
+*/
+setReadOnly( ns, 'complementShape', require( './../../base/complement-shape' ) );
+
+/**
 * @name copy
 * @memberof ns
 * @readonly

@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-13)
+## Unreleased (2025-11-15)
 
 <section class="features">
 
 ### Features
 
+-   [`4b6f051`](https://github.com/stdlib-js/stdlib/commit/4b6f0510d4773574101122924f20cb4d987c2b38) - add `complementShape` to namespace
+-   [`903f141`](https://github.com/stdlib-js/stdlib/commit/903f1415351afbabd33b859b0888ad2daa02ecc0) - add `ndarray/base/complement-shape`
 -   [`ba6c568`](https://github.com/stdlib-js/stdlib/commit/ba6c568030bf47a3b8c8b2297e5d87fc093ed93b) - add `toReversed` to namespace
 -   [`853fe75`](https://github.com/stdlib-js/stdlib/commit/853fe75bce7b8374fd7545c493cc89391b20636f) - add `shift` to namespace
 -   [`e7715c7`](https://github.com/stdlib-js/stdlib/commit/e7715c7f1f74f3734ba9b7d5d367ea02b415b66e) - add `reverseDimension` to namespace
@@ -638,6 +640,8 @@ A total of 33 issues were closed in this release:
 
 <details>
 
+-   [`4b6f051`](https://github.com/stdlib-js/stdlib/commit/4b6f0510d4773574101122924f20cb4d987c2b38) - **feat:** add `complementShape` to namespace _(by Athan Reines)_
+-   [`903f141`](https://github.com/stdlib-js/stdlib/commit/903f1415351afbabd33b859b0888ad2daa02ecc0) - **feat:** add `ndarray/base/complement-shape` _(by Athan Reines)_
 -   [`37b26e6`](https://github.com/stdlib-js/stdlib/commit/37b26e6c62ada82439096f343c855bf1e80ef438) - **chore:** fix JavaScript lint errors [(#8519)](https://github.com/stdlib-js/stdlib/pull/8519) _(by kaushal-kumar-it, Athan Reines)_
 -   [`c934b79`](https://github.com/stdlib-js/stdlib/commit/c934b79b7fef69aa707c58f8042648e3c7aa5925) - **docs:** update namespace table of contents [(#8517)](https://github.com/stdlib-js/stdlib/pull/8517) _(by stdlib-bot)_
 -   [`037800a`](https://github.com/stdlib-js/stdlib/commit/037800a4294184df000d19e2ded62351016dce42) - **test:** use assertion utility and update example _(by Athan Reines)_
