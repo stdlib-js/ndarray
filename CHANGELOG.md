@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-18)
+## Unreleased (2025-11-21)
 
 <section class="features">
 
 ### Features
 
+-   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514)
 -   [`4b6f051`](https://github.com/stdlib-js/stdlib/commit/4b6f0510d4773574101122924f20cb4d987c2b38) - add `complementShape` to namespace
 -   [`903f141`](https://github.com/stdlib-js/stdlib/commit/903f1415351afbabd33b859b0888ad2daa02ecc0) - add `ndarray/base/complement-shape`
 -   [`ba6c568`](https://github.com/stdlib-js/stdlib/commit/ba6c568030bf47a3b8c8b2297e5d87fc093ed93b) - add `toReversed` to namespace
@@ -640,6 +641,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - **feat:** add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514) _(by Muhammad Haris, Athan Reines)_
 -   [`b7a1ba3`](https://github.com/stdlib-js/stdlib/commit/b7a1ba3a07bae5c3cf02aaa576fd2f24b0f62f2f) - **docs:** remove duplicated example _(by Philipp Burckhardt)_
 -   [`298b612`](https://github.com/stdlib-js/stdlib/commit/298b612c3406864fddd120b84a713f657cafd458) - **chore:** fix JavaScript lint errors [(#8509)](https://github.com/stdlib-js/stdlib/pull/8509) _(by kaushal-kumar-it)_
 -   [`a0a76ca`](https://github.com/stdlib-js/stdlib/commit/a0a76caf35c0df0a8de6406f56b32e59c89daf07) - **docs:** update namespace table of contents [(#8536)](https://github.com/stdlib-js/stdlib/pull/8536) _(by stdlib-bot)_
