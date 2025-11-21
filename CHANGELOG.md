@@ -641,6 +641,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`f870646`](https://github.com/stdlib-js/stdlib/commit/f870646312fdbc9c2fb63bcfa7094cf889ed75f1) - **test:** add tests to `ndarray/base/count-truthy` [(#8301)](https://github.com/stdlib-js/stdlib/pull/8301) _(by Muhammad Haris, Athan Reines)_
 -   [`555d6f3`](https://github.com/stdlib-js/stdlib/commit/555d6f3a7931b2c898fc8a6474ba81879f56d4d3) - **test:** add tests to `ndarray/base/count-falsy` [(#8305)](https://github.com/stdlib-js/stdlib/pull/8305) _(by Muhammad Haris, Athan Reines)_
 -   [`ce0bfa5`](https://github.com/stdlib-js/stdlib/commit/ce0bfa50e43dc1f8ee15679b6194c1349730de59) - **test:** fix underlying buffer type _(by Athan Reines)_
 -   [`2c288dd`](https://github.com/stdlib-js/stdlib/commit/2c288dd3ff3e8b2e9b3a0c9189a019ec962f24e8) - **test:** add tests to `ndarray/base/count-if` [(#8318)](https://github.com/stdlib-js/stdlib/pull/8318) _(by Muhammad Haris, Athan Reines)_
