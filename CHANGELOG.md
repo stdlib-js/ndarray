@@ -641,8 +641,10 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`ce0bfa5`](https://github.com/stdlib-js/stdlib/commit/ce0bfa50e43dc1f8ee15679b6194c1349730de59) - **test:** fix underlying buffer type _(by Athan Reines)_
 -   [`2c288dd`](https://github.com/stdlib-js/stdlib/commit/2c288dd3ff3e8b2e9b3a0c9189a019ec962f24e8) - **test:** add tests to `ndarray/base/count-if` [(#8318)](https://github.com/stdlib-js/stdlib/pull/8318) _(by Muhammad Haris, Athan Reines)_
 -   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - **feat:** add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514) _(by Muhammad Haris, Athan Reines)_
+-   [`67f4feb`](https://github.com/stdlib-js/stdlib/commit/67f4feb3b59fc5466e8302977634d3d5113467a8) - **style:** remove space _(by Athan Reines)_
 -   [`b7a1ba3`](https://github.com/stdlib-js/stdlib/commit/b7a1ba3a07bae5c3cf02aaa576fd2f24b0f62f2f) - **docs:** remove duplicated example _(by Philipp Burckhardt)_
 -   [`298b612`](https://github.com/stdlib-js/stdlib/commit/298b612c3406864fddd120b84a713f657cafd458) - **chore:** fix JavaScript lint errors [(#8509)](https://github.com/stdlib-js/stdlib/pull/8509) _(by kaushal-kumar-it)_
 -   [`a0a76ca`](https://github.com/stdlib-js/stdlib/commit/a0a76caf35c0df0a8de6406f56b32e59c89daf07) - **docs:** update namespace table of contents [(#8536)](https://github.com/stdlib-js/stdlib/pull/8536) _(by stdlib-bot)_
