@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588)
 -   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589)
 -   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514)
 -   [`4b6f051`](https://github.com/stdlib-js/stdlib/commit/4b6f0510d4773574101122924f20cb4d987c2b38) - add `complementShape` to namespace
@@ -642,6 +643,7 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - **feat:** add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588) _(by Muhammad Haris, Athan Reines)_
 -   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - **feat:** add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589) _(by Muhammad Haris)_
 -   [`c520b5a`](https://github.com/stdlib-js/stdlib/commit/c520b5a0cae0c85e946f8a646e7cc8c01b3b5673) - **docs:** address TSDoc lint errors and add doctest aliases _(by Philipp Burckhardt)_
 -   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
