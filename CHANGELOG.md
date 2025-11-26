@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-21)
+## Unreleased (2025-11-26)
 
 <section class="features">
 
 ### Features
 
+-   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589)
 -   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514)
 -   [`4b6f051`](https://github.com/stdlib-js/stdlib/commit/4b6f0510d4773574101122924f20cb4d987c2b38) - add `complementShape` to namespace
 -   [`903f141`](https://github.com/stdlib-js/stdlib/commit/903f1415351afbabd33b859b0888ad2daa02ecc0) - add `ndarray/base/complement-shape`
@@ -641,6 +642,11 @@ A total of 34 issues were closed in this release:
 
 <details>
 
+-   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - **feat:** add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589) _(by Muhammad Haris)_
+-   [`c520b5a`](https://github.com/stdlib-js/stdlib/commit/c520b5a0cae0c85e946f8a646e7cc8c01b3b5673) - **docs:** address TSDoc lint errors and add doctest aliases _(by Philipp Burckhardt)_
+-   [`3f7b1ed`](https://github.com/stdlib-js/stdlib/commit/3f7b1ed405cdb77a3357d424f462e8d3b2276df5) - **docs:** fix code in TSDoc examples _(by Philipp Burckhardt)_
+-   [`7f55434`](https://github.com/stdlib-js/stdlib/commit/7f554349e50fc601e7ab4206ba1da0eceae93518) - **docs:** fix TSDoc comments example code and return annotation values _(by Philipp Burckhardt)_
+-   [`47088cc`](https://github.com/stdlib-js/stdlib/commit/47088cc299d84289a904dd2e7d2cdf0aee9057aa) - **docs:** fix TSDoc comments example code and return annotation values _(by Philipp Burckhardt)_
 -   [`f870646`](https://github.com/stdlib-js/stdlib/commit/f870646312fdbc9c2fb63bcfa7094cf889ed75f1) - **test:** add tests to `ndarray/base/count-truthy` [(#8301)](https://github.com/stdlib-js/stdlib/pull/8301) _(by Muhammad Haris, Athan Reines)_
 -   [`555d6f3`](https://github.com/stdlib-js/stdlib/commit/555d6f3a7931b2c898fc8a6474ba81879f56d4d3) - **test:** add tests to `ndarray/base/count-falsy` [(#8305)](https://github.com/stdlib-js/stdlib/pull/8305) _(by Muhammad Haris, Athan Reines)_
 -   [`ce0bfa5`](https://github.com/stdlib-js/stdlib/commit/ce0bfa50e43dc1f8ee15679b6194c1349730de59) - **test:** fix underlying buffer type _(by Athan Reines)_
