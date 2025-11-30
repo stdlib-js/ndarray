@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-27)
+## Unreleased (2025-11-30)
 
 <section class="features">
 
@@ -643,6 +643,7 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`dbfa538`](https://github.com/stdlib-js/stdlib/commit/dbfa538b304e97ac92eed25a73418f5f378b33e7) - **docs:** fix example code in TSDoc declaration comments _(by Philipp Burckhardt)_
 -   [`4151b7e`](https://github.com/stdlib-js/stdlib/commit/4151b7ed79990e0f5d9ac7855627e905efe0ed40) - **chore:** fix C lint errors [(#8610)](https://github.com/stdlib-js/stdlib/pull/8610) _(by Geo Daoyu, Athan Reines)_
 -   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - **feat:** add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588) _(by Muhammad Haris, Athan Reines)_
 -   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - **feat:** add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589) _(by Muhammad Haris)_
