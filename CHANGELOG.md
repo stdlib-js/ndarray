@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-30)
+## Unreleased (2025-12-02)
 
 <section class="features">
 
 ### Features
 
+-   [`e24d1a7`](https://github.com/stdlib-js/stdlib/commit/e24d1a701a3cb60714f3d44c0ff87341dd0d870a) - update `ndarray/base/assert` TypeScript declarations
 -   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588)
 -   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589)
 -   [`a2fd4d6`](https://github.com/stdlib-js/stdlib/commit/a2fd4d6929c7af4f33ebe97d53fec4b7a9bcbf33) - add `ndarray/some` [(#8514)](https://github.com/stdlib-js/stdlib/pull/8514)
@@ -643,6 +644,9 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`e24d1a7`](https://github.com/stdlib-js/stdlib/commit/e24d1a701a3cb60714f3d44c0ff87341dd0d870a) - **feat:** update `ndarray/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`41bc320`](https://github.com/stdlib-js/stdlib/commit/41bc320db9372557b8eb3341169981c96450b3bf) - **chore:** add alias for doctest lint rule _(by Philipp Burckhardt)_
+-   [`5b98eea`](https://github.com/stdlib-js/stdlib/commit/5b98eeaa83f9762c4082b97ba7706fc682685b7c) - **docs:** regenerate TS declarations for `ndarray/vector` namespace _(by Philipp Burckhardt)_
 -   [`dbfa538`](https://github.com/stdlib-js/stdlib/commit/dbfa538b304e97ac92eed25a73418f5f378b33e7) - **docs:** fix example code in TSDoc declaration comments _(by Philipp Burckhardt)_
 -   [`4151b7e`](https://github.com/stdlib-js/stdlib/commit/4151b7ed79990e0f5d9ac7855627e905efe0ed40) - **chore:** fix C lint errors [(#8610)](https://github.com/stdlib-js/stdlib/pull/8610) _(by Geo Daoyu, Athan Reines)_
 -   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - **feat:** add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588) _(by Muhammad Haris, Athan Reines)_
