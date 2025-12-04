@@ -644,6 +644,7 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`ac2734e`](https://github.com/stdlib-js/stdlib/commit/ac2734ecf26371d363be61dbb4f3448c9cb964d4) - **docs:** address lint errors in TSDoc comments _(by Philipp Burckhardt)_
 -   [`4d90d1a`](https://github.com/stdlib-js/stdlib/commit/4d90d1a8908b2328735f43fccaca8e9a1daffb35) - **docs:** fix example code in TSDoc declarations _(by Philipp Burckhardt)_
 -   [`0eda9b1`](https://github.com/stdlib-js/stdlib/commit/0eda9b1af1d384b1a6be6fe1e80b36a32f69d55c) - **chore:** specify ESLint doctest alias _(by Philipp Burckhardt)_
 -   [`2ffc422`](https://github.com/stdlib-js/stdlib/commit/2ffc422e0a5e583d45776ea7efc359186379bb0c) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
