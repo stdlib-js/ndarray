@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-02)
+## Unreleased (2025-12-04)
 
 <section class="features">
 
@@ -644,6 +644,9 @@ A total of 35 issues were closed in this release:
 
 <details>
 
+-   [`4d90d1a`](https://github.com/stdlib-js/stdlib/commit/4d90d1a8908b2328735f43fccaca8e9a1daffb35) - **docs:** fix example code in TSDoc declarations _(by Philipp Burckhardt)_
+-   [`0eda9b1`](https://github.com/stdlib-js/stdlib/commit/0eda9b1af1d384b1a6be6fe1e80b36a32f69d55c) - **chore:** specify ESLint doctest alias _(by Philipp Burckhardt)_
+-   [`2ffc422`](https://github.com/stdlib-js/stdlib/commit/2ffc422e0a5e583d45776ea7efc359186379bb0c) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`e24d1a7`](https://github.com/stdlib-js/stdlib/commit/e24d1a701a3cb60714f3d44c0ff87341dd0d870a) - **feat:** update `ndarray/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`41bc320`](https://github.com/stdlib-js/stdlib/commit/41bc320db9372557b8eb3341169981c96450b3bf) - **chore:** add alias for doctest lint rule _(by Philipp Burckhardt)_
 -   [`5b98eea`](https://github.com/stdlib-js/stdlib/commit/5b98eeaa83f9762c4082b97ba7706fc682685b7c) - **docs:** regenerate TS declarations for `ndarray/vector` namespace _(by Philipp Burckhardt)_
