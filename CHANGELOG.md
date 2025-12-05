@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - update `ndarray` TypeScript declarations
+-   [`53295ce`](https://github.com/stdlib-js/stdlib/commit/53295ce482ae3c95cc80afd5295acbc9f2a476eb) - update `ndarray/base` TypeScript declarations
 -   [`e24d1a7`](https://github.com/stdlib-js/stdlib/commit/e24d1a701a3cb60714f3d44c0ff87341dd0d870a) - update `ndarray/base/assert` TypeScript declarations
 -   [`b1b2f82`](https://github.com/stdlib-js/stdlib/commit/b1b2f828fa547d05f7659b9bcb076aa0e32e28e5) - add `ndarray/flipud` [(#8588)](https://github.com/stdlib-js/stdlib/pull/8588)
 -   [`f1fbeb4`](https://github.com/stdlib-js/stdlib/commit/f1fbeb47d9a2a6672bc9690b0b006534168e904a) - add `ndarray/fliplr` [(#8589)](https://github.com/stdlib-js/stdlib/pull/8589)
@@ -644,6 +646,9 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - **feat:** update `ndarray` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`bf3b1ce`](https://github.com/stdlib-js/stdlib/commit/bf3b1ce6e981dc77af2a82a5936ac80b3d029e79) - **docs:** fix TSDoc return annotation _(by Philipp Burckhardt)_
+-   [`53295ce`](https://github.com/stdlib-js/stdlib/commit/53295ce482ae3c95cc80afd5295acbc9f2a476eb) - **feat:** update `ndarray/base` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`13cebb5`](https://github.com/stdlib-js/stdlib/commit/13cebb5fa762fc7f6252cc9115d306dd43f5d564) - **chore:** fix Javascript lint errors [(#8797)](https://github.com/stdlib-js/stdlib/pull/8797) _(by Kate Suraev)_
 -   [`ac2734e`](https://github.com/stdlib-js/stdlib/commit/ac2734ecf26371d363be61dbb4f3448c9cb964d4) - **docs:** address lint errors in TSDoc comments _(by Philipp Burckhardt)_
 -   [`4d90d1a`](https://github.com/stdlib-js/stdlib/commit/4d90d1a8908b2328735f43fccaca8e9a1daffb35) - **docs:** fix example code in TSDoc declarations _(by Philipp Burckhardt)_
