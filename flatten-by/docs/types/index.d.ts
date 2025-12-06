@@ -192,14 +192,14 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * var strides = [ 2, 2, 1 ];
 * var offset = 0;
 *
-* var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
+* var x = ndarray( 'bool', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
 * var y = flattenBy( x, invert );
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
-* // returns [ 0, 1, 0, 1, 0, 1 ]
+* // returns [ false, true, false, true, false, true ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 
@@ -340,7 +340,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * var strides = [ 2, 2, 1 ];
 * var offset = 0;
 *
-* var x = ndarray( 'uint8c', buffer, shape, strides, offset, 'row-major' );
+* var x = ndarray( 'bool', buffer, shape, strides, offset, 'row-major' );
 * // returns <ndarray>
 *
 * var opts = {
@@ -351,7 +351,7 @@ declare function flattenBy<T extends ComplexLike = ComplexLike, U extends typedn
 * // returns <ndarray>
 *
 * var arr = ndarray2array( y );
-* // returns [ 0, 1, 0, 1, 0, 1 ]
+* // returns [ false, true, false, true, false, true ]
 */
 declare function flattenBy<T extends typedndarray<boolean> = typedndarray<boolean>, ThisArg = unknown>( x: T, options: BaseOptions, fcn: Callback<boolean, T, boolean, ThisArg>, thisArg?: ThisParameterType<Callback<boolean, T, boolean, ThisArg>> ): T;
 

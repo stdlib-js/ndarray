@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-05)
+## Unreleased (2025-12-06)
 
 <section class="features">
 
@@ -646,6 +646,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`356e8a0`](https://github.com/stdlib-js/stdlib/commit/356e8a0f15db7f18f8be83272401dc90de4cc1a0) - **docs:** use boolean typed array in example _(by Philipp Burckhardt)_
 -   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - **feat:** update `ndarray` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`bf3b1ce`](https://github.com/stdlib-js/stdlib/commit/bf3b1ce6e981dc77af2a82a5936ac80b3d029e79) - **docs:** fix TSDoc return annotation _(by Philipp Burckhardt)_
 -   [`53295ce`](https://github.com/stdlib-js/stdlib/commit/53295ce482ae3c95cc80afd5295acbc9f2a476eb) - **feat:** update `ndarray/base` TypeScript declarations _(by Philipp Burckhardt)_
