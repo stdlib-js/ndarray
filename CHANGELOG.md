@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-06)
+## Unreleased (2025-12-07)
 
 <section class="features">
 
 ### Features
 
+-   [`c034ac5`](https://github.com/stdlib-js/stdlib/commit/c034ac5a8b15ac837619c50efa8db3266c897f8e) - add `ndarray/concat1d` [(#8584)](https://github.com/stdlib-js/stdlib/pull/8584)
 -   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - update `ndarray` TypeScript declarations
 -   [`53295ce`](https://github.com/stdlib-js/stdlib/commit/53295ce482ae3c95cc80afd5295acbc9f2a476eb) - update `ndarray/base` TypeScript declarations
 -   [`e24d1a7`](https://github.com/stdlib-js/stdlib/commit/e24d1a701a3cb60714f3d44c0ff87341dd0d870a) - update `ndarray/base/assert` TypeScript declarations
@@ -646,6 +647,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`c034ac5`](https://github.com/stdlib-js/stdlib/commit/c034ac5a8b15ac837619c50efa8db3266c897f8e) - **feat:** add `ndarray/concat1d` [(#8584)](https://github.com/stdlib-js/stdlib/pull/8584) _(by Muhammad Haris, Athan Reines)_
 -   [`356e8a0`](https://github.com/stdlib-js/stdlib/commit/356e8a0f15db7f18f8be83272401dc90de4cc1a0) - **docs:** use boolean typed array in example _(by Philipp Burckhardt)_
 -   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - **feat:** update `ndarray` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`bf3b1ce`](https://github.com/stdlib-js/stdlib/commit/bf3b1ce6e981dc77af2a82a5936ac80b3d029e79) - **docs:** fix TSDoc return annotation _(by Philipp Burckhardt)_
