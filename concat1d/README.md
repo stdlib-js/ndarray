@@ -60,7 +60,7 @@ var arr = ndarray2array( out );
 
 The function accepts the following arguments:
 
--   **...arrays**: inputs to concatenate. May be passed as separate arguments or an array of arguments. Each argument must either be a one-dimensional [ndarray][@stdlib/ndarray/ctor], a zero-dimensional[ndarray][@stdlib/ndarray/ctor], or a scalar value.
+-   **...arrays**: inputs to concatenate. May be passed as separate arguments or an array of arguments. Each argument must either be a one-dimensional [ndarray][@stdlib/ndarray/ctor], a zero-dimensional [ndarray][@stdlib/ndarray/ctor], or a scalar value.
 
 The data type of the output [ndarray][@stdlib/ndarray/ctor] is determined by applying [type promotion rules][@stdlib/ndarray/promotion-rules]. If provided [ndarrays][@stdlib/ndarray/ctor] having different [memory layouts][@stdlib/ndarray/orders] or only scalar inputs, the output [ndarray][@stdlib/ndarray/ctor] has the [default memory layout][@stdlib/ndarray/defaults].
 
@@ -89,7 +89,7 @@ var arr = ndarray2array( z );
 
 The function accepts the following arguments:
 
--   **...arrays**: inputs to concatenate. May be passed as separate arguments or an array of arguments. Each argument must either be a one-dimensional [ndarray][@stdlib/ndarray/ctor], a zero-dimensional[ndarray][@stdlib/ndarray/ctor], or a scalar value.
+-   **...arrays**: inputs to concatenate. May be passed as separate arguments or an array of arguments. Each argument must either be a one-dimensional [ndarray][@stdlib/ndarray/ctor], a zero-dimensional [ndarray][@stdlib/ndarray/ctor], or a scalar value.
 -   **out**: output [ndarray][@stdlib/ndarray/ctor].
 
 </section>
