@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-07)
+## Unreleased (2025-12-08)
 
 <section class="features">
 
@@ -647,6 +647,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`2772189`](https://github.com/stdlib-js/stdlib/commit/2772189443aedf358ee73b3232feadd2a0acc581) - **docs:** improve doctests for complex number instances in `ndarray/base/broadcast-scalar` [(#8869)](https://github.com/stdlib-js/stdlib/pull/8869) _(by ashutoshsao, Athan Reines)_
 -   [`ae93d82`](https://github.com/stdlib-js/stdlib/commit/ae93d8247174e8ba0a0bdcb20a14dfa6569b1542) - **docs:** add missing space _(by Philipp Burckhardt)_
 -   [`c034ac5`](https://github.com/stdlib-js/stdlib/commit/c034ac5a8b15ac837619c50efa8db3266c897f8e) - **feat:** add `ndarray/concat1d` [(#8584)](https://github.com/stdlib-js/stdlib/pull/8584) _(by Muhammad Haris, Athan Reines)_
 -   [`356e8a0`](https://github.com/stdlib-js/stdlib/commit/356e8a0f15db7f18f8be83272401dc90de4cc1a0) - **docs:** use boolean typed array in example _(by Philipp Burckhardt)_
@@ -1850,7 +1851,7 @@ A total of 36 issues were closed in this release:
 
 ### Contributors
 
-A total of 26 people contributed to this release. Thank you to the following contributors:
+A total of 27 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1876,6 +1877,7 @@ A total of 26 people contributed to this release. Thank you to the following con
 -   Sai Avinash
 -   Shubham
 -   Tushar Bhardwaj
+-   ashutoshsao
 -   kaushal-kumar-it
 -   lohithganni
 
