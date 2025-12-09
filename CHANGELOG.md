@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`f375981`](https://github.com/stdlib-js/stdlib/commit/f375981dd59f1ce6aa575e48bafa0e7998a7efdd) - add `ndarray/base/to-flippedud` [(#8849)](https://github.com/stdlib-js/stdlib/pull/8849)
 -   [`1080085`](https://github.com/stdlib-js/stdlib/commit/1080085cbf97a2d217339594fda596759a49386b) - add `ndarray/base/to-flippedlr` [(#8848)](https://github.com/stdlib-js/stdlib/pull/8848)
 -   [`c034ac5`](https://github.com/stdlib-js/stdlib/commit/c034ac5a8b15ac837619c50efa8db3266c897f8e) - add `ndarray/concat1d` [(#8584)](https://github.com/stdlib-js/stdlib/pull/8584)
 -   [`493f0c2`](https://github.com/stdlib-js/stdlib/commit/493f0c2fe4ce47b5ea8e5fedd81ef68d028b83f9) - update `ndarray` TypeScript declarations
@@ -648,6 +649,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`f375981`](https://github.com/stdlib-js/stdlib/commit/f375981dd59f1ce6aa575e48bafa0e7998a7efdd) - **feat:** add `ndarray/base/to-flippedud` [(#8849)](https://github.com/stdlib-js/stdlib/pull/8849) _(by Muhammad Haris, Athan Reines)_
 -   [`1080085`](https://github.com/stdlib-js/stdlib/commit/1080085cbf97a2d217339594fda596759a49386b) - **feat:** add `ndarray/base/to-flippedlr` [(#8848)](https://github.com/stdlib-js/stdlib/pull/8848) _(by Muhammad Haris, Athan Reines)_
 -   [`2772189`](https://github.com/stdlib-js/stdlib/commit/2772189443aedf358ee73b3232feadd2a0acc581) - **docs:** improve doctests for complex number instances in `ndarray/base/broadcast-scalar` [(#8869)](https://github.com/stdlib-js/stdlib/pull/8869) _(by ashutoshsao, Athan Reines)_
 -   [`ae93d82`](https://github.com/stdlib-js/stdlib/commit/ae93d8247174e8ba0a0bdcb20a14dfa6569b1542) - **docs:** add missing space _(by Philipp Burckhardt)_
