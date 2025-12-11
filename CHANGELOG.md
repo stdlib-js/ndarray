@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-09)
+## Unreleased (2025-12-11)
 
 <section class="features">
 
@@ -649,6 +649,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`53d181b`](https://github.com/stdlib-js/stdlib/commit/53d181b5581a10bee3ebe924a54f137544d309e4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`f375981`](https://github.com/stdlib-js/stdlib/commit/f375981dd59f1ce6aa575e48bafa0e7998a7efdd) - **feat:** add `ndarray/base/to-flippedud` [(#8849)](https://github.com/stdlib-js/stdlib/pull/8849) _(by Muhammad Haris, Athan Reines)_
 -   [`1080085`](https://github.com/stdlib-js/stdlib/commit/1080085cbf97a2d217339594fda596759a49386b) - **feat:** add `ndarray/base/to-flippedlr` [(#8848)](https://github.com/stdlib-js/stdlib/pull/8848) _(by Muhammad Haris, Athan Reines)_
 -   [`2772189`](https://github.com/stdlib-js/stdlib/commit/2772189443aedf358ee73b3232feadd2a0acc581) - **docs:** improve doctests for complex number instances in `ndarray/base/broadcast-scalar` [(#8869)](https://github.com/stdlib-js/stdlib/pull/8869) _(by ashutoshsao, Athan Reines)_
