@@ -44,7 +44,7 @@ var getShape = require( './../../../shape' ); // note: non-base accessor is inte
 var ndims = require( './../../../ndims' );
 var getDType = require( './../../../base/dtype' );
 var getOrder = require( './../../../base/order' );
-var assign = require( './../../../base/assign' );
+var ndarrayAssign = require( './../../../base/assign' );
 var baseEmpty = require( './../../../base/empty' );
 var empty = require( './../../../empty' );
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
@@ -296,7 +296,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'apply', function apply( x ) {
 	if ( xdt !== dt ) {
 		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
 		tmp = baseEmpty( dt, shx, getOrder( x ) );
-		assign( [ x, tmp ] );
+		ndarrayAssign( [ x, tmp ] );
 		args[ 0 ] = tmp;
 		xdt = dt;
 	}
@@ -447,7 +447,7 @@ setReadOnly( UnaryStrided1dDispatch.prototype, 'assign', function assign( x ) {
 	if ( xdt !== dt ) {
 		// TODO: replace the following logic with a call to `ndarray/base/(?maybe-)(cast|convert|copy)` or similar utility
 		tmp = baseEmpty( dt, getShape( x ), getOrder( x ) );
-		assign( [ x, tmp ] );
+		ndarrayAssign( [ x, tmp ] );
 		args[ 0 ] = tmp;
 		xdt = dt;
 	}

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-11)
+## Unreleased (2025-12-12)
 
 <section class="features">
 
@@ -478,6 +478,7 @@
 
 ### Bug Fixes
 
+-   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010)
 -   [`83a01e7`](https://github.com/stdlib-js/stdlib/commit/83a01e723e9037a2c402c1e60b54bc678ef27078) - enforce mostly-safe casting
 -   [`e33ce98`](https://github.com/stdlib-js/stdlib/commit/e33ce98738a5fb62a81d17dbcd8b1b2606c6f208) - enforce mostly-safe casting
 -   [`97fb507`](https://github.com/stdlib-js/stdlib/commit/97fb507addda8bf32be3a3f376d387e528672149) - handle mostly safe casts and refactor loop generation
@@ -649,6 +650,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - **fix:** rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010) _(by Muhammad Haris)_
 -   [`53d181b`](https://github.com/stdlib-js/stdlib/commit/53d181b5581a10bee3ebe924a54f137544d309e4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`f375981`](https://github.com/stdlib-js/stdlib/commit/f375981dd59f1ce6aa575e48bafa0e7998a7efdd) - **feat:** add `ndarray/base/to-flippedud` [(#8849)](https://github.com/stdlib-js/stdlib/pull/8849) _(by Muhammad Haris, Athan Reines)_
 -   [`1080085`](https://github.com/stdlib-js/stdlib/commit/1080085cbf97a2d217339594fda596759a49386b) - **feat:** add `ndarray/base/to-flippedlr` [(#8848)](https://github.com/stdlib-js/stdlib/pull/8848) _(by Muhammad Haris, Athan Reines)_
