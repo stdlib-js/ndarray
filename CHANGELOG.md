@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-19)
 
 <section class="features">
 
 ### Features
 
+-   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040)
 -   [`d360fe5`](https://github.com/stdlib-js/stdlib/commit/d360fe525de98bfac66993c5c54b13fffccab822) - add `ndarray/base/to-reversed-dimension` [(#8852)](https://github.com/stdlib-js/stdlib/pull/8852)
 -   [`f375981`](https://github.com/stdlib-js/stdlib/commit/f375981dd59f1ce6aa575e48bafa0e7998a7efdd) - add `ndarray/base/to-flippedud` [(#8849)](https://github.com/stdlib-js/stdlib/pull/8849)
 -   [`1080085`](https://github.com/stdlib-js/stdlib/commit/1080085cbf97a2d217339594fda596759a49386b) - add `ndarray/base/to-flippedlr` [(#8848)](https://github.com/stdlib-js/stdlib/pull/8848)
@@ -651,6 +652,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - **feat:** add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040) _(by Muhammad Haris, Athan Reines)_
 -   [`a21edb1`](https://github.com/stdlib-js/stdlib/commit/a21edb10488a1a40457575ca21f07257c1ef5369) - **chore:** fix C lint errors [(#9111)](https://github.com/stdlib-js/stdlib/pull/9111) _(by Geo Daoyu)_
 -   [`d360fe5`](https://github.com/stdlib-js/stdlib/commit/d360fe525de98bfac66993c5c54b13fffccab822) - **feat:** add `ndarray/base/to-reversed-dimension` [(#8852)](https://github.com/stdlib-js/stdlib/pull/8852) _(by Muhammad Haris, Athan Reines)_
 -   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - **fix:** rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010) _(by Muhammad Haris)_
