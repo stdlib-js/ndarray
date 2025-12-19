@@ -480,6 +480,7 @@
 
 ### Bug Fixes
 
+-   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - improve type specificity
 -   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010)
 -   [`83a01e7`](https://github.com/stdlib-js/stdlib/commit/83a01e723e9037a2c402c1e60b54bc678ef27078) - enforce mostly-safe casting
 -   [`e33ce98`](https://github.com/stdlib-js/stdlib/commit/e33ce98738a5fb62a81d17dbcd8b1b2606c6f208) - enforce mostly-safe casting
@@ -652,6 +653,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - **fix:** improve type specificity _(by Athan Reines)_
 -   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - **feat:** add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040) _(by Muhammad Haris, Athan Reines)_
 -   [`a21edb1`](https://github.com/stdlib-js/stdlib/commit/a21edb10488a1a40457575ca21f07257c1ef5369) - **chore:** fix C lint errors [(#9111)](https://github.com/stdlib-js/stdlib/pull/9111) _(by Geo Daoyu)_
 -   [`d360fe5`](https://github.com/stdlib-js/stdlib/commit/d360fe525de98bfac66993c5c54b13fffccab822) - **feat:** add `ndarray/base/to-reversed-dimension` [(#8852)](https://github.com/stdlib-js/stdlib/pull/8852) _(by Muhammad Haris, Athan Reines)_
