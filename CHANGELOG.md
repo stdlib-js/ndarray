@@ -481,6 +481,7 @@
 
 ### Bug Fixes
 
+-   [`a0191a5`](https://github.com/stdlib-js/stdlib/commit/a0191a5c95f5f40d8247e1e5679812aef0d81b1c) - ensure sentinel value is passed through
 -   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - improve type specificity
 -   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010)
 -   [`83a01e7`](https://github.com/stdlib-js/stdlib/commit/83a01e723e9037a2c402c1e60b54bc678ef27078) - enforce mostly-safe casting
@@ -654,6 +655,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`a0191a5`](https://github.com/stdlib-js/stdlib/commit/a0191a5c95f5f40d8247e1e5679812aef0d81b1c) - **fix:** ensure sentinel value is passed through _(by Athan Reines)_
 -   [`2e0f8e6`](https://github.com/stdlib-js/stdlib/commit/2e0f8e6476ccc5194c02d472a327fb8a425fdfae) - **feat:** add `ndarray/push` [(#9054)](https://github.com/stdlib-js/stdlib/pull/9054) _(by Muhammad Haris, Athan Reines)_
 -   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - **fix:** improve type specificity _(by Athan Reines)_
 -   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - **feat:** add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040) _(by Muhammad Haris, Athan Reines)_
