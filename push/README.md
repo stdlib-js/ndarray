@@ -55,7 +55,7 @@ var out = push( x, 5.0, 6.0, 7.0 );
 
 The function accepts the following arguments:
 
--   **arr**: input [ndarray][@stdlib/ndarray/ctor]. Must be one-dimensional.
+-   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must be one-dimensional.
 -   **...values**: scalar values to append.
 
 #### push.assign( x, ...values, out )
@@ -78,7 +78,7 @@ var bool = ( out === y );
 
 The function accepts the following arguments:
 
--   **arr**: input [ndarray][@stdlib/ndarray/ctor]. Must be one-dimensional.
+-   **x**: input [ndarray][@stdlib/ndarray/ctor]. Must be one-dimensional.
 -   **...values**: scalar values to append.
 -   **out**: output [ndarray][@stdlib/ndarray/ctor]. Must be one-dimensional.
 
