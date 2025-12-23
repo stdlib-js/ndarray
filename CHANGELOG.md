@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-21)
+## Unreleased (2025-12-23)
 
 <section class="features">
 
@@ -611,6 +611,10 @@
 
 ### BREAKING CHANGES
 
+-   [`b760fb5`](https://github.com/stdlib-js/stdlib/commit/b760fb5724fb36fb9ae5b18aaf642b3f25037cec): rename `sentinelValue` option to `sentinel`
+
+    -   To migrate, users should update their usage of `sentinelValue` to use just `sentinel`.
+
 -   [`97834dd`](https://github.com/stdlib-js/stdlib/commit/97834ddd6f863bd8e9b30ce10966f5db8a1f48b2): remove package
 
     -   To migrate, users should use `ndarray/base/unary-reduce-strided1d-assign-struct`
@@ -655,6 +659,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`b760fb5`](https://github.com/stdlib-js/stdlib/commit/b760fb5724fb36fb9ae5b18aaf642b3f25037cec) - **refactor:** rename `sentinelValue` option in `ndarray/find` _(by Muhammad Haris)_
 -   [`178c4a3`](https://github.com/stdlib-js/stdlib/commit/178c4a33f559e1bdf0e6d3f2c4eb95b59ecd7210) - **docs:** update description _(by Athan Reines)_
 -   [`59376ad`](https://github.com/stdlib-js/stdlib/commit/59376adf8a58a9cbf9a54dac8ee242e004b86631) - **refactor:** update error messages _(by Athan Reines)_
 -   [`c709856`](https://github.com/stdlib-js/stdlib/commit/c709856b599f53f997353508b5cc1ae2b2bd1b2f) - **docs:** use parameter name from function signature _(by Philipp Burckhardt)_
