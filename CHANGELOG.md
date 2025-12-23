@@ -659,6 +659,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`46d9a44`](https://github.com/stdlib-js/stdlib/commit/46d9a441ddf70ca13ac2a8d61cf54c628876e537) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` _(by Athan Reines)_
 -   [`50ec01b`](https://github.com/stdlib-js/stdlib/commit/50ec01b7e6b99e92e033199246bae378a10ee479) - **style:** fix missing space _(by Athan Reines)_
 -   [`a799baf`](https://github.com/stdlib-js/stdlib/commit/a799bafe59b868a07c99266ca494074a8037ce67) - **docs:** update examples _(by Athan Reines)_
 -   [`b760fb5`](https://github.com/stdlib-js/stdlib/commit/b760fb5724fb36fb9ae5b18aaf642b3f25037cec) - **refactor:** rename `sentinelValue` option in `ndarray/find` _(by Muhammad Haris)_
