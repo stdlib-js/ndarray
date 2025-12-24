@@ -659,6 +659,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`9705997`](https://github.com/stdlib-js/stdlib/commit/970599728ed2c51b399d1a97aa567c47bfc7085e) - **docs:** improve doctests for ndarray instances in `ndarray/count-truthy` [(#9340)](https://github.com/stdlib-js/stdlib/pull/9340) _(by Lokesh Ranjan, Athan Reines)_
 -   [`eaa7afb`](https://github.com/stdlib-js/stdlib/commit/eaa7afbbf6ea6499654b0f14ecbb7d59c0bf0d91) - **docs:** improve doctests for ndarray instances in `ndarray/any` [(#9345)](https://github.com/stdlib-js/stdlib/pull/9345) _(by DivitJain26)_
 -   [`13dc3be`](https://github.com/stdlib-js/stdlib/commit/13dc3be658a96c61efecced1b0639f63081cf67d) - **docs:** improve doctests for ndarray instances in `ndarray/count-if` [(#9339)](https://github.com/stdlib-js/stdlib/pull/9339) _(by Lokesh Ranjan)_
 -   [`32cb1a3`](https://github.com/stdlib-js/stdlib/commit/32cb1a34eaf2d337bbf7ec018df90c9b2ff80466) - **docs:** improve doctests for ndarray instances in `ndarray/concat1d` [(#9344)](https://github.com/stdlib-js/stdlib/pull/9344) _(by Lokesh Ranjan)_
