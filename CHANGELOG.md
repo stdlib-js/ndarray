@@ -659,6 +659,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`32cb1a3`](https://github.com/stdlib-js/stdlib/commit/32cb1a34eaf2d337bbf7ec018df90c9b2ff80466) - **docs:** improve doctests for ndarray instances in `ndarray/concat1d` [(#9344)](https://github.com/stdlib-js/stdlib/pull/9344) _(by Lokesh Ranjan)_
 -   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec) - **docs:** update `ndarray` TypeScript declarations [(#9335)](https://github.com/stdlib-js/stdlib/pull/9335) _(by stdlib-bot)_
 -   [`46d9a44`](https://github.com/stdlib-js/stdlib/commit/46d9a441ddf70ca13ac2a8d61cf54c628876e537) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` _(by Athan Reines)_
 -   [`50ec01b`](https://github.com/stdlib-js/stdlib/commit/50ec01b7e6b99e92e033199246bae378a10ee479) - **style:** fix missing space _(by Athan Reines)_
