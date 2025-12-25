@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066)
 -   [`2e0f8e6`](https://github.com/stdlib-js/stdlib/commit/2e0f8e6476ccc5194c02d472a327fb8a425fdfae) - add `ndarray/push` [(#9054)](https://github.com/stdlib-js/stdlib/pull/9054)
 -   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040)
 -   [`d360fe5`](https://github.com/stdlib-js/stdlib/commit/d360fe525de98bfac66993c5c54b13fffccab822) - add `ndarray/base/to-reversed-dimension` [(#8852)](https://github.com/stdlib-js/stdlib/pull/8852)
@@ -659,6 +660,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - **feat:** add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066) _(by Muhammad Haris, Athan Reines)_
 -   [`413ac14`](https://github.com/stdlib-js/stdlib/commit/413ac146c9b1f2552d44aec272a7d899122b6210) - **docs:** update examples [(#9358)](https://github.com/stdlib-js/stdlib/pull/9358) _(by stdlib-bot)_
 -   [`9705997`](https://github.com/stdlib-js/stdlib/commit/970599728ed2c51b399d1a97aa567c47bfc7085e) - **docs:** improve doctests for ndarray instances in `ndarray/count-truthy` [(#9340)](https://github.com/stdlib-js/stdlib/pull/9340) _(by Lokesh Ranjan, Athan Reines)_
 -   [`eaa7afb`](https://github.com/stdlib-js/stdlib/commit/eaa7afbbf6ea6499654b0f14ecbb7d59c0bf0d91) - **docs:** improve doctests for ndarray instances in `ndarray/any` [(#9345)](https://github.com/stdlib-js/stdlib/pull/9345) _(by DivitJain26)_
