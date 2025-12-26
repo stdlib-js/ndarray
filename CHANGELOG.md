@@ -660,6 +660,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`345c740`](https://github.com/stdlib-js/stdlib/commit/345c7404530f8c5ba7215bfe6e25cc5e4a0af640) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` [(#9377)](https://github.com/stdlib-js/stdlib/pull/9377) _(by kaushal-kumar-it)_
 -   [`daf2cc8`](https://github.com/stdlib-js/stdlib/commit/daf2cc847c77117f4c5ae4e5e99ae224bb592edc) - **refactor:** add writable parameter to `ndarray/base/spread-dimensions` [(#9370)](https://github.com/stdlib-js/stdlib/pull/9370) _(by Muhammad Haris, Athan Reines)_
 -   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - **feat:** add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066) _(by Muhammad Haris, Athan Reines)_
 -   [`413ac14`](https://github.com/stdlib-js/stdlib/commit/413ac146c9b1f2552d44aec272a7d899122b6210) - **docs:** update examples [(#9358)](https://github.com/stdlib-js/stdlib/pull/9358) _(by stdlib-bot)_
