@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-26)
+## Unreleased (2025-12-27)
 
 <section class="features">
 
 ### Features
 
+-   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386)
 -   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066)
 -   [`2e0f8e6`](https://github.com/stdlib-js/stdlib/commit/2e0f8e6476ccc5194c02d472a327fb8a425fdfae) - add `ndarray/push` [(#9054)](https://github.com/stdlib-js/stdlib/pull/9054)
 -   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040)
@@ -612,6 +613,10 @@
 
 ### BREAKING CHANGES
 
+-   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c): add `writable` parameter
+
+    -   To migrate, users should be explicit in terms of whether a writable or read-only ndarray is returned. The previous behavior only returned a read-only array when provided a read-only array. The responsibility for determining the appropriate return value behavior is now pushed to userland.
+
 -   [`b760fb5`](https://github.com/stdlib-js/stdlib/commit/b760fb5724fb36fb9ae5b18aaf642b3f25037cec): rename `sentinelValue` option to `sentinel`
 
     -   To migrate, users should update their usage of `sentinelValue` to use just `sentinel`.
@@ -660,6 +665,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - **feat:** update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386) _(by stdlib-bot)_
 -   [`345c740`](https://github.com/stdlib-js/stdlib/commit/345c7404530f8c5ba7215bfe6e25cc5e4a0af640) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` [(#9377)](https://github.com/stdlib-js/stdlib/pull/9377) _(by kaushal-kumar-it)_
 -   [`daf2cc8`](https://github.com/stdlib-js/stdlib/commit/daf2cc847c77117f4c5ae4e5e99ae224bb592edc) - **refactor:** add writable parameter to `ndarray/base/spread-dimensions` [(#9370)](https://github.com/stdlib-js/stdlib/pull/9370) _(by Muhammad Haris, Athan Reines)_
 -   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - **feat:** add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066) _(by Muhammad Haris, Athan Reines)_
