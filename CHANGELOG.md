@@ -667,6 +667,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`d80dfe4`](https://github.com/stdlib-js/stdlib/commit/d80dfe41a1ef87da9fdf8c4cb88c3036134faa2f) - **docs:** improve doctests for ndarray instances in `ndarray/any-by` [(#9399)](https://github.com/stdlib-js/stdlib/pull/9399) _(by Rohit R Bhat, Athan Reines)_
 -   [`45264d0`](https://github.com/stdlib-js/stdlib/commit/45264d0387509a18856c21c332349f16c8a81086) - **docs:** improve doctests for ndarray instances in `ndarray/some` [(#9388)](https://github.com/stdlib-js/stdlib/pull/9388) _(by kaushal-kumar-it, Athan Reines)_
 -   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - **feat:** update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386) _(by stdlib-bot)_
 -   [`345c740`](https://github.com/stdlib-js/stdlib/commit/345c7404530f8c5ba7215bfe6e25cc5e4a0af640) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` [(#9377)](https://github.com/stdlib-js/stdlib/pull/9377) _(by kaushal-kumar-it)_
@@ -1899,7 +1900,7 @@ A total of 37 issues were closed in this release:
 
 ### Contributors
 
-A total of 28 people contributed to this release. Thank you to the following contributors:
+A total of 29 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1923,6 +1924,7 @@ A total of 28 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Piyush Goel
 -   Pravesh Kunwar
+-   Rohit R Bhat
 -   Sai Avinash
 -   Shubham
 -   Tushar Bhardwaj
