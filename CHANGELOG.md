@@ -12,6 +12,7 @@
 
 -   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386)
 -   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066)
+-   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec) - update `ndarray` TypeScript declarations [(#9335)](https://github.com/stdlib-js/stdlib/pull/9335)
 -   [`2e0f8e6`](https://github.com/stdlib-js/stdlib/commit/2e0f8e6476ccc5194c02d472a327fb8a425fdfae) - add `ndarray/push` [(#9054)](https://github.com/stdlib-js/stdlib/pull/9054)
 -   [`3feb022`](https://github.com/stdlib-js/stdlib/commit/3feb02271d5335920ebbd4ca0268f0a24340e168) - add `ndarray/flatten-from-by` [(#9040)](https://github.com/stdlib-js/stdlib/pull/9040)
 -   [`d360fe5`](https://github.com/stdlib-js/stdlib/commit/d360fe525de98bfac66993c5c54b13fffccab822) - add `ndarray/base/to-reversed-dimension` [(#8852)](https://github.com/stdlib-js/stdlib/pull/8852)
@@ -617,6 +618,7 @@
 
     -   To migrate, users should be explicit in terms of whether a writable or read-only ndarray is returned. The previous behavior only returned a read-only array when provided a read-only array. The responsibility for determining the appropriate return value behavior is now pushed to userland.
 
+-   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec): update `ndarray` TypeScript declarations
 -   [`b760fb5`](https://github.com/stdlib-js/stdlib/commit/b760fb5724fb36fb9ae5b18aaf642b3f25037cec): rename `sentinelValue` option to `sentinel`
 
     -   To migrate, users should update their usage of `sentinelValue` to use just `sentinel`.
@@ -665,6 +667,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`45264d0`](https://github.com/stdlib-js/stdlib/commit/45264d0387509a18856c21c332349f16c8a81086) - **docs:** improve doctests for ndarray instances in `ndarray/some` [(#9388)](https://github.com/stdlib-js/stdlib/pull/9388) _(by kaushal-kumar-it, Athan Reines)_
 -   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - **feat:** update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386) _(by stdlib-bot)_
 -   [`345c740`](https://github.com/stdlib-js/stdlib/commit/345c7404530f8c5ba7215bfe6e25cc5e4a0af640) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` [(#9377)](https://github.com/stdlib-js/stdlib/pull/9377) _(by kaushal-kumar-it)_
 -   [`daf2cc8`](https://github.com/stdlib-js/stdlib/commit/daf2cc847c77117f4c5ae4e5e99ae224bb592edc) - **refactor:** add writable parameter to `ndarray/base/spread-dimensions` [(#9370)](https://github.com/stdlib-js/stdlib/pull/9370) _(by Muhammad Haris, Athan Reines)_
@@ -674,7 +677,7 @@ A total of 37 issues were closed in this release:
 -   [`eaa7afb`](https://github.com/stdlib-js/stdlib/commit/eaa7afbbf6ea6499654b0f14ecbb7d59c0bf0d91) - **docs:** improve doctests for ndarray instances in `ndarray/any` [(#9345)](https://github.com/stdlib-js/stdlib/pull/9345) _(by DivitJain26)_
 -   [`13dc3be`](https://github.com/stdlib-js/stdlib/commit/13dc3be658a96c61efecced1b0639f63081cf67d) - **docs:** improve doctests for ndarray instances in `ndarray/count-if` [(#9339)](https://github.com/stdlib-js/stdlib/pull/9339) _(by Lokesh Ranjan)_
 -   [`32cb1a3`](https://github.com/stdlib-js/stdlib/commit/32cb1a34eaf2d337bbf7ec018df90c9b2ff80466) - **docs:** improve doctests for ndarray instances in `ndarray/concat1d` [(#9344)](https://github.com/stdlib-js/stdlib/pull/9344) _(by Lokesh Ranjan)_
--   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec) - **docs:** update `ndarray` TypeScript declarations [(#9335)](https://github.com/stdlib-js/stdlib/pull/9335) _(by stdlib-bot)_
+-   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec) - **feat:** update `ndarray` TypeScript declarations [(#9335)](https://github.com/stdlib-js/stdlib/pull/9335) _(by stdlib-bot)_
 -   [`46d9a44`](https://github.com/stdlib-js/stdlib/commit/46d9a441ddf70ca13ac2a8d61cf54c628876e537) - **docs:** improve doctests for ndarray instances in `ndarray/count-falsy` _(by Athan Reines)_
 -   [`50ec01b`](https://github.com/stdlib-js/stdlib/commit/50ec01b7e6b99e92e033199246bae378a10ee479) - **style:** fix missing space _(by Athan Reines)_
 -   [`a799baf`](https://github.com/stdlib-js/stdlib/commit/a799bafe59b868a07c99266ca494074a8037ce67) - **docs:** update examples _(by Athan Reines)_
