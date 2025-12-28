@@ -667,6 +667,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`908b8bb`](https://github.com/stdlib-js/stdlib/commit/908b8bbc9abb690c1038d9a31eb99dc079584667) - **docs:** update `ndarray` TypeScript declarations [(#9405)](https://github.com/stdlib-js/stdlib/pull/9405) _(by stdlib-bot)_
 -   [`880be90`](https://github.com/stdlib-js/stdlib/commit/880be90c78565355d6e6616def13ccf5037faeca) - **style:** add missing spaces before closing bracket _(by Philipp Burckhardt)_
 -   [`3977119`](https://github.com/stdlib-js/stdlib/commit/39771197cd35f28f98740f9818a973b0e551e5af) - **test:** fix broken test _(by Athan Reines)_
 -   [`6c8898d`](https://github.com/stdlib-js/stdlib/commit/6c8898d91f98aba98914c5a5963b4e3b0cc24811) - **test:** add tests for DataType instances _(by Athan Reines)_
