@@ -667,6 +667,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`627daa6`](https://github.com/stdlib-js/stdlib/commit/627daa60f853370c88a35b910e84501704a52675) - **test:** add test cases for DataType instances _(by Athan Reines)_
 -   [`d3a0548`](https://github.com/stdlib-js/stdlib/commit/d3a05480e872e702db968bbe9f4d3610e8aed50d) - **test:** add tests for DataType instances _(by Athan Reines)_
 -   [`d80dfe4`](https://github.com/stdlib-js/stdlib/commit/d80dfe41a1ef87da9fdf8c4cb88c3036134faa2f) - **docs:** improve doctests for ndarray instances in `ndarray/any-by` [(#9399)](https://github.com/stdlib-js/stdlib/pull/9399) _(by Rohit R Bhat, Athan Reines)_
 -   [`45264d0`](https://github.com/stdlib-js/stdlib/commit/45264d0387509a18856c21c332349f16c8a81086) - **docs:** improve doctests for ndarray instances in `ndarray/some` [(#9388)](https://github.com/stdlib-js/stdlib/pull/9388) _(by kaushal-kumar-it, Athan Reines)_
