@@ -667,6 +667,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`35c585c`](https://github.com/stdlib-js/stdlib/commit/35c585c9c40c66b881df40578a18331bafc3c48e) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`9333f71`](https://github.com/stdlib-js/stdlib/commit/9333f717337007d160cb66e57e7a97d4da2ff0c0) - **test:** add tests for DataType instances _(by Athan Reines)_
 -   [`908b8bb`](https://github.com/stdlib-js/stdlib/commit/908b8bbc9abb690c1038d9a31eb99dc079584667) - **docs:** update `ndarray` TypeScript declarations [(#9405)](https://github.com/stdlib-js/stdlib/pull/9405) _(by stdlib-bot)_
 -   [`880be90`](https://github.com/stdlib-js/stdlib/commit/880be90c78565355d6e6616def13ccf5037faeca) - **style:** add missing spaces before closing bracket _(by Philipp Burckhardt)_
