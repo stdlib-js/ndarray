@@ -675,6 +675,8 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`7ed84a3`](https://github.com/stdlib-js/stdlib/commit/7ed84a377820c9a20047b7329799467e58bd3171) - **docs:** fix examples _(by Athan Reines)_
+-   [`6b360e5`](https://github.com/stdlib-js/stdlib/commit/6b360e548417af6331cee3ecad0f03f9203b9b16) - **refactor:** support dtype instances by normalizing provided dtypes to strings _(by Athan Reines)_
 -   [`322b8cb`](https://github.com/stdlib-js/stdlib/commit/322b8cb870769d9198ddbcd0b89610b185ab57ff) - **build:** ensure dtypes are strings _(by Athan Reines)_
 -   [`387beea`](https://github.com/stdlib-js/stdlib/commit/387beea5c84c7bd4f0aab41ec35e49819275c9b0) - **build:** ensure dtypes are strings _(by Athan Reines)_
 -   [`2a887b7`](https://github.com/stdlib-js/stdlib/commit/2a887b7eb76a7f0ecc48133049868395b90ff196) - **refactor:** support data type instances _(by Athan Reines)_

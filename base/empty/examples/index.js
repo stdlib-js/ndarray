@@ -22,7 +22,7 @@ var dtypes = require( './../../../dtypes' );
 var empty = require( './../lib' );
 
 // Get a list of data types:
-var dt = dtypes();
+var dt = dtypes( 'integer_and_generic' );
 
 // Generate uninitialized arrays...
 var arr;
