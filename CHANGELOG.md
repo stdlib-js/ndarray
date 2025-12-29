@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b1623fe`](https://github.com/stdlib-js/stdlib/commit/b1623fe2c183124b2eb55736b4314329aea2856a) - update `ndarray/base` TypeScript declarations [(#9420)](https://github.com/stdlib-js/stdlib/pull/9420)
 -   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - add `toFlippedud` to namespace
 -   [`e7d3d48`](https://github.com/stdlib-js/stdlib/commit/e7d3d486d1a9fc72f471b845d14f076d4f94ae60) - add `toFlippedlr` to namespace
 -   [`1972ac5`](https://github.com/stdlib-js/stdlib/commit/1972ac52d4241dcd3523a859a5cfad4ba6184566) - add `toReversedDimension` to namespace
@@ -673,6 +674,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`b1623fe`](https://github.com/stdlib-js/stdlib/commit/b1623fe2c183124b2eb55736b4314329aea2856a) - **feat:** update `ndarray/base` TypeScript declarations [(#9420)](https://github.com/stdlib-js/stdlib/pull/9420) _(by stdlib-bot)_
 -   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_
 -   [`e7d3d48`](https://github.com/stdlib-js/stdlib/commit/e7d3d486d1a9fc72f471b845d14f076d4f94ae60) - **feat:** add `toFlippedlr` to namespace _(by Athan Reines)_
 -   [`1972ac5`](https://github.com/stdlib-js/stdlib/commit/1972ac52d4241dcd3523a859a5cfad4ba6184566) - **feat:** add `toReversedDimension` to namespace _(by Athan Reines)_
