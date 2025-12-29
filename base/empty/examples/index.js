@@ -19,6 +19,7 @@
 'use strict';
 
 var dtypes = require( './../../../dtypes' );
+var ndarray2array = require( './../../../to-array' );
 var empty = require( './../lib' );
 
 // Get a list of data types:
@@ -29,5 +30,5 @@ var arr;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
 	arr = empty( dt[ i ], [ 2, 2 ], 'row-major' );
-	console.log( arr.data );
+	console.log( ndarray2array( arr ) );
 }
