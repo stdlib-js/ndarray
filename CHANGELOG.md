@@ -675,6 +675,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`11b2d44`](https://github.com/stdlib-js/stdlib/commit/11b2d445b8f91c8bf41e3c6cc9d53d6a3a9f0608) - **refactor:** ensure support for enumeration constants _(by Athan Reines)_
 -   [`7c5881e`](https://github.com/stdlib-js/stdlib/commit/7c5881ea1b0a9251b4b758d24df128a4fab28fa6) - **docs:** update dtype type _(by Athan Reines)_
 -   [`374beff`](https://github.com/stdlib-js/stdlib/commit/374beff1f47c81bea4dd825d3b25ce405c2f9375) - **docs:** update dtype type _(by Athan Reines)_
 -   [`6c010ed`](https://github.com/stdlib-js/stdlib/commit/6c010ede1bf09077f25b1340c6874ac11bf16b08) - **test:** fix broken tests _(by Athan Reines)_
