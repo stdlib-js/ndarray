@@ -675,6 +675,11 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`0aeccc2`](https://github.com/stdlib-js/stdlib/commit/0aeccc26acf8805e65efec785132deec907dd073) - **refactor:** rename variable _(by Athan Reines)_
+-   [`d0514f7`](https://github.com/stdlib-js/stdlib/commit/d0514f706cd96237b73f6b6cc02539534e5b0a00) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`cc057c6`](https://github.com/stdlib-js/stdlib/commit/cc057c682563ebf77e7c1b7c7a9168a57fb091e3) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`99a718f`](https://github.com/stdlib-js/stdlib/commit/99a718fb54e488b1afba8779182e011452096bec) - **refactor:** use assertion utility _(by Athan Reines)_
+-   [`359bba5`](https://github.com/stdlib-js/stdlib/commit/359bba54a7067cf75dd0e191f56cd1817ecc6e59) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`a412839`](https://github.com/stdlib-js/stdlib/commit/a4128395cf4695b457d72d1a665393cae6bd834d) - **refactor:** support dtype instances by normalizing dtypes to strings _(by Athan Reines)_
 -   [`cadf4e1`](https://github.com/stdlib-js/stdlib/commit/cadf4e1b8d185dd7fe9c48d09651be8681d2f40b) - **docs:** update examples _(by Athan Reines)_
 -   [`7ed84a3`](https://github.com/stdlib-js/stdlib/commit/7ed84a377820c9a20047b7329799467e58bd3171) - **docs:** fix examples _(by Athan Reines)_
