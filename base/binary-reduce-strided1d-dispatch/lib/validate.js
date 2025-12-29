@@ -26,6 +26,7 @@ var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isIntegerArray = require( '@stdlib/assert/is-integer-array' ).primitives;
 var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
 var normalizeIndices = require( './../../../base/to-unique-normalized-indices' );
+var resolveStr = require( './../../../base/dtype-resolve-str' );
 var join = require( '@stdlib/array/base/join' );
 var contains = require( '@stdlib/array/base/assert/contains' );
 var format = require( '@stdlib/string/format' );
@@ -85,7 +86,7 @@ function validate( opts, ndims, dtypes, options ) {
 	}
 	if ( hasOwnProp( options, 'dtype' ) ) {
 		opts.dtype = options.dtype;
-		if ( !contains( dtypes, String( opts.dtype ) ) ) {
+		if ( !contains( dtypes, resolveStr( opts.dtype ) ) ) {
 			return new TypeError( format( 'invalid option. `%s` option must be one of the following: "%s". Option: `%s`.', 'dtype', join( dtypes, '", "' ), opts.dtype ) );
 		}
 	}
