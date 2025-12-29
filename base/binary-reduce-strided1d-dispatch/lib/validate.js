@@ -85,9 +85,9 @@ function validate( opts, ndims, dtypes, options ) {
 		opts.dims = tmp;
 	}
 	if ( hasOwnProp( options, 'dtype' ) ) {
-		opts.dtype = options.dtype;
-		if ( !contains( dtypes, resolveStr( opts.dtype ) ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be one of the following: "%s". Option: `%s`.', 'dtype', join( dtypes, '", "' ), opts.dtype ) );
+		opts.dtype = resolveStr( options.dtype );
+		if ( !contains( dtypes, opts.dtype ) ) {
+			return new TypeError( format( 'invalid option. `%s` option must be one of the following: "%s". Option: `%s`.', 'dtype', join( dtypes, '", "' ), options.dtype ) );
 		}
 	}
 	return null;

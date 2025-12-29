@@ -490,6 +490,7 @@
 
 ### Bug Fixes
 
+-   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - resolve normalized data type
 -   [`c1ac155`](https://github.com/stdlib-js/stdlib/commit/c1ac155e7e751a72a868ebae2f4667c338f834bd) - update return type
 -   [`a0191a5`](https://github.com/stdlib-js/stdlib/commit/a0191a5c95f5f40d8247e1e5679812aef0d81b1c) - ensure sentinel value is passed through
 -   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - improve type specificity
@@ -674,6 +675,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - **fix:** resolve normalized data type _(by Athan Reines)_
 -   [`697b9ed`](https://github.com/stdlib-js/stdlib/commit/697b9edd6f85e39a03bed4f142814238bb3cdce8) - **docs:** update examples and docs to accommodate data type instances _(by Athan Reines)_
 -   [`452cc00`](https://github.com/stdlib-js/stdlib/commit/452cc003a69938f9cdce6ed45219f41673af1c1f) - **docs:** update example _(by Athan Reines)_
 -   [`5e87686`](https://github.com/stdlib-js/stdlib/commit/5e87686d428b0ae5570c1f0c56d4c6721b13643d) - **docs:** update examples to use ndarray instance notation _(by Athan Reines)_
