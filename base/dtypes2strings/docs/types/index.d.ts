@@ -23,26 +23,26 @@
 import { DataType } from '@stdlib/types/ndarray';
 
 /**
-* Resolves a list of data type enumeration constants.
+* Resolves a list of data type strings.
 *
 * ## Notes
 *
-* -   If the function is unable to resolve an enumeration constant for a provided data type, the corresponding element in the returned array will be `null`.
+* -   If the function is unable to resolve a data type string for a provided data type, the corresponding element in the returned array will be `null`.
 *
 * @param dtypes - list of data types
 * @returns results
 *
 * @example
-* var out = dtypes2enums( [ 'float32', 'float64' ] );
+* var out = dtypes2strings( [ 'float32', 'float64' ] );
 * // returns [...]
 *
 * @example
-* var out = dtypes2enums( [ 'foo', 'bar' ] );
+* var out = dtypes2strings( [ 'foo', 'bar' ] );
 * // returns [ null, null ]
 */
-declare function dtypes2enums( dtypes: ArrayLike<DataType> ): Array<number|null>;
+declare function dtypes2strings( dtypes: ArrayLike<DataType> ): Array<string|null>;
 
 
 // EXPORTS //
 
-export = dtypes2enums;
+export = dtypes2strings;

@@ -4,12 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-28)
+## Unreleased (2025-12-29)
 
 <section class="features">
 
 ### Features
 
+-   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - add `toFlippedud` to namespace
+-   [`e7d3d48`](https://github.com/stdlib-js/stdlib/commit/e7d3d486d1a9fc72f471b845d14f076d4f94ae60) - add `toFlippedlr` to namespace
+-   [`1972ac5`](https://github.com/stdlib-js/stdlib/commit/1972ac52d4241dcd3523a859a5cfad4ba6184566) - add `toReversedDimension` to namespace
+-   [`617c0f4`](https://github.com/stdlib-js/stdlib/commit/617c0f46c72c94a57fd571cddbcce1b06f342a57) - add `dtypes2strings` to namespace
+-   [`a1169f1`](https://github.com/stdlib-js/stdlib/commit/a1169f183b26929e45d5a1293e1d27822e54b4be) - add `ndarray/base/dtypes2strings`
 -   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c) - update `ndarray/base` TypeScript declarations [(#9386)](https://github.com/stdlib-js/stdlib/pull/9386)
 -   [`48c3c32`](https://github.com/stdlib-js/stdlib/commit/48c3c32ed78e8cad7b2719f2b2a0328a66e1c9e3) - add `ndarray/unshift` [(#9066)](https://github.com/stdlib-js/stdlib/pull/9066)
 -   [`fdd3aa1`](https://github.com/stdlib-js/stdlib/commit/fdd3aa1bd398edec9c30a05569b05a3aba1897ec) - update `ndarray` TypeScript declarations [(#9335)](https://github.com/stdlib-js/stdlib/pull/9335)
@@ -484,6 +489,7 @@
 
 ### Bug Fixes
 
+-   [`c1ac155`](https://github.com/stdlib-js/stdlib/commit/c1ac155e7e751a72a868ebae2f4667c338f834bd) - update return type
 -   [`a0191a5`](https://github.com/stdlib-js/stdlib/commit/a0191a5c95f5f40d8247e1e5679812aef0d81b1c) - ensure sentinel value is passed through
 -   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - improve type specificity
 -   [`01ab290`](https://github.com/stdlib-js/stdlib/commit/01ab29036205f4a0507133c1a4a7fd429bb7bd9e) - rename import in `ndarray/base/unary-strided1d-dispatch` to resolve conflict [(#9010)](https://github.com/stdlib-js/stdlib/pull/9010)
@@ -667,6 +673,14 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_
+-   [`e7d3d48`](https://github.com/stdlib-js/stdlib/commit/e7d3d486d1a9fc72f471b845d14f076d4f94ae60) - **feat:** add `toFlippedlr` to namespace _(by Athan Reines)_
+-   [`1972ac5`](https://github.com/stdlib-js/stdlib/commit/1972ac52d4241dcd3523a859a5cfad4ba6184566) - **feat:** add `toReversedDimension` to namespace _(by Athan Reines)_
+-   [`617c0f4`](https://github.com/stdlib-js/stdlib/commit/617c0f46c72c94a57fd571cddbcce1b06f342a57) - **feat:** add `dtypes2strings` to namespace _(by Athan Reines)_
+-   [`a1169f1`](https://github.com/stdlib-js/stdlib/commit/a1169f183b26929e45d5a1293e1d27822e54b4be) - **feat:** add `ndarray/base/dtypes2strings` _(by Athan Reines)_
+-   [`d66fe7c`](https://github.com/stdlib-js/stdlib/commit/d66fe7c95fa222a2a8b9c9c2930ed5e6ae7d476d) - **docs:** fix type _(by Athan Reines)_
+-   [`19f99c8`](https://github.com/stdlib-js/stdlib/commit/19f99c8d5ca00057daef78dae609b13a82e04fa4) - **docs:** fix comment _(by Athan Reines)_
+-   [`c1ac155`](https://github.com/stdlib-js/stdlib/commit/c1ac155e7e751a72a868ebae2f4667c338f834bd) - **fix:** update return type _(by Athan Reines)_
 -   [`35c585c`](https://github.com/stdlib-js/stdlib/commit/35c585c9c40c66b881df40578a18331bafc3c48e) - **refactor:** use assertion utility _(by Athan Reines)_
 -   [`9333f71`](https://github.com/stdlib-js/stdlib/commit/9333f717337007d160cb66e57e7a97d4da2ff0c0) - **test:** add tests for DataType instances _(by Athan Reines)_
 -   [`908b8bb`](https://github.com/stdlib-js/stdlib/commit/908b8bbc9abb690c1038d9a31eb99dc079584667) - **docs:** update `ndarray` TypeScript declarations [(#9405)](https://github.com/stdlib-js/stdlib/pull/9405) _(by stdlib-bot)_

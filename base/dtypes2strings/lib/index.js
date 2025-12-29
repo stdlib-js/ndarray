@@ -1,4 +1,4 @@
-/*
+/**
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,33 +16,28 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
-
-/// <reference types="@stdlib/types"/>
-
-import { DataType } from '@stdlib/types/ndarray';
+'use strict';
 
 /**
-* Resolves a list of data type enumeration constants.
+* Resolve a list of data type strings.
 *
-* ## Notes
-*
-* -   If the function is unable to resolve an enumeration constant for a provided data type, the corresponding element in the returned array will be `null`.
-*
-* @param dtypes - list of data types
-* @returns results
+* @module @stdlib/ndarray/base/dtypes2strings
 *
 * @example
-* var out = dtypes2enums( [ 'float32', 'float64' ] );
+* var dtypes2strings = require( '@stdlib/ndarray/base/dtypes2strings' );
+*
+* var out = dtypes2strings( [ 'float32', 'float64' ] );
 * // returns [...]
 *
-* @example
-* var out = dtypes2enums( [ 'foo', 'bar' ] );
+* out = dtypes2strings( [ 'foo', 'bar' ] );
 * // returns [ null, null ]
 */
-declare function dtypes2enums( dtypes: ArrayLike<DataType> ): Array<number|null>;
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-export = dtypes2enums;
+module.exports = main;

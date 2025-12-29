@@ -464,6 +464,15 @@ setReadOnly( ns, 'dtypes2enums', require( './../../base/dtypes2enums' ) );
 setReadOnly( ns, 'dtypes2signatures', require( './../../base/dtypes2signatures' ) );
 
 /**
+* @name dtypes2strings
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/dtypes2strings}
+*/
+setReadOnly( ns, 'dtypes2strings', require( './../../base/dtypes2strings' ) );
+
+/**
 * @name empty
 * @memberof ns
 * @readonly
@@ -1202,6 +1211,24 @@ setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 setReadOnly( ns, 'ndarray2array', require( './../../base/to-array' ) );
 
 /**
+* @name toFlippedlr
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-flippedlr}
+*/
+setReadOnly( ns, 'toFlippedlr', require( './../../base/to-flippedlr' ) );
+
+/**
+* @name toFlippedud
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-flippedud}
+*/
+setReadOnly( ns, 'toFlippedud', require( './../../base/to-flippedud' ) );
+
+/**
 * @name toNormalizedIndices
 * @memberof ns
 * @readonly
@@ -1218,6 +1245,15 @@ setReadOnly( ns, 'toNormalizedIndices', require( './../../base/to-normalized-ind
 * @see {@link module:@stdlib/ndarray/base/to-reversed}
 */
 setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
+
+/**
+* @name toReversedDimension
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-reversed-dimension}
+*/
+setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimension' ) );
 
 /**
 * @name toUniqueNormalizedIndices

@@ -1,9 +1,9 @@
 
 {{alias}}( dtypes )
-    Resolves a list of data type enumeration constants.
+    Resolves a list of data type strings.
 
-    If the function is unable to resolve an enumeration constant for a provided
-    data type, the corresponding element in the returned array will be `null`.
+    If the function is unable to resolve a data type string for a provided data
+    type, the corresponding element in the returned array will be `null`.
 
     Parameters
     ----------
@@ -12,7 +12,7 @@
 
     Returns
     -------
-    out: Array<integer|null>
+    out: Array<string|null>
         Results.
 
     Examples
