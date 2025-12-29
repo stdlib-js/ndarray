@@ -675,6 +675,8 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`7c5881e`](https://github.com/stdlib-js/stdlib/commit/7c5881ea1b0a9251b4b758d24df128a4fab28fa6) - **docs:** update dtype type _(by Athan Reines)_
+-   [`374beff`](https://github.com/stdlib-js/stdlib/commit/374beff1f47c81bea4dd825d3b25ce405c2f9375) - **docs:** update dtype type _(by Athan Reines)_
 -   [`6c010ed`](https://github.com/stdlib-js/stdlib/commit/6c010ede1bf09077f25b1340c6874ac11bf16b08) - **test:** fix broken tests _(by Athan Reines)_
 -   [`c380fdd`](https://github.com/stdlib-js/stdlib/commit/c380fdd083d276c4e7eea1c2e0b664abad95e7b9) - **refactor:** move functions to module scope _(by Athan Reines)_
 -   [`0aeccc2`](https://github.com/stdlib-js/stdlib/commit/0aeccc26acf8805e65efec785132deec907dd073) - **refactor:** rename variable _(by Athan Reines)_
