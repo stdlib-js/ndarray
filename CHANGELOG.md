@@ -675,6 +675,12 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`322b8cb`](https://github.com/stdlib-js/stdlib/commit/322b8cb870769d9198ddbcd0b89610b185ab57ff) - **build:** ensure dtypes are strings _(by Athan Reines)_
+-   [`387beea`](https://github.com/stdlib-js/stdlib/commit/387beea5c84c7bd4f0aab41ec35e49819275c9b0) - **build:** ensure dtypes are strings _(by Athan Reines)_
+-   [`2a887b7`](https://github.com/stdlib-js/stdlib/commit/2a887b7eb76a7f0ecc48133049868395b90ff196) - **refactor:** support data type instances _(by Athan Reines)_
+-   [`760719b`](https://github.com/stdlib-js/stdlib/commit/760719b492247734f2778d4ace525d6719b2d202) - **refactor:** normalize a data type to a string _(by Athan Reines)_
+-   [`a52bc78`](https://github.com/stdlib-js/stdlib/commit/a52bc786e790aa242a563cdaefb58107b6cd2d9b) - **refactor:** normalize a provided data type to a string _(by Athan Reines)_
+-   [`982208c`](https://github.com/stdlib-js/stdlib/commit/982208cf3c840a5f3ff23378056cd7843dc1e173) - **docs:** update dtype type _(by Athan Reines)_
 -   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - **fix:** resolve normalized data type _(by Athan Reines)_
 -   [`697b9ed`](https://github.com/stdlib-js/stdlib/commit/697b9edd6f85e39a03bed4f142814238bb3cdce8) - **docs:** update examples and docs to accommodate data type instances _(by Athan Reines)_
 -   [`452cc00`](https://github.com/stdlib-js/stdlib/commit/452cc003a69938f9cdce6ed45219f41673af1c1f) - **docs:** update example _(by Athan Reines)_
