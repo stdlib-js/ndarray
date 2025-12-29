@@ -674,6 +674,11 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`697b9ed`](https://github.com/stdlib-js/stdlib/commit/697b9edd6f85e39a03bed4f142814238bb3cdce8) - **docs:** update examples and docs to accommodate data type instances _(by Athan Reines)_
+-   [`452cc00`](https://github.com/stdlib-js/stdlib/commit/452cc003a69938f9cdce6ed45219f41673af1c1f) - **docs:** update example _(by Athan Reines)_
+-   [`5e87686`](https://github.com/stdlib-js/stdlib/commit/5e87686d428b0ae5570c1f0c56d4c6721b13643d) - **docs:** update examples to use ndarray instance notation _(by Athan Reines)_
+-   [`67fe5f8`](https://github.com/stdlib-js/stdlib/commit/67fe5f8d3c4f7c7bbb322e648d48a462960b4b99) - **docs:** update type _(by Athan Reines)_
+-   [`85d47b6`](https://github.com/stdlib-js/stdlib/commit/85d47b6504ee90577497e26357afa6e63c101df6) - **docs:** update types _(by Athan Reines)_
 -   [`da7ea70`](https://github.com/stdlib-js/stdlib/commit/da7ea70b7b2de281c4c1364fe7dca3ef8ca7085c) - **refactor:** support data type instances _(by Athan Reines)_
 -   [`b1623fe`](https://github.com/stdlib-js/stdlib/commit/b1623fe2c183124b2eb55736b4314329aea2856a) - **feat:** update `ndarray/base` TypeScript declarations [(#9420)](https://github.com/stdlib-js/stdlib/pull/9420) _(by stdlib-bot)_
 -   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_

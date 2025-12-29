@@ -77,10 +77,10 @@ var DEFAULT_ORDER = defaults.get( 'order' );
 * @constructor
 * @param {Object} table - dispatch table
 * @param {Function} table.default - default strided reduction function
-* @param {Array} [table.types=[]] - one-dimensional list of ndarray data types describing specialized input ndarray argument signatures
+* @param {ArrayLikeObject} [table.types=[]] - one-dimensional list of ndarray data types describing specialized input ndarray argument signatures
 * @param {ArrayLikeObject<Function>} [table.fcns=[]] - list of strided reduction functions which are specific to specialized input ndarray argument signatures
-* @param {ArrayLikeObject<Array>} idtypes - list containing lists of supported input data types for each input ndarray argument
-* @param {Array} odtypes - list of supported output data types
+* @param {ArrayLikeObject<ArrayLikeObject>} idtypes - list containing lists of supported input data types for each input ndarray argument
+* @param {ArrayLikeObject} odtypes - list of supported output data types
 * @param {Object} policies - policies
 * @param {string} policies.output - output data type policy
 * @param {string} policies.casting - input ndarray casting policy
