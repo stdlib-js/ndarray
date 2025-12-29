@@ -21,7 +21,9 @@
 // MODULES //
 
 var tape = require( 'tape' );
+var dtypes2strings = require( './../../../base/dtypes2strings' );
 var dtypes = require( './../../../dtypes' );
+var dtypeEnums = require( './../../../base/dtype-enums' );
 var bufferCtors = require( './../../../base/buffer-ctors' );
 var structFactory = require( '@stdlib/array/struct-factory' );
 var isFunction = require( '@stdlib/assert/is-function' );
@@ -30,8 +32,8 @@ var dtypeEnum = require( './../lib' );
 
 // VARIABLES //
 
-var DTYPES = dtypes();
-var TABLE = dtypes.enum();
+var DTYPES = dtypes2strings( dtypes() );
+var TABLE = dtypeEnums();
 
 
 // TESTS //

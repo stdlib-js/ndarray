@@ -675,6 +675,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`6c010ed`](https://github.com/stdlib-js/stdlib/commit/6c010ede1bf09077f25b1340c6874ac11bf16b08) - **test:** fix broken tests _(by Athan Reines)_
 -   [`c380fdd`](https://github.com/stdlib-js/stdlib/commit/c380fdd083d276c4e7eea1c2e0b664abad95e7b9) - **refactor:** move functions to module scope _(by Athan Reines)_
 -   [`0aeccc2`](https://github.com/stdlib-js/stdlib/commit/0aeccc26acf8805e65efec785132deec907dd073) - **refactor:** rename variable _(by Athan Reines)_
 -   [`d0514f7`](https://github.com/stdlib-js/stdlib/commit/d0514f706cd96237b73f6b6cc02539534e5b0a00) - **refactor:** use assertion utility _(by Athan Reines)_
