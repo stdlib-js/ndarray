@@ -675,6 +675,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`e9a380f`](https://github.com/stdlib-js/stdlib/commit/e9a380f51a4457af9b155f18fe13d0aac95d51d8) - **docs:** update dtype type _(by Athan Reines)_
 -   [`dcc971a`](https://github.com/stdlib-js/stdlib/commit/dcc971a838258413c22944447da8c6cd1c2a63f3) - **docs:** update examples and use accessor functions _(by Athan Reines)_
 -   [`16ce439`](https://github.com/stdlib-js/stdlib/commit/16ce439eb07c2a3212008ed9d2f5f6848da200f1) - **refactor:** update examples and return the input ndarray _(by Athan Reines)_
 -   [`508b9b9`](https://github.com/stdlib-js/stdlib/commit/508b9b99fc2547eb50be79ade7f68a34c5fd2146) - **docs:** update examples and use accessor functions _(by Athan Reines)_
