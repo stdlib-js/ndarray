@@ -21,6 +21,7 @@
 var array = require( './../../../array' );
 var numel = require( './../../../base/numel' );
 var ind2sub = require( './../../../ind2sub' );
+var getShape = require( './../../../shape' );
 var expandDimensions = require( './../lib' );
 
 // Create a 2-dimensional array:
@@ -32,7 +33,7 @@ var y = expandDimensions( x, 1 );
 // returns <ndarray>
 
 // Retrieve the shape:
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 2, 1, 2 ]
 
 // Retrieve the number of elements:

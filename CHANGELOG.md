@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-29)
+## Unreleased (2025-12-30)
 
 <section class="features">
 
@@ -675,6 +675,9 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`dcc971a`](https://github.com/stdlib-js/stdlib/commit/dcc971a838258413c22944447da8c6cd1c2a63f3) - **docs:** update examples and use accessor functions _(by Athan Reines)_
+-   [`16ce439`](https://github.com/stdlib-js/stdlib/commit/16ce439eb07c2a3212008ed9d2f5f6848da200f1) - **refactor:** update examples and return the input ndarray _(by Athan Reines)_
+-   [`508b9b9`](https://github.com/stdlib-js/stdlib/commit/508b9b99fc2547eb50be79ade7f68a34c5fd2146) - **docs:** update examples and use accessor functions _(by Athan Reines)_
 -   [`11b2d44`](https://github.com/stdlib-js/stdlib/commit/11b2d445b8f91c8bf41e3c6cc9d53d6a3a9f0608) - **refactor:** ensure support for enumeration constants _(by Athan Reines)_
 -   [`7c5881e`](https://github.com/stdlib-js/stdlib/commit/7c5881ea1b0a9251b4b758d24df128a4fab28fa6) - **docs:** update dtype type _(by Athan Reines)_
 -   [`374beff`](https://github.com/stdlib-js/stdlib/commit/374beff1f47c81bea4dd825d3b25ce405c2f9375) - **docs:** update dtype type _(by Athan Reines)_

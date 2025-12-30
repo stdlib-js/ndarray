@@ -43,39 +43,21 @@ Fills an input ndarray with a specified value.
 <!-- eslint-disable max-len -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array/float64' );
+var array = require( '@stdlib/ndarray/array' );
 
-// Create a data buffer:
-var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ] );
+// returns <ndarray>[ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 5.0, 6.0 ] ] ]
 
-// Define the shape of the input array:
-var shape = [ 3, 1, 2 ];
+var out = fill( x, 10.0 );
+// returns <ndarray>[ [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ], [ [ 10.0, 10.0 ] ] ]
 
-// Define the array strides:
-var sx = [ 2, 2, 1 ];
-
-// Define the index offset:
-var ox = 0;
-
-// Create the input ndarray-like object:
-var x = {
-    'dtype': 'float64',
-    'data': xbuf,
-    'shape': shape,
-    'strides': sx,
-    'offset': ox,
-    'order': 'row-major'
-};
-
-fill( x, 10.0 );
-
-console.log( x.data );
-// => <Float64Array>[ 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+var bool = ( out === x );
+// returns true
 ```
 
 The function accepts the following arguments:
 
--   **x**: array-like object containing an input ndarray.
+-   **x**: input ndarray.
 -   **value**: scalar value.
 
 A provided ndarray should be an object with the following properties:
@@ -110,22 +92,17 @@ A provided ndarray should be an object with the following properties:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
-var filledarrayBy = require( '@stdlib/array/filled-by' );
-var ndarray2array = require( '@stdlib/ndarray/base/to-array' );
+var discreteUniform = require( '@stdlib/random/discrete-uniform' );
+var ndarray2array = require( '@stdlib/ndarray/to-array' );
 var fill = require( '@stdlib/ndarray/base/fill' );
 
-var x = {
-    'dtype': 'generic',
-    'data': filledarrayBy( 10, 'generic', discreteUniform( -100, 100 ) ),
-    'shape': [ 5, 2 ],
-    'strides': [ 2, 1 ],
-    'offset': 0,
-    'order': 'row-major'
-};
+var x = discreteUniform( [ 5, 2 ], -100, 100, {
+    'dtype': 'generic'
+});
+console.log( ndarray2array( x ) );
 
 fill( x, 10.0 );
-console.log( ndarray2array( x.data, x.shape, x.strides, x.offset, x.order ) );
+console.log( ndarray2array( x ) );
 ```
 
 </section>
