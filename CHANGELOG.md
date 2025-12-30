@@ -675,6 +675,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`7bc4a28`](https://github.com/stdlib-js/stdlib/commit/7bc4a28d0414765b9eeb23e52fb763fc99d7c658) - **docs:** update examples [(#9431)](https://github.com/stdlib-js/stdlib/pull/9431) _(by stdlib-bot)_
 -   [`72be5b1`](https://github.com/stdlib-js/stdlib/commit/72be5b1a80bbbbb72c79f85e034e0cafc989f1c7) - **test:** use function accessors _(by Athan Reines)_
 -   [`fdf2934`](https://github.com/stdlib-js/stdlib/commit/fdf2934a97d8c754e52045dd10127ee4d85b0dad) - **docs:** update dtype type and use accessor functions _(by Athan Reines)_
 -   [`7475400`](https://github.com/stdlib-js/stdlib/commit/7475400f3b912be86c17f2a915d1a4febcc6522d) - **docs:** move content to notes _(by Athan Reines)_
