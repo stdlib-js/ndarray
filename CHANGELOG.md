@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-30)
+## Unreleased (2025-12-31)
 
 <section class="features">
 
 ### Features
 
+-   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447)
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426)
 -   [`b1623fe`](https://github.com/stdlib-js/stdlib/commit/b1623fe2c183124b2eb55736b4314329aea2856a) - update `ndarray/base` TypeScript declarations [(#9420)](https://github.com/stdlib-js/stdlib/pull/9420)
 -   [`50367fe`](https://github.com/stdlib-js/stdlib/commit/50367fe8a498ac1e3e80fe688eb5c3df2d57a82d) - add `toFlippedud` to namespace
@@ -676,6 +677,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - **feat:** update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447) _(by stdlib-bot)_
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - **feat:** add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426) _(by Muhammad Haris)_
 -   [`7bc4a28`](https://github.com/stdlib-js/stdlib/commit/7bc4a28d0414765b9eeb23e52fb763fc99d7c658) - **docs:** update examples [(#9431)](https://github.com/stdlib-js/stdlib/pull/9431) _(by stdlib-bot)_
 -   [`72be5b1`](https://github.com/stdlib-js/stdlib/commit/72be5b1a80bbbbb72c79f85e034e0cafc989f1c7) - **test:** use function accessors _(by Athan Reines)_
