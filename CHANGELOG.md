@@ -677,6 +677,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`15e8b35`](https://github.com/stdlib-js/stdlib/commit/15e8b358c586ae53ee8150469519149d1c42be2b) - **test:** address failing test _(by Athan Reines)_
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - **feat:** update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447) _(by stdlib-bot)_
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - **feat:** add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426) _(by Muhammad Haris)_
 -   [`7bc4a28`](https://github.com/stdlib-js/stdlib/commit/7bc4a28d0414765b9eeb23e52fb763fc99d7c658) - **docs:** update examples [(#9431)](https://github.com/stdlib-js/stdlib/pull/9431) _(by stdlib-bot)_
