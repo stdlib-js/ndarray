@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-31)
+## Unreleased (2026-01-01)
 
 <section class="features">
 
@@ -663,9 +663,9 @@
 
 ### Closed Issues
 
-A total of 37 issues were closed in this release:
+A total of 38 issues were closed in this release:
 
-[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156), [#8159](https://github.com/stdlib-js/stdlib/issues/8159), [#8189](https://github.com/stdlib-js/stdlib/issues/8189), [#8196](https://github.com/stdlib-js/stdlib/issues/8196), [#8225](https://github.com/stdlib-js/stdlib/issues/8225), [#8308](https://github.com/stdlib-js/stdlib/issues/8308), [#8484](https://github.com/stdlib-js/stdlib/issues/8484), [#8508](https://github.com/stdlib-js/stdlib/issues/8508), [#8515](https://github.com/stdlib-js/stdlib/issues/8515), [#8608](https://github.com/stdlib-js/stdlib/issues/8608), [#8796](https://github.com/stdlib-js/stdlib/issues/8796), [#9109](https://github.com/stdlib-js/stdlib/issues/9109)
+[#5526](https://github.com/stdlib-js/stdlib/issues/5526), [#5788](https://github.com/stdlib-js/stdlib/issues/5788), [#5960](https://github.com/stdlib-js/stdlib/issues/5960), [#6053](https://github.com/stdlib-js/stdlib/issues/6053), [#6236](https://github.com/stdlib-js/stdlib/issues/6236), [#6456](https://github.com/stdlib-js/stdlib/issues/6456), [#6457](https://github.com/stdlib-js/stdlib/issues/6457), [#6473](https://github.com/stdlib-js/stdlib/issues/6473), [#6521](https://github.com/stdlib-js/stdlib/issues/6521), [#6574](https://github.com/stdlib-js/stdlib/issues/6574), [#6589](https://github.com/stdlib-js/stdlib/issues/6589), [#6604](https://github.com/stdlib-js/stdlib/issues/6604), [#6663](https://github.com/stdlib-js/stdlib/issues/6663), [#6776](https://github.com/stdlib-js/stdlib/issues/6776), [#6933](https://github.com/stdlib-js/stdlib/issues/6933), [#7114](https://github.com/stdlib-js/stdlib/issues/7114), [#7135](https://github.com/stdlib-js/stdlib/issues/7135), [#7215](https://github.com/stdlib-js/stdlib/issues/7215), [#7296](https://github.com/stdlib-js/stdlib/issues/7296), [#7395](https://github.com/stdlib-js/stdlib/issues/7395), [#7554](https://github.com/stdlib-js/stdlib/issues/7554), [#7626](https://github.com/stdlib-js/stdlib/issues/7626), [#7767](https://github.com/stdlib-js/stdlib/issues/7767), [#7973](https://github.com/stdlib-js/stdlib/issues/7973), [#8129](https://github.com/stdlib-js/stdlib/issues/8129), [#8156](https://github.com/stdlib-js/stdlib/issues/8156), [#8159](https://github.com/stdlib-js/stdlib/issues/8159), [#8189](https://github.com/stdlib-js/stdlib/issues/8189), [#8196](https://github.com/stdlib-js/stdlib/issues/8196), [#8225](https://github.com/stdlib-js/stdlib/issues/8225), [#8308](https://github.com/stdlib-js/stdlib/issues/8308), [#8484](https://github.com/stdlib-js/stdlib/issues/8484), [#8508](https://github.com/stdlib-js/stdlib/issues/8508), [#8515](https://github.com/stdlib-js/stdlib/issues/8515), [#8608](https://github.com/stdlib-js/stdlib/issues/8608), [#8796](https://github.com/stdlib-js/stdlib/issues/8796), [#9109](https://github.com/stdlib-js/stdlib/issues/9109), [#9462](https://github.com/stdlib-js/stdlib/issues/9462)
 
 </section>
 
@@ -677,6 +677,7 @@ A total of 37 issues were closed in this release:
 
 <details>
 
+-   [`9273054`](https://github.com/stdlib-js/stdlib/commit/9273054d9d5ab37c52da6ae37563b1289d7c8351) - **chore:** fix JavaScript lint errors [(#9473)](https://github.com/stdlib-js/stdlib/pull/9473) _(by Tejasvini Ramaswamy)_
 -   [`15e8b35`](https://github.com/stdlib-js/stdlib/commit/15e8b358c586ae53ee8150469519149d1c42be2b) - **test:** address failing test _(by Athan Reines)_
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - **feat:** update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447) _(by stdlib-bot)_
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - **feat:** add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426) _(by Muhammad Haris)_
@@ -1967,7 +1968,7 @@ A total of 37 issues were closed in this release:
 
 ### Contributors
 
-A total of 29 people contributed to this release. Thank you to the following contributors:
+A total of 30 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -1994,6 +1995,7 @@ A total of 29 people contributed to this release. Thank you to the following con
 -   Rohit R Bhat
 -   Sai Avinash
 -   Shubham
+-   Tejasvini Ramaswamy
 -   Tushar Bhardwaj
 -   ashutoshsao
 -   kaushal-kumar-it
