@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-01)
+## Unreleased (2026-01-02)
 
 <section class="features">
 
 ### Features
 
+-   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480)
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447)
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426)
 -   [`b1623fe`](https://github.com/stdlib-js/stdlib/commit/b1623fe2c183124b2eb55736b4314329aea2856a) - update `ndarray/base` TypeScript declarations [(#9420)](https://github.com/stdlib-js/stdlib/pull/9420)
@@ -624,6 +625,10 @@
 
 ### BREAKING CHANGES
 
+-   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2): move `dim` argument to options object
+
+    -   To migrate, users should replace any usage of an optional `dim` argument with an options object with a `dim` property (e.g., `{'dim': -1}`).
+
 -   [`626f31e`](https://github.com/stdlib-js/stdlib/commit/626f31e5f7aa40d0dc64f48fa3b9c4f87f9bf30c): add `writable` parameter
 
     -   To migrate, users should be explicit in terms of whether a writable or read-only ndarray is returned. The previous behavior only returned a read-only array when provided a read-only array. The responsibility for determining the appropriate return value behavior is now pushed to userland.
@@ -677,6 +682,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - **feat:** move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480) _(by Muhammad Haris, Athan Reines)_
 -   [`9273054`](https://github.com/stdlib-js/stdlib/commit/9273054d9d5ab37c52da6ae37563b1289d7c8351) - **chore:** fix JavaScript lint errors [(#9473)](https://github.com/stdlib-js/stdlib/pull/9473) _(by Tejasvini Ramaswamy)_
 -   [`15e8b35`](https://github.com/stdlib-js/stdlib/commit/15e8b358c586ae53ee8150469519149d1c42be2b) - **test:** address failing test _(by Athan Reines)_
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - **feat:** update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447) _(by stdlib-bot)_
