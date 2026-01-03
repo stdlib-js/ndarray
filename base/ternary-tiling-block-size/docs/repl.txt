@@ -1,19 +1,19 @@
 
-{{alias}}( dtypeW, dtypeX, dtypeY, dtypeZ )
+{{alias}}( dtypeX, dtypeY, dtypeZ, dtypeW )
     Returns a loop block size for multi-dimensional array tiled loops.
 
     Parameters
     ----------
-    dtypeW: string|DataType
+    dtypeX: string|DataType
         First input array data type.
 
-    dtypeX: string|DataType
+    dtypeY: string|DataType
         Second input array data type.
 
-    dtypeY: string|DataType
+    dtypeZ: string|DataType
         Third input array data type.
 
-    dtypeZ: string|DataType
+    dtypeW: string|DataType
         Output array data type.
 
     Returns

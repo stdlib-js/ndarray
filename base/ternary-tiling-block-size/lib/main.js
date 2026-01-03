@@ -29,31 +29,31 @@ var defaults = require( './defaults.js' );
 /**
 * Returns a loop block size for multi-dimensional array tiled loops.
 *
-* @param {*} dtypeW - first input array data type
-* @param {*} dtypeX - second input array data type
-* @param {*} dtypeY - third input array data type
-* @param {*} dtypeZ - output array data type
+* @param {*} dtypeX - first input array data type
+* @param {*} dtypeY - second input array data type
+* @param {*} dtypeZ - third input array data type
+* @param {*} dtypeW - output array data type
 * @returns {integer} block size (in units of elements)
 *
 * @example
 * var bsize = ternaryBlockSize( 'float64', 'float64', 'float64', 'float64' );
 * // returns <number>
 */
-function ternaryBlockSize( dtypeW, dtypeX, dtypeY, dtypeZ ) {
+function ternaryBlockSize( dtypeX, dtypeY, dtypeZ, dtypeW ) {
 	var nbx;
 	var nby;
 	var nbz;
 	var nbw;
 	var max;
 
-	nbx = bytesPerElement( dtypeW );
-	nby = bytesPerElement( dtypeX );
-	nbz = bytesPerElement( dtypeY );
-	nbw = bytesPerElement( dtypeZ );
+	nbx = bytesPerElement( dtypeX );
+	nby = bytesPerElement( dtypeY );
+	nbz = bytesPerElement( dtypeZ );
+	nbw = bytesPerElement( dtypeW );
 	if ( nbx === null || nby === null || nbz === null || nbw === null ) { // e.g., "generic" arrays
 		return defaults.BLOCK_SIZE_IN_ELEMENTS;
 	}
-	// Find the largest element size among all four arrays:
+	// Find the largest element size among all four arrays...
 	max = nbx;
 	if ( nby > max ) {
 		max = nby;

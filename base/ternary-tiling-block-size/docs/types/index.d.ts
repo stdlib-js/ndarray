@@ -25,17 +25,17 @@ import { DataType } from '@stdlib/types/ndarray';
 /**
 * Returns a loop block size for multi-dimensional array tiled loops.
 *
-* @param dtypeW - first input array data type
-* @param dtypeX - second input array data type
-* @param dtypeY - third input array data type
-* @param dtypeZ - output array data type
+* @param dtypeX - first input array data type
+* @param dtypeY - second input array data type
+* @param dtypeZ - third input array data type
+* @param dtypeW - output array data type
 * @returns block size (in units of elements)
 *
 * @example
 * var bsize = ternaryBlockSize( 'float64', 'float64', 'float64', 'float64' );
 * // returns <number>
 */
-declare function ternaryBlockSize( dtypeW: DataType, dtypeX: DataType, dtypeY: DataType, dtypeZ: DataType ): number;
+declare function ternaryBlockSize( dtypeX: DataType, dtypeY: DataType, dtypeZ: DataType, dtypeW: DataType ): number;
 
 
 // EXPORTS //

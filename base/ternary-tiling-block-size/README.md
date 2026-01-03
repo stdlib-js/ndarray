@@ -40,7 +40,7 @@ limitations under the License.
 var ternaryBlockSize = require( '@stdlib/ndarray/base/ternary-tiling-block-size' );
 ```
 
-#### ternaryBlockSize( dtypeW, dtypeX, dtypeY, dtypeZ )
+#### ternaryBlockSize( dtypeX, dtypeY, dtypeZ, dtypeW )
 
 Resolves a loop block size according to provided ndarray [dtypes][@stdlib/ndarray/dtypes] for multi-dimensional array tiled loops applying a ternary function.
 
@@ -48,6 +48,13 @@ Resolves a loop block size according to provided ndarray [dtypes][@stdlib/ndarra
 var bsize = ternaryBlockSize( 'float64', 'float64', 'float64', 'float64' );
 // returns <number>
 ```
+
+The function supports the following arguments:
+
+-   **dtypeX**: first input array data type.
+-   **dtypeY**: second input array data type.
+-   **dtypeZ**: third input array data type.
+-   **dtypeW**: output array data type.
 
 </section>
 
@@ -86,7 +93,7 @@ var dt = cartesianPower( dtypes(), 3 );
 var t;
 var b;
 var i;
-console.log( 'block_size, wdtype, xdtype, ydtype, zdtype' );
+console.log( 'block_size, xdtype, ydtype, zdtype, wdtype' );
 for ( i = 0; i < dt.length; i++ ) {
     t = promotionRules.apply( null, dt[ i ] );
     dt[ i ].push( ( t === -1 ) ? 'generic' : t );

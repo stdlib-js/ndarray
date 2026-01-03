@@ -29,27 +29,13 @@ var blockSize = require( './../lib' );
 // MAIN //
 
 bench( pkg, function benchmark( b ) {
-	var dw;
 	var dx;
 	var dy;
 	var dz;
+	var dw;
 	var s;
 	var i;
 
-	dw = [
-		'float64',
-		'float32',
-		'int8',
-		'uint8',
-		'uint8c',
-		'int16',
-		'uint16',
-		'int32',
-		'uint32',
-		'binary',
-		'generic',
-		'foobar'
-	];
 	dx = [
 		'float64',
 		'float32',
@@ -80,6 +66,20 @@ bench( pkg, function benchmark( b ) {
 	];
 	dz = [
 		'float64',
+		'float32',
+		'int8',
+		'uint8',
+		'uint8c',
+		'int16',
+		'uint16',
+		'int32',
+		'uint32',
+		'binary',
+		'generic',
+		'foobar'
+	];
+	dw = [
+		'float64',
 		'generic',
 		'int32',
 		'int16',
@@ -88,7 +88,7 @@ bench( pkg, function benchmark( b ) {
 
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		s = blockSize( dw[ i%dw.length ], dx[ i%dx.length ], dy[ i%dy.length ], dz[ i%dz.length ] ); // eslint-disable-line max-len
+		s = blockSize( dx[ i%dx.length ], dy[ i%dy.length ], dz[ i%dz.length ], dw[ i%dw.length ] ); // eslint-disable-line max-len
 		if ( typeof s !== 'number' ) {
 			b.fail( 'should return a number' );
 		}
