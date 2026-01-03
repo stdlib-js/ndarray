@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1f79854`](https://github.com/stdlib-js/stdlib/commit/1f798549409c47de0261c5396dccf64012e54a9c) - add `ndarray/base/ternary-tiling-block-size` [(#9495)](https://github.com/stdlib-js/stdlib/pull/9495)
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508)
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480)
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447)
@@ -687,6 +688,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`1f79854`](https://github.com/stdlib-js/stdlib/commit/1f798549409c47de0261c5396dccf64012e54a9c) - **feat:** add `ndarray/base/ternary-tiling-block-size` [(#9495)](https://github.com/stdlib-js/stdlib/pull/9495) _(by Muhammad Haris, Athan Reines)_
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - **feat:** update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508) _(by stdlib-bot)_
 -   [`873beeb`](https://github.com/stdlib-js/stdlib/commit/873beeb4042c9ada02dff4c40ec0de82887faa17) - **chore:** remove square bracket and add private annotation _(by Philipp Burckhardt)_
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - **feat:** move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480) _(by Muhammad Haris, Athan Reines)_
