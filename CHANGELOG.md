@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508)
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480)
 -   [`34a837f`](https://github.com/stdlib-js/stdlib/commit/34a837fc5f24b1b2d91a63e655d52203112d605b) - update `ndarray/base` TypeScript declarations [(#9447)](https://github.com/stdlib-js/stdlib/pull/9447)
 -   [`7473138`](https://github.com/stdlib-js/stdlib/commit/7473138141acc4be120535f84160d49f836b86be) - add writable parameter to `ndarray/base/prepend-singleton-dimensions` [(#9426)](https://github.com/stdlib-js/stdlib/pull/9426)
@@ -625,6 +626,10 @@
 
 ### BREAKING CHANGES
 
+-   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946): move `dim` argument to option
+
+    -   To migrate, users wanting to specify a dimension along which to concatenate input arrays should provide an object containing a `dim` property.
+
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2): move `dim` argument to options object
 
     -   To migrate, users should replace any usage of an optional `dim` argument with an options object with a `dim` property (e.g., `{'dim': -1}`).
@@ -682,6 +687,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - **feat:** update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508) _(by stdlib-bot)_
 -   [`873beeb`](https://github.com/stdlib-js/stdlib/commit/873beeb4042c9ada02dff4c40ec0de82887faa17) - **chore:** remove square bracket and add private annotation _(by Philipp Burckhardt)_
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - **feat:** move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480) _(by Muhammad Haris, Athan Reines)_
 -   [`9273054`](https://github.com/stdlib-js/stdlib/commit/9273054d9d5ab37c52da6ae37563b1289d7c8351) - **chore:** fix JavaScript lint errors [(#9473)](https://github.com/stdlib-js/stdlib/pull/9473) _(by Tejasvini Ramaswamy)_
