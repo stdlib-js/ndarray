@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`f40ccb7`](https://github.com/stdlib-js/stdlib/commit/f40ccb75929e92538b8c366145589addccdaafbe) - add `ndarray/base/ternary-loop-interchange-order` [(#9499)](https://github.com/stdlib-js/stdlib/pull/9499)
 -   [`1f79854`](https://github.com/stdlib-js/stdlib/commit/1f798549409c47de0261c5396dccf64012e54a9c) - add `ndarray/base/ternary-tiling-block-size` [(#9495)](https://github.com/stdlib-js/stdlib/pull/9495)
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508)
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480)
@@ -688,6 +689,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`f40ccb7`](https://github.com/stdlib-js/stdlib/commit/f40ccb75929e92538b8c366145589addccdaafbe) - **feat:** add `ndarray/base/ternary-loop-interchange-order` [(#9499)](https://github.com/stdlib-js/stdlib/pull/9499) _(by Muhammad Haris, Athan Reines)_
 -   [`1f79854`](https://github.com/stdlib-js/stdlib/commit/1f798549409c47de0261c5396dccf64012e54a9c) - **feat:** add `ndarray/base/ternary-tiling-block-size` [(#9495)](https://github.com/stdlib-js/stdlib/pull/9495) _(by Muhammad Haris, Athan Reines)_
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - **feat:** update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508) _(by stdlib-bot)_
 -   [`873beeb`](https://github.com/stdlib-js/stdlib/commit/873beeb4042c9ada02dff4c40ec0de82887faa17) - **chore:** remove square bracket and add private annotation _(by Philipp Burckhardt)_
