@@ -689,6 +689,8 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`7b5a1b5`](https://github.com/stdlib-js/stdlib/commit/7b5a1b57e9d707ea3944a616d775620a8f188bd8) - **test:** add test case for sx _(by Philipp Burckhardt)_
+-   [`df82f00`](https://github.com/stdlib-js/stdlib/commit/df82f006202c8ade82178b4f7839063706723894) - **docs:** fix require path _(by Philipp Burckhardt)_
 -   [`016b07f`](https://github.com/stdlib-js/stdlib/commit/016b07f8610e21332af7bfbc38afbacdbeac8583) - **refactor:** rename/reorder parameters _(by Athan Reines)_
 -   [`5f0a844`](https://github.com/stdlib-js/stdlib/commit/5f0a844380510aaa97c8ca7d1b539868132ae2e7) - **refactor:** rename/reorder parameters _(by Athan Reines)_
 -   [`f40ccb7`](https://github.com/stdlib-js/stdlib/commit/f40ccb75929e92538b8c366145589addccdaafbe) - **feat:** add `ndarray/base/ternary-loop-interchange-order` [(#9499)](https://github.com/stdlib-js/stdlib/pull/9499) _(by Muhammad Haris, Athan Reines)_
