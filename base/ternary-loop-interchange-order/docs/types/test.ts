@@ -24,93 +24,93 @@ import ternaryLoopOrder = require( './index' );
 // The function returns an object...
 {
 	const sh = [ 2, 2 ];
-	const sw = [ 2, 1 ];
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
-	const sz = [ 4, 2 ];
-	ternaryLoopOrder( sh, sw, sx, sy, sz ); // $ExpectType LoopOrderObject
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	ternaryLoopOrder( sh, sx, sy, sz, sw ); // $ExpectType LoopOrderObject
 }
 
 // The compiler throws an error if the function is provided a first argument which is not an array-like object of numbers...
 {
-	const sw = [ 2, 1 ];
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
-	const sz = [ 4, 2 ];
-	ternaryLoopOrder( true, sw, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( false, sw, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( '5', sw, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( 123, sw, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( {}, sw, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( ( x: number ): number => x, sw, sx, sy, sz ); // $ExpectError
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	ternaryLoopOrder( true, sx, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( false, sx, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( '5', sx, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( 123, sx, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( {}, sx, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( ( x: number ): number => x, sx, sy, sz, sw ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a second argument which is not an array-like object of numbers...
 {
 	const sh = [ 2, 2 ];
-	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
-	const sz = [ 4, 2 ];
-	ternaryLoopOrder( sh, true, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, false, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, '5', sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, 123, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, {}, sx, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, ( x: number ): number => x, sx, sy, sz ); // $ExpectError
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	ternaryLoopOrder( sh, true, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, false, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, '5', sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, 123, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, {}, sy, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, ( x: number ): number => x, sy, sz, sw ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a third argument which is not an array-like object of numbers...
 {
 	const sh = [ 2, 2 ];
-	const sw = [ 2, 1 ];
-	const sy = [ 2, 1 ];
-	const sz = [ 4, 2 ];
-	ternaryLoopOrder( sh, sw, true, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, false, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, '5', sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, 123, sy, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, {}, sy, sz ); // $ExpectError
+	const sx = [ 2, 1 ];
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	ternaryLoopOrder( sh, sx, true, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, false, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, '5', sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, 123, sz, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, {}, sz, sw ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not an array-like object of numbers...
 {
 	const sh = [ 2, 2 ];
-	const sw = [ 2, 1 ];
 	const sx = [ 2, 1 ];
-	const sz = [ 4, 2 ];
-	ternaryLoopOrder( sh, sw, sx, true, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, false, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, '5', sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, 123, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, {}, sz ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, ( x: number ): number => x, sz ); // $ExpectError
+	const sy = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	ternaryLoopOrder( sh, sx, sy, true, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, false, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, '5', sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, 123, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, {}, sw ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, ( x: number ): number => x, sw ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fifth argument which is not an array-like object of numbers...
 {
 	const sh = [ 2, 2 ];
-	const sw = [ 2, 1 ];
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
-	ternaryLoopOrder( sh, sw, sx, sy, true ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, false ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, '5' ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, 123 ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, {} ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, ( x: number ): number => x ); // $ExpectError
+	const sz = [ 2, 1 ];
+	ternaryLoopOrder( sh, sx, sy, sz, true ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, false ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, '5' ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, 123 ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, {} ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
 	const sh = [ 2, 2 ];
-	const sw = [ 2, 1 ];
 	const sx = [ 2, 1 ];
 	const sy = [ 2, 1 ];
-	const sz = [ 4, 2 ];
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
 	ternaryLoopOrder(); // $ExpectError
 	ternaryLoopOrder( sh ); // $ExpectError
-	ternaryLoopOrder( sh, sw ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy ); // $ExpectError
-	ternaryLoopOrder( sh, sw, sx, sy, sz, [] ); // $ExpectError
+	ternaryLoopOrder( sh, sx ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz ); // $ExpectError
+	ternaryLoopOrder( sh, sx, sy, sz, sw, [] ); // $ExpectError
 }

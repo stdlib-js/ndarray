@@ -33,52 +33,52 @@ var loopOrder = require( './../../../base/loop-interchange-order' );
 * -   The returned object has the following properties:
 *
 *     -   **sh**: dimensions sorted in loop order.
-*     -   **sw**: first input ndarray strides sorted in loop order.
-*     -   **sx**: second input ndarray strides sorted in loop order.
-*     -   **sy**: third input ndarray strides sorted in loop order.
-*     -   **sz**: output ndarray strides sorted in loop order.
+*     -   **sx**: first input ndarray strides sorted in loop order.
+*     -   **sy**: second input ndarray strides sorted in loop order.
+*     -   **sz**: third input ndarray strides sorted in loop order.
+*     -   **sw**: output ndarray strides sorted in loop order.
 *
 * @param {NonNegativeIntegerArray} sh - array dimensions
-* @param {IntegerArray} sw - first input array stride lengths
-* @param {IntegerArray} sx - second input array stride lengths
-* @param {IntegerArray} sy - third input array stride lengths
-* @param {IntegerArray} sz - output array stride lengths
+* @param {IntegerArray} sx - first input array stride lengths
+* @param {IntegerArray} sy - second input array stride lengths
+* @param {IntegerArray} sz - third input array stride lengths
+* @param {IntegerArray} sw - output array stride lengths
 * @returns {Object} loop interchange data
 *
 * @example
 * var sh = [ 2, 3, 4 ];
 *
-* var sw = [ 12, 4, 1 ]; // row-major
-* var sx = [ 24, 8, 1 ]; // row-major
-* var sy = [ 1, 4, 12 ]; // column-major
-* var sz = [ 1, -2, 6 ]; // column-major
+* var sx = [ 12, 4, 1 ]; // row-major
+* var sy = [ 24, 8, 1 ]; // row-major
+* var sz = [ 1, 4, 12 ]; // column-major
+* var sw = [ 1, -2, 6 ]; // column-major
 *
-* var o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+* var o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 * // returns {...}
 *
 * var ssh = o.sh;
 * // returns [ 2, 3, 4 ]
 *
-* var ssw = o.sw;
+* var ssx = o.sx;
 * // returns [ 12, 4, 1 ]
 *
-* var ssx = o.sx;
+* var ssy = o.sy;
 * // returns [ 24, 8, 1 ]
 *
-* var ssy = o.sy;
+* var ssz = o.sz;
 * // returns [ 1, 4, 12 ]
 *
-* var ssz = o.sz;
+* var ssw = o.sw;
 * // returns [ 1, -2, 6 ]
 */
-function ternaryLoopOrder( sh, sw, sx, sy, sz ) {
-	var tmp = loopOrder( sh, [ sw, sx, sy, sz ] );
+function ternaryLoopOrder( sh, sx, sy, sz, sw ) {
+	var tmp = loopOrder( sh, [ sx, sy, sz, sw ] );
 	return {
 		'sh': tmp[ 0 ],
-		'sw': tmp[ 1 ],
-		'sx': tmp[ 2 ],
-		'sy': tmp[ 3 ],
-		'sz': tmp[ 4 ]
+		'sx': tmp[ 1 ],
+		'sy': tmp[ 2 ],
+		'sz': tmp[ 3 ],
+		'sw': tmp[ 4 ]
 	};
 }
 

@@ -35,195 +35,195 @@ tape( 'main export is a function', function test( t ) {
 
 tape( 'the function returns loop interchange data (row-major)', function test( t ) {
 	var sh;
-	var sw;
 	var sx;
 	var sy;
 	var sz;
+	var sw;
 	var o;
 
 	sh = [ 4, 2, 2 ];
-	sw = [ 4, 2, -1 ];
-	sx = [ 4, -2, 1 ];
-	sy = [ -4, 2, 1 ];
-	sz = [ -8, 4, -2 ];
+	sx = [ 4, 2, -1 ];
+	sy = [ 4, -2, 1 ];
+	sz = [ -4, 2, 1 ];
+	sw = [ -8, 4, -2 ];
 
-	o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+	o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 
-	t.notEqual( o.sh, sh, 'returns new array' );
+	t.notEqual( o.sh, sh, 'returns expected value' );
 	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
 	t.deepEqual( o.sh, [ 2, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sw, sw, 'returns new array' );
-	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
-	t.deepEqual( o.sw, [ -1, 2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
+	t.notEqual( o.sx, sx, 'returns expected value' );
 	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -2, 4 ], 'returns expected value' );
+	t.deepEqual( o.sx, [ -1, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sy, sy, 'returns new array' );
+	t.notEqual( o.sy, sy, 'returns expected value' );
 	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ 1, 2, -4 ], 'returns expected value' );
+	t.deepEqual( o.sy, [ 1, -2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sz, sz, 'returns new array' );
+	t.notEqual( o.sz, sz, 'returns expected value' );
 	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
+	t.deepEqual( o.sz, [ 1, 2, -4 ], 'returns expected value' );
+
+	t.notEqual( o.sw, sw, 'returns expected value' );
+	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
+	t.deepEqual( o.sw, [ -2, 4, -8 ], 'returns expected value' );
 
 	t.end();
 });
 
 tape( 'the function returns loop interchange data (column-major)', function test( t ) {
 	var sh;
-	var sw;
 	var sx;
 	var sy;
 	var sz;
+	var sw;
 	var o;
 
 	sh = [ 4, 2, 2 ];
-	sw = [ -1, 4, 8 ];
-	sx = [ 1, -4, 8 ];
-	sy = [ -1, 4, 8 ];
-	sz = [ -2, 4, -8 ];
+	sx = [ -1, 4, 8 ];
+	sy = [ 1, -4, 8 ];
+	sz = [ -1, 4, 8 ];
+	sw = [ -2, 4, -8 ];
 
-	o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+	o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 
-	t.notEqual( o.sh, sh, 'returns new array' );
+	t.notEqual( o.sh, sh, 'returns expected value' );
 	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
 	t.deepEqual( o.sh, [ 4, 2, 2 ], 'returns expected value' );
 
-	t.notEqual( o.sw, sw, 'returns new array' );
-	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
-	t.deepEqual( o.sw, [ -1, 4, 8 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
+	t.notEqual( o.sx, sx, 'returns expected value' );
 	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -4, 8 ], 'returns expected value' );
+	t.deepEqual( o.sx, [ -1, 4, 8 ], 'returns expected value' );
 
-	t.notEqual( o.sy, sy, 'returns new array' );
+	t.notEqual( o.sy, sy, 'returns expected value' );
 	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ -1, 4, 8 ], 'returns expected value' );
+	t.deepEqual( o.sy, [ 1, -4, 8 ], 'returns expected value' );
 
-	t.notEqual( o.sz, sz, 'returns new array' );
+	t.notEqual( o.sz, sz, 'returns expected value' );
 	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
+	t.deepEqual( o.sz, [ -1, 4, 8 ], 'returns expected value' );
+
+	t.notEqual( o.sw, sw, 'returns expected value' );
+	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
+	t.deepEqual( o.sw, [ -2, 4, -8 ], 'returns expected value' );
 
 	t.end();
 });
 
 tape( 'the function returns loop interchange data (mixed order)', function test( t ) {
 	var sh;
-	var sw;
 	var sx;
 	var sy;
 	var sz;
+	var sw;
 	var o;
 
 	sh = [ 4, 2, 2 ];
-	sw = [ 4, 2, -1 ];
-	sx = [ 4, -2, 1 ];
-	sy = [ 1, -4, -8 ];
-	sz = [ -8, 4, -2 ];
+	sx = [ 4, 2, -1 ];
+	sy = [ 4, -2, 1 ];
+	sz = [ 1, -4, -8 ];
+	sw = [ -8, 4, -2 ];
 
-	o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+	o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 
-	t.notEqual( o.sh, sh, 'returns new array' );
+	t.notEqual( o.sh, sh, 'returns expected value' );
 	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
 	t.deepEqual( o.sh, [ 2, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sw, sw, 'returns new array' );
-	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
-	t.deepEqual( o.sw, [ -1, 2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
+	t.notEqual( o.sx, sx, 'returns expected value' );
 	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -2, 4 ], 'returns expected value' );
+	t.deepEqual( o.sx, [ -1, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sy, sy, 'returns new array' );
+	t.notEqual( o.sy, sy, 'returns expected value' );
 	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ -8, -4, 1 ], 'returns expected value' );
+	t.deepEqual( o.sy, [ 1, -2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sz, sz, 'returns new array' );
+	t.notEqual( o.sz, sz, 'returns expected value' );
 	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ -2, 4, -8 ], 'returns expected value' );
+	t.deepEqual( o.sz, [ -8, -4, 1 ], 'returns expected value' );
+
+	t.notEqual( o.sw, sw, 'returns expected value' );
+	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
+	t.deepEqual( o.sw, [ -2, 4, -8 ], 'returns expected value' );
 
 	t.end();
 });
 
 tape( 'the function returns loop interchange data (mostly disorganized)', function test( t ) {
 	var sh;
-	var sw;
 	var sx;
 	var sy;
 	var sz;
+	var sw;
 	var o;
 
 	sh = [ 4, 2, 2 ];
-	sw = [ 2, 4, -1 ]; // disorganized
-	sx = [ -2, 4, 1 ]; // disorganized
-	sy = [ -4, 2, 1 ]; // row-major
-	sz = [ -8, -2, 4 ]; // disorganized
+	sx = [ 2, 4, -1 ]; // disorganized
+	sy = [ -2, 4, 1 ]; // disorganized
+	sz = [ -4, 2, 1 ]; // row-major
+	sw = [ -8, -2, 4 ]; // disorganized
 
-	o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+	o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 
-	t.notEqual( o.sh, sh, 'returns new array' );
+	t.notEqual( o.sh, sh, 'returns expected value' );
 	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
 	t.deepEqual( o.sh, [ 2, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sw, sw, 'returns new array' );
-	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
-	t.deepEqual( o.sw, [ -1, 4, 2 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
+	t.notEqual( o.sx, sx, 'returns expected value' );
 	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, 4, -2 ], 'returns expected value' );
+	t.deepEqual( o.sx, [ -1, 4, 2 ], 'returns expected value' );
 
-	t.notEqual( o.sy, sy, 'returns new array' );
+	t.notEqual( o.sy, sy, 'returns expected value' );
 	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ 1, 2, -4 ], 'returns expected value' );
+	t.deepEqual( o.sy, [ 1, 4, -2 ], 'returns expected value' );
 
-	t.notEqual( o.sz, sz, 'returns new array' );
+	t.notEqual( o.sz, sz, 'returns expected value' );
 	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ 4, -2, -8 ], 'returns expected value' );
+	t.deepEqual( o.sz, [ 1, 2, -4 ], 'returns expected value' );
+
+	t.notEqual( o.sw, sw, 'returns expected value' );
+	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
+	t.deepEqual( o.sw, [ 4, -2, -8 ], 'returns expected value' );
 
 	t.end();
 });
 
 tape( 'the function returns loop interchange data (all disorganized)', function test( t ) {
 	var sh;
-	var sw;
 	var sx;
 	var sy;
 	var sz;
+	var sw;
 	var o;
 
 	sh = [ 4, 2, 2 ];
-	sw = [ 2, 4, -1 ]; // disorganized
-	sx = [ -2, 4, 1 ]; // disorganized
-	sy = [ 1, -4, 2 ]; // disorganized
-	sz = [ -8, -2, 4 ]; // disorganized
+	sx = [ 2, 4, -1 ]; // disorganized
+	sy = [ -2, 4, 1 ]; // disorganized
+	sz = [ 1, -4, 2 ]; // disorganized
+	sw = [ -8, -2, 4 ]; // disorganized
 
-	o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+	o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 
-	t.notEqual( o.sh, sh, 'returns new array' );
+	t.notEqual( o.sh, sh, 'returns expected value' );
 	t.strictEqual( isArray( o.sh ), true, 'returns expected value' );
 	t.deepEqual( o.sh, [ 2, 4, 2 ], 'returns expected value' );
 
-	t.notEqual( o.sw, sw, 'returns new array' );
-	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
-	t.deepEqual( o.sw, [ -1, 2, 4 ], 'returns expected value' );
-
-	t.notEqual( o.sx, sx, 'returns new array' );
+	t.notEqual( o.sx, sx, 'returns expected value' );
 	t.strictEqual( isArray( o.sx ), true, 'returns expected value' );
-	t.deepEqual( o.sx, [ 1, -2, 4 ], 'returns expected value' );
+	t.deepEqual( o.sx, [ -1, 2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sy, sy, 'returns new array' );
+	t.notEqual( o.sy, sy, 'returns expected value' );
 	t.strictEqual( isArray( o.sy ), true, 'returns expected value' );
-	t.deepEqual( o.sy, [ 2, 1, -4 ], 'returns expected value' );
+	t.deepEqual( o.sy, [ 1, -2, 4 ], 'returns expected value' );
 
-	t.notEqual( o.sz, sz, 'returns new array' );
+	t.notEqual( o.sz, sz, 'returns expected value' );
 	t.strictEqual( isArray( o.sz ), true, 'returns expected value' );
-	t.deepEqual( o.sz, [ 4, -8, -2 ], 'returns expected value' );
+	t.deepEqual( o.sz, [ 2, 1, -4 ], 'returns expected value' );
+
+	t.notEqual( o.sw, sw, 'returns expected value' );
+	t.strictEqual( isArray( o.sw ), true, 'returns expected value' );
+	t.deepEqual( o.sw, [ 4, -8, -2 ], 'returns expected value' );
 
 	t.end();
 });
@@ -231,8 +231,8 @@ tape( 'the function returns loop interchange data (all disorganized)', function 
 tape( 'if provided empty arrays, the function returns empty arrays', function test( t ) {
 	var o = ternaryLoopOrder( [], [], [], [], [] );
 	t.deepEqual( o.sh, [], 'returns expected value' );
-	t.deepEqual( o.sx, [], 'returns expected value' );
 	t.deepEqual( o.sy, [], 'returns expected value' );
 	t.deepEqual( o.sz, [], 'returns expected value' );
+	t.deepEqual( o.sw, [], 'returns expected value' );
 	t.end();
 });

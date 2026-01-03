@@ -40,7 +40,7 @@ limitations under the License.
 var ternaryLoopOrder = require( '@stdlib/ndarray/base/binary-loop-interchange-order' );
 ```
 
-#### ternaryLoopOrder( shape, stridesW, stridesX, stridesY, stridesZ )
+#### ternaryLoopOrder( shape, stridesX, stridesY, stridesZ, stridesW )
 
 Reorders [ndarray][@stdlib/ndarray/ctor] dimensions and associated strides for [loop interchange][loop-interchange].
 
@@ -49,25 +49,25 @@ Reorders [ndarray][@stdlib/ndarray/ctor] dimensions and associated strides for [
 var shape = [ 2, 2 ];
 
 // Define the strides for the input arrays:
-var stridesW = [ 2, 1 ]; // row-major
-var stridesX = [ 4, 2 ]; // row-major
-var stridesY = [ 1, 2 ]; // column-major
-
-// Define the strides for the output array:
+var stridesX = [ 2, 1 ]; // row-major
+var stridesY = [ 4, 2 ]; // row-major
 var stridesZ = [ 1, 2 ]; // column-major
 
+// Define the strides for the output array:
+var stridesW = [ 1, 2 ]; // column-major
+
 // Resolve the loop interchange order:
-var o = ternaryLoopOrder( shape, stridesW, stridesX, stridesY, stridesZ );
+var o = ternaryLoopOrder( shape, stridesX, stridesY, stridesZ, stridesW );
 // returns {...}
 ```
 
 The function returns an object having the following properties:
 
 -   **sh**: ordered dimensions.
--   **sw**: first input array strides sorted in loop order.
--   **sx**: second input array strides sorted in loop order.
--   **sy**: third input array strides sorted in loop order.
--   **sz**: output array strides sorted in loop order.
+-   **sx**: first input array strides sorted in loop order.
+-   **sy**: second input array strides sorted in loop order.
+-   **sz**: third input array strides sorted in loop order.
+-   **sw**: output array strides sorted in loop order.
 
 For all returned arrays, the first element corresponds to the innermost loop, and the last element corresponds to the outermost loop.
 
@@ -110,13 +110,13 @@ var getStrides = require( '@stdlib/ndarray/strides' );
 var ternaryLoopOrder = require( '@stdlib/ndarray/base/binary-loop-interchange-order' );
 
 // Create ndarrays:
-var w = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-var x = array( [ [ 5, 6 ], [ 7, 8 ] ] );
-var y = array( [ [ 9, 10 ], [ 11, 12 ] ] );
-var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
+var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
+var z = array( [ [ 9, 10 ], [ 11, 12 ] ] );
+var w = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = ternaryLoopOrder( getShape( w ), getStrides( w ), getStrides( x ), getStrides( y ), getStrides( z ) );
+var o = ternaryLoopOrder( getShape( x ), getStrides( x ), getStrides( y ), getStrides( z ), getStrides( w ) );
 // returns {...}
 
 console.log( o );

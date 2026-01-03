@@ -34,22 +34,22 @@ interface LoopOrderObject {
 	/**
 	* First input array strides sorted in loop order.
 	*/
-	sw: Array<number>;
+	sx: Array<number>;
 
 	/**
 	* Second input array strides sorted in loop order.
 	*/
-	sx: Array<number>;
+	sy: Array<number>;
 
 	/**
 	* Third input array strides sorted in loop order.
 	*/
-	sy: Array<number>;
+	sz: Array<number>;
 
 	/**
 	* Output array strides sorted in loop order.
 	*/
-	sz: Array<number>;
+	sw: Array<number>;
 }
 
 /**
@@ -60,10 +60,10 @@ interface LoopOrderObject {
 * -   The returned object has the following properties:
 *
 *     -   **sh**: dimensions sorted in loop order.
-*     -   **sw**: first input ndarray strides sorted in loop order.
-*     -   **sx**: second input ndarray strides sorted in loop order.
-*     -   **sy**: third input ndarray strides sorted in loop order.
-*     -   **sz**: output ndarray strides sorted in loop order.
+*     -   **sx**: first input ndarray strides sorted in loop order.
+*     -   **sy**: second input ndarray strides sorted in loop order.
+*     -   **sz**: third input ndarray strides sorted in loop order.
+*     -   **sw**: output ndarray strides sorted in loop order.
 *
 * -   When iterating over the elements of a multi-dimensional array, accessing elements which are closer in memory can improve performance. To this end, loop interchange is a technique used in loop nest optimization to improve locality of reference and take advantage of CPU cache.
 *
@@ -74,39 +74,39 @@ interface LoopOrderObject {
 * -   The function assumes that the input and output ndarrays have the same shape. Hence, loop interchange order should only be determined **after** broadcasting.
 *
 * @param shape - array dimensions
-* @param stridesW - first input array stride lengths
-* @param stridesX - second input array stride lengths
-* @param stridesY - third input array stride lengths
-* @param stridesZ - output array stride lengths
+* @param stridesX - first input array stride lengths
+* @param stridesY - second input array stride lengths
+* @param stridesZ - third input array stride lengths
+* @param stridesW - output array stride lengths
 * @returns loop interchange data
 *
 * @example
 * var sh = [ 2, 3, 4 ];
 *
-* var sw = [ 12, 4, 1 ]; // row-major
-* var sx = [ 24, 8, 1 ]; // row-major
-* var sy = [ 1, 4, 12 ]; // column-major
-* var sz = [ 1, -2, 6 ]; // column-major
+* var sx = [ 12, 4, 1 ]; // row-major
+* var sy = [ 24, 8, 1 ]; // row-major
+* var sz = [ 1, 4, 12 ]; // column-major
+* var sw = [ 1, -2, 6 ]; // column-major
 *
-* var o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+* var o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 * // returns {...}
 *
 * var ssh = o.sh;
 * // returns [ 2, 3, 4 ]
 *
-* var ssw = o.sw;
+* var ssx = o.sx;
 * // returns [ 12, 4, 1 ]
 *
-* var ssx = o.sx;
+* var ssy = o.sy;
 * // returns [ 24, 8, 1 ]
 *
-* var ssy = o.sy;
+* var ssz = o.sz;
 * // returns [ 1, 4, 12 ]
 *
-* var ssz = o.sz;
+* var ssw = o.sw;
 * // returns [ 1, -2, 6 ]
 */
-declare function ternaryLoopOrder( shape: ArrayLike<number>, stridesW: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number> ): LoopOrderObject;
+declare function ternaryLoopOrder( shape: ArrayLike<number>, stridesX: ArrayLike<number>, stridesY: ArrayLike<number>, stridesZ: ArrayLike<number>, stridesW: ArrayLike<number> ): LoopOrderObject;
 
 
 // EXPORTS //

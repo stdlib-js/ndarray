@@ -24,13 +24,13 @@ var getStrides = require( './../../../strides' );
 var loopOrder = require( './../lib' );
 
 // Create ndarrays:
-var w = array( [ [ 1, 2 ], [ 3, 4 ] ] );
-var x = array( [ [ 5, 6 ], [ 7, 8 ] ] );
-var y = array( [ [ 9, 10 ], [ 11, 12 ] ] );
-var z = array( [ [ 0, 0 ], [ 0, 0 ] ] );
+var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+var y = array( [ [ 5, 6 ], [ 7, 8 ] ] );
+var z = array( [ [ 9, 10 ], [ 11, 12 ] ] );
+var w = array( [ [ 0, 0 ], [ 0, 0 ] ] );
 
 // Resolve loop interchange data:
-var o = loopOrder( getShape( w ), getStrides( w ), getStrides( x ), getStrides( y ), getStrides( z ) ); // eslint-disable-line max-len
+var o = loopOrder( getShape( x ), getStrides( x ), getStrides( y ), getStrides( z ), getStrides( w ) ); // eslint-disable-line max-len
 // returns {...}
 
 console.log( o );

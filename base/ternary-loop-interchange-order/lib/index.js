@@ -28,27 +28,27 @@
 *
 * var sh = [ 2, 3, 4 ];
 *
-* var sw = [ 12, 4, 1 ]; // row-major
-* var sx = [ 24, 8, 1 ]; // row-major
-* var sy = [ 1, 4, 12 ]; // column-major
-* var sz = [ 1, -2, 6 ]; // column-major
+* var sx = [ 12, 4, 1 ]; // row-major
+* var sy = [ 24, 8, 1 ]; // row-major
+* var sz = [ 1, 4, 12 ]; // column-major
+* var sw = [ 1, -2, 6 ]; // column-major
 *
-* var o = ternaryLoopOrder( sh, sw, sx, sy, sz );
+* var o = ternaryLoopOrder( sh, sx, sy, sz, sw );
 * // returns {...}
 *
 * var ssh = o.sh;
 * // returns [ 2, 3, 4 ]
 *
-* var ssw = o.sw;
+* var ssx = o.sx;
 * // returns [ 12, 4, 1 ]
 *
-* var ssx = o.sx;
+* var ssy = o.sy;
 * // returns [ 24, 8, 1 ]
 *
-* var ssy = o.sy;
+* var ssz = o.sz;
 * // returns [ 1, 4, 12 ]
 *
-* var ssz = o.sz;
+* var ssw = o.sw;
 * // returns [ 1, -2, 6 ]
 */
 

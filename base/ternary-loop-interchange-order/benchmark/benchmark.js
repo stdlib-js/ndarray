@@ -23,13 +23,14 @@
 var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var shape2strides = require( './../../../base/shape2strides' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ternaryLoopOrder = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+'::row-major', function benchmark( b ) {
+bench( format( '%s::row-major', pkg ), function benchmark( b ) {
 	var strides;
 	var factors;
 	var shape;
@@ -52,14 +53,20 @@ bench( pkg+'::row-major', function benchmark( b ) {
 		}
 	}
 	b.toc();
-	if ( !isArray( out.sh ) || !isArray( out.sx ) || !isArray( out.sy ) || !isArray( out.sz ) ) { // eslint-disable-line max-len
+	if (
+		!isArray( out.sh ) ||
+		!isArray( out.sx ) ||
+		!isArray( out.sy ) ||
+		!isArray( out.sz ) ||
+		!isArray( out.sw )
+	) {
 		b.fail( 'should return an array' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
 });
 
-bench( pkg+'::column-major', function benchmark( b ) {
+bench( format( '%s::column-major', pkg ), function benchmark( b ) {
 	var strides;
 	var factors;
 	var shape;
@@ -82,7 +89,13 @@ bench( pkg+'::column-major', function benchmark( b ) {
 		}
 	}
 	b.toc();
-	if ( !isArray( out.sh ) || !isArray( out.sx ) || !isArray( out.sy ) || !isArray( out.sz ) ) { // eslint-disable-line max-len
+	if (
+		!isArray( out.sh ) ||
+		!isArray( out.sx ) ||
+		!isArray( out.sy ) ||
+		!isArray( out.sz ) ||
+		!isArray( out.sw )
+	) {
 		b.fail( 'should return an array' );
 	}
 	b.pass( 'benchmark finished' );
