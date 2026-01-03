@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-02)
+## Unreleased (2026-01-03)
 
 <section class="features">
 
@@ -682,6 +682,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`873beeb`](https://github.com/stdlib-js/stdlib/commit/873beeb4042c9ada02dff4c40ec0de82887faa17) - **chore:** remove square bracket and add private annotation _(by Philipp Burckhardt)_
 -   [`a7cbc8d`](https://github.com/stdlib-js/stdlib/commit/a7cbc8dbdbd69453891b1d5ffc1fcca9126910e2) - **feat:** move optional argument to options object in `ndarray/concat` [(#9480)](https://github.com/stdlib-js/stdlib/pull/9480) _(by Muhammad Haris, Athan Reines)_
 -   [`9273054`](https://github.com/stdlib-js/stdlib/commit/9273054d9d5ab37c52da6ae37563b1289d7c8351) - **chore:** fix JavaScript lint errors [(#9473)](https://github.com/stdlib-js/stdlib/pull/9473) _(by Tejasvini Ramaswamy)_
 -   [`15e8b35`](https://github.com/stdlib-js/stdlib/commit/15e8b358c586ae53ee8150469519149d1c42be2b) - **test:** address failing test _(by Athan Reines)_
