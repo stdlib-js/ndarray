@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-03)
+## Unreleased (2026-01-04)
 
 <section class="features">
 
@@ -689,6 +689,7 @@ A total of 38 issues were closed in this release:
 
 <details>
 
+-   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`7b5a1b5`](https://github.com/stdlib-js/stdlib/commit/7b5a1b57e9d707ea3944a616d775620a8f188bd8) - **test:** add test case for sx _(by Philipp Burckhardt)_
 -   [`df82f00`](https://github.com/stdlib-js/stdlib/commit/df82f006202c8ade82178b4f7839063706723894) - **docs:** fix require path _(by Philipp Burckhardt)_
 -   [`016b07f`](https://github.com/stdlib-js/stdlib/commit/016b07f8610e21332af7bfbc38afbacdbeac8583) - **refactor:** rename/reorder parameters _(by Athan Reines)_
@@ -1989,7 +1990,7 @@ A total of 38 issues were closed in this release:
 
 ### Contributors
 
-A total of 30 people contributed to this release. Thank you to the following contributors:
+A total of 31 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -2009,6 +2010,7 @@ A total of 30 people contributed to this release. Thank you to the following con
 -   Muhammad Haris
 -   Muhammad Taaha Tariq
 -   Navyansh Kesarwani
+-   Neeraj Pathak
 -   Payal Goswami
 -   Philipp Burckhardt
 -   Piyush Goel
