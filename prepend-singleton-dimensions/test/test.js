@@ -102,6 +102,16 @@ tape( 'the function prepends singleton dimensions', function test( t ) {
 	var y;
 
 	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+	y = prependSingletonDimensions( x, 0 );
+
+	expected = [ 2, 2 ];
+
+	t.deepEqual( getShape( y ), expected, 'returns expected value' );
+	t.strictEqual( getData( y ), getData( x ), 'returns expected value' );
+	t.notEqual( y, x, 'returns expected value' );
+	t.strictEqual( isReadOnly( y ), true, 'returns expected value' );
+
+	x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 	y = prependSingletonDimensions( x, 3 );
 
 	expected = [ 1, 1, 1, 2, 2 ];

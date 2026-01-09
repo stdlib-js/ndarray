@@ -71,7 +71,7 @@ The function accepts the following options:
 -   **keepdims**: boolean indicating whether the reduced dimensions should be included in the returned [ndarray][@stdlib/ndarray/ctor] as singleton dimensions. Default: `false`.
 -   **sentinel**: value to return when no element passes the test. May be either a scalar value or a zero-dimensional [ndarray][@stdlib/ndarray/ctor].
 
-By default, the function performs reduction over all all elements in a provided [ndarray][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
+By default, the function performs reduction over all elements in a provided [ndarray][@stdlib/ndarray/ctor]. To reduce specific dimensions, set the `dims` option.
 
 <!-- eslint-disable max-len -->
 

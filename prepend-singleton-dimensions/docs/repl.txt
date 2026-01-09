@@ -3,6 +3,9 @@
     Returns a read-only view of an input ndarray with a specified number of
     prepended singleton dimensions.
 
+    If `n` is equal to zero, the function returns a read-only view of the input
+    ndarray.
+
     Parameters
     ----------
     x: ndarray

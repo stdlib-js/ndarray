@@ -37,7 +37,6 @@ var wrap = require( './callback_wrapper.js' );
 * @param {ndarray} out - output ndarray
 * @param {Options} [options] - function options
 * @param {IntegerArray} [options.dims] - list of dimensions over which to perform a reduction
-* @param {boolean} [options.keepdims=false] - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions
 * @param {(*|ndarray)} [options.sentinel] - sentinel value
 * @param {Function} predicate - predicate function
 * @param {*} [thisArg] - predicate function execution context
@@ -84,7 +83,7 @@ function assign( x, out, options, predicate, thisArg ) {
 		throw new TypeError( format( 'invalid argument. First argument must be an ndarray-like object. Value: `%s`.', x ) );
 	}
 	if ( !isndarrayLike( out ) ) {
-		throw new TypeError( format( 'invalid argument. Second argument must be an ndarray-like object. Value: `%s`.', x ) );
+		throw new TypeError( format( 'invalid argument. Second argument must be an ndarray-like object. Value: `%s`.', out ) );
 	}
 	// Case: assign( x, out, predicate )
 	if ( nargs < 4 ) {

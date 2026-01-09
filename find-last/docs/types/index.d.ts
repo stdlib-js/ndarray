@@ -93,6 +93,16 @@ interface Options<T> extends BaseOptions {
 }
 
 /**
+* Assign options.
+*/
+interface AssignOptions<T> extends BaseOptions {
+	/**
+	* Sentinel value.
+	*/
+	sentinel?: T | typedndarray<T>;
+}
+
+/**
 * Interface describing `findLast`.
 */
 interface FindLast {
@@ -255,7 +265,7 @@ interface FindLast {
 	* var out = findLast.assign( x, y, {}, isEven );
 	* // returns <ndarray>[ 6.0 ]
 	*/
-	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = T, ThisArg = unknown>( x: ndarray, out: U, options: Options<V>, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): U;
+	assign<T = unknown, U extends typedndarray<T> = typedndarray<T>, V = T, ThisArg = unknown>( x: ndarray, out: U, options: AssignOptions<V>, predicate: Predicate<T, U, ThisArg>, thisArg?: ThisParameterType<Predicate<T, U, ThisArg>> ): U;
 }
 
 /**

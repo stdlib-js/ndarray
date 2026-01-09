@@ -77,7 +77,7 @@ sh = getShape( y );
 The function accepts the following arguments:
 
 -   **x**: input ndarray.
--   **axis**: axis at which to insert a singleton dimension
+-   **axis**: axis at which to insert a singleton dimension.
 -   **writable**: boolean indicating whether a returned ndarray should be writable.
 
 </section>
