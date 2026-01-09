@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1aff763`](https://github.com/stdlib-js/stdlib/commit/1aff763c61863b7d737a699db89729d2bba0e1bc) - add `ndarray/spread-dimensions` [(#9424)](https://github.com/stdlib-js/stdlib/pull/9424)
 -   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133) - update `ndarray/base` TypeScript declarations (#9640) [(#9640)](https://github.com/stdlib-js/stdlib/pull/9640)
 -   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724)
 -   [`fd99657`](https://github.com/stdlib-js/stdlib/commit/fd99657f0da9706d3c1d7b03c5f9caf97069d3df) - add `ndarray/prepend-singleton-dimensions` [(#9478)](https://github.com/stdlib-js/stdlib/pull/9478)
@@ -701,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`1aff763`](https://github.com/stdlib-js/stdlib/commit/1aff763c61863b7d737a699db89729d2bba0e1bc) - **feat:** add `ndarray/spread-dimensions` [(#9424)](https://github.com/stdlib-js/stdlib/pull/9424) _(by Muhammad Haris, Athan Reines)_
 -   [`9d53583`](https://github.com/stdlib-js/stdlib/commit/9d53583c9f82e1b2e5dc084849d98bd9c3214d45) - **test:** update descriptions _(by Athan Reines)_
 -   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133) - **feat:** update `ndarray/base` TypeScript declarations (#9640) [(#9640)](https://github.com/stdlib-js/stdlib/pull/9640) _(by stdlib-bot)_
 -   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - **feat:** add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
