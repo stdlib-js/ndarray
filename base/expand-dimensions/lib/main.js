@@ -21,7 +21,6 @@
 // MODULES //
 
 var isRowMajor = require( './../../../base/assert/is-row-major-string' );
-var isReadOnly = require( './../../../base/assert/is-read-only' );
 var normalizeIndex = require( './../../../base/normalize-index' );
 var getDType = require( './../../../base/dtype' );
 var getShape = require( './../../../base/shape' );
@@ -43,26 +42,20 @@ var format = require( '@stdlib/string/format' );
 *
 * @param {ndarray} x - input array
 * @param {integer} axis - axis at which to insert a singleton dimension
+* @param {boolean} writable - boolean indicating whether the returned ndarray should be writable
 * @throws {RangeError} must provide a valid axis
 * @returns {ndarray} output array
 *
 * @example
-* var getShape = require( '@stdlib/ndarray/shape' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
-* var shx = getShape( x );
-* // returns [ 2, 2 ]
-*
-* var y = expandDimensions( x, 1 );
+* var y = expandDimensions( x, 1, false );
 * // returns <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
-*
-* var shy = getShape( y );
-* // returns [ 2, 1, 2 ]
 */
-function expandDimensions( x, axis ) {
+function expandDimensions( x, axis, writable ) {
 	var strides;
 	var shape;
 	var isrm;
@@ -132,13 +125,9 @@ function expandDimensions( x, axis ) {
 			}
 		}
 	}
-	if ( isReadOnly( x ) ) {
-		// If provided a read-only view, the returned array should also be read-only...
-		return new x.constructor( getDType( x ), getData( x ), shape, strides, getOffset( x ), ord, { // eslint-disable-line max-len
-			'readonly': true
-		});
-	}
-	return new x.constructor( getDType( x ), getData( x ), shape, strides, getOffset( x ), ord ); // eslint-disable-line max-len
+	return new x.constructor( getDType( x ), getData( x ), shape, strides, getOffset( x ), ord, { // eslint-disable-line max-len
+		'readonly': !writable
+	});
 }
 
 

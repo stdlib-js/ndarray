@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-06)
+## Unreleased (2026-01-09)
 
 <section class="features">
 
 ### Features
 
+-   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd) - add writable parameter to `ndarray/base/expand-dimensions` [(#9476)](https://github.com/stdlib-js/stdlib/pull/9476)
 -   [`f40ccb7`](https://github.com/stdlib-js/stdlib/commit/f40ccb75929e92538b8c366145589addccdaafbe) - add `ndarray/base/ternary-loop-interchange-order` [(#9499)](https://github.com/stdlib-js/stdlib/pull/9499)
 -   [`1f79854`](https://github.com/stdlib-js/stdlib/commit/1f798549409c47de0261c5396dccf64012e54a9c) - add `ndarray/base/ternary-tiling-block-size` [(#9495)](https://github.com/stdlib-js/stdlib/pull/9495)
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946) - update `ndarray` TypeScript declarations [(#9508)](https://github.com/stdlib-js/stdlib/pull/9508)
@@ -628,6 +629,10 @@
 
 ### BREAKING CHANGES
 
+-   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd): add `writable` parameter
+
+    -   To migrate, users should explicitly provide a third argument indicating whether to return a read-only ndarray. To preserve prior behavior, users should provide a boolean based on whether an input ndarray is read-only.
+
 -   [`327cda9`](https://github.com/stdlib-js/stdlib/commit/327cda9b2dda086b20da9ce256df388573486946): move `dim` argument to option
 
     -   To migrate, users wanting to specify a dimension along which to concatenate input arrays should provide an object containing a `dim` property.
@@ -689,6 +694,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd) - **feat:** add writable parameter to `ndarray/base/expand-dimensions` [(#9476)](https://github.com/stdlib-js/stdlib/pull/9476) _(by Muhammad Haris, Athan Reines)_
 -   [`da6ecc9`](https://github.com/stdlib-js/stdlib/commit/da6ecc96d7f503e03007eef616703fc7a71587b8) - **chore:** fix JavaScript lint errors [(#9572)](https://github.com/stdlib-js/stdlib/pull/9572) _(by Shreelaxmi Hegde, Athan Reines)_
 -   [`ed3afe7`](https://github.com/stdlib-js/stdlib/commit/ed3afe7252708109f1a8350c15bcdabcc96f6e0a) - **chore:** fix C lint errors [(#9571)](https://github.com/stdlib-js/stdlib/pull/9571) _(by Geo Daoyu)_
 -   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_

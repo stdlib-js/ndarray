@@ -24,21 +24,14 @@
 * @module @stdlib/ndarray/base/expand-dimensions
 *
 * @example
-* var getShape = require( '@stdlib/ndarray/shape' );
 * var array = require( '@stdlib/ndarray/array' );
 * var expandDimensions = require( '@stdlib/ndarray/base/expand-dimensions' );
 *
 * var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
 *
-* var shx = getShape( x );
-* // returns [ 2, 2 ]
-*
-* var y = expandDimensions( x, 1 );
+* var y = expandDimensions( x, 1, false );
 * // returns <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
-*
-* var shy = getShape( y );
-* // returns [ 2, 1, 2 ]
 */
 
 // MODULES //
