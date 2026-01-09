@@ -702,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`a5a3d29`](https://github.com/stdlib-js/stdlib/commit/a5a3d29ccbc51f322d2f8d84608411e3ebce3d11) - **docs:** improve doctests for ndarray instances in `ndarray/filter` [(#9606)](https://github.com/stdlib-js/stdlib/pull/9606) _(by Harshit Verma, Athan Reines)_
 -   [`63e3c0c`](https://github.com/stdlib-js/stdlib/commit/63e3c0c70c31fae2111b4dfb4141a3665bc0dea0) - **test:** add tests to `ndarray/find` [(#9311)](https://github.com/stdlib-js/stdlib/pull/9311) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`582d828`](https://github.com/stdlib-js/stdlib/commit/582d8280f7d6f077f686db7348e3132971476939) - **test:** add tests _(by Athan Reines)_
 -   [`59c9027`](https://github.com/stdlib-js/stdlib/commit/59c90279d6241a73c8d82fd92c49f64c4f068db7) - **test:** add tests _(by Athan Reines)_
@@ -2017,7 +2018,7 @@ A total of 40 issues were closed in this release:
 
 ### Contributors
 
-A total of 32 people contributed to this release. Thank you to the following contributors:
+A total of 33 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhavishy Agrawal
@@ -2030,6 +2031,7 @@ A total of 32 people contributed to this release. Thank you to the following con
 -   Gautam Kaushik
 -   Geo Daoyu
 -   Gururaj Gurram
+-   Harshit Verma
 -   Karan Vasudevamurthy
 -   Kate Suraev
 -   Lokesh Ranjan
