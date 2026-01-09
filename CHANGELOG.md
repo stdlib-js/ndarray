@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724)
 -   [`fd99657`](https://github.com/stdlib-js/stdlib/commit/fd99657f0da9706d3c1d7b03c5f9caf97069d3df) - add `ndarray/prepend-singleton-dimensions` [(#9478)](https://github.com/stdlib-js/stdlib/pull/9478)
 -   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd) - add writable parameter to `ndarray/base/expand-dimensions` [(#9476)](https://github.com/stdlib-js/stdlib/pull/9476)
 -   [`f40ccb7`](https://github.com/stdlib-js/stdlib/commit/f40ccb75929e92538b8c366145589addccdaafbe) - add `ndarray/base/ternary-loop-interchange-order` [(#9499)](https://github.com/stdlib-js/stdlib/pull/9499)
@@ -695,6 +696,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - **feat:** add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`90021da`](https://github.com/stdlib-js/stdlib/commit/90021dae5b5a3b4fbeb5e2366c71b5ddf2095555) - **chore:** clean-up _(by Athan Reines)_
 -   [`fd99657`](https://github.com/stdlib-js/stdlib/commit/fd99657f0da9706d3c1d7b03c5f9caf97069d3df) - **feat:** add `ndarray/prepend-singleton-dimensions` [(#9478)](https://github.com/stdlib-js/stdlib/pull/9478) _(by Muhammad Haris, Athan Reines)_
 -   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd) - **feat:** add writable parameter to `ndarray/base/expand-dimensions` [(#9476)](https://github.com/stdlib-js/stdlib/pull/9476) _(by Muhammad Haris, Athan Reines)_
