@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133) - update `ndarray/base` TypeScript declarations (#9640) [(#9640)](https://github.com/stdlib-js/stdlib/pull/9640)
 -   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724)
 -   [`fd99657`](https://github.com/stdlib-js/stdlib/commit/fd99657f0da9706d3c1d7b03c5f9caf97069d3df) - add `ndarray/prepend-singleton-dimensions` [(#9478)](https://github.com/stdlib-js/stdlib/pull/9478)
 -   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd) - add writable parameter to `ndarray/base/expand-dimensions` [(#9476)](https://github.com/stdlib-js/stdlib/pull/9476)
@@ -631,6 +632,10 @@
 
 ### BREAKING CHANGES
 
+-   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133): add `writable` parameter
+
+    -   To migrate, users should explicitly provide a third argument indicating whether the ndarray returned by `expandDimensions` should be read-only. To preserve previous behavior, users should set the third argument to a boolean indicating whether a provided input ndarray is read-only.
+
 -   [`f475c84`](https://github.com/stdlib-js/stdlib/commit/f475c843a4b1579eef6533e464e4c16766d7ecdd): add `writable` parameter
 
     -   To migrate, users should explicitly provide a third argument indicating whether to return a read-only ndarray. To preserve prior behavior, users should provide a boolean based on whether an input ndarray is read-only.
@@ -696,6 +701,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133) - **feat:** update `ndarray/base` TypeScript declarations (#9640) [(#9640)](https://github.com/stdlib-js/stdlib/pull/9640) _(by stdlib-bot)_
 -   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - **feat:** add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`90021da`](https://github.com/stdlib-js/stdlib/commit/90021dae5b5a3b4fbeb5e2366c71b5ddf2095555) - **chore:** clean-up _(by Athan Reines)_
 -   [`fd99657`](https://github.com/stdlib-js/stdlib/commit/fd99657f0da9706d3c1d7b03c5f9caf97069d3df) - **feat:** add `ndarray/prepend-singleton-dimensions` [(#9478)](https://github.com/stdlib-js/stdlib/pull/9478) _(by Muhammad Haris, Athan Reines)_
