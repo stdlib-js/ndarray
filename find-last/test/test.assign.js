@@ -542,22 +542,148 @@ tape( 'the function throws an error if provided an options argument which is not
 	}
 });
 
+tape( 'the function throws an error if provided an options argument with an invalid `dims` property', function test( t ) {
+	var values;
+	var out;
+	var x;
+	var i;
+
+	x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	out = empty( [], {
+		'dtype': 'float64'
+	});
+
+	values = [
+		'5',
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		{},
+		function noop() {}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			var opts = {
+				'dims': value
+			};
+			assign( x, out, opts, clbk );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument with a `dims` property which contains out-of-bounds dimensions', function test( t ) {
+	var values;
+	var out;
+	var x;
+	var i;
+
+	x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	out = empty( [], {
+		'dtype': 'float64'
+	});
+	values = [
+		[ 1, 3 ],
+		[ 3, 0 ],
+		[ 0, 2 ]
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), RangeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			var opts = {
+				'dims': value
+			};
+			assign( x, out, opts, clbk );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument with a `dims` property which contains duplicate dimensions', function test( t ) {
+	var values;
+	var out;
+	var x;
+	var i;
+
+	x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	out = empty( [], {
+		'dtype': 'float64'
+	});
+	values = [
+		[ 0, 0 ],
+		[ 1, 1 ]
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), Error, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			var opts = {
+				'dims': value
+			};
+			assign( x, out, opts, clbk );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided an options argument with a `dims` property which contains more dimensions than are present in the input ndarray', function test( t ) {
+	var values;
+	var out;
+	var x;
+	var i;
+
+	x = empty( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
+	out = empty( [], {
+		'dtype': 'float64'
+	});
+	values = [
+		[ 0, 1, 2 ],
+		[ 0, 1, 2, 3 ],
+		[ 0, 1, 2, 3, 4 ]
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), RangeError, 'throws an error when provided ' + values[ i ] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			var opts = {
+				'dims': value
+			};
+			assign( x, out, opts, clbk );
+		};
+	}
+});
+
 tape( 'the function finds the last elements which pass a test implemented by a predicate function along one or more ndarray dimensions (row-major)', function test( t ) {
 	var expected;
 	var actual;
 	var x;
 	var y;
-
-	x = new ndarray( 'float64', new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
-	y = empty( [], {
-		'dtype': 'float64'
-	});
-
-	actual = assign( x, y, clbk );
-	expected = 3.0;
-
-	t.strictEqual( actual, y, 'returns expected value' );
-	t.strictEqual( actual.get(), expected, 'returns expected value' );
 
 	x = new ndarray( 'float64', new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
 	y = empty( [], {
@@ -577,17 +703,6 @@ tape( 'the function finds the last elements which pass a test implemented by a p
 	var actual;
 	var x;
 	var y;
-
-	x = new ndarray( 'float64', new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] ), [ 4 ], [ 1 ], 0, 'column-major' );
-	y = empty( [], {
-		'dtype': 'float64'
-	});
-
-	actual = assign( x, y, clbk );
-	expected = 3.0;
-
-	t.strictEqual( actual, y, 'returns expected value' );
-	t.strictEqual( actual.get(), expected, 'returns expected value' );
 
 	x = new ndarray( 'float64', new Float64Array( [ 1.0, -2.0, 3.0, -4.0 ] ), [ 4 ], [ 1 ], 0, 'column-major' );
 	y = empty( [], {
@@ -619,6 +734,7 @@ tape( 'the function supports specifying reduction dimensions (row-major)', funct
 	});
 	actual = assign( x, y, opts, clbk );
 	expected = [ 5.0, 6.0, 7.0, 8.0 ];
+
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( ndarray2array( actual ), expected, 'returns expected value' );
 
@@ -630,6 +746,7 @@ tape( 'the function supports specifying reduction dimensions (row-major)', funct
 	});
 	actual = assign( x, y, opts, clbk );
 	expected = [ 4.0, 8.0 ];
+
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( ndarray2array( actual ), expected, 'returns expected value' );
 
@@ -641,6 +758,7 @@ tape( 'the function supports specifying reduction dimensions (row-major)', funct
 	});
 	actual = assign( x, y, opts, clbk );
 	expected = 8.0;
+
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( actual.get(), expected, 'returns expected value' );
 
@@ -652,6 +770,7 @@ tape( 'the function supports specifying reduction dimensions (row-major)', funct
 	});
 	actual = assign( x, y, opts, clbk );
 	expected = [ [ 1.0, 2.0, 3.0, 4.0 ], [ 5.0, 6.0, 7.0, 8.0 ] ];
+
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( ndarray2array( actual ), expected, 'returns expected value' );
 
@@ -752,7 +871,7 @@ tape( 'the function supports providing an execution context', function test( t )
 	var x;
 	var y;
 
-	x = new ndarray( 'float64', new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
+	x = new ndarray( 'float64', new Float64Array( [ 1.0, -2.0, -3.0, -4.0 ] ), [ 4 ], [ 1 ], 0, 'row-major' );
 	y = empty( [], {
 		'dtype': 'float64'
 	});
@@ -766,20 +885,23 @@ tape( 'the function supports providing an execution context', function test( t )
 	arrays = [];
 	actual = assign( x, y, predicate, ctx );
 
-	expected = 4.0;
+	expected = 1.0;
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.strictEqual( actual.get(), expected, 'returns expected value' );
-	t.strictEqual( ctx.count, 1, 'returns expected value' );
+	t.strictEqual( ctx.count, 4, 'returns expected value' );
 
-	expected = [ 4.0 ];
+	expected = [ -4.0, -3.0, -2.0, 1.0 ];
 	t.deepEqual( values, expected, 'returns expected value' );
 
 	expected = [
-		[ 3 ]
+		[ 3 ],
+		[ 2 ],
+		[ 1 ],
+		[ 0 ]
 	];
 	t.deepEqual( indices, expected, 'returns expected value' );
 
-	expected = [ x ];
+	expected = [ x, x, x, x ];
 	t.deepEqual( arrays, expected, 'returns expected value' );
 
 	t.end();
@@ -804,7 +926,7 @@ tape( 'the function supports providing an execution context (options)', function
 	var x;
 	var y;
 
-	x = new ndarray( 'float64', new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ), [ 2, 2 ], [ 1, 2 ], 0, 'column-major' );
+	x = new ndarray( 'float64', new Float64Array( [ 1.0, 2.0, 3.0, -4.0 ] ), [ 2, 2 ], [ 1, 2 ], 0, 'column-major' );
 	y = empty( [ 2 ], {
 		'dtype': 'float64'
 	});
@@ -820,21 +942,22 @@ tape( 'the function supports providing an execution context (options)', function
 	arrays = [];
 	actual = assign( x, y, opts, predicate, ctx );
 
-	expected = [ 2.0, 4.0 ];
+	expected = [ 2.0, 3.0 ];
 	t.strictEqual( actual, y, 'returns expected value' );
 	t.deepEqual( ndarray2array( actual ), expected, 'returns expected value' );
-	t.strictEqual( ctx.count, 2, 'returns expected value' );
+	t.strictEqual( ctx.count, 3, 'returns expected value' );
 
-	expected = [ 4.0, 2.0 ];
+	expected = [ -4.0, 3.0, 2.0 ];
 	t.deepEqual( values, expected, 'returns expected value' );
 
 	expected = [
 		[ 1, 1 ],
+		[ 0, 1 ],
 		[ 1, 0 ]
 	];
 	t.deepEqual( indices, expected, 'returns expected value' );
 
-	expected = [ x, x ];
+	expected = [ x, x, x ];
 	t.deepEqual( arrays, expected, 'returns expected value' );
 
 	t.end();
