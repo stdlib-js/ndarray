@@ -16,6 +16,8 @@
 * limitations under the License.
 */
 
+/* eslint-disable space-in-parens */
+
 import zeros = require( './../../../../zeros' );
 import expandDimensions = require( './index' );
 
@@ -24,9 +26,11 @@ import expandDimensions = require( './index' );
 
 // The function returns an ndarray...
 {
-	const x = zeros( [ 2, 2 ] );
+	const x = zeros( [ 2, 2 ], {
+		'dtype': 'float64'
+	});
 
-	expandDimensions( x, 1, false ); // $ExpectType typedndarray<number>
+	expandDimensions( x, 1, false ); // $ExpectType float64ndarray
 }
 
 // The compiler throws an error if the function is not provided a first argument which is an ndarray...

@@ -34,16 +34,16 @@ var format = require( '@stdlib/string/format' );
 // MAIN //
 
 /**
-* Expands the shape of an array by inserting a new dimension of size one at a specified axis.
+* Expands the shape of an array by inserting a new dimension of size one at a specified dimension index.
 *
 * ## Notes
 *
-* -   A provided axis must reside on the interval `[-N-1, N]`, where `N` is the rank (i.e., number of dimensions) of the provided input array. If provided a negative `axis`, the axis position at which to insert a singleton dimension is computed as `N + axis + 1`. Hence, if provided `-1`, the resolved axis position is `N` (i.e., a singleton dimension is appended to the input array).
+* -   A provided dimension index must reside on the interval `[-N-1, N]`, where `N` is the rank (i.e., number of dimensions) of the provided input array. If provided a negative dimension index, the position at which to insert a singleton dimension is computed as `N + dim + 1`. Hence, if provided `-1`, the resolved position is `N` (i.e., a singleton dimension is appended to the input array).
 *
 * @param {ndarray} x - input array
-* @param {integer} axis - axis at which to insert a singleton dimension
+* @param {integer} dim - dimension index at which to insert a singleton dimension
 * @param {boolean} writable - boolean indicating whether the returned ndarray should be writable
-* @throws {RangeError} must provide a valid axis
+* @throws {RangeError} must provide a valid dimension index
 * @returns {ndarray} output array
 *
 * @example
@@ -55,7 +55,7 @@ var format = require( '@stdlib/string/format' );
 * var y = expandDimensions( x, 1, false );
 * // returns <ndarray>[ [ [ 1, 2 ] ], [ [ 3, 4 ] ] ]
 */
-function expandDimensions( x, axis, writable ) {
+function expandDimensions( x, dim, writable ) {
 	var strides;
 	var shape;
 	var isrm;
@@ -76,9 +76,9 @@ function expandDimensions( x, axis, writable ) {
 	strides = [];
 	shape = [];
 
-	d = normalizeIndex( axis, N );
+	d = normalizeIndex( dim, N );
 	if ( d === -1 ) {
-		throw new RangeError( format( 'invalid argument. Specified axis is out-of-bounds. Must be on the interval: [-%u, %u]. Value: `%d`.', N+1, N, axis ) );
+		throw new RangeError( format( 'invalid argument. Specified dimension index is out-of-bounds. Must be on the interval: [-%u, %u]. Value: `%d`.', N+1, N, dim ) );
 	}
 	if ( d === 0 ) {
 		// Prepend singleton dimension...

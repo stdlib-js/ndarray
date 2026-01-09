@@ -19,7 +19,7 @@
 'use strict';
 
 /**
-* Expand the shape of an array by inserting a new dimension of size one at a specified axis.
+* Expand the shape of an array by inserting a new dimension of size one at a specified dimension index.
 *
 * @module @stdlib/ndarray/base/expand-dimensions
 *

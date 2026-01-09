@@ -39,7 +39,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the function throws an error if provided an invalid `axis` argument', function test( t ) {
+tape( 'the function throws an error if provided an invalid second argument', function test( t ) {
 	var values;
 	var x;
 	var i;
@@ -87,7 +87,7 @@ tape( 'the function prepends singleton dimensions', function test( t ) {
 	t.end();
 });
 
-tape( 'the function prepends singleton dimensions (negative axis)', function test( t ) {
+tape( 'the function prepends singleton dimensions (negative index)', function test( t ) {
 	var x;
 	var y;
 
@@ -133,7 +133,7 @@ tape( 'the function appends singleton dimensions', function test( t ) {
 	t.end();
 });
 
-tape( 'the function appends singleton dimensions (negative axis)', function test( t ) {
+tape( 'the function appends singleton dimensions (negative index)', function test( t ) {
 	var x;
 	var y;
 
@@ -179,7 +179,7 @@ tape( 'the function inserts singleton dimensions', function test( t ) {
 	t.end();
 });
 
-tape( 'the function inserts singleton dimensions (negative axis)', function test( t ) {
+tape( 'the function inserts singleton dimensions (negative index)', function test( t ) {
 	var x;
 	var y;
 
@@ -217,7 +217,7 @@ tape( 'the function prepends singleton dimensions (base; row-major)', function t
 	t.end();
 });
 
-tape( 'the function prepends singleton dimensions (base; row-major; negative axis)', function test( t ) {
+tape( 'the function prepends singleton dimensions (base; row-major; negative index)', function test( t ) {
 	var x;
 	var y;
 
@@ -277,7 +277,7 @@ tape( 'the function appends singleton dimensions (base; row-major)', function te
 	t.end();
 });
 
-tape( 'the function appends singleton dimensions (base; row-major; negative axis)', function test( t ) {
+tape( 'the function appends singleton dimensions (base; row-major; negative index)', function test( t ) {
 	var x;
 	var y;
 
@@ -337,7 +337,7 @@ tape( 'the function inserts singleton dimensions (base; row-major)', function te
 	t.end();
 });
 
-tape( 'the function inserts singleton dimensions (base; row-major; negative axis)', function test( t ) {
+tape( 'the function inserts singleton dimensions (base; row-major; negative index)', function test( t ) {
 	var x;
 	var y;
 

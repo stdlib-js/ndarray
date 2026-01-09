@@ -702,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`8ea33d5`](https://github.com/stdlib-js/stdlib/commit/8ea33d58d9a5beb31e6023ceaf331fc4175c74fa) - **docs:** rename parameter _(by Athan Reines)_
 -   [`5149a6b`](https://github.com/stdlib-js/stdlib/commit/5149a6b650b60568bd0df248c2a97a3d8ca2ca87) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`1aff763`](https://github.com/stdlib-js/stdlib/commit/1aff763c61863b7d737a699db89729d2bba0e1bc) - **feat:** add `ndarray/spread-dimensions` [(#9424)](https://github.com/stdlib-js/stdlib/pull/9424) _(by Muhammad Haris, Athan Reines)_
 -   [`9d53583`](https://github.com/stdlib-js/stdlib/commit/9d53583c9f82e1b2e5dc084849d98bd9c3214d45) - **test:** update descriptions _(by Athan Reines)_
