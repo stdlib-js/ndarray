@@ -702,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`6a08125`](https://github.com/stdlib-js/stdlib/commit/6a0812589be9a47f48809b7223377399c24ba272) - **docs:** improve doctests for ndarray instances in `ndarray/flipud` [(#9673)](https://github.com/stdlib-js/stdlib/pull/9673) _(by Shreelaxmi Hegde)_
 -   [`2f7e474`](https://github.com/stdlib-js/stdlib/commit/2f7e474c405543951d4104d10b1e186ead3a68ee) - **test:** add tests to `ndarray/count-falsy` [(#9670)](https://github.com/stdlib-js/stdlib/pull/9670) _(by Muhammad Haris)_
 -   [`141399c`](https://github.com/stdlib-js/stdlib/commit/141399ca349aa5d998ba9d5df2e46f4ceb316210) - **docs:** improve doctests for ndarray instances in `ndarray/flatten-by` [(#9666)](https://github.com/stdlib-js/stdlib/pull/9666) _(by Shreelaxmi Hegde)_
 -   [`bb5b731`](https://github.com/stdlib-js/stdlib/commit/bb5b7312bfd8a87b84615de701b8c1e132521e93) - **docs:** improve doctests for ndarray instances in `ndarray/flatten-from` [(#9668)](https://github.com/stdlib-js/stdlib/pull/9668) _(by Shreelaxmi Hegde)_
