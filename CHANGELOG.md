@@ -702,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`141399c`](https://github.com/stdlib-js/stdlib/commit/141399ca349aa5d998ba9d5df2e46f4ceb316210) - **docs:** improve doctests for ndarray instances in `ndarray/flatten-by` [(#9666)](https://github.com/stdlib-js/stdlib/pull/9666) _(by Shreelaxmi Hegde)_
 -   [`bb5b731`](https://github.com/stdlib-js/stdlib/commit/bb5b7312bfd8a87b84615de701b8c1e132521e93) - **docs:** improve doctests for ndarray instances in `ndarray/flatten-from` [(#9668)](https://github.com/stdlib-js/stdlib/pull/9668) _(by Shreelaxmi Hegde)_
 -   [`3686f6f`](https://github.com/stdlib-js/stdlib/commit/3686f6f542397f4000ce69cd3f1e9f5052d68321) - **docs:** improve doctests for ndarray instances in `ndarray/flatten` [(#9665)](https://github.com/stdlib-js/stdlib/pull/9665) _(by Shreelaxmi Hegde)_
 -   [`279f181`](https://github.com/stdlib-js/stdlib/commit/279f1817651a774f8d97f053529ac2bd94a94f91) - **docs:** update parameter name and description in `ndarray/base` TypeScript declaration  [(#9660)](https://github.com/stdlib-js/stdlib/pull/9660) _(by stdlib-bot)_
