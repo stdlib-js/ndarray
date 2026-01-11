@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-10)
+## Unreleased (2026-01-11)
 
 <section class="features">
 
@@ -702,6 +702,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`0e64df0`](https://github.com/stdlib-js/stdlib/commit/0e64df09f90ee261c1bf2dc56ae5ad3c1705b120) - **docs:** update examples [(#9688)](https://github.com/stdlib-js/stdlib/pull/9688) _(by stdlib-bot)_
 -   [`f477420`](https://github.com/stdlib-js/stdlib/commit/f477420675c7c2b4c00729e0ed7ef75d4e1cdb11) - **test:** add tests to `ndarray/count-if` [(#9671)](https://github.com/stdlib-js/stdlib/pull/9671) _(by Muhammad Haris, Athan Reines)_
 -   [`892be43`](https://github.com/stdlib-js/stdlib/commit/892be43dfec83129f37877bae20fff27f73f8cf2) - **test:** fix description _(by Athan Reines)_
 -   [`2699f38`](https://github.com/stdlib-js/stdlib/commit/2699f38dd49d6686d3104a9100b2c05fe8d537f2) - **docs:** improve doctests for ndarray instances in `ndarray/filter-map` [(#9663)](https://github.com/stdlib-js/stdlib/pull/9663) _(by Shreelaxmi Hegde, Athan Reines)_
