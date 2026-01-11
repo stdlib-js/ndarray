@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c6e2443`](https://github.com/stdlib-js/stdlib/commit/c6e24436d222d609c3ea153fd81f31e1d16451bc) - add `ndarray/base/ternary` [(#9566)](https://github.com/stdlib-js/stdlib/pull/9566)
 -   [`1aff763`](https://github.com/stdlib-js/stdlib/commit/1aff763c61863b7d737a699db89729d2bba0e1bc) - add `ndarray/spread-dimensions` [(#9424)](https://github.com/stdlib-js/stdlib/pull/9424)
 -   [`3c567b6`](https://github.com/stdlib-js/stdlib/commit/3c567b634cf5e5fa5e31b64f94206db5b4a88133) - update `ndarray/base` TypeScript declarations (#9640) [(#9640)](https://github.com/stdlib-js/stdlib/pull/9640)
 -   [`483acba`](https://github.com/stdlib-js/stdlib/commit/483acba3dbcea263aa0014a2db41e1c073f8338b) - add `ndarray/find-last` [(#8724)](https://github.com/stdlib-js/stdlib/pull/8724)
@@ -702,6 +703,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`c6e2443`](https://github.com/stdlib-js/stdlib/commit/c6e24436d222d609c3ea153fd81f31e1d16451bc) - **feat:** add `ndarray/base/ternary` [(#9566)](https://github.com/stdlib-js/stdlib/pull/9566) _(by Muhammad Haris, Athan Reines)_
 -   [`0e64df0`](https://github.com/stdlib-js/stdlib/commit/0e64df09f90ee261c1bf2dc56ae5ad3c1705b120) - **docs:** update examples [(#9688)](https://github.com/stdlib-js/stdlib/pull/9688) _(by stdlib-bot)_
 -   [`f477420`](https://github.com/stdlib-js/stdlib/commit/f477420675c7c2b4c00729e0ed7ef75d4e1cdb11) - **test:** add tests to `ndarray/count-if` [(#9671)](https://github.com/stdlib-js/stdlib/pull/9671) _(by Muhammad Haris, Athan Reines)_
 -   [`892be43`](https://github.com/stdlib-js/stdlib/commit/892be43dfec83129f37877bae20fff27f73f8cf2) - **test:** fix description _(by Athan Reines)_
