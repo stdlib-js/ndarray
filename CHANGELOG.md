@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-11)
+## Unreleased (2026-01-12)
 
 <section class="features">
 
@@ -703,6 +703,8 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`6d4630b`](https://github.com/stdlib-js/stdlib/commit/6d4630be9a3d2d65b464ca289db0c8db452466f2) - **docs:** update to support data type objects and be opaque regarding return value _(by Athan Reines)_
+-   [`4f2cdaa`](https://github.com/stdlib-js/stdlib/commit/4f2cdaafcee4670fb5b1b5f562d445d7367c8404) - **docs:** update to support data type objects and be opaque regarding return value _(by Athan Reines)_
 -   [`c6e2443`](https://github.com/stdlib-js/stdlib/commit/c6e24436d222d609c3ea153fd81f31e1d16451bc) - **feat:** add `ndarray/base/ternary` [(#9566)](https://github.com/stdlib-js/stdlib/pull/9566) _(by Muhammad Haris, Athan Reines)_
 -   [`0e64df0`](https://github.com/stdlib-js/stdlib/commit/0e64df09f90ee261c1bf2dc56ae5ad3c1705b120) - **docs:** update examples [(#9688)](https://github.com/stdlib-js/stdlib/pull/9688) _(by stdlib-bot)_
 -   [`f477420`](https://github.com/stdlib-js/stdlib/commit/f477420675c7c2b4c00729e0ed7ef75d4e1cdb11) - **test:** add tests to `ndarray/count-if` [(#9671)](https://github.com/stdlib-js/stdlib/pull/9671) _(by Muhammad Haris, Athan Reines)_
