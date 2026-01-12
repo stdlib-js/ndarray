@@ -708,6 +708,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`afa33d2`](https://github.com/stdlib-js/stdlib/commit/afa33d21dadcaf449b9950ea9ec30a12f4596738) - **docs:** update examples [(#9700)](https://github.com/stdlib-js/stdlib/pull/9700) _(by stdlib-bot)_
 -   [`fdfdf13`](https://github.com/stdlib-js/stdlib/commit/fdfdf139a4f787dd67d5cdcf94130bf6469c92a2) - **docs:** fix example to ensure valid type promotion _(by Athan Reines)_
 -   [`f738a37`](https://github.com/stdlib-js/stdlib/commit/f738a37c1cc32a740c7ecc4cbc7982eca26f67d2) - **feat:** add `ternaryBlockSize` to namespace _(by Athan Reines)_
 -   [`b490370`](https://github.com/stdlib-js/stdlib/commit/b49037059ac498f7e864cb83f0cf59b3feb3b459) - **feat:** add `ternaryLoopOrder` to namespace _(by Athan Reines)_
