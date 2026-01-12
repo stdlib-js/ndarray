@@ -1202,6 +1202,42 @@ setReadOnly( ns, 'strides2order', require( './../../base/strides2order' ) );
 setReadOnly( ns, 'sub2ind', require( './../../base/sub2ind' ) );
 
 /**
+* @name ternary
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ternary}
+*/
+setReadOnly( ns, 'ternary', require( './../../base/ternary' ) );
+
+/**
+* @name ternaryLoopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ternary-loop-interchange-order}
+*/
+setReadOnly( ns, 'ternaryLoopOrder', require( './../../base/ternary-loop-interchange-order' ) );
+
+/**
+* @name ternaryOutputDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ternary-output-dtype}
+*/
+setReadOnly( ns, 'ternaryOutputDataType', require( './../../base/ternary-output-dtype' ) );
+
+/**
+* @name ternaryBlockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ternary-tiling-block-size}
+*/
+setReadOnly( ns, 'ternaryBlockSize', require( './../../base/ternary-tiling-block-size' ) );
+
+/**
 * @name ndarray2array
 * @memberof ns
 * @readonly
