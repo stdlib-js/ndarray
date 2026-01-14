@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-13)
+## Unreleased (2026-01-14)
 
 <section class="features">
 
@@ -709,6 +709,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`571b88f`](https://github.com/stdlib-js/stdlib/commit/571b88f7e7b93c3578efc017cb8e3bd9b6b99954) - **docs:** improve doctests for ndarray instances in `ndarray/map` [(#9676)](https://github.com/stdlib-js/stdlib/pull/9676) _(by Shreelaxmi Hegde, Athan Reines)_
 -   [`709563c`](https://github.com/stdlib-js/stdlib/commit/709563c0d7337b5c0632d1988fb263cf39305f86) - **feat:** update `ndarray/base` TypeScript declarations [(#9716)](https://github.com/stdlib-js/stdlib/pull/9716) _(by stdlib-bot)_
 -   [`6aee8e2`](https://github.com/stdlib-js/stdlib/commit/6aee8e232a2cebd57d5246d76ffe08e67941c0a4) - **docs:** move content to notes _(by Athan Reines)_
 -   [`93e0c79`](https://github.com/stdlib-js/stdlib/commit/93e0c79faa246da751b6d7a640b5133fefad00f2) - **refactor:** return the input ndarray and update examples _(by Athan Reines)_
