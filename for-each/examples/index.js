@@ -23,7 +23,7 @@ var ndarray = require( './../../ctor' );
 var ndarray2array = require( './../../to-array' );
 var naryFunction = require( '@stdlib/utils/nary-function' );
 var log = require( '@stdlib/console/log' );
-var forEach = require( './../../for-each' );
+var forEach = require( './../lib' );
 
 var buffer = discreteUniform( 10, -100, 100, {
 	'dtype': 'generic'
