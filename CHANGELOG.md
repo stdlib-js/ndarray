@@ -709,6 +709,7 @@ A total of 40 issues were closed in this release:
 
 <details>
 
+-   [`51f5eea`](https://github.com/stdlib-js/stdlib/commit/51f5eea4350c3aff97620bda4ff3066935c23e3f) - **docs:** improve doctests for ndarray instances in `ndarray/some-by` [(#9410)](https://github.com/stdlib-js/stdlib/pull/9410) _(by kaushal-kumar-it, Athan Reines)_
 -   [`571b88f`](https://github.com/stdlib-js/stdlib/commit/571b88f7e7b93c3578efc017cb8e3bd9b6b99954) - **docs:** improve doctests for ndarray instances in `ndarray/map` [(#9676)](https://github.com/stdlib-js/stdlib/pull/9676) _(by Shreelaxmi Hegde, Athan Reines)_
 -   [`709563c`](https://github.com/stdlib-js/stdlib/commit/709563c0d7337b5c0632d1988fb263cf39305f86) - **feat:** update `ndarray/base` TypeScript declarations [(#9716)](https://github.com/stdlib-js/stdlib/pull/9716) _(by stdlib-bot)_
 -   [`6aee8e2`](https://github.com/stdlib-js/stdlib/commit/6aee8e232a2cebd57d5246d76ffe08e67941c0a4) - **docs:** move content to notes _(by Athan Reines)_
