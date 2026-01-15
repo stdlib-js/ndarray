@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-14)
+## Unreleased (2026-01-15)
 
 <section class="features">
 
@@ -709,6 +709,7 @@ A total of 41 issues were closed in this release:
 
 <details>
 
+-   [`c9e2fc3`](https://github.com/stdlib-js/stdlib/commit/c9e2fc31d0016bd526c33ca8b3eefb7a6999fb2e) - **docs:** update `ndarray` TypeScript declarations [(#9757)](https://github.com/stdlib-js/stdlib/pull/9757) _(by stdlib-bot)_
 -   [`01c8ec0`](https://github.com/stdlib-js/stdlib/commit/01c8ec0123460ecfe8cd001e9f3cc2a67ff5b971) - **chore:** fix JavaScript lint errors [(#8565)](https://github.com/stdlib-js/stdlib/pull/8565) _(by kaushal-kumar-it)_
 -   [`e2c03c0`](https://github.com/stdlib-js/stdlib/commit/e2c03c048787bde4a01ed8b6968ea6437e9e652a) - **docs:** improve doctests for complex number instances in `ndarray/base/unary` [(#8999)](https://github.com/stdlib-js/stdlib/pull/8999) _(by Aryan kumar, Athan Reines)_
 -   [`51f5eea`](https://github.com/stdlib-js/stdlib/commit/51f5eea4350c3aff97620bda4ff3066935c23e3f) - **docs:** improve doctests for ndarray instances in `ndarray/some-by` [(#9410)](https://github.com/stdlib-js/stdlib/pull/9410) _(by kaushal-kumar-it, Athan Reines)_
