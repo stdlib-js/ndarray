@@ -709,6 +709,7 @@ A total of 41 issues were closed in this release:
 
 <details>
 
+-   [`eee0e09`](https://github.com/stdlib-js/stdlib/commit/eee0e097b23ead16e0933da53a9a1c40dc5b713e) - **docs:** remove extra empty line [(#9756)](https://github.com/stdlib-js/stdlib/pull/9756) _(by stdlib-bot)_
 -   [`c9e2fc3`](https://github.com/stdlib-js/stdlib/commit/c9e2fc31d0016bd526c33ca8b3eefb7a6999fb2e) - **docs:** update `ndarray` TypeScript declarations [(#9757)](https://github.com/stdlib-js/stdlib/pull/9757) _(by stdlib-bot)_
 -   [`01c8ec0`](https://github.com/stdlib-js/stdlib/commit/01c8ec0123460ecfe8cd001e9f3cc2a67ff5b971) - **chore:** fix JavaScript lint errors [(#8565)](https://github.com/stdlib-js/stdlib/pull/8565) _(by kaushal-kumar-it)_
 -   [`e2c03c0`](https://github.com/stdlib-js/stdlib/commit/e2c03c048787bde4a01ed8b6968ea6437e9e652a) - **docs:** improve doctests for complex number instances in `ndarray/base/unary` [(#8999)](https://github.com/stdlib-js/stdlib/pull/8999) _(by Aryan kumar, Athan Reines)_
