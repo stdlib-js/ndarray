@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-17)
+## Unreleased (2026-01-21)
 
 <section class="features">
 
@@ -709,6 +709,7 @@ A total of 42 issues were closed in this release:
 
 <details>
 
+-   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`be2d13e`](https://github.com/stdlib-js/stdlib/commit/be2d13ea3b0b13e51fbc9a51a0788b03d1eb3618) - **chore:** fix JavaScript lint errors [(#9796)](https://github.com/stdlib-js/stdlib/pull/9796) _(by 가은 정)_
 -   [`eee0e09`](https://github.com/stdlib-js/stdlib/commit/eee0e097b23ead16e0933da53a9a1c40dc5b713e) - **docs:** remove extra empty line [(#9756)](https://github.com/stdlib-js/stdlib/pull/9756) _(by stdlib-bot)_
 -   [`c9e2fc3`](https://github.com/stdlib-js/stdlib/commit/c9e2fc31d0016bd526c33ca8b3eefb7a6999fb2e) - **docs:** update `ndarray` TypeScript declarations [(#9757)](https://github.com/stdlib-js/stdlib/pull/9757) _(by stdlib-bot)_
