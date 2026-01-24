@@ -101,7 +101,7 @@ import ndarray2array = require( './../../to-array' );
 import ndarray2json = require( './../../to-json' );
 import toReversed = require( './../../to-reversed' );
 import vector = require( './../../vector' );
-import _with = require( './../../with' );
+import ndarrayWith = require( './../../with' );
 import zeros = require( './../../zeros' );
 import zerosLike = require( './../../zeros-like' );
 
@@ -2803,13 +2803,13 @@ interface Namespace {
 	*
 	* var x = ndarray( 'generic', buffer, shape, strides, offset, order  );
 	*
-	* var out = ns.with( x, [ 0, 0 ], 5 );
+	* var out = ns.ndarrayWith( x, [ 0, 0 ], 5 );
 	* // returns <ndarray>
 	*
 	* var v = out.get( 0, 0 );
 	* // returns 5
 	*/
-	with: typeof _with;
+	ndarrayWith: typeof ndarrayWith;
 
 	/**
 	* Creates a zero-filled array having a specified shape and data type.
