@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -110,16 +104,21 @@ In addition, the namespace contains the following multidimensional array utility
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`anyBy( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element along one or more `ndarray` dimensions passes a test implemented by a predicate function.</span>
+-   <span class="signature">[`any( x[, options] )`][@stdlib/ndarray/any]</span><span class="delimiter">: </span><span class="description">test whether at least one element along one or more `ndarray` dimensions is truthy.</span>
 -   <span class="signature">[`at( x[, ...indices] )`][@stdlib/ndarray/at]</span><span class="delimiter">: </span><span class="description">return an `ndarray` element.</span>
 -   <span class="signature">[`broadcastArray( x, shape )`][@stdlib/ndarray/broadcast-array]</span><span class="delimiter">: </span><span class="description">broadcast an ndarray to a specified shape.</span>
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
 -   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`concat( arrays[, options] )`][@stdlib/ndarray/concat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along a specified ndarray dimension.</span>
+-   <span class="signature">[`copy( x[, options] )`][@stdlib/ndarray/copy]</span><span class="delimiter">: </span><span class="description">copy an input ndarray to a new ndarray having the same shape and data type.</span>
 -   <span class="signature">[`countFalsy( x[, options] )`][@stdlib/ndarray/count-falsy]</span><span class="delimiter">: </span><span class="description">count the number of falsy elements along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`countIf( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/count-if]</span><span class="delimiter">: </span><span class="description">count the number of truthy elements along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`countTruthy( x[, options] )`][@stdlib/ndarray/count-truthy]</span><span class="delimiter">: </span><span class="description">count the number of truthy elements along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`dataBuffer( x )`][@stdlib/ndarray/data-buffer]</span><span class="delimiter">: </span><span class="description">return the underlying data buffer of a provided ndarray.</span>
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
+-   <span class="signature">[`DataType( value[, options] )`][@stdlib/ndarray/dtype-ctor]</span><span class="delimiter">: </span><span class="description">data type constructor.</span>
 -   <span class="signature">[`dtype( x )`][@stdlib/ndarray/dtype]</span><span class="delimiter">: </span><span class="description">return the data type of a provided ndarray.</span>
 -   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
@@ -127,11 +126,16 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`every( x[, options] )`][@stdlib/ndarray/every]</span><span class="delimiter">: </span><span class="description">test whether every element along one or more `ndarray` dimensions is truthy.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`fillBy( x, fcn[, thisArg] )`][@stdlib/ndarray/fill-by]</span><span class="delimiter">: </span><span class="description">fill an input ndarray according to a callback function.</span>
+-   <span class="signature">[`fillSlice( x, value, ...s[, options] )`][@stdlib/ndarray/fill-slice]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` view with a specified value.</span>
 -   <span class="signature">[`fill( x, value )`][@stdlib/ndarray/fill]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` with a specified value.</span>
 -   <span class="signature">[`filterMap( x[, options], fcn[, thisArg] )`][@stdlib/ndarray/filter-map]</span><span class="delimiter">: </span><span class="description">filter and map elements in an input ndarray to elements in a new output ndarray according to a callback function.</span>
 -   <span class="signature">[`filter( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/filter]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which pass a test implemented by a predicate function.</span>
+-   <span class="signature">[`find( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/find]</span><span class="delimiter">: </span><span class="description">return a new ndarray containing the first elements which pass a test implemented by a predicate function along one or more ndarray dimensions.</span>
 -   <span class="signature">[`flag( x, name )`][@stdlib/ndarray/flag]</span><span class="delimiter">: </span><span class="description">return a specified flag for a provided ndarray.</span>
 -   <span class="signature">[`flags( x )`][@stdlib/ndarray/flags]</span><span class="delimiter">: </span><span class="description">return the flags of a provided ndarray.</span>
+-   <span class="signature">[`flattenBy( x[, options], fcn[, thisArg] )`][@stdlib/ndarray/flatten-by]</span><span class="delimiter">: </span><span class="description">flatten an ndarray according to a callback function.</span>
+-   <span class="signature">[`flattenFrom( x, dim[, options] )`][@stdlib/ndarray/flatten-from]</span><span class="delimiter">: </span><span class="description">return a copy of an input ndarray where all dimensions of the input ndarray are flattened starting from a specified dimension.</span>
+-   <span class="signature">[`flatten( x[, options] )`][@stdlib/ndarray/flatten]</span><span class="delimiter">: </span><span class="description">return a flattened copy of an input ndarray.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`includes( x, searchElement[, options] )`][@stdlib/ndarray/includes]</span><span class="delimiter">: </span><span class="description">test whether an `ndarray` contains a specified value along one or more dimensions.</span>
@@ -153,11 +157,15 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`order( x )`][@stdlib/ndarray/order]</span><span class="delimiter">: </span><span class="description">return the layout order of a provided ndarray.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
 -   <span class="signature">[`outputDataTypePolicies()`][@stdlib/ndarray/output-dtype-policies]</span><span class="delimiter">: </span><span class="description">list of output ndarray data type policies.</span>
+-   <span class="signature">[`pop( x[, options] )`][@stdlib/ndarray/pop]</span><span class="delimiter">: </span><span class="description">return an array containing a read-only truncated view of an input `ndarray` and a read-only view of the last element(s) along a specified dimension.</span>
 -   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest "kind" to which ndarray data types can be **safely** cast.</span>
 -   <span class="signature">[`reject( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/reject]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.</span>
+-   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
+-   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
 -   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
 -   <span class="signature">[`sameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
 -   <span class="signature">[`shape( x )`][@stdlib/ndarray/shape]</span><span class="delimiter">: </span><span class="description">return the shape of a provided ndarray.</span>
+-   <span class="signature">[`shift( x[, options] )`][@stdlib/ndarray/shift]</span><span class="delimiter">: </span><span class="description">return an array containing a read-only truncated view of an input `ndarray` and a read-only view of the first element(s) along a specified dimension.</span>
 -   <span class="signature">[`sliceAssign( x, y, ...s[, options] )`][@stdlib/ndarray/slice-assign]</span><span class="delimiter">: </span><span class="description">assign element values from a broadcasted input `ndarray` to corresponding elements in an output `ndarray` view.</span>
 -   <span class="signature">[`sliceDimensionFrom( x, dim, start[, options] )`][@stdlib/ndarray/slice-dimension-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input `ndarray` along a specified dimension.</span>
 -   <span class="signature">[`sliceDimensionTo( x, dim, stop[, options] )`][@stdlib/ndarray/slice-dimension-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input `ndarray` along a specified dimension.</span>
@@ -172,7 +180,9 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
 -   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
+-   <span class="signature">[`toReversed( x )`][@stdlib/ndarray/to-reversed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements of an input `ndarray` is reversed along each dimension.</span>
 -   <span class="signature">[`vector`][@stdlib/ndarray/vector]</span><span class="delimiter">: </span><span class="description">vector constructors and associated utilities.</span>
+-   <span class="signature">[`with( x, indices, value )`][@stdlib/ndarray/with]</span><span class="delimiter">: </span><span class="description">return a new ndarray with the element at a specified index replaced by a provided value.</span>
 -   <span class="signature">[`zerosLike( x[, options] )`][@stdlib/ndarray/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`zeros( shape[, options] )`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
 
@@ -192,21 +202,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -247,7 +247,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -273,8 +273,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -295,6 +295,10 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
+[@stdlib/ndarray/any-by]: https://github.com/stdlib-js/ndarray/tree/main/any-by
+
+[@stdlib/ndarray/any]: https://github.com/stdlib-js/ndarray/tree/main/any
+
 [@stdlib/ndarray/at]: https://github.com/stdlib-js/ndarray/tree/main/at
 
 [@stdlib/ndarray/broadcast-array]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-array
@@ -302,6 +306,10 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/broadcast-arrays]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-arrays
 
 [@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
+
+[@stdlib/ndarray/concat]: https://github.com/stdlib-js/ndarray/tree/main/concat
+
+[@stdlib/ndarray/copy]: https://github.com/stdlib-js/ndarray/tree/main/copy
 
 [@stdlib/ndarray/count-falsy]: https://github.com/stdlib-js/ndarray/tree/main/count-falsy
 
@@ -314,6 +322,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/defaults]: https://github.com/stdlib-js/ndarray/tree/main/defaults
 
 [@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
+
+[@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray/tree/main/dtype-ctor
 
 [@stdlib/ndarray/dtype]: https://github.com/stdlib-js/ndarray/tree/main/dtype
 
@@ -329,15 +339,25 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/fill-by]: https://github.com/stdlib-js/ndarray/tree/main/fill-by
 
+[@stdlib/ndarray/fill-slice]: https://github.com/stdlib-js/ndarray/tree/main/fill-slice
+
 [@stdlib/ndarray/fill]: https://github.com/stdlib-js/ndarray/tree/main/fill
 
 [@stdlib/ndarray/filter-map]: https://github.com/stdlib-js/ndarray/tree/main/filter-map
 
 [@stdlib/ndarray/filter]: https://github.com/stdlib-js/ndarray/tree/main/filter
 
+[@stdlib/ndarray/find]: https://github.com/stdlib-js/ndarray/tree/main/find
+
 [@stdlib/ndarray/flag]: https://github.com/stdlib-js/ndarray/tree/main/flag
 
 [@stdlib/ndarray/flags]: https://github.com/stdlib-js/ndarray/tree/main/flags
+
+[@stdlib/ndarray/flatten-by]: https://github.com/stdlib-js/ndarray/tree/main/flatten-by
+
+[@stdlib/ndarray/flatten-from]: https://github.com/stdlib-js/ndarray/tree/main/flatten-from
+
+[@stdlib/ndarray/flatten]: https://github.com/stdlib-js/ndarray/tree/main/flatten
 
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
@@ -381,15 +401,23 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray/tree/main/output-dtype-policies
 
+[@stdlib/ndarray/pop]: https://github.com/stdlib-js/ndarray/tree/main/pop
+
 [@stdlib/ndarray/promotion-rules]: https://github.com/stdlib-js/ndarray/tree/main/promotion-rules
 
 [@stdlib/ndarray/reject]: https://github.com/stdlib-js/ndarray/tree/main/reject
+
+[@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
+
+[@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
 
 [@stdlib/ndarray/safe-casts]: https://github.com/stdlib-js/ndarray/tree/main/safe-casts
 
 [@stdlib/ndarray/same-kind-casts]: https://github.com/stdlib-js/ndarray/tree/main/same-kind-casts
 
 [@stdlib/ndarray/shape]: https://github.com/stdlib-js/ndarray/tree/main/shape
+
+[@stdlib/ndarray/shift]: https://github.com/stdlib-js/ndarray/tree/main/shift
 
 [@stdlib/ndarray/slice-assign]: https://github.com/stdlib-js/ndarray/tree/main/slice-assign
 
@@ -419,7 +447,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
 
+[@stdlib/ndarray/to-reversed]: https://github.com/stdlib-js/ndarray/tree/main/to-reversed
+
 [@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
+
+[@stdlib/ndarray/with]: https://github.com/stdlib-js/ndarray/tree/main/with
 
 [@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray/tree/main/zeros-like
 
