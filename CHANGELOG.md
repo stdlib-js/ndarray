@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-24)
+## Unreleased (2026-01-25)
 
 <section class="features">
 
@@ -713,6 +713,7 @@ A total of 42 issues were closed in this release:
 
 <details>
 
+-   [`f9db7b8`](https://github.com/stdlib-js/stdlib/commit/f9db7b8a5287fffa18da2ba9438513bb05cfb194) - **docs:** update namespace table of contents [(#9884)](https://github.com/stdlib-js/stdlib/pull/9884) _(by stdlib-bot)_
 -   [`45ca891`](https://github.com/stdlib-js/stdlib/commit/45ca891a86f94011ad8b407ba8cf53a7cecbb7b5) - **refactor:** rename `with` alias to `ndarrayWith` in `ndarray` _(by Philipp Burckhardt)_
 -   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`be2d13e`](https://github.com/stdlib-js/stdlib/commit/be2d13ea3b0b13e51fbc9a51a0788b03d1eb3618) - **chore:** fix JavaScript lint errors [(#9796)](https://github.com/stdlib-js/stdlib/pull/9796) _(by 가은 정)_
