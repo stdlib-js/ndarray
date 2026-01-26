@@ -716,6 +716,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`dad3808`](https://github.com/stdlib-js/stdlib/commit/dad3808a07099bb09b7eaa4c03260aefee2e1ace) - **bench:** create empty ndarrays for better dtype generality _(by Athan Reines)_
 -   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - **fix:** use ndarray assertion utility _(by Athan Reines)_
 -   [`ebe7a8b`](https://github.com/stdlib-js/stdlib/commit/ebe7a8b476f13186ac83014965e4b60e502e6135) - **feat:** add `ndarray/base/quaternary-loop-interchange-order` [(#9832)](https://github.com/stdlib-js/stdlib/pull/9832) _(by Muhammad Haris)_
 -   [`4641a30`](https://github.com/stdlib-js/stdlib/commit/4641a30d086f904746679c39e05898ecc65a3778) - **feat:** add `ndarray/base/quinary-loop-interchange-order` [(#9870)](https://github.com/stdlib-js/stdlib/pull/9870) _(by Muhammad Haris)_
