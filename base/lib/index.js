@@ -194,6 +194,15 @@ setReadOnly( ns, 'broadcastArrays', require( './../../base/broadcast-arrays' ) )
 setReadOnly( ns, 'broadcastScalar', require( './../../base/broadcast-scalar' ) );
 
 /**
+* @name broadcastScalarLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/broadcast-scalar-like}
+*/
+setReadOnly( ns, 'broadcastScalarLike', require( './../../base/broadcast-scalar-like' ) );
+
+/**
 * @name broadcastShapes
 * @memberof ns
 * @readonly
@@ -993,6 +1002,24 @@ setReadOnly( ns, 'prependSingletonDimensions', require( './../../base/prepend-si
 * @see {@link module:@stdlib/ndarray/base/promote-dtypes}
 */
 setReadOnly( ns, 'promoteDataTypes', require( './../../base/promote-dtypes' ) );
+
+/**
+* @name quaternaryLoopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/quaternary-loop-interchange-order}
+*/
+setReadOnly( ns, 'quaternaryLoopOrder', require( './../../base/quaternary-loop-interchange-order' ) );
+
+/**
+* @name quinaryLoopOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/quinary-loop-interchange-order}
+*/
+setReadOnly( ns, 'quinaryLoopOrder', require( './../../base/quinary-loop-interchange-order' ) );
 
 /**
 * @name removeSingletonDimensions
