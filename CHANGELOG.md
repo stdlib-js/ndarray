@@ -510,6 +510,7 @@
 
 ### Bug Fixes
 
+-   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - use ndarray assertion utility
 -   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - resolve normalized data type
 -   [`c1ac155`](https://github.com/stdlib-js/stdlib/commit/c1ac155e7e751a72a868ebae2f4667c338f834bd) - update return type
 -   [`a0191a5`](https://github.com/stdlib-js/stdlib/commit/a0191a5c95f5f40d8247e1e5679812aef0d81b1c) - ensure sentinel value is passed through
@@ -715,6 +716,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - **fix:** use ndarray assertion utility _(by Athan Reines)_
 -   [`ebe7a8b`](https://github.com/stdlib-js/stdlib/commit/ebe7a8b476f13186ac83014965e4b60e502e6135) - **feat:** add `ndarray/base/quaternary-loop-interchange-order` [(#9832)](https://github.com/stdlib-js/stdlib/pull/9832) _(by Muhammad Haris)_
 -   [`4641a30`](https://github.com/stdlib-js/stdlib/commit/4641a30d086f904746679c39e05898ecc65a3778) - **feat:** add `ndarray/base/quinary-loop-interchange-order` [(#9870)](https://github.com/stdlib-js/stdlib/pull/9870) _(by Muhammad Haris)_
 -   [`4a2e646`](https://github.com/stdlib-js/stdlib/commit/4a2e6469a8bcab9e12a0a758c12aae7dbbf4da46) - **chore:** fix JavaScript lint errors [(#9846)](https://github.com/stdlib-js/stdlib/pull/9846) _(by Suyash Pathak, Athan Reines)_
