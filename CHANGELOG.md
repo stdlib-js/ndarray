@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`ebe7a8b`](https://github.com/stdlib-js/stdlib/commit/ebe7a8b476f13186ac83014965e4b60e502e6135) - add `ndarray/base/quaternary-loop-interchange-order` [(#9832)](https://github.com/stdlib-js/stdlib/pull/9832)
 -   [`4641a30`](https://github.com/stdlib-js/stdlib/commit/4641a30d086f904746679c39e05898ecc65a3778) - add `ndarray/base/quinary-loop-interchange-order` [(#9870)](https://github.com/stdlib-js/stdlib/pull/9870)
 -   [`709563c`](https://github.com/stdlib-js/stdlib/commit/709563c0d7337b5c0632d1988fb263cf39305f86) - update `ndarray/base` TypeScript declarations [(#9716)](https://github.com/stdlib-js/stdlib/pull/9716)
 -   [`f738a37`](https://github.com/stdlib-js/stdlib/commit/f738a37c1cc32a740c7ecc4cbc7982eca26f67d2) - add `ternaryBlockSize` to namespace
@@ -714,6 +715,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`ebe7a8b`](https://github.com/stdlib-js/stdlib/commit/ebe7a8b476f13186ac83014965e4b60e502e6135) - **feat:** add `ndarray/base/quaternary-loop-interchange-order` [(#9832)](https://github.com/stdlib-js/stdlib/pull/9832) _(by Muhammad Haris)_
 -   [`4641a30`](https://github.com/stdlib-js/stdlib/commit/4641a30d086f904746679c39e05898ecc65a3778) - **feat:** add `ndarray/base/quinary-loop-interchange-order` [(#9870)](https://github.com/stdlib-js/stdlib/pull/9870) _(by Muhammad Haris)_
 -   [`4a2e646`](https://github.com/stdlib-js/stdlib/commit/4a2e6469a8bcab9e12a0a758c12aae7dbbf4da46) - **chore:** fix JavaScript lint errors [(#9846)](https://github.com/stdlib-js/stdlib/pull/9846) _(by Suyash Pathak, Athan Reines)_
 -   [`f9db7b8`](https://github.com/stdlib-js/stdlib/commit/f9db7b8a5287fffa18da2ba9438513bb05cfb194) - **docs:** update namespace table of contents [(#9884)](https://github.com/stdlib-js/stdlib/pull/9884) _(by stdlib-bot)_
