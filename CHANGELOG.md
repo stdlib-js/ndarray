@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`483630f`](https://github.com/stdlib-js/stdlib/commit/483630fecc6f60fb8fbbe4066d37a95e3dd1e48e) - add `ndarray/base/broadcast-scalar-like` [(#9893)](https://github.com/stdlib-js/stdlib/pull/9893)
 -   [`ebe7a8b`](https://github.com/stdlib-js/stdlib/commit/ebe7a8b476f13186ac83014965e4b60e502e6135) - add `ndarray/base/quaternary-loop-interchange-order` [(#9832)](https://github.com/stdlib-js/stdlib/pull/9832)
 -   [`4641a30`](https://github.com/stdlib-js/stdlib/commit/4641a30d086f904746679c39e05898ecc65a3778) - add `ndarray/base/quinary-loop-interchange-order` [(#9870)](https://github.com/stdlib-js/stdlib/pull/9870)
 -   [`709563c`](https://github.com/stdlib-js/stdlib/commit/709563c0d7337b5c0632d1988fb263cf39305f86) - update `ndarray/base` TypeScript declarations [(#9716)](https://github.com/stdlib-js/stdlib/pull/9716)
@@ -716,6 +717,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`483630f`](https://github.com/stdlib-js/stdlib/commit/483630fecc6f60fb8fbbe4066d37a95e3dd1e48e) - **feat:** add `ndarray/base/broadcast-scalar-like` [(#9893)](https://github.com/stdlib-js/stdlib/pull/9893) _(by Muhammad Haris, Athan Reines)_
 -   [`65aa64a`](https://github.com/stdlib-js/stdlib/commit/65aa64a2f860129b3ca2f09f47641e4355303799) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`dad3808`](https://github.com/stdlib-js/stdlib/commit/dad3808a07099bb09b7eaa4c03260aefee2e1ace) - **bench:** create empty ndarrays for better dtype generality _(by Athan Reines)_
 -   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - **fix:** use ndarray assertion utility _(by Athan Reines)_
