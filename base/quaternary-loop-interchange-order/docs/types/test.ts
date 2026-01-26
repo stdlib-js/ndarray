@@ -74,6 +74,7 @@ import quaternaryLoopOrder = require( './index' );
 	quaternaryLoopOrder( sh, sx, '5', sz, sw, su ); // $ExpectError
 	quaternaryLoopOrder( sh, sx, 123, sz, sw, su ); // $ExpectError
 	quaternaryLoopOrder( sh, sx, {}, sz, sw, su ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, ( x: number ): number => x, sz, sw, su ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a fourth argument which is not an array-like object of numbers...
@@ -104,6 +105,21 @@ import quaternaryLoopOrder = require( './index' );
 	quaternaryLoopOrder( sh, sx, sy, sz, 123, su ); // $ExpectError
 	quaternaryLoopOrder( sh, sx, sy, sz, {}, su ); // $ExpectError
 	quaternaryLoopOrder( sh, sx, sy, sz, ( x: number ): number => x, su ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a sixth argument which is not an array-like object of numbers...
+{
+	const sh = [ 2, 2 ];
+	const sx = [ 2, 1 ];
+	const sy = [ 2, 1 ];
+	const sz = [ 2, 1 ];
+	const sw = [ 4, 2 ];
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, true ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, false ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, '5' ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, 123 ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, {} ); // $ExpectError
+	quaternaryLoopOrder( sh, sx, sy, sz, sw, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
