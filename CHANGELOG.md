@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`3d21748`](https://github.com/stdlib-js/stdlib/commit/3d2174821f71a70dbb3052da07e0a3b3f6dfbaa0) - add function to return the index offset in units of elements
+-   [`dd45a8f`](https://github.com/stdlib-js/stdlib/commit/dd45a8fcec70ba4716ec67606a448721a723f54b) - add function to return a dimension stride in units of elements
+-   [`b00ba84`](https://github.com/stdlib-js/stdlib/commit/b00ba84689ed039d0896209f94716c187cd6cccb) - add function for returning the number of bytes per ndarray element
 -   [`1e5789c`](https://github.com/stdlib-js/stdlib/commit/1e5789c70b7400b0ff1cd71d06798c1e5b26f16b) - add `blockSize` to namespace
 -   [`a6117b1`](https://github.com/stdlib-js/stdlib/commit/a6117b1bd697083439d740567d41cbfa754f68ab) - add `quinaryBlockSize` to namespace
 -   [`c6dca39`](https://github.com/stdlib-js/stdlib/commit/c6dca39c634f8c016dc6fa4d0330a47bba977eaf) - add `quaternaryBlockSize` to namespace
@@ -654,6 +657,11 @@
 
 ### BREAKING CHANGES
 
+-   [`cf38d87`](https://github.com/stdlib-js/stdlib/commit/cf38d87a6820408d2ec054cbf0e20561e8352deb): rename `stdlib_ndarray_bytelength` to `stdlib_ndarray_byte_length`
+
+    -   To migrate, users using the C API should update their call signatures
+        accordingly.
+
 -   [`45ca891`](https://github.com/stdlib-js/stdlib/commit/45ca891a86f94011ad8b407ba8cf53a7cecbb7b5): rename `with` to `ndarrayWith` in `ndarray` namespace
 
     -   Users should migrate to the new function name when using it directly via the namespace object.
@@ -727,6 +735,12 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`b6a0e1f`](https://github.com/stdlib-js/stdlib/commit/b6a0e1f3b0044a068a51acd7cd1352ab0f8e4a60) - **bench:** fix call signature _(by Athan Reines)_
+-   [`3d21748`](https://github.com/stdlib-js/stdlib/commit/3d2174821f71a70dbb3052da07e0a3b3f6dfbaa0) - **feat:** add function to return the index offset in units of elements _(by Athan Reines)_
+-   [`dd45a8f`](https://github.com/stdlib-js/stdlib/commit/dd45a8fcec70ba4716ec67606a448721a723f54b) - **feat:** add function to return a dimension stride in units of elements _(by Athan Reines)_
+-   [`b00ba84`](https://github.com/stdlib-js/stdlib/commit/b00ba84689ed039d0896209f94716c187cd6cccb) - **feat:** add function for returning the number of bytes per ndarray element _(by Athan Reines)_
+-   [`cf38d87`](https://github.com/stdlib-js/stdlib/commit/cf38d87a6820408d2ec054cbf0e20561e8352deb) - **refactor:** rename `stdlib_ndarray_bytelength` to `stdlib_ndarray_byte_length` _(by Athan Reines)_
+-   [`40c30fb`](https://github.com/stdlib-js/stdlib/commit/40c30fb11f3c1b99e073b5a2aa217bce452c3402) - **docs:** fix type _(by Athan Reines)_
 -   [`46c8d0e`](https://github.com/stdlib-js/stdlib/commit/46c8d0eb953a8bd39e4486a93d65aca6c45af934) - **docs:** fix examples _(by Athan Reines)_
 -   [`9d7f220`](https://github.com/stdlib-js/stdlib/commit/9d7f220eca1b55eb1c59b1f31efd91f66a450af2) - **refactor:** use generalized utility _(by Athan Reines)_
 -   [`7f54590`](https://github.com/stdlib-js/stdlib/commit/7f54590d0556e5c8b13d8bc2c527dbfc90e55201) - **refactor:** use generalized utility _(by Athan Reines)_
