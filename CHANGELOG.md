@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913)
 -   [`b6d8bcc`](https://github.com/stdlib-js/stdlib/commit/b6d8bcc8e3a285d4f874748191904580321aa0e8) - add `quinaryLoopOrder` to namespace
 -   [`f3a6bc0`](https://github.com/stdlib-js/stdlib/commit/f3a6bc070f6ac5e2dee1374534ba6b0c134e4db6) - add `quaternaryLoopOrder` to namespace
 -   [`02b9b76`](https://github.com/stdlib-js/stdlib/commit/02b9b7662449c9a04917e1353a8b53ff85df45d4) - add `broadcastScalarLike` to namespace
@@ -720,6 +721,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - **feat:** update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913) _(by stdlib-bot)_
 -   [`196734e`](https://github.com/stdlib-js/stdlib/commit/196734eccb0d43439332b2a275fb3a50cb73df67) - **docs:** update namespace table of contents [(#9915)](https://github.com/stdlib-js/stdlib/pull/9915) _(by stdlib-bot)_
 -   [`b6d8bcc`](https://github.com/stdlib-js/stdlib/commit/b6d8bcc8e3a285d4f874748191904580321aa0e8) - **feat:** add `quinaryLoopOrder` to namespace _(by Athan Reines)_
 -   [`f3a6bc0`](https://github.com/stdlib-js/stdlib/commit/f3a6bc070f6ac5e2dee1374534ba6b0c134e4db6) - **feat:** add `quaternaryLoopOrder` to namespace _(by Athan Reines)_
