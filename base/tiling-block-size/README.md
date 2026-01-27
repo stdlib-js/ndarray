@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# ternaryBlockSize
+# blockSize
 
 > Resolve a loop block size for multi-dimensional array tiled loops.
 
@@ -37,24 +37,21 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var ternaryBlockSize = require( '@stdlib/ndarray/base/ternary-tiling-block-size' );
+var blockSize = require( '@stdlib/ndarray/base/tiling-block-size' );
 ```
 
-#### ternaryBlockSize( dtypeX, dtypeY, dtypeZ, dtypeW )
+#### blockSize( dtypes )
 
-Resolves a loop block size according to provided ndarray [dtypes][@stdlib/ndarray/dtypes] for multi-dimensional array tiled loops applying a ternary function.
+Resolves a loop block size for multi-dimensional array tiled loops according to provided ndarray [data types][@stdlib/ndarray/dtypes].
 
 ```javascript
-var bsize = ternaryBlockSize( 'float64', 'float64', 'float64', 'float64' );
+var bsize = blockSize( [ 'float64', 'float64', 'float64', 'float64' ] );
 // returns <number>
 ```
 
 The function supports the following arguments:
 
--   **dtypeX**: first input array data type.
--   **dtypeY**: second input array data type.
--   **dtypeZ**: third input array data type.
--   **dtypeW**: output array data type.
+-   **dtypes**: list of input and output ndarray [data types][@stdlib/ndarray/dtypes].
 
 </section>
 
@@ -84,7 +81,7 @@ The function supports the following arguments:
 var dtypes = require( '@stdlib/ndarray/dtypes' );
 var cartesianPower = require( '@stdlib/array/base/cartesian-power' );
 var promoteDataTypes = require( '@stdlib/ndarray/base/promote-dtypes' );
-var ternaryBlockSize = require( '@stdlib/ndarray/base/ternary-tiling-block-size' );
+var blockSize = require( '@stdlib/ndarray/base/tiling-block-size' );
 
 // Generate a list of input ndarray dtype triplets:
 var dt = cartesianPower( dtypes(), 3 );
@@ -97,7 +94,7 @@ console.log( 'block_size, xdtype, ydtype, zdtype, wdtype' );
 for ( i = 0; i < dt.length; i++ ) {
     t = promoteDataTypes( dt[ i ] );
     dt[ i ].push( ( t === null ) ? 'generic' : t );
-    b = ternaryBlockSize.apply( null, dt[ i ] );
+    b = blockSize( dt[ i ] );
     console.log( '%d, %s, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2], dt[i][3] );
 }
 ```

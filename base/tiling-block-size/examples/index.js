@@ -21,19 +21,19 @@
 var dtypes = require( './../../../dtypes' );
 var cartesianPower = require( '@stdlib/array/base/cartesian-power' );
 var promoteDataTypes = require( './../../../base/promote-dtypes' );
-var quaternaryBlockSize = require( './../lib' );
+var blockSize = require( './../lib' );
 
-// Generate a list of input ndarray dtype quadruplets:
-var dt = cartesianPower( dtypes(), 4 );
+// Generate a list of input ndarray dtype triplets:
+var dt = cartesianPower( dtypes(), 3 );
 
-// Resolve the block size for each dtype quadruplet and its promoted dtype...
+// Resolve the block size for each dtype triplet and its promoted dtype...
 var t;
 var b;
 var i;
-console.log( 'block_size, xdtype, ydtype, zdtype, wdtype, udtype' );
+console.log( 'block_size, xdtype, ydtype, zdtype, wdtype' );
 for ( i = 0; i < dt.length; i++ ) {
 	t = promoteDataTypes( dt[ i ] );
 	dt[ i ].push( ( t === null ) ? 'generic' : t );
-	b = quaternaryBlockSize.apply( null, dt[ i ] );
-	console.log( '%d, %s, %s, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2], dt[i][3], dt[i][4] );
+	b = blockSize( dt[ i ] );
+	console.log( '%d, %s, %s, %s, %s', b, dt[i][0], dt[i][1], dt[i][2], dt[i][3] );
 }

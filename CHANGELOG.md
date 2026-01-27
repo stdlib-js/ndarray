@@ -10,6 +10,10 @@
 
 ### Features
 
+-   [`1e5789c`](https://github.com/stdlib-js/stdlib/commit/1e5789c70b7400b0ff1cd71d06798c1e5b26f16b) - add `blockSize` to namespace
+-   [`a6117b1`](https://github.com/stdlib-js/stdlib/commit/a6117b1bd697083439d740567d41cbfa754f68ab) - add `quinaryBlockSize` to namespace
+-   [`c6dca39`](https://github.com/stdlib-js/stdlib/commit/c6dca39c634f8c016dc6fa4d0330a47bba977eaf) - add `quaternaryBlockSize` to namespace
+-   [`2d51ff6`](https://github.com/stdlib-js/stdlib/commit/2d51ff6a1af79d361401ff928fb755bfaa1170f7) - add `ndarray/base/tiling-block-size`
 -   [`9c75b30`](https://github.com/stdlib-js/stdlib/commit/9c75b302a82df9b6c580b9f8afc647773e5684a3) - add `ndarray/base/quinary-tiling-block-size` [(#9871)](https://github.com/stdlib-js/stdlib/pull/9871)
 -   [`d84de96`](https://github.com/stdlib-js/stdlib/commit/d84de9698683c20fa3b67eb9d2a615a403f6b707) - add `ndarray/base/quaternary-tiling-block-size` [(#9838)](https://github.com/stdlib-js/stdlib/pull/9838)
 -   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913)
@@ -723,6 +727,18 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`46c8d0e`](https://github.com/stdlib-js/stdlib/commit/46c8d0eb953a8bd39e4486a93d65aca6c45af934) - **docs:** fix examples _(by Athan Reines)_
+-   [`9d7f220`](https://github.com/stdlib-js/stdlib/commit/9d7f220eca1b55eb1c59b1f31efd91f66a450af2) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`7f54590`](https://github.com/stdlib-js/stdlib/commit/7f54590d0556e5c8b13d8bc2c527dbfc90e55201) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`45ee3d6`](https://github.com/stdlib-js/stdlib/commit/45ee3d69be75dcd538d8fde2f2b23ac100995c4b) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`51e9e67`](https://github.com/stdlib-js/stdlib/commit/51e9e67bf770b750204cb4f97b0420faa06191ce) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`6ebb5c9`](https://github.com/stdlib-js/stdlib/commit/6ebb5c96300bde3f75f7cbae57fdecf8c5a08f93) - **refactor:** use generalized utility _(by Athan Reines)_
+-   [`24cd22d`](https://github.com/stdlib-js/stdlib/commit/24cd22d47029be52bb7992bcdb839edb7711b68f) - **refactor:** call into generalized utility _(by Athan Reines)_
+-   [`622fb73`](https://github.com/stdlib-js/stdlib/commit/622fb73db38259c72bcbf0d10afa063400914f24) - **test:** fix condition _(by Athan Reines)_
+-   [`1e5789c`](https://github.com/stdlib-js/stdlib/commit/1e5789c70b7400b0ff1cd71d06798c1e5b26f16b) - **feat:** add `blockSize` to namespace _(by Athan Reines)_
+-   [`a6117b1`](https://github.com/stdlib-js/stdlib/commit/a6117b1bd697083439d740567d41cbfa754f68ab) - **feat:** add `quinaryBlockSize` to namespace _(by Athan Reines)_
+-   [`c6dca39`](https://github.com/stdlib-js/stdlib/commit/c6dca39c634f8c016dc6fa4d0330a47bba977eaf) - **feat:** add `quaternaryBlockSize` to namespace _(by Athan Reines)_
+-   [`2d51ff6`](https://github.com/stdlib-js/stdlib/commit/2d51ff6a1af79d361401ff928fb755bfaa1170f7) - **feat:** add `ndarray/base/tiling-block-size` _(by Athan Reines)_
 -   [`9c75b30`](https://github.com/stdlib-js/stdlib/commit/9c75b302a82df9b6c580b9f8afc647773e5684a3) - **feat:** add `ndarray/base/quinary-tiling-block-size` [(#9871)](https://github.com/stdlib-js/stdlib/pull/9871) _(by Muhammad Haris, Athan Reines)_
 -   [`d84de96`](https://github.com/stdlib-js/stdlib/commit/d84de9698683c20fa3b67eb9d2a615a403f6b707) - **feat:** add `ndarray/base/quaternary-tiling-block-size` [(#9838)](https://github.com/stdlib-js/stdlib/pull/9838) _(by Muhammad Haris, Athan Reines)_
 -   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - **feat:** update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913) _(by stdlib-bot)_

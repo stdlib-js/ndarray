@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,32 +16,26 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="@stdlib/types"/>
 
-var blockSize = require( './../../../base/tiling-block-size' );
-
-
-// MAIN //
+import { ArrayLike } from '@stdlib/types/array';
+import { DataType } from '@stdlib/types/ndarray';
 
 /**
 * Returns a loop block size for multi-dimensional array tiled loops.
 *
-* @param {*} dtypeX - first input array data type
-* @param {*} dtypeY - second input array data type
-* @param {*} dtypeZ - output array data type
-* @returns {integer} block size (in units of elements)
+* @param dtypes - list of input and output ndarray data types
+* @returns block size (in units of elements)
 *
 * @example
-* var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
+* var bsize = blockSize( [ 'float64', 'float64', 'float64', 'float64' ] );
 * // returns <number>
 */
-function binaryBlockSize( dtypeX, dtypeY, dtypeZ ) {
-	return blockSize( [ dtypeX, dtypeY, dtypeZ ] );
-}
+declare function blockSize( dtypes: ArrayLike<DataType> ): number;
 
 
 // EXPORTS //
 
-module.exports = binaryBlockSize;
+export = blockSize;

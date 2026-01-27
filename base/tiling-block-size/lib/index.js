@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -18,30 +18,23 @@
 
 'use strict';
 
-// MODULES //
-
-var blockSize = require( './../../../base/tiling-block-size' );
-
-
-// MAIN //
-
 /**
-* Returns a loop block size for multi-dimensional array tiled loops.
+* Resolve a loop block size for multi-dimensional array tiled loops.
 *
-* @param {*} dtypeX - first input array data type
-* @param {*} dtypeY - second input array data type
-* @param {*} dtypeZ - output array data type
-* @returns {integer} block size (in units of elements)
+* @module @stdlib/ndarray/base/tiling-block-size
 *
 * @example
-* var bsize = binaryBlockSize( 'float64', 'float64', 'float64' );
+* var blockSize = require( '@stdlib/ndarray/base/tiling-block-size' );
+*
+* var bsize = blockSize( [ 'float64', 'float64', 'float64', 'float64' ] );
 * // returns <number>
 */
-function binaryBlockSize( dtypeX, dtypeY, dtypeZ ) {
-	return blockSize( [ dtypeX, dtypeY, dtypeZ ] );
-}
+
+// MODULES //
+
+var main = require( './main.js' );
 
 
 // EXPORTS //
 
-module.exports = binaryBlockSize;
+module.exports = main;

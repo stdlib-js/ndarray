@@ -1013,6 +1013,15 @@ setReadOnly( ns, 'promoteDataTypes', require( './../../base/promote-dtypes' ) );
 setReadOnly( ns, 'quaternaryLoopOrder', require( './../../base/quaternary-loop-interchange-order' ) );
 
 /**
+* @name quaternaryBlockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/quaternary-tiling-block-size}
+*/
+setReadOnly( ns, 'quaternaryBlockSize', require( './../../base/quaternary-tiling-block-size' ) );
+
+/**
 * @name quinaryLoopOrder
 * @memberof ns
 * @readonly
@@ -1020,6 +1029,15 @@ setReadOnly( ns, 'quaternaryLoopOrder', require( './../../base/quaternary-loop-i
 * @see {@link module:@stdlib/ndarray/base/quinary-loop-interchange-order}
 */
 setReadOnly( ns, 'quinaryLoopOrder', require( './../../base/quinary-loop-interchange-order' ) );
+
+/**
+* @name quinaryBlockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/quinary-tiling-block-size}
+*/
+setReadOnly( ns, 'quinaryBlockSize', require( './../../base/quinary-tiling-block-size' ) );
 
 /**
 * @name removeSingletonDimensions
@@ -1263,6 +1281,15 @@ setReadOnly( ns, 'ternaryOutputDataType', require( './../../base/ternary-output-
 * @see {@link module:@stdlib/ndarray/base/ternary-tiling-block-size}
 */
 setReadOnly( ns, 'ternaryBlockSize', require( './../../base/ternary-tiling-block-size' ) );
+
+/**
+* @name blockSize
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/tiling-block-size}
+*/
+setReadOnly( ns, 'blockSize', require( './../../base/tiling-block-size' ) );
 
 /**
 * @name ndarray2array
