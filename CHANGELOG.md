@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9c75b30`](https://github.com/stdlib-js/stdlib/commit/9c75b302a82df9b6c580b9f8afc647773e5684a3) - add `ndarray/base/quinary-tiling-block-size` [(#9871)](https://github.com/stdlib-js/stdlib/pull/9871)
 -   [`d84de96`](https://github.com/stdlib-js/stdlib/commit/d84de9698683c20fa3b67eb9d2a615a403f6b707) - add `ndarray/base/quaternary-tiling-block-size` [(#9838)](https://github.com/stdlib-js/stdlib/pull/9838)
 -   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913)
 -   [`b6d8bcc`](https://github.com/stdlib-js/stdlib/commit/b6d8bcc8e3a285d4f874748191904580321aa0e8) - add `quinaryLoopOrder` to namespace
@@ -722,6 +723,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`9c75b30`](https://github.com/stdlib-js/stdlib/commit/9c75b302a82df9b6c580b9f8afc647773e5684a3) - **feat:** add `ndarray/base/quinary-tiling-block-size` [(#9871)](https://github.com/stdlib-js/stdlib/pull/9871) _(by Muhammad Haris, Athan Reines)_
 -   [`d84de96`](https://github.com/stdlib-js/stdlib/commit/d84de9698683c20fa3b67eb9d2a615a403f6b707) - **feat:** add `ndarray/base/quaternary-tiling-block-size` [(#9838)](https://github.com/stdlib-js/stdlib/pull/9838) _(by Muhammad Haris, Athan Reines)_
 -   [`8f8998f`](https://github.com/stdlib-js/stdlib/commit/8f8998f02831c2db69698a26769916d68acfe54f) - **feat:** update `ndarray/base` TypeScript declarations [(#9913)](https://github.com/stdlib-js/stdlib/pull/9913) _(by stdlib-bot)_
 -   [`196734e`](https://github.com/stdlib-js/stdlib/commit/196734eccb0d43439332b2a275fb3a50cb73df67) - **docs:** update namespace table of contents [(#9915)](https://github.com/stdlib-js/stdlib/pull/9915) _(by stdlib-bot)_
