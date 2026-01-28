@@ -126,7 +126,9 @@ import pop = require( './../../../base/pop' );
 import prependSingletonDimensions = require( './../../../base/prepend-singleton-dimensions' );
 import promoteDataTypes = require( './../../../base/promote-dtypes' );
 import quaternaryLoopOrder = require( './../../../base/quaternary-loop-interchange-order' );
+import quaternaryBlockSize = require( './../../../base/quaternary-tiling-block-size' );
 import quinaryLoopOrder = require( './../../../base/quinary-loop-interchange-order' );
+import quinaryBlockSize = require( './../../../base/quinary-tiling-block-size' );
 import removeSingletonDimensions = require( './../../../base/remove-singleton-dimensions' );
 import reverse = require( './../../../base/reverse' );
 import reverseDimension = require( './../../../base/reverse-dimension' );
@@ -154,6 +156,7 @@ import ternary = require( './../../../base/ternary' );
 import ternaryLoopOrder = require( './../../../base/ternary-loop-interchange-order' );
 import ternaryOutputDataType = require( './../../../base/ternary-output-dtype' );
 import ternaryBlockSize = require( './../../../base/ternary-tiling-block-size' );
+import blockSize = require( './../../../base/tiling-block-size' );
 import ndarray2array = require( './../../../base/to-array' );
 import toFlippedlr = require( './../../../base/to-flippedlr' );
 import toFlippedud = require( './../../../base/to-flippedud' );
@@ -3282,6 +3285,22 @@ interface Namespace {
 	quaternaryLoopOrder: typeof quaternaryLoopOrder;
 
 	/**
+	* Returns a loop block size for multi-dimensional array tiled loops.
+	*
+	* @param dtypeX - first input array data type
+	* @param dtypeY - second input array data type
+	* @param dtypeZ - third input array data type
+	* @param dtypeW - fourth input array data type
+	* @param dtypeU - output array data type
+	* @returns block size (in units of elements)
+	*
+	* @example
+	* var bsize = ns.quaternaryBlockSize( 'float64', 'float64', 'float64', 'float64', 'float64' );
+	* // returns <number>
+	*/
+	quaternaryBlockSize: typeof quaternaryBlockSize;
+
+	/**
 	* Reorders ndarray dimensions and associated strides for loop interchange.
 	*
 	* ## Notes
@@ -3348,6 +3367,23 @@ interface Namespace {
 	* // returns [ 6, -2, 1 ]
 	*/
 	quinaryLoopOrder: typeof quinaryLoopOrder;
+
+	/**
+	* Returns a loop block size for multi-dimensional array tiled loops.
+	*
+	* @param dtypeX - first input array data type
+	* @param dtypeY - second input array data type
+	* @param dtypeZ - third input array data type
+	* @param dtypeW - fourth input array data type
+	* @param dtypeU - fifth input array data type
+	* @param dtypeV - output array data type
+	* @returns block size (in units of elements)
+	*
+	* @example
+	* var bsize = ns.quinaryBlockSize( 'float64', 'float64', 'float64', 'float64', 'float64', 'float64' );
+	* // returns <number>
+	*/
+	quinaryBlockSize: typeof quinaryBlockSize;
 
 	/**
 	* Returns an array without singleton dimensions.
@@ -4370,6 +4406,18 @@ interface Namespace {
 	* // returns <number>
 	*/
 	ternaryBlockSize: typeof ternaryBlockSize;
+
+	/**
+	* Returns a loop block size for multi-dimensional array tiled loops.
+	*
+	* @param dtypes - list of input and output ndarray data types
+	* @returns block size (in units of elements)
+	*
+	* @example
+	* var bsize = ns.blockSize( [ 'float64', 'float64', 'float64', 'float64' ] );
+	* // returns <number>
+	*/
+	blockSize: typeof blockSize;
 
 	/**
 	* Converts an ndarray buffer to a generic array (which may include nested arrays).

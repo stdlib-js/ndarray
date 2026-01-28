@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`aa9da1e`](https://github.com/stdlib-js/stdlib/commit/aa9da1e984009479baafb731970c49c0e2b0d423) - update `ndarray/base` TypeScript declarations [(#9935)](https://github.com/stdlib-js/stdlib/pull/9935)
 -   [`3d21748`](https://github.com/stdlib-js/stdlib/commit/3d2174821f71a70dbb3052da07e0a3b3f6dfbaa0) - add function to return the index offset in units of elements
 -   [`dd45a8f`](https://github.com/stdlib-js/stdlib/commit/dd45a8fcec70ba4716ec67606a448721a723f54b) - add function to return a dimension stride in units of elements
 -   [`b00ba84`](https://github.com/stdlib-js/stdlib/commit/b00ba84689ed039d0896209f94716c187cd6cccb) - add function for returning the number of bytes per ndarray element
@@ -735,6 +736,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`aa9da1e`](https://github.com/stdlib-js/stdlib/commit/aa9da1e984009479baafb731970c49c0e2b0d423) - **feat:** update `ndarray/base` TypeScript declarations [(#9935)](https://github.com/stdlib-js/stdlib/pull/9935) _(by stdlib-bot)_
 -   [`a87bde4`](https://github.com/stdlib-js/stdlib/commit/a87bde4102c9e3637ab02b18b39de03815e8d927) - **docs:** update namespace table of contents [(#9938)](https://github.com/stdlib-js/stdlib/pull/9938) _(by stdlib-bot)_
 -   [`5ff04ce`](https://github.com/stdlib-js/stdlib/commit/5ff04cee55e8b5665706a925f9455b072b859684) - **docs:** update notes _(by Philipp Burckhardt)_
 -   [`640d00d`](https://github.com/stdlib-js/stdlib/commit/640d00d5567707d2dcef81f1e6fafbdb947b6eab) - **chore:** minor clean-up _(by Philipp Burckhardt)_
