@@ -735,6 +735,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`a87bde4`](https://github.com/stdlib-js/stdlib/commit/a87bde4102c9e3637ab02b18b39de03815e8d927) - **docs:** update namespace table of contents [(#9938)](https://github.com/stdlib-js/stdlib/pull/9938) _(by stdlib-bot)_
 -   [`5ff04ce`](https://github.com/stdlib-js/stdlib/commit/5ff04cee55e8b5665706a925f9455b072b859684) - **docs:** update notes _(by Philipp Burckhardt)_
 -   [`640d00d`](https://github.com/stdlib-js/stdlib/commit/640d00d5567707d2dcef81f1e6fafbdb947b6eab) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`b6a0e1f`](https://github.com/stdlib-js/stdlib/commit/b6a0e1f3b0044a068a51acd7cd1352ab0f8e4a60) - **bench:** fix call signature _(by Athan Reines)_
