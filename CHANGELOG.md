@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-28)
+## Unreleased (2026-01-31)
 
 <section class="features">
 
@@ -736,6 +736,8 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`3762b83`](https://github.com/stdlib-js/stdlib/commit/3762b83d30536b528ba17199d81f9da0b3c09cf6) - **refactor:** reduce duplication _(by Athan Reines)_
+-   [`302f85f`](https://github.com/stdlib-js/stdlib/commit/302f85fd95665bfac64102e17641dc54eb59898f) - **test:** use functional accessors and update examples _(by Athan Reines)_
 -   [`aa9da1e`](https://github.com/stdlib-js/stdlib/commit/aa9da1e984009479baafb731970c49c0e2b0d423) - **feat:** update `ndarray/base` TypeScript declarations [(#9935)](https://github.com/stdlib-js/stdlib/pull/9935) _(by stdlib-bot)_
 -   [`a87bde4`](https://github.com/stdlib-js/stdlib/commit/a87bde4102c9e3637ab02b18b39de03815e8d927) - **docs:** update namespace table of contents [(#9938)](https://github.com/stdlib-js/stdlib/pull/9938) _(by stdlib-bot)_
 -   [`5ff04ce`](https://github.com/stdlib-js/stdlib/commit/5ff04cee55e8b5665706a925f9455b072b859684) - **docs:** update notes _(by Philipp Burckhardt)_
