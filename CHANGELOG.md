@@ -736,6 +736,8 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`4794f9e`](https://github.com/stdlib-js/stdlib/commit/4794f9e933b2f3375daa7d74d856dd8af79ce5ea) - **test:** use functional accessors and ensure support for non-string dtypes _(by Athan Reines)_
+-   [`91a321e`](https://github.com/stdlib-js/stdlib/commit/91a321e84c6925239d651a2b9824a2c4aa3a23ee) - **chore:** clean-up and allow non-string dtypes _(by Athan Reines)_
 -   [`3762b83`](https://github.com/stdlib-js/stdlib/commit/3762b83d30536b528ba17199d81f9da0b3c09cf6) - **refactor:** reduce duplication _(by Athan Reines)_
 -   [`302f85f`](https://github.com/stdlib-js/stdlib/commit/302f85fd95665bfac64102e17641dc54eb59898f) - **test:** use functional accessors and update examples _(by Athan Reines)_
 -   [`aa9da1e`](https://github.com/stdlib-js/stdlib/commit/aa9da1e984009479baafb731970c49c0e2b0d423) - **feat:** update `ndarray/base` TypeScript declarations [(#9935)](https://github.com/stdlib-js/stdlib/pull/9935) _(by stdlib-bot)_
