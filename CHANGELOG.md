@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7b69002`](https://github.com/stdlib-js/stdlib/commit/7b69002e03bd424815f80e156e0994f150e80175) - ensure support for non-string dtypes and update tests to use functional accessors
 -   [`aa9da1e`](https://github.com/stdlib-js/stdlib/commit/aa9da1e984009479baafb731970c49c0e2b0d423) - update `ndarray/base` TypeScript declarations [(#9935)](https://github.com/stdlib-js/stdlib/pull/9935)
 -   [`3d21748`](https://github.com/stdlib-js/stdlib/commit/3d2174821f71a70dbb3052da07e0a3b3f6dfbaa0) - add function to return the index offset in units of elements
 -   [`dd45a8f`](https://github.com/stdlib-js/stdlib/commit/dd45a8fcec70ba4716ec67606a448721a723f54b) - add function to return a dimension stride in units of elements
@@ -736,6 +737,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`7b69002`](https://github.com/stdlib-js/stdlib/commit/7b69002e03bd424815f80e156e0994f150e80175) - **feat:** ensure support for non-string dtypes and update tests to use functional accessors _(by Athan Reines)_
 -   [`4794f9e`](https://github.com/stdlib-js/stdlib/commit/4794f9e933b2f3375daa7d74d856dd8af79ce5ea) - **test:** use functional accessors and ensure support for non-string dtypes _(by Athan Reines)_
 -   [`91a321e`](https://github.com/stdlib-js/stdlib/commit/91a321e84c6925239d651a2b9824a2c4aa3a23ee) - **chore:** clean-up and allow non-string dtypes _(by Athan Reines)_
 -   [`3762b83`](https://github.com/stdlib-js/stdlib/commit/3762b83d30536b528ba17199d81f9da0b3c09cf6) - **refactor:** reduce duplication _(by Athan Reines)_
