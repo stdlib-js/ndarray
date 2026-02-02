@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-31)
+## Unreleased (2026-02-02)
 
 <section class="features">
 
@@ -737,6 +737,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`9696b4d`](https://github.com/stdlib-js/stdlib/commit/9696b4d2af500640e8fdd5f76a499248e3f2f17a) - **docs:** update namespace table of contents [(#10022)](https://github.com/stdlib-js/stdlib/pull/10022) _(by stdlib-bot)_
 -   [`7b69002`](https://github.com/stdlib-js/stdlib/commit/7b69002e03bd424815f80e156e0994f150e80175) - **feat:** ensure support for non-string dtypes and update tests to use functional accessors _(by Athan Reines)_
 -   [`4794f9e`](https://github.com/stdlib-js/stdlib/commit/4794f9e933b2f3375daa7d74d856dd8af79ce5ea) - **test:** use functional accessors and ensure support for non-string dtypes _(by Athan Reines)_
 -   [`91a321e`](https://github.com/stdlib-js/stdlib/commit/91a321e84c6925239d651a2b9824a2c4aa3a23ee) - **chore:** clean-up and allow non-string dtypes _(by Athan Reines)_
