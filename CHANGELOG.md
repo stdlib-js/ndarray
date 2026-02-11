@@ -737,6 +737,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`0ae8a91`](https://github.com/stdlib-js/stdlib/commit/0ae8a917f3759d3228e59c3945b348398a21c7b7) - **docs:** remove extra empty line [(#10168)](https://github.com/stdlib-js/stdlib/pull/10168) _(by stdlib-bot)_
 -   [`c34c46b`](https://github.com/stdlib-js/stdlib/commit/c34c46b17469f73663378429eca8dba95dbf1dcd) - **bench:** refactor to use string interpolation in `ndarray/array` [(#10193)](https://github.com/stdlib-js/stdlib/pull/10193) _(by Shubham)_
 -   [`805412f`](https://github.com/stdlib-js/stdlib/commit/805412fecd7227470a7fb28606c94f00d1e7538e) - **docs:** update `ndarray/base` TypeScript declarations [(#10021)](https://github.com/stdlib-js/stdlib/pull/10021) _(by stdlib-bot)_
 -   [`9696b4d`](https://github.com/stdlib-js/stdlib/commit/9696b4d2af500640e8fdd5f76a499248e3f2f17a) - **docs:** update namespace table of contents [(#10022)](https://github.com/stdlib-js/stdlib/pull/10022) _(by stdlib-bot)_
