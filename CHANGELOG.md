@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-09)
+## Unreleased (2026-02-11)
 
 <section class="features">
 
@@ -737,6 +737,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`c34c46b`](https://github.com/stdlib-js/stdlib/commit/c34c46b17469f73663378429eca8dba95dbf1dcd) - **bench:** refactor to use string interpolation in `ndarray/array` [(#10193)](https://github.com/stdlib-js/stdlib/pull/10193) _(by Shubham)_
 -   [`805412f`](https://github.com/stdlib-js/stdlib/commit/805412fecd7227470a7fb28606c94f00d1e7538e) - **docs:** update `ndarray/base` TypeScript declarations [(#10021)](https://github.com/stdlib-js/stdlib/pull/10021) _(by stdlib-bot)_
 -   [`9696b4d`](https://github.com/stdlib-js/stdlib/commit/9696b4d2af500640e8fdd5f76a499248e3f2f17a) - **docs:** update namespace table of contents [(#10022)](https://github.com/stdlib-js/stdlib/pull/10022) _(by stdlib-bot)_
 -   [`7b69002`](https://github.com/stdlib-js/stdlib/commit/7b69002e03bd424815f80e156e0994f150e80175) - **feat:** ensure support for non-string dtypes and update tests to use functional accessors _(by Athan Reines)_
