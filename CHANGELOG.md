@@ -737,6 +737,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`a7bf4ae`](https://github.com/stdlib-js/stdlib/commit/a7bf4aec94324369038c58bc51206f9397e59e16) - **bench:** refactor to use string interpolation in `ndarray/zeros-like` [(#10366)](https://github.com/stdlib-js/stdlib/pull/10366) _(by Shubham)_
 -   [`6a0008d`](https://github.com/stdlib-js/stdlib/commit/6a0008d0315752288d76406de68fbcdc3b3015e5) - **bench:** refactor to use string interpolation in `ndarray/zeros` [(#10369)](https://github.com/stdlib-js/stdlib/pull/10369) _(by Shubham)_
 -   [`0ae8a91`](https://github.com/stdlib-js/stdlib/commit/0ae8a917f3759d3228e59c3945b348398a21c7b7) - **docs:** remove extra empty line [(#10168)](https://github.com/stdlib-js/stdlib/pull/10168) _(by stdlib-bot)_
 -   [`c34c46b`](https://github.com/stdlib-js/stdlib/commit/c34c46b17469f73663378429eca8dba95dbf1dcd) - **bench:** refactor to use string interpolation in `ndarray/array` [(#10193)](https://github.com/stdlib-js/stdlib/pull/10193) _(by Shubham)_
