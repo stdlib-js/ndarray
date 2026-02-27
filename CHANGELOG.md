@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e7a30dc`](https://github.com/stdlib-js/stdlib/commit/e7a30dcc468a1db97d78ae16cea85090a13d5fac) - add `broadcastScalar` to namespace
 -   [`6bc5ee5`](https://github.com/stdlib-js/stdlib/commit/6bc5ee550629c3aaae7687630c315d607c185ba9) - add `ndarray/broadcast-scalar` [(#9916)](https://github.com/stdlib-js/stdlib/pull/9916)
 -   [`e8b00ab`](https://github.com/stdlib-js/stdlib/commit/e8b00abfb7e1a012c9df982553c6ede3f6b261d9) - add `unshift` to namespace
 -   [`d703ebd`](https://github.com/stdlib-js/stdlib/commit/d703ebd30fb8f62c7e3718074648bb901de0c267) - add `spreadDimensions` to namespace
@@ -751,6 +752,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`e7a30dc`](https://github.com/stdlib-js/stdlib/commit/e7a30dcc468a1db97d78ae16cea85090a13d5fac) - **feat:** add `broadcastScalar` to namespace _(by Athan Reines)_
 -   [`6bc5ee5`](https://github.com/stdlib-js/stdlib/commit/6bc5ee550629c3aaae7687630c315d607c185ba9) - **feat:** add `ndarray/broadcast-scalar` [(#9916)](https://github.com/stdlib-js/stdlib/pull/9916) _(by Muhammad Haris, Athan Reines)_
 -   [`e8b00ab`](https://github.com/stdlib-js/stdlib/commit/e8b00abfb7e1a012c9df982553c6ede3f6b261d9) - **feat:** add `unshift` to namespace _(by Athan Reines)_
 -   [`d703ebd`](https://github.com/stdlib-js/stdlib/commit/d703ebd30fb8f62c7e3718074648bb901de0c267) - **feat:** add `spreadDimensions` to namespace _(by Athan Reines)_
