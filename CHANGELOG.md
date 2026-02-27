@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9221bdb`](https://github.com/stdlib-js/stdlib/commit/9221bdb56bac8544a387c8b8f74ae69ae5ec2961) - add `toTransposed` to namespace
 -   [`5606366`](https://github.com/stdlib-js/stdlib/commit/560636601a3ebbc74e58ba18752ba832c3548215) - add `ndarray/base/to-transposed` [(#10499)](https://github.com/stdlib-js/stdlib/pull/10499)
 -   [`01a25b3`](https://github.com/stdlib-js/stdlib/commit/01a25b340fc172d9754d027cc09330e0be32babb) - add `unflattenShape` to namespace
 -   [`4049c73`](https://github.com/stdlib-js/stdlib/commit/4049c7358fb474ef3b7c3f1a1dc94206c37fd105) - add `ndarray/base/unflatten-shape` [(#10441)](https://github.com/stdlib-js/stdlib/pull/10441)
@@ -757,6 +758,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`9221bdb`](https://github.com/stdlib-js/stdlib/commit/9221bdb56bac8544a387c8b8f74ae69ae5ec2961) - **feat:** add `toTransposed` to namespace _(by Athan Reines)_
 -   [`5606366`](https://github.com/stdlib-js/stdlib/commit/560636601a3ebbc74e58ba18752ba832c3548215) - **feat:** add `ndarray/base/to-transposed` [(#10499)](https://github.com/stdlib-js/stdlib/pull/10499) _(by Muhammad Haris, Athan Reines)_
 -   [`01a25b3`](https://github.com/stdlib-js/stdlib/commit/01a25b340fc172d9754d027cc09330e0be32babb) - **feat:** add `unflattenShape` to namespace _(by Athan Reines)_
 -   [`4049c73`](https://github.com/stdlib-js/stdlib/commit/4049c7358fb474ef3b7c3f1a1dc94206c37fd105) - **feat:** add `ndarray/base/unflatten-shape` [(#10441)](https://github.com/stdlib-js/stdlib/pull/10441) _(by Muhammad Haris, Athan Reines)_

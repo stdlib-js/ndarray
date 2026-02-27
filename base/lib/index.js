@@ -1346,6 +1346,15 @@ setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
 setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimension' ) );
 
 /**
+* @name toTransposed
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-transposed}
+*/
+setReadOnly( ns, 'toTransposed', require( './../../base/to-transposed' ) );
+
+/**
 * @name toUniqueNormalizedIndices
 * @memberof ns
 * @readonly
