@@ -10,6 +10,17 @@
 
 ### Features
 
+-   [`e8b00ab`](https://github.com/stdlib-js/stdlib/commit/e8b00abfb7e1a012c9df982553c6ede3f6b261d9) - add `unshift` to namespace
+-   [`d703ebd`](https://github.com/stdlib-js/stdlib/commit/d703ebd30fb8f62c7e3718074648bb901de0c267) - add `spreadDimensions` to namespace
+-   [`853269d`](https://github.com/stdlib-js/stdlib/commit/853269d40f022bbeb9dfb3b751ec9e3da769e1db) - add `some` to namespace
+-   [`e4dc41b`](https://github.com/stdlib-js/stdlib/commit/e4dc41b5cb957c29d5035de9f1a03b23596f5df2) - add `push` to namespace
+-   [`2b44a14`](https://github.com/stdlib-js/stdlib/commit/2b44a14f3e9320f09189749176998ed6ce21d459) - add `prependSingletonDimensions` to namespace
+-   [`6438f89`](https://github.com/stdlib-js/stdlib/commit/6438f8920f0cdbb525f7b1a1b4c818806e48da2b) - add `flipud` to namespace
+-   [`5a4177b`](https://github.com/stdlib-js/stdlib/commit/5a4177bef249b76469c6cd06218acf33e72762d5) - add `fliplr` to namespace
+-   [`9a7bd40`](https://github.com/stdlib-js/stdlib/commit/9a7bd407645ceeac99c6ac8bf46a905dad66739d) - add `flattenFromBy` to namespace
+-   [`f53b521`](https://github.com/stdlib-js/stdlib/commit/f53b521efeef869b0ef0ccf07e878bdeaa2fed12) - add `findLast` to namespace
+-   [`39c40c5`](https://github.com/stdlib-js/stdlib/commit/39c40c569825bc185a8e8a802452ed1ebaed7ece) - add `concat1d` to namespace
+-   [`78d37a0`](https://github.com/stdlib-js/stdlib/commit/78d37a025058a2260ccfe38ff5ead8ab9e09af3e) - add `scalar2ndarrayLike` to namespace
 -   [`2b0c11f`](https://github.com/stdlib-js/stdlib/commit/2b0c11f5339edc83e5de241d702230e73552136d) - add `ndarray/from-scalar-like` [(#9940)](https://github.com/stdlib-js/stdlib/pull/9940)
 -   [`793a38c`](https://github.com/stdlib-js/stdlib/commit/793a38c29f31677807e0cf6748f1ca54fbbef4ec) - add `toLocaleString` method to `ndarray/base/ctor` [(#9435)](https://github.com/stdlib-js/stdlib/pull/9435)
 -   [`7b69002`](https://github.com/stdlib-js/stdlib/commit/7b69002e03bd424815f80e156e0994f150e80175) - ensure support for non-string dtypes and update tests to use functional accessors
@@ -739,6 +750,17 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`e8b00ab`](https://github.com/stdlib-js/stdlib/commit/e8b00abfb7e1a012c9df982553c6ede3f6b261d9) - **feat:** add `unshift` to namespace _(by Athan Reines)_
+-   [`d703ebd`](https://github.com/stdlib-js/stdlib/commit/d703ebd30fb8f62c7e3718074648bb901de0c267) - **feat:** add `spreadDimensions` to namespace _(by Athan Reines)_
+-   [`853269d`](https://github.com/stdlib-js/stdlib/commit/853269d40f022bbeb9dfb3b751ec9e3da769e1db) - **feat:** add `some` to namespace _(by Athan Reines)_
+-   [`e4dc41b`](https://github.com/stdlib-js/stdlib/commit/e4dc41b5cb957c29d5035de9f1a03b23596f5df2) - **feat:** add `push` to namespace _(by Athan Reines)_
+-   [`2b44a14`](https://github.com/stdlib-js/stdlib/commit/2b44a14f3e9320f09189749176998ed6ce21d459) - **feat:** add `prependSingletonDimensions` to namespace _(by Athan Reines)_
+-   [`6438f89`](https://github.com/stdlib-js/stdlib/commit/6438f8920f0cdbb525f7b1a1b4c818806e48da2b) - **feat:** add `flipud` to namespace _(by Athan Reines)_
+-   [`5a4177b`](https://github.com/stdlib-js/stdlib/commit/5a4177bef249b76469c6cd06218acf33e72762d5) - **feat:** add `fliplr` to namespace _(by Athan Reines)_
+-   [`9a7bd40`](https://github.com/stdlib-js/stdlib/commit/9a7bd407645ceeac99c6ac8bf46a905dad66739d) - **feat:** add `flattenFromBy` to namespace _(by Athan Reines)_
+-   [`f53b521`](https://github.com/stdlib-js/stdlib/commit/f53b521efeef869b0ef0ccf07e878bdeaa2fed12) - **feat:** add `findLast` to namespace _(by Athan Reines)_
+-   [`39c40c5`](https://github.com/stdlib-js/stdlib/commit/39c40c569825bc185a8e8a802452ed1ebaed7ece) - **feat:** add `concat1d` to namespace _(by Athan Reines)_
+-   [`78d37a0`](https://github.com/stdlib-js/stdlib/commit/78d37a025058a2260ccfe38ff5ead8ab9e09af3e) - **feat:** add `scalar2ndarrayLike` to namespace _(by Athan Reines)_
 -   [`9bdd54a`](https://github.com/stdlib-js/stdlib/commit/9bdd54a97d6458edeb891ac49cbcffa86470e354) - **docs:** update description _(by Athan Reines)_
 -   [`2b0c11f`](https://github.com/stdlib-js/stdlib/commit/2b0c11f5339edc83e5de241d702230e73552136d) - **feat:** add `ndarray/from-scalar-like` [(#9940)](https://github.com/stdlib-js/stdlib/pull/9940) _(by Muhammad Haris, Athan Reines)_
 -   [`793a38c`](https://github.com/stdlib-js/stdlib/commit/793a38c29f31677807e0cf6748f1ca54fbbef4ec) - **feat:** add `toLocaleString` method to `ndarray/base/ctor` [(#9435)](https://github.com/stdlib-js/stdlib/pull/9435) _(by Muhammad Haris, Athan Reines)_
