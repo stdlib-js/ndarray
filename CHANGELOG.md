@@ -758,6 +758,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`7eb18f2`](https://github.com/stdlib-js/stdlib/commit/7eb18f24166f78119540ec88e652e5643a5d2518) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`9221bdb`](https://github.com/stdlib-js/stdlib/commit/9221bdb56bac8544a387c8b8f74ae69ae5ec2961) - **feat:** add `toTransposed` to namespace _(by Athan Reines)_
 -   [`5606366`](https://github.com/stdlib-js/stdlib/commit/560636601a3ebbc74e58ba18752ba832c3548215) - **feat:** add `ndarray/base/to-transposed` [(#10499)](https://github.com/stdlib-js/stdlib/pull/10499) _(by Muhammad Haris, Athan Reines)_
 -   [`01a25b3`](https://github.com/stdlib-js/stdlib/commit/01a25b340fc172d9754d027cc09330e0be32babb) - **feat:** add `unflattenShape` to namespace _(by Athan Reines)_
