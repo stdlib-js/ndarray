@@ -739,6 +739,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`9bdd54a`](https://github.com/stdlib-js/stdlib/commit/9bdd54a97d6458edeb891ac49cbcffa86470e354) - **docs:** update description _(by Athan Reines)_
 -   [`2b0c11f`](https://github.com/stdlib-js/stdlib/commit/2b0c11f5339edc83e5de241d702230e73552136d) - **feat:** add `ndarray/from-scalar-like` [(#9940)](https://github.com/stdlib-js/stdlib/pull/9940) _(by Muhammad Haris, Athan Reines)_
 -   [`793a38c`](https://github.com/stdlib-js/stdlib/commit/793a38c29f31677807e0cf6748f1ca54fbbef4ec) - **feat:** add `toLocaleString` method to `ndarray/base/ctor` [(#9435)](https://github.com/stdlib-js/stdlib/pull/9435) _(by Muhammad Haris, Athan Reines)_
 -   [`a7bf4ae`](https://github.com/stdlib-js/stdlib/commit/a7bf4aec94324369038c58bc51206f9397e59e16) - **bench:** refactor to use string interpolation in `ndarray/zeros-like` [(#10366)](https://github.com/stdlib-js/stdlib/pull/10366) _(by Shubham)_

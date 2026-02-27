@@ -71,7 +71,7 @@ The function accepts the following arguments:
 The function accepts the following options:
 
 -   **dtype**: output array [data type][@stdlib/ndarray/dtypes].
--   **order**: array order (i.e., memory layout), which is either `row-major` (C-style) or `column-major` (Fortran-style).
+-   **order**: array order (i.e., memory layout). Must be either `row-major` (C-style) or `column-major` (Fortran-style).
 -   **readonly**: boolean indicating whether an array should be **read-only**. Default: `false`.
 
 If a `dtype` option is not provided and `value`
