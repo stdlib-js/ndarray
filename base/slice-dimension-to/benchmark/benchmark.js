@@ -24,13 +24,14 @@ var bench = require( '@stdlib/bench' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var baseEmpty = require( './../../../base/empty' );
 var empty = require( './../../../empty' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var sliceDimensionTo = require( './../lib' );
 
 
 // MAIN //
 
-bench( pkg+'::1d,base', function benchmark( b ) {
+bench( format( '%s::1d,base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -60,20 +61,20 @@ bench( pkg+'::1d,base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::1d,non-base', function benchmark( b ) {
+bench( format( '%s::1d,non-base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2 ], { 'dtype': 'float64' }),
-		empty( [ 2 ], { 'dtype': 'float32' }),
-		empty( [ 2 ], { 'dtype': 'int32' }),
-		empty( [ 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2 ], { 'dtype': 'generic' })
+		empty( [ 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -95,7 +96,7 @@ bench( pkg+'::1d,non-base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::1d,base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::1d,base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -125,20 +126,20 @@ bench( pkg+'::1d,base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::1d,non-base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::1d,non-base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2 ], { 'dtype': 'float64' }),
-		empty( [ 2 ], { 'dtype': 'float32' }),
-		empty( [ 2 ], { 'dtype': 'int32' }),
-		empty( [ 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2 ], { 'dtype': 'generic' })
+		empty( [ 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -160,7 +161,7 @@ bench( pkg+'::1d,non-base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::2d,base', function benchmark( b ) {
+bench( format( '%s::2d,base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -190,20 +191,20 @@ bench( pkg+'::2d,base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::2d,non-base', function benchmark( b ) {
+bench( format( '%s::2d,non-base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -225,7 +226,7 @@ bench( pkg+'::2d,non-base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::2d,base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::2d,base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -255,20 +256,20 @@ bench( pkg+'::2d,base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::2d,non-base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::2d,non-base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -290,7 +291,7 @@ bench( pkg+'::2d,non-base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::3d,base', function benchmark( b ) {
+bench( format( '%s::3d,base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -320,20 +321,20 @@ bench( pkg+'::3d,base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::3d,non-base', function benchmark( b ) {
+bench( format( '%s::3d,non-base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -355,7 +356,7 @@ bench( pkg+'::3d,non-base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::3d,base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::3d,base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -385,20 +386,20 @@ bench( pkg+'::3d,base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::3d,non-base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::3d,non-base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -420,7 +421,7 @@ bench( pkg+'::3d,non-base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::4d,base', function benchmark( b ) {
+bench( format( '%s::4d,base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -450,20 +451,20 @@ bench( pkg+'::4d,base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::4d,non-base', function benchmark( b ) {
+bench( format( '%s::4d,non-base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -485,7 +486,7 @@ bench( pkg+'::4d,non-base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::4d,base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::4d,base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -515,20 +516,20 @@ bench( pkg+'::4d,base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::4d,non-base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::4d,non-base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -550,7 +551,7 @@ bench( pkg+'::4d,non-base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::5d,base', function benchmark( b ) {
+bench( format( '%s::5d,base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -580,20 +581,20 @@ bench( pkg+'::5d,base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::5d,non-base', function benchmark( b ) {
+bench( format( '%s::5d,non-base', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
@@ -615,7 +616,7 @@ bench( pkg+'::5d,non-base', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::5d,base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::5d,base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
@@ -645,20 +646,20 @@ bench( pkg+'::5d,base,out-of-bounds', function benchmark( b ) {
 	b.end();
 });
 
-bench( pkg+'::5d,non-base,out-of-bounds', function benchmark( b ) {
+bench( format( '%s::5d,non-base,out-of-bounds', pkg ), function benchmark( b ) {
 	var values;
 	var v;
 	var s;
 	var i;
 
-	/* eslint-disable object-curly-newline */
+	/* eslint-disable object-curly-newline, stdlib/line-closing-bracket-spacing */
 
 	values = [
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float64' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float32' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'int32' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'complex128' }),
-		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'generic' })
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float64' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'float32' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'int32' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'complex128' } ),
+		empty( [ 2, 2, 2, 2, 2 ], { 'dtype': 'generic' } )
 	];
 
 	/* eslint-enable object-curly-newline */
