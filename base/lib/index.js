@@ -1544,6 +1544,15 @@ setReadOnly( ns, 'unaryStrided1dDispatchFactory', require( './../../base/unary-s
 setReadOnly( ns, 'unaryBlockSize', require( './../../base/unary-tiling-block-size' ) );
 
 /**
+* @name unflattenShape
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unflatten-shape}
+*/
+setReadOnly( ns, 'unflattenShape', require( './../../base/unflatten-shape' ) );
+
+/**
 * @name vind2bind
 * @memberof ns
 * @readonly
