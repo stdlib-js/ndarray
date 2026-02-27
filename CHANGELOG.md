@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`4049c73`](https://github.com/stdlib-js/stdlib/commit/4049c7358fb474ef3b7c3f1a1dc94206c37fd105) - add `ndarray/base/unflatten-shape` [(#10441)](https://github.com/stdlib-js/stdlib/pull/10441)
 -   [`0d32b1b`](https://github.com/stdlib-js/stdlib/commit/0d32b1b98dc0bf319b6330e9535e2a3ba0980adf) - add `toReversedDimension` to namespace
 -   [`287c085`](https://github.com/stdlib-js/stdlib/commit/287c08582a945209e4b6da083fbd8102b8bf8321) - add `ndarray/to-reversed-dimension` [(#10058)](https://github.com/stdlib-js/stdlib/pull/10058)
 -   [`e7a30dc`](https://github.com/stdlib-js/stdlib/commit/e7a30dcc468a1db97d78ae16cea85090a13d5fac) - add `broadcastScalar` to namespace
@@ -754,6 +755,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`4049c73`](https://github.com/stdlib-js/stdlib/commit/4049c7358fb474ef3b7c3f1a1dc94206c37fd105) - **feat:** add `ndarray/base/unflatten-shape` [(#10441)](https://github.com/stdlib-js/stdlib/pull/10441) _(by Muhammad Haris, Athan Reines)_
 -   [`0d32b1b`](https://github.com/stdlib-js/stdlib/commit/0d32b1b98dc0bf319b6330e9535e2a3ba0980adf) - **feat:** add `toReversedDimension` to namespace _(by Athan Reines)_
 -   [`287c085`](https://github.com/stdlib-js/stdlib/commit/287c08582a945209e4b6da083fbd8102b8bf8321) - **feat:** add `ndarray/to-reversed-dimension` [(#10058)](https://github.com/stdlib-js/stdlib/pull/10058) _(by Muhammad Haris, Athan Reines)_
 -   [`e7a30dc`](https://github.com/stdlib-js/stdlib/commit/e7a30dcc468a1db97d78ae16cea85090a13d5fac) - **feat:** add `broadcastScalar` to namespace _(by Athan Reines)_
