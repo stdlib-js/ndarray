@@ -460,10 +460,10 @@ tape( 'the function broadcasts an input array (singleton dimension)', function t
 	var v;
 	var i;
 
-	data = [ 1, 2 ];
+	data = [ 1 ];
 	x = array( data, {
 		'dtype': 'generic',
-		'shape': [ 1, 2 ],
+		'shape': [ 1, 1 ],
 		'order': 'row-major'
 	});
 
@@ -478,13 +478,13 @@ tape( 'the function broadcasts an input array (singleton dimension)', function t
 		t.strictEqual( v, data[ 0 ], 'returns expected value for element ('+i+',0,0)' );
 
 		v = y.get( i, 0, 1 );
-		t.strictEqual( v, data[ 1 ], 'returns expected value for element ('+i+',0,1)' );
+		t.strictEqual( v, data[ 0 ], 'returns expected value for element ('+i+',0,1)' );
 
 		v = y.get( i, 0, 0 );
 		t.strictEqual( v, data[ 0 ], 'returns expected value for element ('+i+',0,0)' );
 
 		v = y.get( i, 0, 1 );
-		t.strictEqual( v, data[ 1 ], 'returns expected value for element ('+i+',0,1)' );
+		t.strictEqual( v, data[ 0 ], 'returns expected value for element ('+i+',0,1)' );
 	}
 	t.end();
 });
