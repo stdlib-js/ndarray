@@ -725,6 +725,15 @@ setReadOnly( ns, 'maxViewBufferIndex', require( './../../base/max-view-buffer-in
 setReadOnly( ns, 'maybeBroadcastArray', require( './../../base/maybe-broadcast-array' ) );
 
 /**
+* @name maybeBroadcastArrayExceptDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/maybe-broadcast-array-except-dimensions}
+*/
+setReadOnly( ns, 'maybeBroadcastArrayExceptDimensions', require( './../../base/maybe-broadcast-array-except-dimensions' ) );
+
+/**
 * @name maybeBroadcastArrays
 * @memberof ns
 * @readonly

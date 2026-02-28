@@ -123,6 +123,58 @@ tape( 'the function throws an error if provided a desired shape and an input arr
 	}
 });
 
+tape( 'the function throws an error if provided duplicate dimensions', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	x = array({
+		'shape': [ 2, 10, 10 ]
+	});
+
+	values = [
+		[ -3, -3 ],
+		[ -2, -2 ],
+		[ -1, -1 ]
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), Error, 'throws an error when provided ['+values[ i ].join( ',')+']' );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			broadcastArrayExceptDimensions( x, [ 2, 10, 10 ], value );
+		};
+	}
+});
+
+tape( 'the function throws an error if provided out-of-bounds dimensions', function test( t ) {
+	var values;
+	var x;
+	var i;
+
+	x = array({
+		'shape': [ 2, 10, 10 ]
+	});
+
+	values = [
+		[ -4 ],
+		[ -5 ],
+		[ -6 ]
+	];
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[ i ] ), RangeError, 'throws an error when provided ['+values[ i ].join( ',')+']' );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			broadcastArrayExceptDimensions( x, [ 2, 10, 10 ], value );
+		};
+	}
+});
+
 tape( 'the function returns a "base" ndarray instance', function test( t ) {
 	var x;
 	var y;
