@@ -781,6 +781,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`96cd05f`](https://github.com/stdlib-js/stdlib/commit/96cd05f68ec3cb1836e7d357241b90d7d3fb5b8b) - **bench:** refactor to use string interpolation in `ndarray/slice-dimension-to` [(#10523)](https://github.com/stdlib-js/stdlib/pull/10523) _(by Sagar Ratna Chaudhary, Athan Reines)_
 -   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03) - **feat:** update `ndarray/base` TypeScript declarations [(#10558)](https://github.com/stdlib-js/stdlib/pull/10558) _(by stdlib-bot)_
 -   [`2db642e`](https://github.com/stdlib-js/stdlib/commit/2db642edf40e64407f05bcffcb3f0cdae718f8aa) - **feat:** update `ndarray` TypeScript declarations [(#10560)](https://github.com/stdlib-js/stdlib/pull/10560) _(by stdlib-bot)_
 -   [`2cc758b`](https://github.com/stdlib-js/stdlib/commit/2cc758b7e8b6e3a713cadbabd6d13ad635cb2fcd) - **docs:** update namespace table of contents [(#10561)](https://github.com/stdlib-js/stdlib/pull/10561) _(by stdlib-bot)_
@@ -2220,7 +2221,7 @@ A total of 44 issues were closed in this release:
 
 ### Contributors
 
-A total of 37 people contributed to this release. Thank you to the following contributors:
+A total of 38 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2249,6 +2250,7 @@ A total of 37 people contributed to this release. Thank you to the following con
 -   Piyush Goel
 -   Pravesh Kunwar
 -   Rohit R Bhat
+-   Sagar Ratna Chaudhary
 -   Sai Avinash
 -   Shreelaxmi Hegde
 -   Shubham
