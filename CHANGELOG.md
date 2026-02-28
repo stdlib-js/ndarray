@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667)
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - add `atleastnd` to namespace
 -   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422)
 -   [`9221bdb`](https://github.com/stdlib-js/stdlib/commit/9221bdb56bac8544a387c8b8f74ae69ae5ec2961) - add `toTransposed` to namespace
@@ -682,6 +683,11 @@
 
 ### BREAKING CHANGES
 
+-   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11): add writable parameter and always return a new view
+
+    -   To migrate, in order to preserve prior writable behavior, users should set the final parameter equal to a boolean indicating whether the input ndarray is writable. If not, pass `false`; if yes, pass `true`.
+        To preserve prior behavior in which the input ndarray is returned if it does not have singleton dimensions, use `ndarray/base/maybe-remove-singleton-dimensions`.
+
 -   [`cf38d87`](https://github.com/stdlib-js/stdlib/commit/cf38d87a6820408d2ec054cbf0e20561e8352deb): rename `stdlib_ndarray_bytelength` to `stdlib_ndarray_byte_length`
 
     -   To migrate, users using the C API should update their call signatures
@@ -760,6 +766,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - **feat:** add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667) _(by Muhammad Haris, Athan Reines)_
 -   [`e9054b2`](https://github.com/stdlib-js/stdlib/commit/e9054b2892ab8d483449efd9b78aaed53c6fcb2b) - **docs:** add note _(by Athan Reines)_
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - **feat:** add `atleastnd` to namespace _(by Athan Reines)_
 -   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - **feat:** add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422) _(by Muhammad Haris, Athan Reines)_
