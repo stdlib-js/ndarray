@@ -77,6 +77,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'assign', require( './../../base/assign' ) );
 
 /**
+* @name atleastnd
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/atleastnd}
+*/
+setReadOnly( ns, 'atleastnd', require( './../../base/atleastnd' ) );
+
+/**
 * @name binary
 * @memberof ns
 * @readonly
