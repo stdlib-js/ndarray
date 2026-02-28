@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-27)
+## Unreleased (2026-02-28)
 
 <section class="features">
 
 ### Features
 
+-   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422)
 -   [`9221bdb`](https://github.com/stdlib-js/stdlib/commit/9221bdb56bac8544a387c8b8f74ae69ae5ec2961) - add `toTransposed` to namespace
 -   [`5606366`](https://github.com/stdlib-js/stdlib/commit/560636601a3ebbc74e58ba18752ba832c3548215) - add `ndarray/base/to-transposed` [(#10499)](https://github.com/stdlib-js/stdlib/pull/10499)
 -   [`01a25b3`](https://github.com/stdlib-js/stdlib/commit/01a25b340fc172d9754d027cc09330e0be32babb) - add `unflattenShape` to namespace
@@ -758,6 +759,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - **feat:** add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422) _(by Muhammad Haris, Athan Reines)_
 -   [`8e51991`](https://github.com/stdlib-js/stdlib/commit/8e519911fa82286c82b696e058c5da2fba071c3e) - **style:** revert style changes _(by Athan Reines)_
 -   [`965c4b9`](https://github.com/stdlib-js/stdlib/commit/965c4b9341f4a3b721a06bfd5c48e1393b5ab59d) - **chore:** fix JavaScript lint errors [(#10380)](https://github.com/stdlib-js/stdlib/pull/10380) _(by Bhargav Dabhade)_
 -   [`7eb18f2`](https://github.com/stdlib-js/stdlib/commit/7eb18f24166f78119540ec88e652e5643a5d2518) - **chore:** minor clean-up _(by Philipp Burckhardt)_
