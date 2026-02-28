@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`5324e96`](https://github.com/stdlib-js/stdlib/commit/5324e9618a4b8688b4792ccceb146b348d9a9f2f) - add `ndarray/base/maybe-broadcast-array-except-dimensions` [(#10413)](https://github.com/stdlib-js/stdlib/pull/10413)
 -   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08) - add writable parameter support to `ndarray/base/transpose` (#10474) [(#10474)](https://github.com/stdlib-js/stdlib/pull/10474)
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667)
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - add `atleastnd` to namespace
@@ -772,6 +773,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`5324e96`](https://github.com/stdlib-js/stdlib/commit/5324e9618a4b8688b4792ccceb146b348d9a9f2f) - **feat:** add `ndarray/base/maybe-broadcast-array-except-dimensions` [(#10413)](https://github.com/stdlib-js/stdlib/pull/10413) _(by Muhammad Haris, Athan Reines)_
 -   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - **fix:** ensure unique indices _(by Athan Reines)_
 -   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08) - **feat:** add writable parameter support to `ndarray/base/transpose` (#10474) [(#10474)](https://github.com/stdlib-js/stdlib/pull/10474) _(by Muhammad Haris, Athan Reines)_
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - **feat:** add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667) _(by Muhammad Haris, Athan Reines)_
