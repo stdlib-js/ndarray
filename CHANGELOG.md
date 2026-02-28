@@ -760,6 +760,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`e9054b2`](https://github.com/stdlib-js/stdlib/commit/e9054b2892ab8d483449efd9b78aaed53c6fcb2b) - **docs:** add note _(by Athan Reines)_
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - **feat:** add `atleastnd` to namespace _(by Athan Reines)_
 -   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - **feat:** add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422) _(by Muhammad Haris, Athan Reines)_
 -   [`8e51991`](https://github.com/stdlib-js/stdlib/commit/8e519911fa82286c82b696e058c5da2fba071c3e) - **style:** revert style changes _(by Athan Reines)_
