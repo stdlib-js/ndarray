@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08) - add writable parameter support to `ndarray/base/transpose` (#10474) [(#10474)](https://github.com/stdlib-js/stdlib/pull/10474)
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667)
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - add `atleastnd` to namespace
 -   [`53caca8`](https://github.com/stdlib-js/stdlib/commit/53caca808d0b9aad069992056c6fe64b0c780e8f) - add `ndarray/base/atleastnd` [(#10422)](https://github.com/stdlib-js/stdlib/pull/10422)
@@ -683,6 +684,10 @@
 
 ### BREAKING CHANGES
 
+-   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08): add writable parameter
+
+    -   To migrate and preserve prior behavior, users should always pass `true` for the second parameter.
+
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11): add writable parameter and always return a new view
 
     -   To migrate, in order to preserve prior writable behavior, users should set the final parameter equal to a boolean indicating whether the input ndarray is writable. If not, pass `false`; if yes, pass `true`.
@@ -766,6 +771,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08) - **feat:** add writable parameter support to `ndarray/base/transpose` (#10474) [(#10474)](https://github.com/stdlib-js/stdlib/pull/10474) _(by Muhammad Haris, Athan Reines)_
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - **feat:** add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667) _(by Muhammad Haris, Athan Reines)_
 -   [`e9054b2`](https://github.com/stdlib-js/stdlib/commit/e9054b2892ab8d483449efd9b78aaed53c6fcb2b) - **docs:** add note _(by Athan Reines)_
 -   [`e5af570`](https://github.com/stdlib-js/stdlib/commit/e5af57010dbb7c873ea46afe2662c8ceb44ac637) - **feat:** add `atleastnd` to namespace _(by Athan Reines)_
