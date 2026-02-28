@@ -551,6 +551,7 @@
 
 ### Bug Fixes
 
+-   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - ensure unique indices
 -   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - use ndarray assertion utility
 -   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - resolve normalized data type
 -   [`c1ac155`](https://github.com/stdlib-js/stdlib/commit/c1ac155e7e751a72a868ebae2f4667c338f834bd) - update return type
@@ -771,6 +772,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - **fix:** ensure unique indices _(by Athan Reines)_
 -   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08) - **feat:** add writable parameter support to `ndarray/base/transpose` (#10474) [(#10474)](https://github.com/stdlib-js/stdlib/pull/10474) _(by Muhammad Haris, Athan Reines)_
 -   [`e947540`](https://github.com/stdlib-js/stdlib/commit/e947540a4e87841d7bf140094e20b2768250de11) - **feat:** add writable parameter to `ndarray/base/remove-singleton-dimensions` [(#9667)](https://github.com/stdlib-js/stdlib/pull/9667) _(by Muhammad Haris, Athan Reines)_
 -   [`e9054b2`](https://github.com/stdlib-js/stdlib/commit/e9054b2892ab8d483449efd9b78aaed53c6fcb2b) - **docs:** add note _(by Athan Reines)_
