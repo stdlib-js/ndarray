@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03) - update `ndarray/base` TypeScript declarations [(#10558)](https://github.com/stdlib-js/stdlib/pull/10558)
 -   [`2db642e`](https://github.com/stdlib-js/stdlib/commit/2db642edf40e64407f05bcffcb3f0cdae718f8aa) - update `ndarray` TypeScript declarations [(#10560)](https://github.com/stdlib-js/stdlib/pull/10560)
 -   [`f91aca6`](https://github.com/stdlib-js/stdlib/commit/f91aca6650536cb46c7b4c41bd05a2a37e0fe475) - add `maybeBroadcastArrayExceptDimensions` to namespace
 -   [`5324e96`](https://github.com/stdlib-js/stdlib/commit/5324e9618a4b8688b4792ccceb146b348d9a9f2f) - add `ndarray/base/maybe-broadcast-array-except-dimensions` [(#10413)](https://github.com/stdlib-js/stdlib/pull/10413)
@@ -688,6 +689,11 @@
 
 ### BREAKING CHANGES
 
+-   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03): add writable parameter to and always return a new ndarray in `removeSingletonDimensions`
+
+    -   To migrate, in order to preserve prior writable behavior, users should set the final parameter equal to a boolean indicating whether the input ndarray is writable. If not, pass `false`; if yes, pass `true`.
+        To preserve prior behavior in which the input ndarray is returned if it does not have singleton dimensions, use `maybeRemoveSingletonDimensions`.
+
 -   [`9df924b`](https://github.com/stdlib-js/stdlib/commit/9df924b5f0b773c8b06d06b40e54dee75059ce08): add writable parameter
 
     -   To migrate and preserve prior behavior, users should always pass `true` for the second parameter.
@@ -775,6 +781,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03) - **feat:** update `ndarray/base` TypeScript declarations [(#10558)](https://github.com/stdlib-js/stdlib/pull/10558) _(by stdlib-bot)_
 -   [`2db642e`](https://github.com/stdlib-js/stdlib/commit/2db642edf40e64407f05bcffcb3f0cdae718f8aa) - **feat:** update `ndarray` TypeScript declarations [(#10560)](https://github.com/stdlib-js/stdlib/pull/10560) _(by stdlib-bot)_
 -   [`2cc758b`](https://github.com/stdlib-js/stdlib/commit/2cc758b7e8b6e3a713cadbabd6d13ad635cb2fcd) - **docs:** update namespace table of contents [(#10561)](https://github.com/stdlib-js/stdlib/pull/10561) _(by stdlib-bot)_
 -   [`f7bad8d`](https://github.com/stdlib-js/stdlib/commit/f7bad8d512bc207e4e25ed18a15b43a6e98540aa) - **test:** update test _(by Athan Reines)_
