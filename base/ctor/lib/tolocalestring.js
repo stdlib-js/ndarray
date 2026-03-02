@@ -23,6 +23,7 @@
 var isComplexDataType = require( './../../../base/assert/is-complex-floating-point-data-type' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
+var isUndefinedOrNull = require( '@stdlib/assert/is-undefined-or-null' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var format = require( '@stdlib/string/format' );
 var replace = require( '@stdlib/string/replace' );
@@ -114,7 +115,12 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 			}
 		} else {
 			for ( i = 0; i < this._length; i++ ) {
-				buffer += this.iget( i ).toLocaleString( loc, opts );
+				v = this.iget( i );
+				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
+					buffer += v.toLocaleString( loc, opts );
+				} else {
+					buffer += String( v );
+				}
 				if ( i < this._length-1 ) {
 					buffer += ', ';
 				}
@@ -132,7 +138,12 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 			}
 		} else {
 			for ( i = 0; i < 3; i++ ) {
-				buffer += this.iget( i ).toLocaleString( loc, opts );
+				v = this.iget( i );
+				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
+					buffer += v.toLocaleString( loc, opts );
+				} else {
+					buffer += String( v );
+				}
 				if ( i < 2 ) {
 					buffer += ', ';
 				}
@@ -151,7 +162,12 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 			}
 		} else {
 			for ( i = 2; i >= 0; i-- ) {
-				buffer += this.iget( this._length-1-i ).toLocaleString( loc, opts ); // eslint-disable-line max-len
+				v = this.iget( this._length-1-i );
+				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
+					buffer += v.toLocaleString( loc, opts );
+				} else {
+					buffer += String( v );
+				}
 				if ( i > 0 ) {
 					buffer += ', ';
 				}

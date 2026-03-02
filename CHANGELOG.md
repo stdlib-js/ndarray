@@ -556,6 +556,7 @@
 
 ### Bug Fixes
 
+-   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
 -   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - ensure unique indices
 -   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - use ndarray assertion utility
 -   [`6c43167`](https://github.com/stdlib-js/stdlib/commit/6c4316733d615b06d301eec89c377838a6b56dd8) - resolve normalized data type
@@ -783,6 +784,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - **fix:** ensure support for elements which are null or undefined _(by Athan Reines)_
 -   [`7f1f9ca`](https://github.com/stdlib-js/stdlib/commit/7f1f9cae7096b100fb0d2fafdb6822545bd0489a) - **test:** fix missing argument in TypeScript test _(by Philipp Burckhardt)_
 -   [`5ff8528`](https://github.com/stdlib-js/stdlib/commit/5ff852828a9f5d0388ef386f039649d95987252d) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`98b02ad`](https://github.com/stdlib-js/stdlib/commit/98b02adb85c1a0644510dddd2fab2c1b6b61c2eb) - **feat:** update `ndarray/base` TypeScript declarations [(#10584)](https://github.com/stdlib-js/stdlib/pull/10584) _(by stdlib-bot)_

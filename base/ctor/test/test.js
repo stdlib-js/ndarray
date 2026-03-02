@@ -3810,6 +3810,37 @@ tape( 'an ndarray has a custom `toLocaleString()` method (boolean type)', functi
 	t.end();
 });
 
+tape( 'an ndarray has a custom `toLocaleString()` method (generic type)', function test( t ) {
+	var expected;
+	var strides;
+	var actual;
+	var buffer;
+	var offset;
+	var dtype;
+	var order;
+	var shape;
+	var arr;
+
+	dtype = 'generic';
+	buffer = [ null, void 0, null, void 0 ];
+	shape = [ 2, 2 ];
+	order = 'row-major';
+	strides = [ 2, 1 ];
+	offset = 0;
+
+	arr = ndarray( dtype, buffer, shape, strides, offset, order );
+
+	t.strictEqual( hasOwnProp( arr, 'toLocaleString' ), false, 'does not have own property' );
+	t.strictEqual( hasProp( arr, 'toLocaleString' ), true, 'has property' );
+	t.strictEqual( isFunction( arr.toLocaleString ), true, 'has method' );
+
+	expected = 'ndarray( \'generic\', [ null, undefined, null, undefined ], [ 2, 2 ], [ 2, 1 ], 0, \'row-major\' )';
+	actual = arr.toLocaleString();
+	t.strictEqual( actual, expected, 'returns expected value' );
+
+	t.end();
+});
+
 tape( 'an ndarray has a custom `toLocaleString()` method (0d)', function test( t ) {
 	var expected;
 	var strides;
@@ -3958,6 +3989,47 @@ tape( 'an ndarray has a custom `toLocaleString()` method (large array; complex t
 	t.strictEqual( isFunction( arr.toLocaleString ), true, 'has method' );
 
 	expected = 'ndarray( \'complex128\', new Complex128Array( [ 1, 1, 2, 2, 3, 3, ..., 4, 4, 5, 5, 6, 6 ] ), [ 10000 ], [ 1 ], 0, \'row-major\' )';
+	actual = arr.toLocaleString();
+	t.strictEqual( actual, expected, 'returns expected value' );
+
+	t.end();
+});
+
+tape( 'an ndarray has a custom `toLocaleString()` method (large array; generic type)', function test( t ) {
+	var expected;
+	var strides;
+	var actual;
+	var buffer;
+	var offset;
+	var dtype;
+	var order;
+	var shape;
+	var arr;
+	var i;
+
+	dtype = 'generic';
+	buffer = [];
+	for ( i = 0; i < 10000; i++ ) {
+		if ( i < 3 ) {
+			buffer.push( null );
+		} else if ( i >= 9997 ) {
+			buffer.push( void 0 );
+		} else {
+			buffer.push( 0 );
+		}
+	}
+	shape = [ 10000 ];
+	order = 'row-major';
+	strides = [ 1 ];
+	offset = 0;
+
+	arr = ndarray( dtype, buffer, shape, strides, offset, order );
+
+	t.strictEqual( hasOwnProp( arr, 'toLocaleString' ), false, 'does not have own property' );
+	t.strictEqual( hasProp( arr, 'toLocaleString' ), true, 'has property' );
+	t.strictEqual( isFunction( arr.toLocaleString ), true, 'has method' );
+
+	expected = 'ndarray( \'generic\', [ null, null, null, ..., undefined, undefined, undefined ], [ 10000 ], [ 1 ], 0, \'row-major\' )';
 	actual = arr.toLocaleString();
 	t.strictEqual( actual, expected, 'returns expected value' );
 
