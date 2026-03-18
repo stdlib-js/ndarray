@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-09)
+## Unreleased (2026-03-18)
 
 <section class="features">
 
 ### Features
 
+-   [`a1f8442`](https://github.com/stdlib-js/stdlib/commit/a1f8442b4ed11aceb97c2b5e6e7e8fdc18d8317b) - add `ndarray/to-flippedlr` [(#11016)](https://github.com/stdlib-js/stdlib/pull/11016)
 -   [`98b02ad`](https://github.com/stdlib-js/stdlib/commit/98b02adb85c1a0644510dddd2fab2c1b6b61c2eb) - update `ndarray/base` TypeScript declarations [(#10584)](https://github.com/stdlib-js/stdlib/pull/10584)
 -   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03) - update `ndarray/base` TypeScript declarations [(#10558)](https://github.com/stdlib-js/stdlib/pull/10558)
 -   [`2db642e`](https://github.com/stdlib-js/stdlib/commit/2db642edf40e64407f05bcffcb3f0cdae718f8aa) - update `ndarray` TypeScript declarations [(#10560)](https://github.com/stdlib-js/stdlib/pull/10560)
@@ -784,6 +785,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`a1f8442`](https://github.com/stdlib-js/stdlib/commit/a1f8442b4ed11aceb97c2b5e6e7e8fdc18d8317b) - **feat:** add `ndarray/to-flippedlr` [(#11016)](https://github.com/stdlib-js/stdlib/pull/11016) _(by Muhammad Haris, Athan Reines)_
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - **fix:** ensure support for elements which are null or undefined _(by Athan Reines)_
 -   [`7f1f9ca`](https://github.com/stdlib-js/stdlib/commit/7f1f9cae7096b100fb0d2fafdb6822545bd0489a) - **test:** fix missing argument in TypeScript test _(by Philipp Burckhardt)_
 -   [`5ff8528`](https://github.com/stdlib-js/stdlib/commit/5ff852828a9f5d0388ef386f039649d95987252d) - **chore:** minor clean-up _(by Philipp Burckhardt)_
