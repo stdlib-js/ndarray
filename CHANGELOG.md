@@ -785,6 +785,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`5a84c39`](https://github.com/stdlib-js/stdlib/commit/5a84c39850bf22552f8ab108d4cc3255a3a0cdf6) - **bench:** refactor to use string interpolation in `ndarray/base/buffer` [(#11020)](https://github.com/stdlib-js/stdlib/pull/11020) _(by Partha Das)_
 -   [`a1f8442`](https://github.com/stdlib-js/stdlib/commit/a1f8442b4ed11aceb97c2b5e6e7e8fdc18d8317b) - **feat:** add `ndarray/to-flippedlr` [(#11016)](https://github.com/stdlib-js/stdlib/pull/11016) _(by Muhammad Haris, Athan Reines)_
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - **fix:** ensure support for elements which are null or undefined _(by Athan Reines)_
 -   [`7f1f9ca`](https://github.com/stdlib-js/stdlib/commit/7f1f9cae7096b100fb0d2fafdb6822545bd0489a) - **test:** fix missing argument in TypeScript test _(by Philipp Burckhardt)_
@@ -2231,7 +2232,7 @@ A total of 44 issues were closed in this release:
 
 ### Contributors
 
-A total of 38 people contributed to this release. Thank you to the following contributors:
+A total of 39 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2255,6 +2256,7 @@ A total of 38 people contributed to this release. Thank you to the following con
 -   Muhammad Taaha Tariq
 -   Navyansh Kesarwani
 -   Neeraj Pathak
+-   Partha Das
 -   Payal Goswami
 -   Philipp Burckhardt
 -   Piyush Goel
