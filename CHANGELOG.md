@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-18)
+## Unreleased (2026-03-19)
 
 <section class="features">
 
 ### Features
 
+-   [`1df171f`](https://github.com/stdlib-js/stdlib/commit/1df171ff8d9df70a0c7ea21a2b1b4fc3c71cd4c8) - add `ndarray/to-flippedud` [(#11031)](https://github.com/stdlib-js/stdlib/pull/11031)
 -   [`a1f8442`](https://github.com/stdlib-js/stdlib/commit/a1f8442b4ed11aceb97c2b5e6e7e8fdc18d8317b) - add `ndarray/to-flippedlr` [(#11016)](https://github.com/stdlib-js/stdlib/pull/11016)
 -   [`98b02ad`](https://github.com/stdlib-js/stdlib/commit/98b02adb85c1a0644510dddd2fab2c1b6b61c2eb) - update `ndarray/base` TypeScript declarations [(#10584)](https://github.com/stdlib-js/stdlib/pull/10584)
 -   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03) - update `ndarray/base` TypeScript declarations [(#10558)](https://github.com/stdlib-js/stdlib/pull/10558)
@@ -785,6 +786,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`1df171f`](https://github.com/stdlib-js/stdlib/commit/1df171ff8d9df70a0c7ea21a2b1b4fc3c71cd4c8) - **feat:** add `ndarray/to-flippedud` [(#11031)](https://github.com/stdlib-js/stdlib/pull/11031) _(by Muhammad Haris)_
 -   [`6f315ad`](https://github.com/stdlib-js/stdlib/commit/6f315ad87f17870b81b176846bec718057ddadf6) - **bench:** refactor to use string interpolation in `ndarray/base/binary` [(#11018)](https://github.com/stdlib-js/stdlib/pull/11018) _(by Partha Das)_
 -   [`5a84c39`](https://github.com/stdlib-js/stdlib/commit/5a84c39850bf22552f8ab108d4cc3255a3a0cdf6) - **bench:** refactor to use string interpolation in `ndarray/base/buffer` [(#11020)](https://github.com/stdlib-js/stdlib/pull/11020) _(by Partha Das)_
 -   [`a1f8442`](https://github.com/stdlib-js/stdlib/commit/a1f8442b4ed11aceb97c2b5e6e7e8fdc18d8317b) - **feat:** add `ndarray/to-flippedlr` [(#11016)](https://github.com/stdlib-js/stdlib/pull/11016) _(by Muhammad Haris, Athan Reines)_
