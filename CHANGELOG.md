@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-19)
+## Unreleased (2026-03-20)
 
 <section class="features">
 
 ### Features
 
+-   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012)
 -   [`c412a6e`](https://github.com/stdlib-js/stdlib/commit/c412a6efedf30e63a34d2ac7850bd69fc89e6f48) - add `toFlippedud` to namespace
 -   [`12cbc6b`](https://github.com/stdlib-js/stdlib/commit/12cbc6bfe422012e85e51affa6411c6779251d5e) - add `toFlippedlr` to namespace
 -   [`1df171f`](https://github.com/stdlib-js/stdlib/commit/1df171ff8d9df70a0c7ea21a2b1b4fc3c71cd4c8) - add `ndarray/to-flippedud` [(#11031)](https://github.com/stdlib-js/stdlib/pull/11031)
@@ -788,6 +789,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - **feat:** add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012) _(by Muhammad Haris)_
 -   [`c412a6e`](https://github.com/stdlib-js/stdlib/commit/c412a6efedf30e63a34d2ac7850bd69fc89e6f48) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_
 -   [`12cbc6b`](https://github.com/stdlib-js/stdlib/commit/12cbc6bfe422012e85e51affa6411c6779251d5e) - **feat:** add `toFlippedlr` to namespace _(by Athan Reines)_
 -   [`1df171f`](https://github.com/stdlib-js/stdlib/commit/1df171ff8d9df70a0c7ea21a2b1b4fc3c71cd4c8) - **feat:** add `ndarray/to-flippedud` [(#11031)](https://github.com/stdlib-js/stdlib/pull/11031) _(by Muhammad Haris)_
