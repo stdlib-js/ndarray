@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -131,6 +125,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`empty( shape[, options] )`][@stdlib/ndarray/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having a specified shape and data type.</span>
+-   <span class="signature">[`everyBy( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/every-by]</span><span class="delimiter">: </span><span class="description">test whether all elements along one or more `ndarray` dimensions pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`every( x[, options] )`][@stdlib/ndarray/every]</span><span class="delimiter">: </span><span class="description">test whether every element along one or more `ndarray` dimensions is truthy.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`fillBy( x, fcn[, thisArg] )`][@stdlib/ndarray/fill-by]</span><span class="delimiter">: </span><span class="description">fill an input ndarray according to a callback function.</span>
@@ -196,6 +191,8 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
 -   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
+-   <span class="signature">[`toFlippedlr( x )`][@stdlib/ndarray/to-flippedlr]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements along the last dimension of an input `ndarray` is reversed.</span>
+-   <span class="signature">[`toFlippedud( x )`][@stdlib/ndarray/to-flippedud]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements along the second-to-last dimension of an input `ndarray` is reversed.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 -   <span class="signature">[`toReversedDimension( x[, options] )`][@stdlib/ndarray/to-reversed-dimension]</span><span class="delimiter">: </span><span class="description">return a new ndarray where the order of elements of an input ndarray along a specified dimension is reversed.</span>
 -   <span class="signature">[`toReversed( x )`][@stdlib/ndarray/to-reversed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements of an input `ndarray` is reversed along each dimension.</span>
@@ -221,21 +218,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -366,6 +353,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray/tree/main/empty
 
+[@stdlib/ndarray/every-by]: https://github.com/stdlib-js/ndarray/tree/main/every-by
+
 [@stdlib/ndarray/every]: https://github.com/stdlib-js/ndarray/tree/main/every
 
 [@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
@@ -495,6 +484,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
 
 [@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray/tree/main/to-fancy
+
+[@stdlib/ndarray/to-flippedlr]: https://github.com/stdlib-js/ndarray/tree/main/to-flippedlr
+
+[@stdlib/ndarray/to-flippedud]: https://github.com/stdlib-js/ndarray/tree/main/to-flippedud
 
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
 
