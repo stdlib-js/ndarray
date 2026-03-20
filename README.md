@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, castingModes, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, fill, fillBy, fillSlice, filter, filterMap, find, findLast, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, includes, ind2sub, indexModes, inputCastingPolicies, iter, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarrayWith, ndarraylike2ndarray, ndims, ndindex, nextDataType, numel, numelDimension, offset, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, reverse, reverseDimension, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, unshift, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -113,6 +125,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`empty( shape[, options] )`][@stdlib/ndarray/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having a specified shape and data type.</span>
+-   <span class="signature">[`everyBy( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/every-by]</span><span class="delimiter">: </span><span class="description">test whether all elements along one or more `ndarray` dimensions pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`every( x[, options] )`][@stdlib/ndarray/every]</span><span class="delimiter">: </span><span class="description">test whether every element along one or more `ndarray` dimensions is truthy.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`fillBy( x, fcn[, thisArg] )`][@stdlib/ndarray/fill-by]</span><span class="delimiter">: </span><span class="description">fill an input ndarray according to a callback function.</span>
@@ -178,6 +191,8 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
 -   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
+-   <span class="signature">[`toFlippedlr( x )`][@stdlib/ndarray/to-flippedlr]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements along the last dimension of an input `ndarray` is reversed.</span>
+-   <span class="signature">[`toFlippedud( x )`][@stdlib/ndarray/to-flippedud]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements along the second-to-last dimension of an input `ndarray` is reversed.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 -   <span class="signature">[`toReversedDimension( x[, options] )`][@stdlib/ndarray/to-reversed-dimension]</span><span class="delimiter">: </span><span class="description">return a new ndarray where the order of elements of an input ndarray along a specified dimension is reversed.</span>
 -   <span class="signature">[`toReversed( x )`][@stdlib/ndarray/to-reversed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements of an input `ndarray` is reversed along each dimension.</span>
@@ -204,8 +219,8 @@ In addition, the namespace contains the following multidimensional array utility
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -231,7 +246,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -337,6 +352,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/empty-like]: https://github.com/stdlib-js/ndarray/tree/main/empty-like
 
 [@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray/tree/main/empty
+
+[@stdlib/ndarray/every-by]: https://github.com/stdlib-js/ndarray/tree/main/every-by
 
 [@stdlib/ndarray/every]: https://github.com/stdlib-js/ndarray/tree/main/every
 
@@ -467,6 +484,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
 
 [@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray/tree/main/to-fancy
+
+[@stdlib/ndarray/to-flippedlr]: https://github.com/stdlib-js/ndarray/tree/main/to-flippedlr
+
+[@stdlib/ndarray/to-flippedud]: https://github.com/stdlib-js/ndarray/tree/main/to-flippedud
 
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
 
