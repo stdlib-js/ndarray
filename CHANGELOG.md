@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - add `everyBy` to namespace
 -   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012)
 -   [`c412a6e`](https://github.com/stdlib-js/stdlib/commit/c412a6efedf30e63a34d2ac7850bd69fc89e6f48) - add `toFlippedud` to namespace
 -   [`12cbc6b`](https://github.com/stdlib-js/stdlib/commit/12cbc6bfe422012e85e51affa6411c6779251d5e) - add `toFlippedlr` to namespace
@@ -789,6 +790,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - **feat:** add `everyBy` to namespace _(by Athan Reines)_
 -   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - **feat:** add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012) _(by Muhammad Haris)_
 -   [`c412a6e`](https://github.com/stdlib-js/stdlib/commit/c412a6efedf30e63a34d2ac7850bd69fc89e6f48) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_
 -   [`12cbc6b`](https://github.com/stdlib-js/stdlib/commit/12cbc6bfe422012e85e51affa6411c6779251d5e) - **feat:** add `toFlippedlr` to namespace _(by Athan Reines)_
