@@ -45,6 +45,7 @@ import dtypes = require( './../../dtypes' );
 import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
 import every = require( './../../every' );
+import everyBy = require( './../../every-by' );
 import FancyArray = require( './../../fancy' );
 import fill = require( './../../fill' );
 import fillBy = require( './../../fill-by' );
@@ -109,6 +110,8 @@ import stride = require( './../../stride' );
 import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
 import ndarray2array = require( './../../to-array' );
+import toFlippedlr = require( './../../to-flippedlr' );
+import toFlippedud = require( './../../to-flippedud' );
 import ndarray2json = require( './../../to-json' );
 import toReversed = require( './../../to-reversed' );
 import toReversedDimension = require( './../../to-reversed-dimension' );
@@ -1122,6 +1125,82 @@ interface Namespace {
 	* // returns true
 	*/
 	every: typeof every;
+
+	/**
+	* Tests whether all elements along one or more ndarray dimensions pass a test implemented by a predicate function.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform a reduction
+	* @param options.keepdims - boolean indicating whether the reduced dimensions should be included in the returned ndarray as singleton dimensions (default: false)
+	* @param predicate - predicate function
+	* @param thisArg - predicate execution context
+	* @returns output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	*
+	* function isPositive( value ) {
+	*     return value > 0.0;
+	* }
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var sh = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, sh, sx, ox, 'row-major' );
+	*
+	* // Perform reduction:
+	* var out = ns.everyBy( x, isPositive );
+	* // returns <ndarray>[ true ]
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var ndarray = require( './../../ctor' );
+	* var empty = require( './../../empty' );
+	*
+	* function isPositive( value ) {
+	*     return value > 0.0;
+	* }
+	*
+	* // Create a data buffer:
+	* var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
+	*
+	* // Define the shape of the input array:
+	* var shape = [ 3, 1, 2 ];
+	*
+	* // Define the array strides:
+	* var sx = [ 4, 4, 1 ];
+	*
+	* // Define the index offset:
+	* var ox = 1;
+	*
+	* // Create an input ndarray:
+	* var x = new ndarray( 'float64', xbuf, shape, sx, ox, 'row-major' );
+	*
+	* // Create an output ndarray:
+	* var y = empty( [], {
+	*     'dtype': 'bool'
+	* });
+	*
+	* // Perform reduction:
+	* var out = ns.everyBy.assign( x, y, isPositive );
+	* // returns <ndarray>[ true ]
+	*
+	* var bool = ( out === y );
+	* // returns true
+	*/
+	everyBy: typeof everyBy;
 
 	/**
 	* Fancy array constructor.
@@ -3118,6 +3197,50 @@ interface Namespace {
 	* // returns [ [ 1, 2 ], [ 3, 4 ] ]
 	*/
 	ndarray2array: typeof ndarray2array;
+
+	/**
+	* Returns a new ndarray where the order of elements along the last dimension of an input ndarray is reversed.
+	*
+	* @param x - input array
+	* @returns output ndarray
+	*
+	* @example
+	* var ndarray = require( './../../ctor' );
+	*
+	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+	* var shape = [ 3, 2 ];
+	* var strides = [ 2, 1 ];
+	* var offset = 0;
+	*
+	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	*
+	* var y = ns.toFlippedlr( x );
+	* // returns <ndarray>[ [ 2.0, 1.0 ], [ 4.0, 3.0 ], [ 6.0, 5.0 ] ]
+	*/
+	toFlippedlr: typeof toFlippedlr;
+
+	/**
+	* Returns a new ndarray where the order of elements along the second-to-last dimension of an input ndarray is reversed.
+	*
+	* @param x - input array
+	* @returns output ndarray
+	*
+	* @example
+	* var ndarray = require( './../../ctor' );
+	*
+	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
+	* var shape = [ 3, 2 ];
+	* var strides = [ 2, 1 ];
+	* var offset = 0;
+	*
+	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	*
+	* var y = ns.toFlippedud( x );
+	* // returns <ndarray>[ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
+	*/
+	toFlippedud: typeof toFlippedud;
 
 	/**
 	* Serializes an ndarray as a JSON object.
