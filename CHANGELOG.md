@@ -791,6 +791,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`075d798`](https://github.com/stdlib-js/stdlib/commit/075d7989c15119545bb4474ac5674b92073f5ddf) - **bench:** refactor to use string interpolation in `ndarray/base/assert/has-equal-shape` [(#11039)](https://github.com/stdlib-js/stdlib/pull/11039) _(by Partha Das)_
 -   [`d597c1d`](https://github.com/stdlib-js/stdlib/commit/d597c1d7b7dcb6b9a8d30e93b0042b61b0b2f130) - **feat:** update `ndarray` TypeScript declarations [(#11048)](https://github.com/stdlib-js/stdlib/pull/11048) _(by stdlib-bot)_
 -   [`23887f6`](https://github.com/stdlib-js/stdlib/commit/23887f6a96dbba2fd988205a9db15aafad49d3a1) - **docs:** update namespace table of contents [(#11049)](https://github.com/stdlib-js/stdlib/pull/11049) _(by stdlib-bot)_
 -   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - **feat:** add `everyBy` to namespace _(by Athan Reines)_
