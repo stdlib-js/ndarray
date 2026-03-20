@@ -790,6 +790,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`23887f6`](https://github.com/stdlib-js/stdlib/commit/23887f6a96dbba2fd988205a9db15aafad49d3a1) - **docs:** update namespace table of contents [(#11049)](https://github.com/stdlib-js/stdlib/pull/11049) _(by stdlib-bot)_
 -   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - **feat:** add `everyBy` to namespace _(by Athan Reines)_
 -   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - **feat:** add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012) _(by Muhammad Haris)_
 -   [`c412a6e`](https://github.com/stdlib-js/stdlib/commit/c412a6efedf30e63a34d2ac7850bd69fc89e6f48) - **feat:** add `toFlippedud` to namespace _(by Athan Reines)_
