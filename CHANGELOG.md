@@ -794,6 +794,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`0f753ef`](https://github.com/stdlib-js/stdlib/commit/0f753ef8b2aeb203c314accd37af63c551dfdfad) - **refactor:** use string interpolation _(by Athan Reines)_
 -   [`2de635b`](https://github.com/stdlib-js/stdlib/commit/2de635b53a4366fbcc55f5c648871fd3a59f0b99) - **feat:** add `ndarray2localeString` to namespace _(by Athan Reines)_
 -   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - **fix:** preserve formatting of original string serialization and rename internal files _(by Athan Reines)_
 -   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - **feat:** add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898) _(by Muhammad Haris, Athan Reines)_
