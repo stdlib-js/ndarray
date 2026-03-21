@@ -791,6 +791,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`f5c5dfa`](https://github.com/stdlib-js/stdlib/commit/f5c5dfaf00b470450be52e27649c745019b61aa3) - **bench:** refactor to use string interpolation in `ndarray/base/pop` [(#11061)](https://github.com/stdlib-js/stdlib/pull/11061) _(by Partha Das)_
 -   [`16f3ebe`](https://github.com/stdlib-js/stdlib/commit/16f3ebefefdfedb0a98d276312d35a8e6de2d195) - **bench:** refactor to use string interpolation in `ndarray/base/reverse` [(#11062)](https://github.com/stdlib-js/stdlib/pull/11062) _(by Partha Das)_
 -   [`a0084e4`](https://github.com/stdlib-js/stdlib/commit/a0084e42e84516d1b9031ce2994e8694a294b92f) - **bench:** refactor to use string interpolation in `ndarray/base/buffer-ctors` [(#11038)](https://github.com/stdlib-js/stdlib/pull/11038) _(by Partha Das)_
 -   [`075d798`](https://github.com/stdlib-js/stdlib/commit/075d7989c15119545bb4474ac5674b92073f5ddf) - **bench:** refactor to use string interpolation in `ndarray/base/assert/has-equal-shape` [(#11039)](https://github.com/stdlib-js/stdlib/pull/11039) _(by Partha Das)_
