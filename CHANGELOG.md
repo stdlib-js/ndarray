@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2de635b`](https://github.com/stdlib-js/stdlib/commit/2de635b53a4366fbcc55f5c648871fd3a59f0b99) - add `ndarray2localeString` to namespace
 -   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898)
 -   [`d597c1d`](https://github.com/stdlib-js/stdlib/commit/d597c1d7b7dcb6b9a8d30e93b0042b61b0b2f130) - update `ndarray` TypeScript declarations [(#11048)](https://github.com/stdlib-js/stdlib/pull/11048)
 -   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - add `everyBy` to namespace
@@ -793,6 +794,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`2de635b`](https://github.com/stdlib-js/stdlib/commit/2de635b53a4366fbcc55f5c648871fd3a59f0b99) - **feat:** add `ndarray2localeString` to namespace _(by Athan Reines)_
 -   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - **fix:** preserve formatting of original string serialization and rename internal files _(by Athan Reines)_
 -   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - **feat:** add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898) _(by Muhammad Haris, Athan Reines)_
 -   [`25e5ccb`](https://github.com/stdlib-js/stdlib/commit/25e5ccb8759c3f7b409e58454fafb52cc8c89394) - **bench:** refactor to use string interpolation in `ndarray/base/ndarraylike2ndarray` [(#11060)](https://github.com/stdlib-js/stdlib/pull/11060) _(by Partha Das)_
