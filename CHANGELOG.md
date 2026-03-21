@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898)
 -   [`d597c1d`](https://github.com/stdlib-js/stdlib/commit/d597c1d7b7dcb6b9a8d30e93b0042b61b0b2f130) - update `ndarray` TypeScript declarations [(#11048)](https://github.com/stdlib-js/stdlib/pull/11048)
 -   [`02c34bc`](https://github.com/stdlib-js/stdlib/commit/02c34bcc0cdd0ebba2f0fc8c311534aebf1ede2a) - add `everyBy` to namespace
 -   [`37969ad`](https://github.com/stdlib-js/stdlib/commit/37969adc28a67964a680c4205775d12383d02938) - add `ndarray/every-by` [(#11012)](https://github.com/stdlib-js/stdlib/pull/11012)
@@ -791,6 +792,8 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - **feat:** add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898) _(by Muhammad Haris, Athan Reines)_
+-   [`25e5ccb`](https://github.com/stdlib-js/stdlib/commit/25e5ccb8759c3f7b409e58454fafb52cc8c89394) - **bench:** refactor to use string interpolation in `ndarray/base/ndarraylike2ndarray` [(#11060)](https://github.com/stdlib-js/stdlib/pull/11060) _(by Partha Das)_
 -   [`f5c5dfa`](https://github.com/stdlib-js/stdlib/commit/f5c5dfaf00b470450be52e27649c745019b61aa3) - **bench:** refactor to use string interpolation in `ndarray/base/pop` [(#11061)](https://github.com/stdlib-js/stdlib/pull/11061) _(by Partha Das)_
 -   [`16f3ebe`](https://github.com/stdlib-js/stdlib/commit/16f3ebefefdfedb0a98d276312d35a8e6de2d195) - **bench:** refactor to use string interpolation in `ndarray/base/reverse` [(#11062)](https://github.com/stdlib-js/stdlib/pull/11062) _(by Partha Das)_
 -   [`a0084e4`](https://github.com/stdlib-js/stdlib/commit/a0084e42e84516d1b9031ce2994e8694a294b92f) - **bench:** refactor to use string interpolation in `ndarray/base/buffer-ctors` [(#11038)](https://github.com/stdlib-js/stdlib/pull/11038) _(by Partha Das)_
