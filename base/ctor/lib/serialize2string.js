@@ -16,15 +16,14 @@
 * limitations under the License.
 */
 
+/* eslint-disable no-underscore-dangle */
+
 'use strict';
 
 // MODULES //
 
 var isComplexDataType = require( './../../../base/assert/is-complex-floating-point-data-type' );
-var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
-var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
 var isUndefinedOrNull = require( '@stdlib/assert/is-undefined-or-null' );
-var isObject = require( '@stdlib/assert/is-plain-object' );
 var format = require( '@stdlib/string/format' );
 var replace = require( '@stdlib/string/replace' );
 var join = require( '@stdlib/array/base/join' );
@@ -52,51 +51,70 @@ var CTORS = {
 };
 
 
+// FUNCTIONS //
+
+/**
+* Serializes a value to a string.
+*
+* @private
+* @param {*} value - input value
+* @returns {string} output string
+*/
+function toStr( value ) {
+	return String( value );
+}
+
+/**
+* Serializes a value to a locale-aware string.
+*
+* @private
+* @param {*} value - input value
+* @param {(string|Array<string>)} [locales] - locale identifier(s)
+* @param {Object} [options] - configuration options
+* @returns {string} output string
+*/
+function toLocaleStr( value, locales, options ) {
+	if ( !isUndefinedOrNull( value ) && value.toLocaleString ) {
+		return value.toLocaleString( locales, options );
+	}
+	return toStr( value );
+}
+
+
 // MAIN //
 
 /**
-* Serializes an ndarray as a locale-aware string.
+* Serializes an ndarray to a string.
 *
 * ## Notes
 *
 * -   The method does **not** serialize data outside of the buffer region defined by the array configuration.
 *
 * @private
-* @param {(string|Array<string>)} [locales] - locale identifier(s)
-* @param {Object} [options] - configuration options
-* @throws {TypeError} first argument must be a string or an array of strings
-* @throws {TypeError} options argument must be an object
+* @param {ndarray} ctx - ndarray object
+* @param {string} method - element serialization method (i.e., `toString` or `toLocaleString`)
+* @param {(string|Array<string>|null)} locales - locale identifier(s)
+* @param {(Object|null)} options - configuration options
 * @returns {string} string representation
 */
-function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-redeclare
-	/* eslint-disable no-invalid-this */
+function serialize2string( ctx, method, locales, options ) {
 	var isCmplx;
 	var buffer;
 	var ndims;
 	var ctor;
-	var opts;
-	var loc;
 	var str;
 	var dt;
+	var f;
 	var v;
 	var i;
 
-	if ( arguments.length === 0 ) {
-		loc = [];
-	} else if ( isString( locales ) || isStringArray( locales ) ) {
-		loc = locales;
+	if ( method === 'toLocaleString' ) {
+		f = toLocaleStr;
 	} else {
-		throw new TypeError( format( 'invalid argument. First argument must be a string or an array of strings. Value: `%s`.', locales ) );
+		f = toStr;
 	}
-	if ( arguments.length < 2 ) {
-		opts = {};
-	} else if ( isObject( options ) ) {
-		opts = options;
-	} else {
-		throw new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
-	}
-	ndims = this._shape.length;
-	dt = this._dtype;
+	ndims = ctx._shape.length;
+	dt = ctx._dtype;
 	isCmplx = isComplexDataType( dt );
 
 	// Function to invoke to create an ndarray:
@@ -104,24 +122,20 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 
 	// Data buffer parameter...
 	buffer = '';
-	if ( this._length <= 100 ) {
+	if ( ctx._length <= 100 ) {
 		if ( isCmplx ) {
-			for ( i = 0; i < this._length; i++ ) {
-				v = this.iget( i );
-				buffer += real( v ).toLocaleString( loc, opts ) + ', ' + imag( v ).toLocaleString( loc, opts );
-				if ( i < this._length-1 ) {
+			for ( i = 0; i < ctx._length; i++ ) {
+				v = ctx.iget( i );
+				buffer += f( real( v ), locales, options ) + ', ' + f( imag( v ), locales, options );
+				if ( i < ctx._length-1 ) {
 					buffer += ', ';
 				}
 			}
 		} else {
-			for ( i = 0; i < this._length; i++ ) {
-				v = this.iget( i );
-				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
-					buffer += v.toLocaleString( loc, opts );
-				} else {
-					buffer += String( v );
-				}
-				if ( i < this._length-1 ) {
+			for ( i = 0; i < ctx._length; i++ ) {
+				v = ctx.iget( i );
+				buffer += f( v, locales, options );
+				if ( i < ctx._length-1 ) {
 					buffer += ', ';
 				}
 			}
@@ -130,20 +144,16 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 		// First three values...
 		if ( isCmplx ) {
 			for ( i = 0; i < 3; i++ ) {
-				v = this.iget( i );
-				buffer += real( v ).toLocaleString( loc, opts ) + ', ' + imag( v ).toLocaleString( loc, opts );
+				v = ctx.iget( i );
+				buffer += f( real( v ), locales, options ) + ', ' + f( imag( v ), locales, options );
 				if ( i < 2 ) {
 					buffer += ', ';
 				}
 			}
 		} else {
 			for ( i = 0; i < 3; i++ ) {
-				v = this.iget( i );
-				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
-					buffer += v.toLocaleString( loc, opts );
-				} else {
-					buffer += String( v );
-				}
+				v = ctx.iget( i );
+				buffer += f( v, locales, options );
 				if ( i < 2 ) {
 					buffer += ', ';
 				}
@@ -154,27 +164,23 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 		// Last three values...
 		if ( isCmplx ) {
 			for ( i = 2; i >= 0; i-- ) {
-				v = this.iget( this._length-1-i );
-				buffer += real( v ).toLocaleString( loc, opts ) + ', ' + imag( v ).toLocaleString( loc, opts );
+				v = ctx.iget( ctx._length-1-i );
+				buffer += f( real( v ), locales, options ) + ', ' + f( imag( v ), locales, options );
 				if ( i > 0 ) {
 					buffer += ', ';
 				}
 			}
 		} else {
 			for ( i = 2; i >= 0; i-- ) {
-				v = this.iget( this._length-1-i );
-				if ( !isUndefinedOrNull( v ) && v.toLocaleString ) {
-					buffer += v.toLocaleString( loc, opts );
-				} else {
-					buffer += String( v );
-				}
+				v = ctx.iget( ctx._length-1-i );
+				buffer += f( v, locales, options );
 				if ( i > 0 ) {
 					buffer += ', ';
 				}
 			}
 		}
 	}
-	ctor = CTORS[ this.dtype ];
+	ctor = CTORS[ ctx.dtype ];
 	str += replace( ctor, '{{data}}', buffer );
 	str += ', ';
 
@@ -182,7 +188,7 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 	if ( ndims === 0 ) {
 		str += '[]';
 	} else {
-		str += format( '[ %s ]', join( this._shape, ', ' ) );
+		str += format( '[ %s ]', join( ctx._shape, ', ' ) );
 	}
 	str += ', ';
 
@@ -192,10 +198,10 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 		str += '0';
 	} else {
 		for ( i = 0; i < ndims; i++ ) {
-			if ( this._strides[ i ] < 0 ) {
-				str += -this._strides[ i ];
+			if ( ctx._strides[ i ] < 0 ) {
+				str += -ctx._strides[ i ];
 			} else {
-				str += this._strides[ i ];
+				str += ctx._strides[ i ];
 			}
 			if ( i < ndims-1 ) {
 				str += ', ';
@@ -210,16 +216,14 @@ function toLocaleString( locales, options ) { // eslint-disable-line stdlib/no-r
 	str += ', ';
 
 	// Order:
-	str += format( '\'%s\'', this._order );
+	str += format( '\'%s\'', ctx._order );
 
 	// Close the function call:
 	str += ' )';
 	return str;
-
-	/* eslint-enable no-invalid-this */
 }
 
 
 // EXPORTS //
 
-module.exports = toLocaleString;
+module.exports = serialize2string;

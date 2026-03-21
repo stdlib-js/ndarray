@@ -564,6 +564,7 @@
 
 ### Bug Fixes
 
+-   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - preserve formatting of original string serialization and rename internal files
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
 -   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - ensure unique indices
 -   [`11cc2cf`](https://github.com/stdlib-js/stdlib/commit/11cc2cf8869a4b6ebf48545d5678eda25513529e) - use ndarray assertion utility
@@ -792,6 +793,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - **fix:** preserve formatting of original string serialization and rename internal files _(by Athan Reines)_
 -   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - **feat:** add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898) _(by Muhammad Haris, Athan Reines)_
 -   [`25e5ccb`](https://github.com/stdlib-js/stdlib/commit/25e5ccb8759c3f7b409e58454fafb52cc8c89394) - **bench:** refactor to use string interpolation in `ndarray/base/ndarraylike2ndarray` [(#11060)](https://github.com/stdlib-js/stdlib/pull/11060) _(by Partha Das)_
 -   [`f5c5dfa`](https://github.com/stdlib-js/stdlib/commit/f5c5dfaf00b470450be52e27649c745019b61aa3) - **bench:** refactor to use string interpolation in `ndarray/base/pop` [(#11061)](https://github.com/stdlib-js/stdlib/pull/11061) _(by Partha Das)_
