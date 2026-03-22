@@ -113,6 +113,7 @@ import ndarray2array = require( './../../to-array' );
 import toFlippedlr = require( './../../to-flippedlr' );
 import toFlippedud = require( './../../to-flippedud' );
 import ndarray2json = require( './../../to-json' );
+import ndarray2localeString = require( './../../to-locale-string' );
 import toReversed = require( './../../to-reversed' );
 import toReversedDimension = require( './../../to-reversed-dimension' );
 import unshift = require( './../../unshift' );
@@ -3262,6 +3263,29 @@ interface Namespace {
 	* // returns {...}
 	*/
 	ndarray2json: typeof ndarray2json;
+
+	/**
+	* Serializes an ndarray as a locale-aware string.
+	*
+	* ## Notes
+	*
+	* -   The function does **not** serialize data outside of the buffer region defined by the ndarray view.
+	*
+	* @param x - input ndarray
+	* @param locales - locale identifier(s)
+	* @param options - configuration options
+	* @returns string representation
+	*
+	* @example
+	* var array = require( `@stdlib/ndarray/array` );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>
+	*
+	* var str = ns.ndarray2localeString( x );
+	* // returns <string>
+	*/
+	ndarray2localeString: typeof ndarray2localeString;
 
 	/**
 	* Returns a new ndarray where the order of elements of an input ndarray is reversed along each dimension.

@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`da4d88c`](https://github.com/stdlib-js/stdlib/commit/da4d88c64f605abb92f06579bbc166cec7cea45d) - update `ndarray` TypeScript declarations [(#11084)](https://github.com/stdlib-js/stdlib/pull/11084)
 -   [`2de635b`](https://github.com/stdlib-js/stdlib/commit/2de635b53a4366fbcc55f5c648871fd3a59f0b99) - add `ndarray2localeString` to namespace
 -   [`42656f4`](https://github.com/stdlib-js/stdlib/commit/42656f425904ee6bb2608459bc6be406cd8e827f) - add `ndarray/to-locale-string` [(#10898)](https://github.com/stdlib-js/stdlib/pull/10898)
 -   [`d597c1d`](https://github.com/stdlib-js/stdlib/commit/d597c1d7b7dcb6b9a8d30e93b0042b61b0b2f130) - update `ndarray` TypeScript declarations [(#11048)](https://github.com/stdlib-js/stdlib/pull/11048)
@@ -794,6 +795,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`da4d88c`](https://github.com/stdlib-js/stdlib/commit/da4d88c64f605abb92f06579bbc166cec7cea45d) - **feat:** update `ndarray` TypeScript declarations [(#11084)](https://github.com/stdlib-js/stdlib/pull/11084) _(by stdlib-bot)_
 -   [`57fc70a`](https://github.com/stdlib-js/stdlib/commit/57fc70a07288fadf02ca0a17dea505e677683c7d) - **docs:** update namespace table of contents [(#11085)](https://github.com/stdlib-js/stdlib/pull/11085) _(by stdlib-bot)_
 -   [`a4cd958`](https://github.com/stdlib-js/stdlib/commit/a4cd958c7412f5275d5034cbfb6166ffe57462b0) - **bench:** refactor to use string interpolation in `ndarray/base/find` [(#11059)](https://github.com/stdlib-js/stdlib/pull/11059) _(by Partha Das)_
 -   [`fad9fc8`](https://github.com/stdlib-js/stdlib/commit/fad9fc89959999bfcd881845cf831d90fb41f7fc) - **bench:** refactor to use string interpolation in `ndarray/base/fill` [(#11058)](https://github.com/stdlib-js/stdlib/pull/11058) _(by Partha Das)_
