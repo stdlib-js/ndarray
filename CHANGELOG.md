@@ -795,6 +795,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`a4a5a00`](https://github.com/stdlib-js/stdlib/commit/a4a5a0071775e446d59fb7eb2553e850f1a84b26) - **bench:** refactor to use string interpolation in `ndarray/base/assign` [(#11019)](https://github.com/stdlib-js/stdlib/pull/11019) _(by Partha Das)_
 -   [`da4d88c`](https://github.com/stdlib-js/stdlib/commit/da4d88c64f605abb92f06579bbc166cec7cea45d) - **feat:** update `ndarray` TypeScript declarations [(#11084)](https://github.com/stdlib-js/stdlib/pull/11084) _(by stdlib-bot)_
 -   [`57fc70a`](https://github.com/stdlib-js/stdlib/commit/57fc70a07288fadf02ca0a17dea505e677683c7d) - **docs:** update namespace table of contents [(#11085)](https://github.com/stdlib-js/stdlib/pull/11085) _(by stdlib-bot)_
 -   [`a4cd958`](https://github.com/stdlib-js/stdlib/commit/a4cd958c7412f5275d5034cbfb6166ffe57462b0) - **bench:** refactor to use string interpolation in `ndarray/base/find` [(#11059)](https://github.com/stdlib-js/stdlib/pull/11059) _(by Partha Das)_
