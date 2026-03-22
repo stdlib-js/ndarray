@@ -794,6 +794,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`d2332f0`](https://github.com/stdlib-js/stdlib/commit/d2332f05feb48661bca9ab0058834ef29f396d23) - **bench:** refactor to use string interpolation in `ndarray/slice` [(#11075)](https://github.com/stdlib-js/stdlib/pull/11075) _(by Partha Das)_
 -   [`3ea6462`](https://github.com/stdlib-js/stdlib/commit/3ea64620014043e0a7404296510739c3a4a3a08d) - **bench:** refactor to use string interpolation in `ndarray/includes` [(#11077)](https://github.com/stdlib-js/stdlib/pull/11077) _(by Partha Das)_
 -   [`826071a`](https://github.com/stdlib-js/stdlib/commit/826071af85401abe59ef8c6eb687224b4e374ce8) - **bench:** fix missing arguments _(by Athan Reines)_
 -   [`b1b1a64`](https://github.com/stdlib-js/stdlib/commit/b1b1a64876a554c2d77c9f4fbc96daa5e0d3f90e) - **docs:** update example _(by Athan Reines)_
