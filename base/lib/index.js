@@ -77,6 +77,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'assign', require( './../../base/assign' ) );
 
 /**
+* @name assignScalar
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assign-scalar}
+*/
+setReadOnly( ns, 'assignScalar', require( './../../base/assign-scalar' ) );
+
+/**
 * @name atleastnd
 * @memberof ns
 * @readonly

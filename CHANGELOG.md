@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`af91b63`](https://github.com/stdlib-js/stdlib/commit/af91b6343883ad338f02e4930bae849b10c36cf8) - add `assignScalar` to namespace
 -   [`9cdcdaa`](https://github.com/stdlib-js/stdlib/commit/9cdcdaa02def03413192fa975055590f4179c766) - add `ndarray/base/assign-scalar` [(#11029)](https://github.com/stdlib-js/stdlib/pull/11029)
 -   [`da4d88c`](https://github.com/stdlib-js/stdlib/commit/da4d88c64f605abb92f06579bbc166cec7cea45d) - update `ndarray` TypeScript declarations [(#11084)](https://github.com/stdlib-js/stdlib/pull/11084)
 -   [`2de635b`](https://github.com/stdlib-js/stdlib/commit/2de635b53a4366fbcc55f5c648871fd3a59f0b99) - add `ndarray2localeString` to namespace
@@ -797,6 +798,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`af91b63`](https://github.com/stdlib-js/stdlib/commit/af91b6343883ad338f02e4930bae849b10c36cf8) - **feat:** add `assignScalar` to namespace _(by Athan Reines)_
 -   [`9cdcdaa`](https://github.com/stdlib-js/stdlib/commit/9cdcdaa02def03413192fa975055590f4179c766) - **feat:** add `ndarray/base/assign-scalar` [(#11029)](https://github.com/stdlib-js/stdlib/pull/11029) _(by Muhammad Haris, Athan Reines)_
 -   [`14c965b`](https://github.com/stdlib-js/stdlib/commit/14c965b29381f98952ea871a0971c2d7d9072f5f) - **bench:** refactor to use string interpolation in `ndarray/vector/ctor` [(#11076)](https://github.com/stdlib-js/stdlib/pull/11076) _(by Partha Das)_
 -   [`c53a29f`](https://github.com/stdlib-js/stdlib/commit/c53a29fc1e8048c4a4454d7a806d7ea1d2e6f326) - **test:** add test case for accessor array buffers _(by Athan Reines)_
