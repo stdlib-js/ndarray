@@ -180,7 +180,7 @@ function serialize2string( ctx, method, locales, options ) {
 			}
 		}
 	}
-	ctor = CTORS[ ctx.dtype ];
+	ctor = CTORS[ dt ];
 	str += replace( ctor, '{{data}}', buffer );
 	str += ', ';
 
