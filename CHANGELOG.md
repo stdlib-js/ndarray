@@ -566,6 +566,7 @@
 
 ### Bug Fixes
 
+-   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - serialize the data type to a string and add comment
 -   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - preserve formatting of original string serialization and rename internal files
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
 -   [`f10a6aa`](https://github.com/stdlib-js/stdlib/commit/f10a6aaf98c37bb630ac75e1a50dd0bd4a0eb417) - ensure unique indices
@@ -795,6 +796,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - **fix:** serialize the data type to a string and add comment _(by Athan Reines)_
 -   [`d02089a`](https://github.com/stdlib-js/stdlib/commit/d02089a716cf72e62eb60d54f909f0b439a05196) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`18f1915`](https://github.com/stdlib-js/stdlib/commit/18f191560f9322727ee126619e9e083187b64821) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`a4a5a00`](https://github.com/stdlib-js/stdlib/commit/a4a5a0071775e446d59fb7eb2553e850f1a84b26) - **bench:** refactor to use string interpolation in `ndarray/base/assign` [(#11019)](https://github.com/stdlib-js/stdlib/pull/11019) _(by Partha Das)_
