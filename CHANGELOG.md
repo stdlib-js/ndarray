@@ -796,6 +796,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`c53a29f`](https://github.com/stdlib-js/stdlib/commit/c53a29fc1e8048c4a4454d7a806d7ea1d2e6f326) - **test:** add test case for accessor array buffers _(by Athan Reines)_
 -   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - **fix:** serialize the data type to a string and add comment _(by Athan Reines)_
 -   [`d02089a`](https://github.com/stdlib-js/stdlib/commit/d02089a716cf72e62eb60d54f909f0b439a05196) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`18f1915`](https://github.com/stdlib-js/stdlib/commit/18f191560f9322727ee126619e9e083187b64821) - **chore:** minor clean-up _(by Philipp Burckhardt)_
