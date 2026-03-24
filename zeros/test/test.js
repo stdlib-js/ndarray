@@ -137,7 +137,7 @@ tape( 'the function throws an error if provided an options argument which is not
 	}
 });
 
-tape( 'the function throws an error if provided a `dtype` option which is not a recognized data type', function test( t ) {
+tape( 'the function throws an error if provided a `dtype` option which is not a recognized/supported data type', function test( t ) {
 	var values;
 	var i;
 

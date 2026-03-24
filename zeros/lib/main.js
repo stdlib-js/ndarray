@@ -20,22 +20,28 @@
 
 // MODULES //
 
-var isNumber = require( '@stdlib/assert/is-number' ).isPrimitive;
+var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
 var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var isArrayLike = require( '@stdlib/assert/is-array-like' );
+var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
+var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
+var contains = require( '@stdlib/array/base/assert/contains' ).factory;
 var shape2strides = require( './../../base/shape2strides' );
 var buffer = require( './../../base/buffer' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
 var defaults = require( './../../defaults' );
+var dtypes = require( './../../dtypes' );
+var join = require( '@stdlib/array/base/join' );
 var format = require( '@stdlib/string/format' );
 
 
 // VARIABLES //
 
-var DTYPE = defaults.get( 'dtypes.default' );
-var ORDER = defaults.get( 'order' );
+var DEFAULT_DTYPE = defaults.get( 'dtypes.default' );
+var DEFAULT_ORDER = defaults.get( 'order' );
+var DTYPES = dtypes( 'numeric_and_generic' );
+var isDataType = contains( DTYPES );
 
 
 // MAIN //
@@ -48,11 +54,11 @@ var ORDER = defaults.get( 'order' );
 * @param {*} [options.dtype='float64'] - data type
 * @param {string} [options.order='row-major'] - array order
 * @param {string} [options.mode="throw"] - specifies how to handle indices which exceed array dimensions
-* @param {StringArray} [options.submode=["throw"]] - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+* @param {ArrayLikeObject<string>} [options.submode=["throw"]] - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
 * @param {boolean} [options.readonly=false] - boolean indicating whether an array should be read-only
 * @throws {TypeError} first argument must be either a nonnegative integer or an array of nonnegative integers
 * @throws {TypeError} options argument must be an object
-* @throws {TypeError} `dtype` option must be a recognized data type
+* @throws {TypeError} `dtype` option must be a recognized/supported data type
 * @throws {TypeError} `order` option must be a recognized array order
 * @throws {TypeError} must provide valid options
 * @returns {ndarray} ndarray
@@ -78,7 +84,6 @@ function zeros( shape ) {
 	var order;
 	var ndims;
 	var opts;
-	var buf;
 	var len;
 	var st;
 	var sh;
@@ -91,13 +96,16 @@ function zeros( shape ) {
 		}
 		if ( hasOwnProp( options, 'dtype' ) ) {
 			dtype = options.dtype;
+			if ( !isDataType( dtype ) ) {
+				throw new TypeError( format( 'invalid option. `%s` option must be one of the following: "%s". Option: `%s`.', 'dtype', join( DTYPES, '", "' ), dtype ) );
+			}
 		} else {
-			dtype = DTYPE;
+			dtype = DEFAULT_DTYPE;
 		}
 		if ( hasOwnProp( options, 'order' ) ) {
 			order = options.order;
 		} else {
-			order = ORDER;
+			order = DEFAULT_ORDER;
 		}
 		if ( hasOwnProp( options, 'mode' ) ) {
 			opts.mode = options.mode;
@@ -109,12 +117,12 @@ function zeros( shape ) {
 			opts.readonly = options.readonly;
 		}
 	} else {
-		dtype = DTYPE;
-		order = ORDER;
+		dtype = DEFAULT_DTYPE;
+		order = DEFAULT_ORDER;
 	}
-	if ( isNumber( shape ) ) {
+	if ( isNonNegativeInteger( shape ) ) {
 		sh = [ shape ];
-	} else if ( isArrayLike( shape ) ) {
+	} else if ( isNonNegativeIntegerArray( shape ) || isEmptyCollection( shape ) ) { // eslint-disable-line max-len
 		sh = shape;
 	} else {
 		throw new TypeError( format( 'invalid argument. First argument must be either a nonnegative integer or an array of nonnegative integers. Value: `%s`.', shape ) );
@@ -122,21 +130,13 @@ function zeros( shape ) {
 	ndims = sh.length;
 	if ( ndims > 0 ) {
 		len = numel( sh );
-		if ( len !== len || len < 0 ) {
-			// We should only get here if we've been provided an invalid shape (e.g., an array containing negative integers, etc)...
-			throw new TypeError( format( 'invalid argument. First argument must be either a nonnegative integer or an array of nonnegative integers. Value: `%s`.', shape ) );
-		}
 		st = shape2strides( sh, order );
 	} else {
 		// For 0-dimensional arrays, the buffer should contain a single element...
 		len = 1;
 		st = [ 0 ];
 	}
-	buf = buffer( dtype, len );
-	if ( buf === null ) {
-		throw new TypeError( format( 'invalid option. `%s` option must be a recognized data type. Option: `%s`.', 'dtype', dtype ) );
-	}
-	return new ndarray( dtype, buf, sh, st, 0, order, opts );
+	return new ndarray( dtype, buffer( dtype, len ), sh, st, 0, order, opts );
 }
 
 

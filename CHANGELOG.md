@@ -573,6 +573,7 @@
 
 ### Bug Fixes
 
+-   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - ensure support for \"generic\" ndarrays
 -   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - serialize the data type to a string and add comment
 -   [`ebd5886`](https://github.com/stdlib-js/stdlib/commit/ebd5886f97aef9dad8daf7df0d850882a767ca6b) - preserve formatting of original string serialization and rename internal files
 -   [`eab49ad`](https://github.com/stdlib-js/stdlib/commit/eab49ad435f6080ec28a8fbb75de4d9520bdd7e4) - ensure support for elements which are null or undefined
@@ -803,6 +804,16 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`7d9c0c0`](https://github.com/stdlib-js/stdlib/commit/7d9c0c0427c6e9cfc3e54df9d3156faaa88cbcc4) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
+-   [`77ef712`](https://github.com/stdlib-js/stdlib/commit/77ef7127db1f600331d726a36030958f5f4a5283) - **refactor:** remove unnecessary check _(by Athan Reines)_
+-   [`6bc548b`](https://github.com/stdlib-js/stdlib/commit/6bc548bc2b0550f3c3721a1ab3e7ff2c75c392f6) - **refactor:** more strictly impose dtype and shape constraints _(by Athan Reines)_
+-   [`4413f82`](https://github.com/stdlib-js/stdlib/commit/4413f826f8d2a9ba684498d4c723cfd371016a2e) - **docs:** update type _(by Athan Reines)_
+-   [`67a3171`](https://github.com/stdlib-js/stdlib/commit/67a3171ca94556942939b0c3fcecb2494e28d920) - **style:** disable lint rule _(by Athan Reines)_
+-   [`755d111`](https://github.com/stdlib-js/stdlib/commit/755d111baf2fff9689e94540174e3c4189622806) - **refactor:** more strictly enforce shape constraints _(by Athan Reines)_
+-   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - **fix:** ensure support for \"generic\" ndarrays _(by Athan Reines)_
+-   [`6294d07`](https://github.com/stdlib-js/stdlib/commit/6294d0745d99cf7a3d70772bd0bd625ce5abd7ca) - **refactor:** enforce dtype constraints _(by Athan Reines)_
+-   [`802937f`](https://github.com/stdlib-js/stdlib/commit/802937ffc4468994b1456d9685766894c3fc67e4) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
+-   [`b1dea8f`](https://github.com/stdlib-js/stdlib/commit/b1dea8f62ef00472658f628c3c2927e46ae4ad82) - **refactor:** enforce dtype constraints _(by Athan Reines)_
 -   [`01c5fe8`](https://github.com/stdlib-js/stdlib/commit/01c5fe8bb5d36b645584402df9f7ec6298de10b6) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
 -   [`2f38ba6`](https://github.com/stdlib-js/stdlib/commit/2f38ba6131bab259ecee5ad42d6793bde0c213b3) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`91e532c`](https://github.com/stdlib-js/stdlib/commit/91e532cf02003c24e6ee03c0d60d24b32169df4e) - **feat:** add `ones` to namespace _(by Athan Reines)_
