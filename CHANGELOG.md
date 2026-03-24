@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-03-24)
 
 <section class="features">
 
 ### Features
 
+-   [`204c9d9`](https://github.com/stdlib-js/stdlib/commit/204c9d9ac9befd22cce40a0f9b6db373dd6d62df) - add `ndarray/base/full` [(#11017)](https://github.com/stdlib-js/stdlib/pull/11017)
 -   [`af91b63`](https://github.com/stdlib-js/stdlib/commit/af91b6343883ad338f02e4930bae849b10c36cf8) - add `assignScalar` to namespace
 -   [`9cdcdaa`](https://github.com/stdlib-js/stdlib/commit/9cdcdaa02def03413192fa975055590f4179c766) - add `ndarray/base/assign-scalar` [(#11029)](https://github.com/stdlib-js/stdlib/pull/11029)
 -   [`da4d88c`](https://github.com/stdlib-js/stdlib/commit/da4d88c64f605abb92f06579bbc166cec7cea45d) - update `ndarray` TypeScript declarations [(#11084)](https://github.com/stdlib-js/stdlib/pull/11084)
@@ -798,6 +799,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`204c9d9`](https://github.com/stdlib-js/stdlib/commit/204c9d9ac9befd22cce40a0f9b6db373dd6d62df) - **feat:** add `ndarray/base/full` [(#11017)](https://github.com/stdlib-js/stdlib/pull/11017) _(by Loay Ahmed, Athan Reines, stdlib-bot)_
 -   [`647e0b1`](https://github.com/stdlib-js/stdlib/commit/647e0b1fd6fbf9e5b1c0d704c6a0621f23f71acd) - **refactor:** use scalar assign utility _(by Athan Reines)_
 -   [`af91b63`](https://github.com/stdlib-js/stdlib/commit/af91b6343883ad338f02e4930bae849b10c36cf8) - **feat:** add `assignScalar` to namespace _(by Athan Reines)_
 -   [`9cdcdaa`](https://github.com/stdlib-js/stdlib/commit/9cdcdaa02def03413192fa975055590f4179c766) - **feat:** add `ndarray/base/assign-scalar` [(#11029)](https://github.com/stdlib-js/stdlib/pull/11029) _(by Muhammad Haris, Athan Reines)_
@@ -2281,7 +2283,7 @@ A total of 44 issues were closed in this release:
 
 ### Contributors
 
-A total of 39 people contributed to this release. Thank you to the following contributors:
+A total of 40 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2299,6 +2301,7 @@ A total of 39 people contributed to this release. Thank you to the following con
 -   Harshit Verma
 -   Karan Vasudevamurthy
 -   Kate Suraev
+-   Loay Ahmed
 -   Lokesh Ranjan
 -   MANI
 -   Muhammad Haris
