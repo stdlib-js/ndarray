@@ -49,7 +49,7 @@ var getShape = require( '@stdlib/ndarray/shape' );
 var getDType = require( '@stdlib/ndarray/dtype' );
 
 var arr = zeros( 'float64', [ 2, 2 ], 'row-major' );
-// returns <ndarray>
+// returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
 var sh = getShape( arr );
 // returns [ 2, 2 ]

@@ -801,6 +801,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`b2562b0`](https://github.com/stdlib-js/stdlib/commit/b2562b0ba49ec1c6d05809c2e2bbb725a9fb38a5) - **docs:** update example _(by Athan Reines)_
 -   [`f44463a`](https://github.com/stdlib-js/stdlib/commit/f44463a257a9c70c3b0baa84168bcb1f10cd438e) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
 -   [`9dbe58b`](https://github.com/stdlib-js/stdlib/commit/9dbe58b69db750318766dc0b96813199560135f1) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
 -   [`b0b7d75`](https://github.com/stdlib-js/stdlib/commit/b0b7d753dfa54d45970e34fde995e77cc3e75df9) - **docs:** fix copy _(by Athan Reines)_
