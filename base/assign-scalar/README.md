@@ -91,7 +91,7 @@ Each provided [ndarray][@stdlib/ndarray/base/ctor] should be an object with the 
 -   **shape**: dimensions.
 -   **strides**: stride lengths.
 -   **offset**: index offset.
--   **order**: specifies whether an ndarray is row-major (C-style) or column major (Fortran-style).
+-   **order**: specifies whether an ndarray is row-major (C-style) or column-major (Fortran-style).
 
 </section>
 

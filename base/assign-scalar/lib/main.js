@@ -235,7 +235,7 @@ function complex2real( x ) {
 *     -   **shape**: dimensions.
 *     -   **strides**: stride lengths.
 *     -   **offset**: index offset.
-*     -   **order**: specifies whether an ndarray is row-major (C-style) or column major (Fortran-style).
+*     -   **order**: specifies whether an ndarray is row-major (C-style) or column-major (Fortran-style).
 *
 * @param {ArrayLikeObject<Object>} arrays - array-like object containing a zero-dimensional ndarray containing the scalar value and one output ndarray
 * @returns {void}

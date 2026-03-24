@@ -107,7 +107,7 @@ tape( 'the function throws an error if provided an unrecognized data type', func
 	];
 
 	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+		t.throws( badValue( values[ i ] ), TypeError, 'throws an error when provided ' + values[ i ] );
 	}
 	t.end();
 
