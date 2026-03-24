@@ -804,6 +804,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`ae72f8e`](https://github.com/stdlib-js/stdlib/commit/ae72f8e7910cbfd1a0204bedd7f46bff23c74aa0) - **test:** use corrected expected type for `complex64` tests _(by Athan Reines)_
 -   [`2a1517f`](https://github.com/stdlib-js/stdlib/commit/2a1517fe8ee92381e9db01cab5f99241c542a6fc) - **test:** use correct expected type in complex64 tests for `ndarray/base/ones` _(by Philipp Burckhardt)_
 -   [`7d9c0c0`](https://github.com/stdlib-js/stdlib/commit/7d9c0c0427c6e9cfc3e54df9d3156faaa88cbcc4) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
 -   [`77ef712`](https://github.com/stdlib-js/stdlib/commit/77ef7127db1f600331d726a36030958f5f4a5283) - **refactor:** remove unnecessary check _(by Athan Reines)_
