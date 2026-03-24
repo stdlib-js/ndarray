@@ -959,6 +959,15 @@ setReadOnly( ns, 'numelDimension', require( './../../base/numel-dimension' ) );
 setReadOnly( ns, 'offset', require( './../../base/offset' ) );
 
 /**
+* @name ones
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ones}
+*/
+setReadOnly( ns, 'ones', require( './../../base/ones' ) );
+
+/**
 * @name order
 * @memberof ns
 * @readonly
