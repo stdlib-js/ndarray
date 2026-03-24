@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b6cd4ce`](https://github.com/stdlib-js/stdlib/commit/b6cd4ce12c9a6a123963dca5e8b8bd9647f2ac47) - update `ndarray/base` TypeScript declarations [(#11113)](https://github.com/stdlib-js/stdlib/pull/11113)
 -   [`0a0d966`](https://github.com/stdlib-js/stdlib/commit/0a0d966d4d29db076510cabadc79aa66a037ec28) - add `full` to namespace
 -   [`204c9d9`](https://github.com/stdlib-js/stdlib/commit/204c9d9ac9befd22cce40a0f9b6db373dd6d62df) - add `ndarray/base/full` [(#11017)](https://github.com/stdlib-js/stdlib/pull/11017)
 -   [`af91b63`](https://github.com/stdlib-js/stdlib/commit/af91b6343883ad338f02e4930bae849b10c36cf8) - add `assignScalar` to namespace
@@ -800,6 +801,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`b6cd4ce`](https://github.com/stdlib-js/stdlib/commit/b6cd4ce12c9a6a123963dca5e8b8bd9647f2ac47) - **feat:** update `ndarray/base` TypeScript declarations [(#11113)](https://github.com/stdlib-js/stdlib/pull/11113) _(by stdlib-bot)_
 -   [`0a0d966`](https://github.com/stdlib-js/stdlib/commit/0a0d966d4d29db076510cabadc79aa66a037ec28) - **feat:** add `full` to namespace _(by Athan Reines)_
 -   [`204c9d9`](https://github.com/stdlib-js/stdlib/commit/204c9d9ac9befd22cce40a0f9b6db373dd6d62df) - **feat:** add `ndarray/base/full` [(#11017)](https://github.com/stdlib-js/stdlib/pull/11017) _(by Loay Ahmed, Athan Reines, stdlib-bot)_
 -   [`647e0b1`](https://github.com/stdlib-js/stdlib/commit/647e0b1fd6fbf9e5b1c0d704c6a0621f23f71acd) - **refactor:** use scalar assign utility _(by Athan Reines)_

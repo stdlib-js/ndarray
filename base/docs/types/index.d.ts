@@ -24,6 +24,7 @@ import any = require( './../../../base/any' );
 import anyBy = require( './../../../base/any-by' );
 import assert = require( './../../../base/assert' );
 import assign = require( './../../../base/assign' );
+import assignScalar = require( './../../../base/assign-scalar' );
 import atleastnd = require( './../../../base/atleastnd' );
 import binary = require( './../../../base/binary' );
 import binaryInputCastingDataType = require( './../../../base/binary-input-casting-dtype' );
@@ -87,6 +88,7 @@ import forEach = require( './../../../base/for-each' );
 import array2ndarray = require( './../../../base/from-array' );
 import scalar2ndarray = require( './../../../base/from-scalar' );
 import scalar2ndarrayLike = require( './../../../base/from-scalar-like' );
+import full = require( './../../../base/full' );
 import includes = require( './../../../base/includes' );
 import ind = require( './../../../base/ind' );
 import ind2sub = require( './../../../base/ind2sub' );
@@ -304,6 +306,44 @@ interface Namespace {
 	* // => <Float64Array>[ 2.0, 3.0, 6.0, 7.0, 10.0, 11.0 ]
 	*/
 	assign: typeof assign;
+
+	/**
+	* Assigns a scalar value to every element of an output ndarray.
+	*
+	* @param arrays - array-like object containing a zero-dimensional input ndarray containing the scalar value and one output ndarray
+	*
+	* @example
+	* var Float64Array = require( '@stdlib/array/float64' );
+	* var scalar2ndarray = require( './../../../from-scalar' );
+	* var ndarray = require( './../../../ctor' );
+	*
+	* // Create a zero-dimensional ndarray containing the scalar value:
+	* var x = scalar2ndarray( 5.0, {
+	*     'dtype': 'float64'
+	* });
+	*
+	* // Create a data buffer:
+	* var ybuf = new Float64Array( 4 );
+	*
+	* // Define the shape of the output array:
+	* var shape = [ 2, 2 ];
+	*
+	* // Define the array strides:
+	* var sy = [ 2, 1 ];
+	*
+	* // Define the index offset:
+	* var oy = 0;
+	*
+	* // Create the output ndarray:
+	* var y = ndarray( 'float64', ybuf, shape, sy, oy, 'row-major' );
+	*
+	* // Assign the scalar value:
+	* ns.assignScalar( [ x, y ] );
+	*
+	* console.log( y.data );
+	* // => <Float64Array>[ 5.0, 5.0, 5.0, 5.0 ]
+	*/
+	assignScalar: typeof assignScalar;
 
 	/**
 	* Converts a list of values (scalars and/or ndarrays) to ndarrays having at least a specified number of dimensions.
@@ -2040,6 +2080,30 @@ interface Namespace {
 	* // returns 1.0
 	*/
 	scalar2ndarrayLike: typeof scalar2ndarrayLike;
+
+	/**
+	* Returns an ndarray filled with a specified value and having a specified shape and data type.
+	*
+	* @param value - fill value
+	* @param dtype - underlying data type
+	* @param shape - array shape
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns output array
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	* var getDType = require( './../../../dtype' );
+	*
+	* var arr = ns.full( 10.0, 'float32', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ 10.0, 10.0 ], [ 10.0, 10.0 ] ]
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'float32'
+	*/
+	full: typeof full;
 
 	/**
 	* Tests whether an ndarray contains a specified value.
