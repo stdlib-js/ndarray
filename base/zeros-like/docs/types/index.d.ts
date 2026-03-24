@@ -29,24 +29,26 @@ import { typedndarray, float64ndarray, float32ndarray, int32ndarray, int16ndarra
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float64'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'float64'
 */
 declare function zerosLike( x: float64ndarray ): float64ndarray;
@@ -58,24 +60,26 @@ declare function zerosLike( x: float64ndarray ): float64ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'float32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'float32'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'float32'
 */
 declare function zerosLike( x: float32ndarray ): float32ndarray;
@@ -87,24 +91,26 @@ declare function zerosLike( x: float32ndarray ): float32ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'complex128', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'complex128'
 *
 * var y = zerosLike( x );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'complex128'
 */
 declare function zerosLike( x: complex128ndarray ): complex128ndarray;
@@ -116,24 +122,26 @@ declare function zerosLike( x: complex128ndarray ): complex128ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'complex64', [ 2, 2 ], 'row-major' );
 * // returns <ndarray>
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'complex64'
 *
 * var y = zerosLike( x );
 * // returns <ndarray>
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'complex64'
 */
 declare function zerosLike( x: complex64ndarray ): complex64ndarray;
@@ -145,24 +153,26 @@ declare function zerosLike( x: complex64ndarray ): complex64ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int32'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int32'
 */
 declare function zerosLike( x: int32ndarray ): int32ndarray;
@@ -174,24 +184,26 @@ declare function zerosLike( x: int32ndarray ): int32ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int16', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int16'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int16'
 */
 declare function zerosLike( x: int16ndarray ): int16ndarray;
@@ -203,24 +215,26 @@ declare function zerosLike( x: int16ndarray ): int16ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'int8', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'int8'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'int8'
 */
 declare function zerosLike( x: int8ndarray ): int8ndarray;
@@ -232,24 +246,26 @@ declare function zerosLike( x: int8ndarray ): int8ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint32', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint32'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint32'
 */
 declare function zerosLike( x: uint32ndarray ): uint32ndarray;
@@ -261,24 +277,26 @@ declare function zerosLike( x: uint32ndarray ): uint32ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint16', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint16'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint16'
 */
 declare function zerosLike( x: uint16ndarray ): uint16ndarray;
@@ -290,24 +308,26 @@ declare function zerosLike( x: uint16ndarray ): uint16ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint8', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint8'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint8'
 */
 declare function zerosLike( x: uint8ndarray ): uint8ndarray;
@@ -319,24 +339,26 @@ declare function zerosLike( x: uint8ndarray ): uint8ndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'uint8c', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'uint8c'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'uint8c'
 */
 declare function zerosLike( x: uint8cndarray ): uint8cndarray;
@@ -348,27 +370,60 @@ declare function zerosLike( x: uint8cndarray ): uint8cndarray;
 * @returns zero-filled array
 *
 * @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 * var zeros = require( '@stdlib/ndarray/base/zeros' );
 *
 * var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* var sh = x.shape;
+* var sh = getShape( x );
 * // returns [ 2, 2 ]
 *
-* var dt = x.dtype;
+* var dt = String( getDType( x ) );
 * // returns 'generic'
 *
 * var y = zerosLike( x );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 *
-* sh = y.shape;
+* sh = getShape( y );
 * // returns [ 2, 2 ]
 *
-* dt = y.dtype;
+* dt = String( getDType( y ) );
 * // returns 'generic'
 */
-declare function zerosLike( x: typedndarray<number> | genericndarray<any> ): typedndarray<number>;
+declare function zerosLike( x: genericndarray<any> ): genericndarray<number>;
+
+/**
+* Creates a zero-filled array having the same shape and data type as a provided input ndarray.
+*
+* @param x - input array
+* @returns zero-filled array
+*
+* @example
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
+* var zeros = require( '@stdlib/ndarray/base/zeros' );
+*
+* var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* var sh = getShape( x );
+* // returns [ 2, 2 ]
+*
+* var dt = String( getDType( x ) );
+* // returns 'generic'
+*
+* var y = zerosLike( x );
+* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+*
+* sh = getShape( y );
+* // returns [ 2, 2 ]
+*
+* dt = String( getDType( y ) );
+* // returns 'generic'
+*/
+declare function zerosLike( x: typedndarray<number> ): typedndarray<number>;
 
 
 // EXPORTS //
