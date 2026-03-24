@@ -25,7 +25,6 @@ var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayLike = require( '@stdlib/assert/is-array-like' );
 var shape2strides = require( './../../base/shape2strides' );
-var strides2offset = require( './../../base/strides2offset' );
 var buffer = require( './../../base/buffer' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
@@ -46,7 +45,7 @@ var ORDER = defaults.get( 'order' );
 *
 * @param {(NonNegativeIntegerArray|NonNegativeInteger)} shape - array shape
 * @param {Options} [options] - options
-* @param {string} [options.dtype='float64'] - data type
+* @param {*} [options.dtype='float64'] - data type
 * @param {string} [options.order='row-major'] - array order
 * @param {string} [options.mode="throw"] - specifies how to handle indices which exceed array dimensions
 * @param {StringArray} [options.submode=["throw"]] - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
@@ -59,14 +58,19 @@ var ORDER = defaults.get( 'order' );
 * @returns {ndarray} ndarray
 *
 * @example
-* var arr = zeros( [ 2, 2 ] );
-* // returns <ndarray>
+* var getShape = require( '@stdlib/ndarray/shape' );
+* var getDType = require( '@stdlib/ndarray/dtype' );
 *
-* var sh = arr.shape;
+* var arr = zeros( [ 2, 2 ], {
+*     'dtype': 'float32'
+* });
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+*
+* var sh = getShape( arr );
 * // returns [ 2, 2 ]
 *
-* var dt = arr.dtype;
-* // returns 'float64'
+* var dt = String( getDType( arr ) );
+* // returns 'float32'
 */
 function zeros( shape ) {
 	var options;
@@ -132,7 +136,7 @@ function zeros( shape ) {
 	if ( buf === null ) {
 		throw new TypeError( format( 'invalid option. `%s` option must be a recognized data type. Option: `%s`.', 'dtype', dtype ) );
 	}
-	return new ndarray( dtype, buf, sh, st, strides2offset( sh, st ), order, opts ); // eslint-disable-line max-len
+	return new ndarray( dtype, buf, sh, st, 0, order, opts );
 }
 
 

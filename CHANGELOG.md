@@ -803,6 +803,8 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`01c5fe8`](https://github.com/stdlib-js/stdlib/commit/01c5fe8bb5d36b645584402df9f7ec6298de10b6) - **docs:** update examples and docs to accommodate dtype instances _(by Athan Reines)_
+-   [`2f38ba6`](https://github.com/stdlib-js/stdlib/commit/2f38ba6131bab259ecee5ad42d6793bde0c213b3) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`91e532c`](https://github.com/stdlib-js/stdlib/commit/91e532cf02003c24e6ee03c0d60d24b32169df4e) - **feat:** add `ones` to namespace _(by Athan Reines)_
 -   [`78bcb59`](https://github.com/stdlib-js/stdlib/commit/78bcb5902c6120dfcf9e8472a6ce8c3d4f61968f) - **feat:** add `ndarray/base/ones` _(by Athan Reines)_
 -   [`5173151`](https://github.com/stdlib-js/stdlib/commit/5173151500a9e3781c617de1037ba92f1c860d79) - **style:** remove empty line _(by Athan Reines)_
