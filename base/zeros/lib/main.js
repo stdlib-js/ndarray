@@ -70,7 +70,6 @@ function zeros( dtype, shape, order ) {
 	if ( buf === null ) {
 		throw new TypeError( format( 'invalid argument. First argument must be a recognized data type. Value: `%s`.', dtype ) );
 	}
-
 	return new ndarray( dtype, buf, shape, st, 0, order );
 }
 
