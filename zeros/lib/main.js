@@ -25,6 +25,7 @@ var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayLike = require( '@stdlib/assert/is-array-like' );
 var shape2strides = require( './../../base/shape2strides' );
+var strides2offset = require( './../../base/strides2offset' );
 var buffer = require( './../../base/buffer' );
 var numel = require( './../../base/numel' );
 var ndarray = require( './../../ctor' );
@@ -131,7 +132,7 @@ function zeros( shape ) {
 	if ( buf === null ) {
 		throw new TypeError( format( 'invalid option. `%s` option must be a recognized data type. Option: `%s`.', 'dtype', dtype ) );
 	}
-	return new ndarray( dtype, buf, sh, st, 0, order, opts );
+	return new ndarray( dtype, buf, sh, st, strides2offset( sh, st ), order, opts ); // eslint-disable-line max-len
 }
 
 
