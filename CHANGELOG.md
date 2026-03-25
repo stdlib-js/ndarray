@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - add `ones` to namespace
+-   [`ded14cf`](https://github.com/stdlib-js/stdlib/commit/ded14cff1642c79ac122cc05b65e911cc24ec2ac) - add `ndarray/ones`
 -   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - add `onesLike` to namespace
 -   [`d200536`](https://github.com/stdlib-js/stdlib/commit/d200536a79672d3a31022f894a63acdf08b79159) - add `ndarray/base/ones-like`
 -   [`baef022`](https://github.com/stdlib-js/stdlib/commit/baef0223f86db141fa6a1dabc15ec6c5fa2f0f59) - update `ndarray/base` TypeScript declarations [(#11131)](https://github.com/stdlib-js/stdlib/pull/11131)
@@ -807,6 +809,8 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - **feat:** add `ones` to namespace _(by Athan Reines)_
+-   [`ded14cf`](https://github.com/stdlib-js/stdlib/commit/ded14cff1642c79ac122cc05b65e911cc24ec2ac) - **feat:** add `ndarray/ones` _(by Athan Reines)_
 -   [`bbd8f0e`](https://github.com/stdlib-js/stdlib/commit/bbd8f0eec8d6d52201d7706a349fdb9cac737d9c) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
 -   [`8d3124d`](https://github.com/stdlib-js/stdlib/commit/8d3124d525abb511f0257649bfc4e0bf6c0ce87b) - **docs:** add comment _(by Athan Reines)_
 -   [`372443f`](https://github.com/stdlib-js/stdlib/commit/372443fe38ff5fac2c1a5214593e4aecbf7e3096) - **refactor:** more strictly enforce dtype and shape constraints and handle dtype instances _(by Athan Reines)_
