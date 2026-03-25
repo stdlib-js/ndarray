@@ -807,6 +807,9 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`bbd8f0e`](https://github.com/stdlib-js/stdlib/commit/bbd8f0eec8d6d52201d7706a349fdb9cac737d9c) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
+-   [`8d3124d`](https://github.com/stdlib-js/stdlib/commit/8d3124d525abb511f0257649bfc4e0bf6c0ce87b) - **docs:** add comment _(by Athan Reines)_
+-   [`372443f`](https://github.com/stdlib-js/stdlib/commit/372443fe38ff5fac2c1a5214593e4aecbf7e3096) - **refactor:** more strictly enforce dtype and shape constraints and handle dtype instances _(by Athan Reines)_
 -   [`ff1c6e2`](https://github.com/stdlib-js/stdlib/commit/ff1c6e2ff7d740b54dab525047eb5d7786854276) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
 -   [`8112cea`](https://github.com/stdlib-js/stdlib/commit/8112cea1ed134b3070555a08d76ffb7b334f58ef) - **refactor:** remove overloads and use generic _(by Athan Reines)_
 -   [`8b2b591`](https://github.com/stdlib-js/stdlib/commit/8b2b591c7511b405d069d9c4361ea3cfd796c4c6) - **refactor:** remove unnecessary offset calculation _(by Athan Reines)_

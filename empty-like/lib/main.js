@@ -26,6 +26,7 @@ var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' ).primitives;
 var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var resolveStr = require( './../../base/dtype-resolve-str' );
 var shape2strides = require( './../../base/shape2strides' );
 var numel = require( './../../base/numel' );
 var getDType = require( './../../dtype' );
@@ -82,6 +83,7 @@ function emptyLike( x ) {
 	var opts;
 	var buf;
 	var len;
+	var dt;
 	var st;
 	var sh;
 
@@ -135,11 +137,14 @@ function emptyLike( x ) {
 		len = 1;
 		st = [ 0 ];
 	}
-	if ( dtype === 'binary' ) {
+	dt = resolveStr( dtype );
+	if ( dt === 'binary' ) {
 		buf = allocUnsafe( len );
 	} else {
-		buf = emptyArray( len, dtype );
+		buf = emptyArray( len, dt );
 	}
+	// FIXME: add support for struct dtypes. Will need to do something similar to `array/empty` in so far as allocating an uninitialized array buffer, performing byte alignment, and creating a StructArray view atop the buffer.
+
 	return new ndarray( dtype, buf, sh, st, 0, order, opts );
 }
 

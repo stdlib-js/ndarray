@@ -21,7 +21,6 @@
 // MODULES //
 
 var shape2strides = require( './../../../base/shape2strides' );
-var strides2offset = require( './../../../base/strides2offset' );
 var resolveStr = require( './../../../base/dtype-resolve-str' );
 var numel = require( './../../../base/numel' );
 var getDType = require( './../../../base/dtype' );
@@ -89,7 +88,7 @@ function emptyLike( x ) {
 	}
 	// FIXME: add support for struct dtypes. Will need to do something similar to `array/empty` in so far as allocating an uninitialized array buffer, performing byte alignment, and creating a StructArray view atop the buffer.
 
-	return new x.constructor( dt, buf, sh, st, strides2offset( sh, st ), ord );
+	return new x.constructor( dt, buf, sh, st, 0, ord );
 }
 
 
