@@ -120,6 +120,7 @@ import nullaryBlockSize = require( './../../../base/nullary-tiling-block-size' )
 import numel = require( './../../../base/numel' );
 import numelDimension = require( './../../../base/numel-dimension' );
 import offset = require( './../../../base/offset' );
+import ones = require( './../../../base/ones' );
 import order = require( './../../../base/order' );
 import outputDataType = require( './../../../base/output-dtype' );
 import outputPolicyEnum2Str = require( './../../../base/output-policy-enum2str' );
@@ -3160,6 +3161,29 @@ interface Namespace {
 	offset: typeof offset;
 
 	/**
+	* Creates a ones-filled array having a specified shape and data type.
+	*
+	* @param dtype - underlying data type
+	* @param shape - array shape
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns ones-filled array
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	* var getDType = require( './../../../dtype' );
+	*
+	* var arr = ns.ones( 'float64', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'float64'
+	*/
+	ones: typeof ones;
+
+	/**
 	* Returns the layout order of a provided ndarray.
 	*
 	* ## Notes
@@ -5386,13 +5410,16 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var arr = ns.zeros( 'float64', [ 2, 2 ], 'row-major' );
-	* // returns <ndarray>
+	* var getShape = require( './../../../shape' );
+	* var getDType = require( './../../../dtype' );
 	*
-	* var sh = arr.shape;
+	* var arr = ns.zeros( 'float64', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	*
+	* var sh = getShape( arr );
 	* // returns [ 2, 2 ]
 	*
-	* var dt = arr.dtype;
+	* var dt = String( getDType( arr ) );
 	* // returns 'float64'
 	*/
 	zeros: typeof zeros;
@@ -5404,24 +5431,26 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
+	* var getShape = require( './../../../shape' );
+	* var getDType = require( './../../../dtype' );
 	* var zeros = require( './../../../base/zeros' );
 	*
 	* var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 	*
-	* var sh = x.shape;
+	* var sh = getShape( x );
 	* // returns [ 2, 2 ]
 	*
-	* var dt = x.dtype;
+	* var dt = String( getDType( x ) );
 	* // returns 'generic'
 	*
 	* var y = ns.zerosLike( x );
-	* // returns <ndarray>
+	* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
 	*
-	* sh = y.shape;
+	* sh = getShape( y );
 	* // returns [ 2, 2 ]
 	*
-	* dt = y.dtype;
+	* dt = String( getDType( y ) );
 	* // returns 'generic'
 	*/
 	zerosLike: typeof zerosLike;
