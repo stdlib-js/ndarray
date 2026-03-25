@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - add `onesLike` to namespace
+-   [`d200536`](https://github.com/stdlib-js/stdlib/commit/d200536a79672d3a31022f894a63acdf08b79159) - add `ndarray/base/ones-like`
 -   [`baef022`](https://github.com/stdlib-js/stdlib/commit/baef0223f86db141fa6a1dabc15ec6c5fa2f0f59) - update `ndarray/base` TypeScript declarations [(#11131)](https://github.com/stdlib-js/stdlib/pull/11131)
 -   [`91e532c`](https://github.com/stdlib-js/stdlib/commit/91e532cf02003c24e6ee03c0d60d24b32169df4e) - add `ones` to namespace
 -   [`78bcb59`](https://github.com/stdlib-js/stdlib/commit/78bcb5902c6120dfcf9e8472a6ce8c3d4f61968f) - add `ndarray/base/ones`
@@ -805,6 +807,9 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - **feat:** add `onesLike` to namespace _(by Athan Reines)_
+-   [`d200536`](https://github.com/stdlib-js/stdlib/commit/d200536a79672d3a31022f894a63acdf08b79159) - **feat:** add `ndarray/base/ones-like` _(by Athan Reines)_
+-   [`60e78d4`](https://github.com/stdlib-js/stdlib/commit/60e78d484b31ca96b47f36c260db2620bd40f555) - **docs:** update `ndarray` TypeScript declarations [(#11132)](https://github.com/stdlib-js/stdlib/pull/11132) _(by stdlib-bot)_
 -   [`baef022`](https://github.com/stdlib-js/stdlib/commit/baef0223f86db141fa6a1dabc15ec6c5fa2f0f59) - **feat:** update `ndarray/base` TypeScript declarations [(#11131)](https://github.com/stdlib-js/stdlib/pull/11131) _(by stdlib-bot)_
 -   [`ae72f8e`](https://github.com/stdlib-js/stdlib/commit/ae72f8e7910cbfd1a0204bedd7f46bff23c74aa0) - **test:** use corrected expected type for `complex64` tests _(by Athan Reines)_
 -   [`2a1517f`](https://github.com/stdlib-js/stdlib/commit/2a1517fe8ee92381e9db01cab5f99241c542a6fc) - **test:** use correct expected type in complex64 tests for `ndarray/base/ones` _(by Philipp Burckhardt)_

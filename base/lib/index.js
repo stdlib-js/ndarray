@@ -968,6 +968,15 @@ setReadOnly( ns, 'offset', require( './../../base/offset' ) );
 setReadOnly( ns, 'ones', require( './../../base/ones' ) );
 
 /**
+* @name onesLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ones-like}
+*/
+setReadOnly( ns, 'onesLike', require( './../../base/ones-like' ) );
+
+/**
 * @name order
 * @memberof ns
 * @readonly
