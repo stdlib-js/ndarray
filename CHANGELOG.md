@@ -807,6 +807,10 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`ff1c6e2`](https://github.com/stdlib-js/stdlib/commit/ff1c6e2ff7d740b54dab525047eb5d7786854276) - **docs:** update docs and examples to accommodate dtype instances _(by Athan Reines)_
+-   [`8112cea`](https://github.com/stdlib-js/stdlib/commit/8112cea1ed134b3070555a08d76ffb7b334f58ef) - **refactor:** remove overloads and use generic _(by Athan Reines)_
+-   [`8b2b591`](https://github.com/stdlib-js/stdlib/commit/8b2b591c7511b405d069d9c4361ea3cfd796c4c6) - **refactor:** remove unnecessary offset calculation _(by Athan Reines)_
+-   [`15b0d66`](https://github.com/stdlib-js/stdlib/commit/15b0d6624fb1dcbfb63b43291354c1ef6fbbd75b) - **refactor:** remove unnecessary offset calculation _(by Athan Reines)_
 -   [`f759b2b`](https://github.com/stdlib-js/stdlib/commit/f759b2b5ed4db16f35f0544fb65ed38a957f9f7b) - **refactor:** remove overloads and use generic _(by Athan Reines)_
 -   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - **feat:** add `onesLike` to namespace _(by Athan Reines)_
 -   [`d200536`](https://github.com/stdlib-js/stdlib/commit/d200536a79672d3a31022f894a63acdf08b79159) - **feat:** add `ndarray/base/ones-like` _(by Athan Reines)_

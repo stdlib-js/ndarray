@@ -25,7 +25,6 @@ var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayLike = require( '@stdlib/assert/is-array-like' );
 var shape2strides = require( './../../base/shape2strides' );
-var strides2offset = require( './../../base/strides2offset' );
 var emptyArray = require( '@stdlib/array/empty' );
 var allocUnsafe = require( '@stdlib/buffer/alloc-unsafe' );
 var numel = require( './../../base/numel' );
@@ -130,7 +129,7 @@ function empty( shape ) {
 	} else {
 		buf = emptyArray( len, dtype );
 	}
-	return new ndarray( dtype, buf, sh, st, strides2offset( sh, st ), order, opts ); // eslint-disable-line max-len
+	return new ndarray( dtype, buf, sh, st, 0, order, opts );
 }
 
 

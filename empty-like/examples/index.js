@@ -18,9 +18,9 @@
 
 'use strict';
 
-var getData = require( './../../data-buffer' );
 var dtypes = require( './../../dtypes' );
 var empty = require( './../../empty' );
+var ndarray2array = require( './../../to-array' );
 var emptyLike = require( './../lib' );
 
 // Get a list of data types:
@@ -35,5 +35,5 @@ for ( i = 0; i < dt.length; i++ ) {
 		'dtype': dt[ i ]
 	});
 	y = emptyLike( x );
-	console.log( getData( y ) );
+	console.log( ndarray2array( y ) );
 }

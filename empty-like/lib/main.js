@@ -27,7 +27,6 @@ var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-
 var isEmptyCollection = require( '@stdlib/assert/is-empty-collection' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var shape2strides = require( './../../base/shape2strides' );
-var strides2offset = require( './../../base/strides2offset' );
 var numel = require( './../../base/numel' );
 var getDType = require( './../../dtype' );
 var getShape = require( './../../shape' );
@@ -45,7 +44,7 @@ var format = require( '@stdlib/string/format' );
 *
 * @param {ndarray} x - input array
 * @param {Options} [options] - function options
-* @param {string} [options.dtype] - output array data type (overrides the input array's inferred data type)
+* @param {*} [options.dtype] - output array data type (overrides the input array's inferred data type)
 * @param {string} [options.order] - specifies whether the output array should be 'row-major' (C-style) or 'column-major' (Fortran-style) (overrides the input array's inferred order)
 * @param {(NonNegativeIntegerArray|NonNegativeInteger)} [options.shape] - output array shape (overrides the input array's inferred shape)
 * @param {string} [options.mode="throw"] - specifies how to handle indices which exceed array dimensions
@@ -64,7 +63,7 @@ var format = require( '@stdlib/string/format' );
 * var zeros = require( '@stdlib/ndarray/zeros' );
 *
 * var x = zeros( [ 2, 2 ] );
-* // returns <ndarray>
+* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 *
 * var y = emptyLike( x );
 * // returns <ndarray>
@@ -141,7 +140,7 @@ function emptyLike( x ) {
 	} else {
 		buf = emptyArray( len, dtype );
 	}
-	return new ndarray( dtype, buf, sh, st, strides2offset( sh, st ), order, opts ); // eslint-disable-line max-len
+	return new ndarray( dtype, buf, sh, st, 0, order, opts );
 }
 
 
