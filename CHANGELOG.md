@@ -805,7 +805,6 @@ A total of 44 issues were closed in this release:
 
 <details>
 
--   [`60e78d4`](https://github.com/stdlib-js/stdlib/commit/60e78d484b31ca96b47f36c260db2620bd40f555) - **docs:** update `ndarray` TypeScript declarations [(#11132)](https://github.com/stdlib-js/stdlib/pull/11132) _(by stdlib-bot)_
 -   [`baef022`](https://github.com/stdlib-js/stdlib/commit/baef0223f86db141fa6a1dabc15ec6c5fa2f0f59) - **feat:** update `ndarray/base` TypeScript declarations [(#11131)](https://github.com/stdlib-js/stdlib/pull/11131) _(by stdlib-bot)_
 -   [`ae72f8e`](https://github.com/stdlib-js/stdlib/commit/ae72f8e7910cbfd1a0204bedd7f46bff23c74aa0) - **test:** use corrected expected type for `complex64` tests _(by Athan Reines)_
 -   [`2a1517f`](https://github.com/stdlib-js/stdlib/commit/2a1517fe8ee92381e9db01cab5f99241c542a6fc) - **test:** use correct expected type in complex64 tests for `ndarray/base/ones` _(by Philipp Burckhardt)_

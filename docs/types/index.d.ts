@@ -3410,16 +3410,13 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var getShape = require( './../../shape' );
-	* var getDType = require( './../../dtype' );
-	*
 	* var arr = ns.zeros( [ 2, 2 ] );
-	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	* // returns <ndarray>
 	*
-	* var sh = getShape( arr );
+	* var sh = arr.shape;
 	* // returns [ 2, 2 ]
 	*
-	* var dt = String( getDType( arr ) );
+	* var dt = arr.dtype;
 	* // returns 'float64'
 	*/
 	zeros: typeof zeros;
@@ -3438,28 +3435,26 @@ interface Namespace {
 	* @returns zero-filled array
 	*
 	* @example
-	* var getShape = require( './../../shape' );
-	* var getDType = require( './../../dtype' );
 	* var zeros = require( './../../zeros' );
 	*
 	* var x = zeros( [ 2, 2 ], {
 	*     'dtype': 'float64'
 	* });
-	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	* // returns <ndarray>
 	*
-	* var sh = getShape( x );
+	* var sh = x.shape;
 	* // returns [ 2, 2 ]
 	*
-	* var dt = String( getDType( x ) );
+	* var dt = x.dtype;
 	* // returns 'float64'
 	*
 	* var y = ns.zerosLike( x );
-	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	* // returns <ndarray>
 	*
-	* sh = getShape( y );
+	* sh = y.shape;
 	* // returns [ 2, 2 ]
 	*
-	* dt = String( getDType( y ) );
+	* dt = y.dtype;
 	* // returns 'float64'
 	*/
 	zerosLike: typeof zerosLike;
