@@ -807,6 +807,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`f759b2b`](https://github.com/stdlib-js/stdlib/commit/f759b2b5ed4db16f35f0544fb65ed38a957f9f7b) - **refactor:** remove overloads and use generic _(by Athan Reines)_
 -   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - **feat:** add `onesLike` to namespace _(by Athan Reines)_
 -   [`d200536`](https://github.com/stdlib-js/stdlib/commit/d200536a79672d3a31022f894a63acdf08b79159) - **feat:** add `ndarray/base/ones-like` _(by Athan Reines)_
 -   [`60e78d4`](https://github.com/stdlib-js/stdlib/commit/60e78d484b31ca96b47f36c260db2620bd40f555) - **docs:** update `ndarray` TypeScript declarations [(#11132)](https://github.com/stdlib-js/stdlib/pull/11132) _(by stdlib-bot)_
