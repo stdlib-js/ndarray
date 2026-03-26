@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7d2950a`](https://github.com/stdlib-js/stdlib/commit/7d2950a6283b33a6020a6d7622e1c31228876fdf) - add `ndarray/base/nulls` [(#11145)](https://github.com/stdlib-js/stdlib/pull/11145)
 -   [`569131f`](https://github.com/stdlib-js/stdlib/commit/569131f478009cf40b7c3810ac6b1a084634283d) - update `ndarray/base` TypeScript declarations [(#11149)](https://github.com/stdlib-js/stdlib/pull/11149)
 -   [`4b2a4ab`](https://github.com/stdlib-js/stdlib/commit/4b2a4ab1c67f6ce6df86e03c93f3d7ccd9382b70) - update `ndarray` TypeScript declarations [(#11150)](https://github.com/stdlib-js/stdlib/pull/11150)
 -   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - add `ones` to namespace
@@ -811,6 +812,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`7d2950a`](https://github.com/stdlib-js/stdlib/commit/7d2950a6283b33a6020a6d7622e1c31228876fdf) - **feat:** add `ndarray/base/nulls` [(#11145)](https://github.com/stdlib-js/stdlib/pull/11145) _(by Muhammad Haris, Athan Reines)_
 -   [`569131f`](https://github.com/stdlib-js/stdlib/commit/569131f478009cf40b7c3810ac6b1a084634283d) - **feat:** update `ndarray/base` TypeScript declarations [(#11149)](https://github.com/stdlib-js/stdlib/pull/11149) _(by stdlib-bot)_
 -   [`4b2a4ab`](https://github.com/stdlib-js/stdlib/commit/4b2a4ab1c67f6ce6df86e03c93f3d7ccd9382b70) - **feat:** update `ndarray` TypeScript declarations [(#11150)](https://github.com/stdlib-js/stdlib/pull/11150) _(by stdlib-bot)_
 -   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - **feat:** add `ones` to namespace _(by Athan Reines)_
