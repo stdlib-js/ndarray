@@ -121,6 +121,7 @@ import numel = require( './../../../base/numel' );
 import numelDimension = require( './../../../base/numel-dimension' );
 import offset = require( './../../../base/offset' );
 import ones = require( './../../../base/ones' );
+import onesLike = require( './../../../base/ones-like' );
 import order = require( './../../../base/order' );
 import outputDataType = require( './../../../base/output-dtype' );
 import outputPolicyEnum2Str = require( './../../../base/output-policy-enum2str' );
@@ -3184,6 +3185,37 @@ interface Namespace {
 	ones: typeof ones;
 
 	/**
+	* Creates a ones-filled array having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @returns ones-filled array
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	* var getDType = require( './../../../dtype' );
+	* var ones = require( './../../../base/ones' );
+	*
+	* var x = ones( 'float64', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+	*
+	* var sh = getShape( x );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( x ) );
+	* // returns 'float64'
+	*
+	* var y = ns.onesLike( x );
+	* // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+	*
+	* sh = getShape( y );
+	* // returns [ 2, 2 ]
+	*
+	* dt = String( getDType( y ) );
+	* // returns 'float64'
+	*/
+	onesLike: typeof onesLike;
+
+	/**
 	* Returns the layout order of a provided ndarray.
 	*
 	* ## Notes
@@ -5435,23 +5467,23 @@ interface Namespace {
 	* var getDType = require( './../../../dtype' );
 	* var zeros = require( './../../../base/zeros' );
 	*
-	* var x = zeros( 'generic', [ 2, 2 ], 'row-major' );
-	* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+	* var x = zeros( 'float64', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 	*
 	* var sh = getShape( x );
 	* // returns [ 2, 2 ]
 	*
 	* var dt = String( getDType( x ) );
-	* // returns 'generic'
+	* // returns 'float64'
 	*
 	* var y = ns.zerosLike( x );
-	* // returns <ndarray>[ [ 0, 0 ], [ 0, 0 ] ]
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 	*
 	* sh = getShape( y );
 	* // returns [ 2, 2 ]
 	*
 	* dt = String( getDType( y ) );
-	* // returns 'generic'
+	* // returns 'float64'
 	*/
 	zerosLike: typeof zerosLike;
 
