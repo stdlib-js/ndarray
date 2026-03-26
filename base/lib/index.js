@@ -806,6 +806,15 @@ setReadOnly( ns, 'minViewBufferIndex', require( './../../base/min-view-buffer-in
 setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buffer-index' ) );
 
 /**
+* @name nans
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nans}
+*/
+setReadOnly( ns, 'nans', require( './../../base/nans' ) );
+
+/**
 * @name ndarraylike2ndarray
 * @memberof ns
 * @readonly
@@ -930,6 +939,15 @@ setReadOnly( ns, 'nullaryStrided1dDispatchFactory', require( './../../base/nulla
 * @see {@link module:@stdlib/ndarray/base/nullary-tiling-block-size}
 */
 setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block-size' ) );
+
+/**
+* @name nulls
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nulls}
+*/
+setReadOnly( ns, 'nulls', require( './../../base/nulls' ) );
 
 /**
 * @name numel
