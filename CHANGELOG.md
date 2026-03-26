@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-25)
+## Unreleased (2026-03-26)
 
 <section class="features">
 
 ### Features
 
+-   [`4b2a4ab`](https://github.com/stdlib-js/stdlib/commit/4b2a4ab1c67f6ce6df86e03c93f3d7ccd9382b70) - update `ndarray` TypeScript declarations [(#11150)](https://github.com/stdlib-js/stdlib/pull/11150)
 -   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - add `ones` to namespace
 -   [`ded14cf`](https://github.com/stdlib-js/stdlib/commit/ded14cff1642c79ac122cc05b65e911cc24ec2ac) - add `ndarray/ones`
 -   [`e00d73a`](https://github.com/stdlib-js/stdlib/commit/e00d73a3cb8c5355a46771ed5630d178e25ec0f4) - add `onesLike` to namespace
@@ -809,6 +810,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`4b2a4ab`](https://github.com/stdlib-js/stdlib/commit/4b2a4ab1c67f6ce6df86e03c93f3d7ccd9382b70) - **feat:** update `ndarray` TypeScript declarations [(#11150)](https://github.com/stdlib-js/stdlib/pull/11150) _(by stdlib-bot)_
 -   [`475f496`](https://github.com/stdlib-js/stdlib/commit/475f4962d86ed3c562800dce759c958a52e6a15e) - **feat:** add `ones` to namespace _(by Athan Reines)_
 -   [`ded14cf`](https://github.com/stdlib-js/stdlib/commit/ded14cff1642c79ac122cc05b65e911cc24ec2ac) - **feat:** add `ndarray/ones` _(by Athan Reines)_
 -   [`bbd8f0e`](https://github.com/stdlib-js/stdlib/commit/bbd8f0eec8d6d52201d7706a349fdb9cac737d9c) - **refactor:** avoid unnecessary offset calculation _(by Athan Reines)_
