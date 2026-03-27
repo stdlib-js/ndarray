@@ -104,6 +104,7 @@ import minSignedIntegerDataType = require( './../../../base/min-signed-integer-d
 import minUnsignedIntegerDataType = require( './../../../base/min-unsigned-integer-dtype' );
 import minViewBufferIndex = require( './../../../base/min-view-buffer-index' );
 import minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
+import nans = require( './../../../base/nans' );
 import ndarraylike2ndarray = require( './../../../base/ndarraylike2ndarray' );
 import ndarraylike2object = require( './../../../base/ndarraylike2object' );
 import ndarraylike2scalar = require( './../../../base/ndarraylike2scalar' );
@@ -117,6 +118,7 @@ import nullaryLoopOrder = require( './../../../base/nullary-loop-interchange-ord
 import nullaryStrided1dDispatch = require( './../../../base/nullary-strided1d-dispatch' );
 import nullaryStrided1dDispatchFactory = require( './../../../base/nullary-strided1d-dispatch-factory' );
 import nullaryBlockSize = require( './../../../base/nullary-tiling-block-size' );
+import nulls = require( './../../../base/nulls' );
 import numel = require( './../../../base/numel' );
 import numelDimension = require( './../../../base/numel-dimension' );
 import offset = require( './../../../base/offset' );
@@ -2762,6 +2764,25 @@ interface Namespace {
 	minmaxViewBufferIndex: typeof minmaxViewBufferIndex;
 
 	/**
+	* Creates a NaN-filled array having a specified shape and data type.
+	*
+	* @param dtype - underlying data type
+	* @param shape - array shape
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns NaN-filled array
+	*
+	* @example
+	* var getDType = require( './../../../dtype' );
+	*
+	* var arr = ns.nans( 'float64', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'float64'
+	*/
+	nans: typeof nans;
+
+	/**
 	* Converts an ndarray-like object to an ndarray.
 	*
 	* @param x - input ndarray
@@ -3119,6 +3140,25 @@ interface Namespace {
 	* // returns <number>
 	*/
 	nullaryBlockSize: typeof nullaryBlockSize;
+
+	/**
+	* Creates a null-filled array having a specified shape and data type.
+	*
+	* @param dtype - underlying data type
+	* @param shape - array shape
+	* @param order - specifies whether an array is row-major (C-style) or column-major (Fortran-style)
+	* @returns null-filled array
+	*
+	* @example
+	* var getDType = require( './../../../dtype' );
+	*
+	* var arr = ns.nulls( 'generic', [ 2, 2 ], 'row-major' );
+	* // returns <ndarray>[ [ null, null ], [ null, null ] ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'generic'
+	*/
+	nulls: typeof nulls;
 
 	/**
 	* Returns the number of elements in an array.

@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`28d3e7d`](https://github.com/stdlib-js/stdlib/commit/28d3e7d6b05b312ebf14896cb0d8593902e443cb) - update `ndarray/base` TypeScript declarations [(#11166)](https://github.com/stdlib-js/stdlib/pull/11166)
 -   [`364e294`](https://github.com/stdlib-js/stdlib/commit/364e294fbd4ebd149d86b8f7996da4b00b6c6b3b) - add `nulls` to namespace
 -   [`f1ab973`](https://github.com/stdlib-js/stdlib/commit/f1ab9738a81b32e0bcd49a2661b0023bbc4ca84f) - add `nans` to namespace
 -   [`751b29f`](https://github.com/stdlib-js/stdlib/commit/751b29f4675e211127d6b24211d9bf655bcbac2c) - add `ndarray/base/nans` [(#11144)](https://github.com/stdlib-js/stdlib/pull/11144)
@@ -816,6 +817,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`28d3e7d`](https://github.com/stdlib-js/stdlib/commit/28d3e7d6b05b312ebf14896cb0d8593902e443cb) - **feat:** update `ndarray/base` TypeScript declarations [(#11166)](https://github.com/stdlib-js/stdlib/pull/11166) _(by stdlib-bot)_
 -   [`762f410`](https://github.com/stdlib-js/stdlib/commit/762f410098b29afa3823ab1191553101db0dcead) - **fix:** correct grammar in ndarray type test comments [(#11154)](https://github.com/stdlib-js/stdlib/pull/11154) _(by Matt Van Horn)_
 -   [`364e294`](https://github.com/stdlib-js/stdlib/commit/364e294fbd4ebd149d86b8f7996da4b00b6c6b3b) - **feat:** add `nulls` to namespace _(by Athan Reines)_
 -   [`f1ab973`](https://github.com/stdlib-js/stdlib/commit/f1ab9738a81b32e0bcd49a2661b0023bbc4ca84f) - **feat:** add `nans` to namespace _(by Athan Reines)_
