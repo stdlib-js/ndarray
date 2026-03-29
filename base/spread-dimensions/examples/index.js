@@ -19,6 +19,7 @@
 'use strict';
 
 var array = require( './../../../array' );
+var getShape = require( './../../../shape' );
 var numel = require( './../../../base/numel' );
 var ind2sub = require( './../../../ind2sub' );
 var spreadDimensions = require( './../lib' );
@@ -34,7 +35,7 @@ var y = spreadDimensions( 5, x, [ 1, 3 ], false );
 // returns <ndarray>
 
 // Retrieve the shape:
-var sh = y.shape;
+var sh = getShape( y );
 // returns [ 1, 2, 1, 2, 1 ]
 
 // Retrieve the number of elements:

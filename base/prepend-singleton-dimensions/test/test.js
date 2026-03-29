@@ -23,6 +23,9 @@
 var tape = require( 'tape' );
 var array = require( './../../../array' );
 var ndarray = require( './../../../base/ctor' );
+var getShape = require( './../../../shape' );
+var getData = require( './../../../data-buffer' );
+var getStrides = require( './../../../strides' );
 var isReadOnly = require( './../../../base/assert/is-read-only' );
 var prependSingletonDimensions = require( './../lib' ); // eslint-disable-line id-length
 
@@ -44,15 +47,15 @@ tape( 'the function prepends singleton dimensions', function test( t ) {
 	y = prependSingletonDimensions( x, 3, false );
 
 	t.notEqual( y, x, 'returns expected value' );
-	t.deepEqual( y.shape, [ 1, 1, 1, 2, 2 ], 'returns expected value' );
-	t.strictEqual( y.data, x.data, 'returns expected value' );
+	t.deepEqual( getShape( y ), [ 1, 1, 1, 2, 2 ], 'returns expected value' );
+	t.strictEqual( getData( y ), getData( x ), 'returns expected value' );
 	t.strictEqual( isReadOnly( y ), true, 'returns expected value' );
 
 	y = prependSingletonDimensions( x, 3, true );
 
 	t.notEqual( y, x, 'returns expected value' );
-	t.deepEqual( y.shape, [ 1, 1, 1, 2, 2 ], 'returns expected value' );
-	t.strictEqual( y.data, x.data, 'returns expected value' );
+	t.deepEqual( getShape( y ), [ 1, 1, 1, 2, 2 ], 'returns expected value' );
+	t.strictEqual( getData( y ), x.data, 'returns expected value' );
 	t.strictEqual( isReadOnly( y ), false, 'returns expected value' );
 
 	t.end();
@@ -66,9 +69,9 @@ tape( 'the function prepends singleton dimensions (base; row-major)', function t
 	y = prependSingletonDimensions( x, 3, false );
 
 	t.notEqual( y, x, 'returns expected value' );
-	t.deepEqual( y.shape, [ 1, 1, 1, 2, 1, 2 ], 'returns expected value' );
-	t.deepEqual( y.strides, [ 2, 2, 2, 2, 2, 1 ], 'returns expected value' );
-	t.strictEqual( y.data, x.data, 'returns expected value' );
+	t.deepEqual( getShape( y ), [ 1, 1, 1, 2, 1, 2 ], 'returns expected value' );
+	t.deepEqual( getStrides( y ), [ 2, 2, 2, 2, 2, 1 ], 'returns expected value' );
+	t.strictEqual( getData( y ), getData( x ), 'returns expected value' );
 
 	t.end();
 });
@@ -81,9 +84,9 @@ tape( 'the function prepends singleton dimensions (base; column-major)', functio
 	y = prependSingletonDimensions( x, 3, false );
 
 	t.notEqual( y, x, 'returns expected value' );
-	t.deepEqual( y.shape, [ 1, 1, 1, 2, 1, 2 ], 'returns expected value' );
-	t.deepEqual( y.strides, [ 1, 1, 1, 1, 2, 2 ], 'returns expected value' );
-	t.strictEqual( y.data, x.data, 'returns expected value' );
+	t.deepEqual( getShape( y ), [ 1, 1, 1, 2, 1, 2 ], 'returns expected value' );
+	t.deepEqual( getStrides( y ), [ 1, 1, 1, 1, 2, 2 ], 'returns expected value' );
+	t.strictEqual( getData( y ), getData( x ), 'returns expected value' );
 
 	t.end();
 });
