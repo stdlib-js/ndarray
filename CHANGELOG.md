@@ -817,6 +817,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`06b39a8`](https://github.com/stdlib-js/stdlib/commit/06b39a8dce95540bd60183f40f7afe51a0affdc7) - **refactor:** update to accommodate dtype instances _(by Athan Reines)_
 -   [`ba129b3`](https://github.com/stdlib-js/stdlib/commit/ba129b35eed5099aece6caa686c3794e9a6b08b5) - **docs:** update namespace table of contents [(#11198)](https://github.com/stdlib-js/stdlib/pull/11198) _(by stdlib-bot)_
 -   [`a0169bc`](https://github.com/stdlib-js/stdlib/commit/a0169bcfc0d05ac94c206ac5d6d0a898ec304463) - **docs:** remove unused `ndarray2array` requires from README usage examples [(#11194)](https://github.com/stdlib-js/stdlib/pull/11194) _(by Philipp Burckhardt)_
 -   [`3bf34ec`](https://github.com/stdlib-js/stdlib/commit/3bf34ec6df7f894f7cbee125eb3f655ebb2d6a4e) - **chore:** fix typos, grammar, and minor issues across multiple packages [(#11167)](https://github.com/stdlib-js/stdlib/pull/11167) _(by Philipp Burckhardt)_
