@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - add support for dtype instances
 -   [`28d3e7d`](https://github.com/stdlib-js/stdlib/commit/28d3e7d6b05b312ebf14896cb0d8593902e443cb) - update `ndarray/base` TypeScript declarations [(#11166)](https://github.com/stdlib-js/stdlib/pull/11166)
 -   [`364e294`](https://github.com/stdlib-js/stdlib/commit/364e294fbd4ebd149d86b8f7996da4b00b6c6b3b) - add `nulls` to namespace
 -   [`f1ab973`](https://github.com/stdlib-js/stdlib/commit/f1ab9738a81b32e0bcd49a2661b0023bbc4ca84f) - add `nans` to namespace
@@ -817,6 +818,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - **feat:** add support for dtype instances _(by Athan Reines)_
 -   [`3c6b016`](https://github.com/stdlib-js/stdlib/commit/3c6b01628169badc19aed4201cb66a5265c5d378) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`2bc2d8b`](https://github.com/stdlib-js/stdlib/commit/2bc2d8b3568550581f6574843480eccd40c7589a) - **test:** use accessors to resolve ndarray meta data _(by Athan Reines)_
 -   [`29648e3`](https://github.com/stdlib-js/stdlib/commit/29648e3c22b94656db3d56f822718f5860dfba9d) - **refactor:** improve type specificity _(by Athan Reines)_

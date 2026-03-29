@@ -27,7 +27,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var ndarray = require( './../../../base/ctor' );
 var bytesPerElement = require( './../../../base/bytes-per-element' );
-var dtypes = require( './../../../base/dtype-enums' );
+var resolveEnum = require( './../../../base/dtype-resolve-enum' );
 var modes = require( './../../../index-modes' ).enum;
 var orders = require( './../../../orders' ).enum;
 var serialize = require( './../lib/main.js' );
@@ -35,7 +35,6 @@ var serialize = require( './../lib/main.js' );
 
 // VARIABLES //
 
-var DTYPES = dtypes();
 var MODES = modes();
 var ORDERS = orders();
 
@@ -71,7 +70,7 @@ tape( 'the function serializes ndarray meta data to a DataView (ndarray)', funct
 	arr = ndarray( dtype, buffer, shape, strides, offset, order );
 
 	expected = {
-		'dtype': DTYPES[ 'float64' ],
+		'dtype': resolveEnum( 'float64' ),
 		'ndims': shape.length,
 		'shape': shape,
 		'strides': strides,
@@ -155,7 +154,7 @@ tape( 'the function serializes ndarray meta data to a DataView (ndarray-like obj
 	};
 
 	expected = {
-		'dtype': DTYPES[ 'float64' ],
+		'dtype': resolveEnum( 'float64' ),
 		'ndims': shape.length,
 		'shape': shape,
 		'strides': strides,
@@ -241,7 +240,7 @@ tape( 'the function serializes ndarray meta data to a DataView (ndarray-like obj
 	};
 
 	expected = {
-		'dtype': DTYPES[ 'float64' ],
+		'dtype': resolveEnum( 'float64' ),
 		'ndims': shape.length,
 		'shape': shape,
 		'strides': strides,
