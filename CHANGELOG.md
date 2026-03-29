@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-27)
+## Unreleased (2026-03-29)
 
 <section class="features">
 
@@ -817,6 +817,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`a0169bc`](https://github.com/stdlib-js/stdlib/commit/a0169bcfc0d05ac94c206ac5d6d0a898ec304463) - **docs:** remove unused `ndarray2array` requires from README usage examples [(#11194)](https://github.com/stdlib-js/stdlib/pull/11194) _(by Philipp Burckhardt)_
 -   [`3bf34ec`](https://github.com/stdlib-js/stdlib/commit/3bf34ec6df7f894f7cbee125eb3f655ebb2d6a4e) - **chore:** fix typos, grammar, and minor issues across multiple packages [(#11167)](https://github.com/stdlib-js/stdlib/pull/11167) _(by Philipp Burckhardt)_
 -   [`28d3e7d`](https://github.com/stdlib-js/stdlib/commit/28d3e7d6b05b312ebf14896cb0d8593902e443cb) - **feat:** update `ndarray/base` TypeScript declarations [(#11166)](https://github.com/stdlib-js/stdlib/pull/11166) _(by stdlib-bot)_
 -   [`762f410`](https://github.com/stdlib-js/stdlib/commit/762f410098b29afa3823ab1191553101db0dcead) - **fix:** correct grammar in ndarray type test comments [(#11154)](https://github.com/stdlib-js/stdlib/pull/11154) _(by Matt Van Horn)_
