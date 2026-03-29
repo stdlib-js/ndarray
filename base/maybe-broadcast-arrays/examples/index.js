@@ -20,8 +20,7 @@
 
 var array = require( './../../../array' );
 var zeros = require( './../../../zeros' );
-var numel = require( './../../../base/numel' );
-var ind2sub = require( './../../../ind2sub' );
+var ndarray2array = require( './../../../to-array' );
 var maybeBroadcastArrays = require( './../lib' );
 
 // Create a 2x2 array:
@@ -34,17 +33,6 @@ var y = zeros( [ 3, 2, 2 ] );
 
 // Broadcast arrays to a common shape:
 var out = maybeBroadcastArrays( [ x, y ] );
-// returns <ndarray>
+// returns [ <ndarray>, <ndarray> ]
 
-// Retrieve the common shape:
-var sh = out[ 0 ].shape;
-// returns [ 3, 2, 2 ]
-
-// Retrieve the number of elements:
-var N = numel( sh );
-
-// Loop through the array elements...
-var i;
-for ( i = 0; i < N; i++ ) {
-	console.log( 'X[%s] = %d', ind2sub( sh, i ).join( ', ' ), out[ 0 ].iget( i ) );
-}
+console.log( ndarray2array( out[ 0 ] ) );
