@@ -817,6 +817,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`a73a430`](https://github.com/stdlib-js/stdlib/commit/a73a430f8cf1e69a6bda08d1a4441b8985ef56ec) - **refactor:** improve type specificity _(by Athan Reines)_
 -   [`7ab721b`](https://github.com/stdlib-js/stdlib/commit/7ab721ba37db35ef62c6b658ba6ddeef4f8bff64) - **test:** use accessor functions for accessing ndarray meta data _(by Athan Reines)_
 -   [`1c769c9`](https://github.com/stdlib-js/stdlib/commit/1c769c983b0a4197ba30c9372568e03af00e9c00) - **test:** use accessors for retrieving ndarray meta data _(by Athan Reines)_
 -   [`06b39a8`](https://github.com/stdlib-js/stdlib/commit/06b39a8dce95540bd60183f40f7afe51a0affdc7) - **refactor:** update to accommodate dtype instances _(by Athan Reines)_
