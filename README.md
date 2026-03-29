@@ -162,6 +162,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`numelDimension( x, dim )`][@stdlib/ndarray/numel-dimension]</span><span class="delimiter">: </span><span class="description">return the size (i.e., number of elements) of a specified dimension for a provided ndarray.</span>
 -   <span class="signature">[`numel( x )`][@stdlib/ndarray/numel]</span><span class="delimiter">: </span><span class="description">return the number of elements in an ndarray.</span>
 -   <span class="signature">[`offset( x )`][@stdlib/ndarray/offset]</span><span class="delimiter">: </span><span class="description">return the index offset specifying the underlying buffer index of the first iterated ndarray element.</span>
+-   <span class="signature">[`ones( shape[, options] )`][@stdlib/ndarray/ones]</span><span class="delimiter">: </span><span class="description">create a ones-filled ndarray having a specified shape and data type.</span>
 -   <span class="signature">[`order( x )`][@stdlib/ndarray/order]</span><span class="delimiter">: </span><span class="description">return the layout order of a provided ndarray.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
 -   <span class="signature">[`outputDataTypePolicies()`][@stdlib/ndarray/output-dtype-policies]</span><span class="delimiter">: </span><span class="description">list of output ndarray data type policies.</span>
@@ -427,6 +428,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/numel]: https://github.com/stdlib-js/ndarray/tree/main/numel
 
 [@stdlib/ndarray/offset]: https://github.com/stdlib-js/ndarray/tree/main/offset
+
+[@stdlib/ndarray/ones]: https://github.com/stdlib-js/ndarray/tree/main/ones
 
 [@stdlib/ndarray/order]: https://github.com/stdlib-js/ndarray/tree/main/order
 
