@@ -25,6 +25,7 @@ var Float64Array = require( '@stdlib/array/float64' );
 var ndarrayBase = require( './../../../base/ctor' );
 var ndarray = require( './../../../ctor' );
 var isCollection = require( '@stdlib/assert/is-collection' );
+var getData = require( './../../../data-buffer' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var ndarraylike2ndarray = require( './../lib' );
@@ -66,7 +67,7 @@ bench( format( '%s::base_ndarray', pkg ), function benchmark( b ) {
 		}
 	}
 	b.toc();
-	if ( !isCollection( out.data ) ) {
+	if ( !isCollection( getData( out ) ) ) {
 		b.fail( 'should return a collection' );
 	}
 	b.pass( 'benchmark finished' );
@@ -107,7 +108,7 @@ bench( format( '%s::ndarray', pkg ), function benchmark( b ) {
 		}
 	}
 	b.toc();
-	if ( !isCollection( out.data ) ) {
+	if ( !isCollection( getData( out ) ) ) {
 		b.fail( 'should return a collection' );
 	}
 	b.pass( 'benchmark finished' );
@@ -154,7 +155,7 @@ bench( format( '%s::ndarray_like', pkg ), function benchmark( b ) {
 		}
 	}
 	b.toc();
-	if ( !isCollection( out.data ) ) {
+	if ( !isCollection( getData( out ) ) ) {
 		b.fail( 'should return a collection' );
 	}
 	b.pass( 'benchmark finished' );

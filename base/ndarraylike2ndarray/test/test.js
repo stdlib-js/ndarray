@@ -24,6 +24,13 @@ var tape = require( 'tape' );
 var Float64Array = require( '@stdlib/array/float64' );
 var array = require( './../../../array' );
 var ndarray = require( './../../../base/ctor' );
+var getData = require( './../../../data-buffer' );
+var getDType = require( './../../../dtype' );
+var getShape = require( './../../../shape' );
+var getStrides = require( './../../../strides' );
+var getOffset = require( './../../../offset' );
+var getOrder = require( './../../../order' );
+var numel = require( './../../../numel' );
 var ndarraylike2ndarray = require( './../lib' );
 
 
@@ -56,13 +63,13 @@ tape( 'the function converts an ndarray-like object to an ndarray (ndarray)', fu
 	actual = ndarraylike2ndarray( x );
 
 	t.strictEqual( actual instanceof ndarray, true, 'returns expected value' );
-	t.strictEqual( actual.data, expected.data, 'returns expected value' );
-	t.strictEqual( actual.dtype, expected.dtype, 'returns expected value' );
-	t.strictEqual( actual.length, expected.length, 'returns expected value' );
-	t.deepEqual( actual.shape, expected.shape, 'returns expected value' );
-	t.deepEqual( actual.strides, expected.strides, 'returns expected value' );
-	t.strictEqual( actual.offset, expected.offset, 'returns expected value' );
-	t.strictEqual( actual.order, expected.order, 'returns expected value' );
+	t.strictEqual( getData( actual ), expected.data, 'returns expected value' );
+	t.strictEqual( String( getDType( actual ) ), expected.dtype, 'returns expected value' );
+	t.strictEqual( numel( actual ), expected.length, 'returns expected value' );
+	t.deepEqual( getShape( actual ), expected.shape, 'returns expected value' );
+	t.deepEqual( getStrides( actual ), expected.strides, 'returns expected value' );
+	t.strictEqual( getOffset( actual ), expected.offset, 'returns expected value' );
+	t.strictEqual( getOrder( actual ), expected.order, 'returns expected value' );
 
 	t.end();
 });
@@ -96,13 +103,13 @@ tape( 'the function converts an ndarray-like object to an ndarray (ndarray-like)
 	actual = ndarraylike2ndarray( x );
 
 	t.strictEqual( actual instanceof ndarray, true, 'returns expected value' );
-	t.strictEqual( actual.data, expected.data, 'returns expected value' );
-	t.strictEqual( actual.dtype, expected.dtype, 'returns expected value' );
-	t.strictEqual( actual.length, expected.length, 'returns expected value' );
-	t.deepEqual( actual.shape, expected.shape, 'returns expected value' );
-	t.deepEqual( actual.strides, expected.strides, 'returns expected value' );
-	t.strictEqual( actual.offset, expected.offset, 'returns expected value' );
-	t.strictEqual( actual.order, expected.order, 'returns expected value' );
+	t.strictEqual( getData( actual ), expected.data, 'returns expected value' );
+	t.strictEqual( String( getDType( actual ) ), expected.dtype, 'returns expected value' );
+	t.strictEqual( numel( actual ), expected.length, 'returns expected value' );
+	t.deepEqual( getShape( actual ), expected.shape, 'returns expected value' );
+	t.deepEqual( getStrides( actual ), expected.strides, 'returns expected value' );
+	t.strictEqual( getOffset( actual ), expected.offset, 'returns expected value' );
+	t.strictEqual( getOrder( actual ), expected.order, 'returns expected value' );
 
 	t.end();
 });
