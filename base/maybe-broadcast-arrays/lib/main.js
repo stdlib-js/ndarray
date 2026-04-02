@@ -28,7 +28,7 @@ var getShape = require( './../../../base/shape' );
 // MAIN //
 
 /**
-* Broadcasts an ndarrays to a common shape.
+* Broadcasts ndarrays to a common shape.
 *
 * ## Notes
 *

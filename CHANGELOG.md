@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-29)
+## Unreleased (2026-04-02)
 
 <section class="features">
 
@@ -818,6 +818,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
 -   [`2db5404`](https://github.com/stdlib-js/stdlib/commit/2db5404d6a12f2d0c20fb61a5ce047daea72ea3f) - **refactor:** improve type specificity and use accessors for resolving ndarray meta data _(by Athan Reines)_
 -   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - **feat:** add support for dtype instances _(by Athan Reines)_
 -   [`3c6b016`](https://github.com/stdlib-js/stdlib/commit/3c6b01628169badc19aed4201cb66a5265c5d378) - **refactor:** improve type specificity _(by Athan Reines)_
