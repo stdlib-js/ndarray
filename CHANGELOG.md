@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-02)
+## Unreleased (2026-04-06)
 
 <section class="features">
 
 ### Features
 
+-   [`aac0a2b`](https://github.com/stdlib-js/stdlib/commit/aac0a2be45cc8c0d70542b91d4ac3a958ea4881d) - add `ndarray2string` to namespace
+-   [`47e4985`](https://github.com/stdlib-js/stdlib/commit/47e4985d18efb25b0fc00c6818fccdf547c9113e) - add `ndarray/to-string` [(#10899)](https://github.com/stdlib-js/stdlib/pull/10899)
 -   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - add support for dtype instances
 -   [`28d3e7d`](https://github.com/stdlib-js/stdlib/commit/28d3e7d6b05b312ebf14896cb0d8593902e443cb) - update `ndarray/base` TypeScript declarations [(#11166)](https://github.com/stdlib-js/stdlib/pull/11166)
 -   [`364e294`](https://github.com/stdlib-js/stdlib/commit/364e294fbd4ebd149d86b8f7996da4b00b6c6b3b) - add `nulls` to namespace
@@ -818,6 +820,8 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`aac0a2b`](https://github.com/stdlib-js/stdlib/commit/aac0a2be45cc8c0d70542b91d4ac3a958ea4881d) - **feat:** add `ndarray2string` to namespace _(by Athan Reines)_
+-   [`47e4985`](https://github.com/stdlib-js/stdlib/commit/47e4985d18efb25b0fc00c6818fccdf547c9113e) - **feat:** add `ndarray/to-string` [(#10899)](https://github.com/stdlib-js/stdlib/pull/10899) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
 -   [`2db5404`](https://github.com/stdlib-js/stdlib/commit/2db5404d6a12f2d0c20fb61a5ce047daea72ea3f) - **refactor:** improve type specificity and use accessors for resolving ndarray meta data _(by Athan Reines)_
 -   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - **feat:** add support for dtype instances _(by Athan Reines)_
