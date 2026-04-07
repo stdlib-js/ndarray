@@ -198,6 +198,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`ndarray2localeString( x[, locales[, options]] )`][@stdlib/ndarray/to-locale-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a locale-aware string.</span>
 -   <span class="signature">[`toReversedDimension( x[, options] )`][@stdlib/ndarray/to-reversed-dimension]</span><span class="delimiter">: </span><span class="description">return a new ndarray where the order of elements of an input ndarray along a specified dimension is reversed.</span>
 -   <span class="signature">[`toReversed( x )`][@stdlib/ndarray/to-reversed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements of an input `ndarray` is reversed along each dimension.</span>
+-   <span class="signature">[`ndarray2string( x )`][@stdlib/ndarray/to-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a string.</span>
 -   <span class="signature">[`unshift( x, ...values )`][@stdlib/ndarray/unshift]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by prepending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`vector`][@stdlib/ndarray/vector]</span><span class="delimiter">: </span><span class="description">vector constructors and associated utilities.</span>
 -   <span class="signature">[`ndarrayWith( x, indices, value )`][@stdlib/ndarray/with]</span><span class="delimiter">: </span><span class="description">return a new ndarray with the element at a specified index replaced by a provided value.</span>
@@ -500,6 +501,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-reversed-dimension]: https://github.com/stdlib-js/ndarray/tree/main/to-reversed-dimension
 
 [@stdlib/ndarray/to-reversed]: https://github.com/stdlib-js/ndarray/tree/main/to-reversed
+
+[@stdlib/ndarray/to-string]: https://github.com/stdlib-js/ndarray/tree/main/to-string
 
 [@stdlib/ndarray/unshift]: https://github.com/stdlib-js/ndarray/tree/main/unshift
 
