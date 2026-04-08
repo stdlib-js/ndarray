@@ -400,10 +400,10 @@ function factory( options ) {
 		if ( M > ndims ) {
 			throw new RangeError( format( 'invalid argument. Number of specified dimensions cannot exceed the number of dimensions in the input array. Number of dimensions: %d. Value: [%s].', ndims, join( dims, ',' ) ) );
 		}
-		// Compute the number of non-reduced dimensions:
+		// Compute the number of loop dimensions:
 		K = ndims - M;
 
-		// Verify that any ancillary ndarrays have at least the number of non-reduced dimensions...
+		// Verify that any ancillary ndarrays have at least the number of loop dimensions...
 		for ( i = 2; i < N; i++ ) {
 			if ( arr[ i ].shape.length < K ) {
 				throw new Error( format( 'invalid argument. Array arguments after the first two arrays must have the same number of loop dimensions. Input array shape: [%s]. Number of loop dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), K, join( arr[ i ].shape, ',' ), i ) );

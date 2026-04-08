@@ -820,6 +820,13 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`f52054e`](https://github.com/stdlib-js/stdlib/commit/f52054eb695447bf801c822da2e86bfb36a28699) - **docs:** fix comments _(by Athan Reines)_
+-   [`ef8dc22`](https://github.com/stdlib-js/stdlib/commit/ef8dc22cb842e83aa870936e525bfcc3cd47473c) - **refactor:** use already defined variable _(by Athan Reines)_
+-   [`acd37d9`](https://github.com/stdlib-js/stdlib/commit/acd37d96627bf8febcdc2668e5f5ba2a1fd17c55) - **refactor:** use already defined variable _(by Athan Reines)_
+-   [`d2a810a`](https://github.com/stdlib-js/stdlib/commit/d2a810a7a940c8182ed3c9870cf26cb901091e89) - **refactor:** use already defined variable _(by Athan Reines)_
+-   [`89a6d62`](https://github.com/stdlib-js/stdlib/commit/89a6d62754b818bc87f80800443b1d65a40c41dd) - **refactor:** use already defined variable _(by Athan Reines)_
+-   [`e45d3fc`](https://github.com/stdlib-js/stdlib/commit/e45d3fc18c0eea98593e3edfe0d3c2970e02b81d) - **refactor:** use already defined variable _(by Athan Reines)_
+-   [`9457f9f`](https://github.com/stdlib-js/stdlib/commit/9457f9f060948f55ed3355c649a456d2267fd8b6) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
 -   [`1a45821`](https://github.com/stdlib-js/stdlib/commit/1a458218a5e319ee00c0d3ddb4e065ad64edef4c) - **docs:** update examples to use accessor functions _(by Athan Reines)_
 -   [`e835a44`](https://github.com/stdlib-js/stdlib/commit/e835a4459def3255aa112790371508f6d9b7d16b) - **docs:** update examples to use accessor functions _(by Athan Reines)_
 -   [`887f9ca`](https://github.com/stdlib-js/stdlib/commit/887f9caca4ebe0bca507718b2f0ac26f063298c3) - **docs:** update examples and benchmarks _(by Athan Reines)_

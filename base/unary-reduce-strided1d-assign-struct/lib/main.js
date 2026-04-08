@@ -420,8 +420,8 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) {
 	K = ndims - M;
 
 	// Verify that the output ndarray has the expected number of dimensions...
-	if ( arr[ 1 ].shape.length !== K ) {
-		throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of non-reduced dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), K, join( arr[ 1 ].shape, ',' ), 1 ) );
+	if ( y.shape.length !== K ) {
+		throw new Error( format( 'invalid argument. Arrays which are not being reduced must have the same number of non-reduced dimensions. Input array shape: [%s]. Number of non-reduced dimensions: %d. Array shape: [%s] (index: %d).', join( shx, ',' ), K, join( y.shape, ',' ), 1 ) );
 	}
 	// Verify that any ancillary ndarrays have at least the number of non-reduced dimensions...
 	for ( i = 2; i < N; i++ ) {
