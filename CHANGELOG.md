@@ -820,6 +820,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`16c408d`](https://github.com/stdlib-js/stdlib/commit/16c408d950173630d6d458987f0d4d0a5e0c9f3e) - **docs:** fix copy _(by Athan Reines)_
 -   [`c8df03c`](https://github.com/stdlib-js/stdlib/commit/c8df03cfe4cb5362cfff5f981aff4c0abc6d0e5a) - **refactor:** add support for ancilliary ndarrays which decompose into subarrays _(by Athan Reines)_
 -   [`da18a82`](https://github.com/stdlib-js/stdlib/commit/da18a821cb5b0e559658144a92a9fc1876d7345e) - **style:** reorder declarations _(by Athan Reines)_
 -   [`bb0baff`](https://github.com/stdlib-js/stdlib/commit/bb0baff5acc1fbfa5f34b31045dde2ebd123c140) - **docs:** update namespace table of contents [(#11322)](https://github.com/stdlib-js/stdlib/pull/11322) _(by stdlib-bot)_
