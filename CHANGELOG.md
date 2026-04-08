@@ -820,6 +820,9 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`1a45821`](https://github.com/stdlib-js/stdlib/commit/1a458218a5e319ee00c0d3ddb4e065ad64edef4c) - **docs:** update examples to use accessor functions _(by Athan Reines)_
+-   [`e835a44`](https://github.com/stdlib-js/stdlib/commit/e835a4459def3255aa112790371508f6d9b7d16b) - **docs:** update examples to use accessor functions _(by Athan Reines)_
+-   [`887f9ca`](https://github.com/stdlib-js/stdlib/commit/887f9caca4ebe0bca507718b2f0ac26f063298c3) - **docs:** update examples and benchmarks _(by Athan Reines)_
 -   [`c13dd70`](https://github.com/stdlib-js/stdlib/commit/c13dd703daff4a5893dac860a78fe6e0631e68ec) - **refactor:** normalize dtypes to enums to reduce memory consumption and speed-up comparisons _(by Athan Reines)_
 -   [`2041e12`](https://github.com/stdlib-js/stdlib/commit/2041e12c968c4bd6f4a4f051271aacaa65727a6d) - **docs:** ensure support for dtype instances and update examples _(by Athan Reines)_
 -   [`88a7c4d`](https://github.com/stdlib-js/stdlib/commit/88a7c4de78c60740018a7038279248e48a2019cc) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
