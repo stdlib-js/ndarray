@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-07)
+## Unreleased (2026-04-08)
 
 <section class="features">
 
@@ -820,7 +820,16 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`c8df03c`](https://github.com/stdlib-js/stdlib/commit/c8df03cfe4cb5362cfff5f981aff4c0abc6d0e5a) - **refactor:** add support for ancilliary ndarrays which decompose into subarrays _(by Athan Reines)_
+-   [`da18a82`](https://github.com/stdlib-js/stdlib/commit/da18a821cb5b0e559658144a92a9fc1876d7345e) - **style:** reorder declarations _(by Athan Reines)_
 -   [`bb0baff`](https://github.com/stdlib-js/stdlib/commit/bb0baff5acc1fbfa5f34b31045dde2ebd123c140) - **docs:** update namespace table of contents [(#11322)](https://github.com/stdlib-js/stdlib/pull/11322) _(by stdlib-bot)_
+-   [`cdb2bb5`](https://github.com/stdlib-js/stdlib/commit/cdb2bb52a947ce276bc00e331f003dfeb14ec204) - **refactor:** normalize dtypes to enums to reduce memory consumption and speed-up comparisons _(by Athan Reines)_
+-   [`8aae193`](https://github.com/stdlib-js/stdlib/commit/8aae19336b0cba0e5f7c35fd1fe792bc1264f907) - **docs:** update example and documented parameter types _(by Athan Reines)_
+-   [`660d15d`](https://github.com/stdlib-js/stdlib/commit/660d15d41bad15389df2e9a1e591592ce54932b9) - **docs:** update example and documented parameter types _(by Athan Reines)_
+-   [`26f1d6e`](https://github.com/stdlib-js/stdlib/commit/26f1d6e9227859c18102b50a0021ccf6d1963a1f) - **docs:** update example _(by Athan Reines)_
+-   [`4d67d66`](https://github.com/stdlib-js/stdlib/commit/4d67d66c98fe74d756b277266e5f4fdabaae3039) - **docs:** update example _(by Athan Reines)_
+-   [`edc94eb`](https://github.com/stdlib-js/stdlib/commit/edc94ebd0008c174362864f2fea40cefac495635) - **refactor:** add support for dtype instances and reduce memory requirements _(by Athan Reines)_
+-   [`408c8be`](https://github.com/stdlib-js/stdlib/commit/408c8be00cf7c2139a5ff2dbab966db756d95944) - **refactor:** add support for dtype instances and reduce memory requirements _(by Athan Reines)_
 -   [`aac0a2b`](https://github.com/stdlib-js/stdlib/commit/aac0a2be45cc8c0d70542b91d4ac3a958ea4881d) - **feat:** add `ndarray2string` to namespace _(by Athan Reines)_
 -   [`47e4985`](https://github.com/stdlib-js/stdlib/commit/47e4985d18efb25b0fc00c6818fccdf547c9113e) - **feat:** add `ndarray/to-string` [(#10899)](https://github.com/stdlib-js/stdlib/pull/10899) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`a467bf0`](https://github.com/stdlib-js/stdlib/commit/a467bf0083da8f346611e53a684a78212f76d426) - **chore:** fix typos and incorrect test values [(#11270)](https://github.com/stdlib-js/stdlib/pull/11270) _(by Philipp Burckhardt)_
