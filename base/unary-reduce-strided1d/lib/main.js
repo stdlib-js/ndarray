@@ -450,8 +450,6 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) { // eslint-disable-
 		}
 		return UNARY[ K ]( fcn, arr, views, sl, strategy, opts );
 	}
-	sy = y.strides;
-
 	// Determine whether the loop dimensions have only **one** non-singleton dimension (e.g., shape=[10,1,1,1]) so that we can treat loop iteration as being equivalent to one-dimensional iteration...
 	if ( ns === K-1 ) {
 		// Get the index of the non-singleton dimension...
@@ -470,6 +468,7 @@ function unaryReduceStrided1d( fcn, arrays, dims, options ) { // eslint-disable-
 		}
 		return UNARY[ 1 ]( fcn, arr, views, sl, strategy, opts );
 	}
+	sy = y.strides;
 	iox = iterationOrder( sl ); // +/-1
 	ioy = iterationOrder( sy ); // +/-1
 

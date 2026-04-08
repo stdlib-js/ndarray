@@ -820,6 +820,14 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`c13dd70`](https://github.com/stdlib-js/stdlib/commit/c13dd703daff4a5893dac860a78fe6e0631e68ec) - **refactor:** normalize dtypes to enums to reduce memory consumption and speed-up comparisons _(by Athan Reines)_
+-   [`2041e12`](https://github.com/stdlib-js/stdlib/commit/2041e12c968c4bd6f4a4f051271aacaa65727a6d) - **docs:** ensure support for dtype instances and update examples _(by Athan Reines)_
+-   [`88a7c4d`](https://github.com/stdlib-js/stdlib/commit/88a7c4de78c60740018a7038279248e48a2019cc) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
+-   [`9929838`](https://github.com/stdlib-js/stdlib/commit/99298389ec07331f424d4a8ed570d974d7ad3c44) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
+-   [`ed8da6f`](https://github.com/stdlib-js/stdlib/commit/ed8da6f296e6031ef298cbeeb03ee121fdf0d0a7) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
+-   [`94e56f0`](https://github.com/stdlib-js/stdlib/commit/94e56f0ce160c8d5409fd7750ff42c4249704e5c) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions _(by Athan Reines)_
+-   [`07462e4`](https://github.com/stdlib-js/stdlib/commit/07462e494d3442559bb88d713009f50f9130b33e) - **refactor:** support ancillary ndarray arguments with trailing dimensions _(by Athan Reines)_
+-   [`686981c`](https://github.com/stdlib-js/stdlib/commit/686981c226ea4589c3fc53ef0b1c8c3ccfc70809) - **refactor:** move assignment expression _(by Athan Reines)_
 -   [`16c408d`](https://github.com/stdlib-js/stdlib/commit/16c408d950173630d6d458987f0d4d0a5e0c9f3e) - **docs:** fix copy _(by Athan Reines)_
 -   [`c8df03c`](https://github.com/stdlib-js/stdlib/commit/c8df03cfe4cb5362cfff5f981aff4c0abc6d0e5a) - **refactor:** add support for ancilliary ndarrays which decompose into subarrays _(by Athan Reines)_
 -   [`da18a82`](https://github.com/stdlib-js/stdlib/commit/da18a821cb5b0e559658144a92a9fc1876d7345e) - **style:** reorder declarations _(by Athan Reines)_
