@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-08)
+## Unreleased (2026-04-09)
 
 <section class="features">
 
 ### Features
 
+-   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d) - refactor declarations to satisfy TS's structural typing
 -   [`aac0a2b`](https://github.com/stdlib-js/stdlib/commit/aac0a2be45cc8c0d70542b91d4ac3a958ea4881d) - add `ndarray2string` to namespace
 -   [`47e4985`](https://github.com/stdlib-js/stdlib/commit/47e4985d18efb25b0fc00c6818fccdf547c9113e) - add `ndarray/to-string` [(#10899)](https://github.com/stdlib-js/stdlib/pull/10899)
 -   [`8dbfe60`](https://github.com/stdlib-js/stdlib/commit/8dbfe608b990c4e12c729daa01489de8f6b56ac3) - add support for dtype instances
@@ -588,6 +589,7 @@
 
 ### Bug Fixes
 
+-   [`d4710cd`](https://github.com/stdlib-js/stdlib/commit/d4710cd4279abf2e1e8383ce0e1bfbfadf4b609a) - improve type specificity with overloads
 -   [`762f410`](https://github.com/stdlib-js/stdlib/commit/762f410098b29afa3823ab1191553101db0dcead) - correct grammar in ndarray type test comments [(#11154)](https://github.com/stdlib-js/stdlib/pull/11154)
 -   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - ensure support for \"generic\" ndarrays
 -   [`0b89951`](https://github.com/stdlib-js/stdlib/commit/0b89951e22829e302f05d948ac8391d6300a39ea) - serialize the data type to a string and add comment
@@ -727,6 +729,15 @@
 
 ### BREAKING CHANGES
 
+-   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d): add additional type parameters
+
+    -   To migrate, users should update their signatures according to the
+        types of the additional array arguments provided to the strided
+        function. For fixed arity strided function wrappers, the previous
+        declarations would choke, as they expected such wrappers to be
+        variadic in the number of accepted arrays. This commit rectifies
+        that by enumerating various fixed array arity signatures.
+
 -   [`98b02ad`](https://github.com/stdlib-js/stdlib/commit/98b02adb85c1a0644510dddd2fab2c1b6b61c2eb): update `ndarray/base` TypeScript declarations
 -   [`b77641d`](https://github.com/stdlib-js/stdlib/commit/b77641d288f89a5333abf07b421cf54e575c5d03): add writable parameter to and always return a new ndarray in `removeSingletonDimensions`
 
@@ -820,6 +831,9 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`d1a105c`](https://github.com/stdlib-js/stdlib/commit/d1a105c74fb2d139c4e6aba1b4aee6188c2aea64) - **test:** update tests to align with increased specificity _(by Athan Reines)_
+-   [`d4710cd`](https://github.com/stdlib-js/stdlib/commit/d4710cd4279abf2e1e8383ce0e1bfbfadf4b609a) - **fix:** improve type specificity with overloads _(by Athan Reines)_
+-   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d) - **feat:** refactor declarations to satisfy TS's structural typing _(by Athan Reines)_
 -   [`f52054e`](https://github.com/stdlib-js/stdlib/commit/f52054eb695447bf801c822da2e86bfb36a28699) - **docs:** fix comments _(by Athan Reines)_
 -   [`ef8dc22`](https://github.com/stdlib-js/stdlib/commit/ef8dc22cb842e83aa870936e525bfcc3cd47473c) - **refactor:** use already defined variable _(by Athan Reines)_
 -   [`acd37d9`](https://github.com/stdlib-js/stdlib/commit/acd37d96627bf8febcdc2668e5f5ba2a1fd17c55) - **refactor:** use already defined variable _(by Athan Reines)_
