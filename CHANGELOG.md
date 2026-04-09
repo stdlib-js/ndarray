@@ -589,6 +589,7 @@
 
 ### Bug Fixes
 
+-   [`e47ee45`](https://github.com/stdlib-js/stdlib/commit/e47ee4551cf19ad584361fb80c9eed84ff9ea792) - resolve bugs, docs, and JSDoc type errors [(#11337)](https://github.com/stdlib-js/stdlib/pull/11337)
 -   [`d4710cd`](https://github.com/stdlib-js/stdlib/commit/d4710cd4279abf2e1e8383ce0e1bfbfadf4b609a) - improve type specificity with overloads
 -   [`762f410`](https://github.com/stdlib-js/stdlib/commit/762f410098b29afa3823ab1191553101db0dcead) - correct grammar in ndarray type test comments [(#11154)](https://github.com/stdlib-js/stdlib/pull/11154)
 -   [`ec6b646`](https://github.com/stdlib-js/stdlib/commit/ec6b64660490ae835e6991f53d1fb3db9985d499) - ensure support for \"generic\" ndarrays
@@ -831,6 +832,7 @@ A total of 45 issues were closed in this release:
 
 <details>
 
+-   [`e47ee45`](https://github.com/stdlib-js/stdlib/commit/e47ee4551cf19ad584361fb80c9eed84ff9ea792) - **fix:** resolve bugs, docs, and JSDoc type errors [(#11337)](https://github.com/stdlib-js/stdlib/pull/11337) _(by Philipp Burckhardt)_
 -   [`d1a105c`](https://github.com/stdlib-js/stdlib/commit/d1a105c74fb2d139c4e6aba1b4aee6188c2aea64) - **test:** update tests to align with increased specificity _(by Athan Reines)_
 -   [`d4710cd`](https://github.com/stdlib-js/stdlib/commit/d4710cd4279abf2e1e8383ce0e1bfbfadf4b609a) - **fix:** improve type specificity with overloads _(by Athan Reines)_
 -   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d) - **feat:** refactor declarations to satisfy TS's structural typing _(by Athan Reines)_
