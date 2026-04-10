@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`3a4c3c1`](https://github.com/stdlib-js/stdlib/commit/3a4c3c1c8985cdd90373832b303a818d8e42785d) - add `rotr90` to namespace
 -   [`cda31f5`](https://github.com/stdlib-js/stdlib/commit/cda31f53eb384a004a50c4249cb6e7d0795285d5) - add `ndarray/base/rotr90` [(#11030)](https://github.com/stdlib-js/stdlib/pull/11030)
 -   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d) - refactor declarations to satisfy TS's structural typing
 -   [`aac0a2b`](https://github.com/stdlib-js/stdlib/commit/aac0a2be45cc8c0d70542b91d4ac3a958ea4881d) - add `ndarray2string` to namespace
@@ -836,6 +837,7 @@ A total of 48 issues were closed in this release:
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`08f3a13`](https://github.com/stdlib-js/stdlib/commit/08f3a134dbfc9a1fee91a1d4074ae44a0e32674d) - **chore:** fix EditorConfig lint errors [(#11328)](https://github.com/stdlib-js/stdlib/pull/11328) _(by Guneet Gill)_
 -   [`d6065f1`](https://github.com/stdlib-js/stdlib/commit/d6065f1af58925d59d168fe786ccdb2ccf3a8df0) - **chore:** fix C lint errors [(#11348)](https://github.com/stdlib-js/stdlib/pull/11348) _(by Guneet Gill, Athan Reines)_
+-   [`3a4c3c1`](https://github.com/stdlib-js/stdlib/commit/3a4c3c1c8985cdd90373832b303a818d8e42785d) - **feat:** add `rotr90` to namespace _(by Athan Reines)_
 -   [`cda31f5`](https://github.com/stdlib-js/stdlib/commit/cda31f53eb384a004a50c4249cb6e7d0795285d5) - **feat:** add `ndarray/base/rotr90` [(#11030)](https://github.com/stdlib-js/stdlib/pull/11030) _(by Muhammad Haris, Athan Reines)_
 -   [`3df3c24`](https://github.com/stdlib-js/stdlib/commit/3df3c244943b00841d3abd5ac75c2a42e848c492) - **style:** remove empty line _(by Athan Reines)_
 -   [`801907f`](https://github.com/stdlib-js/stdlib/commit/801907f3df34913321d0f977117114fbb1bcb618) - **style:** remove empty line _(by Athan Reines)_
