@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-09)
+## Unreleased (2026-04-10)
 
 <section class="features">
 
@@ -832,6 +832,7 @@ A total of 46 issues were closed in this release:
 
 <details>
 
+-   [`8bac83f`](https://github.com/stdlib-js/stdlib/commit/8bac83f2664cdc3a7023421d7ab583c9d8b3b1eb) - **docs:** update examples _(by Athan Reines)_
 -   [`a04c190`](https://github.com/stdlib-js/stdlib/commit/a04c1901314a04f6edee35ac2dfcebb4275a9811) - **chore:** fix C lint errors [(#11335)](https://github.com/stdlib-js/stdlib/pull/11335) _(by Geo Daoyu, Athan Reines)_
 -   [`e47ee45`](https://github.com/stdlib-js/stdlib/commit/e47ee4551cf19ad584361fb80c9eed84ff9ea792) - **fix:** resolve bugs, docs, and JSDoc type errors [(#11337)](https://github.com/stdlib-js/stdlib/pull/11337) _(by Philipp Burckhardt)_
 -   [`d1a105c`](https://github.com/stdlib-js/stdlib/commit/d1a105c74fb2d139c4e6aba1b4aee6188c2aea64) - **test:** update tests to align with increased specificity _(by Athan Reines)_
