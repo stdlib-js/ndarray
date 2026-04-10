@@ -833,6 +833,7 @@ A total of 48 issues were closed in this release:
 
 <details>
 
+-   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`08f3a13`](https://github.com/stdlib-js/stdlib/commit/08f3a134dbfc9a1fee91a1d4074ae44a0e32674d) - **chore:** fix EditorConfig lint errors [(#11328)](https://github.com/stdlib-js/stdlib/pull/11328) _(by Guneet Gill)_
 -   [`d6065f1`](https://github.com/stdlib-js/stdlib/commit/d6065f1af58925d59d168fe786ccdb2ccf3a8df0) - **chore:** fix C lint errors [(#11348)](https://github.com/stdlib-js/stdlib/pull/11348) _(by Guneet Gill, Athan Reines)_
 -   [`cda31f5`](https://github.com/stdlib-js/stdlib/commit/cda31f53eb384a004a50c4249cb6e7d0795285d5) - **feat:** add `ndarray/base/rotr90` [(#11030)](https://github.com/stdlib-js/stdlib/pull/11030) _(by Muhammad Haris, Athan Reines)_
@@ -2421,7 +2422,7 @@ A total of 48 issues were closed in this release:
 
 ### Contributors
 
-A total of 42 people contributed to this release. Thank you to the following contributors:
+A total of 43 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2461,6 +2462,7 @@ A total of 42 people contributed to this release. Thank you to the following con
 -   Suyash Pathak
 -   Tejasvini Ramaswamy
 -   Tushar Bhardwaj
+-   anee3
 -   ashutoshsao
 -   kaushal-kumar-it
 -   lohithganni
