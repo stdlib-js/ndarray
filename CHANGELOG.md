@@ -834,6 +834,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`b7a9481`](https://github.com/stdlib-js/stdlib/commit/b7a9481c3d78c1b7fa004038fd6c26ea0d604f79) - **test:** address failing tests _(by Athan Reines)_
 -   [`3cdc9a7`](https://github.com/stdlib-js/stdlib/commit/3cdc9a7d5b1d8c703e01f93f3a796e6b6858bcad) - **chore:** fix JavaScript lint errors [(#10710)](https://github.com/stdlib-js/stdlib/pull/10710) _(by Partha Das)_
 -   [`35566af`](https://github.com/stdlib-js/stdlib/commit/35566af0add64775e60422fd16e50e1bec3947e7) - **docs:** fix C examples in READMEs [(#11229)](https://github.com/stdlib-js/stdlib/pull/11229) _(by anee3, Athan Reines)_
 -   [`08f3a13`](https://github.com/stdlib-js/stdlib/commit/08f3a134dbfc9a1fee91a1d4074ae44a0e32674d) - **chore:** fix EditorConfig lint errors [(#11328)](https://github.com/stdlib-js/stdlib/pull/11328) _(by Guneet Gill)_
