@@ -1634,6 +1634,15 @@ setReadOnly( ns, 'unaryStrided1dDispatchFactory', require( './../../base/unary-s
 setReadOnly( ns, 'unaryBlockSize', require( './../../base/unary-tiling-block-size' ) );
 
 /**
+* @name unflatten
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/unflatten}
+*/
+setReadOnly( ns, 'unflatten', require( './../../base/unflatten' ) );
+
+/**
 * @name unflattenShape
 * @memberof ns
 * @readonly
