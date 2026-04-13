@@ -593,6 +593,8 @@
 
 ### Bug Fixes
 
+-   [`5795b39`](https://github.com/stdlib-js/stdlib/commit/5795b39e0f0f1d7ccae3ea1ed43809b7ff78b77d) - determine layout based on physical layout
+-   [`c20c5d6`](https://github.com/stdlib-js/stdlib/commit/c20c5d602a0f897e86d7fbd83180fec84c535984) - determine layout based on physical layout
 -   [`e47ee45`](https://github.com/stdlib-js/stdlib/commit/e47ee4551cf19ad584361fb80c9eed84ff9ea792) - resolve bugs, docs, and JSDoc type errors [(#11337)](https://github.com/stdlib-js/stdlib/pull/11337)
 -   [`d4710cd`](https://github.com/stdlib-js/stdlib/commit/d4710cd4279abf2e1e8383ce0e1bfbfadf4b609a) - improve type specificity with overloads
 -   [`762f410`](https://github.com/stdlib-js/stdlib/commit/762f410098b29afa3823ab1191553101db0dcead) - correct grammar in ndarray type test comments [(#11154)](https://github.com/stdlib-js/stdlib/pull/11154)
@@ -836,6 +838,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5795b39`](https://github.com/stdlib-js/stdlib/commit/5795b39e0f0f1d7ccae3ea1ed43809b7ff78b77d) - **fix:** determine layout based on physical layout _(by Athan Reines)_
+-   [`c20c5d6`](https://github.com/stdlib-js/stdlib/commit/c20c5d602a0f897e86d7fbd83180fec84c535984) - **fix:** determine layout based on physical layout _(by Athan Reines)_
 -   [`ef49a3e`](https://github.com/stdlib-js/stdlib/commit/ef49a3e72514684846fcf77b42c084e080ad5902) - **feat:** add `removeSingletonDimensions` to namespace _(by Athan Reines)_
 -   [`c7633e9`](https://github.com/stdlib-js/stdlib/commit/c7633e9c62c55e333ad23d7f240fcab45fd25d98) - **feat:** add `ndarray/remove-singleton-dimensions` [(#10807)](https://github.com/stdlib-js/stdlib/pull/10807) _(by Muhammad Haris, stdlib-bot)_
 -   [`843db97`](https://github.com/stdlib-js/stdlib/commit/843db97a005833d8362c60da9a0326eca5aad1b8) - **docs:** update namespace table of contents [(#11358)](https://github.com/stdlib-js/stdlib/pull/11358) _(by stdlib-bot)_

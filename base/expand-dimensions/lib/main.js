@@ -20,8 +20,9 @@
 
 // MODULES //
 
-var isRowMajor = require( './../../../base/assert/is-row-major-string' );
+var isRowMajorString = require( './../../../base/assert/is-row-major-string' );
 var normalizeIndex = require( './../../../base/normalize-index' );
+var strides2order = require( './../../../base/strides2order' );
 var getDType = require( './../../../base/dtype' );
 var getShape = require( './../../../base/shape' );
 var getStrides = require( './../../../base/strides' );
@@ -63,6 +64,7 @@ function expandDimensions( x, dim, writable ) {
 	var sh;
 	var st;
 	var d;
+	var o;
 	var N;
 	var i;
 
@@ -70,7 +72,13 @@ function expandDimensions( x, dim, writable ) {
 	st = getStrides( x, false );
 	ord = getOrder( x );
 
-	isrm = isRowMajor( ord );
+	o = strides2order( st );
+	if ( o === 0 || o === 3 ) {
+		// Fallback to stated layout when unable to infer the underlying physical layout:
+		isrm = isRowMajorString( ord );
+	} else {
+		isrm = ( o === 1 );
+	}
 	N = sh.length;
 
 	strides = [];
