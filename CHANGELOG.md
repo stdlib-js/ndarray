@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`63c4c05`](https://github.com/stdlib-js/stdlib/commit/63c4c057c630dc607b336c37e1cfc4b5e6ceac3d) - add `ndarray/base/unflatten` [(#10706)](https://github.com/stdlib-js/stdlib/pull/10706)
 -   [`ef49a3e`](https://github.com/stdlib-js/stdlib/commit/ef49a3e72514684846fcf77b42c084e080ad5902) - add `removeSingletonDimensions` to namespace
 -   [`c7633e9`](https://github.com/stdlib-js/stdlib/commit/c7633e9c62c55e333ad23d7f240fcab45fd25d98) - add `ndarray/remove-singleton-dimensions` [(#10807)](https://github.com/stdlib-js/stdlib/pull/10807)
 -   [`3a4c3c1`](https://github.com/stdlib-js/stdlib/commit/3a4c3c1c8985cdd90373832b303a818d8e42785d) - add `rotr90` to namespace
@@ -838,6 +839,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`63c4c05`](https://github.com/stdlib-js/stdlib/commit/63c4c057c630dc607b336c37e1cfc4b5e6ceac3d) - **feat:** add `ndarray/base/unflatten` [(#10706)](https://github.com/stdlib-js/stdlib/pull/10706) _(by Muhammad Haris, Athan Reines, stdlib-bot)_
 -   [`5795b39`](https://github.com/stdlib-js/stdlib/commit/5795b39e0f0f1d7ccae3ea1ed43809b7ff78b77d) - **fix:** determine layout based on physical layout _(by Athan Reines)_
 -   [`c20c5d6`](https://github.com/stdlib-js/stdlib/commit/c20c5d602a0f897e86d7fbd83180fec84c535984) - **fix:** determine layout based on physical layout _(by Athan Reines)_
 -   [`ef49a3e`](https://github.com/stdlib-js/stdlib/commit/ef49a3e72514684846fcf77b42c084e080ad5902) - **feat:** add `removeSingletonDimensions` to namespace _(by Athan Reines)_
