@@ -671,6 +671,15 @@ setReadOnly( ns, 'scalar2ndarrayLike', require( './../../base/from-scalar-like' 
 setReadOnly( ns, 'full', require( './../../base/full' ) );
 
 /**
+* @name fullBy
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/full-by}
+*/
+setReadOnly( ns, 'fullBy', require( './../../base/full-by' ) );
+
+/**
 * @name includes
 * @memberof ns
 * @readonly
