@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-11)
+## Unreleased (2026-04-13)
 
 <section class="features">
 
 ### Features
 
+-   [`c7633e9`](https://github.com/stdlib-js/stdlib/commit/c7633e9c62c55e333ad23d7f240fcab45fd25d98) - add `ndarray/remove-singleton-dimensions` [(#10807)](https://github.com/stdlib-js/stdlib/pull/10807)
 -   [`3a4c3c1`](https://github.com/stdlib-js/stdlib/commit/3a4c3c1c8985cdd90373832b303a818d8e42785d) - add `rotr90` to namespace
 -   [`cda31f5`](https://github.com/stdlib-js/stdlib/commit/cda31f53eb384a004a50c4249cb6e7d0795285d5) - add `ndarray/base/rotr90` [(#11030)](https://github.com/stdlib-js/stdlib/pull/11030)
 -   [`142964b`](https://github.com/stdlib-js/stdlib/commit/142964bca2c6774129f0807bcb9786ebc373646d) - refactor declarations to satisfy TS's structural typing
@@ -834,6 +835,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c7633e9`](https://github.com/stdlib-js/stdlib/commit/c7633e9c62c55e333ad23d7f240fcab45fd25d98) - **feat:** add `ndarray/remove-singleton-dimensions` [(#10807)](https://github.com/stdlib-js/stdlib/pull/10807) _(by Muhammad Haris, stdlib-bot)_
 -   [`843db97`](https://github.com/stdlib-js/stdlib/commit/843db97a005833d8362c60da9a0326eca5aad1b8) - **docs:** update namespace table of contents [(#11358)](https://github.com/stdlib-js/stdlib/pull/11358) _(by stdlib-bot)_
 -   [`b7a9481`](https://github.com/stdlib-js/stdlib/commit/b7a9481c3d78c1b7fa004038fd6c26ea0d604f79) - **test:** address failing tests _(by Athan Reines)_
 -   [`3cdc9a7`](https://github.com/stdlib-js/stdlib/commit/3cdc9a7d5b1d8c703e01f93f3a796e6b6858bcad) - **chore:** fix JavaScript lint errors [(#10710)](https://github.com/stdlib-js/stdlib/pull/10710) _(by Partha Das)_
