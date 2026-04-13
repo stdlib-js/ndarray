@@ -842,6 +842,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4f9ef0a`](https://github.com/stdlib-js/stdlib/commit/4f9ef0a54ec0f9e065ea8ab3b514128d3c3adef1) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11429)](https://github.com/stdlib-js/stdlib/pull/11429) _(by Karan Anand)_
 -   [`886ad4c`](https://github.com/stdlib-js/stdlib/commit/886ad4c592bb63614a1aedc2f6db0895eb737a01) - **feat:** add `fullBy` to namespace _(by Athan Reines)_
 -   [`7353aa8`](https://github.com/stdlib-js/stdlib/commit/7353aa8cd76a9e27f13092e40a556c49b0df231e) - **feat:** add `ndarray/base/full-by` [(#11310)](https://github.com/stdlib-js/stdlib/pull/11310) _(by Muhammad Haris, Athan Reines)_
 -   [`08b7638`](https://github.com/stdlib-js/stdlib/commit/08b76385da8c244e4256e361e4b0d717966642cb) - **feat:** add `unflatten` to namespace _(by Athan Reines)_
@@ -2443,7 +2444,7 @@ A total of 49 issues were closed in this release:
 
 ### Contributors
 
-A total of 43 people contributed to this release. Thank you to the following contributors:
+A total of 44 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2460,6 +2461,7 @@ A total of 43 people contributed to this release. Thank you to the following con
 -   Guneet Gill
 -   Gururaj Gurram
 -   Harshit Verma
+-   Karan Anand
 -   Karan Vasudevamurthy
 -   Kate Suraev
 -   Loay Ahmed
