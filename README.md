@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -177,6 +171,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest "kind" to which ndarray data types can be **safely** cast.</span>
 -   <span class="signature">[`push( x, ...values )`][@stdlib/ndarray/push]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by appending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`reject( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/reject]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.</span>
+-   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
 -   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
@@ -227,21 +222,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -463,6 +448,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/push]: https://github.com/stdlib-js/ndarray/tree/main/push
 
 [@stdlib/ndarray/reject]: https://github.com/stdlib-js/ndarray/tree/main/reject
+
+[@stdlib/ndarray/remove-singleton-dimensions]: https://github.com/stdlib-js/ndarray/tree/main/remove-singleton-dimensions
 
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
 
