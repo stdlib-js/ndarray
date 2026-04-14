@@ -171,6 +171,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest "kind" to which ndarray data types can be **safely** cast.</span>
 -   <span class="signature">[`push( x, ...values )`][@stdlib/ndarray/push]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by appending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`reject( x[, options], predicate[, thisArg] )`][@stdlib/ndarray/reject]</span><span class="delimiter">: </span><span class="description">return a shallow copy of an ndarray containing only those elements which fail a test implemented by a predicate function.</span>
+-   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
 -   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
@@ -447,6 +448,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/push]: https://github.com/stdlib-js/ndarray/tree/main/push
 
 [@stdlib/ndarray/reject]: https://github.com/stdlib-js/ndarray/tree/main/reject
+
+[@stdlib/ndarray/remove-singleton-dimensions]: https://github.com/stdlib-js/ndarray/tree/main/remove-singleton-dimensions
 
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
 
