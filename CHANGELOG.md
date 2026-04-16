@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-14)
+## Unreleased (2026-04-16)
 
 <section class="features">
 
@@ -842,6 +842,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`3609aed`](https://github.com/stdlib-js/stdlib/commit/3609aedbb47d90fa656da6e159f8dba6c3333cf7) - **docs:** improve doctests for ndarray instances in `ndarray/with` [(#11476)](https://github.com/stdlib-js/stdlib/pull/11476) _(by Uday Kakade)_
 -   [`36e8e4b`](https://github.com/stdlib-js/stdlib/commit/36e8e4be9c05de181d5e69f7a0f4b689d27c3f35) - **docs:** update namespace table of contents [(#11448)](https://github.com/stdlib-js/stdlib/pull/11448) _(by stdlib-bot)_
 -   [`4f9ef0a`](https://github.com/stdlib-js/stdlib/commit/4f9ef0a54ec0f9e065ea8ab3b514128d3c3adef1) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11429)](https://github.com/stdlib-js/stdlib/pull/11429) _(by Karan Anand)_
 -   [`886ad4c`](https://github.com/stdlib-js/stdlib/commit/886ad4c592bb63614a1aedc2f6db0895eb737a01) - **feat:** add `fullBy` to namespace _(by Athan Reines)_
@@ -2445,7 +2446,7 @@ A total of 49 issues were closed in this release:
 
 ### Contributors
 
-A total of 44 people contributed to this release. Thank you to the following contributors:
+A total of 45 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2486,6 +2487,7 @@ A total of 44 people contributed to this release. Thank you to the following con
 -   Suyash Pathak
 -   Tejasvini Ramaswamy
 -   Tushar Bhardwaj
+-   Uday Kakade
 -   anee3
 -   ashutoshsao
 -   kaushal-kumar-it
