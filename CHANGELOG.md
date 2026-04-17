@@ -844,6 +844,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4c6c7a1`](https://github.com/stdlib-js/stdlib/commit/4c6c7a13a022fb679e9f7793ce06b06674b21956) - **docs:** improve doctests for ndarray instances in `ndarray/base/reverse` [(#11509)](https://github.com/stdlib-js/stdlib/pull/11509) _(by Uday Kakade)_
 -   [`c1376cb`](https://github.com/stdlib-js/stdlib/commit/c1376cb9550a82c5c2377a7c97f1ce4a59ea141a) - **docs:** improve doctests for ndarray instances in `ndarray/base/to-reversed` [(#11511)](https://github.com/stdlib-js/stdlib/pull/11511) _(by Uday Kakade)_
 -   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https://github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
 -   [`13ec30d`](https://github.com/stdlib-js/stdlib/commit/13ec30d69ff91423504ba76bf5de59b0322ff8db) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11435)](https://github.com/stdlib-js/stdlib/pull/11435) _(by Karan Anand)_
