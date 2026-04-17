@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`97fd5b7`](https://github.com/stdlib-js/stdlib/commit/97fd5b7de7e74e99e0ffb4ccd27c5ae555aa02cb) - add `toUnflattened` to namespace
 -   [`737511b`](https://github.com/stdlib-js/stdlib/commit/737511bad0cbe580a8771094f13ef75fd8975f01) - add `ndarray/base/to-unflattened` [(#11493)](https://github.com/stdlib-js/stdlib/pull/11493)
 -   [`886ad4c`](https://github.com/stdlib-js/stdlib/commit/886ad4c592bb63614a1aedc2f6db0895eb737a01) - add `fullBy` to namespace
 -   [`7353aa8`](https://github.com/stdlib-js/stdlib/commit/7353aa8cd76a9e27f13092e40a556c49b0df231e) - add `ndarray/base/full-by` [(#11310)](https://github.com/stdlib-js/stdlib/pull/11310)
@@ -843,6 +844,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`97fd5b7`](https://github.com/stdlib-js/stdlib/commit/97fd5b7de7e74e99e0ffb4ccd27c5ae555aa02cb) - **feat:** add `toUnflattened` to namespace _(by Athan Reines)_
 -   [`737511b`](https://github.com/stdlib-js/stdlib/commit/737511bad0cbe580a8771094f13ef75fd8975f01) - **feat:** add `ndarray/base/to-unflattened` [(#11493)](https://github.com/stdlib-js/stdlib/pull/11493) _(by Muhammad Haris)_
 -   [`3609aed`](https://github.com/stdlib-js/stdlib/commit/3609aedbb47d90fa656da6e159f8dba6c3333cf7) - **docs:** improve doctests for ndarray instances in `ndarray/with` [(#11476)](https://github.com/stdlib-js/stdlib/pull/11476) _(by Uday Kakade)_
 -   [`36e8e4b`](https://github.com/stdlib-js/stdlib/commit/36e8e4be9c05de181d5e69f7a0f4b689d27c3f35) - **docs:** update namespace table of contents [(#11448)](https://github.com/stdlib-js/stdlib/pull/11448) _(by stdlib-bot)_

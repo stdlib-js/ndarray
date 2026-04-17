@@ -1445,6 +1445,15 @@ setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimen
 setReadOnly( ns, 'toTransposed', require( './../../base/to-transposed' ) );
 
 /**
+* @name toUnflattened
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-unflattened}
+*/
+setReadOnly( ns, 'toUnflattened', require( './../../base/to-unflattened' ) );
+
+/**
 * @name toUniqueNormalizedIndices
 * @memberof ns
 * @readonly
