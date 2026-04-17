@@ -844,6 +844,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https://github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
 -   [`13ec30d`](https://github.com/stdlib-js/stdlib/commit/13ec30d69ff91423504ba76bf5de59b0322ff8db) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11435)](https://github.com/stdlib-js/stdlib/pull/11435) _(by Karan Anand)_
 -   [`ad3f046`](https://github.com/stdlib-js/stdlib/commit/ad3f04667c2cc32b6e749d8b08259afecff3f1e8) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11434)](https://github.com/stdlib-js/stdlib/pull/11434) _(by Karan Anand)_
 -   [`97fd5b7`](https://github.com/stdlib-js/stdlib/commit/97fd5b7de7e74e99e0ffb4ccd27c5ae555aa02cb) - **feat:** add `toUnflattened` to namespace _(by Athan Reines)_
