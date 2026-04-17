@@ -844,6 +844,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5426e50`](https://github.com/stdlib-js/stdlib/commit/5426e503c7239b8672e8f2c9621ec0dfc9dcf391) - **docs:** improve doctests for ndarray instances in `ndarray/to-reversed` [(#11506)](https://github.com/stdlib-js/stdlib/pull/11506) _(by Uday Kakade, Athan Reines)_
 -   [`448abe7`](https://github.com/stdlib-js/stdlib/commit/448abe7364d055ee1f0e069276024ad9fec9c179) - **docs:** improve doctests for ndarray instances in `ndarray/reverse` [(#11508)](https://github.com/stdlib-js/stdlib/pull/11508) _(by Uday Kakade)_
 -   [`4c6c7a1`](https://github.com/stdlib-js/stdlib/commit/4c6c7a13a022fb679e9f7793ce06b06674b21956) - **docs:** improve doctests for ndarray instances in `ndarray/base/reverse` [(#11509)](https://github.com/stdlib-js/stdlib/pull/11509) _(by Uday Kakade)_
 -   [`c1376cb`](https://github.com/stdlib-js/stdlib/commit/c1376cb9550a82c5c2377a7c97f1ce4a59ea141a) - **docs:** improve doctests for ndarray instances in `ndarray/base/to-reversed` [(#11511)](https://github.com/stdlib-js/stdlib/pull/11511) _(by Uday Kakade)_
