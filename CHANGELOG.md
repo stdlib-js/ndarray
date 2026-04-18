@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - add `trues`, `falses`, and `tile` to namespace
 -   [`909028f`](https://github.com/stdlib-js/stdlib/commit/909028f730cd82c58cfbdb635ebc602e907ba956) - add `ndarray/base/trues` [(#11528)](https://github.com/stdlib-js/stdlib/pull/11528)
 -   [`85543bf`](https://github.com/stdlib-js/stdlib/commit/85543bf5fd13e8014bfa2b81ce950f5172d4d4b0) - add `ndarray/base/falses` [(#11529)](https://github.com/stdlib-js/stdlib/pull/11529)
 -   [`a12ba0a`](https://github.com/stdlib-js/stdlib/commit/a12ba0a26b7e11e99b04627e57a1dd2f21ca4ad0) - add `ndarray/base/tile` [(#11499)](https://github.com/stdlib-js/stdlib/pull/11499)
@@ -847,6 +848,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - **feat:** add `trues`, `falses`, and `tile` to namespace _(by Athan Reines)_
 -   [`909028f`](https://github.com/stdlib-js/stdlib/commit/909028f730cd82c58cfbdb635ebc602e907ba956) - **feat:** add `ndarray/base/trues` [(#11528)](https://github.com/stdlib-js/stdlib/pull/11528) _(by Muhammad Haris)_
 -   [`85543bf`](https://github.com/stdlib-js/stdlib/commit/85543bf5fd13e8014bfa2b81ce950f5172d4d4b0) - **feat:** add `ndarray/base/falses` [(#11529)](https://github.com/stdlib-js/stdlib/pull/11529) _(by Muhammad Haris)_
 -   [`a12ba0a`](https://github.com/stdlib-js/stdlib/commit/a12ba0a26b7e11e99b04627e57a1dd2f21ca4ad0) - **feat:** add `ndarray/base/tile` [(#11499)](https://github.com/stdlib-js/stdlib/pull/11499) _(by Muhammad Haris, Athan Reines)_

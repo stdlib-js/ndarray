@@ -545,6 +545,15 @@ setReadOnly( ns, 'everyBy', require( './../../base/every-by' ) );
 setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' ) );
 
 /**
+* @name falses
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/falses}
+*/
+setReadOnly( ns, 'falses', require( './../../base/falses' ) );
+
+/**
 * @name fill
 * @memberof ns
 * @readonly
@@ -1373,6 +1382,15 @@ setReadOnly( ns, 'ternaryOutputDataType', require( './../../base/ternary-output-
 setReadOnly( ns, 'ternaryBlockSize', require( './../../base/ternary-tiling-block-size' ) );
 
 /**
+* @name tile
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/tile}
+*/
+setReadOnly( ns, 'tile', require( './../../base/tile' ) );
+
+/**
 * @name blockSize
 * @memberof ns
 * @readonly
@@ -1470,6 +1488,15 @@ setReadOnly( ns, 'toUniqueNormalizedIndices', require( './../../base/to-unique-n
 * @see {@link module:@stdlib/ndarray/base/transpose}
 */
 setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
+
+/**
+* @name trues
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/trues}
+*/
+setReadOnly( ns, 'trues', require( './../../base/trues' ) );
 
 /**
 * @name unary
