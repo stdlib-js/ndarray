@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`85543bf`](https://github.com/stdlib-js/stdlib/commit/85543bf5fd13e8014bfa2b81ce950f5172d4d4b0) - add `ndarray/base/falses` [(#11529)](https://github.com/stdlib-js/stdlib/pull/11529)
 -   [`a12ba0a`](https://github.com/stdlib-js/stdlib/commit/a12ba0a26b7e11e99b04627e57a1dd2f21ca4ad0) - add `ndarray/base/tile` [(#11499)](https://github.com/stdlib-js/stdlib/pull/11499)
 -   [`97fd5b7`](https://github.com/stdlib-js/stdlib/commit/97fd5b7de7e74e99e0ffb4ccd27c5ae555aa02cb) - add `toUnflattened` to namespace
 -   [`737511b`](https://github.com/stdlib-js/stdlib/commit/737511bad0cbe580a8771094f13ef75fd8975f01) - add `ndarray/base/to-unflattened` [(#11493)](https://github.com/stdlib-js/stdlib/pull/11493)
@@ -845,6 +846,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`85543bf`](https://github.com/stdlib-js/stdlib/commit/85543bf5fd13e8014bfa2b81ce950f5172d4d4b0) - **feat:** add `ndarray/base/falses` [(#11529)](https://github.com/stdlib-js/stdlib/pull/11529) _(by Muhammad Haris)_
 -   [`a12ba0a`](https://github.com/stdlib-js/stdlib/commit/a12ba0a26b7e11e99b04627e57a1dd2f21ca4ad0) - **feat:** add `ndarray/base/tile` [(#11499)](https://github.com/stdlib-js/stdlib/pull/11499) _(by Muhammad Haris, Athan Reines)_
 -   [`2505815`](https://github.com/stdlib-js/stdlib/commit/25058156cf7b1138c5c33209a5143100c376b46d) - **docs:** update namespace table of contents [(#11520)](https://github.com/stdlib-js/stdlib/pull/11520) _(by stdlib-bot)_
 -   [`3af178c`](https://github.com/stdlib-js/stdlib/commit/3af178cc07862b3070234245f015a4bdc8370acb) - **style:** use single quotes for require calls [(#11516)](https://github.com/stdlib-js/stdlib/pull/11516) _(by Philipp Burckhardt)_
