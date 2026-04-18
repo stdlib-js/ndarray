@@ -844,6 +844,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`2505815`](https://github.com/stdlib-js/stdlib/commit/25058156cf7b1138c5c33209a5143100c376b46d) - **docs:** update namespace table of contents [(#11520)](https://github.com/stdlib-js/stdlib/pull/11520) _(by stdlib-bot)_
 -   [`3af178c`](https://github.com/stdlib-js/stdlib/commit/3af178cc07862b3070234245f015a4bdc8370acb) - **style:** use single quotes for require calls [(#11516)](https://github.com/stdlib-js/stdlib/pull/11516) _(by Philipp Burckhardt)_
 -   [`5426e50`](https://github.com/stdlib-js/stdlib/commit/5426e503c7239b8672e8f2c9621ec0dfc9dcf391) - **docs:** improve doctests for ndarray instances in `ndarray/to-reversed` [(#11506)](https://github.com/stdlib-js/stdlib/pull/11506) _(by Uday Kakade, Athan Reines)_
 -   [`448abe7`](https://github.com/stdlib-js/stdlib/commit/448abe7364d055ee1f0e069276024ad9fec9c179) - **docs:** improve doctests for ndarray instances in `ndarray/reverse` [(#11508)](https://github.com/stdlib-js/stdlib/pull/11508) _(by Uday Kakade)_
