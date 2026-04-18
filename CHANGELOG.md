@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`414d61b`](https://github.com/stdlib-js/stdlib/commit/414d61b8adf854cfa4582bd9659c760b03bc40a7) - add `colcat` to namespace
 -   [`648e90d`](https://github.com/stdlib-js/stdlib/commit/648e90d07d66f130eca610f79242ceea902f9e10) - add `ndarray/colcat` [(#11527)](https://github.com/stdlib-js/stdlib/pull/11527)
 -   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - add `trues`, `falses`, and `tile` to namespace
 -   [`909028f`](https://github.com/stdlib-js/stdlib/commit/909028f730cd82c58cfbdb635ebc602e907ba956) - add `ndarray/base/trues` [(#11528)](https://github.com/stdlib-js/stdlib/pull/11528)
@@ -849,6 +850,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`414d61b`](https://github.com/stdlib-js/stdlib/commit/414d61b8adf854cfa4582bd9659c760b03bc40a7) - **feat:** add `colcat` to namespace _(by Athan Reines)_
 -   [`648e90d`](https://github.com/stdlib-js/stdlib/commit/648e90d07d66f130eca610f79242ceea902f9e10) - **feat:** add `ndarray/colcat` [(#11527)](https://github.com/stdlib-js/stdlib/pull/11527) _(by Muhammad Haris)_
 -   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - **feat:** add `trues`, `falses`, and `tile` to namespace _(by Athan Reines)_
 -   [`909028f`](https://github.com/stdlib-js/stdlib/commit/909028f730cd82c58cfbdb635ebc602e907ba956) - **feat:** add `ndarray/base/trues` [(#11528)](https://github.com/stdlib-js/stdlib/pull/11528) _(by Muhammad Haris)_
