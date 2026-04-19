@@ -856,6 +856,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`103a35d`](https://github.com/stdlib-js/stdlib/commit/103a35d6da977625e0c040b224ef1766ba0e5ae8) - **style:** enable lint rule _(by Athan Reines)_
 -   [`84d7a1f`](https://github.com/stdlib-js/stdlib/commit/84d7a1f44c1127dfc9c22b7132d1166d1a96c64b) - **docs:** update namespace table of contents [(#11562)](https://github.com/stdlib-js/stdlib/pull/11562) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`3a73d93`](https://github.com/stdlib-js/stdlib/commit/3a73d932e39d6603c57d8e62de4aba731ffa2fba) - **docs:** update notes _(by Athan Reines)_
 -   [`bbac071`](https://github.com/stdlib-js/stdlib/commit/bbac07144b6a85eb308745484ad491ce45bcd0f8) - **feat:** add `atleast1d`, `atleast2d`, and `atleast3d` to namespace _(by Athan Reines)_
