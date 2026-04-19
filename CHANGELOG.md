@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`aaa6e06`](https://github.com/stdlib-js/stdlib/commit/aaa6e06422092ba41c57fc3dfb2a8b833edd0163) - add `vconcat` to namespace
 -   [`560eaba`](https://github.com/stdlib-js/stdlib/commit/560eaba74ab49beef39d2cc8c4cdda08d5c1060f) - add `ndarray/vconcat` [(#11581)](https://github.com/stdlib-js/stdlib/pull/11581)
 -   [`bbac071`](https://github.com/stdlib-js/stdlib/commit/bbac07144b6a85eb308745484ad491ce45bcd0f8) - add `atleast1d`, `atleast2d`, and `atleast3d` to namespace
 -   [`7352d14`](https://github.com/stdlib-js/stdlib/commit/7352d144ee581fe70403014ce705c1463a23e171) - add `rowcat` to namespace
@@ -857,6 +858,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`aaa6e06`](https://github.com/stdlib-js/stdlib/commit/aaa6e06422092ba41c57fc3dfb2a8b833edd0163) - **feat:** add `vconcat` to namespace _(by Athan Reines)_
 -   [`560eaba`](https://github.com/stdlib-js/stdlib/commit/560eaba74ab49beef39d2cc8c4cdda08d5c1060f) - **feat:** add `ndarray/vconcat` [(#11581)](https://github.com/stdlib-js/stdlib/pull/11581) _(by Muhammad Haris)_
 -   [`35634a8`](https://github.com/stdlib-js/stdlib/commit/35634a8d15e49b92e562a9c6cd8361b988c8ced2) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11433)](https://github.com/stdlib-js/stdlib/pull/11433) _(by Karan Anand)_
 -   [`e08ef82`](https://github.com/stdlib-js/stdlib/commit/e08ef82b7c3646523071400cbe2d82542b46efce) - **docs:** remove stray `err` handling in examples and enable lint rule [(#11556)](https://github.com/stdlib-js/stdlib/pull/11556) _(by Philipp Burckhardt)_
