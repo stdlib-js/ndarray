@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540)
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541)
 -   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535)
 -   [`414d61b`](https://github.com/stdlib-js/stdlib/commit/414d61b8adf854cfa4582bd9659c760b03bc40a7) - add `colcat` to namespace
@@ -852,6 +853,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - **feat:** add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540) _(by Muhammad Haris)_
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - **feat:** add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541) _(by Muhammad Haris)_
 -   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - **feat:** add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535) _(by Muhammad Haris, Athan Reines)_
 -   [`5e89f8b`](https://github.com/stdlib-js/stdlib/commit/5e89f8b25d48b08a844cbb05f943de3c3121f0d0) - **docs:** improve doctests for ndarray instances in `ndaray/iter/stacks` [(#11539)](https://github.com/stdlib-js/stdlib/pull/11539) _(by Uday Kakade, Athan Reines)_
