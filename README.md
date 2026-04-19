@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, fill, fillBy, fillSlice, filter, filterMap, find, findLast, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, includes, ind2sub, indexModes, inputCastingPolicies, iter, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, unshift, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -99,6 +111,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
 -   <span class="signature">[`broadcastScalar( value, shape[, options] )`][@stdlib/ndarray/broadcast-scalar]</span><span class="delimiter">: </span><span class="description">broadcast a scalar value to an ndarray of a specified shape.</span>
 -   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`colcat( arrays )`][@stdlib/ndarray/colcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as columns.</span>
 -   <span class="signature">[`concat( arrays[, options] )`][@stdlib/ndarray/concat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along a specified ndarray dimension.</span>
 -   <span class="signature">[`concat1d( ...arrays )`][@stdlib/ndarray/concat1d]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by concatenating provided input arguments.</span>
 -   <span class="signature">[`copy( x[, options] )`][@stdlib/ndarray/copy]</span><span class="delimiter">: </span><span class="description">copy an input ndarray to a new ndarray having the same shape and data type.</span>
@@ -162,6 +175,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
+-   <span class="signature">[`rowcat( arrays )`][@stdlib/ndarray/rowcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as rows.</span>
 -   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
 -   <span class="signature">[`sameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
 -   <span class="signature">[`shape( x )`][@stdlib/ndarray/shape]</span><span class="delimiter">: </span><span class="description">return the shape of a provided ndarray.</span>
@@ -210,20 +224,11 @@ In addition, the namespace contains the following multidimensional array utility
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -247,7 +252,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -325,6 +330,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/broadcast-scalar]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-scalar
 
 [@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
+
+[@stdlib/ndarray/colcat]: https://github.com/stdlib-js/ndarray/tree/main/colcat
 
 [@stdlib/ndarray/concat]: https://github.com/stdlib-js/ndarray/tree/main/concat
 
@@ -451,6 +458,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
 
 [@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
+
+[@stdlib/ndarray/rowcat]: https://github.com/stdlib-js/ndarray/tree/main/rowcat
 
 [@stdlib/ndarray/safe-casts]: https://github.com/stdlib-js/ndarray/tree/main/safe-casts
 
