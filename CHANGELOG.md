@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`bbac071`](https://github.com/stdlib-js/stdlib/commit/bbac07144b6a85eb308745484ad491ce45bcd0f8) - add `atleast1d`, `atleast2d`, and `atleast3d` to namespace
+-   [`7352d14`](https://github.com/stdlib-js/stdlib/commit/7352d144ee581fe70403014ce705c1463a23e171) - add `rowcat` to namespace
 -   [`7633424`](https://github.com/stdlib-js/stdlib/commit/7633424ed747388a8b509d88a890372486c96aa3) - add `ndarray/base/atleast3d` [(#11548)](https://github.com/stdlib-js/stdlib/pull/11548)
 -   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540)
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541)
@@ -854,6 +856,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`3a73d93`](https://github.com/stdlib-js/stdlib/commit/3a73d932e39d6603c57d8e62de4aba731ffa2fba) - **docs:** update notes _(by Athan Reines)_
+-   [`bbac071`](https://github.com/stdlib-js/stdlib/commit/bbac07144b6a85eb308745484ad491ce45bcd0f8) - **feat:** add `atleast1d`, `atleast2d`, and `atleast3d` to namespace _(by Athan Reines)_
+-   [`7352d14`](https://github.com/stdlib-js/stdlib/commit/7352d144ee581fe70403014ce705c1463a23e171) - **feat:** add `rowcat` to namespace _(by Athan Reines)_
 -   [`7633424`](https://github.com/stdlib-js/stdlib/commit/7633424ed747388a8b509d88a890372486c96aa3) - **feat:** add `ndarray/base/atleast3d` [(#11548)](https://github.com/stdlib-js/stdlib/pull/11548) _(by Muhammad Haris)_
 -   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - **feat:** add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540) _(by Muhammad Haris)_
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - **feat:** add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541) _(by Muhammad Haris)_
