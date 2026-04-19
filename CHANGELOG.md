@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`7633424`](https://github.com/stdlib-js/stdlib/commit/7633424ed747388a8b509d88a890372486c96aa3) - add `ndarray/base/atleast3d` [(#11548)](https://github.com/stdlib-js/stdlib/pull/11548)
 -   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540)
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541)
 -   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535)
@@ -853,6 +854,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7633424`](https://github.com/stdlib-js/stdlib/commit/7633424ed747388a8b509d88a890372486c96aa3) - **feat:** add `ndarray/base/atleast3d` [(#11548)](https://github.com/stdlib-js/stdlib/pull/11548) _(by Muhammad Haris)_
 -   [`7d01b62`](https://github.com/stdlib-js/stdlib/commit/7d01b625eefc60a1044b721a3cf619b70b2bcbfd) - **feat:** add `ndarray/base/atleast1d` [(#11540)](https://github.com/stdlib-js/stdlib/pull/11540) _(by Muhammad Haris)_
 -   [`f0ac25a`](https://github.com/stdlib-js/stdlib/commit/f0ac25a6707662e3d5903146f6bcf47a74daa029) - **feat:** add `ndarray/base/atleast2d` [(#11541)](https://github.com/stdlib-js/stdlib/pull/11541) _(by Muhammad Haris)_
 -   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - **feat:** add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535) _(by Muhammad Haris, Athan Reines)_
