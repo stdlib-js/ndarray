@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535)
 -   [`414d61b`](https://github.com/stdlib-js/stdlib/commit/414d61b8adf854cfa4582bd9659c760b03bc40a7) - add `colcat` to namespace
 -   [`648e90d`](https://github.com/stdlib-js/stdlib/commit/648e90d07d66f130eca610f79242ceea902f9e10) - add `ndarray/colcat` [(#11527)](https://github.com/stdlib-js/stdlib/pull/11527)
 -   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - add `trues`, `falses`, and `tile` to namespace
@@ -850,6 +851,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`b0cffa6`](https://github.com/stdlib-js/stdlib/commit/b0cffa6efa0aa05fa53e54874ad1523caa66f773) - **feat:** add `ndarray/rowcat` [(#11535)](https://github.com/stdlib-js/stdlib/pull/11535) _(by Muhammad Haris, Athan Reines)_
 -   [`5e89f8b`](https://github.com/stdlib-js/stdlib/commit/5e89f8b25d48b08a844cbb05f943de3c3121f0d0) - **docs:** improve doctests for ndarray instances in `ndaray/iter/stacks` [(#11539)](https://github.com/stdlib-js/stdlib/pull/11539) _(by Uday Kakade, Athan Reines)_
 -   [`07bcff6`](https://github.com/stdlib-js/stdlib/commit/07bcff64aac9d1c61b327b8986bbf34e1643b0ba) - **refactor:** import method directly _(by Athan Reines)_
 -   [`c4ace9d`](https://github.com/stdlib-js/stdlib/commit/c4ace9d015730f6552a6994c34b5ea8d5480e9e5) - **refactor:** create read-only views _(by Athan Reines)_
