@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`6117db9`](https://github.com/stdlib-js/stdlib/commit/6117db9a02e613a5a5dc02e2d948c1d900c93739) - add `hconcat` to namespace
 -   [`50e53a1`](https://github.com/stdlib-js/stdlib/commit/50e53a18d36e39662e7bf8f69e720f5df5cc9df1) - add `ndarray/hconcat` [(#11583)](https://github.com/stdlib-js/stdlib/pull/11583)
 -   [`aaa6e06`](https://github.com/stdlib-js/stdlib/commit/aaa6e06422092ba41c57fc3dfb2a8b833edd0163) - add `vconcat` to namespace
 -   [`560eaba`](https://github.com/stdlib-js/stdlib/commit/560eaba74ab49beef39d2cc8c4cdda08d5c1060f) - add `ndarray/vconcat` [(#11581)](https://github.com/stdlib-js/stdlib/pull/11581)
@@ -859,6 +860,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`6117db9`](https://github.com/stdlib-js/stdlib/commit/6117db9a02e613a5a5dc02e2d948c1d900c93739) - **feat:** add `hconcat` to namespace _(by Athan Reines)_
 -   [`50e53a1`](https://github.com/stdlib-js/stdlib/commit/50e53a18d36e39662e7bf8f69e720f5df5cc9df1) - **feat:** add `ndarray/hconcat` [(#11583)](https://github.com/stdlib-js/stdlib/pull/11583) _(by Muhammad Haris)_
 -   [`aaa6e06`](https://github.com/stdlib-js/stdlib/commit/aaa6e06422092ba41c57fc3dfb2a8b833edd0163) - **feat:** add `vconcat` to namespace _(by Athan Reines)_
 -   [`560eaba`](https://github.com/stdlib-js/stdlib/commit/560eaba74ab49beef39d2cc8c4cdda08d5c1060f) - **feat:** add `ndarray/vconcat` [(#11581)](https://github.com/stdlib-js/stdlib/pull/11581) _(by Muhammad Haris)_
