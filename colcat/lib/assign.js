@@ -26,7 +26,7 @@ var ndarraylike2ndarray = require( './../../base/ndarraylike2ndarray' );
 var expandDimensions = require( './../../base/expand-dimensions' );
 var ndims = require( './../../base/ndims' );
 var getShape = require( './../../base/shape' );
-var concat = require( './../../concat' );
+var concat = require( './../../concat' ).assign;
 var format = require( '@stdlib/string/format' );
 
 
@@ -109,7 +109,7 @@ function assign( arrays, out ) {
 		}
 		arrs.push( arr );
 	}
-	concat.assign( arrs, out, {
+	concat( arrs, out, {
 		'dim': -1
 	});
 	return out;
