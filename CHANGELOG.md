@@ -856,6 +856,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`35634a8`](https://github.com/stdlib-js/stdlib/commit/35634a8d15e49b92e562a9c6cd8361b988c8ced2) - **bench:** refactor to use string interpolation in `@stdlib/ndarray/base` [(#11433)](https://github.com/stdlib-js/stdlib/pull/11433) _(by Karan Anand)_
 -   [`e08ef82`](https://github.com/stdlib-js/stdlib/commit/e08ef82b7c3646523071400cbe2d82542b46efce) - **docs:** remove stray `err` handling in examples and enable lint rule [(#11556)](https://github.com/stdlib-js/stdlib/pull/11556) _(by Philipp Burckhardt)_
 -   [`103a35d`](https://github.com/stdlib-js/stdlib/commit/103a35d6da977625e0c040b224ef1766ba0e5ae8) - **style:** enable lint rule _(by Athan Reines)_
 -   [`84d7a1f`](https://github.com/stdlib-js/stdlib/commit/84d7a1f44c1127dfc9c22b7132d1166d1a96c64b) - **docs:** update namespace table of contents [(#11562)](https://github.com/stdlib-js/stdlib/pull/11562) _(by stdlib-bot, Philipp Burckhardt)_
