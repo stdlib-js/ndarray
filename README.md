@@ -74,7 +74,7 @@ var o = ns;
 
 The namespace exports the following functions to create multidimensional arrays:
 
-<!-- <toc pattern="+(array|ctor)"> -->
+<!-- <toc pattern="+(array|copy|ctor|empty|empty-like|from-scalar|from-scalar-like|ndarraylike2ndarray|ones|ones-like|to-fancy|zeros|zeros-like)"> -->
 
 <div class="namespace-toc">
 
@@ -85,9 +85,49 @@ The namespace exports the following functions to create multidimensional arrays:
 
 <!-- </toc> -->
 
+The namespace exports the following functions to manipulate multidimensional arrays:
+
+<!-- <toc pattern="+(broadcast-array|broadcast-arrays|broadcast-scalar|colcat|concat|concat1d|fill|fill-by|fill-slice|flatten|flatten-by|flatten-from|flatten-from-by|flip|fliplr|flipud|hconcat|map|maybe-broadcast-array|maybe-broadcast-arrays|pop|prepend-singleton-dimensions|push|remove-singleton-dimensions|reverse|reverse-dimension|rowcat|shift|slice|slice-assign|slice-dimension|slice-dimension-from|slice-dimension-to|slice-from|slice-to|spread-dimensions|to-flippedlr|to-flippedud|to-reversed|to-reversed-dimension|unshift|vconcat|with)"> -->
+
+<div class="namespace-toc">
+
+</div>
+
+<!-- </toc> -->
+
+The namespace exports the following functions to search multidimensional arrays:
+
+<!-- <toc pattern="+(any|any-by|count-falsy|count-if|count-truthy|every|every-by|filter|filter-map|find|find-last|includes|reject|some|some-by)"> -->
+
+<div class="namespace-toc">
+
+</div>
+
+<!-- </toc> -->
+
+The namespace exports the following functions to inspect multidimensional arrays:
+
+<!-- <toc pattern="+(data-buffer|dtype|flag|flags|ndims|numel|numel-dimension|offset|order|shape|stride|strides)"> -->
+
+<div class="namespace-toc">
+
+</div>
+
+<!-- </toc> -->
+
+The namespace exports the following functions to index multidimensional arrays:
+
+<!-- <toc pattern="+(at|ind2sub|index|sub2ind)"> -->
+
+<div class="namespace-toc">
+
+</div>
+
+<!-- </toc> -->
+
 The namespace contains the following sub-namespaces:
 
-<!-- <toc pattern="+(base|iter)"> -->
+<!-- <toc pattern="+(base|iter|vector)"> -->
 
 <div class="namespace-toc">
 
