@@ -111,6 +111,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
 -   <span class="signature">[`broadcastScalar( value, shape[, options] )`][@stdlib/ndarray/broadcast-scalar]</span><span class="delimiter">: </span><span class="description">broadcast a scalar value to an ndarray of a specified shape.</span>
 -   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`colcat( arrays )`][@stdlib/ndarray/colcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as columns.</span>
 -   <span class="signature">[`concat( arrays[, options] )`][@stdlib/ndarray/concat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along a specified ndarray dimension.</span>
 -   <span class="signature">[`concat1d( ...arrays )`][@stdlib/ndarray/concat1d]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by concatenating provided input arguments.</span>
 -   <span class="signature">[`copy( x[, options] )`][@stdlib/ndarray/copy]</span><span class="delimiter">: </span><span class="description">copy an input ndarray to a new ndarray having the same shape and data type.</span>
@@ -174,6 +175,7 @@ In addition, the namespace contains the following multidimensional array utility
 -   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
+-   <span class="signature">[`rowcat( arrays )`][@stdlib/ndarray/rowcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as rows.</span>
 -   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
 -   <span class="signature">[`sameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
 -   <span class="signature">[`shape( x )`][@stdlib/ndarray/shape]</span><span class="delimiter">: </span><span class="description">return the shape of a provided ndarray.</span>
@@ -329,6 +331,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
 
+[@stdlib/ndarray/colcat]: https://github.com/stdlib-js/ndarray/tree/main/colcat
+
 [@stdlib/ndarray/concat]: https://github.com/stdlib-js/ndarray/tree/main/concat
 
 [@stdlib/ndarray/concat1d]: https://github.com/stdlib-js/ndarray/tree/main/concat1d
@@ -454,6 +458,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
 
 [@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
+
+[@stdlib/ndarray/rowcat]: https://github.com/stdlib-js/ndarray/tree/main/rowcat
 
 [@stdlib/ndarray/safe-casts]: https://github.com/stdlib-js/ndarray/tree/main/safe-casts
 
