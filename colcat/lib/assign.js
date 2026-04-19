@@ -99,7 +99,7 @@ function assign( arrays, out ) {
 			throw new RangeError( format( 'invalid argument. Must provide one- or two-dimensional ndarrays. Number of dimensions: `%u`.', n ) );
 		}
 		if ( n === 1 ) {
-			arr = expandDimensions( ndarraylike2ndarray( arr ), -1, true );
+			arr = expandDimensions( ndarraylike2ndarray( arr ), -1, false );
 		}
 		sh = getShape( arr, false );
 		if ( i === 0 ) {

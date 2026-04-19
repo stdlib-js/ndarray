@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-18)
+## Unreleased (2026-04-19)
 
 <section class="features">
 
@@ -850,6 +850,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c4ace9d`](https://github.com/stdlib-js/stdlib/commit/c4ace9d015730f6552a6994c34b5ea8d5480e9e5) - **refactor:** create read-only views _(by Athan Reines)_
 -   [`414d61b`](https://github.com/stdlib-js/stdlib/commit/414d61b8adf854cfa4582bd9659c760b03bc40a7) - **feat:** add `colcat` to namespace _(by Athan Reines)_
 -   [`648e90d`](https://github.com/stdlib-js/stdlib/commit/648e90d07d66f130eca610f79242ceea902f9e10) - **feat:** add `ndarray/colcat` [(#11527)](https://github.com/stdlib-js/stdlib/pull/11527) _(by Muhammad Haris)_
 -   [`80e9b07`](https://github.com/stdlib-js/stdlib/commit/80e9b07afb5318780a47d362a34e4ee41b39cd81) - **feat:** add `trues`, `falses`, and `tile` to namespace _(by Athan Reines)_
