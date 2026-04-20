@@ -210,7 +210,7 @@ The namespace exports the following functions to inspect multidimensional arrays
 
 The namespace exports the following functions to index multidimensional arrays:
 
-<!-- <toc pattern="+(at|ind2sub|index|sub2ind)"> -->
+<!-- <toc pattern="+(at|ind2sub|index|index-modes|sub2ind)"> -->
 
 <div class="namespace-toc">
 
@@ -228,6 +228,14 @@ The namespace exports the following functions to index multidimensional arrays:
 The namespace exports the following functions to convert multidimensional arrays:
 
 <!-- <toc pattern="+(to-array|to-json|to-locale-string|to-string)"> -->
+
+<!-- </toc> -->
+
+##### Data Types
+
+The namespace exports the following functions for working with multidimensional array data types:
+
+<!-- <toc pattern="+(casting-modes|dtype-ctor|dtypes|input-casting-policies|min-dtype|mostly-safe-casts|next-dtype|output-dtype-policies|promotion-rules|safe-casts|same-kind-casts)"> -->
 
 <!-- </toc> -->
 

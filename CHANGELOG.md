@@ -864,6 +864,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`73e7bcf`](https://github.com/stdlib-js/stdlib/commit/73e7bcf003e6ff43f444494447445cb17384ccd4) - **docs:** add dtype section _(by Athan Reines)_
 -   [`e01bf06`](https://github.com/stdlib-js/stdlib/commit/e01bf0651d5a7073bc92913e1cd0cadcba8bd75a) - **docs:** update copy _(by Athan Reines)_
 -   [`0f96d30`](https://github.com/stdlib-js/stdlib/commit/0f96d3092e11bed46e6cd83efd770c2d6fa77af1) - **docs:** update namespace table of contents [(#11637)](https://github.com/stdlib-js/stdlib/pull/11637) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`1ab30a1`](https://github.com/stdlib-js/stdlib/commit/1ab30a16866d523544f06017e56a70e68d9933cf) - **feat:** add `rotl90` to namespace _(by Athan Reines)_
