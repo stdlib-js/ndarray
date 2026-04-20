@@ -864,6 +864,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`59d0640`](https://github.com/stdlib-js/stdlib/commit/59d0640a16660401392d422f98261c2f9c8cb4be) - **docs:** propagate recent fixes to sibling packages [(#11671)](https://github.com/stdlib-js/stdlib/pull/11671) _(by Philipp Burckhardt)_
 -   [`869c9da`](https://github.com/stdlib-js/stdlib/commit/869c9da0b2ec6d3a4f9bfd7806a32eeb9d5c973f) - **bench:** fix swapped dtypes in size benchmarks [(#11648)](https://github.com/stdlib-js/stdlib/pull/11648) _(by Philipp Burckhardt)_
 -   [`73e7bcf`](https://github.com/stdlib-js/stdlib/commit/73e7bcf003e6ff43f444494447445cb17384ccd4) - **docs:** add dtype section _(by Athan Reines)_
 -   [`e01bf06`](https://github.com/stdlib-js/stdlib/commit/e01bf0651d5a7073bc92913e1cd0cadcba8bd75a) - **docs:** update copy _(by Athan Reines)_
