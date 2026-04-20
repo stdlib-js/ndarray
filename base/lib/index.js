@@ -1184,6 +1184,15 @@ setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
 setReadOnly( ns, 'reverseDimension', require( './../../base/reverse-dimension' ) );
 
 /**
+* @name rotl90
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/rotl90}
+*/
+setReadOnly( ns, 'rotl90', require( './../../base/rotl90' ) );
+
+/**
 * @name rotr90
 * @memberof ns
 * @readonly
