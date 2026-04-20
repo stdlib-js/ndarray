@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`1615c51`](https://github.com/stdlib-js/stdlib/commit/1615c51bd03478de8adedf82e5718ea48ecba290) - add `ndarray/base/reinterpret-complex128` [(#11629)](https://github.com/stdlib-js/stdlib/pull/11629)
 -   [`1ab30a1`](https://github.com/stdlib-js/stdlib/commit/1ab30a16866d523544f06017e56a70e68d9933cf) - add `rotl90` to namespace
 -   [`9ef9c56`](https://github.com/stdlib-js/stdlib/commit/9ef9c56b8d3fccad2b75d4f4316f7a99fa5bc660) - add `ndarray/base/rotl90` [(#11633)](https://github.com/stdlib-js/stdlib/pull/11633)
 -   [`3b2c72e`](https://github.com/stdlib-js/stdlib/commit/3b2c72e1a3a24bdba3702b64269cab622481e240) - add `rotr90` to namespace
@@ -864,6 +865,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`1615c51`](https://github.com/stdlib-js/stdlib/commit/1615c51bd03478de8adedf82e5718ea48ecba290) - **feat:** add `ndarray/base/reinterpret-complex128` [(#11629)](https://github.com/stdlib-js/stdlib/pull/11629) _(by Muhammad Haris)_
 -   [`59d0640`](https://github.com/stdlib-js/stdlib/commit/59d0640a16660401392d422f98261c2f9c8cb4be) - **docs:** propagate recent fixes to sibling packages [(#11671)](https://github.com/stdlib-js/stdlib/pull/11671) _(by Philipp Burckhardt)_
 -   [`869c9da`](https://github.com/stdlib-js/stdlib/commit/869c9da0b2ec6d3a4f9bfd7806a32eeb9d5c973f) - **bench:** fix swapped dtypes in size benchmarks [(#11648)](https://github.com/stdlib-js/stdlib/pull/11648) _(by Philipp Burckhardt)_
 -   [`73e7bcf`](https://github.com/stdlib-js/stdlib/commit/73e7bcf003e6ff43f444494447445cb17384ccd4) - **docs:** add dtype section _(by Athan Reines)_
