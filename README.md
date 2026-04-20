@@ -72,9 +72,11 @@ var o = ns;
 // returns {...}
 ```
 
+##### Creation
+
 The namespace exports the following functions to create multidimensional arrays:
 
-<!-- <toc pattern="+(array|copy|ctor|empty|empty-like|from-scalar|from-scalar-like|ndarraylike2ndarray|ones|ones-like|to-fancy|zeros|zeros-like)"> -->
+<!-- <toc pattern="+(array|copy|ctor|empty|empty-like|fancy|from-scalar|from-scalar-like|ndarraylike2ndarray|ones|ones-like|to-fancy|zeros|zeros-like)"> -->
 
 <div class="namespace-toc">
 
@@ -94,6 +96,8 @@ The namespace exports the following functions to create multidimensional arrays:
 </div>
 
 <!-- </toc> -->
+
+##### Manipulation
 
 The namespace exports the following functions to manipulate multidimensional arrays:
 
@@ -149,6 +153,8 @@ The namespace exports the following functions to manipulate multidimensional arr
 
 <!-- </toc> -->
 
+##### Search
+
 The namespace exports the following functions to search multidimensional arrays:
 
 <!-- <toc pattern="+(any|any-by|count-falsy|count-if|count-truthy|every|every-by|filter|filter-map|find|find-last|includes|reject|some|some-by)"> -->
@@ -175,6 +181,8 @@ The namespace exports the following functions to search multidimensional arrays:
 
 <!-- </toc> -->
 
+##### Inspection
+
 The namespace exports the following functions to inspect multidimensional arrays:
 
 <!-- <toc pattern="+(data-buffer|dtype|flag|flags|ndims|numel|numel-dimension|offset|order|shape|stride|strides)"> -->
@@ -198,6 +206,8 @@ The namespace exports the following functions to inspect multidimensional arrays
 
 <!-- </toc> -->
 
+##### Indexing
+
 The namespace exports the following functions to index multidimensional arrays:
 
 <!-- <toc pattern="+(at|ind2sub|index|sub2ind)"> -->
@@ -213,6 +223,16 @@ The namespace exports the following functions to index multidimensional arrays:
 
 <!-- </toc> -->
 
+##### Conversion
+
+The namespace exports the following functions to convert multidimensional arrays:
+
+<!-- <toc pattern="+(to-array|to-json|to-locale-string|to-string)"> -->
+
+<!-- </toc> -->
+
+##### Sub-namespaces
+
 The namespace contains the following sub-namespaces:
 
 <!-- <toc pattern="+(base|iter|vector)"> -->
@@ -227,7 +247,9 @@ The namespace contains the following sub-namespaces:
 
 <!-- </toc> -->
 
-In addition, the namespace contains the following multidimensional array utility functions:
+##### Utilities
+
+The namespace contains the following multidimensional array utility functions:
 
 <!-- <toc pattern="*" > -->
 
