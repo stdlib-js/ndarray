@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`82f105c`](https://github.com/stdlib-js/stdlib/commit/82f105ccb1920ec6f48d0af692819a1da40d3b7f) - add `ndarray/broadcast-scalar-like` [(#11630)](https://github.com/stdlib-js/stdlib/pull/11630)
 -   [`1615c51`](https://github.com/stdlib-js/stdlib/commit/1615c51bd03478de8adedf82e5718ea48ecba290) - add `ndarray/base/reinterpret-complex128` [(#11629)](https://github.com/stdlib-js/stdlib/pull/11629)
 -   [`1ab30a1`](https://github.com/stdlib-js/stdlib/commit/1ab30a16866d523544f06017e56a70e68d9933cf) - add `rotl90` to namespace
 -   [`9ef9c56`](https://github.com/stdlib-js/stdlib/commit/9ef9c56b8d3fccad2b75d4f4316f7a99fa5bc660) - add `ndarray/base/rotl90` [(#11633)](https://github.com/stdlib-js/stdlib/pull/11633)
@@ -866,6 +867,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`82f105c`](https://github.com/stdlib-js/stdlib/commit/82f105ccb1920ec6f48d0af692819a1da40d3b7f) - **feat:** add `ndarray/broadcast-scalar-like` [(#11630)](https://github.com/stdlib-js/stdlib/pull/11630) _(by Muhammad Haris, Athan Reines)_
 -   [`b7f85c2`](https://github.com/stdlib-js/stdlib/commit/b7f85c29d4147a1c0194329881eb07ef695ddaee) - **fix:** use correct validation package _(by Athan Reines)_
 -   [`1615c51`](https://github.com/stdlib-js/stdlib/commit/1615c51bd03478de8adedf82e5718ea48ecba290) - **feat:** add `ndarray/base/reinterpret-complex128` [(#11629)](https://github.com/stdlib-js/stdlib/pull/11629) _(by Muhammad Haris)_
 -   [`59d0640`](https://github.com/stdlib-js/stdlib/commit/59d0640a16660401392d422f98261c2f9c8cb4be) - **docs:** propagate recent fixes to sibling packages [(#11671)](https://github.com/stdlib-js/stdlib/pull/11671) _(by Philipp Burckhardt)_
