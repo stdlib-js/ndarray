@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9ef9c56`](https://github.com/stdlib-js/stdlib/commit/9ef9c56b8d3fccad2b75d4f4316f7a99fa5bc660) - add `ndarray/base/rotl90` [(#11633)](https://github.com/stdlib-js/stdlib/pull/11633)
 -   [`3b2c72e`](https://github.com/stdlib-js/stdlib/commit/3b2c72e1a3a24bdba3702b64269cab622481e240) - add `rotr90` to namespace
 -   [`a44f4d3`](https://github.com/stdlib-js/stdlib/commit/a44f4d395d772927cb9f6435b939580d4c4ad783) - add `ndarray/rotr90` [(#11631)](https://github.com/stdlib-js/stdlib/pull/11631)
 -   [`6117db9`](https://github.com/stdlib-js/stdlib/commit/6117db9a02e613a5a5dc02e2d948c1d900c93739) - add `hconcat` to namespace
@@ -862,6 +863,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`9ef9c56`](https://github.com/stdlib-js/stdlib/commit/9ef9c56b8d3fccad2b75d4f4316f7a99fa5bc660) - **feat:** add `ndarray/base/rotl90` [(#11633)](https://github.com/stdlib-js/stdlib/pull/11633) _(by Muhammad Haris)_
 -   [`2672e84`](https://github.com/stdlib-js/stdlib/commit/2672e84fbdd07c44dfd4b6c0fca31e7f4695d247) - **docs:** update toc _(by Athan Reines)_
 -   [`3b2c72e`](https://github.com/stdlib-js/stdlib/commit/3b2c72e1a3a24bdba3702b64269cab622481e240) - **feat:** add `rotr90` to namespace _(by Athan Reines)_
 -   [`f756fa1`](https://github.com/stdlib-js/stdlib/commit/f756fa1beaad4aa5b7961b61c19c0d866f0e5cbf) - **docs:** update note _(by Athan Reines)_
