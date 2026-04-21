@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-20)
+## Unreleased (2026-04-21)
 
 <section class="features">
 
 ### Features
 
+-   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - add `reinterpret-complex128` to namespace
+-   [`8860b05`](https://github.com/stdlib-js/stdlib/commit/8860b05c83ef17376bfa54b47c2aaa57a92b2fe1) - add `rot90` to namespace
+-   [`ac1d507`](https://github.com/stdlib-js/stdlib/commit/ac1d5075defbd8d150a4102d9bab8b85c66caa68) - add `broadcastScalarLike` to namespace
 -   [`7368bff`](https://github.com/stdlib-js/stdlib/commit/7368bff8ade81ae99638f53ceacc8b5ab5d04c74) - add `ndarray/base/rot90` [(#11660)](https://github.com/stdlib-js/stdlib/pull/11660)
 -   [`82f105c`](https://github.com/stdlib-js/stdlib/commit/82f105ccb1920ec6f48d0af692819a1da40d3b7f) - add `ndarray/broadcast-scalar-like` [(#11630)](https://github.com/stdlib-js/stdlib/pull/11630)
 -   [`1615c51`](https://github.com/stdlib-js/stdlib/commit/1615c51bd03478de8adedf82e5718ea48ecba290) - add `ndarray/base/reinterpret-complex128` [(#11629)](https://github.com/stdlib-js/stdlib/pull/11629)
@@ -868,6 +871,10 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - **feat:** add `reinterpret-complex128` to namespace _(by Athan Reines)_
+-   [`f382177`](https://github.com/stdlib-js/stdlib/commit/f38217702114041731ee1dd0f44afc7d36679704) - **docs:** update ToC _(by Athan Reines)_
+-   [`8860b05`](https://github.com/stdlib-js/stdlib/commit/8860b05c83ef17376bfa54b47c2aaa57a92b2fe1) - **feat:** add `rot90` to namespace _(by Athan Reines)_
+-   [`ac1d507`](https://github.com/stdlib-js/stdlib/commit/ac1d5075defbd8d150a4102d9bab8b85c66caa68) - **feat:** add `broadcastScalarLike` to namespace _(by Athan Reines)_
 -   [`7368bff`](https://github.com/stdlib-js/stdlib/commit/7368bff8ade81ae99638f53ceacc8b5ab5d04c74) - **feat:** add `ndarray/base/rot90` [(#11660)](https://github.com/stdlib-js/stdlib/pull/11660) _(by Muhammad Haris, Athan Reines)_
 -   [`82f105c`](https://github.com/stdlib-js/stdlib/commit/82f105ccb1920ec6f48d0af692819a1da40d3b7f) - **feat:** add `ndarray/broadcast-scalar-like` [(#11630)](https://github.com/stdlib-js/stdlib/pull/11630) _(by Muhammad Haris, Athan Reines)_
 -   [`b7f85c2`](https://github.com/stdlib-js/stdlib/commit/b7f85c29d4147a1c0194329881eb07ef695ddaee) - **fix:** use correct validation package _(by Athan Reines)_
