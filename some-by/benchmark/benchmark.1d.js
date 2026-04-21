@@ -27,6 +27,7 @@ var discreteUniform = require( '@stdlib/random/array/discrete-uniform' );
 var shape2strides = require( './../../base/shape2strides' );
 var ndarray = require( './../../ctor' );
 var isEven = require( '@stdlib/assert/is-even' ).isPrimitive;
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var someBy = require( './../lib' );
 
@@ -131,7 +132,7 @@ function main() {
 
 					sh = [ len ];
 					f = createBenchmark( len, sh, t1, ord, dims );
-					bench( pkg+':ndims='+sh.length+',len='+len+',shape=['+sh.join(',')+'],xorder='+ord+',xtype='+t1+',dims=['+dims.join(',')+']', f );
+					bench( format( '%s:ndims=%d,len=%d,shape=[%s],xorder=%s,xtype=%s,dims=[%s]', pkg, sh.length, len, sh.join(','), ord, t1, dims.join(',') ), f );
 				}
 			}
 		}
