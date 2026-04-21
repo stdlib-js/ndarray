@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, broadcastScalarLike, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, fill, fillBy, fillSlice, filter, filterMap, find, findLast, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, hconcat, includes, ind2sub, indexModes, inputCastingPolicies, iter, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, rotr90, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, unshift, vconcat, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -73,6 +85,7 @@ The namespace exports the following functions to create multidimensional arrays:
 -   <span class="signature">[`ndarray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`empty( shape[, options] )`][@stdlib/ndarray/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having a specified shape and data type.</span>
+-   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`scalar2ndarrayLike( x, value[, options] )`][@stdlib/ndarray/from-scalar-like]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray having the same data-type as a provided ndarray.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`ndarraylike2ndarray( x[, options] )`][@stdlib/ndarray/ndarraylike2ndarray]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to an `ndarray`.</span>
@@ -95,6 +108,7 @@ The namespace exports the following functions to manipulate multidimensional arr
 
 -   <span class="signature">[`broadcastArray( x, shape )`][@stdlib/ndarray/broadcast-array]</span><span class="delimiter">: </span><span class="description">broadcast an ndarray to a specified shape.</span>
 -   <span class="signature">[`broadcastArrays( ...arrays )`][@stdlib/ndarray/broadcast-arrays]</span><span class="delimiter">: </span><span class="description">broadcast ndarrays to a common shape.</span>
+-   <span class="signature">[`broadcastScalarLike( x, value[, options] )`][@stdlib/ndarray/broadcast-scalar-like]</span><span class="delimiter">: </span><span class="description">broadcast a scalar value to an ndarray having the same shape and data-type as a provided input ndarray.</span>
 -   <span class="signature">[`broadcastScalar( value, shape[, options] )`][@stdlib/ndarray/broadcast-scalar]</span><span class="delimiter">: </span><span class="description">broadcast a scalar value to an ndarray of a specified shape.</span>
 -   <span class="signature">[`colcat( arrays )`][@stdlib/ndarray/colcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as columns.</span>
 -   <span class="signature">[`concat( arrays[, options] )`][@stdlib/ndarray/concat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along a specified ndarray dimension.</span>
@@ -204,6 +218,7 @@ The namespace exports the following functions to index multidimensional arrays:
 
 -   <span class="signature">[`at( x[, ...indices] )`][@stdlib/ndarray/at]</span><span class="delimiter">: </span><span class="description">return an `ndarray` element.</span>
 -   <span class="signature">[`ind2sub( shape, idx[, options] )`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
+-   <span class="signature">[`indexModes()`][@stdlib/ndarray/index-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray index modes.</span>
 -   <span class="signature">[`ndindex( x[, options] )`][@stdlib/ndarray/index]</span><span class="delimiter">: </span><span class="description">ndarray index constructor.</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 
@@ -217,6 +232,15 @@ The namespace exports the following functions to convert multidimensional arrays
 
 <!-- <toc pattern="+(to-array|to-json|to-locale-string|to-string)"> -->
 
+<div class="namespace-toc">
+
+-   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
+-   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
+-   <span class="signature">[`ndarray2localeString( x[, locales[, options]] )`][@stdlib/ndarray/to-locale-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a locale-aware string.</span>
+-   <span class="signature">[`ndarray2string( x )`][@stdlib/ndarray/to-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a string.</span>
+
+</div>
+
 <!-- </toc> -->
 
 ##### Data Types
@@ -224,6 +248,22 @@ The namespace exports the following functions to convert multidimensional arrays
 The namespace exports the following functions for working with multidimensional array data types:
 
 <!-- <toc pattern="+(casting-modes|dtype-ctor|dtypes|input-casting-policies|min-dtype|mostly-safe-casts|next-dtype|output-dtype-policies|promotion-rules|safe-casts|same-kind-casts)"> -->
+
+<div class="namespace-toc">
+
+-   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
+-   <span class="signature">[`DataType( value[, options] )`][@stdlib/ndarray/dtype-ctor]</span><span class="delimiter">: </span><span class="description">data type constructor.</span>
+-   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
+-   <span class="signature">[`inputCastingPolicies()`][@stdlib/ndarray/input-casting-policies]</span><span class="delimiter">: </span><span class="description">list of input ndarray casting policies.</span>
+-   <span class="signature">[`minDataType( value )`][@stdlib/ndarray/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum ndarray data type of the closest "kind" necessary for storing a provided scalar value.</span>
+-   <span class="signature">[`mostlySafeCasts( [dtype] )`][@stdlib/ndarray/mostly-safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast and, for floating-point data types, can be downcast.</span>
+-   <span class="signature">[`nextDataType( [dtype] )`][@stdlib/ndarray/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger ndarray data type of the same kind.</span>
+-   <span class="signature">[`outputDataTypePolicies()`][@stdlib/ndarray/output-dtype-policies]</span><span class="delimiter">: </span><span class="description">list of output ndarray data type policies.</span>
+-   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest "kind" to which ndarray data types can be **safely** cast.</span>
+-   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
+-   <span class="signature">[`sameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
+
+</div>
 
 <!-- </toc> -->
 
@@ -251,27 +291,10 @@ The namespace contains the following multidimensional array utility functions:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`castingModes()`][@stdlib/ndarray/casting-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray casting modes.</span>
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
--   <span class="signature">[`DataType( value[, options] )`][@stdlib/ndarray/dtype-ctor]</span><span class="delimiter">: </span><span class="description">data type constructor.</span>
--   <span class="signature">[`dtypes( [kind] )`][@stdlib/ndarray/dtypes]</span><span class="delimiter">: </span><span class="description">list of ndarray data types.</span>
--   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
--   <span class="signature">[`indexModes()`][@stdlib/ndarray/index-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray index modes.</span>
--   <span class="signature">[`inputCastingPolicies()`][@stdlib/ndarray/input-casting-policies]</span><span class="delimiter">: </span><span class="description">list of input ndarray casting policies.</span>
--   <span class="signature">[`minDataType( value )`][@stdlib/ndarray/min-dtype]</span><span class="delimiter">: </span><span class="description">determine the minimum ndarray data type of the closest "kind" necessary for storing a provided scalar value.</span>
--   <span class="signature">[`mostlySafeCasts( [dtype] )`][@stdlib/ndarray/mostly-safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast and, for floating-point data types, can be downcast.</span>
--   <span class="signature">[`nextDataType( [dtype] )`][@stdlib/ndarray/next-dtype]</span><span class="delimiter">: </span><span class="description">return the next larger ndarray data type of the same kind.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
--   <span class="signature">[`outputDataTypePolicies()`][@stdlib/ndarray/output-dtype-policies]</span><span class="delimiter">: </span><span class="description">list of output ndarray data type policies.</span>
--   <span class="signature">[`promotionRules( [dtype1, dtype2] )`][@stdlib/ndarray/promotion-rules]</span><span class="delimiter">: </span><span class="description">return the ndarray data type with the smallest size and closest "kind" to which ndarray data types can be **safely** cast.</span>
--   <span class="signature">[`safeCasts( [dtype] )`][@stdlib/ndarray/safe-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast.</span>
--   <span class="signature">[`sameKindCasts( [dtype] )`][@stdlib/ndarray/same-kind-casts]</span><span class="delimiter">: </span><span class="description">return a list of ndarray data types to which a provided ndarray data type can be safely cast or cast within the same "kind".</span>
--   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
--   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
--   <span class="signature">[`ndarray2localeString( x[, locales[, options]] )`][@stdlib/ndarray/to-locale-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a locale-aware string.</span>
--   <span class="signature">[`ndarray2string( x )`][@stdlib/ndarray/to-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a string.</span>
 
 </div>
 
@@ -289,20 +312,11 @@ The namespace contains the following multidimensional array utility functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -326,7 +340,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -391,21 +405,25 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
-
 [@stdlib/ndarray/defaults]: https://github.com/stdlib-js/ndarray/tree/main/defaults
 
 [@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
 
+[@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
+
+[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
+
+[@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
+
+[@stdlib/ndarray/iter]: https://github.com/stdlib-js/ndarray/tree/main/iter
+
+[@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
+
+[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray/tree/main/casting-modes
+
 [@stdlib/ndarray/dtype-ctor]: https://github.com/stdlib-js/ndarray/tree/main/dtype-ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
-
-[@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
-
-[@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
-
-[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray/tree/main/index-modes
 
 [@stdlib/ndarray/input-casting-policies]: https://github.com/stdlib-js/ndarray/tree/main/input-casting-policies
 
@@ -414,8 +432,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/mostly-safe-casts]: https://github.com/stdlib-js/ndarray/tree/main/mostly-safe-casts
 
 [@stdlib/ndarray/next-dtype]: https://github.com/stdlib-js/ndarray/tree/main/next-dtype
-
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
 
 [@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray/tree/main/output-dtype-policies
 
@@ -433,15 +449,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/to-string]: https://github.com/stdlib-js/ndarray/tree/main/to-string
 
-[@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
-
-[@stdlib/ndarray/iter]: https://github.com/stdlib-js/ndarray/tree/main/iter
-
-[@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
-
 [@stdlib/ndarray/at]: https://github.com/stdlib-js/ndarray/tree/main/at
 
 [@stdlib/ndarray/ind2sub]: https://github.com/stdlib-js/ndarray/tree/main/ind2sub
+
+[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray/tree/main/index-modes
 
 [@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray/tree/main/index
 
@@ -504,6 +516,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/broadcast-array]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-array
 
 [@stdlib/ndarray/broadcast-arrays]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-arrays
+
+[@stdlib/ndarray/broadcast-scalar-like]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-scalar-like
 
 [@stdlib/ndarray/broadcast-scalar]: https://github.com/stdlib-js/ndarray/tree/main/broadcast-scalar
 
@@ -596,6 +610,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/empty-like]: https://github.com/stdlib-js/ndarray/tree/main/empty-like
 
 [@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray/tree/main/empty
+
+[@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
 
 [@stdlib/ndarray/from-scalar-like]: https://github.com/stdlib-js/ndarray/tree/main/from-scalar-like
 
