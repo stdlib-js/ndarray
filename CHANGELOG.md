@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`fdae0a5`](https://github.com/stdlib-js/stdlib/commit/fdae0a5ff47f23a9cde10ce84959d607b22b0b3f) - add `ndarray/base/rot180` [(#11704)](https://github.com/stdlib-js/stdlib/pull/11704)
 -   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707)
 -   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706)
 -   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - add `reinterpret-complex128` to namespace
@@ -873,6 +874,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`fdae0a5`](https://github.com/stdlib-js/stdlib/commit/fdae0a5ff47f23a9cde10ce84959d607b22b0b3f) - **feat:** add `ndarray/base/rot180` [(#11704)](https://github.com/stdlib-js/stdlib/pull/11704) _(by Muhammad Haris, Athan Reines)_
 -   [`af83cc1`](https://github.com/stdlib-js/stdlib/commit/af83cc1f4e6a4db857eecc946d8b922b9ac15318) - **docs:** update description _(by Athan Reines)_
 -   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - **feat:** add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707) _(by Muhammad Haris, Athan Reines)_
 -   [`bf821ca`](https://github.com/stdlib-js/stdlib/commit/bf821ca698340a14342ae1b12b5ea74b339f6adf) - **chore:** propagate recent fixes to sibling packages [(#11696)](https://github.com/stdlib-js/stdlib/pull/11696) _(by Philipp Burckhardt)_
