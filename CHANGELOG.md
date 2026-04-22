@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707)
 -   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706)
 -   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - add `reinterpret-complex128` to namespace
 -   [`8860b05`](https://github.com/stdlib-js/stdlib/commit/8860b05c83ef17376bfa54b47c2aaa57a92b2fe1) - add `rot90` to namespace
@@ -872,6 +873,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - **feat:** add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707) _(by Muhammad Haris, Athan Reines)_
 -   [`bf821ca`](https://github.com/stdlib-js/stdlib/commit/bf821ca698340a14342ae1b12b5ea74b339f6adf) - **chore:** propagate recent fixes to sibling packages [(#11696)](https://github.com/stdlib-js/stdlib/pull/11696) _(by Philipp Burckhardt)_
 -   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - **feat:** add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706) _(by Muhammad Haris)_
 -   [`0f62461`](https://github.com/stdlib-js/stdlib/commit/0f62461c976de87b8782e28eceaa89b7f42f89e2) - **docs:** update namespace table of contents [(#11688)](https://github.com/stdlib-js/stdlib/pull/11688) _(by stdlib-bot)_
