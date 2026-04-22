@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-21)
+## Unreleased (2026-04-22)
 
 <section class="features">
 
 ### Features
 
+-   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706)
 -   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - add `reinterpret-complex128` to namespace
 -   [`8860b05`](https://github.com/stdlib-js/stdlib/commit/8860b05c83ef17376bfa54b47c2aaa57a92b2fe1) - add `rot90` to namespace
 -   [`ac1d507`](https://github.com/stdlib-js/stdlib/commit/ac1d5075defbd8d150a4102d9bab8b85c66caa68) - add `broadcastScalarLike` to namespace
@@ -871,6 +872,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - **feat:** add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706) _(by Muhammad Haris)_
 -   [`0f62461`](https://github.com/stdlib-js/stdlib/commit/0f62461c976de87b8782e28eceaa89b7f42f89e2) - **docs:** update namespace table of contents [(#11688)](https://github.com/stdlib-js/stdlib/pull/11688) _(by stdlib-bot)_
 -   [`5aadc76`](https://github.com/stdlib-js/stdlib/commit/5aadc76d03d8e3c511de2f14131be73dfe118af9) - **bench:** refactor to use string interpolation in `ndarray` [(#11445)](https://github.com/stdlib-js/stdlib/pull/11445) _(by Karan Anand)_
 -   [`4a00996`](https://github.com/stdlib-js/stdlib/commit/4a0099621945f4fb17cd8bde8d7375715e309b6e) - **feat:** add `reinterpret-complex128` to namespace _(by Athan Reines)_
