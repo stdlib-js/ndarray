@@ -873,6 +873,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`af83cc1`](https://github.com/stdlib-js/stdlib/commit/af83cc1f4e6a4db857eecc946d8b922b9ac15318) - **docs:** update description _(by Athan Reines)_
 -   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - **feat:** add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707) _(by Muhammad Haris, Athan Reines)_
 -   [`bf821ca`](https://github.com/stdlib-js/stdlib/commit/bf821ca698340a14342ae1b12b5ea74b339f6adf) - **chore:** propagate recent fixes to sibling packages [(#11696)](https://github.com/stdlib-js/stdlib/pull/11696) _(by Philipp Burckhardt)_
 -   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - **feat:** add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706) _(by Muhammad Haris)_
