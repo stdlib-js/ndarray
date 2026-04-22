@@ -1157,6 +1157,24 @@ setReadOnly( ns, 'quinaryLoopOrder', require( './../../base/quinary-loop-interch
 setReadOnly( ns, 'quinaryBlockSize', require( './../../base/quinary-tiling-block-size' ) );
 
 /**
+* @name reinterpretBoolean
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reinterpret-boolean}
+*/
+setReadOnly( ns, 'reinterpretBoolean', require( './../../base/reinterpret-boolean' ) );
+
+/**
+* @name reinterpretComplex64
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reinterpret-complex64}
+*/
+setReadOnly( ns, 'reinterpretComplex64', require( './../../base/reinterpret-complex64' ) );
+
+/**
 * @name reinterpretComplex128
 * @memberof ns
 * @readonly
@@ -1200,6 +1218,15 @@ setReadOnly( ns, 'reverseDimension', require( './../../base/reverse-dimension' )
 * @see {@link module:@stdlib/ndarray/base/rot90}
 */
 setReadOnly( ns, 'rot90', require( './../../base/rot90' ) );
+
+/**
+* @name rot180
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/rot180}
+*/
+setReadOnly( ns, 'rot180', require( './../../base/rot180' ) );
 
 /**
 * @name rotl90

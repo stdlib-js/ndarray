@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`7c878a8`](https://github.com/stdlib-js/stdlib/commit/7c878a8c3103503f9a2f7782861e3b9ccfeb33e5) - add `rot180` to namespace
+-   [`2a4f2f1`](https://github.com/stdlib-js/stdlib/commit/2a4f2f1edc5a5e3455b9be6a5390120e7b43ff79) - add `reinterpretBoolean` to namespace
+-   [`f226fa6`](https://github.com/stdlib-js/stdlib/commit/f226fa66bbf9772a84b0d23ae2228ae5d56e7656) - add `reinterpretComplex64` to namespace
 -   [`fdae0a5`](https://github.com/stdlib-js/stdlib/commit/fdae0a5ff47f23a9cde10ce84959d607b22b0b3f) - add `ndarray/base/rot180` [(#11704)](https://github.com/stdlib-js/stdlib/pull/11704)
 -   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707)
 -   [`c1d72a0`](https://github.com/stdlib-js/stdlib/commit/c1d72a00c3832ccd0c0177649767fa291bc2d67a) - add `ndarray/base/reinterpret-complex64` [(#11706)](https://github.com/stdlib-js/stdlib/pull/11706)
@@ -874,6 +877,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7c878a8`](https://github.com/stdlib-js/stdlib/commit/7c878a8c3103503f9a2f7782861e3b9ccfeb33e5) - **feat:** add `rot180` to namespace _(by Athan Reines)_
+-   [`2a4f2f1`](https://github.com/stdlib-js/stdlib/commit/2a4f2f1edc5a5e3455b9be6a5390120e7b43ff79) - **feat:** add `reinterpretBoolean` to namespace _(by Athan Reines)_
+-   [`f226fa6`](https://github.com/stdlib-js/stdlib/commit/f226fa66bbf9772a84b0d23ae2228ae5d56e7656) - **feat:** add `reinterpretComplex64` to namespace _(by Athan Reines)_
 -   [`fdae0a5`](https://github.com/stdlib-js/stdlib/commit/fdae0a5ff47f23a9cde10ce84959d607b22b0b3f) - **feat:** add `ndarray/base/rot180` [(#11704)](https://github.com/stdlib-js/stdlib/pull/11704) _(by Muhammad Haris, Athan Reines)_
 -   [`af83cc1`](https://github.com/stdlib-js/stdlib/commit/af83cc1f4e6a4db857eecc946d8b922b9ac15318) - **docs:** update description _(by Athan Reines)_
 -   [`be023a5`](https://github.com/stdlib-js/stdlib/commit/be023a595aa7a1e537c1bf38bcf66a3acb2bdb41) - **feat:** add `ndarray/base/reinterpret-boolean` [(#11707)](https://github.com/stdlib-js/stdlib/pull/11707) _(by Muhammad Haris, Athan Reines)_
