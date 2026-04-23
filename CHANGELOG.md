@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-22)
+## Unreleased (2026-04-23)
 
 <section class="features">
 
@@ -877,6 +877,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`973f832`](https://github.com/stdlib-js/stdlib/commit/973f8327ee125d0f34d1d168be7511346216f189) - **docs:** update namespace table of contents [(#11738)](https://github.com/stdlib-js/stdlib/pull/11738) _(by stdlib-bot)_
 -   [`7c878a8`](https://github.com/stdlib-js/stdlib/commit/7c878a8c3103503f9a2f7782861e3b9ccfeb33e5) - **feat:** add `rot180` to namespace _(by Athan Reines)_
 -   [`2a4f2f1`](https://github.com/stdlib-js/stdlib/commit/2a4f2f1edc5a5e3455b9be6a5390120e7b43ff79) - **feat:** add `reinterpretBoolean` to namespace _(by Athan Reines)_
 -   [`f226fa6`](https://github.com/stdlib-js/stdlib/commit/f226fa66bbf9772a84b0d23ae2228ae5d56e7656) - **feat:** add `reinterpretComplex64` to namespace _(by Athan Reines)_
