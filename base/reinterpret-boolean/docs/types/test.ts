@@ -16,8 +16,6 @@
 * limitations under the License.
 */
 
-/* eslint-disable space-in-parens */
-
 import zeros = require( './../../../../base/zeros' );
 import reinterpretBoolean = require( './index' );
 
