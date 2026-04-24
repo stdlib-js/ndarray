@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c88ea56`](https://github.com/stdlib-js/stdlib/commit/c88ea56a2f3acfe5ce345108eb42ea991b689d3f) - add `toRotr90` to namespace
 -   [`465a072`](https://github.com/stdlib-js/stdlib/commit/465a072ec949832752bd1aa2bdb7a3b165e90763) - add `ndarray/base/to-rotr90` [(#11747)](https://github.com/stdlib-js/stdlib/pull/11747)
 -   [`bb94409`](https://github.com/stdlib-js/stdlib/commit/bb944095335edac473c0c655d7300228ed856ca5) - add `rot90` to namespace
 -   [`902e522`](https://github.com/stdlib-js/stdlib/commit/902e522762ec678bc548d6a503d5a94046e708f1) - add `ndarray/rot90` [(#11705)](https://github.com/stdlib-js/stdlib/pull/11705)
@@ -880,6 +881,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c88ea56`](https://github.com/stdlib-js/stdlib/commit/c88ea56a2f3acfe5ce345108eb42ea991b689d3f) - **feat:** add `toRotr90` to namespace _(by Athan Reines)_
 -   [`465a072`](https://github.com/stdlib-js/stdlib/commit/465a072ec949832752bd1aa2bdb7a3b165e90763) - **feat:** add `ndarray/base/to-rotr90` [(#11747)](https://github.com/stdlib-js/stdlib/pull/11747) _(by Muhammad Haris, Athan Reines)_
 -   [`1bb47ae`](https://github.com/stdlib-js/stdlib/commit/1bb47aee4385a96718afb38792d96ec5ec09e7da) - **docs:** fix comment _(by Athan Reines)_
 -   [`8c95fbf`](https://github.com/stdlib-js/stdlib/commit/8c95fbf9f000fba1e6a302792a33ac7394262a1c) - **docs:** fix comment _(by Athan Reines)_
