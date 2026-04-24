@@ -879,6 +879,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`d1f33dc`](https://github.com/stdlib-js/stdlib/commit/d1f33dcee27be7cc4bfb9ddd977497ff21ee8be6) - **docs:** update ToC _(by Athan Reines)_
 -   [`bb94409`](https://github.com/stdlib-js/stdlib/commit/bb944095335edac473c0c655d7300228ed856ca5) - **feat:** add `rot90` to namespace _(by Athan Reines)_
 -   [`902e522`](https://github.com/stdlib-js/stdlib/commit/902e522762ec678bc548d6a503d5a94046e708f1) - **feat:** add `ndarray/rot90` [(#11705)](https://github.com/stdlib-js/stdlib/pull/11705) _(by Muhammad Haris, Athan Reines)_
 -   [`b5fb2f8`](https://github.com/stdlib-js/stdlib/commit/b5fb2f8f0aa00375fa5b53925db763de97933c8f) - **docs:** update notes _(by Athan Reines)_
