@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`902e522`](https://github.com/stdlib-js/stdlib/commit/902e522762ec678bc548d6a503d5a94046e708f1) - add `ndarray/rot90` [(#11705)](https://github.com/stdlib-js/stdlib/pull/11705)
 -   [`7c878a8`](https://github.com/stdlib-js/stdlib/commit/7c878a8c3103503f9a2f7782861e3b9ccfeb33e5) - add `rot180` to namespace
 -   [`2a4f2f1`](https://github.com/stdlib-js/stdlib/commit/2a4f2f1edc5a5e3455b9be6a5390120e7b43ff79) - add `reinterpretBoolean` to namespace
 -   [`f226fa6`](https://github.com/stdlib-js/stdlib/commit/f226fa66bbf9772a84b0d23ae2228ae5d56e7656) - add `reinterpretComplex64` to namespace
@@ -877,6 +878,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`902e522`](https://github.com/stdlib-js/stdlib/commit/902e522762ec678bc548d6a503d5a94046e708f1) - **feat:** add `ndarray/rot90` [(#11705)](https://github.com/stdlib-js/stdlib/pull/11705) _(by Muhammad Haris, Athan Reines)_
 -   [`b5fb2f8`](https://github.com/stdlib-js/stdlib/commit/b5fb2f8f0aa00375fa5b53925db763de97933c8f) - **docs:** update notes _(by Athan Reines)_
 -   [`40db61d`](https://github.com/stdlib-js/stdlib/commit/40db61db7ca352e3a55a699a010d984fc05f6144) - **chore:** follow-up fixes [(#11721)](https://github.com/stdlib-js/stdlib/pull/11721) _(by Philipp Burckhardt)_
 -   [`973f832`](https://github.com/stdlib-js/stdlib/commit/973f8327ee125d0f34d1d168be7511346216f189) - **docs:** update namespace table of contents [(#11738)](https://github.com/stdlib-js/stdlib/pull/11738) _(by stdlib-bot)_
