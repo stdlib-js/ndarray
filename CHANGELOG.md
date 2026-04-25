@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`5a57084`](https://github.com/stdlib-js/stdlib/commit/5a570843aa35513c4061dda9b45151d406f53ccf) - add `ndarray/to-rotr90` [(#11770)](https://github.com/stdlib-js/stdlib/pull/11770)
 -   [`8cb6c7c`](https://github.com/stdlib-js/stdlib/commit/8cb6c7c7a1d109ec00a04312ecf23532036f45ac) - add `ndarray/base/append-singleton-dimensions` [(#11782)](https://github.com/stdlib-js/stdlib/pull/11782)
 -   [`94fc2ce`](https://github.com/stdlib-js/stdlib/commit/94fc2ced847969980cae2241b175f0f9f799658e) - add `ndarray/base/to-rot90` [(#11748)](https://github.com/stdlib-js/stdlib/pull/11748)
 -   [`c88ea56`](https://github.com/stdlib-js/stdlib/commit/c88ea56a2f3acfe5ce345108eb42ea991b689d3f) - add `toRotr90` to namespace
@@ -883,6 +884,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5a57084`](https://github.com/stdlib-js/stdlib/commit/5a570843aa35513c4061dda9b45151d406f53ccf) - **feat:** add `ndarray/to-rotr90` [(#11770)](https://github.com/stdlib-js/stdlib/pull/11770) _(by Muhammad Haris, Athan Reines)_
 -   [`8cb6c7c`](https://github.com/stdlib-js/stdlib/commit/8cb6c7c7a1d109ec00a04312ecf23532036f45ac) - **feat:** add `ndarray/base/append-singleton-dimensions` [(#11782)](https://github.com/stdlib-js/stdlib/pull/11782) _(by Muhammad Haris, Athan Reines)_
 -   [`3ca7c21`](https://github.com/stdlib-js/stdlib/commit/3ca7c2179081a36fa279dbb1e12f8e81d811e997) - **docs:** propagate recent `ndarray/base` comment and note fixes to sibling packages [(#11762)](https://github.com/stdlib-js/stdlib/pull/11762) _(by Philipp Burckhardt)_
 -   [`94fc2ce`](https://github.com/stdlib-js/stdlib/commit/94fc2ced847969980cae2241b175f0f9f799658e) - **feat:** add `ndarray/base/to-rot90` [(#11748)](https://github.com/stdlib-js/stdlib/pull/11748) _(by Muhammad Haris, Athan Reines)_
