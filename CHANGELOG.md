@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`9d3b90d`](https://github.com/stdlib-js/stdlib/commit/9d3b90d4f3464f0aa73a4fcf5ac1eb1dcdf5bf96) - add `toRotr90` to namespace
+-   [`575ae77`](https://github.com/stdlib-js/stdlib/commit/575ae7709faa304df83a96aa99994cd93611835f) - add `appendSingletonDimensions` to namespace
+-   [`44ec734`](https://github.com/stdlib-js/stdlib/commit/44ec734bbf65622c8e5ba4cae897f0f0f19bcd85) - add `toRot90` to namespace
 -   [`5a57084`](https://github.com/stdlib-js/stdlib/commit/5a570843aa35513c4061dda9b45151d406f53ccf) - add `ndarray/to-rotr90` [(#11770)](https://github.com/stdlib-js/stdlib/pull/11770)
 -   [`8cb6c7c`](https://github.com/stdlib-js/stdlib/commit/8cb6c7c7a1d109ec00a04312ecf23532036f45ac) - add `ndarray/base/append-singleton-dimensions` [(#11782)](https://github.com/stdlib-js/stdlib/pull/11782)
 -   [`94fc2ce`](https://github.com/stdlib-js/stdlib/commit/94fc2ced847969980cae2241b175f0f9f799658e) - add `ndarray/base/to-rot90` [(#11748)](https://github.com/stdlib-js/stdlib/pull/11748)
@@ -884,6 +887,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`9d3b90d`](https://github.com/stdlib-js/stdlib/commit/9d3b90d4f3464f0aa73a4fcf5ac1eb1dcdf5bf96) - **feat:** add `toRotr90` to namespace _(by Athan Reines)_
+-   [`575ae77`](https://github.com/stdlib-js/stdlib/commit/575ae7709faa304df83a96aa99994cd93611835f) - **feat:** add `appendSingletonDimensions` to namespace _(by Athan Reines)_
+-   [`44ec734`](https://github.com/stdlib-js/stdlib/commit/44ec734bbf65622c8e5ba4cae897f0f0f19bcd85) - **feat:** add `toRot90` to namespace _(by Athan Reines)_
 -   [`5a57084`](https://github.com/stdlib-js/stdlib/commit/5a570843aa35513c4061dda9b45151d406f53ccf) - **feat:** add `ndarray/to-rotr90` [(#11770)](https://github.com/stdlib-js/stdlib/pull/11770) _(by Muhammad Haris, Athan Reines)_
 -   [`8cb6c7c`](https://github.com/stdlib-js/stdlib/commit/8cb6c7c7a1d109ec00a04312ecf23532036f45ac) - **feat:** add `ndarray/base/append-singleton-dimensions` [(#11782)](https://github.com/stdlib-js/stdlib/pull/11782) _(by Muhammad Haris, Athan Reines)_
 -   [`3ca7c21`](https://github.com/stdlib-js/stdlib/commit/3ca7c2179081a36fa279dbb1e12f8e81d811e997) - **docs:** propagate recent `ndarray/base` comment and note fixes to sibling packages [(#11762)](https://github.com/stdlib-js/stdlib/pull/11762) _(by Philipp Burckhardt)_

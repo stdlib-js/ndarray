@@ -59,6 +59,15 @@ setReadOnly( ns, 'any', require( './../../base/any' ) );
 setReadOnly( ns, 'anyBy', require( './../../base/any-by' ) );
 
 /**
+* @name appendSingletonDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/append-singleton-dimensions}
+*/
+setReadOnly( ns, 'appendSingletonDimensions', require( './../../base/append-singleton-dimensions' ) );
+
+/**
 * @name assert
 * @memberof ns
 * @readonly
@@ -1533,6 +1542,15 @@ setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
 * @see {@link module:@stdlib/ndarray/base/to-reversed-dimension}
 */
 setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimension' ) );
+
+/**
+* @name toRot90
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-rot90}
+*/
+setReadOnly( ns, 'toRot90', require( './../../base/to-rot90' ) );
 
 /**
 * @name toRotr90
