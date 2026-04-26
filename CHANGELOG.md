@@ -643,6 +643,7 @@
 
 ### Bug Fixes
 
+-   [`aab9a13`](https://github.com/stdlib-js/stdlib/commit/aab9a1327da0e6143b0548a9d47c08d1947ddb58) - remove assertion
 -   [`b7f85c2`](https://github.com/stdlib-js/stdlib/commit/b7f85c29d4147a1c0194329881eb07ef695ddaee) - use correct validation package
 -   [`5795b39`](https://github.com/stdlib-js/stdlib/commit/5795b39e0f0f1d7ccae3ea1ed43809b7ff78b77d) - determine layout based on physical layout
 -   [`c20c5d6`](https://github.com/stdlib-js/stdlib/commit/c20c5d602a0f897e86d7fbd83180fec84c535984) - determine layout based on physical layout
@@ -889,6 +890,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7c667ac`](https://github.com/stdlib-js/stdlib/commit/7c667ac5c40f8e10bca18a6f07e8653370ce11d8) - **test:** resolve failing test _(by Athan Reines)_
+-   [`aab9a13`](https://github.com/stdlib-js/stdlib/commit/aab9a1327da0e6143b0548a9d47c08d1947ddb58) - **fix:** remove assertion _(by Athan Reines)_
 -   [`c4e9971`](https://github.com/stdlib-js/stdlib/commit/c4e9971c33c8463e72c440116ca0fa0cfb3f580b) - **feat:** add `ndarray/rotl90` [(#11773)](https://github.com/stdlib-js/stdlib/pull/11773) _(by Muhammad Haris)_
 -   [`226ee9d`](https://github.com/stdlib-js/stdlib/commit/226ee9d574db47f41dae9c13cece3c6b47925d78) - **feat:** add `ndarray/base/to-rotl90` [(#11776)](https://github.com/stdlib-js/stdlib/pull/11776) _(by Muhammad Haris)_
 -   [`9d3b90d`](https://github.com/stdlib-js/stdlib/commit/9d3b90d4f3464f0aa73a4fcf5ac1eb1dcdf5bf96) - **feat:** add `toRotr90` to namespace _(by Athan Reines)_
