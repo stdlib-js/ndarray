@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-25)
+## Unreleased (2026-04-26)
 
 <section class="features">
 
 ### Features
 
+-   [`c4e9971`](https://github.com/stdlib-js/stdlib/commit/c4e9971c33c8463e72c440116ca0fa0cfb3f580b) - add `ndarray/rotl90` [(#11773)](https://github.com/stdlib-js/stdlib/pull/11773)
 -   [`226ee9d`](https://github.com/stdlib-js/stdlib/commit/226ee9d574db47f41dae9c13cece3c6b47925d78) - add `ndarray/base/to-rotl90` [(#11776)](https://github.com/stdlib-js/stdlib/pull/11776)
 -   [`9d3b90d`](https://github.com/stdlib-js/stdlib/commit/9d3b90d4f3464f0aa73a4fcf5ac1eb1dcdf5bf96) - add `toRotr90` to namespace
 -   [`575ae77`](https://github.com/stdlib-js/stdlib/commit/575ae7709faa304df83a96aa99994cd93611835f) - add `appendSingletonDimensions` to namespace
@@ -888,6 +889,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c4e9971`](https://github.com/stdlib-js/stdlib/commit/c4e9971c33c8463e72c440116ca0fa0cfb3f580b) - **feat:** add `ndarray/rotl90` [(#11773)](https://github.com/stdlib-js/stdlib/pull/11773) _(by Muhammad Haris)_
 -   [`226ee9d`](https://github.com/stdlib-js/stdlib/commit/226ee9d574db47f41dae9c13cece3c6b47925d78) - **feat:** add `ndarray/base/to-rotl90` [(#11776)](https://github.com/stdlib-js/stdlib/pull/11776) _(by Muhammad Haris)_
 -   [`9d3b90d`](https://github.com/stdlib-js/stdlib/commit/9d3b90d4f3464f0aa73a4fcf5ac1eb1dcdf5bf96) - **feat:** add `toRotr90` to namespace _(by Athan Reines)_
 -   [`575ae77`](https://github.com/stdlib-js/stdlib/commit/575ae7709faa304df83a96aa99994cd93611835f) - **feat:** add `appendSingletonDimensions` to namespace _(by Athan Reines)_
