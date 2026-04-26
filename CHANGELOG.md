@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - add `unflatten` and `ndarraylike2scalar` to namespace
 -   [`b5a289b`](https://github.com/stdlib-js/stdlib/commit/b5a289be8b05adcf88b84be696e786859fe88316) - add `ndarray/unflatten` [(#11781)](https://github.com/stdlib-js/stdlib/pull/11781)
 -   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780)
 -   [`10c631c`](https://github.com/stdlib-js/stdlib/commit/10c631c71f13f182aada47303cb5dced6e69bbec) - add `toRot90` to namespace
@@ -900,6 +901,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - **feat:** add `unflatten` and `ndarraylike2scalar` to namespace _(by Athan Reines)_
 -   [`b5a289b`](https://github.com/stdlib-js/stdlib/commit/b5a289be8b05adcf88b84be696e786859fe88316) - **feat:** add `ndarray/unflatten` [(#11781)](https://github.com/stdlib-js/stdlib/pull/11781) _(by Muhammad Haris, Athan Reines)_
 -   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - **feat:** add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780) _(by Muhammad Haris, Athan Reines)_
 -   [`10c631c`](https://github.com/stdlib-js/stdlib/commit/10c631c71f13f182aada47303cb5dced6e69bbec) - **feat:** add `toRot90` to namespace _(by Athan Reines)_
