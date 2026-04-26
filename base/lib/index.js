@@ -1553,6 +1553,15 @@ setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimen
 setReadOnly( ns, 'toRot90', require( './../../base/to-rot90' ) );
 
 /**
+* @name toRotl90
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-rotl90}
+*/
+setReadOnly( ns, 'toRotl90', require( './../../base/to-rotl90' ) );
+
+/**
 * @name toRotr90
 * @memberof ns
 * @readonly

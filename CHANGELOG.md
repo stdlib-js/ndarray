@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`ec583b8`](https://github.com/stdlib-js/stdlib/commit/ec583b81d55d0eadcfcb64c23f96966a4bc9224d) - add `toRotl90` to namespace
+-   [`992523c`](https://github.com/stdlib-js/stdlib/commit/992523c21987f7c5134463a373caebcdc2212517) - add `rotl90` to namespace
+-   [`bacb8fa`](https://github.com/stdlib-js/stdlib/commit/bacb8fab250b7b74d8867f103d28b6200bb64261) - add `rot180` to namespace
 -   [`781bf08`](https://github.com/stdlib-js/stdlib/commit/781bf085f9de03c9c3ccbf989d20f20025a77de4) - add `ndarray/rot180` [(#11772)](https://github.com/stdlib-js/stdlib/pull/11772)
 -   [`c4e9971`](https://github.com/stdlib-js/stdlib/commit/c4e9971c33c8463e72c440116ca0fa0cfb3f580b) - add `ndarray/rotl90` [(#11773)](https://github.com/stdlib-js/stdlib/pull/11773)
 -   [`226ee9d`](https://github.com/stdlib-js/stdlib/commit/226ee9d574db47f41dae9c13cece3c6b47925d78) - add `ndarray/base/to-rotl90` [(#11776)](https://github.com/stdlib-js/stdlib/pull/11776)
@@ -891,6 +894,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`ec583b8`](https://github.com/stdlib-js/stdlib/commit/ec583b81d55d0eadcfcb64c23f96966a4bc9224d) - **feat:** add `toRotl90` to namespace _(by Athan Reines)_
+-   [`992523c`](https://github.com/stdlib-js/stdlib/commit/992523c21987f7c5134463a373caebcdc2212517) - **feat:** add `rotl90` to namespace _(by Athan Reines)_
+-   [`bacb8fa`](https://github.com/stdlib-js/stdlib/commit/bacb8fab250b7b74d8867f103d28b6200bb64261) - **feat:** add `rot180` to namespace _(by Athan Reines)_
 -   [`781bf08`](https://github.com/stdlib-js/stdlib/commit/781bf085f9de03c9c3ccbf989d20f20025a77de4) - **feat:** add `ndarray/rot180` [(#11772)](https://github.com/stdlib-js/stdlib/pull/11772) _(by Muhammad Haris, Athan Reines)_
 -   [`7c667ac`](https://github.com/stdlib-js/stdlib/commit/7c667ac5c40f8e10bca18a6f07e8653370ce11d8) - **test:** resolve failing test _(by Athan Reines)_
 -   [`aab9a13`](https://github.com/stdlib-js/stdlib/commit/aab9a1327da0e6143b0548a9d47c08d1947ddb58) - **fix:** remove assertion _(by Athan Reines)_
