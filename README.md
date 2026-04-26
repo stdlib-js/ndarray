@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -138,6 +132,7 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
+-   <span class="signature">[`rot90( x[, options] )`][@stdlib/ndarray/rot90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `90` degrees in a specified plane.</span>
 -   <span class="signature">[`rotr90( x, k )`][@stdlib/ndarray/rotr90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees clockwise.</span>
 -   <span class="signature">[`rowcat( arrays )`][@stdlib/ndarray/rowcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as rows.</span>
 -   <span class="signature">[`shift( x[, options] )`][@stdlib/ndarray/shift]</span><span class="delimiter">: </span><span class="description">return an array containing a read-only truncated view of an input `ndarray` and a read-only view of the first element(s) along a specified dimension.</span>
@@ -301,6 +296,9 @@ The namespace contains the following multidimensional array utility functions:
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
+-   <span class="signature">[`rot180( x[, options] )`][@stdlib/ndarray/rot180]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `180` degrees in a specified plane.</span>
+-   <span class="signature">[`rotl90( x, k )`][@stdlib/ndarray/rotl90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees counterclockwise.</span>
+-   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
 
 </div>
 
@@ -318,21 +316,11 @@ The namespace contains the following multidimensional array utility functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -428,6 +416,12 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
+
+[@stdlib/ndarray/rot180]: https://github.com/stdlib-js/ndarray/tree/main/rot180
+
+[@stdlib/ndarray/rotl90]: https://github.com/stdlib-js/ndarray/tree/main/rotl90
+
+[@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
@@ -580,6 +574,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
 
 [@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
+
+[@stdlib/ndarray/rot90]: https://github.com/stdlib-js/ndarray/tree/main/rot90
 
 [@stdlib/ndarray/rotr90]: https://github.com/stdlib-js/ndarray/tree/main/rotr90
 
