@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780)
 -   [`10c631c`](https://github.com/stdlib-js/stdlib/commit/10c631c71f13f182aada47303cb5dced6e69bbec) - add `toRot90` to namespace
 -   [`3637eb8`](https://github.com/stdlib-js/stdlib/commit/3637eb8e5767a32f8c5c78682fd6c9aebc0a7b09) - add `toRot180` to namespace
 -   [`37197d9`](https://github.com/stdlib-js/stdlib/commit/37197d9632d9c94987cf1a9e0736e56fb477c76a) - add `ndarray/base/to-rot180` [(#11778)](https://github.com/stdlib-js/stdlib/pull/11778)
@@ -898,6 +899,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - **feat:** add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780) _(by Muhammad Haris, Athan Reines)_
 -   [`10c631c`](https://github.com/stdlib-js/stdlib/commit/10c631c71f13f182aada47303cb5dced6e69bbec) - **feat:** add `toRot90` to namespace _(by Athan Reines)_
 -   [`3637eb8`](https://github.com/stdlib-js/stdlib/commit/3637eb8e5767a32f8c5c78682fd6c9aebc0a7b09) - **feat:** add `toRot180` to namespace _(by Athan Reines)_
 -   [`37197d9`](https://github.com/stdlib-js/stdlib/commit/37197d9632d9c94987cf1a9e0736e56fb477c76a) - **feat:** add `ndarray/base/to-rot180` [(#11778)](https://github.com/stdlib-js/stdlib/pull/11778) _(by Muhammad Haris)_
