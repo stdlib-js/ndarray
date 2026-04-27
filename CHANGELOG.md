@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-26)
+## Unreleased (2026-04-27)
 
 <section class="features">
 
@@ -901,6 +901,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`12f7dcb`](https://github.com/stdlib-js/stdlib/commit/12f7dcbaad8d29a310cd04dad98cc1f9518ff36c) - **docs:** update related packages sections [(#11805)](https://github.com/stdlib-js/stdlib/pull/11805) _(by stdlib-bot)_
+-   [`0dc62ae`](https://github.com/stdlib-js/stdlib/commit/0dc62ae39a4817ff888e9736c3ea599f6beff4e5) - **build:** replace `eslint-plugin-node` with `eslint-plugin-n` [(#10952)](https://github.com/stdlib-js/stdlib/pull/10952) _(by Philipp Burckhardt, Athan Reines)_
 -   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - **feat:** add `unflatten` and `ndarraylike2scalar` to namespace _(by Athan Reines)_
 -   [`b5a289b`](https://github.com/stdlib-js/stdlib/commit/b5a289be8b05adcf88b84be696e786859fe88316) - **feat:** add `ndarray/unflatten` [(#11781)](https://github.com/stdlib-js/stdlib/pull/11781) _(by Muhammad Haris, Athan Reines)_
 -   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - **feat:** add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780) _(by Muhammad Haris, Athan Reines)_
