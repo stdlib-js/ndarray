@@ -901,6 +901,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`d6b1e3d`](https://github.com/stdlib-js/stdlib/commit/d6b1e3d2286c2ca1044ed87317707ae0be54a351) - **docs:** update namespace table of contents [(#11809)](https://github.com/stdlib-js/stdlib/pull/11809) _(by stdlib-bot)_
 -   [`12f7dcb`](https://github.com/stdlib-js/stdlib/commit/12f7dcbaad8d29a310cd04dad98cc1f9518ff36c) - **docs:** update related packages sections [(#11805)](https://github.com/stdlib-js/stdlib/pull/11805) _(by stdlib-bot)_
 -   [`0dc62ae`](https://github.com/stdlib-js/stdlib/commit/0dc62ae39a4817ff888e9736c3ea599f6beff4e5) - **build:** replace `eslint-plugin-node` with `eslint-plugin-n` [(#10952)](https://github.com/stdlib-js/stdlib/pull/10952) _(by Philipp Burckhardt, Athan Reines)_
 -   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - **feat:** add `unflatten` and `ndarraylike2scalar` to namespace _(by Athan Reines)_
