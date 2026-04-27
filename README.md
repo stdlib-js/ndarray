@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, broadcastScalarLike, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, fill, fillBy, fillSlice, filter, filterMap, find, findLast, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, hconcat, includes, ind2sub, indexModes, inputCastingPolicies, iter, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndarraylike2scalar, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, rot180, rot90, rotl90, rotr90, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, toRot90, toRotr90, unflatten, unshift, vconcat, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -283,10 +295,13 @@ The namespace contains the following multidimensional array utility functions:
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
+-   <span class="signature">[`ndarraylike2scalar( x )`][@stdlib/ndarray/ndarraylike2scalar]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to a scalar value.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
 -   <span class="signature">[`rot180( x[, options] )`][@stdlib/ndarray/rot180]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `180` degrees in a specified plane.</span>
 -   <span class="signature">[`rotl90( x, k )`][@stdlib/ndarray/rotl90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees counterclockwise.</span>
+-   <span class="signature">[`toRot90( x[, options] )`][@stdlib/ndarray/to-rot90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `90` degrees in a specified plane.</span>
 -   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
+-   <span class="signature">[`unflatten( x, dim, sizes )`][@stdlib/ndarray/unflatten]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.</span>
 
 </div>
 
@@ -305,8 +320,8 @@ The namespace contains the following multidimensional array utility functions:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -332,7 +347,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -403,13 +418,19 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
+[@stdlib/ndarray/ndarraylike2scalar]: https://github.com/stdlib-js/ndarray/tree/main/ndarraylike2scalar
+
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
 
 [@stdlib/ndarray/rot180]: https://github.com/stdlib-js/ndarray/tree/main/rot180
 
 [@stdlib/ndarray/rotl90]: https://github.com/stdlib-js/ndarray/tree/main/rotl90
 
+[@stdlib/ndarray/to-rot90]: https://github.com/stdlib-js/ndarray/tree/main/to-rot90
+
 [@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
+
+[@stdlib/ndarray/unflatten]: https://github.com/stdlib-js/ndarray/tree/main/unflatten
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
