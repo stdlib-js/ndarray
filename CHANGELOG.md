@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848)
 -   [`6cda0c6`](https://github.com/stdlib-js/stdlib/commit/6cda0c6d97f586093ca32e101114c718eab9ea2f) - add `ndarray/to-rotl90` [(#11847)](https://github.com/stdlib-js/stdlib/pull/11847)
 -   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - add `reinterpretComplex` to namespace
 -   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779)
@@ -904,6 +905,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - **feat:** add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848) _(by Muhammad Haris)_
 -   [`6cda0c6`](https://github.com/stdlib-js/stdlib/commit/6cda0c6d97f586093ca32e101114c718eab9ea2f) - **feat:** add `ndarray/to-rotl90` [(#11847)](https://github.com/stdlib-js/stdlib/pull/11847) _(by Muhammad Haris)_
 -   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - **feat:** add `reinterpretComplex` to namespace _(by Athan Reines)_
 -   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - **feat:** add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779) _(by Muhammad Haris, Athan Reines)_
