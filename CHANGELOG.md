@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-27)
+## Unreleased (2026-04-29)
 
 <section class="features">
 
 ### Features
 
+-   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779)
 -   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - add `unflatten` and `ndarraylike2scalar` to namespace
 -   [`b5a289b`](https://github.com/stdlib-js/stdlib/commit/b5a289be8b05adcf88b84be696e786859fe88316) - add `ndarray/unflatten` [(#11781)](https://github.com/stdlib-js/stdlib/pull/11781)
 -   [`35051b4`](https://github.com/stdlib-js/stdlib/commit/35051b4cf2f746feafb3673af334b86215d239be) - add `ndarray/ndarraylike2scalar` [(#11780)](https://github.com/stdlib-js/stdlib/pull/11780)
@@ -901,6 +902,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - **feat:** add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779) _(by Muhammad Haris, Athan Reines)_
 -   [`d6b1e3d`](https://github.com/stdlib-js/stdlib/commit/d6b1e3d2286c2ca1044ed87317707ae0be54a351) - **docs:** update namespace table of contents [(#11809)](https://github.com/stdlib-js/stdlib/pull/11809) _(by stdlib-bot)_
 -   [`12f7dcb`](https://github.com/stdlib-js/stdlib/commit/12f7dcbaad8d29a310cd04dad98cc1f9518ff36c) - **docs:** update related packages sections [(#11805)](https://github.com/stdlib-js/stdlib/pull/11805) _(by stdlib-bot)_
 -   [`0dc62ae`](https://github.com/stdlib-js/stdlib/commit/0dc62ae39a4817ff888e9736c3ea599f6beff4e5) - **build:** replace `eslint-plugin-node` with `eslint-plugin-n` [(#10952)](https://github.com/stdlib-js/stdlib/pull/10952) _(by Philipp Burckhardt, Athan Reines)_
