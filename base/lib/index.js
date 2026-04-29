@@ -1175,6 +1175,15 @@ setReadOnly( ns, 'quinaryBlockSize', require( './../../base/quinary-tiling-block
 setReadOnly( ns, 'reinterpretBoolean', require( './../../base/reinterpret-boolean' ) );
 
 /**
+* @name reinterpretComplex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reinterpret-complex}
+*/
+setReadOnly( ns, 'reinterpretComplex', require( './../../base/reinterpret-complex' ) );
+
+/**
 * @name reinterpretComplex64
 * @memberof ns
 * @readonly

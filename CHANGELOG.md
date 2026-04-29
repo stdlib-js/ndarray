@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - add `reinterpretComplex` to namespace
 -   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779)
 -   [`e7ca25d`](https://github.com/stdlib-js/stdlib/commit/e7ca25d57d77aa8c78ed1f848b3f8f90f48da393) - add `unflatten` and `ndarraylike2scalar` to namespace
 -   [`b5a289b`](https://github.com/stdlib-js/stdlib/commit/b5a289be8b05adcf88b84be696e786859fe88316) - add `ndarray/unflatten` [(#11781)](https://github.com/stdlib-js/stdlib/pull/11781)
@@ -902,6 +903,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - **feat:** add `reinterpretComplex` to namespace _(by Athan Reines)_
 -   [`2eb9120`](https://github.com/stdlib-js/stdlib/commit/2eb91207923da61aeee4a77e5cf1d0f408e26715) - **feat:** add `ndarray/base/reinterpret-complex` [(#11779)](https://github.com/stdlib-js/stdlib/pull/11779) _(by Muhammad Haris, Athan Reines)_
 -   [`d6b1e3d`](https://github.com/stdlib-js/stdlib/commit/d6b1e3d2286c2ca1044ed87317707ae0be54a351) - **docs:** update namespace table of contents [(#11809)](https://github.com/stdlib-js/stdlib/pull/11809) _(by stdlib-bot)_
 -   [`12f7dcb`](https://github.com/stdlib-js/stdlib/commit/12f7dcbaad8d29a310cd04dad98cc1f9518ff36c) - **docs:** update related packages sections [(#11805)](https://github.com/stdlib-js/stdlib/pull/11805) _(by stdlib-bot)_
