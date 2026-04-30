@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-29)
+## Unreleased (2026-04-30)
 
 <section class="features">
 
@@ -905,6 +905,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`6b16c0b`](https://github.com/stdlib-js/stdlib/commit/6b16c0bec485b03bf84f577434163d707e2120a9) - **docs:** update related packages sections [(#11853)](https://github.com/stdlib-js/stdlib/pull/11853) _(by stdlib-bot)_
 -   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - **feat:** add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848) _(by Muhammad Haris)_
 -   [`6cda0c6`](https://github.com/stdlib-js/stdlib/commit/6cda0c6d97f586093ca32e101114c718eab9ea2f) - **feat:** add `ndarray/to-rotl90` [(#11847)](https://github.com/stdlib-js/stdlib/pull/11847) _(by Muhammad Haris)_
 -   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - **feat:** add `reinterpretComplex` to namespace _(by Athan Reines)_
