@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-30)
+## Unreleased (2026-05-01)
 
 <section class="features">
 
 ### Features
 
+-   [`7c54f16`](https://github.com/stdlib-js/stdlib/commit/7c54f16e5ad8e3bb02fef147a07faf04e4d56e40) - add `toRot180` and `toRotl90` to namespace
 -   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848)
 -   [`6cda0c6`](https://github.com/stdlib-js/stdlib/commit/6cda0c6d97f586093ca32e101114c718eab9ea2f) - add `ndarray/to-rotl90` [(#11847)](https://github.com/stdlib-js/stdlib/pull/11847)
 -   [`ba7a157`](https://github.com/stdlib-js/stdlib/commit/ba7a1573c32d5660eb775e6abc9e1edc74f418bf) - add `reinterpretComplex` to namespace
@@ -905,6 +906,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7c54f16`](https://github.com/stdlib-js/stdlib/commit/7c54f16e5ad8e3bb02fef147a07faf04e4d56e40) - **feat:** add `toRot180` and `toRotl90` to namespace _(by Athan Reines)_
 -   [`e34b36c`](https://github.com/stdlib-js/stdlib/commit/e34b36cdedc2287b3eff185f30986cb65bfd6ca5) - **docs:** update namespace table of contents [(#11855)](https://github.com/stdlib-js/stdlib/pull/11855) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`6b16c0b`](https://github.com/stdlib-js/stdlib/commit/6b16c0bec485b03bf84f577434163d707e2120a9) - **docs:** update related packages sections [(#11853)](https://github.com/stdlib-js/stdlib/pull/11853) _(by stdlib-bot)_
 -   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - **feat:** add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848) _(by Muhammad Haris)_
