@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-01)
+## Unreleased (2026-05-02)
 
 <section class="features">
 
@@ -906,6 +906,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4357292`](https://github.com/stdlib-js/stdlib/commit/4357292825d418623c6f92aefc406a854a13fec6) - **docs:** update namespace table of contents [(#11887)](https://github.com/stdlib-js/stdlib/pull/11887) _(by stdlib-bot)_
+-   [`7efd598`](https://github.com/stdlib-js/stdlib/commit/7efd598cbd3b40c453e2bcd27ebf142753058547) - **docs:** update ToC _(by Athan Reines)_
 -   [`dabdc73`](https://github.com/stdlib-js/stdlib/commit/dabdc73cf7df57d6840f5576b801755cb84497f0) - **docs:** update examples _(by Athan Reines)_
 -   [`7c54f16`](https://github.com/stdlib-js/stdlib/commit/7c54f16e5ad8e3bb02fef147a07faf04e4d56e40) - **feat:** add `toRot180` and `toRotl90` to namespace _(by Athan Reines)_
 -   [`e34b36c`](https://github.com/stdlib-js/stdlib/commit/e34b36cdedc2287b3eff185f30986cb65bfd6ca5) - **docs:** update namespace table of contents [(#11855)](https://github.com/stdlib-js/stdlib/pull/11855) _(by stdlib-bot, Philipp Burckhardt)_
