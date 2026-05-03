@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9e8bb89`](https://github.com/stdlib-js/stdlib/commit/9e8bb89bc03487354d9a6ed8eff2595c6239cb53) - add `ndarray/last` [(#11881)](https://github.com/stdlib-js/stdlib/pull/11881)
 -   [`30a2cc1`](https://github.com/stdlib-js/stdlib/commit/30a2cc1a3fd972f532a853f5a94b68a5fb7e38df) - add `diagonal` and `reverseDimensions` to namespace
 -   [`632bef3`](https://github.com/stdlib-js/stdlib/commit/632bef35c4b9d42d7707c1f4e6f0b3c9ed002144) - add `ndarray/base/diagonal` [(#11851)](https://github.com/stdlib-js/stdlib/pull/11851)
 -   [`553d9b4`](https://github.com/stdlib-js/stdlib/commit/553d9b4650ce25ef26d7c6e54bbf715f76001cbe) - add `ndarray/base/reverse-dimensions` [(#9894)](https://github.com/stdlib-js/stdlib/pull/9894)
@@ -909,6 +910,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`9e8bb89`](https://github.com/stdlib-js/stdlib/commit/9e8bb89bc03487354d9a6ed8eff2595c6239cb53) - **feat:** add `ndarray/last` [(#11881)](https://github.com/stdlib-js/stdlib/pull/11881) _(by Muhammad Haris, Athan Reines)_
 -   [`e8183a7`](https://github.com/stdlib-js/stdlib/commit/e8183a73b1e97d01a85777bcaa15b35676855a9b) - **docs:** update ToC _(by Athan Reines)_
 -   [`30a2cc1`](https://github.com/stdlib-js/stdlib/commit/30a2cc1a3fd972f532a853f5a94b68a5fb7e38df) - **feat:** add `diagonal` and `reverseDimensions` to namespace _(by Athan Reines)_
 -   [`acd2375`](https://github.com/stdlib-js/stdlib/commit/acd2375e62f7a4691c2cb7a5f30ac3af13d18f26) - **style:** resolve lint error in `ndarray/fancy` [(#11895)](https://github.com/stdlib-js/stdlib/pull/11895) _(by Shivam Thakur, Athan Reines)_
