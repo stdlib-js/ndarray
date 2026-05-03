@@ -909,6 +909,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`e8183a7`](https://github.com/stdlib-js/stdlib/commit/e8183a73b1e97d01a85777bcaa15b35676855a9b) - **docs:** update ToC _(by Athan Reines)_
 -   [`30a2cc1`](https://github.com/stdlib-js/stdlib/commit/30a2cc1a3fd972f532a853f5a94b68a5fb7e38df) - **feat:** add `diagonal` and `reverseDimensions` to namespace _(by Athan Reines)_
 -   [`acd2375`](https://github.com/stdlib-js/stdlib/commit/acd2375e62f7a4691c2cb7a5f30ac3af13d18f26) - **style:** resolve lint error in `ndarray/fancy` [(#11895)](https://github.com/stdlib-js/stdlib/pull/11895) _(by Shivam Thakur, Athan Reines)_
 -   [`d0fd1f1`](https://github.com/stdlib-js/stdlib/commit/d0fd1f10228b3cfa94db6c475595925a6b76ffb8) - **docs:** update namespace table of contents [(#11898)](https://github.com/stdlib-js/stdlib/pull/11898) _(by stdlib-bot)_
