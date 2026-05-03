@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`553d9b4`](https://github.com/stdlib-js/stdlib/commit/553d9b4650ce25ef26d7c6e54bbf715f76001cbe) - add `ndarray/base/reverse-dimensions` [(#9894)](https://github.com/stdlib-js/stdlib/pull/9894)
 -   [`7c54f16`](https://github.com/stdlib-js/stdlib/commit/7c54f16e5ad8e3bb02fef147a07faf04e4d56e40) - add `toRot180` and `toRotl90` to namespace
 -   [`e3a873f`](https://github.com/stdlib-js/stdlib/commit/e3a873f246d0b6e2291c6299c7abd82a1eab2399) - add `ndarray/to-rot180` [(#11848)](https://github.com/stdlib-js/stdlib/pull/11848)
 -   [`6cda0c6`](https://github.com/stdlib-js/stdlib/commit/6cda0c6d97f586093ca32e101114c718eab9ea2f) - add `ndarray/to-rotl90` [(#11847)](https://github.com/stdlib-js/stdlib/pull/11847)
@@ -906,6 +907,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`553d9b4`](https://github.com/stdlib-js/stdlib/commit/553d9b4650ce25ef26d7c6e54bbf715f76001cbe) - **feat:** add `ndarray/base/reverse-dimensions` [(#9894)](https://github.com/stdlib-js/stdlib/pull/9894) _(by Muhammad Haris, Athan Reines)_
 -   [`498aed4`](https://github.com/stdlib-js/stdlib/commit/498aed42b0cf7323abc97c9d18b76534dc25ee6f) - **refactor:** update error message _(by Athan Reines)_
 -   [`987f182`](https://github.com/stdlib-js/stdlib/commit/987f182e475a79dd64b586a5b12af84517238f00) - **docs:** fix heading and disable lint rule [(#11840)](https://github.com/stdlib-js/stdlib/pull/11840) _(by Philipp Burckhardt)_
 -   [`4357292`](https://github.com/stdlib-js/stdlib/commit/4357292825d418623c6f92aefc406a854a13fec6) - **docs:** update namespace table of contents [(#11887)](https://github.com/stdlib-js/stdlib/pull/11887) _(by stdlib-bot)_
