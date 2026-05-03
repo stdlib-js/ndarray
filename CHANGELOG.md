@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891)
 -   [`02b39b4`](https://github.com/stdlib-js/stdlib/commit/02b39b48e4de069af553e2e599292d3b815056fc) - add `ndarray/diagonal` [(#11900)](https://github.com/stdlib-js/stdlib/pull/11900)
 -   [`60188d9`](https://github.com/stdlib-js/stdlib/commit/60188d95e63c0890f6d2a30e8a813518a2a00ad7) - add `ndarray/reverse-dimensions` [(#11910)](https://github.com/stdlib-js/stdlib/pull/11910)
 -   [`186eaa3`](https://github.com/stdlib-js/stdlib/commit/186eaa37ff742abc21f39fa7517cb87304e88b9b) - add `last` to namespace
@@ -913,6 +914,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - **feat:** add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891) _(by Muhammad Haris)_
 -   [`02b39b4`](https://github.com/stdlib-js/stdlib/commit/02b39b48e4de069af553e2e599292d3b815056fc) - **feat:** add `ndarray/diagonal` [(#11900)](https://github.com/stdlib-js/stdlib/pull/11900) _(by Muhammad Haris, Athan Reines)_
 -   [`60188d9`](https://github.com/stdlib-js/stdlib/commit/60188d95e63c0890f6d2a30e8a813518a2a00ad7) - **feat:** add `ndarray/reverse-dimensions` [(#11910)](https://github.com/stdlib-js/stdlib/pull/11910) _(by Muhammad Haris, Athan Reines)_
 -   [`186eaa3`](https://github.com/stdlib-js/stdlib/commit/186eaa37ff742abc21f39fa7517cb87304e88b9b) - **feat:** add `last` to namespace _(by Athan Reines)_
