@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-02)
+## Unreleased (2026-05-03)
 
 <section class="features">
 
@@ -906,6 +906,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`498aed4`](https://github.com/stdlib-js/stdlib/commit/498aed42b0cf7323abc97c9d18b76534dc25ee6f) - **refactor:** update error message _(by Athan Reines)_
 -   [`987f182`](https://github.com/stdlib-js/stdlib/commit/987f182e475a79dd64b586a5b12af84517238f00) - **docs:** fix heading and disable lint rule [(#11840)](https://github.com/stdlib-js/stdlib/pull/11840) _(by Philipp Burckhardt)_
 -   [`4357292`](https://github.com/stdlib-js/stdlib/commit/4357292825d418623c6f92aefc406a854a13fec6) - **docs:** update namespace table of contents [(#11887)](https://github.com/stdlib-js/stdlib/pull/11887) _(by stdlib-bot)_
 -   [`7efd598`](https://github.com/stdlib-js/stdlib/commit/7efd598cbd3b40c453e2bcd27ebf142753058547) - **docs:** update ToC _(by Athan Reines)_
