@@ -392,6 +392,15 @@ setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 setReadOnly( ns, 'data', require( './../../base/data-buffer' ) );
 
 /**
+* @name diagonal
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/diagonal}
+*/
+setReadOnly( ns, 'diagonal', require( './../../base/diagonal' ) );
+
+/**
 * @name dtype
 * @memberof ns
 * @readonly
@@ -1227,6 +1236,15 @@ setReadOnly( ns, 'reverse', require( './../../base/reverse' ) );
 * @see {@link module:@stdlib/ndarray/base/reverse-dimension}
 */
 setReadOnly( ns, 'reverseDimension', require( './../../base/reverse-dimension' ) );
+
+/**
+* @name reverseDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/reverse-dimensions}
+*/
+setReadOnly( ns, 'reverseDimensions', require( './../../base/reverse-dimensions' ) );
 
 /**
 * @name rot90
