@@ -132,7 +132,9 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
+-   <span class="signature">[`rot180( x[, options] )`][@stdlib/ndarray/rot180]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `180` degrees in a specified plane.</span>
 -   <span class="signature">[`rot90( x[, options] )`][@stdlib/ndarray/rot90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `90` degrees in a specified plane.</span>
+-   <span class="signature">[`rotl90( x, k )`][@stdlib/ndarray/rotl90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees counterclockwise.</span>
 -   <span class="signature">[`rotr90( x, k )`][@stdlib/ndarray/rotr90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees clockwise.</span>
 -   <span class="signature">[`rowcat( arrays )`][@stdlib/ndarray/rowcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as rows.</span>
 -   <span class="signature">[`shift( x[, options] )`][@stdlib/ndarray/shift]</span><span class="delimiter">: </span><span class="description">return an array containing a read-only truncated view of an input `ndarray` and a read-only view of the first element(s) along a specified dimension.</span>
@@ -148,6 +150,10 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`toFlippedud( x )`][@stdlib/ndarray/to-flippedud]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements along the second-to-last dimension of an input `ndarray` is reversed.</span>
 -   <span class="signature">[`toReversedDimension( x[, options] )`][@stdlib/ndarray/to-reversed-dimension]</span><span class="delimiter">: </span><span class="description">return a new ndarray where the order of elements of an input ndarray along a specified dimension is reversed.</span>
 -   <span class="signature">[`toReversed( x )`][@stdlib/ndarray/to-reversed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where the order of elements of an input `ndarray` is reversed along each dimension.</span>
+-   <span class="signature">[`toRot180( x[, options] )`][@stdlib/ndarray/to-rot180]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `180` degrees in a specified plane.</span>
+-   <span class="signature">[`toRot90( x[, options] )`][@stdlib/ndarray/to-rot90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `90` degrees in a specified plane.</span>
+-   <span class="signature">[`toRotl90( x, k )`][@stdlib/ndarray/to-rotl90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees counterclockwise.</span>
+-   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
 -   <span class="signature">[`unshift( x, ...values )`][@stdlib/ndarray/unshift]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by prepending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`vconcat( arrays )`][@stdlib/ndarray/vconcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along the second-to-last dimension.</span>
 -   <span class="signature">[`ndarrayWith( x, indices, value )`][@stdlib/ndarray/with]</span><span class="delimiter">: </span><span class="description">return a new ndarray with the element at a specified index replaced by a provided value.</span>
@@ -297,12 +303,6 @@ The namespace contains the following multidimensional array utility functions:
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`ndarraylike2scalar( x )`][@stdlib/ndarray/ndarraylike2scalar]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to a scalar value.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
--   <span class="signature">[`rot180( x[, options] )`][@stdlib/ndarray/rot180]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `180` degrees in a specified plane.</span>
--   <span class="signature">[`rotl90( x, k )`][@stdlib/ndarray/rotl90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of a matrix (or a stack of matrices) rotated `90` degrees counterclockwise.</span>
--   <span class="signature">[`toRot180( x[, options] )`][@stdlib/ndarray/to-rot180]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `180` degrees in a specified plane.</span>
--   <span class="signature">[`toRot90( x[, options] )`][@stdlib/ndarray/to-rot90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `90` degrees in a specified plane.</span>
--   <span class="signature">[`toRotl90( x, k )`][@stdlib/ndarray/to-rotl90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees counterclockwise.</span>
--   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
 -   <span class="signature">[`unflatten( x, dim, sizes )`][@stdlib/ndarray/unflatten]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.</span>
 
 </div>
@@ -423,18 +423,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/ndarraylike2scalar]: https://github.com/stdlib-js/ndarray/tree/main/ndarraylike2scalar
 
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
-
-[@stdlib/ndarray/rot180]: https://github.com/stdlib-js/ndarray/tree/main/rot180
-
-[@stdlib/ndarray/rotl90]: https://github.com/stdlib-js/ndarray/tree/main/rotl90
-
-[@stdlib/ndarray/to-rot180]: https://github.com/stdlib-js/ndarray/tree/main/to-rot180
-
-[@stdlib/ndarray/to-rot90]: https://github.com/stdlib-js/ndarray/tree/main/to-rot90
-
-[@stdlib/ndarray/to-rotl90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotl90
-
-[@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
 
 [@stdlib/ndarray/unflatten]: https://github.com/stdlib-js/ndarray/tree/main/unflatten
 
@@ -590,7 +578,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
 
+[@stdlib/ndarray/rot180]: https://github.com/stdlib-js/ndarray/tree/main/rot180
+
 [@stdlib/ndarray/rot90]: https://github.com/stdlib-js/ndarray/tree/main/rot90
+
+[@stdlib/ndarray/rotl90]: https://github.com/stdlib-js/ndarray/tree/main/rotl90
 
 [@stdlib/ndarray/rotr90]: https://github.com/stdlib-js/ndarray/tree/main/rotr90
 
@@ -621,6 +613,14 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-reversed-dimension]: https://github.com/stdlib-js/ndarray/tree/main/to-reversed-dimension
 
 [@stdlib/ndarray/to-reversed]: https://github.com/stdlib-js/ndarray/tree/main/to-reversed
+
+[@stdlib/ndarray/to-rot180]: https://github.com/stdlib-js/ndarray/tree/main/to-rot180
+
+[@stdlib/ndarray/to-rot90]: https://github.com/stdlib-js/ndarray/tree/main/to-rot90
+
+[@stdlib/ndarray/to-rotl90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotl90
+
+[@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
 
 [@stdlib/ndarray/unshift]: https://github.com/stdlib-js/ndarray/tree/main/unshift
 

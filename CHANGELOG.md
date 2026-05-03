@@ -908,6 +908,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`d0fd1f1`](https://github.com/stdlib-js/stdlib/commit/d0fd1f10228b3cfa94db6c475595925a6b76ffb8) - **docs:** update namespace table of contents [(#11898)](https://github.com/stdlib-js/stdlib/pull/11898) _(by stdlib-bot)_
 -   [`632bef3`](https://github.com/stdlib-js/stdlib/commit/632bef35c4b9d42d7707c1f4e6f0b3c9ed002144) - **feat:** add `ndarray/base/diagonal` [(#11851)](https://github.com/stdlib-js/stdlib/pull/11851) _(by Muhammad Haris, Athan Reines)_
 -   [`553d9b4`](https://github.com/stdlib-js/stdlib/commit/553d9b4650ce25ef26d7c6e54bbf715f76001cbe) - **feat:** add `ndarray/base/reverse-dimensions` [(#9894)](https://github.com/stdlib-js/stdlib/pull/9894) _(by Muhammad Haris, Athan Reines)_
 -   [`498aed4`](https://github.com/stdlib-js/stdlib/commit/498aed42b0cf7323abc97c9d18b76534dc25ee6f) - **refactor:** update error message _(by Athan Reines)_
