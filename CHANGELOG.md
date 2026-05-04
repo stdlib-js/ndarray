@@ -671,6 +671,7 @@
 
 ### Bug Fixes
 
+-   [`8516750`](https://github.com/stdlib-js/stdlib/commit/851675024a46ddac355e48493759d1e793a1de8a) - add missing suffix wrappers [(#11904)](https://github.com/stdlib-js/stdlib/pull/11904)
 -   [`aab9a13`](https://github.com/stdlib-js/stdlib/commit/aab9a1327da0e6143b0548a9d47c08d1947ddb58) - remove assertion
 -   [`b7f85c2`](https://github.com/stdlib-js/stdlib/commit/b7f85c29d4147a1c0194329881eb07ef695ddaee) - use correct validation package
 -   [`5795b39`](https://github.com/stdlib-js/stdlib/commit/5795b39e0f0f1d7ccae3ea1ed43809b7ff78b77d) - determine layout based on physical layout
@@ -918,6 +919,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`8516750`](https://github.com/stdlib-js/stdlib/commit/851675024a46ddac355e48493759d1e793a1de8a) - **fix:** add missing suffix wrappers [(#11904)](https://github.com/stdlib-js/stdlib/pull/11904) _(by Philipp Burckhardt)_
 -   [`86e9aee`](https://github.com/stdlib-js/stdlib/commit/86e9aee4ae52aab8c7b7a1bbf2293da606e7c439) - **docs:** restore section template comments in `ndarray/base/diagonal` and `ndarray/last` [(#11903)](https://github.com/stdlib-js/stdlib/pull/11903) _(by Philipp Burckhardt)_
 -   [`738b2c7`](https://github.com/stdlib-js/stdlib/commit/738b2c717eb26b3e374351f754d578f2035aaf20) - **docs:** update namespace table of contents [(#11916)](https://github.com/stdlib-js/stdlib/pull/11916) _(by stdlib-bot)_
 -   [`0edd0da`](https://github.com/stdlib-js/stdlib/commit/0edd0dafa26d1c286fcf60de7f42c7f6214e7d87) - **docs:** update ToC _(by Athan Reines)_
