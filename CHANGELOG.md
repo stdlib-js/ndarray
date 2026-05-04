@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`c625170`](https://github.com/stdlib-js/stdlib/commit/c6251708ba16c75c5e7d98d245dc86d7738ebfc1) - add `first`, `diagonal`, `reverseDimensions`, and `toUnflattened` to namespace
+-   [`f1cdb3d`](https://github.com/stdlib-js/stdlib/commit/f1cdb3dc2daa032c75f77b1960375452913a2d3f) - add `fillDiagonal` to namespace
 -   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913)
 -   [`36044b1`](https://github.com/stdlib-js/stdlib/commit/36044b17e4a5cfb74f46eb66e0b8767a86fa5d38) - add `ndarray/first` [(#11907)](https://github.com/stdlib-js/stdlib/pull/11907)
 -   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891)
@@ -916,6 +918,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`0edd0da`](https://github.com/stdlib-js/stdlib/commit/0edd0dafa26d1c286fcf60de7f42c7f6214e7d87) - **docs:** update ToC _(by Athan Reines)_
+-   [`c625170`](https://github.com/stdlib-js/stdlib/commit/c6251708ba16c75c5e7d98d245dc86d7738ebfc1) - **feat:** add `first`, `diagonal`, `reverseDimensions`, and `toUnflattened` to namespace _(by Athan Reines)_
+-   [`f1cdb3d`](https://github.com/stdlib-js/stdlib/commit/f1cdb3dc2daa032c75f77b1960375452913a2d3f) - **feat:** add `fillDiagonal` to namespace _(by Athan Reines)_
 -   [`4a0c20c`](https://github.com/stdlib-js/stdlib/commit/4a0c20cc6da21d88cf415c3d7e810eeeac670c43) - **docs:** update copy _(by Athan Reines)_
 -   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - **feat:** add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913) _(by Muhammad Haris, Athan Reines)_
 -   [`36044b1`](https://github.com/stdlib-js/stdlib/commit/36044b17e4a5cfb74f46eb66e0b8767a86fa5d38) - **feat:** add `ndarray/first` [(#11907)](https://github.com/stdlib-js/stdlib/pull/11907) _(by Muhammad Haris, Athan Reines)_

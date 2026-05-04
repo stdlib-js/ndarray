@@ -617,6 +617,15 @@ setReadOnly( ns, 'fill', require( './../../base/fill' ) );
 setReadOnly( ns, 'fillBy', require( './../../base/fill-by' ) );
 
 /**
+* @name fillDiagonal
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/fill-diagonal}
+*/
+setReadOnly( ns, 'fillDiagonal', require( './../../base/fill-diagonal' ) );
+
+/**
 * @name find
 * @memberof ns
 * @readonly

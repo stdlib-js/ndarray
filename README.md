@@ -102,7 +102,7 @@ The namespace exports the following functions to create multidimensional arrays:
 
 The namespace exports the following functions to manipulate multidimensional arrays:
 
-<!-- <toc pattern="+(broadcast-array|broadcast-arrays|broadcast-scalar|broadcast-scalar-like|colcat|concat|concat1d|fill|fill-by|fill-slice|flatten|flatten-by|flatten-from|flatten-from-by|flip|fliplr|flipud|hconcat|map|maybe-broadcast-array|maybe-broadcast-arrays|pop|prepend-singleton-dimensions|push|remove-singleton-dimensions|reverse|reverse-dimension|rot90|rot180|rotl90|rotr90|rowcat|shift|slice|slice-assign|slice-dimension|slice-dimension-from|slice-dimension-to|slice-from|slice-to|spread-dimensions|to-flippedlr|to-flippedud|to-reversed|to-reversed-dimension|to-rot90|to-rot180|to-rotl90|to-rotr90|unshift|vconcat|with)"> -->
+<!-- <toc pattern="+(broadcast-array|broadcast-arrays|broadcast-scalar|broadcast-scalar-like|colcat|concat|concat1d|diagonal|fill|fill-by|fill-slice|flatten|flatten-by|flatten-from|flatten-from-by|flip|fliplr|flipud|hconcat|map|maybe-broadcast-array|maybe-broadcast-arrays|pop|prepend-singleton-dimensions|push|remove-singleton-dimensions|reverse|reverse-dimension|reverse-dimensions|rot90|rot180|rotl90|rotr90|rowcat|shift|slice|slice-assign|slice-dimension|slice-dimension-from|slice-dimension-to|slice-from|slice-to|spread-dimensions|to-flippedlr|to-flippedud|to-reversed|to-reversed-dimension|to-rot90|to-rot180|to-rotl90|to-rotr90|to-unflattened|unflatten|unshift|vconcat|with)"> -->
 
 <div class="namespace-toc">
 
@@ -219,7 +219,7 @@ The namespace exports the following functions to inspect multidimensional arrays
 
 The namespace exports the following functions to index multidimensional arrays:
 
-<!-- <toc pattern="+(at|ind2sub|index|index-modes|last|sub2ind)"> -->
+<!-- <toc pattern="+(at|first|ind2sub|index|index-modes|last|sub2ind)"> -->
 
 <div class="namespace-toc">
 
