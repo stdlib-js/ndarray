@@ -35,38 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/ndarray/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -119,6 +113,7 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`colcat( arrays )`][@stdlib/ndarray/colcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of one-dimensional or two-dimensional ndarrays as columns.</span>
 -   <span class="signature">[`concat( arrays[, options] )`][@stdlib/ndarray/concat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along a specified ndarray dimension.</span>
 -   <span class="signature">[`concat1d( ...arrays )`][@stdlib/ndarray/concat1d]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by concatenating provided input arguments.</span>
+-   <span class="signature">[`diagonal( x[, options] )`][@stdlib/ndarray/diagonal]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of the diagonal of a matrix (or stack of matrices).</span>
 -   <span class="signature">[`fillBy( x, fcn[, thisArg] )`][@stdlib/ndarray/fill-by]</span><span class="delimiter">: </span><span class="description">fill an input ndarray according to a callback function.</span>
 -   <span class="signature">[`fillSlice( x, value, ...s[, options] )`][@stdlib/ndarray/fill-slice]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` view with a specified value.</span>
 -   <span class="signature">[`fill( x, value )`][@stdlib/ndarray/fill]</span><span class="delimiter">: </span><span class="description">fill an input `ndarray` with a specified value.</span>
@@ -137,6 +132,7 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`push( x, ...values )`][@stdlib/ndarray/push]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by appending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`removeSingletonDimensions( x )`][@stdlib/ndarray/remove-singleton-dimensions]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray with singleton dimensions removed.</span>
 -   <span class="signature">[`reverseDimension( x, dim )`][@stdlib/ndarray/reverse-dimension]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along a specified dimension is reversed.</span>
+-   <span class="signature">[`reverseDimensions( x, dims )`][@stdlib/ndarray/reverse-dimensions]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along specified dimensions is reversed.</span>
 -   <span class="signature">[`reverse( x )`][@stdlib/ndarray/reverse]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the order of elements along each dimension is reversed.</span>
 -   <span class="signature">[`rot180( x[, options] )`][@stdlib/ndarray/rot180]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `180` degrees in a specified plane.</span>
 -   <span class="signature">[`rot90( x[, options] )`][@stdlib/ndarray/rot90]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input ndarray rotated `90` degrees in a specified plane.</span>
@@ -160,6 +156,8 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`toRot90( x[, options] )`][@stdlib/ndarray/to-rot90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `90` degrees in a specified plane.</span>
 -   <span class="signature">[`toRotl90( x, k )`][@stdlib/ndarray/to-rotl90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees counterclockwise.</span>
 -   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
+-   <span class="signature">[`toUnflattened( x, dim, sizes )`][@stdlib/ndarray/to-unflattened]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` in which a specified dimension of an input `ndarray` is expanded over multiple dimensions.</span>
+-   <span class="signature">[`unflatten( x, dim, sizes )`][@stdlib/ndarray/unflatten]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.</span>
 -   <span class="signature">[`unshift( x, ...values )`][@stdlib/ndarray/unshift]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by prepending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`vconcat( arrays )`][@stdlib/ndarray/vconcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along the second-to-last dimension.</span>
 -   <span class="signature">[`ndarrayWith( x, indices, value )`][@stdlib/ndarray/with]</span><span class="delimiter">: </span><span class="description">return a new ndarray with the element at a specified index replaced by a provided value.</span>
@@ -230,9 +228,11 @@ The namespace exports the following functions to index multidimensional arrays:
 <div class="namespace-toc">
 
 -   <span class="signature">[`at( x[, ...indices] )`][@stdlib/ndarray/at]</span><span class="delimiter">: </span><span class="description">return an `ndarray` element.</span>
+-   <span class="signature">[`first( x[, options] )`][@stdlib/ndarray/first]</span><span class="delimiter">: </span><span class="description">return a read-only view of the first element (or subarray) along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`ind2sub( shape, idx[, options] )`][@stdlib/ndarray/ind2sub]</span><span class="delimiter">: </span><span class="description">convert a linear index to an array of subscripts.</span>
 -   <span class="signature">[`indexModes()`][@stdlib/ndarray/index-modes]</span><span class="delimiter">: </span><span class="description">list of ndarray index modes.</span>
 -   <span class="signature">[`ndindex( x[, options] )`][@stdlib/ndarray/index]</span><span class="delimiter">: </span><span class="description">ndarray index constructor.</span>
+-   <span class="signature">[`last( x[, options] )`][@stdlib/ndarray/last]</span><span class="delimiter">: </span><span class="description">return a read-only view of the last element (or subarray) along one or more `ndarray` dimensions.</span>
 -   <span class="signature">[`sub2ind( shape, ...subscripts[, options] )`][@stdlib/ndarray/sub2ind]</span><span class="delimiter">: </span><span class="description">convert subscripts to a linear index.</span>
 
 </div>
@@ -247,6 +247,7 @@ The namespace exports the following functions to convert multidimensional arrays
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`ndarraylike2scalar( x )`][@stdlib/ndarray/ndarraylike2scalar]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to a scalar value.</span>
 -   <span class="signature">[`ndarray2array( x )`][@stdlib/ndarray/to-array]</span><span class="delimiter">: </span><span class="description">convert an ndarray to a generic array.</span>
 -   <span class="signature">[`ndarray2json( x )`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 -   <span class="signature">[`ndarray2localeString( x[, locales[, options]] )`][@stdlib/ndarray/to-locale-string]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a locale-aware string.</span>
@@ -307,9 +308,7 @@ The namespace contains the following multidimensional array utility functions:
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
--   <span class="signature">[`ndarraylike2scalar( x )`][@stdlib/ndarray/ndarraylike2scalar]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to a scalar value.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
--   <span class="signature">[`unflatten( x, dim, sizes )`][@stdlib/ndarray/unflatten]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.</span>
 
 </div>
 
@@ -327,21 +326,11 @@ The namespace contains the following multidimensional array utility functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -436,11 +425,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
-[@stdlib/ndarray/ndarraylike2scalar]: https://github.com/stdlib-js/ndarray/tree/main/ndarraylike2scalar
-
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
-
-[@stdlib/ndarray/unflatten]: https://github.com/stdlib-js/ndarray/tree/main/unflatten
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
@@ -470,6 +455,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/same-kind-casts]: https://github.com/stdlib-js/ndarray/tree/main/same-kind-casts
 
+[@stdlib/ndarray/ndarraylike2scalar]: https://github.com/stdlib-js/ndarray/tree/main/ndarraylike2scalar
+
 [@stdlib/ndarray/to-array]: https://github.com/stdlib-js/ndarray/tree/main/to-array
 
 [@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray/tree/main/to-json
@@ -480,11 +467,15 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/at]: https://github.com/stdlib-js/ndarray/tree/main/at
 
+[@stdlib/ndarray/first]: https://github.com/stdlib-js/ndarray/tree/main/first
+
 [@stdlib/ndarray/ind2sub]: https://github.com/stdlib-js/ndarray/tree/main/ind2sub
 
 [@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray/tree/main/index-modes
 
 [@stdlib/ndarray/index]: https://github.com/stdlib-js/ndarray/tree/main/index
+
+[@stdlib/ndarray/last]: https://github.com/stdlib-js/ndarray/tree/main/last
 
 [@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray/tree/main/sub2ind
 
@@ -556,6 +547,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/concat1d]: https://github.com/stdlib-js/ndarray/tree/main/concat1d
 
+[@stdlib/ndarray/diagonal]: https://github.com/stdlib-js/ndarray/tree/main/diagonal
+
 [@stdlib/ndarray/fill-by]: https://github.com/stdlib-js/ndarray/tree/main/fill-by
 
 [@stdlib/ndarray/fill-slice]: https://github.com/stdlib-js/ndarray/tree/main/fill-slice
@@ -591,6 +584,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/remove-singleton-dimensions]: https://github.com/stdlib-js/ndarray/tree/main/remove-singleton-dimensions
 
 [@stdlib/ndarray/reverse-dimension]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimension
+
+[@stdlib/ndarray/reverse-dimensions]: https://github.com/stdlib-js/ndarray/tree/main/reverse-dimensions
 
 [@stdlib/ndarray/reverse]: https://github.com/stdlib-js/ndarray/tree/main/reverse
 
@@ -637,6 +632,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/to-rotl90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotl90
 
 [@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
+
+[@stdlib/ndarray/to-unflattened]: https://github.com/stdlib-js/ndarray/tree/main/to-unflattened
+
+[@stdlib/ndarray/unflatten]: https://github.com/stdlib-js/ndarray/tree/main/unflatten
 
 [@stdlib/ndarray/unshift]: https://github.com/stdlib-js/ndarray/tree/main/unshift
 
