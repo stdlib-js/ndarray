@@ -918,6 +918,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`86e9aee`](https://github.com/stdlib-js/stdlib/commit/86e9aee4ae52aab8c7b7a1bbf2293da606e7c439) - **docs:** restore section template comments in `ndarray/base/diagonal` and `ndarray/last` [(#11903)](https://github.com/stdlib-js/stdlib/pull/11903) _(by Philipp Burckhardt)_
 -   [`738b2c7`](https://github.com/stdlib-js/stdlib/commit/738b2c717eb26b3e374351f754d578f2035aaf20) - **docs:** update namespace table of contents [(#11916)](https://github.com/stdlib-js/stdlib/pull/11916) _(by stdlib-bot)_
 -   [`0edd0da`](https://github.com/stdlib-js/stdlib/commit/0edd0dafa26d1c286fcf60de7f42c7f6214e7d87) - **docs:** update ToC _(by Athan Reines)_
 -   [`c625170`](https://github.com/stdlib-js/stdlib/commit/c6251708ba16c75c5e7d98d245dc86d7738ebfc1) - **feat:** add `first`, `diagonal`, `reverseDimensions`, and `toUnflattened` to namespace _(by Athan Reines)_
