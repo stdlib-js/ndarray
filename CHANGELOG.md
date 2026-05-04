@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-03)
+## Unreleased (2026-05-04)
 
 <section class="features">
 
 ### Features
 
+-   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913)
 -   [`36044b1`](https://github.com/stdlib-js/stdlib/commit/36044b17e4a5cfb74f46eb66e0b8767a86fa5d38) - add `ndarray/first` [(#11907)](https://github.com/stdlib-js/stdlib/pull/11907)
 -   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891)
 -   [`02b39b4`](https://github.com/stdlib-js/stdlib/commit/02b39b48e4de069af553e2e599292d3b815056fc) - add `ndarray/diagonal` [(#11900)](https://github.com/stdlib-js/stdlib/pull/11900)
@@ -915,6 +916,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - **feat:** add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913) _(by Muhammad Haris, Athan Reines)_
 -   [`36044b1`](https://github.com/stdlib-js/stdlib/commit/36044b17e4a5cfb74f46eb66e0b8767a86fa5d38) - **feat:** add `ndarray/first` [(#11907)](https://github.com/stdlib-js/stdlib/pull/11907) _(by Muhammad Haris, Athan Reines)_
 -   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - **feat:** add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891) _(by Muhammad Haris)_
 -   [`02b39b4`](https://github.com/stdlib-js/stdlib/commit/02b39b48e4de069af553e2e599292d3b815056fc) - **feat:** add `ndarray/diagonal` [(#11900)](https://github.com/stdlib-js/stdlib/pull/11900) _(by Muhammad Haris, Athan Reines)_
