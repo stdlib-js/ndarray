@@ -916,6 +916,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4a0c20c`](https://github.com/stdlib-js/stdlib/commit/4a0c20cc6da21d88cf415c3d7e810eeeac670c43) - **docs:** update copy _(by Athan Reines)_
 -   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - **feat:** add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913) _(by Muhammad Haris, Athan Reines)_
 -   [`36044b1`](https://github.com/stdlib-js/stdlib/commit/36044b17e4a5cfb74f46eb66e0b8767a86fa5d38) - **feat:** add `ndarray/first` [(#11907)](https://github.com/stdlib-js/stdlib/pull/11907) _(by Muhammad Haris, Athan Reines)_
 -   [`5192af7`](https://github.com/stdlib-js/stdlib/commit/5192af79ff02342bed92b48a084f18b9316099e8) - **feat:** add `ndarray/to-unflattened` [(#11891)](https://github.com/stdlib-js/stdlib/pull/11891) _(by Muhammad Haris)_
