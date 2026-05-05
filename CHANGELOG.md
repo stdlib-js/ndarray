@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-04)
+## Unreleased (2026-05-05)
 
 <section class="features">
 
 ### Features
 
+-   [`03405cc`](https://github.com/stdlib-js/stdlib/commit/03405cc777f8b9ac92e9e3629bc58161b7f388ac) - add `ndarray/base/to-reversed-dimensions` [(#11955)](https://github.com/stdlib-js/stdlib/pull/11955)
 -   [`c625170`](https://github.com/stdlib-js/stdlib/commit/c6251708ba16c75c5e7d98d245dc86d7738ebfc1) - add `first`, `diagonal`, `reverseDimensions`, and `toUnflattened` to namespace
 -   [`f1cdb3d`](https://github.com/stdlib-js/stdlib/commit/f1cdb3dc2daa032c75f77b1960375452913a2d3f) - add `fillDiagonal` to namespace
 -   [`0710070`](https://github.com/stdlib-js/stdlib/commit/07100701aa7412f1d9eba15ae62511f5a74616ea) - add `ndarray/base/fill-diagonal` [(#11913)](https://github.com/stdlib-js/stdlib/pull/11913)
@@ -919,6 +920,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`03405cc`](https://github.com/stdlib-js/stdlib/commit/03405cc777f8b9ac92e9e3629bc58161b7f388ac) - **feat:** add `ndarray/base/to-reversed-dimensions` [(#11955)](https://github.com/stdlib-js/stdlib/pull/11955) _(by Muhammad Haris, Athan Reines)_
 -   [`8516750`](https://github.com/stdlib-js/stdlib/commit/851675024a46ddac355e48493759d1e793a1de8a) - **fix:** add missing suffix wrappers [(#11904)](https://github.com/stdlib-js/stdlib/pull/11904) _(by Philipp Burckhardt)_
 -   [`86e9aee`](https://github.com/stdlib-js/stdlib/commit/86e9aee4ae52aab8c7b7a1bbf2293da606e7c439) - **docs:** restore section template comments in `ndarray/base/diagonal` and `ndarray/last` [(#11903)](https://github.com/stdlib-js/stdlib/pull/11903) _(by Philipp Burckhardt)_
 -   [`738b2c7`](https://github.com/stdlib-js/stdlib/commit/738b2c717eb26b3e374351f754d578f2035aaf20) - **docs:** update namespace table of contents [(#11916)](https://github.com/stdlib-js/stdlib/pull/11916) _(by stdlib-bot)_
