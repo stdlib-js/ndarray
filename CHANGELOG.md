@@ -923,6 +923,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`ca19780`](https://github.com/stdlib-js/stdlib/commit/ca197805be0fc683e455e6beec112efa69297496) - **test:** add tests _(by Athan Reines)_
 -   [`55d22b7`](https://github.com/stdlib-js/stdlib/commit/55d22b7372bc9308ceeee70d202599d8a6897eef) - **docs:** fix description _(by Athan Reines)_
 -   [`fbcdce5`](https://github.com/stdlib-js/stdlib/commit/fbcdce5ba59c49bfc26be799ef03371e8294813a) - **feat:** add `consensusOrder` to namespace _(by Athan Reines)_
 -   [`b3ec3d3`](https://github.com/stdlib-js/stdlib/commit/b3ec3d3993be5ae78e6da79502d2cabc9eadb2ad) - **feat:** add `ndarray/base/consensus-order` _(by Athan Reines)_

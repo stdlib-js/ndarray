@@ -86,6 +86,22 @@ tape( 'the function returns a storage layout (mixed order)', function test( t ) 
 	t.end();
 });
 
+tape( 'the function returns a storage layout (both orders)', function test( t ) {
+	var sx;
+	var sy;
+	var sz;
+	var o;
+
+	sx = [ 1, 1 ]; // row-major
+	sy = [ 2, 2 ]; // column-major
+	sz = [ 0, 0 ]; // row-major
+
+	o = consensusOrder( [ sx, sy, sz ] );
+	t.strictEqual( o, DEFAULT_ORDER, 'returns expected value' );
+
+	t.end();
+});
+
 tape( 'the function returns a storage layout (mostly disorganized)', function test( t ) {
 	var sx;
 	var sy;
