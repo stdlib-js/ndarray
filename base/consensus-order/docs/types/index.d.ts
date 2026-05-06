@@ -24,7 +24,7 @@ import { ArrayLike, Collection } from '@stdlib/types/array';
 import { Order } from '@stdlib/types/ndarray';
 
 /**
-* Reorders ndarray dimensions and associated strides for loop interchange.
+* Resolves the most common underlying storage layout.
 *
 * ## Notes
 *
