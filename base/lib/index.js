@@ -338,6 +338,15 @@ setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 setReadOnly( ns, 'complementShape', require( './../../base/complement-shape' ) );
 
 /**
+* @name consensusOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/consensus-order}
+*/
+setReadOnly( ns, 'consensusOrder', require( './../../base/consensus-order' ) );
+
+/**
 * @name copy
 * @memberof ns
 * @readonly
@@ -1578,6 +1587,15 @@ setReadOnly( ns, 'toReversed', require( './../../base/to-reversed' ) );
 * @see {@link module:@stdlib/ndarray/base/to-reversed-dimension}
 */
 setReadOnly( ns, 'toReversedDimension', require( './../../base/to-reversed-dimension' ) );
+
+/**
+* @name toReversedDimensions
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/to-reversed-dimensions}
+*/
+setReadOnly( ns, 'toReversedDimensions', require( './../../base/to-reversed-dimensions' ) );
 
 /**
 * @name toRot90
