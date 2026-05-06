@@ -923,6 +923,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`31c91e5`](https://github.com/stdlib-js/stdlib/commit/31c91e5a0dc350a5c871d05e609340133413f36d) - **refactor:** simplify branching to optimize most common path _(by Athan Reines)_
 -   [`ca19780`](https://github.com/stdlib-js/stdlib/commit/ca197805be0fc683e455e6beec112efa69297496) - **test:** add tests _(by Athan Reines)_
 -   [`55d22b7`](https://github.com/stdlib-js/stdlib/commit/55d22b7372bc9308ceeee70d202599d8a6897eef) - **docs:** fix description _(by Athan Reines)_
 -   [`fbcdce5`](https://github.com/stdlib-js/stdlib/commit/fbcdce5ba59c49bfc26be799ef03371e8294813a) - **feat:** add `consensusOrder` to namespace _(by Athan Reines)_

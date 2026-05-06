@@ -56,14 +56,14 @@ var DEFAULT_ORDER = defaults.get( 'order' );
 * // returns <string>
 */
 function resolveString( layout ) {
-	if ( layout === 0 || layout === 3 ) {
-		return DEFAULT_ORDER;
-	}
 	if ( layout === 1 ) {
 		return 'row-major';
 	}
-	// layout === 2
-	return 'column-major';
+	if ( layout === 2 ) {
+		return 'column-major';
+	}
+	// layout === 0 || layout === 3
+	return DEFAULT_ORDER;
 }
 
 
