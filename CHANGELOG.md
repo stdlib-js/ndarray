@@ -925,6 +925,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`2993e90`](https://github.com/stdlib-js/stdlib/commit/2993e90541c0e9dca7201e822668c8ca026771f1) - **chore:** follow-up fixes [(#11966)](https://github.com/stdlib-js/stdlib/pull/11966) _(by Philipp Burckhardt)_
 -   [`405a8c7`](https://github.com/stdlib-js/stdlib/commit/405a8c7059dbe1c313281f0a8db5440f0e08c461) - **refactor:** replace internal utility _(by Athan Reines)_
 -   [`aa4c0d6`](https://github.com/stdlib-js/stdlib/commit/aa4c0d6c8b092c7958e9b58714eb45cbf2da9c1c) - **refactor:** replace internal utility _(by Athan Reines)_
 -   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - **feat:** add `outputOrder` to namespace _(by Athan Reines)_
