@@ -24,12 +24,12 @@ var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var broadcastScalar = require( './../../base/broadcast-scalar' );
 var broadcastArray = require( './../../base/broadcast-array' );
+var resolveOrder = require( './../../base/output-order' );
 var ndims = require( './../../base/ndims' );
 var defaults = require( './../../defaults' );
 var concat = require( './../../concat' );
 var format = require( '@stdlib/string/format' );
 var resolveDataTypes = require( './resolve_dtypes.js' );
-var resolveOrder = require( './resolve_order.js' );
 
 
 // VARIABLES //

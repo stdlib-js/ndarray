@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - add `outputOrder` to namespace
+-   [`52bc84e`](https://github.com/stdlib-js/stdlib/commit/52bc84e510174894e39456fc301d1f9045ae444b) - add `ndarray/base/output-order`
 -   [`fbcdce5`](https://github.com/stdlib-js/stdlib/commit/fbcdce5ba59c49bfc26be799ef03371e8294813a) - add `consensusOrder` to namespace
 -   [`b3ec3d3`](https://github.com/stdlib-js/stdlib/commit/b3ec3d3993be5ae78e6da79502d2cabc9eadb2ad) - add `ndarray/base/consensus-order`
 -   [`8ac6900`](https://github.com/stdlib-js/stdlib/commit/8ac69007fbf762b73830254f94edf16ce16799c7) - add `toReversedDimensions` to namespace
@@ -923,6 +925,10 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`405a8c7`](https://github.com/stdlib-js/stdlib/commit/405a8c7059dbe1c313281f0a8db5440f0e08c461) - **refactor:** replace internal utility _(by Athan Reines)_
+-   [`aa4c0d6`](https://github.com/stdlib-js/stdlib/commit/aa4c0d6c8b092c7958e9b58714eb45cbf2da9c1c) - **refactor:** replace internal utility _(by Athan Reines)_
+-   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - **feat:** add `outputOrder` to namespace _(by Athan Reines)_
+-   [`52bc84e`](https://github.com/stdlib-js/stdlib/commit/52bc84e510174894e39456fc301d1f9045ae444b) - **feat:** add `ndarray/base/output-order` _(by Athan Reines)_
 -   [`31c91e5`](https://github.com/stdlib-js/stdlib/commit/31c91e5a0dc350a5c871d05e609340133413f36d) - **refactor:** simplify branching to optimize most common path _(by Athan Reines)_
 -   [`ca19780`](https://github.com/stdlib-js/stdlib/commit/ca197805be0fc683e455e6beec112efa69297496) - **test:** add tests _(by Athan Reines)_
 -   [`55d22b7`](https://github.com/stdlib-js/stdlib/commit/55d22b7372bc9308ceeee70d202599d8a6897eef) - **docs:** fix description _(by Athan Reines)_

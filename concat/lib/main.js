@@ -23,6 +23,7 @@
 var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
 var promoteDataTypes = require( './../../base/promote-dtypes' );
 var normalizeIndex = require( './../../base/normalize-index' );
+var resolveOrder = require( './../../base/output-order' );
 var ndims = require( './../../base/ndims' );
 var empty = require( './../../empty' );
 var join = require( '@stdlib/array/base/join' );
@@ -31,7 +32,6 @@ var normalizeArrays = require( './normalize_arrays.js' );
 var broadcastArrays = require( './broadcast_arrays.js' );
 var resolveDataTypes = require( './resolve_dtypes.js' );
 var resolveShape = require( './resolve_shape.js' );
-var resolveOrder = require( './resolve_order.js' );
 var validate = require( './validate.js' );
 var base = require( './base.js' );
 

@@ -1094,6 +1094,15 @@ setReadOnly( ns, 'order', require( './../../base/order' ) );
 setReadOnly( ns, 'outputDataType', require( './../../base/output-dtype' ) );
 
 /**
+* @name outputOrder
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/output-order}
+*/
+setReadOnly( ns, 'outputOrder', require( './../../base/output-order' ) );
+
+/**
 * @name outputPolicyEnum2Str
 * @memberof ns
 * @readonly
