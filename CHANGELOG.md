@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`851962b`](https://github.com/stdlib-js/stdlib/commit/851962b6ea17e9ac3d0ab09617432121e007a0ed) - add `toReversedDimensions` to namespace
 -   [`b6e7646`](https://github.com/stdlib-js/stdlib/commit/b6e764678401a9a7eb387c0b84f2929299108bab) - add `ndarray/to-reversed-dimensions` [(#11981)](https://github.com/stdlib-js/stdlib/pull/11981)
 -   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - add `outputOrder` to namespace
 -   [`52bc84e`](https://github.com/stdlib-js/stdlib/commit/52bc84e510174894e39456fc301d1f9045ae444b) - add `ndarray/base/output-order`
@@ -926,6 +927,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`4985313`](https://github.com/stdlib-js/stdlib/commit/4985313d48f7446d5222a1f405b68546cb7c2058) - **docs:** update ToC _(by Athan Reines)_
+-   [`851962b`](https://github.com/stdlib-js/stdlib/commit/851962b6ea17e9ac3d0ab09617432121e007a0ed) - **feat:** add `toReversedDimensions` to namespace _(by Athan Reines)_
 -   [`b6e7646`](https://github.com/stdlib-js/stdlib/commit/b6e764678401a9a7eb387c0b84f2929299108bab) - **feat:** add `ndarray/to-reversed-dimensions` [(#11981)](https://github.com/stdlib-js/stdlib/pull/11981) _(by Muhammad Haris, Athan Reines)_
 -   [`2993e90`](https://github.com/stdlib-js/stdlib/commit/2993e90541c0e9dca7201e822668c8ca026771f1) - **chore:** follow-up fixes [(#11966)](https://github.com/stdlib-js/stdlib/pull/11966) _(by Philipp Burckhardt)_
 -   [`405a8c7`](https://github.com/stdlib-js/stdlib/commit/405a8c7059dbe1c313281f0a8db5440f0e08c461) - **refactor:** replace internal utility _(by Athan Reines)_
