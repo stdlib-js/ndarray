@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-06)
+## Unreleased (2026-05-07)
 
 <section class="features">
 
 ### Features
 
+-   [`b6e7646`](https://github.com/stdlib-js/stdlib/commit/b6e764678401a9a7eb387c0b84f2929299108bab) - add `ndarray/to-reversed-dimensions` [(#11981)](https://github.com/stdlib-js/stdlib/pull/11981)
 -   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - add `outputOrder` to namespace
 -   [`52bc84e`](https://github.com/stdlib-js/stdlib/commit/52bc84e510174894e39456fc301d1f9045ae444b) - add `ndarray/base/output-order`
 -   [`fbcdce5`](https://github.com/stdlib-js/stdlib/commit/fbcdce5ba59c49bfc26be799ef03371e8294813a) - add `consensusOrder` to namespace
@@ -925,6 +926,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`b6e7646`](https://github.com/stdlib-js/stdlib/commit/b6e764678401a9a7eb387c0b84f2929299108bab) - **feat:** add `ndarray/to-reversed-dimensions` [(#11981)](https://github.com/stdlib-js/stdlib/pull/11981) _(by Muhammad Haris, Athan Reines)_
 -   [`2993e90`](https://github.com/stdlib-js/stdlib/commit/2993e90541c0e9dca7201e822668c8ca026771f1) - **chore:** follow-up fixes [(#11966)](https://github.com/stdlib-js/stdlib/pull/11966) _(by Philipp Burckhardt)_
 -   [`405a8c7`](https://github.com/stdlib-js/stdlib/commit/405a8c7059dbe1c313281f0a8db5440f0e08c461) - **refactor:** replace internal utility _(by Athan Reines)_
 -   [`aa4c0d6`](https://github.com/stdlib-js/stdlib/commit/aa4c0d6c8b092c7958e9b58714eb45cbf2da9c1c) - **refactor:** replace internal utility _(by Athan Reines)_
