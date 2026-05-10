@@ -929,6 +929,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`b8d09ca`](https://github.com/stdlib-js/stdlib/commit/b8d09cac262a732b639c44606e0d85f974965085) - **chore:** follow-up corrections for commits merged to develop on 2026-05-10 [(#12052)](https://github.com/stdlib-js/stdlib/pull/12052) _(by Philipp Burckhardt)_
 -   [`42c6213`](https://github.com/stdlib-js/stdlib/commit/42c6213a4a37afe7b71ed391eb67f63b3fe3f96d) - **docs:** fix `real`/`imag` import in `ndarray/base/unary-by` [(#12060)](https://github.com/stdlib-js/stdlib/pull/12060) _(by Karan Anand)_
 -   [`e64ea31`](https://github.com/stdlib-js/stdlib/commit/e64ea3136aa617d66672f768f280a2023db457fc) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/broadcast-scalar` [(#12048)](https://github.com/stdlib-js/stdlib/pull/12048) _(by Karan Anand, Athan Reines)_
 -   [`20df517`](https://github.com/stdlib-js/stdlib/commit/20df51759bde322eb55d2f4eef4b17e99a9eb19c) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/unary-accumulate` [(#12046)](https://github.com/stdlib-js/stdlib/pull/12046) _(by Karan Anand)_
