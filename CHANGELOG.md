@@ -929,6 +929,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`1674c38`](https://github.com/stdlib-js/stdlib/commit/1674c3865eca607df401b7ccebea4873fba422c0) - **docs:** improve doctests for complex number typed arrays in `ndarray/filter-map` [(#12042)](https://github.com/stdlib-js/stdlib/pull/12042) _(by Karan Anand)_
 -   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - **feat:** add `descriptor` to namespace _(by Athan Reines)_
 -   [`b5d65f3`](https://github.com/stdlib-js/stdlib/commit/b5d65f3863b2d9bcee6f6dbfc53fff58a10380d4) - **feat:** add `ndarray/base/descriptor` _(by Athan Reines)_
 -   [`11fb87d`](https://github.com/stdlib-js/stdlib/commit/11fb87dac7ae762d325640afbb400d6aa5fc3736) - **docs:** update namespace table of contents [(#11986)](https://github.com/stdlib-js/stdlib/pull/11986) _(by stdlib-bot)_
