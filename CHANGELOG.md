@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-07)
+## Unreleased (2026-05-10)
 
 <section class="features">
 
 ### Features
 
+-   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - add `descriptor` to namespace
+-   [`b5d65f3`](https://github.com/stdlib-js/stdlib/commit/b5d65f3863b2d9bcee6f6dbfc53fff58a10380d4) - add `ndarray/base/descriptor`
 -   [`851962b`](https://github.com/stdlib-js/stdlib/commit/851962b6ea17e9ac3d0ab09617432121e007a0ed) - add `toReversedDimensions` to namespace
 -   [`b6e7646`](https://github.com/stdlib-js/stdlib/commit/b6e764678401a9a7eb387c0b84f2929299108bab) - add `ndarray/to-reversed-dimensions` [(#11981)](https://github.com/stdlib-js/stdlib/pull/11981)
 -   [`e0a3342`](https://github.com/stdlib-js/stdlib/commit/e0a33421dde2803276ad95491519f8839415d93c) - add `outputOrder` to namespace
@@ -927,6 +929,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - **feat:** add `descriptor` to namespace _(by Athan Reines)_
+-   [`b5d65f3`](https://github.com/stdlib-js/stdlib/commit/b5d65f3863b2d9bcee6f6dbfc53fff58a10380d4) - **feat:** add `ndarray/base/descriptor` _(by Athan Reines)_
 -   [`11fb87d`](https://github.com/stdlib-js/stdlib/commit/11fb87dac7ae762d325640afbb400d6aa5fc3736) - **docs:** update namespace table of contents [(#11986)](https://github.com/stdlib-js/stdlib/pull/11986) _(by stdlib-bot)_
 -   [`4985313`](https://github.com/stdlib-js/stdlib/commit/4985313d48f7446d5222a1f405b68546cb7c2058) - **docs:** update ToC _(by Athan Reines)_
 -   [`851962b`](https://github.com/stdlib-js/stdlib/commit/851962b6ea17e9ac3d0ab09617432121e007a0ed) - **feat:** add `toReversedDimensions` to namespace _(by Athan Reines)_

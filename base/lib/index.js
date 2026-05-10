@@ -401,6 +401,15 @@ setReadOnly( ns, 'ndarray', require( './../../base/ctor' ) );
 setReadOnly( ns, 'data', require( './../../base/data-buffer' ) );
 
 /**
+* @name descriptor
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/descriptor}
+*/
+setReadOnly( ns, 'descriptor', require( './../../base/descriptor' ) );
+
+/**
 * @name diagonal
 * @memberof ns
 * @readonly
