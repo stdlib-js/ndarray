@@ -20,6 +20,7 @@
 
 // MODULES //
 
+var format = require( '@stdlib/string/format' );
 var iterationOrder = require( './../../../base/iteration-order' );
 var strides2order = require( './../../../base/strides2order' );
 var minmaxViewBufferIndex = require( './../../../base/minmax-view-buffer-index' );
@@ -224,7 +225,7 @@ function unaryBy( arrays, fcn, clbk, thisArg ) {
 	shy = y.shape;
 	ndims = shx.length;
 	if ( ndims !== shy.length ) {
-		throw new Error( 'invalid arguments. Arrays must have the same number of dimensions (i.e., same rank). ndims(x) == '+ndims+'. ndims(y) == '+shy.length+'.' );
+		throw new Error( format( 'invalid arguments. Arrays must have the same number of dimensions (i.e., same rank). ndims(x) == %d. ndims(y) == %d.', ndims, shy.length ) );
 	}
 	// Determine whether we can avoid iteration altogether...
 	if ( ndims === 0 ) {
