@@ -929,6 +929,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c5215cc`](https://github.com/stdlib-js/stdlib/commit/c5215cca9085bae13510df122d8637595eb6645d) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/from-scalar` [(#12049)](https://github.com/stdlib-js/stdlib/pull/12049) _(by Karan Anand, Athan Reines)_
 -   [`1e326dd`](https://github.com/stdlib-js/stdlib/commit/1e326dd99001c7919f24ad6f477597d14da00b23) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/nullary` [(#12045)](https://github.com/stdlib-js/stdlib/pull/12045) _(by Karan Anand)_
 -   [`c61a3e6`](https://github.com/stdlib-js/stdlib/commit/c61a3e6bbdddc67fc7b384e9bf283a34b75fd38f) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/unary-by` [(#12047)](https://github.com/stdlib-js/stdlib/pull/12047) _(by Karan Anand)_
 -   [`d4e7085`](https://github.com/stdlib-js/stdlib/commit/d4e708558f65e141de712cec2484c27838df2cd8) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/unary` [(#12044)](https://github.com/stdlib-js/stdlib/pull/12044) _(by Karan Anand)_
