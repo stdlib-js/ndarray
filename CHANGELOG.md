@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-10)
+## Unreleased (2026-05-11)
 
 <section class="features">
 
 ### Features
 
+-   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030)
 -   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - add `descriptor` to namespace
 -   [`b5d65f3`](https://github.com/stdlib-js/stdlib/commit/b5d65f3863b2d9bcee6f6dbfc53fff58a10380d4) - add `ndarray/base/descriptor`
 -   [`851962b`](https://github.com/stdlib-js/stdlib/commit/851962b6ea17e9ac3d0ab09617432121e007a0ed) - add `toReversedDimensions` to namespace
@@ -929,6 +930,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - **feat:** add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030) _(by Muhammad Haris, Athan Reines)_
 -   [`b8d09ca`](https://github.com/stdlib-js/stdlib/commit/b8d09cac262a732b639c44606e0d85f974965085) - **chore:** follow-up corrections for commits merged to develop on 2026-05-10 [(#12052)](https://github.com/stdlib-js/stdlib/pull/12052) _(by Philipp Burckhardt)_
 -   [`42c6213`](https://github.com/stdlib-js/stdlib/commit/42c6213a4a37afe7b71ed391eb67f63b3fe3f96d) - **docs:** fix `real`/`imag` import in `ndarray/base/unary-by` [(#12060)](https://github.com/stdlib-js/stdlib/pull/12060) _(by Karan Anand)_
 -   [`e64ea31`](https://github.com/stdlib-js/stdlib/commit/e64ea3136aa617d66672f768f280a2023db457fc) - **docs:** improve doctests for complex number typed arrays in `ndarray/base/broadcast-scalar` [(#12048)](https://github.com/stdlib-js/stdlib/pull/12048) _(by Karan Anand, Athan Reines)_
