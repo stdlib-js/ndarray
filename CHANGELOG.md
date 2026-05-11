@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`c541417`](https://github.com/stdlib-js/stdlib/commit/c5414171e07489c15e73b63e8ae437a24118a1f0) - add `ndarray/to-transposed` [(#12031)](https://github.com/stdlib-js/stdlib/pull/12031)
 -   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030)
 -   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - add `descriptor` to namespace
 -   [`b5d65f3`](https://github.com/stdlib-js/stdlib/commit/b5d65f3863b2d9bcee6f6dbfc53fff58a10380d4) - add `ndarray/base/descriptor`
@@ -930,6 +931,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c541417`](https://github.com/stdlib-js/stdlib/commit/c5414171e07489c15e73b63e8ae437a24118a1f0) - **feat:** add `ndarray/to-transposed` [(#12031)](https://github.com/stdlib-js/stdlib/pull/12031) _(by Muhammad Haris, Athan Reines)_
 -   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - **feat:** add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030) _(by Muhammad Haris, Athan Reines)_
 -   [`b8d09ca`](https://github.com/stdlib-js/stdlib/commit/b8d09cac262a732b639c44606e0d85f974965085) - **chore:** follow-up corrections for commits merged to develop on 2026-05-10 [(#12052)](https://github.com/stdlib-js/stdlib/pull/12052) _(by Philipp Burckhardt)_
 -   [`42c6213`](https://github.com/stdlib-js/stdlib/commit/42c6213a4a37afe7b71ed391eb67f63b3fe3f96d) - **docs:** fix `real`/`imag` import in `ndarray/base/unary-by` [(#12060)](https://github.com/stdlib-js/stdlib/pull/12060) _(by Karan Anand)_
