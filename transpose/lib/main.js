@@ -38,7 +38,7 @@ var format = require( '@stdlib/string/format' );
 *
 * @param {ndarray} x - input array
 * @throws {TypeError} must provide an ndarray
-* @throws {RangeError} input ndarray must have at least two dimensions
+* @throws {RangeError} must provide an ndarray having two or more dimensions
 * @returns {ndarray} ndarray view
 *
 * @example
@@ -55,7 +55,7 @@ function transpose( x ) {
 		throw new TypeError( format( 'invalid argument. Must provide an ndarray. Value: `%s`.', x ) );
 	}
 	if ( ndims( x ) < 2 ) {
-		throw new RangeError( format( 'invalid argument. Input ndarray must have at least two dimensions. Number of dimensions: `%u`.', ndims( x ) ) );
+		throw new RangeError( format( 'invalid argument. Must provide an ndarray having two or more dimensions. Number of dimensions: `%u`.', ndims( x ) ) );
 	}
 	return base( x, false );
 }

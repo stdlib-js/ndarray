@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e38bbc8`](https://github.com/stdlib-js/stdlib/commit/e38bbc844b58b38ccb22be0ee62b0a42aa90fd75) - add `transpose` and `toTransposed` to namespace
 -   [`c541417`](https://github.com/stdlib-js/stdlib/commit/c5414171e07489c15e73b63e8ae437a24118a1f0) - add `ndarray/to-transposed` [(#12031)](https://github.com/stdlib-js/stdlib/pull/12031)
 -   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030)
 -   [`0e2b5a5`](https://github.com/stdlib-js/stdlib/commit/0e2b5a5e9dec8520a7e6676876aae915c4b2ab2c) - add `descriptor` to namespace
@@ -931,6 +932,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`25ae5aa`](https://github.com/stdlib-js/stdlib/commit/25ae5aa59b431b6b562e4fe36b69b3186111af12) - **refactor:** update error message _(by Athan Reines)_
+-   [`ca918f8`](https://github.com/stdlib-js/stdlib/commit/ca918f82273615d9785f80d703bcf24391bb516b) - **docs:** update ToC _(by Athan Reines)_
+-   [`e38bbc8`](https://github.com/stdlib-js/stdlib/commit/e38bbc844b58b38ccb22be0ee62b0a42aa90fd75) - **feat:** add `transpose` and `toTransposed` to namespace _(by Athan Reines)_
 -   [`c541417`](https://github.com/stdlib-js/stdlib/commit/c5414171e07489c15e73b63e8ae437a24118a1f0) - **feat:** add `ndarray/to-transposed` [(#12031)](https://github.com/stdlib-js/stdlib/pull/12031) _(by Muhammad Haris, Athan Reines)_
 -   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - **feat:** add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030) _(by Muhammad Haris, Athan Reines)_
 -   [`b8d09ca`](https://github.com/stdlib-js/stdlib/commit/b8d09cac262a732b639c44606e0d85f974965085) - **chore:** follow-up corrections for commits merged to develop on 2026-05-10 [(#12052)](https://github.com/stdlib-js/stdlib/pull/12052) _(by Philipp Burckhardt)_
