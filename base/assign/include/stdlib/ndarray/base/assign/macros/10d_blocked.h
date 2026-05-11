@@ -130,7 +130,7 @@
 	int64_t j8;                                                                \
 	int64_t j9;                                                                \
 	/* Copy strides to prevent mutation to the original ndarray: */            \
-	memcpy( sx1, stdlib_ndarray_strides( x1 ), sizeof sx1 );                   \
+	memcpy( sx1, stdlib_ndarray_strides( x1 ), ( (size_t)stdlib_ndarray_ndims( x1 ) < 10 ) ? (size_t)stdlib_ndarray_ndims( x1 ) * sizeof(int64_t) : sizeof sx1 ); \
 	/* Create a loop interchange index array for loop order permutation: */    \
 	stdlib_ndarray_base_assign_internal_range( 10, idx );                      \
 	/* Sort the input array strides in increasing order (of magnitude): */     \
@@ -419,7 +419,7 @@
 	int64_t j8;                                                                \
 	int64_t j9;                                                                \
 	/* Copy strides to prevent mutation to the original ndarray: */            \
-	memcpy( sx1, stdlib_ndarray_strides( x1 ), sizeof sx1 );                   \
+	memcpy( sx1, stdlib_ndarray_strides( x1 ), ( (size_t)stdlib_ndarray_ndims( x1 ) < 10 ) ? (size_t)stdlib_ndarray_ndims( x1 ) * sizeof(int64_t) : sizeof sx1 ); \
 	/* Create a loop interchange index array for loop order permutation: */    \
 	stdlib_ndarray_base_assign_internal_range( 10, idx );                      \
 	/* Sort the input array strides in increasing order (of magnitude): */     \
