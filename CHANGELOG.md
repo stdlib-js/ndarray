@@ -932,6 +932,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`c534f97`](https://github.com/stdlib-js/stdlib/commit/c534f971488b2a5ebacca4dccf73a9d9b4e09bc7) - **docs:** update namespace table of contents [(#12092)](https://github.com/stdlib-js/stdlib/pull/12092) _(by stdlib-bot)_
 -   [`25ae5aa`](https://github.com/stdlib-js/stdlib/commit/25ae5aa59b431b6b562e4fe36b69b3186111af12) - **refactor:** update error message _(by Athan Reines)_
 -   [`ca918f8`](https://github.com/stdlib-js/stdlib/commit/ca918f82273615d9785f80d703bcf24391bb516b) - **docs:** update ToC _(by Athan Reines)_
 -   [`e38bbc8`](https://github.com/stdlib-js/stdlib/commit/e38bbc844b58b38ccb22be0ee62b0a42aa90fd75) - **feat:** add `transpose` and `toTransposed` to namespace _(by Athan Reines)_

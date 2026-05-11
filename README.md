@@ -157,7 +157,9 @@ The namespace exports the following functions to manipulate multidimensional arr
 -   <span class="signature">[`toRot90( x[, options] )`][@stdlib/ndarray/to-rot90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where an input `ndarray` is rotated `90` degrees in a specified plane.</span>
 -   <span class="signature">[`toRotl90( x, k )`][@stdlib/ndarray/to-rotl90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees counterclockwise.</span>
 -   <span class="signature">[`toRotr90( x, k )`][@stdlib/ndarray/to-rotr90]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.</span>
+-   <span class="signature">[`toTransposed( x )`][@stdlib/ndarray/to-transposed]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` containing the elements of an input `ndarray` but whose last two dimensions are transposed.</span>
 -   <span class="signature">[`toUnflattened( x, dim, sizes )`][@stdlib/ndarray/to-unflattened]</span><span class="delimiter">: </span><span class="description">return a new `ndarray` in which a specified dimension of an input `ndarray` is expanded over multiple dimensions.</span>
+-   <span class="signature">[`transpose( x )`][@stdlib/ndarray/transpose]</span><span class="delimiter">: </span><span class="description">return a **read-only** view of an input `ndarray` in which the last two dimensions are transposed.</span>
 -   <span class="signature">[`unflatten( x, dim, sizes )`][@stdlib/ndarray/unflatten]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.</span>
 -   <span class="signature">[`unshift( x, ...values )`][@stdlib/ndarray/unshift]</span><span class="delimiter">: </span><span class="description">return a one-dimensional ndarray formed by prepending provided scalar values to a one-dimensional input ndarray.</span>
 -   <span class="signature">[`vconcat( arrays )`][@stdlib/ndarray/vconcat]</span><span class="delimiter">: </span><span class="description">concatenate a list of ndarrays along the second-to-last dimension.</span>
@@ -636,7 +638,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/to-rotr90]: https://github.com/stdlib-js/ndarray/tree/main/to-rotr90
 
+[@stdlib/ndarray/to-transposed]: https://github.com/stdlib-js/ndarray/tree/main/to-transposed
+
 [@stdlib/ndarray/to-unflattened]: https://github.com/stdlib-js/ndarray/tree/main/to-unflattened
+
+[@stdlib/ndarray/transpose]: https://github.com/stdlib-js/ndarray/tree/main/transpose
 
 [@stdlib/ndarray/unflatten]: https://github.com/stdlib-js/ndarray/tree/main/unflatten
 
