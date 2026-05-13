@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-12)
+## Unreleased (2026-05-13)
 
 <section class="features">
 
 ### Features
 
+-   [`0d5b82a`](https://github.com/stdlib-js/stdlib/commit/0d5b82a1055d8a5fe51eae4011bedf64844fb48e) - add `onesLike` to namespace
+-   [`64a9fda`](https://github.com/stdlib-js/stdlib/commit/64a9fda26a1e5411a439fbcff6b567e7ed1ea6b7) - add `ndarray/ones-like`
 -   [`e38bbc8`](https://github.com/stdlib-js/stdlib/commit/e38bbc844b58b38ccb22be0ee62b0a42aa90fd75) - add `transpose` and `toTransposed` to namespace
 -   [`c541417`](https://github.com/stdlib-js/stdlib/commit/c5414171e07489c15e73b63e8ae437a24118a1f0) - add `ndarray/to-transposed` [(#12031)](https://github.com/stdlib-js/stdlib/pull/12031)
 -   [`5c1463c`](https://github.com/stdlib-js/stdlib/commit/5c1463c8c0240b44991231d5b8b120d78c6d8ad1) - add `ndarray/transpose` [(#12030)](https://github.com/stdlib-js/stdlib/pull/12030)
@@ -932,6 +934,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`0d5b82a`](https://github.com/stdlib-js/stdlib/commit/0d5b82a1055d8a5fe51eae4011bedf64844fb48e) - **feat:** add `onesLike` to namespace _(by Athan Reines)_
+-   [`64a9fda`](https://github.com/stdlib-js/stdlib/commit/64a9fda26a1e5411a439fbcff6b567e7ed1ea6b7) - **feat:** add `ndarray/ones-like` _(by Athan Reines)_
 -   [`65f9d6f`](https://github.com/stdlib-js/stdlib/commit/65f9d6fd963809f82e54cdfd06ed15e15b51525e) - **refactor:** align `ndarray/*` errors and remove `namespace` self-ref [(#12102)](https://github.com/stdlib-js/stdlib/pull/12102) _(by Philipp Burckhardt)_
 -   [`c77fbd9`](https://github.com/stdlib-js/stdlib/commit/c77fbd9a0ea702e373b40173007fcb4c0639c24e) - **refactor:** align `ndarray/base/diagonal` error message and remove `namespace` self-refs [(#12096)](https://github.com/stdlib-js/stdlib/pull/12096) _(by Philipp Burckhardt, Athan Reines)_
 -   [`c534f97`](https://github.com/stdlib-js/stdlib/commit/c534f971488b2a5ebacca4dccf73a9d9b4e09bc7) - **docs:** update namespace table of contents [(#12092)](https://github.com/stdlib-js/stdlib/pull/12092) _(by stdlib-bot)_
