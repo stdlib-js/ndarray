@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`2c835da`](https://github.com/stdlib-js/stdlib/commit/2c835dabc4f37afb4f855dec66742d50d14adf32) - add `nansLike` to namespace
+-   [`b9ecb29`](https://github.com/stdlib-js/stdlib/commit/b9ecb2970eedca271688dc7fc12ee2247a43cbf3) - add `ndarray/nans-like`
 -   [`0d5b82a`](https://github.com/stdlib-js/stdlib/commit/0d5b82a1055d8a5fe51eae4011bedf64844fb48e) - add `onesLike` to namespace
 -   [`64a9fda`](https://github.com/stdlib-js/stdlib/commit/64a9fda26a1e5411a439fbcff6b567e7ed1ea6b7) - add `ndarray/ones-like`
 -   [`e38bbc8`](https://github.com/stdlib-js/stdlib/commit/e38bbc844b58b38ccb22be0ee62b0a42aa90fd75) - add `transpose` and `toTransposed` to namespace
@@ -934,6 +936,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`dfda2f7`](https://github.com/stdlib-js/stdlib/commit/dfda2f76fffbc7450ba3b7c943787de52c05e7b7) - **docs:** update ToC _(by Athan Reines)_
+-   [`2c835da`](https://github.com/stdlib-js/stdlib/commit/2c835dabc4f37afb4f855dec66742d50d14adf32) - **feat:** add `nansLike` to namespace _(by Athan Reines)_
+-   [`b9ecb29`](https://github.com/stdlib-js/stdlib/commit/b9ecb2970eedca271688dc7fc12ee2247a43cbf3) - **feat:** add `ndarray/nans-like` _(by Athan Reines)_
 -   [`0d5b82a`](https://github.com/stdlib-js/stdlib/commit/0d5b82a1055d8a5fe51eae4011bedf64844fb48e) - **feat:** add `onesLike` to namespace _(by Athan Reines)_
 -   [`64a9fda`](https://github.com/stdlib-js/stdlib/commit/64a9fda26a1e5411a439fbcff6b567e7ed1ea6b7) - **feat:** add `ndarray/ones-like` _(by Athan Reines)_
 -   [`65f9d6f`](https://github.com/stdlib-js/stdlib/commit/65f9d6fd963809f82e54cdfd06ed15e15b51525e) - **refactor:** align `ndarray/*` errors and remove `namespace` self-ref [(#12102)](https://github.com/stdlib-js/stdlib/pull/12102) _(by Philipp Burckhardt)_

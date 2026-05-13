@@ -76,7 +76,7 @@ var o = ns;
 
 The namespace exports the following functions to create multidimensional arrays:
 
-<!-- <toc pattern="+(array|copy|ctor|empty|empty-like|fancy|from-scalar|from-scalar-like|ndarraylike2ndarray|ones|ones-like|to-fancy|zeros|zeros-like)"> -->
+<!-- <toc pattern="+(array|copy|ctor|empty|empty-like|fancy|from-scalar|from-scalar-like|nans-like|ndarraylike2ndarray|ones|ones-like|to-fancy|zeros|zeros-like)"> -->
 
 <div class="namespace-toc">
 
