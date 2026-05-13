@@ -905,6 +905,15 @@ setReadOnly( ns, 'minmaxViewBufferIndex', require( './../../base/minmax-view-buf
 setReadOnly( ns, 'nans', require( './../../base/nans' ) );
 
 /**
+* @name nansLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nans-like}
+*/
+setReadOnly( ns, 'nansLike', require( './../../base/nans-like' ) );
+
+/**
 * @name ndarraylike2ndarray
 * @memberof ns
 * @readonly
