@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-13)
+## Unreleased (2026-05-14)
 
 <section class="features">
 
 ### Features
 
+-   [`4c997ac`](https://github.com/stdlib-js/stdlib/commit/4c997accfed0300c421104372e2621ec943c6ecf) - add `nans` to namespace
+-   [`360877d`](https://github.com/stdlib-js/stdlib/commit/360877d131df2be59d1c0e4bf77928309519a341) - add `ndarray/nans`
 -   [`3cefb9e`](https://github.com/stdlib-js/stdlib/commit/3cefb9eb9d4d70f52f80274ddd57a17c707c06d6) - add `nansLike` to namespace
 -   [`17d522f`](https://github.com/stdlib-js/stdlib/commit/17d522f0eb85a41c1e5e265fdab34cc4b4aa8ffd) - add `ndarray/base/nans-like`
 -   [`2c835da`](https://github.com/stdlib-js/stdlib/commit/2c835dabc4f37afb4f855dec66742d50d14adf32) - add `nansLike` to namespace
@@ -938,6 +940,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`a75c0b8`](https://github.com/stdlib-js/stdlib/commit/a75c0b8cb3f05a5b11f9c07eb2227c8ed86e796f) - **docs:** update ToC _(by Athan Reines)_
+-   [`4c997ac`](https://github.com/stdlib-js/stdlib/commit/4c997accfed0300c421104372e2621ec943c6ecf) - **feat:** add `nans` to namespace _(by Athan Reines)_
+-   [`360877d`](https://github.com/stdlib-js/stdlib/commit/360877d131df2be59d1c0e4bf77928309519a341) - **feat:** add `ndarray/nans` _(by Athan Reines)_
 -   [`3cefb9e`](https://github.com/stdlib-js/stdlib/commit/3cefb9eb9d4d70f52f80274ddd57a17c707c06d6) - **feat:** add `nansLike` to namespace _(by Athan Reines)_
 -   [`17d522f`](https://github.com/stdlib-js/stdlib/commit/17d522f0eb85a41c1e5e265fdab34cc4b4aa8ffd) - **feat:** add `ndarray/base/nans-like` _(by Athan Reines)_
 -   [`dfda2f7`](https://github.com/stdlib-js/stdlib/commit/dfda2f76fffbc7450ba3b7c943787de52c05e7b7) - **docs:** update ToC _(by Athan Reines)_
