@@ -940,6 +940,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`65cbb12`](https://github.com/stdlib-js/stdlib/commit/65cbb12790028bfb02c8128daeef950e7ac3d1be) - **docs:** remove invalid numpy keyword from `ndarray/nans` [(#12125)](https://github.com/stdlib-js/stdlib/pull/12125) _(by Philipp Burckhardt)_
 -   [`a75c0b8`](https://github.com/stdlib-js/stdlib/commit/a75c0b8cb3f05a5b11f9c07eb2227c8ed86e796f) - **docs:** update ToC _(by Athan Reines)_
 -   [`4c997ac`](https://github.com/stdlib-js/stdlib/commit/4c997accfed0300c421104372e2621ec943c6ecf) - **feat:** add `nans` to namespace _(by Athan Reines)_
 -   [`360877d`](https://github.com/stdlib-js/stdlib/commit/360877d131df2be59d1c0e4bf77928309519a341) - **feat:** add `ndarray/nans` _(by Athan Reines)_
