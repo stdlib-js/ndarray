@@ -1049,6 +1049,15 @@ setReadOnly( ns, 'nullaryBlockSize', require( './../../base/nullary-tiling-block
 setReadOnly( ns, 'nulls', require( './../../base/nulls' ) );
 
 /**
+* @name nullsLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/nulls-like}
+*/
+setReadOnly( ns, 'nullsLike', require( './../../base/nulls-like' ) );
+
+/**
 * @name numel
 * @memberof ns
 * @readonly
