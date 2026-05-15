@@ -89,6 +89,7 @@ The namespace exports the following functions to create multidimensional arrays:
 -   <span class="signature">[`scalar2ndarrayLike( x, value[, options] )`][@stdlib/ndarray/from-scalar-like]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray having the same data-type as a provided ndarray.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`nansLike( x[, options] )`][@stdlib/ndarray/nans-like]</span><span class="delimiter">: </span><span class="description">create a NaN-filled ndarray having the same shape and data type as a provided ndarray.</span>
+-   <span class="signature">[`nans( shape[, options] )`][@stdlib/ndarray/nans]</span><span class="delimiter">: </span><span class="description">create a NaN-filled ndarray having a specified shape and data type.</span>
 -   <span class="signature">[`ndarraylike2ndarray( x[, options] )`][@stdlib/ndarray/ndarraylike2ndarray]</span><span class="delimiter">: </span><span class="description">convert an ndarray-like object to an `ndarray`.</span>
 -   <span class="signature">[`onesLike( x[, options] )`][@stdlib/ndarray/ones-like]</span><span class="delimiter">: </span><span class="description">create a ones-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`ones( shape[, options] )`][@stdlib/ndarray/ones]</span><span class="delimiter">: </span><span class="description">create a ones-filled ndarray having a specified shape and data type.</span>
@@ -671,6 +672,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/from-scalar]: https://github.com/stdlib-js/ndarray/tree/main/from-scalar
 
 [@stdlib/ndarray/nans-like]: https://github.com/stdlib-js/ndarray/tree/main/nans-like
+
+[@stdlib/ndarray/nans]: https://github.com/stdlib-js/ndarray/tree/main/nans
 
 [@stdlib/ndarray/ndarraylike2ndarray]: https://github.com/stdlib-js/ndarray/tree/main/ndarraylike2ndarray
 

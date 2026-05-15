@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-14)
+## Unreleased (2026-05-15)
 
 <section class="features">
 
@@ -940,6 +940,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`5f6ce93`](https://github.com/stdlib-js/stdlib/commit/5f6ce933d6e8794302bf652392b22d8811eef537) - **docs:** update namespace table of contents [(#12141)](https://github.com/stdlib-js/stdlib/pull/12141) _(by stdlib-bot)_
 -   [`3220a54`](https://github.com/stdlib-js/stdlib/commit/3220a542b8dff991c11047065b68123ece76ab1b) - **chore:** propagate `ndarray/*` and `normal/*` fixes [(#12117)](https://github.com/stdlib-js/stdlib/pull/12117) _(by Philipp Burckhardt)_
 -   [`ed4312c`](https://github.com/stdlib-js/stdlib/commit/ed4312c3a3ef001cdfb062efcfbddeade9396973) - **docs:** update namespace table of contents [(#12124)](https://github.com/stdlib-js/stdlib/pull/12124) _(by stdlib-bot)_
 -   [`65cbb12`](https://github.com/stdlib-js/stdlib/commit/65cbb12790028bfb02c8128daeef950e7ac3d1be) - **docs:** remove invalid numpy keyword from `ndarray/nans` [(#12125)](https://github.com/stdlib-js/stdlib/pull/12125) _(by Philipp Burckhardt)_
