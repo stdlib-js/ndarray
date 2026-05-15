@@ -1724,6 +1724,15 @@ setReadOnly( ns, 'transpose', require( './../../base/transpose' ) );
 setReadOnly( ns, 'trues', require( './../../base/trues' ) );
 
 /**
+* @name truesLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/trues-like}
+*/
+setReadOnly( ns, 'truesLike', require( './../../base/trues-like' ) );
+
+/**
 * @name unary
 * @memberof ns
 * @readonly

@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`043d7df`](https://github.com/stdlib-js/stdlib/commit/043d7df01c4423ca2ef6b80f1003df5049f98296) - add `truesLike` to namespace
+-   [`2e5a8c9`](https://github.com/stdlib-js/stdlib/commit/2e5a8c97037ab5c11bcddca57bb986994f9d5561) - add `ndarray/base/trues-like`
 -   [`ff61c1a`](https://github.com/stdlib-js/stdlib/commit/ff61c1a0ff66321e8755b17eb152c86dc79ba18d) - add `falsesLike` to namespace
 -   [`2dcfa84`](https://github.com/stdlib-js/stdlib/commit/2dcfa84001f8b3a2193c369a92000aea562ff861) - add `ndarray/base/falses-like`
 -   [`138ca61`](https://github.com/stdlib-js/stdlib/commit/138ca61525f3b313a3bb20ae7967672360ec4623) - add `nullsLike` to namespace
@@ -946,6 +948,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`043d7df`](https://github.com/stdlib-js/stdlib/commit/043d7df01c4423ca2ef6b80f1003df5049f98296) - **feat:** add `truesLike` to namespace _(by Athan Reines)_
+-   [`2e5a8c9`](https://github.com/stdlib-js/stdlib/commit/2e5a8c97037ab5c11bcddca57bb986994f9d5561) - **feat:** add `ndarray/base/trues-like` _(by Athan Reines)_
 -   [`ff61c1a`](https://github.com/stdlib-js/stdlib/commit/ff61c1a0ff66321e8755b17eb152c86dc79ba18d) - **feat:** add `falsesLike` to namespace _(by Athan Reines)_
 -   [`2dcfa84`](https://github.com/stdlib-js/stdlib/commit/2dcfa84001f8b3a2193c369a92000aea562ff861) - **feat:** add `ndarray/base/falses-like` _(by Athan Reines)_
 -   [`4182122`](https://github.com/stdlib-js/stdlib/commit/4182122a377c6211171301c36c0a016680ba791c) - **fix:** ensure support for \"generic\" dtypes _(by Athan Reines)_
