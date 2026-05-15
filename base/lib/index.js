@@ -617,6 +617,15 @@ setReadOnly( ns, 'expandDimensions', require( './../../base/expand-dimensions' )
 setReadOnly( ns, 'falses', require( './../../base/falses' ) );
 
 /**
+* @name falsesLike
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/falses-like}
+*/
+setReadOnly( ns, 'falsesLike', require( './../../base/falses-like' ) );
+
+/**
 * @name fill
 * @memberof ns
 * @readonly

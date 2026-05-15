@@ -18,11 +18,24 @@
 
 'use strict';
 
+var empty = require( './../../../empty' );
 var ndarray2array = require( './../../../to-array' );
-var falses = require( './../lib' );
+var falsesLike = require( './../lib' );
 
-var arr = falses( 'bool', [ 2, 2 ], 'row-major' );
-console.log( ndarray2array( arr ) );
+// Specify a list of data types:
+var dt = [
+	'generic',
+	'bool'
+];
 
-arr = falses( 'generic', [ 2, 2 ], 'row-major' );
-console.log( ndarray2array( arr ) );
+// Generate false-filled arrays...
+var x;
+var y;
+var i;
+for ( i = 0; i < dt.length; i++ ) {
+	x = empty( [ 2, 2 ], {
+		'dtype': dt[ i ]
+	});
+	y = falsesLike( x );
+	console.log( ndarray2array( y ) );
+}

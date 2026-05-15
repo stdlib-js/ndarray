@@ -22,43 +22,56 @@
 
 var bench = require( '@stdlib/bench' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
+var empty = require( './../../../empty' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
-var falses = require( './../lib' );
+var falsesLike = require( './../lib' );
 
 
 // MAIN //
 
-bench( format( '%s:dtype=bool', pkg ), function benchmark( b ) {
-	var arr;
+bench( format( '%s:dtype=generic', pkg ), function benchmark( b ) {
+	var x;
+	var y;
 	var i;
+
+	x = empty( [ 0 ], {
+		'dtype': 'generic'
+	});
+
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		arr = falses( 'bool', [ 0 ], 'row-major' );
-		if ( arr.length !== 0 ) {
+		y = falsesLike( x );
+		if ( y.length !== 0 ) {
 			b.fail( 'should have length 0' );
 		}
 	}
 	b.toc();
-	if ( !isndarrayLike( arr ) ) {
+	if ( !isndarrayLike( y ) ) {
 		b.fail( 'should return an ndarray' );
 	}
 	b.pass( 'benchmark finished' );
 	b.end();
 });
 
-bench( format( '%s:dtype=generic', pkg ), function benchmark( b ) {
-	var arr;
+bench( format( '%s:dtype=bool', pkg ), function benchmark( b ) {
+	var x;
+	var y;
 	var i;
+
+	x = empty( [ 0 ], {
+		'dtype': 'bool'
+	});
+
 	b.tic();
 	for ( i = 0; i < b.iterations; i++ ) {
-		arr = falses( 'generic', [ 0 ], 'row-major' );
-		if ( arr.length !== 0 ) {
+		y = falsesLike( x );
+		if ( y.length !== 0 ) {
 			b.fail( 'should have length 0' );
 		}
 	}
 	b.toc();
-	if ( !isndarrayLike( arr ) ) {
+	if ( !isndarrayLike( y ) ) {
 		b.fail( 'should return an ndarray' );
 	}
 	b.pass( 'benchmark finished' );

@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# trues
+# falsesLike
 
-> Create an [ndarray][@stdlib/ndarray/base/ctor] filled with `true` values and having a specified shape and [data type][@stdlib/ndarray/dtypes].
+> Create an ndarray filled with `false` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,28 +37,28 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var trues = require( '@stdlib/ndarray/base/trues' );
+var falsesLike = require( '@stdlib/ndarray/base/falses-like' );
 ```
 
-#### trues( dtype, shape, order )
+#### falsesLike( x )
 
-Creates an [ndarray][@stdlib/ndarray/base/ctor] filled with `true` values and having a specified shape and [data type][@stdlib/ndarray/dtypes].
+Creates an ndarray filled with `false` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
-var getDType = require( '@stdlib/ndarray/dtype' );
+var getShape = require( '@stdlib/ndarray/shape' );
+var empty = require( '@stdlib/ndarray/empty' );
 
-var arr = trues( 'bool', [ 2, 2 ], 'row-major' );
-// returns <ndarray>[ [ true, true ], [ true, true ] ]
+var x = empty( [ 2, 2 ], {
+    'dtype': 'bool'
+});
+// returns <ndarray>
 
-var dt = String( getDType( arr ) );
-// returns 'bool'
+var y = falsesLike( x );
+// returns <ndarray>[ [ false, false ], [ false, false ] ]
+
+var sh = getShape( y );
+// returns [ 2, 2 ]
 ```
-
-The function accepts the following arguments:
-
--   **dtype**: underlying [data type][@stdlib/ndarray/dtypes]. Must be a boolean or "generic" [data type][@stdlib/ndarray/dtypes].
--   **shape**: array shape.
--   **order**: specifies whether an [ndarray][@stdlib/ndarray/base/ctor] is `'row-major'` (C-style) or `'column-major'` (Fortran-style).
 
 </section>
 
@@ -67,6 +67,10 @@ The function accepts the following arguments:
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
+
+## Notes
+
+-   Along with data type, shape, and order, the function infers the "class" of the returned ndarray from the provided ndarray. For example, if provided a "base" [ndarray][@stdlib/ndarray/base/ctor], the function returns a base [ndarray][@stdlib/ndarray/base/ctor]. If provided a non-base [ndarray][@stdlib/ndarray/ctor], the function returns a non-base [ndarray][@stdlib/ndarray/ctor].
 
 </section>
 
@@ -81,14 +85,27 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var empty = require( '@stdlib/ndarray/empty' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var trues = require( '@stdlib/ndarray/base/trues' );
+var falsesLike = require( '@stdlib/ndarray/base/falses-like' );
 
-var arr = trues( 'bool', [ 2, 2 ], 'row-major' );
-console.log( ndarray2array( arr ) );
+// Specify a list of data types:
+var dt = [
+    'generic',
+    'bool'
+];
 
-arr = trues( 'generic', [ 2, 2 ], 'row-major' );
-console.log( ndarray2array( arr ) );
+// Generate false-filled arrays...
+var x;
+var y;
+var i;
+for ( i = 0; i < dt.length; i++ ) {
+    x = empty( [ 2, 2 ], {
+        'dtype': dt[ i ]
+    });
+    y = falsesLike( x );
+    console.log( ndarray2array( y ) );
+}
 ```
 
 </section>
@@ -116,6 +133,8 @@ console.log( ndarray2array( arr ) );
 <section class="links">
 
 [@stdlib/ndarray/base/ctor]: https://github.com/stdlib-js/ndarray/tree/main/base/ctor
+
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray/tree/main/ctor
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 

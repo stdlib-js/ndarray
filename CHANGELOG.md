@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`ff61c1a`](https://github.com/stdlib-js/stdlib/commit/ff61c1a0ff66321e8755b17eb152c86dc79ba18d) - add `falsesLike` to namespace
+-   [`2dcfa84`](https://github.com/stdlib-js/stdlib/commit/2dcfa84001f8b3a2193c369a92000aea562ff861) - add `ndarray/base/falses-like`
 -   [`138ca61`](https://github.com/stdlib-js/stdlib/commit/138ca61525f3b313a3bb20ae7967672360ec4623) - add `nullsLike` to namespace
 -   [`be92fbb`](https://github.com/stdlib-js/stdlib/commit/be92fbbaf3cb95168421db5caa204e2427194671) - add `ndarray/base/nulls-like`
 -   [`4c997ac`](https://github.com/stdlib-js/stdlib/commit/4c997accfed0300c421104372e2621ec943c6ecf) - add `nans` to namespace
@@ -694,6 +696,8 @@
 
 ### Bug Fixes
 
+-   [`4182122`](https://github.com/stdlib-js/stdlib/commit/4182122a377c6211171301c36c0a016680ba791c) - ensure support for \"generic\" dtypes
+-   [`260d472`](https://github.com/stdlib-js/stdlib/commit/260d47287939928b367d40fea78f8c71af25231b) - ensure support for \"generic\" dtypes
 -   [`8516750`](https://github.com/stdlib-js/stdlib/commit/851675024a46ddac355e48493759d1e793a1de8a) - add missing suffix wrappers [(#11904)](https://github.com/stdlib-js/stdlib/pull/11904)
 -   [`aab9a13`](https://github.com/stdlib-js/stdlib/commit/aab9a1327da0e6143b0548a9d47c08d1947ddb58) - remove assertion
 -   [`b7f85c2`](https://github.com/stdlib-js/stdlib/commit/b7f85c29d4147a1c0194329881eb07ef695ddaee) - use correct validation package
@@ -942,6 +946,11 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`ff61c1a`](https://github.com/stdlib-js/stdlib/commit/ff61c1a0ff66321e8755b17eb152c86dc79ba18d) - **feat:** add `falsesLike` to namespace _(by Athan Reines)_
+-   [`2dcfa84`](https://github.com/stdlib-js/stdlib/commit/2dcfa84001f8b3a2193c369a92000aea562ff861) - **feat:** add `ndarray/base/falses-like` _(by Athan Reines)_
+-   [`4182122`](https://github.com/stdlib-js/stdlib/commit/4182122a377c6211171301c36c0a016680ba791c) - **fix:** ensure support for \"generic\" dtypes _(by Athan Reines)_
+-   [`01768f7`](https://github.com/stdlib-js/stdlib/commit/01768f70991aa2e1f832ef36f38441666648c7e1) - **bench:** add \"generic\" dtype benchmark _(by Athan Reines)_
+-   [`260d472`](https://github.com/stdlib-js/stdlib/commit/260d47287939928b367d40fea78f8c71af25231b) - **fix:** ensure support for \"generic\" dtypes _(by Athan Reines)_
 -   [`138ca61`](https://github.com/stdlib-js/stdlib/commit/138ca61525f3b313a3bb20ae7967672360ec4623) - **feat:** add `nullsLike` to namespace _(by Athan Reines)_
 -   [`be92fbb`](https://github.com/stdlib-js/stdlib/commit/be92fbbaf3cb95168421db5caa204e2427194671) - **feat:** add `ndarray/base/nulls-like` _(by Athan Reines)_
 -   [`5f6ce93`](https://github.com/stdlib-js/stdlib/commit/5f6ce933d6e8794302bf652392b22d8811eef537) - **docs:** update namespace table of contents [(#12141)](https://github.com/stdlib-js/stdlib/pull/12141) _(by stdlib-bot)_
