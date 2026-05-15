@@ -948,6 +948,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`f0ed784`](https://github.com/stdlib-js/stdlib/commit/f0ed784caa00e817f71e1191b5db3853b57fa570) - **bench:** refactor to use string interpolation _(by Athan Reines)_
+-   [`b7d612f`](https://github.com/stdlib-js/stdlib/commit/b7d612f111470f25c4798c31b3303dae56a76f53) - **test:** ensure support for dtype objects _(by Athan Reines)_
 -   [`326e1cb`](https://github.com/stdlib-js/stdlib/commit/326e1cb6e7b06d68b93268376db4f76bd2aeacc4) - **test:** ensure support for dtype objects _(by Athan Reines)_
 -   [`043d7df`](https://github.com/stdlib-js/stdlib/commit/043d7df01c4423ca2ef6b80f1003df5049f98296) - **feat:** add `truesLike` to namespace _(by Athan Reines)_
 -   [`2e5a8c9`](https://github.com/stdlib-js/stdlib/commit/2e5a8c97037ab5c11bcddca57bb986994f9d5561) - **feat:** add `ndarray/base/trues-like` _(by Athan Reines)_
