@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-16)
+## Unreleased (2026-05-17)
 
 <section class="features">
 
@@ -948,6 +948,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`b2eb5da`](https://github.com/stdlib-js/stdlib/commit/b2eb5da5b94858e0d40f62ebe33ef5f52d398acc) - **docs:** update related packages sections [(#12164)](https://github.com/stdlib-js/stdlib/pull/12164) _(by stdlib-bot)_
 -   [`66ec9de`](https://github.com/stdlib-js/stdlib/commit/66ec9de8d5be3960d329762c2c132adcbd35337d) - **docs:** update namespace table of contents [(#12151)](https://github.com/stdlib-js/stdlib/pull/12151) _(by stdlib-bot)_
 -   [`f0ed784`](https://github.com/stdlib-js/stdlib/commit/f0ed784caa00e817f71e1191b5db3853b57fa570) - **bench:** refactor to use string interpolation _(by Athan Reines)_
 -   [`b7d612f`](https://github.com/stdlib-js/stdlib/commit/b7d612f111470f25c4798c31b3303dae56a76f53) - **test:** ensure support for dtype objects _(by Athan Reines)_
