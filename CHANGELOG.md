@@ -954,6 +954,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`435de12`](https://github.com/stdlib-js/stdlib/commit/435de1206159d14c5501d39c85395b08e36a540e) - **test:** fix grammar in description _(by Athan Reines)_
 -   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - **feat:** add `falsesLike` to namespace _(by Athan Reines)_
 -   [`51957bb`](https://github.com/stdlib-js/stdlib/commit/51957bb310d8dfb72455771eb669683f499ba9a0) - **feat:** add `ndarray/falses-like` _(by Athan Reines)_
 -   [`612bd5d`](https://github.com/stdlib-js/stdlib/commit/612bd5d66a0c0c394b501f9aa660355079816960) - **test:** use ndarray instance rather than ndarray-like objects _(by Athan Reines)_

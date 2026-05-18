@@ -549,7 +549,7 @@ tape( 'the function returns a NaN-filled array (dtype=generic, options)', functi
 	t.end();
 });
 
-tape( 'the function guards against array having shapes containing negative dimension sizes', function test( t ) {
+tape( 'the function guards against arrays having shapes containing negative dimension sizes', function test( t ) {
 	var x = {
 		'data': [ 1, 2, 3, 4 ],
 		'ndims': 3,
