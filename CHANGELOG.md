@@ -956,6 +956,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`7fab453`](https://github.com/stdlib-js/stdlib/commit/7fab4532629dccd39b59721b833da8a9128a3dec) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11436)](https://github.com/stdlib-js/stdlib/pull/11436) _(by Karan Anand, Athan Reines)_
 -   [`adb3e6a`](https://github.com/stdlib-js/stdlib/commit/adb3e6a9b5487a06a6f3c18e8d37650443248804) - **test:** use accessor functions _(by Athan Reines)_
 -   [`d400b65`](https://github.com/stdlib-js/stdlib/commit/d400b65944bf4a27168d1f71ca4726d696d7fc9f) - **bench:** fix missing arguments _(by Athan Reines)_
 -   [`8e2d42f`](https://github.com/stdlib-js/stdlib/commit/8e2d42fca06a86fef300cd3b1ef6ae8a6830514c) - **bench:** fix missing arguments _(by Athan Reines)_
