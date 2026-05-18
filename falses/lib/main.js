@@ -139,7 +139,7 @@ function falses( shape ) {
 		st = [ 0 ];
 	}
 	out = new ndarray( dtype, buffer( dtype, len ), sh, st, 0, order, opts );
-	fill( out, false );
+	fill( out, false ); // note: we need to explicitly fill, even though a `BooleanArray` instance contains only `false` values upon length-based initialization, as we also need to account for other dtypes, such as "generic", which may be initialized with values other than `false`
 	return out;
 }
 
