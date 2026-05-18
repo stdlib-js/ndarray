@@ -639,12 +639,12 @@ tape( 'the function returns a one-dimensional ndarray (array)', function test( t
 
 	out = new BooleanVector( arr );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( arr, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	t.end();
@@ -658,12 +658,12 @@ tape( 'the function returns a one-dimensional ndarray (typed array)', function t
 
 	out = new BooleanVector( arr );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( arr, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	t.end();
@@ -679,12 +679,12 @@ tape( 'the function returns a one-dimensional ndarray (buffer)', function test( 
 
 	out = new BooleanVector( buf );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( buf, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 4, 'returns expected value' );
+	t.strictEqual( numel( out ), 4, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( arr ) ), true, 'returns expected value' );
 
 	t.end();
@@ -698,12 +698,12 @@ tape( 'the function returns a one-dimensional ndarray (arraybuffer)', function t
 
 	out = new BooleanVector( buf );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 8, 'returns expected value' );
+	t.strictEqual( numel( out ), 8, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( buf, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 8, 'returns expected value' );
+	t.strictEqual( numel( out ), 8, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf ) ), true, 'returns expected value' );
 
 	t.end();
@@ -717,12 +717,12 @@ tape( 'the function returns a one-dimensional ndarray (arraybuffer, byteoffset)'
 
 	out = new BooleanVector( buf, 8 );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 24, 'returns expected value' );
+	t.strictEqual( numel( out ), 24, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf, 8 ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( buf, 8, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 24, 'returns expected value' );
+	t.strictEqual( numel( out ), 24, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf, 8 ) ), true, 'returns expected value' );
 
 	t.end();
@@ -736,12 +736,12 @@ tape( 'the function returns a one-dimensional ndarray (arraybuffer, byteoffset, 
 
 	out = new BooleanVector( buf, 8, 2 );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 2, 'returns expected value' );
+	t.strictEqual( numel( out ), 2, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf, 8, 2 ) ), true, 'returns expected value' );
 
 	out = new BooleanVector( buf, 8, 2, {} );
 	t.strictEqual( isndarrayLikeWithDataType( out, 'bool' ), true, 'returns expected value' );
-	t.strictEqual( out.length, 2, 'returns expected value' );
+	t.strictEqual( numel( out ), 2, 'returns expected value' );
 	t.strictEqual( isEqualBooleanArray( getData( out ), new BooleanArray( buf, 8, 2 ) ), true, 'returns expected value' );
 
 	t.end();
