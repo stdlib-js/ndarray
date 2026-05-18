@@ -956,6 +956,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`8e2d42f`](https://github.com/stdlib-js/stdlib/commit/8e2d42fca06a86fef300cd3b1ef6ae8a6830514c) - **bench:** fix missing arguments _(by Athan Reines)_
+-   [`1e7acc6`](https://github.com/stdlib-js/stdlib/commit/1e7acc6e50e0cf193de415fcb4d864755757aa99) - **test:** use accessor functions _(by Athan Reines)_
 -   [`9451399`](https://github.com/stdlib-js/stdlib/commit/9451399044acb8234933b4a35723347e45def52a) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11432)](https://github.com/stdlib-js/stdlib/pull/11432) _(by Karan Anand)_
 -   [`a7b7b9c`](https://github.com/stdlib-js/stdlib/commit/a7b7b9cbd71fbef65e5c52c3d87c2552f4b704b9) - **docs:** update ToC _(by Athan Reines)_
 -   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - **feat:** add `truesLike` to namespace _(by Athan Reines)_
