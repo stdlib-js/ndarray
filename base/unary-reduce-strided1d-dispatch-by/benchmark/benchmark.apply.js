@@ -27,6 +27,7 @@ var dtypes = require( './../../../dtypes' );
 var uniform = require( '@stdlib/random/array/uniform' );
 var ndarray = require( './../../../base/ctor' );
 var maxBy = require( '@stdlib/stats/base/ndarray/max-by' );
+var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
 var UnaryStrided1dDispatchBy = require( './../lib' );
 
@@ -124,7 +125,7 @@ function main() {
 	for ( i = min; i <= max; i++ ) {
 		len = pow( 10, i );
 		f = createBenchmark( len );
-		bench( pkg+':apply:len='+len, f );
+		bench( format( '%s:apply:len=%d', pkg, len ), f );
 	}
 }
 
