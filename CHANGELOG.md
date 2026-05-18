@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`ef0c0ee`](https://github.com/stdlib-js/stdlib/commit/ef0c0ee0ca07b8e80443503eec824cb98a0f32fc) - add `trues` to namespace
+-   [`afa41ed`](https://github.com/stdlib-js/stdlib/commit/afa41ed81e1f3a3d96baa463ad0df681b96490c3) - add `ndarray/trues`
 -   [`3a2c420`](https://github.com/stdlib-js/stdlib/commit/3a2c4202494b17834a1d35227a9d79aa7339cac1) - add `falses` to namespace
 -   [`fad2314`](https://github.com/stdlib-js/stdlib/commit/fad2314e74226b9cfc8c983a83cfd32a68360a56) - add `ndarray/falses`
 -   [`043d7df`](https://github.com/stdlib-js/stdlib/commit/043d7df01c4423ca2ef6b80f1003df5049f98296) - add `truesLike` to namespace
@@ -950,6 +952,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`ef0c0ee`](https://github.com/stdlib-js/stdlib/commit/ef0c0ee0ca07b8e80443503eec824cb98a0f32fc) - **feat:** add `trues` to namespace _(by Athan Reines)_
+-   [`afa41ed`](https://github.com/stdlib-js/stdlib/commit/afa41ed81e1f3a3d96baa463ad0df681b96490c3) - **feat:** add `ndarray/trues` _(by Athan Reines)_
 -   [`356fa98`](https://github.com/stdlib-js/stdlib/commit/356fa98b0572792aa89fe8a36acdf1f4f629826f) - **docs:** add note _(by Athan Reines)_
 -   [`3a2c420`](https://github.com/stdlib-js/stdlib/commit/3a2c4202494b17834a1d35227a9d79aa7339cac1) - **feat:** add `falses` to namespace _(by Athan Reines)_
 -   [`fad2314`](https://github.com/stdlib-js/stdlib/commit/fad2314e74226b9cfc8c983a83cfd32a68360a56) - **feat:** add `ndarray/falses` _(by Athan Reines)_
