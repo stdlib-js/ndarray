@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-17)
+## Unreleased (2026-05-18)
 
 <section class="features">
 
 ### Features
 
+-   [`3a2c420`](https://github.com/stdlib-js/stdlib/commit/3a2c4202494b17834a1d35227a9d79aa7339cac1) - add `falses` to namespace
+-   [`fad2314`](https://github.com/stdlib-js/stdlib/commit/fad2314e74226b9cfc8c983a83cfd32a68360a56) - add `ndarray/falses`
 -   [`043d7df`](https://github.com/stdlib-js/stdlib/commit/043d7df01c4423ca2ef6b80f1003df5049f98296) - add `truesLike` to namespace
 -   [`2e5a8c9`](https://github.com/stdlib-js/stdlib/commit/2e5a8c97037ab5c11bcddca57bb986994f9d5561) - add `ndarray/base/trues-like`
 -   [`ff61c1a`](https://github.com/stdlib-js/stdlib/commit/ff61c1a0ff66321e8755b17eb152c86dc79ba18d) - add `falsesLike` to namespace
@@ -948,6 +950,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`3a2c420`](https://github.com/stdlib-js/stdlib/commit/3a2c4202494b17834a1d35227a9d79aa7339cac1) - **feat:** add `falses` to namespace _(by Athan Reines)_
+-   [`fad2314`](https://github.com/stdlib-js/stdlib/commit/fad2314e74226b9cfc8c983a83cfd32a68360a56) - **feat:** add `ndarray/falses` _(by Athan Reines)_
 -   [`b2eb5da`](https://github.com/stdlib-js/stdlib/commit/b2eb5da5b94858e0d40f62ebe33ef5f52d398acc) - **docs:** update related packages sections [(#12164)](https://github.com/stdlib-js/stdlib/pull/12164) _(by stdlib-bot)_
 -   [`66ec9de`](https://github.com/stdlib-js/stdlib/commit/66ec9de8d5be3960d329762c2c132adcbd35337d) - **docs:** update namespace table of contents [(#12151)](https://github.com/stdlib-js/stdlib/pull/12151) _(by stdlib-bot)_
 -   [`f0ed784`](https://github.com/stdlib-js/stdlib/commit/f0ed784caa00e817f71e1191b5db3853b57fa570) - **bench:** refactor to use string interpolation _(by Athan Reines)_
