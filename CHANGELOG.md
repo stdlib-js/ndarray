@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - add `truesLike` to namespace
+-   [`17ab77f`](https://github.com/stdlib-js/stdlib/commit/17ab77f62dbb21592e3a8a856fada9ec08dce0d8) - add `ndarray/trues-like`
 -   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - add `falsesLike` to namespace
 -   [`51957bb`](https://github.com/stdlib-js/stdlib/commit/51957bb310d8dfb72455771eb669683f499ba9a0) - add `ndarray/falses-like`
 -   [`ef0c0ee`](https://github.com/stdlib-js/stdlib/commit/ef0c0ee0ca07b8e80443503eec824cb98a0f32fc) - add `trues` to namespace
@@ -954,6 +956,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - **feat:** add `truesLike` to namespace _(by Athan Reines)_
+-   [`17ab77f`](https://github.com/stdlib-js/stdlib/commit/17ab77f62dbb21592e3a8a856fada9ec08dce0d8) - **feat:** add `ndarray/trues-like` _(by Athan Reines)_
+-   [`aa9b696`](https://github.com/stdlib-js/stdlib/commit/aa9b6964c02bcb3fd93e2f05506d83fc1470c08d) - **docs:** fix descriptions _(by Athan Reines)_
 -   [`435de12`](https://github.com/stdlib-js/stdlib/commit/435de1206159d14c5501d39c85395b08e36a540e) - **test:** fix grammar in description _(by Athan Reines)_
 -   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - **feat:** add `falsesLike` to namespace _(by Athan Reines)_
 -   [`51957bb`](https://github.com/stdlib-js/stdlib/commit/51957bb310d8dfb72455771eb669683f499ba9a0) - **feat:** add `ndarray/falses-like` _(by Athan Reines)_

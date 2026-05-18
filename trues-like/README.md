@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# falsesLike
+# truesLike
 
-> Create an [ndarray][@stdlib/ndarray/ctor] filled with `false` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
+> Create an [ndarray][@stdlib/ndarray/ctor] filled with `true` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,12 +37,12 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var falsesLike = require( '@stdlib/ndarray/falses-like' );
+var truesLike = require( '@stdlib/ndarray/trues-like' );
 ```
 
-#### falsesLike( x\[, options] )
+#### truesLike( x\[, options] )
 
-Creates an [ndarray][@stdlib/ndarray/ctor] filled with `false` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
+Creates an [ndarray][@stdlib/ndarray/ctor] filled with `true` values and having the same shape and [data type][@stdlib/ndarray/dtypes] as a provided ndarray.
 
 ```javascript
 var getShape = require( '@stdlib/ndarray/shape' );
@@ -54,8 +54,8 @@ var x = empty( [ 2, 2 ], {
 });
 // returns <ndarray>
 
-var y = falsesLike( x );
-// returns <ndarray>[ [ false, false ], [ false, false ] ]
+var y = truesLike( x );
+// returns <ndarray>[ [ true, true ], [ true, true ] ]
 
 var sh = getShape( y );
 // returns [ 2, 2 ]
@@ -88,10 +88,10 @@ var x = empty( [ 2, 2 ], {
 var dt = String( getDType( x ) );
 // returns 'bool'
 
-var y = falsesLike( x, {
+var y = truesLike( x, {
     'dtype': 'generic'
 });
-// returns <ndarray>[ [ false, false ], [ false, false ] ]
+// returns <ndarray>[ [ true, true ], [ true, true ] ]
 
 var sh = getShape( y );
 // returns [ 2, 2 ]
@@ -123,7 +123,7 @@ dt = String( getDType( y ) );
 ```javascript
 var empty = require( '@stdlib/ndarray/empty' );
 var ndarray2array = require( '@stdlib/ndarray/to-array' );
-var falsesLike = require( '@stdlib/ndarray/falses-like' );
+var truesLike = require( '@stdlib/ndarray/trues-like' );
 
 // Specify a list of data types:
 var dt = [
@@ -139,7 +139,7 @@ for ( i = 0; i < dt.length; i++ ) {
     x = empty( [ 2, 2 ], {
         'dtype': dt[ i ]
     });
-    y = falsesLike( x );
+    y = truesLike( x );
     console.log( ndarray2array( y ) );
 }
 ```
