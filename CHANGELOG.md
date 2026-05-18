@@ -956,6 +956,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`a7b7b9c`](https://github.com/stdlib-js/stdlib/commit/a7b7b9cbd71fbef65e5c52c3d87c2552f4b704b9) - **docs:** update ToC _(by Athan Reines)_
 -   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - **feat:** add `truesLike` to namespace _(by Athan Reines)_
 -   [`17ab77f`](https://github.com/stdlib-js/stdlib/commit/17ab77f62dbb21592e3a8a856fada9ec08dce0d8) - **feat:** add `ndarray/trues-like` _(by Athan Reines)_
 -   [`aa9b696`](https://github.com/stdlib-js/stdlib/commit/aa9b6964c02bcb3fd93e2f05506d83fc1470c08d) - **docs:** fix descriptions _(by Athan Reines)_
