@@ -952,6 +952,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`9e72d5a`](https://github.com/stdlib-js/stdlib/commit/9e72d5af562d400e9bd580faa9f80ed2ebc6aa4c) - **docs:** update related packages sections [(#12185)](https://github.com/stdlib-js/stdlib/pull/12185) _(by stdlib-bot)_
 -   [`ef0c0ee`](https://github.com/stdlib-js/stdlib/commit/ef0c0ee0ca07b8e80443503eec824cb98a0f32fc) - **feat:** add `trues` to namespace _(by Athan Reines)_
 -   [`afa41ed`](https://github.com/stdlib-js/stdlib/commit/afa41ed81e1f3a3d96baa463ad0df681b96490c3) - **feat:** add `ndarray/trues` _(by Athan Reines)_
 -   [`356fa98`](https://github.com/stdlib-js/stdlib/commit/356fa98b0572792aa89fe8a36acdf1f4f629826f) - **docs:** add note _(by Athan Reines)_
