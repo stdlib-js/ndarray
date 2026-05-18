@@ -313,8 +313,10 @@ The namespace contains the following multidimensional array utility functions:
 
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
+-   <span class="signature">[`falses( shape[, options] )`][@stdlib/ndarray/falses]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having a specified shape and data type.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
+-   <span class="signature">[`trues( shape[, options] )`][@stdlib/ndarray/trues]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `true` values and having a specified shape and data type.</span>
 
 </div>
 
@@ -429,9 +431,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
 
+[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray/tree/main/falses
+
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
+
+[@stdlib/ndarray/trues]: https://github.com/stdlib-js/ndarray/tree/main/trues
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
