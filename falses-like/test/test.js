@@ -22,30 +22,24 @@
 
 var tape = require( 'tape' );
 var isSameArray = require( '@stdlib/assert/is-same-array' );
-var isSameFloat64Array = require( '@stdlib/assert/is-same-float64array' );
-var isSameFloat32Array = require( '@stdlib/assert/is-same-float32array' );
-var isSameComplex128Array = require( '@stdlib/assert/is-same-complex128array' );
-var isSameComplex64Array = require( '@stdlib/assert/is-same-complex64array' );
-var Float64Array = require( '@stdlib/array/float64' );
-var Float32Array = require( '@stdlib/array/float32' );
-var Complex64Array = require( '@stdlib/array/complex64' );
-var Complex128Array = require( '@stdlib/array/complex128' );
+var isEqualBooleanArray = require( '@stdlib/assert/is-equal-booleanarray' );
+var BooleanArray = require( '@stdlib/array/bool' );
 var instanceOf = require( '@stdlib/assert/instance-of' );
 var ndarray = require( './../../ctor' );
-var zeros = require( './../../base/zeros' );
+var empty = require( './../../base/empty' );
 var getShape = require( './../../shape' );
 var getDType = require( './../../dtype' );
 var getData = require( './../../data-buffer' );
 var getOrder = require( './../../order' );
 var getFlags = require( './../../flags' );
-var nansLike = require( './../lib' );
+var falsesLike = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof nansLike, 'function', 'main export is a function' );
+	t.strictEqual( typeof falsesLike, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -75,7 +69,7 @@ tape( 'the function throws an error if provided a first argument having an unrec
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( value );
+			falsesLike( value );
 		};
 	}
 });
@@ -106,7 +100,7 @@ tape( 'the function throws an error if provided a first argument having an unrec
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( value, {} );
+			falsesLike( value, {} );
 		};
 	}
 });
@@ -133,7 +127,7 @@ tape( 'the function throws an error if provided an options argument which is not
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), value );
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), value );
 		};
 	}
 });
@@ -161,7 +155,7 @@ tape( 'the function throws an error if provided a `dtype` option which is not a 
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'dtype': value
 			});
 		};
@@ -191,7 +185,7 @@ tape( 'the function throws an error if provided an `order` option which is not a
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'order': value
 			});
 		};
@@ -223,7 +217,7 @@ tape( 'the function throws an error if provided a `shape` option which is not a 
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'shape': value
 			});
 		};
@@ -253,7 +247,7 @@ tape( 'the function throws an error if provided a `mode` option which is not a r
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'mode': value
 			});
 		};
@@ -282,7 +276,7 @@ tape( 'the function throws an error if provided an invalid `submode` option', fu
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'submode': [ value ]
 			});
 		};
@@ -309,213 +303,87 @@ tape( 'the function throws an error if provided a `readonly` option which is not
 
 	function badValue( value ) {
 		return function badValue() {
-			nansLike( zeros( 'generic', [ 2, 2 ], 'row-major' ), {
+			falsesLike( empty( 'generic', [ 2, 2 ], 'row-major' ), {
 				'readonly': value
 			});
 		};
 	}
 });
 
-tape( 'the function returns a NaN-filled array (dtype=float64, inferred)', function test( t ) {
+tape( 'the function returns an ndarray filled with `false` values (dtype=bool, inferred)', function test( t ) {
 	var expected;
 	var arr;
 	var x;
 
-	expected = new Float64Array( [ NaN, NaN, NaN, NaN ] );
+	expected = new BooleanArray( [ false, false, false, false ] );
 
-	x = zeros( 'float64', [ 2, 2 ], 'row-major' );
-	arr = nansLike( x );
+	x = empty( 'bool', [ 2, 2 ], 'row-major' );
+	arr = falsesLike( x );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'float64', 'returns expected value' );
+	t.strictEqual( String( getDType( arr ) ), 'bool', 'returns expected value' );
 	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameFloat64Array( getData( arr ), expected ), true, 'returns expected value' );
+	t.strictEqual( isEqualBooleanArray( getData( arr ), expected ), true, 'returns expected value' );
 	t.strictEqual( getOrder( arr ), 'row-major', 'returns expected value' );
 
 	t.end();
 });
 
-tape( 'the function returns a NaN-filled array (dtype=float64, options)', function test( t ) {
+tape( 'the function returns an ndarray filled with `false` values (dtype=bool, options)', function test( t ) {
 	var expected;
 	var arr;
 	var x;
 
-	expected = new Float64Array( [ NaN, NaN, NaN, NaN ] );
+	expected = new BooleanArray( [ false, false, false, false ] );
 
-	x = zeros( 'generic', [ 4 ], 'row-major' );
-	arr = nansLike( x, {
+	x = empty( 'generic', [ 4 ], 'row-major' );
+	arr = falsesLike( x, {
 		'shape': [ 2, 2 ],
-		'dtype': 'float64',
+		'dtype': 'bool',
 		'order': 'column-major'
 	});
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'float64', 'returns expected value' );
+	t.strictEqual( String( getDType( arr ) ), 'bool', 'returns expected value' );
 	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameFloat64Array( getData( arr ), expected ), true, 'returns expected value' );
+	t.strictEqual( isEqualBooleanArray( getData( arr ), expected ), true, 'returns expected value' );
 	t.strictEqual( getOrder( arr ), 'column-major', 'returns expected value' );
 
 	t.end();
 });
 
-tape( 'the function returns a NaN-filled array (dtype=float64, options, integer shape)', function test( t ) {
+tape( 'the function returns an ndarray filled with `false` values (dtype=bool, options, integer shape)', function test( t ) {
 	var expected;
 	var arr;
 	var x;
 
-	expected = new Float64Array( [ NaN, NaN, NaN, NaN ] );
+	expected = new BooleanArray( [ false, false, false, false ] );
 
-	x = zeros( 'generic', [ 0 ], 'row-major' );
-	arr = nansLike( x, {
+	x = empty( 'generic', [ 0 ], 'row-major' );
+	arr = falsesLike( x, {
 		'shape': 4,
-		'dtype': 'float64',
+		'dtype': 'bool',
 		'order': 'column-major'
 	});
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'float64', 'returns expected value' );
+	t.strictEqual( String( getDType( arr ) ), 'bool', 'returns expected value' );
 	t.deepEqual( getShape( arr ), [ 4 ], 'returns expected value' );
-	t.strictEqual( isSameFloat64Array( getData( arr ), expected ), true, 'returns expected value' );
+	t.strictEqual( isEqualBooleanArray( getData( arr ), expected ), true, 'returns expected value' );
 	t.strictEqual( getOrder( arr ), 'column-major', 'returns expected value' );
 
 	t.end();
 });
 
-tape( 'the function returns a NaN-filled array (dtype=float32, inferred)', function test( t ) {
+tape( 'the function returns an ndarray filled with `false` values (dtype=generic, inferred)', function test( t ) {
 	var expected;
 	var arr;
 	var x;
 
-	expected = new Float32Array( [ NaN, NaN, NaN, NaN ] );
+	expected = [ false, false, false, false ];
 
-	x = zeros( 'float32', [ 2, 2 ], 'row-major' );
-	arr = nansLike( x );
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'float32', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameFloat32Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'row-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=float32, options)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = new Float32Array( [ NaN, NaN, NaN, NaN ] );
-
-	x = zeros( 'generic', [ 4 ], 'row-major' );
-	arr = nansLike( x, {
-		'shape': [ 2, 2 ],
-		'dtype': 'float32',
-		'order': 'column-major'
-	});
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'float32', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameFloat32Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'column-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=complex128, inferred)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = new Complex128Array( [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ] );
-
-	x = zeros( 'complex128', [ 2, 2 ], 'row-major' );
-	arr = nansLike( x );
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'complex128', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameComplex128Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'row-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=complex128, options)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = new Complex128Array( [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ] );
-
-	x = zeros( 'generic', [ 4 ], 'row-major' );
-	arr = nansLike( x, {
-		'shape': [ 2, 2 ],
-		'dtype': 'complex128',
-		'order': 'column-major'
-	});
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'complex128', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.strictEqual( isSameComplex128Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'column-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=complex64, inferred)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = new Complex64Array( [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ] );
-
-	x = zeros( 'complex64', [ 2, 2 ], 'row-major' );
-	arr = nansLike( x );
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'complex64', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.deepEqual( isSameComplex64Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'row-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=complex64, options)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = new Complex64Array( [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ] );
-
-	x = zeros( 'generic', [ 4 ], 'row-major' );
-	arr = nansLike( x, {
-		'shape': [ 2, 2 ],
-		'dtype': 'complex64',
-		'order': 'column-major'
-	});
-
-	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
-	t.strictEqual( String( getDType( arr ) ), 'complex64', 'returns expected value' );
-	t.deepEqual( getShape( arr ), [ 2, 2 ], 'returns expected value' );
-	t.deepEqual( isSameComplex64Array( getData( arr ), expected ), true, 'returns expected value' );
-	t.strictEqual( getOrder( arr ), 'column-major', 'returns expected value' );
-
-	t.end();
-});
-
-tape( 'the function returns a NaN-filled array (dtype=generic, inferred)', function test( t ) {
-	var expected;
-	var arr;
-	var x;
-
-	expected = [ NaN, NaN, NaN, NaN ];
-
-	x = zeros( 'generic', [ 2, 2 ], 'row-major' );
-	arr = nansLike( x );
+	x = empty( 'generic', [ 2, 2 ], 'row-major' );
+	arr = falsesLike( x );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -526,15 +394,15 @@ tape( 'the function returns a NaN-filled array (dtype=generic, inferred)', funct
 	t.end();
 });
 
-tape( 'the function returns a NaN-filled array (dtype=generic, options)', function test( t ) {
+tape( 'the function returns an ndarray filled with `false` values (dtype=generic, options)', function test( t ) {
 	var expected;
 	var arr;
 	var x;
 
-	expected = [ NaN, NaN, NaN, NaN ];
+	expected = [ false, false, false, false ];
 
-	x = zeros( 'float64', [ 4 ], 'row-major' );
-	arr = nansLike( x, {
+	x = empty( 'bool', [ 4 ], 'row-major' );
+	arr = falsesLike( x, {
 		'shape': [ 2, 2 ],
 		'dtype': 'generic',
 		'order': 'column-major'
@@ -549,7 +417,7 @@ tape( 'the function returns a NaN-filled array (dtype=generic, options)', functi
 	t.end();
 });
 
-tape( 'the function guards against array having shapes containing negative dimension sizes', function test( t ) {
+tape( 'the function guards against arrays having shapes containing negative dimension sizes', function test( t ) {
 	var x = {
 		'data': [ 1, 2, 3, 4 ],
 		'ndims': 3,
@@ -568,7 +436,7 @@ tape( 'the function guards against array having shapes containing negative dimen
 	t.end();
 
 	function badValue() {
-		return nansLike( x );
+		return falsesLike( x );
 	}
 
 	function noop() {}
@@ -579,10 +447,10 @@ tape( 'the function supports zero-dimensional arrays', function test( t ) {
 	var arr;
 	var x;
 
-	expected = [ NaN ];
+	expected = [ false ];
 
-	x = zeros( 'generic', [], 'row-major' );
-	arr = nansLike( x );
+	x = empty( 'generic', [], 'row-major' );
+	arr = falsesLike( x );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -600,8 +468,8 @@ tape( 'the function supports empty arrays', function test( t ) {
 
 	expected = [];
 
-	x = zeros( 'generic', [ 2, 0, 2 ], 'row-major' );
-	arr = nansLike( x );
+	x = empty( 'generic', [ 2, 0, 2 ], 'row-major' );
+	arr = falsesLike( x );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -618,14 +486,14 @@ tape( 'the function supports returning read-only arrays', function test( t ) {
 	var arr;
 	var x;
 
-	expected = [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ];
+	expected = [ false, false, false, false, false, false, false, false ];
 
 	opts = {
 		'order': 'row-major',
 		'readonly': true
 	};
-	x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
-	arr = nansLike( x, opts );
+	x = empty( 'generic', [ 2, 2, 2 ], 'row-major' );
+	arr = falsesLike( x, opts );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -643,14 +511,14 @@ tape( 'the function supports returning writable arrays', function test( t ) {
 	var arr;
 	var x;
 
-	expected = [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ];
+	expected = [ false, false, false, false, false, false, false, false ];
 
 	opts = {
 		'order': 'row-major',
 		'readonly': false
 	};
-	x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
-	arr = nansLike( x, opts );
+	x = empty( 'generic', [ 2, 2, 2 ], 'row-major' );
+	arr = falsesLike( x, opts );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -668,14 +536,14 @@ tape( 'the function supports specifying array index modes and submodes', functio
 	var arr;
 	var x;
 
-	expected = [ NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN ];
+	expected = [ false, false, false, false, false, false, false, false ];
 
 	opts = {
 		'mode': 'clamp',
 		'submode': [ 'wrap' ]
 	};
-	x = zeros( 'generic', [ 2, 2, 2 ], 'row-major' );
-	arr = nansLike( x, opts );
+	x = empty( 'generic', [ 2, 2, 2 ], 'row-major' );
+	arr = falsesLike( x, opts );
 
 	t.strictEqual( instanceOf( arr, ndarray ), true, 'returns expected value' );
 	t.strictEqual( String( getDType( arr ) ), 'generic', 'returns expected value' );
@@ -683,12 +551,12 @@ tape( 'the function supports specifying array index modes and submodes', functio
 	t.strictEqual( isSameArray( getData( arr ), expected ), true, 'returns expected value' );
 	t.strictEqual( getOrder( arr ), 'row-major', 'returns expected value' );
 
-	arr.iset( arr.length+10, 2 );
-	t.strictEqual( arr.iget( arr.length+10 ), 2, 'returns expected value' );
+	arr.iset( arr.length+10, true );
+	t.strictEqual( arr.iget( arr.length+10 ), true, 'returns expected value' );
 
-	arr.set( 2, 2, 2, 3 );
-	t.strictEqual( arr.get( 0, 0, 0 ), 3, 'returns expected value' );
-	t.strictEqual( arr.get( 2, 2, 2 ), 3, 'returns expected value' );
+	arr.set( 2, 2, 2, true );
+	t.strictEqual( arr.get( 0, 0, 0 ), true, 'returns expected value' );
+	t.strictEqual( arr.get( 2, 2, 2 ), true, 'returns expected value' );
 
 	t.end();
 });

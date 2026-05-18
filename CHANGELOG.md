@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - add `falsesLike` to namespace
+-   [`51957bb`](https://github.com/stdlib-js/stdlib/commit/51957bb310d8dfb72455771eb669683f499ba9a0) - add `ndarray/falses-like`
 -   [`ef0c0ee`](https://github.com/stdlib-js/stdlib/commit/ef0c0ee0ca07b8e80443503eec824cb98a0f32fc) - add `trues` to namespace
 -   [`afa41ed`](https://github.com/stdlib-js/stdlib/commit/afa41ed81e1f3a3d96baa463ad0df681b96490c3) - add `ndarray/trues`
 -   [`3a2c420`](https://github.com/stdlib-js/stdlib/commit/3a2c4202494b17834a1d35227a9d79aa7339cac1) - add `falses` to namespace
@@ -952,6 +954,11 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - **feat:** add `falsesLike` to namespace _(by Athan Reines)_
+-   [`51957bb`](https://github.com/stdlib-js/stdlib/commit/51957bb310d8dfb72455771eb669683f499ba9a0) - **feat:** add `ndarray/falses-like` _(by Athan Reines)_
+-   [`612bd5d`](https://github.com/stdlib-js/stdlib/commit/612bd5d66a0c0c394b501f9aa660355079816960) - **test:** use ndarray instance rather than ndarray-like objects _(by Athan Reines)_
+-   [`08ad397`](https://github.com/stdlib-js/stdlib/commit/08ad39702cee5aa0f6be202da23876076b66d5b3) - **test:** use ndarray instance rather than ndarray-like objects _(by Athan Reines)_
+-   [`84ca269`](https://github.com/stdlib-js/stdlib/commit/84ca26945e2e2c705a1a0bfcb00bf0fd235f990b) - **test:** use ndarray instance rather than ndarray-like objects _(by Athan Reines)_
 -   [`8a676c9`](https://github.com/stdlib-js/stdlib/commit/8a676c90f885ee4c0ffd9b324f4e4707ea025843) - **docs:** update namespace table of contents [(#12189)](https://github.com/stdlib-js/stdlib/pull/12189) _(by stdlib-bot)_
 -   [`1816701`](https://github.com/stdlib-js/stdlib/commit/1816701617f0b3442bc898097ac129382cc699a3) - **docs:** update descriptions in `ndarray/base/*-like` packages [(#12145)](https://github.com/stdlib-js/stdlib/pull/12145) _(by Philipp Burckhardt)_
 -   [`9e72d5a`](https://github.com/stdlib-js/stdlib/commit/9e72d5af562d400e9bd580faa9f80ed2ebc6aa4c) - **docs:** update related packages sections [(#12185)](https://github.com/stdlib-js/stdlib/pull/12185) _(by stdlib-bot)_
