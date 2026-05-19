@@ -35,20 +35,32 @@ limitations under the License.
 
 > Multidimensional arrays.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, broadcastScalarLike, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, diagonal, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, falses, falsesLike, fill, fillBy, fillSlice, filter, filterMap, find, findLast, first, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, hconcat, includes, ind2sub, indexModes, inputCastingPolicies, iter, last, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, nans, nansLike, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndarraylike2scalar, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, onesLike, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, reverseDimensions, rot180, rot90, rotl90, rotr90, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, toReversedDimensions, toRot180, toRot90, toRotl90, toRotr90, toTransposed, toUnflattened, transpose, trues, truesLike, unflatten, unshift, vconcat, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+var ns = require( '@stdlib/ndarray' );
 ```
 
 #### ns
@@ -73,6 +85,8 @@ The namespace exports the following functions to create multidimensional arrays:
 -   <span class="signature">[`ndarray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
 -   <span class="signature">[`emptyLike( x[, options] )`][@stdlib/ndarray/empty-like]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`empty( shape[, options] )`][@stdlib/ndarray/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized ndarray having a specified shape and data type.</span>
+-   <span class="signature">[`falsesLike( x[, options] )`][@stdlib/ndarray/falses-like]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having the same shape and data type as a provided ndarray.</span>
+-   <span class="signature">[`falses( shape[, options] )`][@stdlib/ndarray/falses]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having a specified shape and data type.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
 -   <span class="signature">[`scalar2ndarrayLike( x, value[, options] )`][@stdlib/ndarray/from-scalar-like]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray having the same data-type as a provided ndarray.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
@@ -82,6 +96,8 @@ The namespace exports the following functions to create multidimensional arrays:
 -   <span class="signature">[`onesLike( x[, options] )`][@stdlib/ndarray/ones-like]</span><span class="delimiter">: </span><span class="description">create a ones-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`ones( shape[, options] )`][@stdlib/ndarray/ones]</span><span class="delimiter">: </span><span class="description">create a ones-filled ndarray having a specified shape and data type.</span>
 -   <span class="signature">[`ndarray2fancy( x[, options] )`][@stdlib/ndarray/to-fancy]</span><span class="delimiter">: </span><span class="description">convert an ndarray to an object supporting fancy indexing.</span>
+-   <span class="signature">[`truesLike( x[, options] )`][@stdlib/ndarray/trues-like]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `true` values and having the same shape and data type as a provided ndarray.</span>
+-   <span class="signature">[`trues( shape[, options] )`][@stdlib/ndarray/trues]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `true` values and having a specified shape and data type.</span>
 -   <span class="signature">[`zerosLike( x[, options] )`][@stdlib/ndarray/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`zeros( shape[, options] )`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
 
@@ -301,10 +317,8 @@ The namespace contains the following multidimensional array utility functions:
 
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
--   <span class="signature">[`falses( shape[, options] )`][@stdlib/ndarray/falses]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having a specified shape and data type.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
--   <span class="signature">[`trues( shape[, options] )`][@stdlib/ndarray/trues]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `true` values and having a specified shape and data type.</span>
 
 </div>
 
@@ -322,20 +336,11 @@ The namespace contains the following multidimensional array utility functions:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var ns = require( '@stdlib/ndarray' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -359,7 +364,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -428,13 +433,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/dispatch]: https://github.com/stdlib-js/ndarray/tree/main/dispatch
 
-[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray/tree/main/falses
-
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
-
-[@stdlib/ndarray/trues]: https://github.com/stdlib-js/ndarray/tree/main/trues
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
@@ -668,6 +669,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/empty]: https://github.com/stdlib-js/ndarray/tree/main/empty
 
+[@stdlib/ndarray/falses-like]: https://github.com/stdlib-js/ndarray/tree/main/falses-like
+
+[@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray/tree/main/falses
+
 [@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
 
 [@stdlib/ndarray/from-scalar-like]: https://github.com/stdlib-js/ndarray/tree/main/from-scalar-like
@@ -685,6 +690,10 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/ones]: https://github.com/stdlib-js/ndarray/tree/main/ones
 
 [@stdlib/ndarray/to-fancy]: https://github.com/stdlib-js/ndarray/tree/main/to-fancy
+
+[@stdlib/ndarray/trues-like]: https://github.com/stdlib-js/ndarray/tree/main/trues-like
+
+[@stdlib/ndarray/trues]: https://github.com/stdlib-js/ndarray/tree/main/trues
 
 [@stdlib/ndarray/zeros-like]: https://github.com/stdlib-js/ndarray/tree/main/zeros-like
 
