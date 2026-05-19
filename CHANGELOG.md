@@ -956,6 +956,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`2384460`](https://github.com/stdlib-js/stdlib/commit/23844609387e67c18bc0db81a5abcacdce492ffc) - **docs:** propagate recent doc-note and grammar fixes to sibling packages [(#12193)](https://github.com/stdlib-js/stdlib/pull/12193) _(by Philipp Burckhardt)_
 -   [`87326e1`](https://github.com/stdlib-js/stdlib/commit/87326e13e95d728df07199ffa9623bd2a676ae37) - **docs:** update namespace table of contents [(#12199)](https://github.com/stdlib-js/stdlib/pull/12199) _(by stdlib-bot)_
 -   [`299fbc8`](https://github.com/stdlib-js/stdlib/commit/299fbc897aedf8a25da1ff9ac3ea15e93782dc20) - **docs:** update related packages sections [(#12196)](https://github.com/stdlib-js/stdlib/pull/12196) _(by stdlib-bot)_
 -   [`9330de7`](https://github.com/stdlib-js/stdlib/commit/9330de700a97e4c3cdd6c0e4558f26e1e757178f) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11430)](https://github.com/stdlib-js/stdlib/pull/11430) _(by Karan Anand, Athan Reines)_
