@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-18)
+## Unreleased (2026-05-19)
 
 <section class="features">
 
@@ -956,6 +956,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`299fbc8`](https://github.com/stdlib-js/stdlib/commit/299fbc897aedf8a25da1ff9ac3ea15e93782dc20) - **docs:** update related packages sections [(#12196)](https://github.com/stdlib-js/stdlib/pull/12196) _(by stdlib-bot)_
 -   [`9330de7`](https://github.com/stdlib-js/stdlib/commit/9330de700a97e4c3cdd6c0e4558f26e1e757178f) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11430)](https://github.com/stdlib-js/stdlib/pull/11430) _(by Karan Anand, Athan Reines)_
 -   [`7fab453`](https://github.com/stdlib-js/stdlib/commit/7fab4532629dccd39b59721b833da8a9128a3dec) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11436)](https://github.com/stdlib-js/stdlib/pull/11436) _(by Karan Anand, Athan Reines)_
 -   [`adb3e6a`](https://github.com/stdlib-js/stdlib/commit/adb3e6a9b5487a06a6f3c18e8d37650443248804) - **test:** use accessor functions _(by Athan Reines)_
