@@ -961,6 +961,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`ad8f9b5`](https://github.com/stdlib-js/stdlib/commit/ad8f9b59d9838fadeac1c3a7d53a5c6cfcf11365) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11431)](https://github.com/stdlib-js/stdlib/pull/11431) _(by Karan Anand)_
 -   [`8bc28dd`](https://github.com/stdlib-js/stdlib/commit/8bc28dd32b2b136b57c4c5c5d9298988e8d1ef47) - **refactor:** use utility to create objects having a consistent hidden shape _(by Athan Reines)_
 -   [`050caba`](https://github.com/stdlib-js/stdlib/commit/050cabae51fef57497301d6a63e0e52fb929167d) - **docs:** update namespace table of contents [(#12213)](https://github.com/stdlib-js/stdlib/pull/12213) _(by stdlib-bot)_
 -   [`ffbae89`](https://github.com/stdlib-js/stdlib/commit/ffbae8968bd9c767c100864a4c638037e517b734) - **chore:** fix C lint errors [(#12210)](https://github.com/stdlib-js/stdlib/pull/12210) _(by Geo Daoyu)_
