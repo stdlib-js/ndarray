@@ -708,6 +708,7 @@
 
 ### Bug Fixes
 
+-   [`b2f66e9`](https://github.com/stdlib-js/stdlib/commit/b2f66e9b5dde7a2a858d27dfd27bd9ec490c9b56) - ensure correct order is returned and fix heading [(#12217)](https://github.com/stdlib-js/stdlib/pull/12217)
 -   [`62d6dcc`](https://github.com/stdlib-js/stdlib/commit/62d6dcc0bd4c36e07c629811ab23831bfe65bf7a) - avoid duplicate validation overhead and fix default order resolution
 -   [`0a917be`](https://github.com/stdlib-js/stdlib/commit/0a917be06f551443b9182813d5110711eefffae9) - fallback to default order when computing strides
 -   [`1044235`](https://github.com/stdlib-js/stdlib/commit/1044235dd87754267232ac808add6c4bc30b064e) - fallback to default order upon ambiguous input
@@ -961,6 +962,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`b2f66e9`](https://github.com/stdlib-js/stdlib/commit/b2f66e9b5dde7a2a858d27dfd27bd9ec490c9b56) - **fix:** ensure correct order is returned and fix heading [(#12217)](https://github.com/stdlib-js/stdlib/pull/12217) _(by Philipp Burckhardt)_
 -   [`ad8f9b5`](https://github.com/stdlib-js/stdlib/commit/ad8f9b59d9838fadeac1c3a7d53a5c6cfcf11365) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11431)](https://github.com/stdlib-js/stdlib/pull/11431) _(by Karan Anand)_
 -   [`8bc28dd`](https://github.com/stdlib-js/stdlib/commit/8bc28dd32b2b136b57c4c5c5d9298988e8d1ef47) - **refactor:** use utility to create objects having a consistent hidden shape _(by Athan Reines)_
 -   [`050caba`](https://github.com/stdlib-js/stdlib/commit/050cabae51fef57497301d6a63e0e52fb929167d) - **docs:** update namespace table of contents [(#12213)](https://github.com/stdlib-js/stdlib/pull/12213) _(by stdlib-bot)_
