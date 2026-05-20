@@ -958,6 +958,7 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`1fb7122`](https://github.com/stdlib-js/stdlib/commit/1fb712227d209a2190b44a268e9e9e1465020fdb) - **refactor:** use dedicated descriptor utility _(by Athan Reines)_
 -   [`71da5f4`](https://github.com/stdlib-js/stdlib/commit/71da5f45e9be4fc41109a09df18b0ae4aadd0a4b) - **feat:** add `ndarraylike2descriptor` to namespace _(by Athan Reines)_
 -   [`cba1074`](https://github.com/stdlib-js/stdlib/commit/cba107442ad2820bdb3d7abe470e5a6bf4398442) - **feat:** add `ndarray/base/ndarraylike2descriptor` _(by Athan Reines)_
 -   [`2384460`](https://github.com/stdlib-js/stdlib/commit/23844609387e67c18bc0db81a5abcacdce492ffc) - **docs:** propagate recent doc-note and grammar fixes to sibling packages [(#12193)](https://github.com/stdlib-js/stdlib/pull/12193) _(by Philipp Burckhardt)_
