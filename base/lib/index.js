@@ -923,6 +923,15 @@ setReadOnly( ns, 'nans', require( './../../base/nans' ) );
 setReadOnly( ns, 'nansLike', require( './../../base/nans-like' ) );
 
 /**
+* @name ndarraylike2descriptor
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ndarraylike2descriptor}
+*/
+setReadOnly( ns, 'ndarraylike2descriptor', require( './../../base/ndarraylike2descriptor' ) );
+
+/**
 * @name ndarraylike2ndarray
 * @memberof ns
 * @readonly

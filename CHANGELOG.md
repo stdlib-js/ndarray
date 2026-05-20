@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-19)
+## Unreleased (2026-05-20)
 
 <section class="features">
 
 ### Features
 
+-   [`71da5f4`](https://github.com/stdlib-js/stdlib/commit/71da5f45e9be4fc41109a09df18b0ae4aadd0a4b) - add `ndarraylike2descriptor` to namespace
+-   [`cba1074`](https://github.com/stdlib-js/stdlib/commit/cba107442ad2820bdb3d7abe470e5a6bf4398442) - add `ndarray/base/ndarraylike2descriptor`
 -   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - add `truesLike` to namespace
 -   [`17ab77f`](https://github.com/stdlib-js/stdlib/commit/17ab77f62dbb21592e3a8a856fada9ec08dce0d8) - add `ndarray/trues-like`
 -   [`598f6bd`](https://github.com/stdlib-js/stdlib/commit/598f6bda7563b2cb2a656dbd27ae1437c13a6091) - add `falsesLike` to namespace
@@ -956,6 +958,8 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`71da5f4`](https://github.com/stdlib-js/stdlib/commit/71da5f45e9be4fc41109a09df18b0ae4aadd0a4b) - **feat:** add `ndarraylike2descriptor` to namespace _(by Athan Reines)_
+-   [`cba1074`](https://github.com/stdlib-js/stdlib/commit/cba107442ad2820bdb3d7abe470e5a6bf4398442) - **feat:** add `ndarray/base/ndarraylike2descriptor` _(by Athan Reines)_
 -   [`2384460`](https://github.com/stdlib-js/stdlib/commit/23844609387e67c18bc0db81a5abcacdce492ffc) - **docs:** propagate recent doc-note and grammar fixes to sibling packages [(#12193)](https://github.com/stdlib-js/stdlib/pull/12193) _(by Philipp Burckhardt)_
 -   [`87326e1`](https://github.com/stdlib-js/stdlib/commit/87326e13e95d728df07199ffa9623bd2a676ae37) - **docs:** update namespace table of contents [(#12199)](https://github.com/stdlib-js/stdlib/pull/12199) _(by stdlib-bot)_
 -   [`299fbc8`](https://github.com/stdlib-js/stdlib/commit/299fbc897aedf8a25da1ff9ac3ea15e93782dc20) - **docs:** update related packages sections [(#12196)](https://github.com/stdlib-js/stdlib/pull/12196) _(by stdlib-bot)_
