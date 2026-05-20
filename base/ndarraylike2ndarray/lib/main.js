@@ -20,19 +20,19 @@
 
 // MODULES //
 
-var getDType = require( './../../../dtype' );
-var getShape = require( './../../../shape' );
-var getStrides = require( './../../../strides' );
-var getOffset = require( './../../../offset' );
-var getOrder = require( './../../../order' );
-var getData = require( './../../../data-buffer' );
+var getDType = require( './../../../base/dtype' );
+var getShape = require( './../../../base/shape' );
+var getStrides = require( './../../../base/strides' );
+var getOffset = require( './../../../base/offset' );
+var getOrder = require( './../../../base/order' );
+var getData = require( './../../../base/data-buffer' );
 var ndarray = require( './../../../base/ctor' );
 var defaults = require( './../../../defaults' );
 
 
 // VARIABLES //
 
-var DEFAULT_ORDER = defaults( 'order' );
+var DEFAULT_ORDER = defaults.get( 'order' );
 
 
 // MAIN //
@@ -58,7 +58,7 @@ var DEFAULT_ORDER = defaults( 'order' );
 * // returns <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
 */
 function ndarraylike2ndarray( x ) {
-	return new ndarray( getDType( x ), getData( x ), getShape( x ), getStrides( x ), getOffset( x ), getOrder( x ) || DEFAULT_ORDER ); // eslint-disable-line max-len
+	return new ndarray( getDType( x ), getData( x ), getShape( x, true ), getStrides( x, true ), getOffset( x ), getOrder( x ) || DEFAULT_ORDER ); // eslint-disable-line max-len
 }
 
 

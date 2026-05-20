@@ -708,6 +708,9 @@
 
 ### Bug Fixes
 
+-   [`62d6dcc`](https://github.com/stdlib-js/stdlib/commit/62d6dcc0bd4c36e07c629811ab23831bfe65bf7a) - avoid duplicate validation overhead and fix default order resolution
+-   [`0a917be`](https://github.com/stdlib-js/stdlib/commit/0a917be06f551443b9182813d5110711eefffae9) - fallback to default order when computing strides
+-   [`1044235`](https://github.com/stdlib-js/stdlib/commit/1044235dd87754267232ac808add6c4bc30b064e) - fallback to default order upon ambiguous input
 -   [`4182122`](https://github.com/stdlib-js/stdlib/commit/4182122a377c6211171301c36c0a016680ba791c) - ensure support for \"generic\" dtypes
 -   [`260d472`](https://github.com/stdlib-js/stdlib/commit/260d47287939928b367d40fea78f8c71af25231b) - ensure support for \"generic\" dtypes
 -   [`8516750`](https://github.com/stdlib-js/stdlib/commit/851675024a46ddac355e48493759d1e793a1de8a) - add missing suffix wrappers [(#11904)](https://github.com/stdlib-js/stdlib/pull/11904)
@@ -958,6 +961,9 @@ A total of 49 issues were closed in this release:
 
 <details>
 
+-   [`62d6dcc`](https://github.com/stdlib-js/stdlib/commit/62d6dcc0bd4c36e07c629811ab23831bfe65bf7a) - **fix:** avoid duplicate validation overhead and fix default order resolution _(by Athan Reines)_
+-   [`0a917be`](https://github.com/stdlib-js/stdlib/commit/0a917be06f551443b9182813d5110711eefffae9) - **fix:** fallback to default order when computing strides _(by Athan Reines)_
+-   [`1044235`](https://github.com/stdlib-js/stdlib/commit/1044235dd87754267232ac808add6c4bc30b064e) - **fix:** fallback to default order upon ambiguous input _(by Athan Reines)_
 -   [`1fb7122`](https://github.com/stdlib-js/stdlib/commit/1fb712227d209a2190b44a268e9e9e1465020fdb) - **refactor:** use dedicated descriptor utility _(by Athan Reines)_
 -   [`71da5f4`](https://github.com/stdlib-js/stdlib/commit/71da5f45e9be4fc41109a09df18b0ae4aadd0a4b) - **feat:** add `ndarraylike2descriptor` to namespace _(by Athan Reines)_
 -   [`cba1074`](https://github.com/stdlib-js/stdlib/commit/cba107442ad2820bdb3d7abe470e5a6bf4398442) - **feat:** add `ndarray/base/ndarraylike2descriptor` _(by Athan Reines)_
