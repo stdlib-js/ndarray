@@ -961,6 +961,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`050caba`](https://github.com/stdlib-js/stdlib/commit/050cabae51fef57497301d6a63e0e52fb929167d) - **docs:** update namespace table of contents [(#12213)](https://github.com/stdlib-js/stdlib/pull/12213) _(by stdlib-bot)_
 -   [`ffbae89`](https://github.com/stdlib-js/stdlib/commit/ffbae8968bd9c767c100864a4c638037e517b734) - **chore:** fix C lint errors [(#12210)](https://github.com/stdlib-js/stdlib/pull/12210) _(by Geo Daoyu)_
 -   [`62d6dcc`](https://github.com/stdlib-js/stdlib/commit/62d6dcc0bd4c36e07c629811ab23831bfe65bf7a) - **fix:** avoid duplicate validation overhead and fix default order resolution _(by Athan Reines)_
 -   [`0a917be`](https://github.com/stdlib-js/stdlib/commit/0a917be06f551443b9182813d5110711eefffae9) - **fix:** fallback to default order when computing strides _(by Athan Reines)_
