@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`03150a9`](https://github.com/stdlib-js/stdlib/commit/03150a9b33931a90b5e1b374f8a7c511baeaa2cb) - update `ndarray/base` TypeScript declarations [(#12259)](https://github.com/stdlib-js/stdlib/pull/12259)
 -   [`71da5f4`](https://github.com/stdlib-js/stdlib/commit/71da5f45e9be4fc41109a09df18b0ae4aadd0a4b) - add `ndarraylike2descriptor` to namespace
 -   [`cba1074`](https://github.com/stdlib-js/stdlib/commit/cba107442ad2820bdb3d7abe470e5a6bf4398442) - add `ndarray/base/ndarraylike2descriptor`
 -   [`558288c`](https://github.com/stdlib-js/stdlib/commit/558288c022c1a3612cb5924f1383d0c9d831ebbc) - add `truesLike` to namespace
@@ -962,6 +963,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`03150a9`](https://github.com/stdlib-js/stdlib/commit/03150a9b33931a90b5e1b374f8a7c511baeaa2cb) - **feat:** update `ndarray/base` TypeScript declarations [(#12259)](https://github.com/stdlib-js/stdlib/pull/12259) _(by stdlib-bot)_
 -   [`a2fcfdb`](https://github.com/stdlib-js/stdlib/commit/a2fcfdb247058815043c86fa2d2f93a4b6a7a0c7) - **docs:** improve doctests for ndarray instances in `ndarray/fill` [(#12248)](https://github.com/stdlib-js/stdlib/pull/12248) _(by Nightt)_
 -   [`008cf16`](https://github.com/stdlib-js/stdlib/commit/008cf164e7790c1e318752b409b86100d91e1f69) - **docs:** update related packages sections [(#12223)](https://github.com/stdlib-js/stdlib/pull/12223) _(by stdlib-bot)_
 -   [`1a5e918`](https://github.com/stdlib-js/stdlib/commit/1a5e918630d60846c8a45a1f51687ed441c54dbe) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11437)](https://github.com/stdlib-js/stdlib/pull/11437) _(by Karan Anand)_
