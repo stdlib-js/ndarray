@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-22)
+## Unreleased (2026-05-24)
 
 <section class="features">
 
@@ -962,6 +962,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`a2fcfdb`](https://github.com/stdlib-js/stdlib/commit/a2fcfdb247058815043c86fa2d2f93a4b6a7a0c7) - **docs:** improve doctests for ndarray instances in `ndarray/fill` [(#12248)](https://github.com/stdlib-js/stdlib/pull/12248) _(by Nightt)_
 -   [`008cf16`](https://github.com/stdlib-js/stdlib/commit/008cf164e7790c1e318752b409b86100d91e1f69) - **docs:** update related packages sections [(#12223)](https://github.com/stdlib-js/stdlib/pull/12223) _(by stdlib-bot)_
 -   [`1a5e918`](https://github.com/stdlib-js/stdlib/commit/1a5e918630d60846c8a45a1f51687ed441c54dbe) - **bench:** refactor to use string interpolation in `ndarray/base` [(#11437)](https://github.com/stdlib-js/stdlib/pull/11437) _(by Karan Anand)_
 -   [`b2f66e9`](https://github.com/stdlib-js/stdlib/commit/b2f66e9b5dde7a2a858d27dfd27bd9ec490c9b56) - **fix:** ensure correct order is returned and fix heading [(#12217)](https://github.com/stdlib-js/stdlib/pull/12217) _(by Philipp Burckhardt)_
@@ -2808,7 +2809,7 @@ A total of 50 issues were closed in this release:
 
 ### Contributors
 
-A total of 46 people contributed to this release. Thank you to the following contributors:
+A total of 47 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan kumar
 -   Athan Reines
@@ -2836,6 +2837,7 @@ A total of 46 people contributed to this release. Thank you to the following con
 -   Muhammad Taaha Tariq
 -   Navyansh Kesarwani
 -   Neeraj Pathak
+-   Nightt
 -   Partha Das
 -   Payal Goswami
 -   Philipp Burckhardt
