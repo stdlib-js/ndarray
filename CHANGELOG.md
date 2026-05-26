@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-24)
+## Unreleased (2026-05-26)
 
 <section class="features">
 
@@ -963,6 +963,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`f42a835`](https://github.com/stdlib-js/stdlib/commit/f42a835a111bc9a78805bbe096bb6c90a182ea6c) - **docs:** update related packages sections [(#12293)](https://github.com/stdlib-js/stdlib/pull/12293) _(by stdlib-bot)_
 -   [`03150a9`](https://github.com/stdlib-js/stdlib/commit/03150a9b33931a90b5e1b374f8a7c511baeaa2cb) - **feat:** update `ndarray/base` TypeScript declarations [(#12259)](https://github.com/stdlib-js/stdlib/pull/12259) _(by stdlib-bot)_
 -   [`a2fcfdb`](https://github.com/stdlib-js/stdlib/commit/a2fcfdb247058815043c86fa2d2f93a4b6a7a0c7) - **docs:** improve doctests for ndarray instances in `ndarray/fill` [(#12248)](https://github.com/stdlib-js/stdlib/pull/12248) _(by Nightt)_
 -   [`008cf16`](https://github.com/stdlib-js/stdlib/commit/008cf164e7790c1e318752b409b86100d91e1f69) - **docs:** update related packages sections [(#12223)](https://github.com/stdlib-js/stdlib/pull/12223) _(by stdlib-bot)_
