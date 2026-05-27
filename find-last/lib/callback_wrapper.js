@@ -18,7 +18,7 @@
 
 'use strict';
 
-// VARIABLES //
+// MODULES //
 
 var getShape = require( './../../shape' );
 
