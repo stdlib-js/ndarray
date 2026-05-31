@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-28)
+## Unreleased (2026-05-31)
 
 <section class="features">
 
@@ -963,6 +963,7 @@ A total of 50 issues were closed in this release:
 
 <details>
 
+-   [`9d35248`](https://github.com/stdlib-js/stdlib/commit/9d3524866ec6833c164e5f56bc6197d63faafb48) - **docs:** update related packages sections [(#12386)](https://github.com/stdlib-js/stdlib/pull/12386) _(by stdlib-bot)_
 -   [`ece1cb0`](https://github.com/stdlib-js/stdlib/commit/ece1cb034f55713dfc2c677e7a8fb091e090f099) - **docs:** update related packages sections [(#12326)](https://github.com/stdlib-js/stdlib/pull/12326) _(by stdlib-bot)_
 -   [`8ff59d6`](https://github.com/stdlib-js/stdlib/commit/8ff59d63eaa88d252f5404e3b3affdf5c66821d5) - **chore:** propagate `blas/*` JSDoc and `cscal` header fixes to siblings [(#12318)](https://github.com/stdlib-js/stdlib/pull/12318) _(by Philipp Burckhardt)_
 -   [`f42a835`](https://github.com/stdlib-js/stdlib/commit/f42a835a111bc9a78805bbe096bb6c90a182ea6c) - **docs:** update related packages sections [(#12293)](https://github.com/stdlib-js/stdlib/pull/12293) _(by stdlib-bot)_
