@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.4.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, broadcastScalarLike, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, diagonal, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, falses, falsesLike, fill, fillBy, fillSlice, filter, filterMap, find, findLast, first, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, hconcat, includes, ind2sub, indexModes, inputCastingPolicies, iter, last, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, nans, nansLike, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndarraylike2scalar, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, onesLike, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, reverseDimensions, rot180, rot90, rotl90, rotr90, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, toReversedDimensions, toRot180, toRot90, toRotl90, toRotr90, toTransposed, toUnflattened, transpose, trues, truesLike, unflatten, unshift, vconcat, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.4.1-deno/mod.js';
+import { DataType, FancyArray, any, anyBy, array, at, base, broadcastArray, broadcastArrays, broadcastScalar, broadcastScalarLike, castingModes, colcat, concat, concat1d, copy, countFalsy, countIf, countTruthy, dataBuffer, defaults, diagonal, dispatch, dtype, dtypes, empty, emptyLike, every, everyBy, falses, falsesLike, fill, fillBy, fillSlice, filter, filterMap, find, findLast, first, flag, flags, flatten, flattenBy, flattenFrom, flattenFromBy, fliplr, flipud, forEach, hconcat, includes, ind2sub, indexModes, inputCastingPolicies, iter, last, map, maybeBroadcastArray, maybeBroadcastArrays, minDataType, mostlySafeCasts, nans, nansLike, ndarray, ndarray2array, ndarray2fancy, ndarray2json, ndarray2localeString, ndarray2string, ndarrayWith, ndarraylike2ndarray, ndarraylike2scalar, ndims, ndindex, nextDataType, numel, numelDimension, offset, ones, onesLike, order, orders, outputDataTypePolicies, pop, prependSingletonDimensions, promotionRules, push, reject, removeSingletonDimensions, reverse, reverseDimension, reverseDimensions, rot180, rot90, rotl90, rotr90, rowcat, safeCasts, sameKindCasts, scalar2ndarray, scalar2ndarrayLike, shape, shift, slice, sliceAssign, sliceDimension, sliceDimensionFrom, sliceDimensionTo, sliceFrom, sliceTo, some, someBy, spreadDimensions, stride, strides, sub2ind, toFlippedlr, toFlippedud, toReversed, toReversedDimension, toReversedDimensions, toRot180, toRot90, toRotl90, toRotr90, toTransposed, toUnflattened, transpose, trues, truesLike, unflatten, unshift, vconcat, vector, zeros, zerosLike } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
 ```
 
 #### ns
@@ -326,7 +331,7 @@ The namespace contains the following multidimensional array utility functions:
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@v0.4.1-deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray@deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
