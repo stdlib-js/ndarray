@@ -28,7 +28,9 @@ import base = require( './../../base' );
 import broadcastArray = require( './../../broadcast-array' );
 import broadcastArrays = require( './../../broadcast-arrays' );
 import broadcastScalar = require( './../../broadcast-scalar' );
+import broadcastScalarLike = require( './../../broadcast-scalar-like' );
 import castingModes = require( './../../casting-modes' );
+import colcat = require( './../../colcat' );
 import concat = require( './../../concat' );
 import concat1d = require( './../../concat1d' );
 import copy = require( './../../copy' );
@@ -38,6 +40,7 @@ import countTruthy = require( './../../count-truthy' );
 import ndarray = require( './../../ctor' );
 import dataBuffer = require( './../../data-buffer' );
 import defaults = require( './../../defaults' );
+import diagonal = require( './../../diagonal' );
 import dispatch = require( './../../dispatch' );
 import dtype = require( './../../dtype' );
 import DataType = require( './../../dtype-ctor' );
@@ -46,6 +49,8 @@ import empty = require( './../../empty' );
 import emptyLike = require( './../../empty-like' );
 import every = require( './../../every' );
 import everyBy = require( './../../every-by' );
+import falses = require( './../../falses' );
+import falsesLike = require( './../../falses-like' );
 import FancyArray = require( './../../fancy' );
 import fill = require( './../../fill' );
 import fillBy = require( './../../fill-by' );
@@ -54,6 +59,7 @@ import filter = require( './../../filter' );
 import filterMap = require( './../../filter-map' );
 import find = require( './../../find' );
 import findLast = require( './../../find-last' );
+import first = require( './../../first' );
 import flag = require( './../../flag' );
 import flags = require( './../../flags' );
 import flatten = require( './../../flatten' );
@@ -65,24 +71,30 @@ import flipud = require( './../../flipud' );
 import forEach = require( './../../for-each' );
 import scalar2ndarray = require( './../../from-scalar' );
 import scalar2ndarrayLike = require( './../../from-scalar-like' );
+import hconcat = require( './../../hconcat' );
 import includes = require( './../../includes' );
 import ind2sub = require( './../../ind2sub' );
 import ndindex = require( './../../index' );
 import indexModes = require( './../../index-modes' );
 import inputCastingPolicies = require( './../../input-casting-policies' );
 import iter = require( './../../iter' );
+import last = require( './../../last' );
 import map = require( './../../map' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
 import maybeBroadcastArrays = require( './../../maybe-broadcast-arrays' );
 import minDataType = require( './../../min-dtype' );
 import mostlySafeCasts = require( './../../mostly-safe-casts' );
+import nans = require( './../../nans' );
+import nansLike = require( './../../nans-like' );
 import ndarraylike2ndarray = require( './../../ndarraylike2ndarray' );
+import ndarraylike2scalar = require( './../../ndarraylike2scalar' );
 import ndims = require( './../../ndims' );
 import nextDataType = require( './../../next-dtype' );
 import numel = require( './../../numel' );
 import numelDimension = require( './../../numel-dimension' );
 import offset = require( './../../offset' );
 import ones = require( './../../ones' );
+import onesLike = require( './../../ones-like' );
 import order = require( './../../order' );
 import orders = require( './../../orders' );
 import outputDataTypePolicies = require( './../../output-dtype-policies' );
@@ -91,8 +103,15 @@ import prependSingletonDimensions = require( './../../prepend-singleton-dimensio
 import promotionRules = require( './../../promotion-rules' );
 import push = require( './../../push' );
 import reject = require( './../../reject' );
+import removeSingletonDimensions = require( './../../remove-singleton-dimensions' );
 import reverse = require( './../../reverse' );
 import reverseDimension = require( './../../reverse-dimension' );
+import reverseDimensions = require( './../../reverse-dimensions' );
+import rot90 = require( './../../rot90' );
+import rot180 = require( './../../rot180' );
+import rotl90 = require( './../../rotl90' );
+import rotr90 = require( './../../rotr90' );
+import rowcat = require( './../../rowcat' );
 import safeCasts = require( './../../safe-casts' );
 import sameKindCasts = require( './../../same-kind-casts' );
 import shape = require( './../../shape' );
@@ -117,7 +136,20 @@ import ndarray2json = require( './../../to-json' );
 import ndarray2localeString = require( './../../to-locale-string' );
 import toReversed = require( './../../to-reversed' );
 import toReversedDimension = require( './../../to-reversed-dimension' );
+import toReversedDimensions = require( './../../to-reversed-dimensions' );
+import toRot90 = require( './../../to-rot90' );
+import toRot180 = require( './../../to-rot180' );
+import toRotl90 = require( './../../to-rotl90' );
+import toRotr90 = require( './../../to-rotr90' );
+import ndarray2string = require( './../../to-string' );
+import toTransposed = require( './../../to-transposed' );
+import toUnflattened = require( './../../to-unflattened' );
+import transpose = require( './../../transpose' );
+import trues = require( './../../trues' );
+import truesLike = require( './../../trues-like' );
+import unflatten = require( './../../unflatten' );
 import unshift = require( './../../unshift' );
+import vconcat = require( './../../vconcat' );
 import vector = require( './../../vector' );
 import ndarrayWith = require( './../../with' );
 import zeros = require( './../../zeros' );
@@ -511,6 +543,27 @@ interface Namespace {
 	broadcastScalar: typeof broadcastScalar;
 
 	/**
+	* Broadcasts a scalar value to an ndarray having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input ndarray
+	* @param value - scalar value
+	* @param options - function options
+	* @returns ndarray
+	*
+	* @example
+	* var empty = require( './../../empty' );
+	*
+	* var x = empty( [ 2, 2 ], {
+	*    'dtype': 'generic'
+	* });
+	* // returns <ndarray>
+	*
+	* var out = ns.broadcastScalarLike( x, 1.0 );
+	* // returns <ndarray>
+	*/
+	broadcastScalarLike: typeof broadcastScalarLike;
+
+	/**
 	* Returns a list of ndarray casting modes.
 	*
 	* ## Notes
@@ -533,6 +586,47 @@ interface Namespace {
 	* // returns [ 'none', 'equiv', 'safe', 'mostly-safe', 'same-kind', 'unsafe' ]
 	*/
 	castingModes: typeof castingModes;
+
+	/**
+	* Concatenates a list of one-dimensional or two-dimensional ndarrays as columns.
+	*
+	* ## Notes
+	*
+	* -   One-dimensional input ndarrays having length `N` are promoted to two-dimensional ndarrays having shape `[N, 1]`.
+	* -   Input ndarrays must have the same number of rows.
+	*
+	* @param arrays - array-like object containing input ndarrays
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0 ] );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0 ]
+	*
+	* var y = array( [ [ 4.0, 5.0 ], [ 6.0, 7.0 ], [ 8.0, 9.0 ] ] );
+	* // returns <ndarray>[ [ 4.0, 5.0 ], [ 6.0, 7.0 ], [ 8.0, 9.0 ] ]
+	*
+	* var out = ns.colcat( [ x, y ] );
+	* // returns <ndarray>[ [ 1.0, 4.0, 5.0 ], [ 2.0, 6.0, 7.0 ], [ 3.0, 8.0, 9.0 ] ]
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0 ] );
+	* var y = array( [ [ 4.0, 5.0 ], [ 6.0, 7.0 ], [ 8.0, 9.0 ] ] );
+	*
+	* var z = zeros( [ 3, 3 ] );
+	* // returns <ndarray>[ [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ] ]
+	*
+	* var out = ns.colcat.assign( [ x, y ], z );
+	* // returns <ndarray>[ [ 1.0, 4.0, 5.0 ], [ 2.0, 6.0, 7.0 ], [ 3.0, 8.0, 9.0 ] ]
+	*
+	* var bool = ( out === z );
+	* // returns true
+	*/
+	colcat: typeof colcat;
 
 	/**
 	* Concatenates a list of ndarrays along a specified ndarray dimension.
@@ -911,6 +1005,32 @@ interface Namespace {
 	defaults: typeof defaults;
 
 	/**
+	* Returns a read-only view of the diagonal of a matrix (or stack of matrices).
+	*
+	* ## Notes
+	*
+	* -   The order of the dimension indices contained in `options.dims` matters. The first element specifies the row-like dimension. The second element specifies the column-like dimension.
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
+	* -   The diagonal offset `options.k` is interpreted as `column - row`. Accordingly, when `options.k = 0`, the function returns the main diagonal; when `options.k > 0`, the function returns the diagonal above the main diagonal; and when `options.k < 0`, the function returns the diagonal below the main diagonal.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.k - diagonal offset (default: 0)
+	* @param options.dims - dimension indices defining the plane from which to extract the diagonal (default: [-2, -1])
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+	*
+	* var y = ns.diagonal( x );
+	* // returns <ndarray>[ 1.0, 5.0, 9.0 ]
+	*/
+	diagonal: typeof diagonal;
+
+	/**
 	* Returns an ndarray function interface which performs multiple dispatch.
 	*
 	* @param fcns - list of ndarray functions
@@ -1208,6 +1328,73 @@ interface Namespace {
 	* // returns true
 	*/
 	everyBy: typeof everyBy;
+
+	/**
+	* Creates an ndarray filled with `false` values and having a specified shape and data type.
+	*
+	* @param shape - array shape
+	* @param options - options
+	* @param options.dtype - underlying data type (default: 'bool')
+	* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns filled ndarray
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	*
+	* var arr = ns.falses( [ 2, 2 ] );
+	* // returns <ndarray>[ [ false, false ], [ false, false ] ]
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'bool'
+	*/
+	falses: typeof falses;
+
+	/**
+	* Creates an ndarray filled with `false` values and having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @param options - options
+	* @param options.dtype - output array data type
+	* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+	* @param options.shape - output array shape
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns filled ndarray
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	* var empty = require( './../../empty' );
+	*
+	* var x = empty( [ 2, 2 ], {
+	*     'dtype': 'generic'
+	* });
+	* // returns <ndarray>
+	*
+	* var sh = getShape( x );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( x ) );
+	* // returns 'generic'
+	*
+	* var y = ns.falsesLike( x );
+	* // returns <ndarray>[ [ false, false ], [ false, false ] ]
+	*
+	* sh = getShape( y );
+	* // returns [ 2, 2 ]
+	*
+	* dt = String( getDType( y ) );
+	* // returns 'generic'
+	*/
+	falsesLike: typeof falsesLike;
 
 	/**
 	* Fancy array constructor.
@@ -1543,6 +1730,40 @@ interface Namespace {
 	findLast: typeof findLast;
 
 	/**
+	* Returns a read-only view of the first element (or subarray) along one or more ndarray dimensions.
+	*
+	* ## Notes
+	*
+	* -   By default, the function performs the operation over all dimensions and thus returns the first element of the input ndarray as a zero-dimensional ndarray.
+	* -   If provided an empty `dims` array, the function returns a read-only view of the input ndarray.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform the operation
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var v = ns.first( x );
+	* // returns <ndarray>[ 1.0 ]
+	*
+	* v = ns.first( x, {
+	*     'dims': [ -1 ]
+	* });
+	* // returns <ndarray>[ 1.0, 3.0 ]
+	*
+	* v = ns.first( x, {
+	*     'dims': [ -2 ]
+	* });
+	* // returns <ndarray>[ 1.0, 2.0 ]
+	*/
+	first: typeof first;
+
+	/**
 	* Returns a specified flag for a provided ndarray.
 	*
 	* @param x - input ndarray
@@ -1835,6 +2056,45 @@ interface Namespace {
 	scalar2ndarrayLike: typeof scalar2ndarrayLike;
 
 	/**
+	* Concatenates a list of ndarrays along the last dimension.
+	*
+	* @param arrays - array-like object containing input ndarrays
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = array( [ [ 5.0, 6.0, 7.0 ], [ 8.0, 9.0, 10.0 ] ] );
+	* // returns <ndarray>[ [ 5.0, 6.0, 7.0 ], [ 8.0, 9.0, 10.0 ] ]
+	*
+	* var out = ns.hconcat( [ x, y ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 5.0, 6.0, 7.0 ], [ 3.0, 4.0, 8.0, 9.0, 10.0 ] ]
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = array( [ [ 5.0, 6.0, 7.0 ], [ 8.0, 9.0, 10.0 ] ] );
+	* // returns <ndarray>[ [ 5.0, 6.0, 7.0 ], [ 8.0, 9.0, 10.0 ] ]
+	*
+	* var z = zeros( [ 2, 5 ] );
+	* // returns <ndarray>[ [ 0.0, 0.0, 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0, 0.0, 0.0 ] ]
+	*
+	* var out = ns.hconcat.assign( [ x, y ], z );
+	* // returns <ndarray>[ [ 1.0, 2.0, 5.0, 6.0, 7.0 ], [ 3.0, 4.0, 8.0, 9.0, 10.0 ] ]
+	*
+	* var bool = ( out === z );
+	* // returns true
+	*/
+	hconcat: typeof hconcat;
+
+	/**
 	* Tests whether an ndarray contains a specified value along one or more dimensions.
 	*
 	* @param x - input ndarray
@@ -2030,6 +2290,40 @@ interface Namespace {
 	iter: typeof iter;
 
 	/**
+	* Returns a read-only view of the last element (or subarray) along one or more ndarray dimensions.
+	*
+	* ## Notes
+	*
+	* -   By default, the function performs the operation over all dimensions and thus returns the last element of the input ndarray as a zero-dimensional ndarray.
+	* -   If provided an empty `dims` array, the function returns a read-only view of the input ndarray.
+	*
+	* @param x - input ndarray
+	* @param options - function options
+	* @param options.dims - list of dimensions over which to perform the operation
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var v = ns.last( x );
+	* // returns <ndarray>[ 4.0 ]
+	*
+	* v = ns.last( x, {
+	*     'dims': [ -1 ]
+	* });
+	* // returns <ndarray>[ 2.0, 4.0 ]
+	*
+	* v = ns.last( x, {
+	*     'dims': [ -2 ]
+	* });
+	* // returns <ndarray>[ 3.0, 4.0 ]
+	*/
+	last: typeof last;
+
+	/**
 	* Applies a callback function to elements in an input ndarray and assigns results to elements in a new output ndarray.
 	*
 	* @param x - input ndarray
@@ -2212,6 +2506,73 @@ interface Namespace {
 	mostlySafeCasts: typeof mostlySafeCasts;
 
 	/**
+	* Creates a NaN-filled array having a specified shape and data type.
+	*
+	* @param shape - array shape
+	* @param options - options
+	* @param options.dtype - underlying data type (default: 'float64')
+	* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns NaN-filled array
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	*
+	* var arr = ns.nans( [ 2, 2 ] );
+	* // returns <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'float64'
+	*/
+	nans: typeof nans;
+
+	/**
+	* Creates a NaN-filled array having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @param options - options
+	* @param options.dtype - output array data type
+	* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+	* @param options.shape - output array shape
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns NaN-filled array
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = zeros( [ 2, 2 ], {
+	*     'dtype': 'float64'
+	* });
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	*
+	* var sh = getShape( x );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( x ) );
+	* // returns 'float64'
+	*
+	* var y = ns.nansLike( x );
+	* // returns <ndarray>[ [ NaN, NaN ], [ NaN, NaN ] ]
+	*
+	* sh = getShape( y );
+	* // returns [ 2, 2 ]
+	*
+	* dt = String( getDType( y ) );
+	* // returns 'float64'
+	*/
+	nansLike: typeof nansLike;
+
+	/**
 	* Converts an ndarray-like object to an ndarray.
 	*
 	* ## Notes
@@ -2234,6 +2595,23 @@ interface Namespace {
 	* // returns <ndarray>
 	*/
 	ndarraylike2ndarray: typeof ndarraylike2ndarray;
+
+	/**
+	* Converts an ndarray-like object to a scalar value.
+	*
+	* @param x - input ndarray
+	* @returns scalar value
+	*
+	* @example
+	* var scalar2ndarray = require( './../../from-scalar' );
+	*
+	* var x = scalar2ndarray( 1.0 );
+	* // returns <ndarray>[ 1.0 ]
+	*
+	* var out = ns.ndarraylike2scalar( x );
+	* // returns 1.0
+	*/
+	ndarraylike2scalar: typeof ndarraylike2scalar;
 
 	/**
 	* Returns the number of ndarray dimensions.
@@ -2336,6 +2714,46 @@ interface Namespace {
 	* // returns 'float64'
 	*/
 	ones: typeof ones;
+
+	/**
+	* Creates a ones-filled array having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @param options - options
+	* @param options.dtype - output array data type
+	* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+	* @param options.shape - output array shape
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns ones-filled array
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = zeros( [ 2, 2 ], {
+	*     'dtype': 'float64'
+	* });
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	*
+	* var sh = getShape( x );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( x ) );
+	* // returns 'float64'
+	*
+	* var y = ns.onesLike( x );
+	* // returns <ndarray>[ [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+	*
+	* sh = getShape( y );
+	* // returns [ 2, 2 ]
+	*
+	* dt = String( getDType( y ) );
+	* // returns 'float64'
+	*/
+	onesLike: typeof onesLike;
 
 	/**
 	* Returns the layout order of a provided ndarray.
@@ -2557,6 +2975,25 @@ interface Namespace {
 	reject: typeof reject;
 
 	/**
+	* Returns a read-only view of an input ndarray with singleton dimensions removed.
+	*
+	* @param x - input array
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1, 2 ], [ 3, 4 ] ], {
+	*     'ndmin': 5
+	* });
+	* // returns <ndarray>[ [ [ [ [ 1, 2 ], [ 3, 4 ] ] ] ] ]
+	*
+	* var y = ns.removeSingletonDimensions( x );
+	* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+	*/
+	removeSingletonDimensions: typeof removeSingletonDimensions;
+
+	/**
 	* Returns a read-only view of an input ndarray in which the order of elements along each dimension is reversed.
 	*
 	* @param x - input array
@@ -2564,7 +3001,6 @@ interface Namespace {
 	*
 	* @example
 	* var ndarray = require( './../../ctor' );
-	* var ndarray2array = require( './../../to-array' );
 	*
 	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 	* var shape = [ 3, 2 ];
@@ -2572,16 +3008,10 @@ interface Namespace {
 	* var offset = 0;
 	*
 	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( x );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 	*
 	* var y = ns.reverse( x );
-	* // returns <ndarray>
-	*
-	* arr = ndarray2array( y );
-	* // returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	* // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 	*/
 	reverse: typeof reverse;
 
@@ -2614,6 +3044,153 @@ interface Namespace {
 	* // returns [ [ 5.0, 6.0 ], [ 3.0, 4.0 ], [ 1.0, 2.0 ] ]
 	*/
 	reverseDimension: typeof reverseDimension;
+
+	/**
+	* Returns a read-only view of an input ndarray in which the order of elements along specified dimensions is reversed.
+	*
+	* @param x - input array
+	* @param dims - indices of dimensions to reverse
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	*
+	* var y = ns.reverseDimensions( x, [ 0, 1 ] );
+	* // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	*/
+	reverseDimensions: typeof reverseDimensions;
+
+	/**
+	* Returns a read-only view of an input ndarray rotated 90 degrees in a specified plane.
+	*
+	* ## Notes
+	*
+	* -   If `options.k > 0`, the function rotates the plane from the first specified dimension toward the second specified dimension. This means that, for a two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates the plane counterclockwise.
+	* -   If `options.k < 0`, the function rotates the plane from the second specified dimension toward the first specified dimension. This means that, for a two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates the plane clockwise.
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.k - number of times to rotate by 90 degrees (default: 1)
+	* @param options.dims - dimension indices defining the plane of rotation (default: [-2, -1])
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = ns.rot90( x );
+	* // returns <ndarray>[ [ 2.0, 4.0 ], [ 1.0, 3.0 ] ]
+	*/
+	rot90: typeof rot90;
+
+	/**
+	* Returns a read-only view of an input ndarray rotated 180 degrees in a specified plane.
+	*
+	* ## Notes
+	*
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.dims - dimension indices defining the plane of rotation (default: [-2, -1])
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = ns.rot180( x );
+	* // returns <ndarray>[ [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	*/
+	rot180: typeof rot180;
+
+	/**
+	* Returns a read-only view of a matrix (or a stack of matrices) rotated 90 degrees counterclockwise.
+	*
+	* @param x - input array
+	* @param k - number of times to rotate by 90 degrees
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*
+	* var y = ns.rotl90( x, 1 );
+	* // returns <ndarray>[ [ 3.0, 6.0 ], [ 2.0, 5.0 ], [ 1.0, 4.0 ] ]
+	*/
+	rotl90: typeof rotl90;
+
+	/**
+	* Returns a read-only view of a matrix (or a stack of matrices) rotated 90 degrees clockwise.
+	*
+	* @param x - input array
+	* @param k - number of times to rotate by 90 degrees
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*
+	* var y = ns.rotr90( x, 1 );
+	* // returns <ndarray>[ [ 4.0, 1.0 ], [ 5.0, 2.0 ], [ 6.0, 3.0 ] ]
+	*/
+	rotr90: typeof rotr90;
+
+	/**
+	* Concatenates a list of one-dimensional or two-dimensional ndarrays as rows.
+	*
+	* ## Notes
+	*
+	* -   One-dimensional input ndarrays having length `N` are promoted to two-dimensional ndarrays having shape `[1, N]`.
+	* -   Input ndarrays must have the same number of columns.
+	*
+	* @param arrays - array-like object containing input ndarrays
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0 ] );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0 ]
+	*
+	* var y = array( [ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ] );
+	* // returns <ndarray>[ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+	*
+	* var out = ns.rowcat( [ x, y ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0 ] );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0 ]
+	*
+	* var y = array( [ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ] );
+	* // returns <ndarray>[ [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+	*
+	* var z = zeros( [ 3, 3 ] );
+	* // returns <ndarray>[ [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ] ]
+	*
+	* var out = ns.rowcat.assign( [ x, y ], z );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ], [ 7.0, 8.0, 9.0 ] ]
+	*
+	* var bool = ( out === z );
+	* // returns true
+	*/
+	rowcat: typeof rowcat;
 
 	/**
 	* Returns a list of ndarray data types to which a provided ndarray data type can be safely cast.
@@ -3328,7 +3905,6 @@ interface Namespace {
 	*
 	* @example
 	* var ndarray = require( './../../ctor' );
-	* var ndarray2array = require( './../../to-array' );
 	*
 	* var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 	* var shape = [ 3, 2 ];
@@ -3336,16 +3912,10 @@ interface Namespace {
 	* var offset = 0;
 	*
 	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
-	* // returns <ndarray>
-	*
-	* var arr = ndarray2array( x );
-	* // returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 	*
 	* var y = ns.toReversed( x );
-	* // returns <ndarray>
-	*
-	* arr = ndarray2array( y );
-	* // returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	* // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
 	*/
 	toReversed: typeof toReversed;
 
@@ -3367,6 +3937,279 @@ interface Namespace {
 	* // returns <ndarray>[ [ 2.0, 1.0 ], [ 4.0, 3.0 ] ]
 	*/
 	toReversedDimension: typeof toReversedDimension;
+
+	/**
+	* Returns a new ndarray where the order of elements of an input ndarray along specified dimensions is reversed.
+	*
+	* @param x - input array
+	* @param dims - indices of dimensions to reverse
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+	*
+	* var y = ns.toReversedDimensions( x, [ 0, 1 ] );
+	* // returns <ndarray>[ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	*/
+	toReversedDimensions: typeof toReversedDimensions;
+
+	/**
+	* Returns a new ndarray where an input ndarray is rotated 90 degrees in a specified plane.
+	*
+	* ## Notes
+	*
+	* -   If `options.k > 0`, the function rotates the plane from the first specified dimension toward the second specified dimension. This means that, for a two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates the plane counterclockwise.
+	* -   If `options.k < 0`, the function rotates the plane from the second specified dimension toward the first specified dimension. This means that, for a two-dimensional ndarray and `options.dims = [0, 1]`, the function rotates the plane clockwise.
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.k - number of times to rotate by 90 degrees (default: 1)
+	* @param options.dims - dimension indices defining the plane of rotation (default: [-2, -1])
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = ns.toRot90( x );
+	* // returns <ndarray>[ [ 2.0, 4.0 ], [ 1.0, 3.0 ] ]
+	*/
+	toRot90: typeof toRot90;
+
+	/**
+	* Returns a new ndarray where an input ndarray is rotated 180 degrees in a specified plane.
+	*
+	* ## Notes
+	*
+	* -   Each provided dimension index must reside on the interval `[-ndims, ndims-1]`.
+	*
+	* @param x - input array
+	* @param options - function options
+	* @param options.dims - dimension indices defining the plane of rotation (default: [-2, -1])
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = ns.toRot180( x );
+	* // returns <ndarray>[ [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
+	*/
+	toRot180: typeof toRot180;
+
+	/**
+	* Returns a new ndarray where a matrix (or a stack of matrices) is rotated 90 degrees counterclockwise.
+	*
+	* @param x - input array
+	* @param k - number of times to rotate by 90 degrees
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*
+	* var y = ns.toRotl90( x, 1 );
+	* // returns <ndarray>[ [ 3.0, 6.0 ], [ 2.0, 5.0 ], [ 1.0, 4.0 ] ]
+	*/
+	toRotl90: typeof toRotl90;
+
+	/**
+	* Returns a new ndarray where a matrix (or a stack of matrices) is rotated 90 degrees clockwise.
+	*
+	* @param x - input array
+	* @param k - number of times to rotate by 90 degrees
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*
+	* var y = ns.toRotr90( x, 1 );
+	* // returns <ndarray>[ [ 4.0, 1.0 ], [ 5.0, 2.0 ], [ 6.0, 3.0 ] ]
+	*/
+	toRotr90: typeof toRotr90;
+
+	/**
+	* Serializes an ndarray as a string.
+	*
+	* ## Notes
+	*
+	* -   The function does **not** serialize data outside of the buffer region defined by the ndarray view.
+	*
+	* @param x - input ndarray
+	* @returns string representation
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>
+	*
+	* var str = ns.ndarray2string( x );
+	* // returns <string>
+	*/
+	ndarray2string: typeof ndarray2string;
+
+	/**
+	* Returns a new ndarray containing the elements of an input ndarray but whose last two dimensions are transposed.
+	*
+	* ## Notes
+	*
+	* -   The function operates on a stack of matrices, transposing the last two dimensions of the input ndarray.
+	* -   The input ndarray must have two or more dimensions.
+	*
+	* @param x - input array
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ] );
+	* // returns <ndarray>[ [ 1, 2, 3 ], [ 4, 5, 6 ] ]
+	*
+	* var y = ns.toTransposed( x );
+	* // returns <ndarray>[ [ 1, 4 ], [ 2, 5 ], [ 3, 6 ] ]
+	*/
+	toTransposed: typeof toTransposed;
+
+	/**
+	* Returns a new ndarray in which a specified dimension of an input ndarray is expanded over multiple dimensions.
+	*
+	* @param x - input array
+	* @param dim - dimension to be unflattened
+	* @param sizes - new shape of the unflattened dimension
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+	*
+	* var y = ns.toUnflattened( x, 0, [ 2, 3 ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*/
+	toUnflattened: typeof toUnflattened;
+
+	/**
+	* Returns a read-only view of an input ndarray in which the last two dimensions are transposed.
+	*
+	* ## Notes
+	*
+	* -   The function operates on a stack of matrices, transposing the last two dimensions of the input ndarray.
+	* -   The input ndarray must have two or more dimensions.
+	*
+	* @param x - input array
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*
+	* var y = ns.transpose( x );
+	* // returns <ndarray>[ [ 1.0, 4.0 ], [ 2.0, 5.0 ], [ 3.0, 6.0 ] ]
+	*/
+	transpose: typeof transpose;
+
+	/**
+	* Creates an ndarray filled with `true` values and having a specified shape and data type.
+	*
+	* @param shape - array shape
+	* @param options - options
+	* @param options.dtype - underlying data type (default: 'bool')
+	* @param options.order - specifies whether an array is row-major (C-style) or column-major (Fortran-style) (default: 'row-major')
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns filled ndarray
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	*
+	* var arr = ns.trues( [ 2, 2 ] );
+	* // returns <ndarray>[ [ true, true ], [ true, true ] ]
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( arr ) );
+	* // returns 'bool'
+	*/
+	trues: typeof trues;
+
+	/**
+	* Creates an ndarray filled with `true` values and having the same shape and data type as a provided input ndarray.
+	*
+	* @param x - input array
+	* @param options - options
+	* @param options.dtype - output array data type
+	* @param options.order - specifies whether the output array is 'row-major' (C-style) or 'column-major' (Fortran-style)
+	* @param options.shape - output array shape
+	* @param options.mode - specifies how to handle a linear index which exceeds array dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.readonly - boolean indicating whether an array should be read-only
+	* @returns filled ndarray
+	*
+	* @example
+	* var getShape = require( './../../shape' );
+	* var getDType = require( './../../dtype' );
+	* var empty = require( './../../empty' );
+	*
+	* var x = empty( [ 2, 2 ], {
+	*     'dtype': 'generic'
+	* });
+	* // returns <ndarray>
+	*
+	* var sh = getShape( x );
+	* // returns [ 2, 2 ]
+	*
+	* var dt = String( getDType( x ) );
+	* // returns 'generic'
+	*
+	* var y = ns.truesLike( x );
+	* // returns <ndarray>[ [ true, true ], [ true, true ] ]
+	*
+	* sh = getShape( y );
+	* // returns [ 2, 2 ]
+	*
+	* dt = String( getDType( y ) );
+	* // returns 'generic'
+	*/
+	truesLike: typeof truesLike;
+
+	/**
+	* Returns a read-only view of an input ndarray in which a specified dimension is expanded over multiple dimensions.
+	*
+	* @param x - input array
+	* @param dim - dimension to be unflattened
+	* @param sizes - new shape of the unflattened dimension
+	* @returns output array
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
+	* // returns <ndarray>[ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ]
+	*
+	* var y = ns.unflatten( x, 0, [ 2, 3 ] );
+	* // returns <ndarray>[ [ 1.0, 2.0, 3.0 ], [ 4.0, 5.0, 6.0 ] ]
+	*/
+	unflatten: typeof unflatten;
 
 	/**
 	* Returns a one-dimensional ndarray formed by prepending provided scalar values to a one-dimensional input ndarray.
@@ -3399,6 +4242,49 @@ interface Namespace {
 	unshift: typeof unshift;
 
 	/**
+	* Concatenates a list of ndarrays along the second-to-last dimension.
+	*
+	* ## Notes
+	*
+	* -   Input ndarrays must have more than one dimension.
+	*
+	* @param arrays - array-like object containing input ndarrays
+	* @returns output ndarray
+	*
+	* @example
+	* var array = require( './../../array' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = array( [ [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ] );
+	* // returns <ndarray>[ [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ]
+	*
+	* var out = ns.vconcat( [ x, y ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ]
+	*
+	* @example
+	* var array = require( './../../array' );
+	* var zeros = require( './../../zeros' );
+	*
+	* var x = array( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+	*
+	* var y = array( [ [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ] );
+	* // returns <ndarray>[ [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ]
+	*
+	* var z = zeros( [ 5, 2 ] );
+	* // returns <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ], [ 0.0, 0.0 ], [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+	*
+	* var out = ns.vconcat.assign( [ x, y ], z );
+	* // returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ], [ 7.0, 8.0 ], [ 9.0, 10.0 ] ]
+	*
+	* var bool = ( out === z );
+	* // returns true
+	*/
+	vconcat: typeof vconcat;
+
+	/**
 	* Vector constructors and associated utilities.
 	*/
 	vector: typeof vector;
@@ -3423,10 +4309,7 @@ interface Namespace {
 	* var x = ndarray( 'generic', buffer, shape, strides, offset, order  );
 	*
 	* var out = ns.ndarrayWith( x, [ 0, 0 ], 5 );
-	* // returns <ndarray>
-	*
-	* var v = out.get( 0, 0 );
-	* // returns 5
+	* // returns <ndarray>[ [ 5, 2 ], [ 3, 4 ] ]
 	*/
 	ndarrayWith: typeof ndarrayWith;
 
