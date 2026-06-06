@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`95016b8`](https://github.com/stdlib-js/stdlib/commit/95016b8c7179f978fb8ef5b272cff36b523e06e6) - add missing import in `ndarray/base/unflatten` declarations [(#12625)](https://github.com/stdlib-js/stdlib/pull/12625)
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`95016b8`](https://github.com/stdlib-js/stdlib/commit/95016b8c7179f978fb8ef5b272cff36b523e06e6) - **fix:** add missing import in `ndarray/base/unflatten` declarations [(#12625)](https://github.com/stdlib-js/stdlib/pull/12625) _(by Philipp Burckhardt, Athan Reines)_
 -   [`3116666`](https://github.com/stdlib-js/stdlib/commit/3116666b3e530b2e6fb161924ae4c43cdf02905b) - **docs:** correct TSDoc across `ndarray` TypeScript declarations [(#12635)](https://github.com/stdlib-js/stdlib/pull/12635) _(by Philipp Burckhardt, Athan Reines)_
 -   [`727a69c`](https://github.com/stdlib-js/stdlib/commit/727a69cb34991e322acd1fc76c828a7243faf96f) - **refactor:** remove redundant overload in `ndarray/base/transpose` [(#12632)](https://github.com/stdlib-js/stdlib/pull/12632) _(by Philipp Burckhardt)_
 -   [`853c4b4`](https://github.com/stdlib-js/stdlib/commit/853c4b4f23a7187a6acaf937d9f7af2f079e941d) - **refactor:** remove redundant union member in `ndarray/base/some` [(#12634)](https://github.com/stdlib-js/stdlib/pull/12634) _(by Philipp Burckhardt)_
