@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`853c4b4`](https://github.com/stdlib-js/stdlib/commit/853c4b4f23a7187a6acaf937d9f7af2f079e941d) - **refactor:** remove redundant union member in `ndarray/base/some` [(#12634)](https://github.com/stdlib-js/stdlib/pull/12634) _(by Philipp Burckhardt)_
 -   [`81bb9b4`](https://github.com/stdlib-js/stdlib/commit/81bb9b4388146ac422e75697d177c2beeaf47d41) - **docs:** update `ndarray/iter` TypeScript declarations [(#12592)](https://github.com/stdlib-js/stdlib/pull/12592) _(by stdlib-bot)_
 -   [`e08276d`](https://github.com/stdlib-js/stdlib/commit/e08276d789ba1671769175bf5d2c3c5f587f6dca) - **feat:** update `ndarray` TypeScript declarations [(#12593)](https://github.com/stdlib-js/stdlib/pull/12593) _(by stdlib-bot)_
 -   [`4c3829b`](https://github.com/stdlib-js/stdlib/commit/4c3829b6cd5973e47ffe7c3b5a88ed1bfb7c63f6) - **chore:** propagate recent develop fixes to sibling packages [(#12558)](https://github.com/stdlib-js/stdlib/pull/12558) _(by Philipp Burckhardt)_
