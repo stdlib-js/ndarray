@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`3116666`](https://github.com/stdlib-js/stdlib/commit/3116666b3e530b2e6fb161924ae4c43cdf02905b) - **docs:** correct TSDoc across `ndarray` TypeScript declarations [(#12635)](https://github.com/stdlib-js/stdlib/pull/12635) _(by Philipp Burckhardt, Athan Reines)_
 -   [`727a69c`](https://github.com/stdlib-js/stdlib/commit/727a69cb34991e322acd1fc76c828a7243faf96f) - **refactor:** remove redundant overload in `ndarray/base/transpose` [(#12632)](https://github.com/stdlib-js/stdlib/pull/12632) _(by Philipp Burckhardt)_
 -   [`853c4b4`](https://github.com/stdlib-js/stdlib/commit/853c4b4f23a7187a6acaf937d9f7af2f079e941d) - **refactor:** remove redundant union member in `ndarray/base/some` [(#12634)](https://github.com/stdlib-js/stdlib/pull/12634) _(by Philipp Burckhardt)_
 -   [`81bb9b4`](https://github.com/stdlib-js/stdlib/commit/81bb9b4388146ac422e75697d177c2beeaf47d41) - **docs:** update `ndarray/iter` TypeScript declarations [(#12592)](https://github.com/stdlib-js/stdlib/pull/12592) _(by stdlib-bot)_
@@ -38,8 +39,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Philipp Burckhardt
 
 </section>
