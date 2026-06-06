@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 
+-   [`4e89875`](https://github.com/stdlib-js/stdlib/commit/4e898755cf98f6e3b8d8c24079fb9ea7730f2d9c) - preserve input ndarray type in `ndarray/base/maybe-broadcast-array-except-dimensions` [(#12629)](https://github.com/stdlib-js/stdlib/pull/12629)
 -   [`95016b8`](https://github.com/stdlib-js/stdlib/commit/95016b8c7179f978fb8ef5b272cff36b523e06e6) - add missing import in `ndarray/base/unflatten` declarations [(#12625)](https://github.com/stdlib-js/stdlib/pull/12625)
 
 </section>
@@ -32,6 +33,7 @@
 
 <details>
 
+-   [`4e89875`](https://github.com/stdlib-js/stdlib/commit/4e898755cf98f6e3b8d8c24079fb9ea7730f2d9c) - **fix:** preserve input ndarray type in `ndarray/base/maybe-broadcast-array-except-dimensions` [(#12629)](https://github.com/stdlib-js/stdlib/pull/12629) _(by Philipp Burckhardt, Athan Reines)_
 -   [`95016b8`](https://github.com/stdlib-js/stdlib/commit/95016b8c7179f978fb8ef5b272cff36b523e06e6) - **fix:** add missing import in `ndarray/base/unflatten` declarations [(#12625)](https://github.com/stdlib-js/stdlib/pull/12625) _(by Philipp Burckhardt, Athan Reines)_
 -   [`3116666`](https://github.com/stdlib-js/stdlib/commit/3116666b3e530b2e6fb161924ae4c43cdf02905b) - **docs:** correct TSDoc across `ndarray` TypeScript declarations [(#12635)](https://github.com/stdlib-js/stdlib/pull/12635) _(by Philipp Burckhardt, Athan Reines)_
 -   [`727a69c`](https://github.com/stdlib-js/stdlib/commit/727a69cb34991e322acd1fc76c828a7243faf96f) - **refactor:** remove redundant overload in `ndarray/base/transpose` [(#12632)](https://github.com/stdlib-js/stdlib/pull/12632) _(by Philipp Burckhardt)_
