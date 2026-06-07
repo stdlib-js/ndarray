@@ -33,6 +33,7 @@
 
 <details>
 
+-   [`104ec96`](https://github.com/stdlib-js/stdlib/commit/104ec966cbe5e4530a183aed20422da4b129ac6e) - **refactor:** align parameter names in `ndarray/base/nullary-loop-interchange-order` [(#12668)](https://github.com/stdlib-js/stdlib/pull/12668) _(by Philipp Burckhardt)_
 -   [`a9e03ed`](https://github.com/stdlib-js/stdlib/commit/a9e03edc48bf43a1c290ed1ec1e2f69186678b15) - **refactor:** add missing generic type-parameter defaults in `ndarray` reverse declarations [(#12666)](https://github.com/stdlib-js/stdlib/pull/12666) _(by Philipp Burckhardt)_
 -   [`d01cc15`](https://github.com/stdlib-js/stdlib/commit/d01cc150c5d271c5132af9706f86fd15160e5f39) - **docs:** update `ndarray` TypeScript declarations [(#12662)](https://github.com/stdlib-js/stdlib/pull/12662) _(by stdlib-bot)_
 -   [`69a4924`](https://github.com/stdlib-js/stdlib/commit/69a49243032c5e1a845cba2f895c835a49368b77) - **docs:** update `ndarray/iter` TypeScript declarations [(#12661)](https://github.com/stdlib-js/stdlib/pull/12661) _(by stdlib-bot)_
