@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993)
 -   [`e08276d`](https://github.com/stdlib-js/stdlib/commit/e08276d789ba1671769175bf5d2c3c5f587f6dca) - update `ndarray` TypeScript declarations [(#12593)](https://github.com/stdlib-js/stdlib/pull/12593)
 
 </section>
@@ -34,6 +35,7 @@
 
 <details>
 
+-   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - **feat:** add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993) _(by Muhammad Haris, Athan Reines)_
 -   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - **fix:** use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665) _(by Philipp Burckhardt, Athan Reines)_
 -   [`104ec96`](https://github.com/stdlib-js/stdlib/commit/104ec966cbe5e4530a183aed20422da4b129ac6e) - **refactor:** align parameter names in `ndarray/base/nullary-loop-interchange-order` [(#12668)](https://github.com/stdlib-js/stdlib/pull/12668) _(by Philipp Burckhardt)_
 -   [`a9e03ed`](https://github.com/stdlib-js/stdlib/commit/a9e03edc48bf43a1c290ed1ec1e2f69186678b15) - **refactor:** add missing generic type-parameter defaults in `ndarray` reverse declarations [(#12666)](https://github.com/stdlib-js/stdlib/pull/12666) _(by Philipp Burckhardt)_
@@ -60,9 +62,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Muhammad Haris
 -   Philipp Burckhardt
 
 </section>
