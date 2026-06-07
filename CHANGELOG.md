@@ -33,6 +33,9 @@
 
 <details>
 
+-   [`a9e03ed`](https://github.com/stdlib-js/stdlib/commit/a9e03edc48bf43a1c290ed1ec1e2f69186678b15) - **refactor:** add missing generic type-parameter defaults in `ndarray` reverse declarations [(#12666)](https://github.com/stdlib-js/stdlib/pull/12666) _(by Philipp Burckhardt)_
+-   [`d01cc15`](https://github.com/stdlib-js/stdlib/commit/d01cc150c5d271c5132af9706f86fd15160e5f39) - **docs:** update `ndarray` TypeScript declarations [(#12662)](https://github.com/stdlib-js/stdlib/pull/12662) _(by stdlib-bot)_
+-   [`69a4924`](https://github.com/stdlib-js/stdlib/commit/69a49243032c5e1a845cba2f895c835a49368b77) - **docs:** update `ndarray/iter` TypeScript declarations [(#12661)](https://github.com/stdlib-js/stdlib/pull/12661) _(by stdlib-bot)_
 -   [`02ceb9e`](https://github.com/stdlib-js/stdlib/commit/02ceb9ef7c4b0b987a79f07daa750ea9c18f3159) - **docs:** update `ndarray/base` TypeScript declarations [(#12660)](https://github.com/stdlib-js/stdlib/pull/12660) _(by stdlib-bot)_
 -   [`cd863cf`](https://github.com/stdlib-js/stdlib/commit/cd863cfcc93259fc77714263c6c8b532c84563a3) - **docs:** propagate recent develop fixes to sibling packages [(#12642)](https://github.com/stdlib-js/stdlib/pull/12642) _(by Philipp Burckhardt)_
 -   [`4e89875`](https://github.com/stdlib-js/stdlib/commit/4e898755cf98f6e3b8d8c24079fb9ea7730f2d9c) - **fix:** preserve input ndarray type in `ndarray/base/maybe-broadcast-array-except-dimensions` [(#12629)](https://github.com/stdlib-js/stdlib/pull/12629) _(by Philipp Burckhardt, Athan Reines)_
