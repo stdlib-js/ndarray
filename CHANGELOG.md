@@ -20,6 +20,7 @@
 
 ### Bug Fixes
 
+-   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665)
 -   [`4e89875`](https://github.com/stdlib-js/stdlib/commit/4e898755cf98f6e3b8d8c24079fb9ea7730f2d9c) - preserve input ndarray type in `ndarray/base/maybe-broadcast-array-except-dimensions` [(#12629)](https://github.com/stdlib-js/stdlib/pull/12629)
 -   [`95016b8`](https://github.com/stdlib-js/stdlib/commit/95016b8c7179f978fb8ef5b272cff36b523e06e6) - add missing import in `ndarray/base/unflatten` declarations [(#12625)](https://github.com/stdlib-js/stdlib/pull/12625)
 
@@ -33,6 +34,7 @@
 
 <details>
 
+-   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - **fix:** use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665) _(by Philipp Burckhardt, Athan Reines)_
 -   [`104ec96`](https://github.com/stdlib-js/stdlib/commit/104ec966cbe5e4530a183aed20422da4b129ac6e) - **refactor:** align parameter names in `ndarray/base/nullary-loop-interchange-order` [(#12668)](https://github.com/stdlib-js/stdlib/pull/12668) _(by Philipp Burckhardt)_
 -   [`a9e03ed`](https://github.com/stdlib-js/stdlib/commit/a9e03edc48bf43a1c290ed1ec1e2f69186678b15) - **refactor:** add missing generic type-parameter defaults in `ndarray` reverse declarations [(#12666)](https://github.com/stdlib-js/stdlib/pull/12666) _(by Philipp Burckhardt)_
 -   [`d01cc15`](https://github.com/stdlib-js/stdlib/commit/d01cc150c5d271c5132af9706f86fd15160e5f39) - **docs:** update `ndarray` TypeScript declarations [(#12662)](https://github.com/stdlib-js/stdlib/pull/12662) _(by stdlib-bot)_
