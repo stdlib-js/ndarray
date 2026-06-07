@@ -86,6 +86,15 @@ setReadOnly( ns, 'assert', require( './../../base/assert' ) );
 setReadOnly( ns, 'assign', require( './../../base/assign' ) );
 
 /**
+* @name assignDiagonal
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assign-diagonal}
+*/
+setReadOnly( ns, 'assignDiagonal', require( './../../base/assign-diagonal' ) );
+
+/**
 * @name assignScalar
 * @memberof ns
 * @readonly
