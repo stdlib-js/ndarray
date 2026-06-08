@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`e98a2a0`](https://github.com/stdlib-js/stdlib/commit/e98a2a0ffd29fe7da7a95ac18b4a1e519464fde0) - update `ndarray/base` TypeScript declarations [(#12688)](https://github.com/stdlib-js/stdlib/pull/12688)
 -   [`c016f87`](https://github.com/stdlib-js/stdlib/commit/c016f877831218b06cb925732a4f33612b58d5f8) - add `assignDiagonal` to namespace
 -   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993)
 -   [`e08276d`](https://github.com/stdlib-js/stdlib/commit/e08276d789ba1671769175bf5d2c3c5f587f6dca) - update `ndarray` TypeScript declarations [(#12593)](https://github.com/stdlib-js/stdlib/pull/12593)
@@ -36,6 +37,7 @@
 
 <details>
 
+-   [`e98a2a0`](https://github.com/stdlib-js/stdlib/commit/e98a2a0ffd29fe7da7a95ac18b4a1e519464fde0) - **feat:** update `ndarray/base` TypeScript declarations [(#12688)](https://github.com/stdlib-js/stdlib/pull/12688) _(by stdlib-bot)_
 -   [`8060cfe`](https://github.com/stdlib-js/stdlib/commit/8060cfed800ae155e24fd1298e1a6c7462dcc3ec) - **docs:** update `ndarray` TypeScript declarations [(#12689)](https://github.com/stdlib-js/stdlib/pull/12689) _(by stdlib-bot)_
 -   [`c016f87`](https://github.com/stdlib-js/stdlib/commit/c016f877831218b06cb925732a4f33612b58d5f8) - **feat:** add `assignDiagonal` to namespace _(by Athan Reines)_
 -   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - **feat:** add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993) _(by Muhammad Haris, Athan Reines)_
