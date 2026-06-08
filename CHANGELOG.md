@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-07)
+## Unreleased (2026-06-08)
 
 <section class="features">
 
@@ -36,6 +36,7 @@
 
 <details>
 
+-   [`8060cfe`](https://github.com/stdlib-js/stdlib/commit/8060cfed800ae155e24fd1298e1a6c7462dcc3ec) - **docs:** update `ndarray` TypeScript declarations [(#12689)](https://github.com/stdlib-js/stdlib/pull/12689) _(by stdlib-bot)_
 -   [`c016f87`](https://github.com/stdlib-js/stdlib/commit/c016f877831218b06cb925732a4f33612b58d5f8) - **feat:** add `assignDiagonal` to namespace _(by Athan Reines)_
 -   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - **feat:** add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993) _(by Muhammad Haris, Athan Reines)_
 -   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - **fix:** use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665) _(by Philipp Burckhardt, Athan Reines)_
