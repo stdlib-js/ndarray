@@ -40,6 +40,7 @@
 
 <details>
 
+-   [`4b1307f`](https://github.com/stdlib-js/stdlib/commit/4b1307f5f7a8e2d718f067772534505ca27aa0da) - **docs:** update `ndarray` TypeScript declarations [(#12746)](https://github.com/stdlib-js/stdlib/pull/12746) _(by stdlib-bot)_
 -   [`de39564`](https://github.com/stdlib-js/stdlib/commit/de395643f761c77298491ab507475a32ab8402e9) - **docs:** update related packages sections [(#12743)](https://github.com/stdlib-js/stdlib/pull/12743) _(by stdlib-bot)_
 -   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - **fix:** widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - **fix:** bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626) _(by Philipp Burckhardt)_
