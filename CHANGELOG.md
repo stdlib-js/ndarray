@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-08)
+## Unreleased (2026-06-10)
 
 <section class="features">
 
@@ -23,6 +23,7 @@
 
 ### Bug Fixes
 
+-   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626)
 -   [`a2a20a2`](https://github.com/stdlib-js/stdlib/commit/a2a20a2a6731a73a6e58cdf84d4e527ae939799e) - infer input ndarray type in `ndarray/some-by` assign overloads [(#12627)](https://github.com/stdlib-js/stdlib/pull/12627)
 -   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665)
 -   [`4e89875`](https://github.com/stdlib-js/stdlib/commit/4e898755cf98f6e3b8d8c24079fb9ea7730f2d9c) - preserve input ndarray type in `ndarray/base/maybe-broadcast-array-except-dimensions` [(#12629)](https://github.com/stdlib-js/stdlib/pull/12629)
@@ -38,6 +39,7 @@
 
 <details>
 
+-   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - **fix:** bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626) _(by Philipp Burckhardt)_
 -   [`a2a20a2`](https://github.com/stdlib-js/stdlib/commit/a2a20a2a6731a73a6e58cdf84d4e527ae939799e) - **fix:** infer input ndarray type in `ndarray/some-by` assign overloads [(#12627)](https://github.com/stdlib-js/stdlib/pull/12627) _(by Philipp Burckhardt)_
 -   [`a7e07a6`](https://github.com/stdlib-js/stdlib/commit/a7e07a6f17f0974dca43b7bdc0245ce71c28ec86) - **docs:** update namespace table of contents [(#12690)](https://github.com/stdlib-js/stdlib/pull/12690) _(by stdlib-bot)_
 -   [`e98a2a0`](https://github.com/stdlib-js/stdlib/commit/e98a2a0ffd29fe7da7a95ac18b4a1e519464fde0) - **feat:** update `ndarray/base` TypeScript declarations [(#12688)](https://github.com/stdlib-js/stdlib/pull/12688) _(by stdlib-bot)_
