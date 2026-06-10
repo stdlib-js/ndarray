@@ -27,6 +27,7 @@
 #include "stdlib/ndarray/ctor.h"
 #include <stdint.h>
 #include <string.h>
+#include <assert.h>
 
 /**
 * Macro containing the preamble for blocked nested loops which operate on elements of a ten-dimensional ndarray.
@@ -109,6 +110,8 @@
 	int64_t j7;                                                                \
 	int64_t j8;                                                                \
 	int64_t j9;                                                                \
+	/* Ensure the ndarray has the expected number of dimensions: */             \
+	assert( stdlib_ndarray_ndims( x1 ) == 10 );                                \
 	/* Copy strides to prevent mutation to the original ndarray: */            \
 	memcpy( sx1, stdlib_ndarray_strides( x1 ), sizeof sx1 );                   \
 	/* Create a loop interchange index array for loop order permutation: */    \
