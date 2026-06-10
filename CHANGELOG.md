@@ -23,6 +23,7 @@
 
 ### Bug Fixes
 
+-   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628)
 -   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626)
 -   [`a2a20a2`](https://github.com/stdlib-js/stdlib/commit/a2a20a2a6731a73a6e58cdf84d4e527ae939799e) - infer input ndarray type in `ndarray/some-by` assign overloads [(#12627)](https://github.com/stdlib-js/stdlib/pull/12627)
 -   [`07a3349`](https://github.com/stdlib-js/stdlib/commit/07a3349f6ab025490bafad9cd3b2d08df70f1fed) - use correct export names [(#12665)](https://github.com/stdlib-js/stdlib/pull/12665)
@@ -39,6 +40,7 @@
 
 <details>
 
+-   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - **fix:** widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - **fix:** bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626) _(by Philipp Burckhardt)_
 -   [`a2a20a2`](https://github.com/stdlib-js/stdlib/commit/a2a20a2a6731a73a6e58cdf84d4e527ae939799e) - **fix:** infer input ndarray type in `ndarray/some-by` assign overloads [(#12627)](https://github.com/stdlib-js/stdlib/pull/12627) _(by Philipp Burckhardt)_
 -   [`a7e07a6`](https://github.com/stdlib-js/stdlib/commit/a7e07a6f17f0974dca43b7bdc0245ce71c28ec86) - **docs:** update namespace table of contents [(#12690)](https://github.com/stdlib-js/stdlib/pull/12690) _(by stdlib-bot)_
