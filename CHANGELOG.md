@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-10)
+## Unreleased (2026-06-11)
 
 <section class="features">
 
@@ -40,6 +40,7 @@
 
 <details>
 
+-   [`8477cf4`](https://github.com/stdlib-js/stdlib/commit/8477cf466ddfda9e00d3cf246d16f1bc8499943c) - **docs:** fix descriptions in `ndarray/base/nulls-like` [(#12756)](https://github.com/stdlib-js/stdlib/pull/12756) _(by Philipp Burckhardt)_
 -   [`4b1307f`](https://github.com/stdlib-js/stdlib/commit/4b1307f5f7a8e2d718f067772534505ca27aa0da) - **docs:** update `ndarray` TypeScript declarations [(#12746)](https://github.com/stdlib-js/stdlib/pull/12746) _(by stdlib-bot)_
 -   [`de39564`](https://github.com/stdlib-js/stdlib/commit/de395643f761c77298491ab507475a32ab8402e9) - **docs:** update related packages sections [(#12743)](https://github.com/stdlib-js/stdlib/pull/12743) _(by stdlib-bot)_
 -   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - **fix:** widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628) _(by Philipp Burckhardt, Athan Reines)_
