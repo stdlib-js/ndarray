@@ -40,6 +40,7 @@
 
 <details>
 
+-   [`4b35470`](https://github.com/stdlib-js/stdlib/commit/4b35470b5d827db631a59fba4f848aba4a44110c) - **docs:** update related packages sections [(#12823)](https://github.com/stdlib-js/stdlib/pull/12823) _(by stdlib-bot)_
 -   [`cae5335`](https://github.com/stdlib-js/stdlib/commit/cae53357950b4c389b0020878c268995cd79d222) - **docs:** propagate develop fixes to sibling packages [(#12736)](https://github.com/stdlib-js/stdlib/pull/12736) _(by Philipp Burckhardt)_
 -   [`8477cf4`](https://github.com/stdlib-js/stdlib/commit/8477cf466ddfda9e00d3cf246d16f1bc8499943c) - **docs:** fix descriptions in `ndarray/base/nulls-like` [(#12756)](https://github.com/stdlib-js/stdlib/pull/12756) _(by Philipp Burckhardt)_
 -   [`4b1307f`](https://github.com/stdlib-js/stdlib/commit/4b1307f5f7a8e2d718f067772534505ca27aa0da) - **docs:** update `ndarray` TypeScript declarations [(#12746)](https://github.com/stdlib-js/stdlib/pull/12746) _(by stdlib-bot)_
