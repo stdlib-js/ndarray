@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-13)
+## Unreleased (2026-06-15)
 
 <section class="features">
 
@@ -40,6 +40,7 @@
 
 <details>
 
+-   [`0293981`](https://github.com/stdlib-js/stdlib/commit/0293981bc2e4dcdf3ec3f570c9326c049fe40b2c) - **docs:** replace \"array\" with \"ndarray\" in various type declarations [(#12828)](https://github.com/stdlib-js/stdlib/pull/12828) _(by Philipp Burckhardt)_
 -   [`43fb779`](https://github.com/stdlib-js/stdlib/commit/43fb7797d582eea6ad549cc82e0c89848c2ee4f9) - **chore:** remove stray file [(#12820)](https://github.com/stdlib-js/stdlib/pull/12820) _(by Philipp Burckhardt)_
 -   [`6a027a4`](https://github.com/stdlib-js/stdlib/commit/6a027a42f2488d90e0a0c6873735397a26cdf5c4) - **docs:** update `ndarray/base` TypeScript declarations [(#12834)](https://github.com/stdlib-js/stdlib/pull/12834) _(by stdlib-bot)_
 -   [`4b35470`](https://github.com/stdlib-js/stdlib/commit/4b35470b5d827db631a59fba4f848aba4a44110c) - **docs:** update related packages sections [(#12823)](https://github.com/stdlib-js/stdlib/pull/12823) _(by stdlib-bot)_
