@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-15)
+## Unreleased (2026-06-16)
 
 <section class="features">
 
@@ -23,6 +23,7 @@
 
 ### Bug Fixes
 
+-   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912)
 -   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628)
 -   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626)
 -   [`a2a20a2`](https://github.com/stdlib-js/stdlib/commit/a2a20a2a6731a73a6e58cdf84d4e527ae939799e) - infer input ndarray type in `ndarray/some-by` assign overloads [(#12627)](https://github.com/stdlib-js/stdlib/pull/12627)
@@ -40,6 +41,7 @@
 
 <details>
 
+-   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - **fix:** wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912) _(by Philipp Burckhardt, Athan Reines)_
 -   [`0293981`](https://github.com/stdlib-js/stdlib/commit/0293981bc2e4dcdf3ec3f570c9326c049fe40b2c) - **docs:** replace \"array\" with \"ndarray\" in various type declarations [(#12828)](https://github.com/stdlib-js/stdlib/pull/12828) _(by Philipp Burckhardt)_
 -   [`43fb779`](https://github.com/stdlib-js/stdlib/commit/43fb7797d582eea6ad549cc82e0c89848c2ee4f9) - **chore:** remove stray file [(#12820)](https://github.com/stdlib-js/stdlib/pull/12820) _(by Philipp Burckhardt)_
 -   [`6a027a4`](https://github.com/stdlib-js/stdlib/commit/6a027a42f2488d90e0a0c6873735397a26cdf5c4) - **docs:** update `ndarray/base` TypeScript declarations [(#12834)](https://github.com/stdlib-js/stdlib/pull/12834) _(by stdlib-bot)_
