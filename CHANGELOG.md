@@ -41,6 +41,7 @@
 
 <details>
 
+-   [`dbe4c82`](https://github.com/stdlib-js/stdlib/commit/dbe4c820ea98330253b4054a5bc9b04b2293415b) - **docs:** propagate fixes to sibling packages [(#12677)](https://github.com/stdlib-js/stdlib/pull/12677) _(by Philipp Burckhardt, Athan Reines)_
 -   [`c698eb1`](https://github.com/stdlib-js/stdlib/commit/c698eb1e0c90cd6ecdd9eb529c5805c66bcac2a8) - **chore:** update keywords [(#12757)](https://github.com/stdlib-js/stdlib/pull/12757) _(by Philipp Burckhardt)_
 -   [`f0b0127`](https://github.com/stdlib-js/stdlib/commit/f0b0127cb1f7a47157f768981bac2e87463f2efa) - **docs:** update related packages sections [(#12913)](https://github.com/stdlib-js/stdlib/pull/12913) _(by stdlib-bot)_
 -   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - **fix:** wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912) _(by Philipp Burckhardt, Athan Reines)_
