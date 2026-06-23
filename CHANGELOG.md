@@ -41,6 +41,7 @@
 
 <details>
 
+-   [`4b3d572`](https://github.com/stdlib-js/stdlib/commit/4b3d572dc99bb18ada036a472deca6c0429d9dfb) - **docs:** update example [(#13061)](https://github.com/stdlib-js/stdlib/pull/13061) _(by Philipp Burckhardt, Athan Reines)_
 -   [`953b185`](https://github.com/stdlib-js/stdlib/commit/953b185c676ade1db334df956325b67006b2a996) - **docs:** fix example _(by Athan Reines)_
 -   [`a0740ff`](https://github.com/stdlib-js/stdlib/commit/a0740ff717285ec77bca66efa3133061321184e3) - **docs:** update related packages sections [(#13007)](https://github.com/stdlib-js/stdlib/pull/13007) _(by stdlib-bot)_
 -   [`dbe4c82`](https://github.com/stdlib-js/stdlib/commit/dbe4c820ea98330253b4054a5bc9b04b2293415b) - **docs:** propagate fixes to sibling packages [(#12677)](https://github.com/stdlib-js/stdlib/pull/12677) _(by Philipp Burckhardt, Athan Reines)_
