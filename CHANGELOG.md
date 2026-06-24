@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8bf9161`](https://github.com/stdlib-js/stdlib/commit/8bf91614301abf9249ff3ea9379baa4bc6c450e0) - add `ndarray/matrix` namespace
 -   [`dc9a2a7`](https://github.com/stdlib-js/stdlib/commit/dc9a2a7eb4962f9743ba7a7369a6593669370296) - add `ndarray/matrix/ctor`
 -   [`585603b`](https://github.com/stdlib-js/stdlib/commit/585603b45bb17f82056940bd0cf3dca981a20fbb) - add support for `Float16Array`
 -   [`c9a4e5c`](https://github.com/stdlib-js/stdlib/commit/c9a4e5ce4cfa693bb66df02c8182e003a88f9b20) - add `isGenericDataType`
@@ -47,6 +48,7 @@
 
 <details>
 
+-   [`8bf9161`](https://github.com/stdlib-js/stdlib/commit/8bf91614301abf9249ff3ea9379baa4bc6c450e0) - **feat:** add `ndarray/matrix` namespace _(by Athan Reines)_
 -   [`dc9a2a7`](https://github.com/stdlib-js/stdlib/commit/dc9a2a7eb4962f9743ba7a7369a6593669370296) - **feat:** add `ndarray/matrix/ctor` _(by Athan Reines)_
 -   [`29b2bde`](https://github.com/stdlib-js/stdlib/commit/29b2bded9ac858b970a2866f20000ae39681e602) - **bench:** measure a subset of dtypes _(by Athan Reines)_
 -   [`585603b`](https://github.com/stdlib-js/stdlib/commit/585603b45bb17f82056940bd0cf3dca981a20fbb) - **feat:** add support for `Float16Array` _(by Athan Reines)_
