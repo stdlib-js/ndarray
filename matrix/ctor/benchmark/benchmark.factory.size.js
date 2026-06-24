@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2025 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,12 +21,13 @@
 // MODULES //
 
 var bench = require( '@stdlib/bench' );
-var pow = require( '@stdlib/math/base/special/pow' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
+var pow = require( '@stdlib/math/base/special/pow' );
+var floor = require( '@stdlib/math/base/special/floor' );
 var dtypes = require( './../../../dtypes' );
 var format = require( '@stdlib/string/format' );
 var pkg = require( './../package.json' ).name;
-var vector = require( './../lib' );
+var factory = require( './../lib' ).factory;
 
 
 // VARIABLES //
@@ -40,11 +41,12 @@ var DTYPES = dtypes( 'real_floating_point_and_generic' );
 * Creates a benchmark function.
 *
 * @private
-* @param {PositiveInteger} len - array length
+* @param {PositiveIntegerArray} shape - array shape
 * @param {string} dtype - data type
 * @returns {Function} benchmark function
 */
-function createBenchmark( len, dtype ) {
+function createBenchmark( shape, dtype ) {
+	var matrix = factory( dtype );
 	return benchmark;
 
 	/**
@@ -59,9 +61,9 @@ function createBenchmark( len, dtype ) {
 
 		b.tic();
 		for ( i = 0; i < b.iterations; i++ ) {
-			arr = vector( len, dtype );
-			if ( arr.length !== len ) {
-				b.fail( 'unexpected length' );
+			arr = matrix( shape );
+			if ( typeof arr !== 'object' ) {
+				b.fail( 'should return an ndarray' );
 			}
 		}
 		b.toc();
@@ -82,10 +84,10 @@ function createBenchmark( len, dtype ) {
 * @private
 */
 function main() {
-	var len;
 	var min;
 	var max;
 	var dt;
+	var N;
 	var f;
 	var i;
 	var j;
@@ -96,9 +98,9 @@ function main() {
 	for ( j = 0; j < DTYPES.length; j++ ) {
 		dt = DTYPES[ j ];
 		for ( i = min; i <= max; i++ ) {
-			len = pow( 10, i );
-			f = createBenchmark( len, dt );
-			bench( format( '%s:dtype=%s:size=%d', pkg, dt, len ), f );
+			N = floor( pow( pow( 10, i ), 1.0/2.0 ) );
+			f = createBenchmark( [ N, N ], dt );
+			bench( format( '%s::equidimensional:factory:dtype=%s,size=%d', pkg, dt, N*N ), f );
 		}
 	}
 }

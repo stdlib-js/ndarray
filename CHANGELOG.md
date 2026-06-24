@@ -4,12 +4,18 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-23)
+## Unreleased (2026-06-24)
 
 <section class="features">
 
 ### Features
 
+-   [`dc9a2a7`](https://github.com/stdlib-js/stdlib/commit/dc9a2a7eb4962f9743ba7a7369a6593669370296) - add `ndarray/matrix/ctor`
+-   [`585603b`](https://github.com/stdlib-js/stdlib/commit/585603b45bb17f82056940bd0cf3dca981a20fbb) - add support for `Float16Array`
+-   [`c9a4e5c`](https://github.com/stdlib-js/stdlib/commit/c9a4e5ce4cfa693bb66df02c8182e003a88f9b20) - add `isGenericDataType`
+-   [`d4323d4`](https://github.com/stdlib-js/stdlib/commit/d4323d42b1e6509b6fc8fd2cbb44117f1011b1aa) - add `ndarray/base/assert/is-generic-data-type`
+-   [`34da35d`](https://github.com/stdlib-js/stdlib/commit/34da35d9674e4dcf02465949fd39eaf4b3a342e3) - add `isBinaryDataType` to namespace
+-   [`3b85408`](https://github.com/stdlib-js/stdlib/commit/3b85408231a00d40ac90c05c971ce83576e65ba0) - add `ndarray/base/assert/is-binary-data-type`
 -   [`e98a2a0`](https://github.com/stdlib-js/stdlib/commit/e98a2a0ffd29fe7da7a95ac18b4a1e519464fde0) - update `ndarray/base` TypeScript declarations [(#12688)](https://github.com/stdlib-js/stdlib/pull/12688)
 -   [`c016f87`](https://github.com/stdlib-js/stdlib/commit/c016f877831218b06cb925732a4f33612b58d5f8) - add `assignDiagonal` to namespace
 -   [`b186702`](https://github.com/stdlib-js/stdlib/commit/b186702222b3b2cd2039d886b62ce78bd2f6af3b) - add `ndarray/base/assign-diagonal` [(#11993)](https://github.com/stdlib-js/stdlib/pull/11993)
@@ -41,6 +47,18 @@
 
 <details>
 
+-   [`dc9a2a7`](https://github.com/stdlib-js/stdlib/commit/dc9a2a7eb4962f9743ba7a7369a6593669370296) - **feat:** add `ndarray/matrix/ctor` _(by Athan Reines)_
+-   [`29b2bde`](https://github.com/stdlib-js/stdlib/commit/29b2bded9ac858b970a2866f20000ae39681e602) - **bench:** measure a subset of dtypes _(by Athan Reines)_
+-   [`585603b`](https://github.com/stdlib-js/stdlib/commit/585603b45bb17f82056940bd0cf3dca981a20fbb) - **feat:** add support for `Float16Array` _(by Athan Reines)_
+-   [`f021c70`](https://github.com/stdlib-js/stdlib/commit/f021c7064415469b10f226ff7a9bd612786d8eff) - **docs:** update notes _(by Athan Reines)_
+-   [`7a4fa8e`](https://github.com/stdlib-js/stdlib/commit/7a4fa8e8e7031325ae3efdcd6f4d1f427bf1df6b) - **docs:** add notes _(by Athan Reines)_
+-   [`c148ba7`](https://github.com/stdlib-js/stdlib/commit/c148ba73d3d68a71a4b1dc5b358030459fe9388b) - **refactor:** use assertion utilities and add FIXME _(by Athan Reines)_
+-   [`c68f1d9`](https://github.com/stdlib-js/stdlib/commit/c68f1d9fca11a9040ecc51e1c1d05ffa11da3b61) - **docs:** fix default option value _(by Athan Reines)_
+-   [`c9a4e5c`](https://github.com/stdlib-js/stdlib/commit/c9a4e5ce4cfa693bb66df02c8182e003a88f9b20) - **feat:** add `isGenericDataType` _(by Athan Reines)_
+-   [`d4323d4`](https://github.com/stdlib-js/stdlib/commit/d4323d42b1e6509b6fc8fd2cbb44117f1011b1aa) - **feat:** add `ndarray/base/assert/is-generic-data-type` _(by Athan Reines)_
+-   [`34da35d`](https://github.com/stdlib-js/stdlib/commit/34da35d9674e4dcf02465949fd39eaf4b3a342e3) - **feat:** add `isBinaryDataType` to namespace _(by Athan Reines)_
+-   [`3b85408`](https://github.com/stdlib-js/stdlib/commit/3b85408231a00d40ac90c05c971ce83576e65ba0) - **feat:** add `ndarray/base/assert/is-binary-data-type` _(by Athan Reines)_
+-   [`efdecd0`](https://github.com/stdlib-js/stdlib/commit/efdecd0ca3e6e8a31c0dfe5ee18a91b6d64abd73) - **refactor:** use base array utilities _(by Athan Reines)_
 -   [`4b3d572`](https://github.com/stdlib-js/stdlib/commit/4b3d572dc99bb18ada036a472deca6c0429d9dfb) - **docs:** update example [(#13061)](https://github.com/stdlib-js/stdlib/pull/13061) _(by Philipp Burckhardt, Athan Reines)_
 -   [`953b185`](https://github.com/stdlib-js/stdlib/commit/953b185c676ade1db334df956325b67006b2a996) - **docs:** fix example _(by Athan Reines)_
 -   [`a0740ff`](https://github.com/stdlib-js/stdlib/commit/a0740ff717285ec77bca66efa3133061321184e3) - **docs:** update related packages sections [(#13007)](https://github.com/stdlib-js/stdlib/pull/13007) _(by stdlib-bot)_

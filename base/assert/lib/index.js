@@ -55,6 +55,15 @@ setReadOnly( ns, 'hasEqualShape', require( './../../../base/assert/has-equal-sha
 setReadOnly( ns, 'isAllowedDataTypeCast', require( './../../../base/assert/is-allowed-data-type-cast' ) );
 
 /**
+* @name isBinaryDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-binary-data-type}
+*/
+setReadOnly( ns, 'isBinaryDataType', require( './../../../base/assert/is-binary-data-type' ) );
+
+/**
 * @name isBooleanDataType
 * @memberof ns
 * @readonly
@@ -197,6 +206,15 @@ setReadOnly( ns, 'isEqualDataType', require( './../../../base/assert/is-equal-da
 * @see {@link module:@stdlib/ndarray/base/assert/is-floating-point-data-type}
 */
 setReadOnly( ns, 'isFloatingPointDataType', require( './../../../base/assert/is-floating-point-data-type' ) );
+
+/**
+* @name isGenericDataType
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/assert/is-generic-data-type}
+*/
+setReadOnly( ns, 'isGenericDataType', require( './../../../base/assert/is-generic-data-type' ) );
 
 /**
 * @name isIndexDataType

@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2026 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,8 +23,9 @@
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
-var isIndexMode = require( './../../base/assert/is-index-mode' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
+var isIndexMode = require( './../../../base/assert/is-index-mode' );
+var isOrder = require( './../../../base/assert/is-order' );
 var join = require( '@stdlib/array/base/join' );
 var format = require( '@stdlib/string/format' );
 
@@ -37,16 +38,16 @@ var format = require( '@stdlib/string/format' );
 * @private
 * @param {Object} opts - destination object
 * @param {Options} options - function options
-* @param {string} [options.mode] - specifies how to handle indices which exceed array dimensions
+* @param {boolean} [options.readonly] - boolean indicating whether to return a read-only matrix
+* @param {string} [options.mode] - specifies how to handle indices which exceed matrix dimensions
 * @param {StringArray} [options.submode] - specifies how to handle subscripts which exceed array dimensions
-* @param {boolean} [options.readonly] - boolean indicating whether an array should be read-only
+* @param {string} [options.order] - memory layout (either row-major or column-major)
 * @returns {(Error|null)} null or an error object
 *
 * @example
 * var opts = {};
 * var options = {
-*     'mode': 'clamp',
-*     'submode': [ 'throw', 'wrap', 'clamp' ]
+*     'readonly': true
 * };
 * var err = validate( opts, options );
 * if ( err ) {
@@ -59,10 +60,16 @@ function validate( opts, options ) {
 	if ( !isObject( options ) ) {
 		return new TypeError( format( 'invalid argument. Options argument must be an object. Value: `%s`.', options ) );
 	}
+	if ( hasOwnProp( options, 'readonly' ) ) {
+		opts.readonly = options.readonly;
+		if ( !isBoolean( opts.readonly ) ) {
+			return new TypeError( format( 'invalid option. `%s` option must be a boolean. Option: `%s`.', 'readonly', opts.readonly ) );
+		}
+	}
 	if ( hasOwnProp( options, 'mode' ) ) {
 		opts.mode = options.mode;
 		if ( !isIndexMode( opts.mode ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a recognized mode. Option: `%s`.', 'mode', opts.mode ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a valid index mode. Option: `%s`.', 'mode', opts.mode ) );
 		}
 	}
 	if ( hasOwnProp( options, 'submode' ) ) {
@@ -81,10 +88,10 @@ function validate( opts, options ) {
 		}
 		opts.submode = tmp;
 	}
-	if ( hasOwnProp( options, 'readonly' ) ) {
-		opts.readonly = options.readonly;
-		if ( !isBoolean( opts.readonly ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a boolean. Option: `%s`.', 'readonly', opts.readonly ) );
+	if ( hasOwnProp( options, 'order' ) ) {
+		opts.order = options.order;
+		if ( !isOrder( opts.order ) ) {
+			return new TypeError( format( 'invalid option. `%s` option must be a memory layout. Option: `%s`.', 'order', opts.order ) );
 		}
 	}
 	return null;
