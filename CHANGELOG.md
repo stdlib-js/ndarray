@@ -50,6 +50,7 @@
 
 <details>
 
+-   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - **fix:** correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088) _(by anee3)_
 -   [`9e91810`](https://github.com/stdlib-js/stdlib/commit/9e91810bfa37f32b66e04ac1ee69b640ea2e43ff) - **feat:** update `ndarray/base/assert` TypeScript declarations [(#13119)](https://github.com/stdlib-js/stdlib/pull/13119) _(by stdlib-bot)_
 -   [`839aaf6`](https://github.com/stdlib-js/stdlib/commit/839aaf681cf5e10b2f4d1ed566d716dd2726421b) - **docs:** update documentation [(#13120)](https://github.com/stdlib-js/stdlib/pull/13120) _(by stdlib-bot)_
