@@ -31,6 +31,7 @@
 
 ### Bug Fixes
 
+-   [`92b5eb4`](https://github.com/stdlib-js/stdlib/commit/92b5eb479a9ba6d3fe4f722d2f1b47e61a03122c) - use correct argument during error message interpolation and update descriptions [(#13105)](https://github.com/stdlib-js/stdlib/pull/13105)
 -   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088)
 -   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912)
 -   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628)
@@ -50,6 +51,7 @@
 
 <details>
 
+-   [`92b5eb4`](https://github.com/stdlib-js/stdlib/commit/92b5eb479a9ba6d3fe4f722d2f1b47e61a03122c) - **fix:** use correct argument during error message interpolation and update descriptions [(#13105)](https://github.com/stdlib-js/stdlib/pull/13105) _(by Philipp Burckhardt)_
 -   [`1977f92`](https://github.com/stdlib-js/stdlib/commit/1977f92944b56c40c27b23d74570f2958adc7a39) - **docs:** update documented default value for `submode` option [(#13106)](https://github.com/stdlib-js/stdlib/pull/13106) _(by Philipp Burckhardt)_
 -   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - **fix:** correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088) _(by anee3)_
 -   [`9e91810`](https://github.com/stdlib-js/stdlib/commit/9e91810bfa37f32b66e04ac1ee69b640ea2e43ff) - **feat:** update `ndarray/base/assert` TypeScript declarations [(#13119)](https://github.com/stdlib-js/stdlib/pull/13119) _(by stdlib-bot)_
