@@ -31,6 +31,7 @@
 
 ### Bug Fixes
 
+-   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088)
 -   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912)
 -   [`098451f`](https://github.com/stdlib-js/stdlib/commit/098451fcfd33729cc05260ae5c74113819741f80) - widen `mode` option type in `ndarray/sub2ind` to accept a single mode [(#12628)](https://github.com/stdlib-js/stdlib/pull/12628)
 -   [`b696736`](https://github.com/stdlib-js/stdlib/commit/b696736186a5c6acce24c49f6b613832941c0cf1) - bind generic type parameter to input ndarray in `ndarray/with` [(#12626)](https://github.com/stdlib-js/stdlib/pull/12626)
@@ -49,6 +50,7 @@
 
 <details>
 
+-   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - **fix:** correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088) _(by anee3)_
 -   [`9e91810`](https://github.com/stdlib-js/stdlib/commit/9e91810bfa37f32b66e04ac1ee69b640ea2e43ff) - **feat:** update `ndarray/base/assert` TypeScript declarations [(#13119)](https://github.com/stdlib-js/stdlib/pull/13119) _(by stdlib-bot)_
 -   [`839aaf6`](https://github.com/stdlib-js/stdlib/commit/839aaf681cf5e10b2f4d1ed566d716dd2726421b) - **docs:** update documentation [(#13120)](https://github.com/stdlib-js/stdlib/pull/13120) _(by stdlib-bot)_
 -   [`4a14673`](https://github.com/stdlib-js/stdlib/commit/4a1467352fcbd486caca6564a300c627449d796d) - **docs:** update namespace table of contents [(#13121)](https://github.com/stdlib-js/stdlib/pull/13121) _(by stdlib-bot)_
@@ -114,11 +116,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   anee3
 
 </section>
 
