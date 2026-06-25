@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-24)
+## Unreleased (2026-06-25)
 
 <section class="features">
 
@@ -48,6 +48,7 @@
 
 <details>
 
+-   [`4a14673`](https://github.com/stdlib-js/stdlib/commit/4a1467352fcbd486caca6564a300c627449d796d) - **docs:** update namespace table of contents [(#13121)](https://github.com/stdlib-js/stdlib/pull/13121) _(by stdlib-bot)_
 -   [`8bf9161`](https://github.com/stdlib-js/stdlib/commit/8bf91614301abf9249ff3ea9379baa4bc6c450e0) - **feat:** add `ndarray/matrix` namespace _(by Athan Reines)_
 -   [`dc9a2a7`](https://github.com/stdlib-js/stdlib/commit/dc9a2a7eb4962f9743ba7a7369a6593669370296) - **feat:** add `ndarray/matrix/ctor` _(by Athan Reines)_
 -   [`29b2bde`](https://github.com/stdlib-js/stdlib/commit/29b2bded9ac858b970a2866f20000ae39681e602) - **bench:** measure a subset of dtypes _(by Athan Reines)_
