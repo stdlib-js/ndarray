@@ -37,6 +37,24 @@ var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
 var ns = {};
 
 /**
+* @name Complex64Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/complex64}
+*/
+setReadOnly( ns, 'Complex64Matrix', require( './../../matrix/complex64' ) );
+
+/**
+* @name Complex128Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/complex128}
+*/
+setReadOnly( ns, 'Complex128Matrix', require( './../../matrix/complex128' ) );
+
+/**
 * @name matrix
 * @memberof ns
 * @readonly
@@ -44,6 +62,33 @@ var ns = {};
 * @see {@link module:@stdlib/ndarray/matrix/ctor}
 */
 setReadOnly( ns, 'matrix', require( './../../matrix/ctor' ) );
+
+/**
+* @name Float32Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/float32}
+*/
+setReadOnly( ns, 'Float32Matrix', require( './../../matrix/float32' ) );
+
+/**
+* @name Float64Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/float64}
+*/
+setReadOnly( ns, 'Float64Matrix', require( './../../matrix/float64' ) );
+
+/**
+* @name Int32Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/int32}
+*/
+setReadOnly( ns, 'Int32Matrix', require( './../../matrix/int32' ) );
 
 
 // EXPORTS //

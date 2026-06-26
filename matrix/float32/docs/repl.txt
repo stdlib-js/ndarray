@@ -1,12 +1,9 @@
 
-{{alias}}( [dtype][, options] )
-    Returns a two-dimensional ndarray.
+{{alias}}( [options] )
+    Returns a two-dimensional single-precision floating-point ndarray.
 
     Parameters
     ----------
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
-
     options: Object (optional)
         Options.
 
@@ -51,22 +48,16 @@
     --------
     > var arr = {{alias}}()
     <ndarray>
-    > var sh = {{alias:@stdlib/ndarray/shape}}( arr )
-    [ 0, 0 ]
-    > arr = {{alias}}( 'float32' )
-    <ndarray>
 
 
-{{alias}}( shape[, dtype][, options] )
-    Returns a two-dimensional ndarray having a specified shape.
+{{alias}}( shape[, options] )
+    Returns a two-dimensional single-precision floating-point ndarray having a
+    specified shape.
 
     Parameters
     ----------
     shape: ArrayLikeObject<integer>
         Array shape. Must contain exactly two elements.
-
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
 
     options: Object (optional)
         Options.
@@ -111,13 +102,12 @@
     Examples
     --------
     > var arr = {{alias}}( [ 2, 2 ] )
-    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
-    > arr = {{alias}}( [ 2, 2 ], 'float32' )
-    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+    <ndarray>
 
 
-{{alias}}( M, N[, dtype][, options] )
-    Returns a two-dimensional ndarray having a specified shape.
+{{alias}}( M, N[, options] )
+    Returns a two-dimensional single-precision floating-point ndarray having a
+    specified shape.
 
     Parameters
     ----------
@@ -126,9 +116,6 @@
 
     N: integer
         Number of columns.
-
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
 
     options: Object (optional)
         Options.
@@ -173,13 +160,12 @@
     Examples
     --------
     > var arr = {{alias}}( 2, 2 )
-    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
-    > arr = {{alias}}( 2, 2, 'float32' )
-    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
+    <ndarray>
 
 
-{{alias}}( obj[, dtype][, options] )
-    Creates a two-dimensional ndarray from an array-like object or iterable.
+{{alias}}( obj[, options] )
+    Creates a two-dimensional single-precision floating-point ndarray from an
+    array-like object or iterable.
 
     Parameters
     ----------
@@ -189,9 +175,6 @@
         object of array-like objects), where each nested array must have the
         same number of elements. If an iterable, the iterable must return array-
         like objects, each of which must have the same number of elements.
-
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
 
     options: Object (optional)
         Options.
@@ -236,12 +219,13 @@
     Examples
     --------
     > var v = [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ];
-    > var arr = {{alias}}( v, 'float32' )
-    <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+    > var arr = {{alias}}( v )
+    <ndarray>
 
 
-{{alias}}( buffer[, byteOffset[, shape]][, dtype][, options] )
-    Returns a two-dimensional ndarray view of an ArrayBuffer.
+{{alias}}( buffer[, byteOffset[, shape]][, options] )
+    Returns a two-dimensional single-precision floating-point ndarray view of an
+    ArrayBuffer.
 
     Parameters
     ----------
@@ -256,9 +240,6 @@
         Array shape. Must contain exactly two elements. If not provided, the
         view spans from the byteOffset to the end of the underlying ArrayBuffer
         and the first dimension of the returned ndarray has a size of one.
-
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
 
     options: Object (optional)
         Options.
@@ -303,12 +284,13 @@
     Examples
     --------
     > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
-    > var arr = {{alias}}( buf, 0, [ 2, 2 ], 'float32' )
+    > var arr = {{alias}}( buf, 0, [ 8, 1 ] )
     <ndarray>
 
 
-{{alias}}( buffer[, byteOffset[, M, N]][, dtype][, options] )
-    Returns a two-dimensional ndarray view of an ArrayBuffer.
+{{alias}}( buffer[, byteOffset[, M, N]][, options] )
+    Returns a two-dimensional single-precision floating-point ndarray view of an
+    ArrayBuffer.
 
     If `M` and `N` are not provided, the returned ndarray view spans from the
     byteOffset to the end of the underlying ArrayBuffer.
@@ -328,9 +310,6 @@
     N: integer (optional)
         Number of columns.
 
-    dtype: string|DataType (optional)
-        Underlying data type. Default: 'float64'.
-
     options: Object (optional)
         Options.
 
@@ -374,65 +353,8 @@
     Examples
     --------
     > var buf = new {{alias:@stdlib/array/buffer}}( 32 );
-    > var arr = {{alias}}( buf, 0, 2, 2, 'float32' )
+    > var arr = {{alias}}( buf, 0, 4, 1 )
     <ndarray>
-
-
-{{alias}}.factory( dtype[, options] )
-    Returns a function for creating a two-dimensional ndarray.
-
-    Parameters
-    ----------
-    dtype: string|DataType
-        Underlying data type.
-
-    options: Object (optional)
-        Options.
-
-    options.order: string (optional)
-        Specifies whether the default memory layout should be row-major (C-
-        style) or column-major (Fortran-style). Default: 'row-major'.
-
-    options.mode: string (optional)
-        Specifies the default behavior when handling indices which exceed array
-        dimensions. If equal to 'throw', an ndarray instance throws an error
-        when an index exceeds array dimensions. If equal to 'normalize', an
-        ndarray instance normalizes negative indices and throws an error when an
-        index exceeds array dimensions. If equal to 'wrap', an ndarray instance
-        wraps around indices exceeding array dimensions using modulo arithmetic.
-        If equal to 'clamp', an ndarray instance sets an index exceeding array
-        dimensions to either `0` (minimum index) or the maximum index. Default:
-        'throw'.
-
-    options.submode: Array<string> (optional)
-        Specifies how to handle subscripts which exceed array dimensions. If a
-        mode for a corresponding dimension is equal to 'throw', an ndarray
-        instance throws an error when a subscript exceeds array dimensions. If
-        equal to 'normalize', an ndarray instance normalizes negative
-        subscripts and throws an error when a subscript exceeds array
-        dimensions. If equal to 'wrap', an ndarray instance wraps around
-        subscripts exceeding array dimensions using modulo arithmetic. If equal
-        to 'clamp', an ndarray instance sets a subscript exceeding array
-        dimensions to either `0` (minimum index) or the maximum index. If the
-        number of modes is less than the number of dimensions, an ndarray
-        instance recycles modes using modulo arithmetic.
-
-        Default: [ options.mode ].
-
-    options.readonly: boolean (optional)
-        Boolean indicating whether an array should be read-only by default.
-        Default: false.
-
-    Returns
-    -------
-    fcn: Function
-        Function for creating a two-dimensional ndarray.
-
-    Examples
-    --------
-    > var f = {{alias}}.factory( 'float32' );
-    > var arr = f( [ 2, 2 ] )
-    <ndarray>[ [ 0.0, 0.0 ], [ 0.0, 0.0 ] ]
 
     See Also
     --------
