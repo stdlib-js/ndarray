@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-02)
+## Unreleased (2026-07-03)
 
 <section class="features">
 
@@ -56,12 +56,25 @@
 
 <!-- /.bug-fixes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#13237](https://github.com/stdlib-js/stdlib/issues/13237)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`35b0ceb`](https://github.com/stdlib-js/stdlib/commit/35b0cebbcc09fbd8360368d789baf52331ff02c5) - **chore:** fix EditorConfig lint errors [(#13240)](https://github.com/stdlib-js/stdlib/pull/13240) _(by Ujjwal Verma)_
 -   [`e9f7554`](https://github.com/stdlib-js/stdlib/commit/e9f75542701aa7535be20b624f35a483b4c6e34d) - **docs:** update related packages sections [(#13187)](https://github.com/stdlib-js/stdlib/pull/13187) _(by stdlib-bot)_
 -   [`4b16c6e`](https://github.com/stdlib-js/stdlib/commit/4b16c6ed254600362147eb47602af2687ac97814) - **feat:** update `ndarray/matrix` TypeScript declarations [(#13160)](https://github.com/stdlib-js/stdlib/pull/13160) _(by stdlib-bot)_
 -   [`1428ba4`](https://github.com/stdlib-js/stdlib/commit/1428ba4e084c92135e0fe4d2568e7180de91731e) - **docs:** update related packages sections [(#13158)](https://github.com/stdlib-js/stdlib/pull/13158) _(by stdlib-bot)_
@@ -152,11 +165,12 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Ujjwal Verma
 -   anee3
 
 </section>
