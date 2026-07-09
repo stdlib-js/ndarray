@@ -74,6 +74,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`d32732a`](https://github.com/stdlib-js/stdlib/commit/d32732aad13ce518c74ce6c7ec1982d7b994e071) - **bench:** fix assertion [(#13391)](https://github.com/stdlib-js/stdlib/pull/13391) _(by Philipp Burckhardt, Athan Reines)_
+-   [`945328a`](https://github.com/stdlib-js/stdlib/commit/945328aa14e710f4b828b8fa303173c660c77817) - **chore:** clean-up [(#13390)](https://github.com/stdlib-js/stdlib/pull/13390) _(by Philipp Burckhardt)_
 -   [`f449b5c`](https://github.com/stdlib-js/stdlib/commit/f449b5c1784f60ab3322393dc3e51ad497ce12d2) - **docs:** update related packages sections [(#13381)](https://github.com/stdlib-js/stdlib/pull/13381) _(by stdlib-bot)_
 -   [`e8b3a87`](https://github.com/stdlib-js/stdlib/commit/e8b3a879b467bf7a10632d4951c58048c8bd0fa1) - **docs:** update related packages sections [(#13345)](https://github.com/stdlib-js/stdlib/pull/13345) _(by stdlib-bot)_
 -   [`bce3f55`](https://github.com/stdlib-js/stdlib/commit/bce3f55d4c882af77d2401d8622d818369421c39) - **docs:** update related packages sections [(#13313)](https://github.com/stdlib-js/stdlib/pull/13313) _(by stdlib-bot)_
