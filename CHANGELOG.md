@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-07)
+## Unreleased (2026-07-09)
 
 <section class="features">
 
@@ -74,6 +74,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`f449b5c`](https://github.com/stdlib-js/stdlib/commit/f449b5c1784f60ab3322393dc3e51ad497ce12d2) - **docs:** update related packages sections [(#13381)](https://github.com/stdlib-js/stdlib/pull/13381) _(by stdlib-bot)_
 -   [`e8b3a87`](https://github.com/stdlib-js/stdlib/commit/e8b3a879b467bf7a10632d4951c58048c8bd0fa1) - **docs:** update related packages sections [(#13345)](https://github.com/stdlib-js/stdlib/pull/13345) _(by stdlib-bot)_
 -   [`bce3f55`](https://github.com/stdlib-js/stdlib/commit/bce3f55d4c882af77d2401d8622d818369421c39) - **docs:** update related packages sections [(#13313)](https://github.com/stdlib-js/stdlib/pull/13313) _(by stdlib-bot)_
 -   [`a12fce1`](https://github.com/stdlib-js/stdlib/commit/a12fce1cd6bd65c7aee8a2aee997200f71c83a62) - **docs:** update related packages sections [(#13276)](https://github.com/stdlib-js/stdlib/pull/13276) _(by stdlib-bot)_
