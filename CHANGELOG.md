@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-10)
+## Unreleased (2026-07-16)
 
 <section class="features">
 
@@ -42,6 +42,8 @@
 
 ### Bug Fixes
 
+-   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - avoid block iteration when needing strict traversal order
+-   [`be96f28`](https://github.com/stdlib-js/stdlib/commit/be96f28fa80edb1ea8d516053fbab3d01893bc66) - avoid block iteration when needing strict traversal order
 -   [`92b5eb4`](https://github.com/stdlib-js/stdlib/commit/92b5eb479a9ba6d3fe4f722d2f1b47e61a03122c) - use correct argument during error message interpolation and update descriptions [(#13105)](https://github.com/stdlib-js/stdlib/pull/13105)
 -   [`e6cc42b`](https://github.com/stdlib-js/stdlib/commit/e6cc42bab0268753252236d0e7511c97443754cc) - correct typo in enum name and fix C examples [(#13088)](https://github.com/stdlib-js/stdlib/pull/13088)
 -   [`aedcf13`](https://github.com/stdlib-js/stdlib/commit/aedcf1310cfe8c323ca03bf52d5f27021f5b8927) - wrap `RangeError` messages with `format` [(#12912)](https://github.com/stdlib-js/stdlib/pull/12912)
@@ -74,6 +76,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - **fix:** avoid block iteration when needing strict traversal order _(by Athan Reines)_
+-   [`be96f28`](https://github.com/stdlib-js/stdlib/commit/be96f28fa80edb1ea8d516053fbab3d01893bc66) - **fix:** avoid block iteration when needing strict traversal order _(by Athan Reines)_
 -   [`b18a134`](https://github.com/stdlib-js/stdlib/commit/b18a134a47895fc3e56018929222d356d3ef10c2) - **docs:** update related packages sections [(#13397)](https://github.com/stdlib-js/stdlib/pull/13397) _(by stdlib-bot)_
 -   [`d32732a`](https://github.com/stdlib-js/stdlib/commit/d32732aad13ce518c74ce6c7ec1982d7b994e071) - **bench:** fix assertion [(#13391)](https://github.com/stdlib-js/stdlib/pull/13391) _(by Philipp Burckhardt, Athan Reines)_
 -   [`945328a`](https://github.com/stdlib-js/stdlib/commit/945328aa14e710f4b828b8fa303173c660c77817) - **chore:** clean-up [(#13390)](https://github.com/stdlib-js/stdlib/pull/13390) _(by Philipp Burckhardt)_
