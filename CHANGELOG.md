@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-20)
+## Unreleased (2026-07-21)
 
 <section class="features">
 
@@ -76,6 +76,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`92c748d`](https://github.com/stdlib-js/stdlib/commit/92c748dac8ce3ad80070d5999c579a176348ea02) - **chore:** clean-up [(#13603)](https://github.com/stdlib-js/stdlib/pull/13603) _(by Philipp Burckhardt)_
 -   [`b953edd`](https://github.com/stdlib-js/stdlib/commit/b953edd95d0ca1b521d0abbd2c2719d099ff7807) - **refactor:** use `constants/float64/nan` and clean-up [(#13585)](https://github.com/stdlib-js/stdlib/pull/13585) _(by Philipp Burckhardt)_
 -   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - **fix:** avoid block iteration when needing strict traversal order _(by Athan Reines)_
 -   [`be96f28`](https://github.com/stdlib-js/stdlib/commit/be96f28fa80edb1ea8d516053fbab3d01893bc66) - **fix:** avoid block iteration when needing strict traversal order _(by Athan Reines)_
