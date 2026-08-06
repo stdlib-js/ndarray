@@ -76,6 +76,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`58556f4`](https://github.com/stdlib-js/stdlib/commit/58556f408eedf1737bc4795fb2734ef4dd2a6b32) - **chore:** clean-up [(#13978)](https://github.com/stdlib-js/stdlib/pull/13978) _(by Philipp Burckhardt)_
 -   [`ed2034b`](https://github.com/stdlib-js/stdlib/commit/ed2034b50d57287741f2492ce90c5a2fdd4434d2) - **chore:** fix C lint errors [(#13964)](https://github.com/stdlib-js/stdlib/pull/13964) _(by Ashutosh Choubey, Athan Reines)_
 -   [`8ef56c4`](https://github.com/stdlib-js/stdlib/commit/8ef56c412bf46e234fdff7db65f6e489c406566b) - **refactor:** add `const` qualifiers _(by Athan Reines)_
 -   [`7ae11bc`](https://github.com/stdlib-js/stdlib/commit/7ae11bca9e05607a14425d165dfed57584b880b8) - **chore:** clean-up [(#13834)](https://github.com/stdlib-js/stdlib/pull/13834) _(by Philipp Burckhardt)_
