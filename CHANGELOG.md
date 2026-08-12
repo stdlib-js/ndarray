@@ -76,6 +76,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_
 -   [`c496831`](https://github.com/stdlib-js/stdlib/commit/c496831f64a94cb4a710f24fafd15e468f6ba8f5) - **docs:** update examples [(#14187)](https://github.com/stdlib-js/stdlib/pull/14187) _(by stdlib-bot)_
 -   [`29ec5d9`](https://github.com/stdlib-js/stdlib/commit/29ec5d9165c51810c9184116873893c8356cedfe) - **docs:** improve doctests for ndarray instances in `ndarray/every` [(#14179)](https://github.com/stdlib-js/stdlib/pull/14179) _(by Aryan Sharma)_
 -   [`40156b8`](https://github.com/stdlib-js/stdlib/commit/40156b8c1f21cea5031108711ab00dfcaee4508c) - **docs:** update related packages sections [(#14038)](https://github.com/stdlib-js/stdlib/pull/14038) _(by stdlib-bot)_

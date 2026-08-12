@@ -554,7 +554,7 @@ interface Namespace {
 	* var empty = require( './../../empty' );
 	*
 	* var x = empty( [ 2, 2 ], {
-	*    'dtype': 'generic'
+	*     'dtype': 'generic'
 	* });
 	* // returns <ndarray>
 	*
