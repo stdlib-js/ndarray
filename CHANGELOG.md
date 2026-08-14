@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-13)
+## Unreleased (2026-08-14)
 
 <section class="features">
 
@@ -76,6 +76,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`4298108`](https://github.com/stdlib-js/stdlib/commit/429810892447fdffb2527cc5f1d9810c14f89a90) - **bench:** allow support for measuring different dtypes _(by Athan Reines)_
 -   [`1394f07`](https://github.com/stdlib-js/stdlib/commit/1394f07f4be0e9678ac91838e7327ea19f25c629) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions [(#14217)](https://github.com/stdlib-js/stdlib/pull/14217) _(by Muhammad Haris)_
 -   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_
 -   [`c496831`](https://github.com/stdlib-js/stdlib/commit/c496831f64a94cb4a710f24fafd15e468f6ba8f5) - **docs:** update examples [(#14187)](https://github.com/stdlib-js/stdlib/pull/14187) _(by stdlib-bot)_
