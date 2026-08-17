@@ -4,12 +4,18 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-14)
+## Unreleased (2026-08-17)
 
 <section class="features">
 
 ### Features
 
+-   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - add `ndarray/base/kernels/generic/unary-strided1d/blocked`
+-   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - add `ndarray/base/kernels/utils/increment-offsets`
+-   [`c80658c`](https://github.com/stdlib-js/stdlib/commit/c80658c5375d12779a4ea876d58db0a11abf01da) - add `setDescriptorOffsets` to namespace
+-   [`e420c9c`](https://github.com/stdlib-js/stdlib/commit/e420c9c71f8d4822a89f16c585b7d00a25d40d13) - add `ndarray/base/set-descriptor-offsets`
+-   [`9890d24`](https://github.com/stdlib-js/stdlib/commit/9890d24b3b2c313681dd48f721d67e8f820103db) - add `offsets` to namespace
+-   [`4bcb096`](https://github.com/stdlib-js/stdlib/commit/4bcb096c8138f5a9b8b53fcfec710f96809886fc) - add `ndarray/base/offsets`
 -   [`4b16c6e`](https://github.com/stdlib-js/stdlib/commit/4b16c6ed254600362147eb47602af2687ac97814) - update `ndarray/matrix` TypeScript declarations [(#13160)](https://github.com/stdlib-js/stdlib/pull/13160)
 -   [`2e56dfa`](https://github.com/stdlib-js/stdlib/commit/2e56dfa5c8f48ea64c01692be8cc4ef5a7999d1e) - add `Int32Matrix` to namespace
 -   [`03d3cb0`](https://github.com/stdlib-js/stdlib/commit/03d3cb0a816d66f3f6030b2264f839936877ab57) - add `ndarray/matrix/int32`
@@ -76,6 +82,15 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - **feat:** add `ndarray/base/kernels/generic/unary-strided1d/blocked` _(by Athan Reines)_
+-   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - **feat:** add `ndarray/base/kernels/utils/increment-offsets` _(by Athan Reines)_
+-   [`cd45739`](https://github.com/stdlib-js/stdlib/commit/cd45739c455fc0c5e57b4a6a123b0ac8fd210b9d) - **docs:** fix comment _(by Athan Reines)_
+-   [`c80658c`](https://github.com/stdlib-js/stdlib/commit/c80658c5375d12779a4ea876d58db0a11abf01da) - **feat:** add `setDescriptorOffsets` to namespace _(by Athan Reines)_
+-   [`e420c9c`](https://github.com/stdlib-js/stdlib/commit/e420c9c71f8d4822a89f16c585b7d00a25d40d13) - **feat:** add `ndarray/base/set-descriptor-offsets` _(by Athan Reines)_
+-   [`1571f8f`](https://github.com/stdlib-js/stdlib/commit/1571f8fdad36c00de4ec91ea1a52592e6bf0e2d1) - **test:** fix test case _(by Athan Reines)_
+-   [`1744509`](https://github.com/stdlib-js/stdlib/commit/17445098977cca97af3b16c624f8cd0b739b1b80) - **bench:** update descriptions _(by Athan Reines)_
+-   [`9890d24`](https://github.com/stdlib-js/stdlib/commit/9890d24b3b2c313681dd48f721d67e8f820103db) - **feat:** add `offsets` to namespace _(by Athan Reines)_
+-   [`4bcb096`](https://github.com/stdlib-js/stdlib/commit/4bcb096c8138f5a9b8b53fcfec710f96809886fc) - **feat:** add `ndarray/base/offsets` _(by Athan Reines)_
 -   [`4298108`](https://github.com/stdlib-js/stdlib/commit/429810892447fdffb2527cc5f1d9810c14f89a90) - **bench:** allow support for measuring different dtypes _(by Athan Reines)_
 -   [`1394f07`](https://github.com/stdlib-js/stdlib/commit/1394f07f4be0e9678ac91838e7327ea19f25c629) - **refactor:** add support for ancillary ndarray arguments having trailing dimensions [(#14217)](https://github.com/stdlib-js/stdlib/pull/14217) _(by Muhammad Haris)_
 -   [`a0ddbae`](https://github.com/stdlib-js/stdlib/commit/a0ddbae6d3f4bb2b9f95ff2e249202a5d3c95e82) - **docs:** fix description and add missing spaces [(#14202)](https://github.com/stdlib-js/stdlib/pull/14202) _(by Philipp Burckhardt)_

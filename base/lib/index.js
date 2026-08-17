@@ -1112,6 +1112,15 @@ setReadOnly( ns, 'numelDimension', require( './../../base/numel-dimension' ) );
 setReadOnly( ns, 'offset', require( './../../base/offset' ) );
 
 /**
+* @name offsets
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/offsets}
+*/
+setReadOnly( ns, 'offsets', require( './../../base/offsets' ) );
+
+/**
 * @name ones
 * @memberof ns
 * @readonly
@@ -1371,6 +1380,15 @@ setReadOnly( ns, 'rotr90', require( './../../base/rotr90' ) );
 * @see {@link module:@stdlib/ndarray/base/serialize-meta-data}
 */
 setReadOnly( ns, 'serializeMetaData', require( './../../base/serialize-meta-data' ) );
+
+/**
+* @name setDescriptorOffsets
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/set-descriptor-offsets}
+*/
+setReadOnly( ns, 'setDescriptorOffsets', require( './../../base/set-descriptor-offsets' ) );
 
 /**
 * @name shape
