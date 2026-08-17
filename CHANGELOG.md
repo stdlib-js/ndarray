@@ -48,6 +48,7 @@
 
 ### Bug Fixes
 
+-   [`6ba7e59`](https://github.com/stdlib-js/stdlib/commit/6ba7e5910d85debbb0dd39ea8cfdaf8c458ffe4d) - address off-by-one bug [(#14352)](https://github.com/stdlib-js/stdlib/pull/14352)
 -   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - avoid block iteration when needing strict traversal order
 -   [`be96f28`](https://github.com/stdlib-js/stdlib/commit/be96f28fa80edb1ea8d516053fbab3d01893bc66) - avoid block iteration when needing strict traversal order
 -   [`92b5eb4`](https://github.com/stdlib-js/stdlib/commit/92b5eb479a9ba6d3fe4f722d2f1b47e61a03122c) - use correct argument during error message interpolation and update descriptions [(#13105)](https://github.com/stdlib-js/stdlib/pull/13105)
@@ -82,6 +83,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`6ba7e59`](https://github.com/stdlib-js/stdlib/commit/6ba7e5910d85debbb0dd39ea8cfdaf8c458ffe4d) - **fix:** address off-by-one bug [(#14352)](https://github.com/stdlib-js/stdlib/pull/14352) _(by Philipp Burckhardt)_
 -   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - **feat:** add `ndarray/base/kernels/generic/unary-strided1d/blocked` _(by Athan Reines)_
 -   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - **feat:** add `ndarray/base/kernels/utils/increment-offsets` _(by Athan Reines)_
 -   [`cd45739`](https://github.com/stdlib-js/stdlib/commit/cd45739c455fc0c5e57b4a6a123b0ac8fd210b9d) - **docs:** fix comment _(by Athan Reines)_
