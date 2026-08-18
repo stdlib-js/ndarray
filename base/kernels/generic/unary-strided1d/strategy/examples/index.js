@@ -23,8 +23,8 @@
 var Float64Array = require( '@stdlib/array/float64' );
 var ndarray2array = require( './../../../../../../base/to-array' );
 var gcusum = require( '@stdlib/blas/ext/base/ndarray/gcusum' );
-var strategy = require( './../../../../../../base/kernels/generic/unary-strided1d/strategy' );
-var resolveKernel = require( './../lib' );
+var resolveKernel = require( './../../../../../../base/kernels/generic/unary-strided1d/blocked' );
+var strategy = require( './../lib' );
 
 // Create data buffers:
 var xbuf = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );

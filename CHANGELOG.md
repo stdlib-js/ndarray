@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-17)
+## Unreleased (2026-08-18)
 
 <section class="features">
 
 ### Features
 
+-   [`fb041a6`](https://github.com/stdlib-js/stdlib/commit/fb041a68a9bcc18b7078e26ea11118d5459c2b3c) - add `ndarray/base/kernels/generic/unary-strided1d/strategy`
 -   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - add `ndarray/base/kernels/generic/unary-strided1d/blocked`
 -   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - add `ndarray/base/kernels/utils/increment-offsets`
 -   [`c80658c`](https://github.com/stdlib-js/stdlib/commit/c80658c5375d12779a4ea876d58db0a11abf01da) - add `setDescriptorOffsets` to namespace
@@ -83,6 +84,12 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`eb27106`](https://github.com/stdlib-js/stdlib/commit/eb271061b568c3f49f2f9b05e41786e3fa20063f) - **docs:** update description _(by Athan Reines)_
+-   [`648628d`](https://github.com/stdlib-js/stdlib/commit/648628d7d9d28a3ef21c0dbbfda123b4c440eb50) - **docs:** update descriptions _(by Athan Reines)_
+-   [`86774c6`](https://github.com/stdlib-js/stdlib/commit/86774c66302ff35ffec5222e60ac6f6606f261a8) - **docs:** update descriptions _(by Athan Reines)_
+-   [`600c7a9`](https://github.com/stdlib-js/stdlib/commit/600c7a9e0f1864f33e9c645a434664513fc2e8b1) - **docs:** update types _(by Athan Reines)_
+-   [`315c552`](https://github.com/stdlib-js/stdlib/commit/315c55284242de757dcb04684708f808cadcbb03) - **docs:** update examples _(by Athan Reines)_
+-   [`fb041a6`](https://github.com/stdlib-js/stdlib/commit/fb041a68a9bcc18b7078e26ea11118d5459c2b3c) - **feat:** add `ndarray/base/kernels/generic/unary-strided1d/strategy` _(by Athan Reines)_
 -   [`6ba7e59`](https://github.com/stdlib-js/stdlib/commit/6ba7e5910d85debbb0dd39ea8cfdaf8c458ffe4d) - **fix:** address off-by-one bug [(#14352)](https://github.com/stdlib-js/stdlib/pull/14352) _(by Philipp Burckhardt)_
 -   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - **feat:** add `ndarray/base/kernels/generic/unary-strided1d/blocked` _(by Athan Reines)_
 -   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - **feat:** add `ndarray/base/kernels/utils/increment-offsets` _(by Athan Reines)_
