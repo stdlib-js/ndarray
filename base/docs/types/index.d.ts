@@ -137,7 +137,6 @@ import nullsLike = require( './../../../base/nulls-like' );
 import numel = require( './../../../base/numel' );
 import numelDimension = require( './../../../base/numel-dimension' );
 import offset = require( './../../../base/offset' );
-import offsets = require( './../../../base/offsets' );
 import ones = require( './../../../base/ones' );
 import onesLike = require( './../../../base/ones-like' );
 import order = require( './../../../base/order' );
@@ -167,7 +166,6 @@ import rot180 = require( './../../../base/rot180' );
 import rotl90 = require( './../../../base/rotl90' );
 import rotr90 = require( './../../../base/rotr90' );
 import serializeMetaData = require( './../../../base/serialize-meta-data' );
-import setDescriptorOffsets = require( './../../../base/set-descriptor-offsets' );
 import shape = require( './../../../base/shape' );
 import shape2strides = require( './../../../base/shape2strides' );
 import shift = require( './../../../base/shift' );
@@ -3596,22 +3594,6 @@ interface Namespace {
 	offset: typeof offset;
 
 	/**
-	* Returns the index offset specifying the underlying buffer index of the first iterated element for each ndarray in a provided list of ndarrays.
-	*
-	* @param arrays - list of ndarrays
-	* @returns index offsets
-	*
-	* @example
-	* var zeros = require( './../../../zeros' );
-	*
-	* var x = zeros( [ 3, 3, 3 ] );
-	*
-	* var out = ns.offsets( [ x ] );
-	* // returns [ 0 ]
-	*/
-	offsets: typeof offsets;
-
-	/**
 	* Creates a ones-filled ndarray having a specified shape and data type.
 	*
 	* @param dtype - underlying data type
@@ -4384,43 +4366,6 @@ interface Namespace {
 	* // returns <DataView>
 	*/
 	serializeMetaData: typeof serializeMetaData;
-
-	/**
-	* Sets ndarray descriptor index offsets.
-	*
-	* ## Notes
-	*
-	* -   This function mutates the provided descriptors.
-	*
-	* @param descriptors - list of ndarray descriptors
-	* @param offsets - list of index offsets
-	* @returns input array
-	*
-	* @example
-	* var Float64Array = require( '@stdlib/array/float64' );
-	* var getOffset = require( './../../../base/offset' );
-	* var ndarraylike2descriptor = require( './../../../base/ndarraylike2descriptor' );
-	*
-	* var obj = ndarraylike2descriptor({
-	*     'dtype': 'float64',
-	*     'data': new Float64Array( [ 1.0, 2.0, 3.0, 4.0 ] ),
-	*     'shape': [ 1 ],
-	*     'strides': [ 1 ],
-	*     'offset': 0,
-	*     'order': 'row-major'
-	* });
-	*
-	* var arr = [ obj ];
-	* var out = ns.setDescriptorOffsets( arr, [ 2 ] );
-	* // returns [...]
-	*
-	* var bool = ( out === arr );
-	* // returns true
-	*
-	* var offset = getOffset( arr[ 0 ] );
-	* // returns 2
-	*/
-	setDescriptorOffsets: typeof setDescriptorOffsets;
 
 	/**
 	* Returns the shape of a provided ndarray.
