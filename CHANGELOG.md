@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2359f61`](https://github.com/stdlib-js/stdlib/commit/2359f618e3d65ff3c006f90e58f44b397c96b3e1) - add `ndarray/base/kernels/generic/unary-strided1d/unblocked`
 -   [`fb041a6`](https://github.com/stdlib-js/stdlib/commit/fb041a68a9bcc18b7078e26ea11118d5459c2b3c) - add `ndarray/base/kernels/generic/unary-strided1d/strategy`
 -   [`0f459b6`](https://github.com/stdlib-js/stdlib/commit/0f459b6e5188aee3701259e63d793bef371ab41c) - add `ndarray/base/kernels/generic/unary-strided1d/blocked`
 -   [`0a69d61`](https://github.com/stdlib-js/stdlib/commit/0a69d61b9e81475ea3d73179b78b35859a29a148) - add `ndarray/base/kernels/utils/increment-offsets`
@@ -84,6 +85,9 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`2359f61`](https://github.com/stdlib-js/stdlib/commit/2359f618e3d65ff3c006f90e58f44b397c96b3e1) - **feat:** add `ndarray/base/kernels/generic/unary-strided1d/unblocked` _(by Athan Reines)_
+-   [`0a1ac14`](https://github.com/stdlib-js/stdlib/commit/0a1ac149bcab7145a35d961a27e33fa0ba601182) - **docs:** fix descriptions and update spellings _(by Athan Reines)_
+-   [`4e39b10`](https://github.com/stdlib-js/stdlib/commit/4e39b1060314ca789683f8dda79610d714f4d5e7) - **docs:** update spelling _(by Athan Reines)_
 -   [`eb27106`](https://github.com/stdlib-js/stdlib/commit/eb271061b568c3f49f2f9b05e41786e3fa20063f) - **docs:** update description _(by Athan Reines)_
 -   [`648628d`](https://github.com/stdlib-js/stdlib/commit/648628d7d9d28a3ef21c0dbbfda123b4c440eb50) - **docs:** update descriptions _(by Athan Reines)_
 -   [`86774c6`](https://github.com/stdlib-js/stdlib/commit/86774c66302ff35ffec5222e60ac6f6606f261a8) - **docs:** update descriptions _(by Athan Reines)_
