@@ -52,6 +52,7 @@ import bufferDataTypeEnum = require( './../../../base/buffer-dtype-enum' );
 import bytesPerElement = require( './../../../base/bytes-per-element' );
 import char2dtype = require( './../../../base/char2dtype' );
 import clampIndex = require( './../../../base/clamp-index' );
+import clipIndex = require( './../../../base/clip-index' );
 import complementShape = require( './../../../base/complement-shape' );
 import consensusOrder = require( './../../../base/consensus-order' );
 import copy = require( './../../../base/copy' );
@@ -1247,6 +1248,25 @@ interface Namespace {
 	* // returns 5
 	*/
 	clampIndex: typeof clampIndex;
+
+	/**
+	* Clips an index to the interval `[0,max]`.
+	*
+	* @param idx - index
+	* @param max - maximum index
+	* @returns index
+	*
+	* @example
+	* var idx = ns.clipIndex( -2, 10 );
+	* // returns 8
+	*
+	* idx = ns.clipIndex( 15, 10 );
+	* // returns 10
+	*
+	* idx = ns.clipIndex( 5, 10 );
+	* // returns 5
+	*/
+	clipIndex: typeof clipIndex;
 
 	/**
 	* Returns the shape defined by the dimensions which are not included in a list of dimensions.

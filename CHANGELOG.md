@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464)
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - add `clipIndex` to namespace
 -   [`d681a2e`](https://github.com/stdlib-js/stdlib/commit/d681a2e7667990b06abb08a1aaf2ab205be20846) - add `ndarray/base/clip-index` [(#14432)](https://github.com/stdlib-js/stdlib/pull/14432)
 -   [`303b85c`](https://github.com/stdlib-js/stdlib/commit/303b85cb9b358b43a2f69e537f5dbaeebdad89a7) - update `ndarray/base` TypeScript declarations [(#14366)](https://github.com/stdlib-js/stdlib/pull/14366)
@@ -88,6 +89,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - **feat:** update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464) _(by stdlib-bot)_
 -   [`c5d553b`](https://github.com/stdlib-js/stdlib/commit/c5d553b67e4bd6497dc2b99ee8787b54b1e3e761) - **docs:** update namespace table of contents [(#14465)](https://github.com/stdlib-js/stdlib/pull/14465) _(by stdlib-bot)_
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - **feat:** add `clipIndex` to namespace _(by Athan Reines)_
 -   [`d681a2e`](https://github.com/stdlib-js/stdlib/commit/d681a2e7667990b06abb08a1aaf2ab205be20846) - **feat:** add `ndarray/base/clip-index` [(#14432)](https://github.com/stdlib-js/stdlib/pull/14432) _(by Muhammad Haris, Athan Reines)_
