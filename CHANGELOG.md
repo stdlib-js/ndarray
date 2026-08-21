@@ -88,6 +88,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`c5d553b`](https://github.com/stdlib-js/stdlib/commit/c5d553b67e4bd6497dc2b99ee8787b54b1e3e761) - **docs:** update namespace table of contents [(#14465)](https://github.com/stdlib-js/stdlib/pull/14465) _(by stdlib-bot)_
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - **feat:** add `clipIndex` to namespace _(by Athan Reines)_
 -   [`d681a2e`](https://github.com/stdlib-js/stdlib/commit/d681a2e7667990b06abb08a1aaf2ab205be20846) - **feat:** add `ndarray/base/clip-index` [(#14432)](https://github.com/stdlib-js/stdlib/pull/14432) _(by Muhammad Haris, Athan Reines)_
 -   [`dcb03da`](https://github.com/stdlib-js/stdlib/commit/dcb03da17f986abc96d0c3c913de9b602b5277a6) - **chore:** clean-up [(#14380)](https://github.com/stdlib-js/stdlib/pull/14380) _(by Philipp Burckhardt, Athan Reines)_
