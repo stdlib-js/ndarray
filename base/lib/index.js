@@ -338,6 +338,15 @@ setReadOnly( ns, 'char2dtype', require( './../../base/char2dtype' ) );
 setReadOnly( ns, 'clampIndex', require( './../../base/clamp-index' ) );
 
 /**
+* @name clipIndex
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/clip-index}
+*/
+setReadOnly( ns, 'clipIndex', require( './../../base/clip-index' ) );
+
+/**
 * @name complementShape
 * @memberof ns
 * @readonly
