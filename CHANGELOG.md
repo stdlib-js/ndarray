@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-21)
+## Unreleased (2026-08-22)
 
 <section class="features">
 
@@ -54,6 +54,7 @@
 
 ### Bug Fixes
 
+-   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517)
 -   [`6ba7e59`](https://github.com/stdlib-js/stdlib/commit/6ba7e5910d85debbb0dd39ea8cfdaf8c458ffe4d) - address off-by-one bug [(#14352)](https://github.com/stdlib-js/stdlib/pull/14352)
 -   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - avoid block iteration when needing strict traversal order
 -   [`be96f28`](https://github.com/stdlib-js/stdlib/commit/be96f28fa80edb1ea8d516053fbab3d01893bc66) - avoid block iteration when needing strict traversal order
@@ -89,6 +90,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - **fix:** add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517) _(by Philipp Burckhardt)_
 -   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - **feat:** update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464) _(by stdlib-bot)_
 -   [`c5d553b`](https://github.com/stdlib-js/stdlib/commit/c5d553b67e4bd6497dc2b99ee8787b54b1e3e761) - **docs:** update namespace table of contents [(#14465)](https://github.com/stdlib-js/stdlib/pull/14465) _(by stdlib-bot)_
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - **feat:** add `clipIndex` to namespace _(by Athan Reines)_
