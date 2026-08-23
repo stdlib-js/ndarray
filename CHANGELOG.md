@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-22)
+## Unreleased (2026-08-23)
 
 <section class="features">
 
 ### Features
 
+-   [`d9249d2`](https://github.com/stdlib-js/stdlib/commit/d9249d20cfec52a4742a02008c4c84d8b92d612a) - add `ndarray/base/clip-upper-index` [(#14556)](https://github.com/stdlib-js/stdlib/pull/14556)
 -   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464)
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - add `clipIndex` to namespace
 -   [`d681a2e`](https://github.com/stdlib-js/stdlib/commit/d681a2e7667990b06abb08a1aaf2ab205be20846) - add `ndarray/base/clip-index` [(#14432)](https://github.com/stdlib-js/stdlib/pull/14432)
@@ -90,6 +91,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`d9249d2`](https://github.com/stdlib-js/stdlib/commit/d9249d20cfec52a4742a02008c4c84d8b92d612a) - **feat:** add `ndarray/base/clip-upper-index` [(#14556)](https://github.com/stdlib-js/stdlib/pull/14556) _(by Muhammad Haris)_
 -   [`fdbc822`](https://github.com/stdlib-js/stdlib/commit/fdbc82241f30438af95d53f451c1c4cd4523859f) - **chore:** remove unnecessary `format` calls [(#14520)](https://github.com/stdlib-js/stdlib/pull/14520) _(by Philipp Burckhardt)_
 -   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - **fix:** add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517) _(by Philipp Burckhardt)_
 -   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - **feat:** update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464) _(by stdlib-bot)_
