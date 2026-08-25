@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-23)
+## Unreleased (2026-08-25)
 
 <section class="features">
 
 ### Features
 
+-   [`5c85690`](https://github.com/stdlib-js/stdlib/commit/5c85690727b15b52407f568d850f03356879dc23) - export individual kernels
+-   [`f9d7e87`](https://github.com/stdlib-js/stdlib/commit/f9d7e877336831440a5f7730b75825535f55e637) - export individual kernels
 -   [`d9249d2`](https://github.com/stdlib-js/stdlib/commit/d9249d20cfec52a4742a02008c4c84d8b92d612a) - add `ndarray/base/clip-upper-index` [(#14556)](https://github.com/stdlib-js/stdlib/pull/14556)
 -   [`cb7c674`](https://github.com/stdlib-js/stdlib/commit/cb7c674be0615fb38e4ddcdec80c52581b224e25) - update `ndarray/base` TypeScript declarations [(#14464)](https://github.com/stdlib-js/stdlib/pull/14464)
 -   [`5500b7c`](https://github.com/stdlib-js/stdlib/commit/5500b7c8f280c02568ed9bfac2f01ae22324b82f) - add `clipIndex` to namespace
@@ -91,6 +93,9 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`0282793`](https://github.com/stdlib-js/stdlib/commit/0282793a6bb7d1c5ef415b12a244cd195a6b4c93) - **test:** rename variable _(by Athan Reines)_
+-   [`5c85690`](https://github.com/stdlib-js/stdlib/commit/5c85690727b15b52407f568d850f03356879dc23) - **feat:** export individual kernels _(by Athan Reines)_
+-   [`f9d7e87`](https://github.com/stdlib-js/stdlib/commit/f9d7e877336831440a5f7730b75825535f55e637) - **feat:** export individual kernels _(by Athan Reines)_
 -   [`d9249d2`](https://github.com/stdlib-js/stdlib/commit/d9249d20cfec52a4742a02008c4c84d8b92d612a) - **feat:** add `ndarray/base/clip-upper-index` [(#14556)](https://github.com/stdlib-js/stdlib/pull/14556) _(by Muhammad Haris)_
 -   [`fdbc822`](https://github.com/stdlib-js/stdlib/commit/fdbc82241f30438af95d53f451c1c4cd4523859f) - **chore:** remove unnecessary `format` calls [(#14520)](https://github.com/stdlib-js/stdlib/pull/14520) _(by Philipp Burckhardt)_
 -   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - **fix:** add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517) _(by Philipp Burckhardt)_
