@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-25)
+## Unreleased (2026-08-28)
 
 <section class="features">
 
@@ -79,9 +79,9 @@
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963)
+[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574)
 
 </section>
 
@@ -93,6 +93,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`605a537`](https://github.com/stdlib-js/stdlib/commit/605a5375f8473e0308402f3209912fcd80ef7298) - **chore:** fix JavaScript lint errors [(#14575)](https://github.com/stdlib-js/stdlib/pull/14575) _(by Georgefifth, Athan Reines)_
 -   [`0282793`](https://github.com/stdlib-js/stdlib/commit/0282793a6bb7d1c5ef415b12a244cd195a6b4c93) - **test:** rename variable _(by Athan Reines)_
 -   [`5c85690`](https://github.com/stdlib-js/stdlib/commit/5c85690727b15b52407f568d850f03356879dc23) - **feat:** export individual kernels _(by Athan Reines)_
 -   [`f9d7e87`](https://github.com/stdlib-js/stdlib/commit/f9d7e877336831440a5f7730b75825535f55e637) - **feat:** export individual kernels _(by Athan Reines)_
@@ -238,11 +239,12 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
 -   Athan Reines
+-   Georgefifth
 -   Muhammad Haris
 -   Philipp Burckhardt
 -   Ujjwal Verma
