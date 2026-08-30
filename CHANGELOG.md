@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666)
 -   [`5c85690`](https://github.com/stdlib-js/stdlib/commit/5c85690727b15b52407f568d850f03356879dc23) - export individual kernels
 -   [`f9d7e87`](https://github.com/stdlib-js/stdlib/commit/f9d7e877336831440a5f7730b75825535f55e637) - export individual kernels
 -   [`d9249d2`](https://github.com/stdlib-js/stdlib/commit/d9249d20cfec52a4742a02008c4c84d8b92d612a) - add `ndarray/base/clip-upper-index` [(#14556)](https://github.com/stdlib-js/stdlib/pull/14556)
@@ -93,6 +94,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - **feat:** add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666) _(by Kaustubh Patange, Athan Reines)_
 -   [`94baa72`](https://github.com/stdlib-js/stdlib/commit/94baa7245ca3209bd034016a425003ff7b6bef0a) - **docs:** fix signatures _(by Athan Reines)_
 -   [`3204ab8`](https://github.com/stdlib-js/stdlib/commit/3204ab81d60dfd78a502332789aa9b0ecba885ba) - **docs:** fix signatures _(by Athan Reines)_
 -   [`b85b700`](https://github.com/stdlib-js/stdlib/commit/b85b700a1d17ab443d70df3a52606fb0311dbf0d) - **docs:** improve doctests for ndarray instances in `ndarray/slice` [(#14771)](https://github.com/stdlib-js/stdlib/pull/14771) _(by Aryan Sharma, Athan Reines)_
@@ -242,12 +244,13 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
 -   Athan Reines
 -   Georgefifth
+-   Kaustubh Patange
 -   Muhammad Haris
 -   Philipp Burckhardt
 -   Ujjwal Verma
