@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-29)
+## Unreleased (2026-08-30)
 
 <section class="features">
 
@@ -93,6 +93,8 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`94baa72`](https://github.com/stdlib-js/stdlib/commit/94baa7245ca3209bd034016a425003ff7b6bef0a) - **docs:** fix signatures _(by Athan Reines)_
+-   [`3204ab8`](https://github.com/stdlib-js/stdlib/commit/3204ab81d60dfd78a502332789aa9b0ecba885ba) - **docs:** fix signatures _(by Athan Reines)_
 -   [`b85b700`](https://github.com/stdlib-js/stdlib/commit/b85b700a1d17ab443d70df3a52606fb0311dbf0d) - **docs:** improve doctests for ndarray instances in `ndarray/slice` [(#14771)](https://github.com/stdlib-js/stdlib/pull/14771) _(by Aryan Sharma, Athan Reines)_
 -   [`605a537`](https://github.com/stdlib-js/stdlib/commit/605a5375f8473e0308402f3209912fcd80ef7298) - **chore:** fix JavaScript lint errors [(#14575)](https://github.com/stdlib-js/stdlib/pull/14575) _(by Georgefifth, Athan Reines)_
 -   [`0282793`](https://github.com/stdlib-js/stdlib/commit/0282793a6bb7d1c5ef415b12a244cd195a6b4c93) - **test:** rename variable _(by Athan Reines)_
