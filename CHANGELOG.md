@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-30)
+## Unreleased (2026-09-04)
 
 <section class="features">
 
 ### Features
 
+-   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - add `matrix` to namespace
 -   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666)
 -   [`5c85690`](https://github.com/stdlib-js/stdlib/commit/5c85690727b15b52407f568d850f03356879dc23) - export individual kernels
 -   [`f9d7e87`](https://github.com/stdlib-js/stdlib/commit/f9d7e877336831440a5f7730b75825535f55e637) - export individual kernels
@@ -94,6 +95,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - **feat:** add `matrix` to namespace _(by Athan Reines)_
 -   [`be36019`](https://github.com/stdlib-js/stdlib/commit/be36019c78e6304d7e559901c58a5b24fbb07053) - **docs:** update examples [(#14799)](https://github.com/stdlib-js/stdlib/pull/14799) _(by stdlib-bot)_
 -   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - **feat:** add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666) _(by Kaustubh Patange, Athan Reines)_
 -   [`94baa72`](https://github.com/stdlib-js/stdlib/commit/94baa7245ca3209bd034016a425003ff7b6bef0a) - **docs:** fix signatures _(by Athan Reines)_
