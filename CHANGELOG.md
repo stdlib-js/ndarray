@@ -59,6 +59,7 @@
 
 ### Bug Fixes
 
+-   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966)
 -   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517)
 -   [`6ba7e59`](https://github.com/stdlib-js/stdlib/commit/6ba7e5910d85debbb0dd39ea8cfdaf8c458ffe4d) - address off-by-one bug [(#14352)](https://github.com/stdlib-js/stdlib/pull/14352)
 -   [`b2b099d`](https://github.com/stdlib-js/stdlib/commit/b2b099d42101650779830516980e8e6188bf6bfb) - avoid block iteration when needing strict traversal order
@@ -81,9 +82,9 @@
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574)
+[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574), [#14963](https://github.com/stdlib-js/stdlib/issues/14963)
 
 </section>
 
@@ -95,6 +96,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - **fix:** add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966) _(by JoyBoy, Athan Reines)_
 -   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - **feat:** add `matrix` to namespace _(by Athan Reines)_
 -   [`be36019`](https://github.com/stdlib-js/stdlib/commit/be36019c78e6304d7e559901c58a5b24fbb07053) - **docs:** update examples [(#14799)](https://github.com/stdlib-js/stdlib/pull/14799) _(by stdlib-bot)_
 -   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - **feat:** add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666) _(by Kaustubh Patange, Athan Reines)_
@@ -247,12 +249,13 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
 -   Athan Reines
 -   Georgefifth
+-   JoyBoy
 -   Kaustubh Patange
 -   Muhammad Haris
 -   Philipp Burckhardt
