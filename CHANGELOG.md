@@ -97,6 +97,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`b12e737`](https://github.com/stdlib-js/stdlib/commit/b12e737d6cef93809aea329aef4da83bf1837296) - **docs:** update namespace table of contents [(#14994)](https://github.com/stdlib-js/stdlib/pull/14994) _(by stdlib-bot)_
 -   [`1529efe`](https://github.com/stdlib-js/stdlib/commit/1529efe2e5217bfa815e0a89b8d836b36a410c7a) - **feat:** update `ndarray` TypeScript declarations [(#14993)](https://github.com/stdlib-js/stdlib/pull/14993) _(by stdlib-bot)_
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - **fix:** add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966) _(by JoyBoy, Athan Reines)_
 -   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - **feat:** add `matrix` to namespace _(by Athan Reines)_
