@@ -80,6 +80,7 @@ import inputCastingPolicies = require( './../../input-casting-policies' );
 import iter = require( './../../iter' );
 import last = require( './../../last' );
 import map = require( './../../map' );
+import matrix = require( './../../matrix' );
 import maybeBroadcastArray = require( './../../maybe-broadcast-array' );
 import maybeBroadcastArrays = require( './../../maybe-broadcast-arrays' );
 import minDataType = require( './../../min-dtype' );
@@ -2348,6 +2349,11 @@ interface Namespace {
 	* // returns <ndarray>[ [ 20, 30, 40 ], [ 80, 90, 100 ] ]
 	*/
 	map: typeof map;
+
+	/**
+	* Matrix constructors and associated utilities.
+	*/
+	matrix: typeof matrix;
 
 	/**
 	* Broadcasts an ndarray to a specified shape if and only if the specified shape differs from the provided ndarray's shape.
