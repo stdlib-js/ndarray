@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-05)
+## Unreleased (2026-09-06)
 
 <section class="features">
 
@@ -97,6 +97,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`f81ddda`](https://github.com/stdlib-js/stdlib/commit/f81dddadcdeafa69216905f7dffc8a79e70d6e67) - **docs:** improve doctests for ndarray instances in `ndarray/fill-by` [(#15020)](https://github.com/stdlib-js/stdlib/pull/15020) _(by Utsav)_
 -   [`b12e737`](https://github.com/stdlib-js/stdlib/commit/b12e737d6cef93809aea329aef4da83bf1837296) - **docs:** update namespace table of contents [(#14994)](https://github.com/stdlib-js/stdlib/pull/14994) _(by stdlib-bot)_
 -   [`1529efe`](https://github.com/stdlib-js/stdlib/commit/1529efe2e5217bfa815e0a89b8d836b36a410c7a) - **feat:** update `ndarray` TypeScript declarations [(#14993)](https://github.com/stdlib-js/stdlib/pull/14993) _(by stdlib-bot)_
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - **fix:** add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966) _(by JoyBoy, Athan Reines)_
@@ -252,7 +253,7 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 11 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
@@ -263,6 +264,7 @@ A total of 10 people contributed to this release. Thank you to the following con
 -   Muhammad Haris
 -   Philipp Burckhardt
 -   Ujjwal Verma
+-   Utsav
 -   anee3
 
 </section>
