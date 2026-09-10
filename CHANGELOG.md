@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-06)
+## Unreleased (2026-09-10)
 
 <section class="features">
 
 ### Features
 
+-   [`e64166c`](https://github.com/stdlib-js/stdlib/commit/e64166c9bb7f3d6096dfef4b5f3f7c62c120fd88) - add float16 dtype support to `ndarray/broadcast-scalar-like` [(#15111)](https://github.com/stdlib-js/stdlib/pull/15111)
 -   [`1529efe`](https://github.com/stdlib-js/stdlib/commit/1529efe2e5217bfa815e0a89b8d836b36a410c7a) - update `ndarray` TypeScript declarations [(#14993)](https://github.com/stdlib-js/stdlib/pull/14993)
 -   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - add `matrix` to namespace
 -   [`b126777`](https://github.com/stdlib-js/stdlib/commit/b126777091a2719d9e696dee87e45bf2969e6160) - add `ndarray/base/kernels/generic/binary-strided1d/unblocked` [(#14666)](https://github.com/stdlib-js/stdlib/pull/14666)
@@ -97,6 +98,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`e64166c`](https://github.com/stdlib-js/stdlib/commit/e64166c9bb7f3d6096dfef4b5f3f7c62c120fd88) - **feat:** add float16 dtype support to `ndarray/broadcast-scalar-like` [(#15111)](https://github.com/stdlib-js/stdlib/pull/15111) _(by Samarth Kolarkar)_
 -   [`f81ddda`](https://github.com/stdlib-js/stdlib/commit/f81dddadcdeafa69216905f7dffc8a79e70d6e67) - **docs:** improve doctests for ndarray instances in `ndarray/fill-by` [(#15020)](https://github.com/stdlib-js/stdlib/pull/15020) _(by Utsav)_
 -   [`b12e737`](https://github.com/stdlib-js/stdlib/commit/b12e737d6cef93809aea329aef4da83bf1837296) - **docs:** update namespace table of contents [(#14994)](https://github.com/stdlib-js/stdlib/pull/14994) _(by stdlib-bot)_
 -   [`1529efe`](https://github.com/stdlib-js/stdlib/commit/1529efe2e5217bfa815e0a89b8d836b36a410c7a) - **feat:** update `ndarray` TypeScript declarations [(#14993)](https://github.com/stdlib-js/stdlib/pull/14993) _(by stdlib-bot)_
@@ -253,7 +255,7 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
@@ -263,6 +265,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 -   Kaustubh Patange
 -   Muhammad Haris
 -   Philipp Burckhardt
+-   Samarth Kolarkar
 -   Ujjwal Verma
 -   Utsav
 -   anee3
