@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-10)
+## Unreleased (2026-09-11)
 
 <section class="features">
 
 ### Features
 
+-   [`9b2637c`](https://github.com/stdlib-js/stdlib/commit/9b2637cb621d008ed179885ca15168b94cfecb1c) - add float16 dtype support to `ndarray/zeros` [(#15158)](https://github.com/stdlib-js/stdlib/pull/15158)
 -   [`e64166c`](https://github.com/stdlib-js/stdlib/commit/e64166c9bb7f3d6096dfef4b5f3f7c62c120fd88) - add float16 dtype support to `ndarray/broadcast-scalar-like` [(#15111)](https://github.com/stdlib-js/stdlib/pull/15111)
 -   [`1529efe`](https://github.com/stdlib-js/stdlib/commit/1529efe2e5217bfa815e0a89b8d836b36a410c7a) - update `ndarray` TypeScript declarations [(#14993)](https://github.com/stdlib-js/stdlib/pull/14993)
 -   [`7653b18`](https://github.com/stdlib-js/stdlib/commit/7653b18ee4d74e86124032cdf000203d1e558a86) - add `matrix` to namespace
@@ -98,6 +99,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`9b2637c`](https://github.com/stdlib-js/stdlib/commit/9b2637cb621d008ed179885ca15168b94cfecb1c) - **feat:** add float16 dtype support to `ndarray/zeros` [(#15158)](https://github.com/stdlib-js/stdlib/pull/15158) _(by Samarth Kolarkar)_
 -   [`e64166c`](https://github.com/stdlib-js/stdlib/commit/e64166c9bb7f3d6096dfef4b5f3f7c62c120fd88) - **feat:** add float16 dtype support to `ndarray/broadcast-scalar-like` [(#15111)](https://github.com/stdlib-js/stdlib/pull/15111) _(by Samarth Kolarkar)_
 -   [`f81ddda`](https://github.com/stdlib-js/stdlib/commit/f81dddadcdeafa69216905f7dffc8a79e70d6e67) - **docs:** improve doctests for ndarray instances in `ndarray/fill-by` [(#15020)](https://github.com/stdlib-js/stdlib/pull/15020) _(by Utsav)_
 -   [`b12e737`](https://github.com/stdlib-js/stdlib/commit/b12e737d6cef93809aea329aef4da83bf1837296) - **docs:** update namespace table of contents [(#14994)](https://github.com/stdlib-js/stdlib/pull/14994) _(by stdlib-bot)_
