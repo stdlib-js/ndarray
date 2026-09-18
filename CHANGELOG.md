@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`51a1812`](https://github.com/stdlib-js/stdlib/commit/51a1812de06d6c40a104be53b92515c8e6fb9809) - add float16 dtype support to `ndarray/ones-like` [(#15277)](https://github.com/stdlib-js/stdlib/pull/15277)
 -   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278)
 -   [`ae93ffd`](https://github.com/stdlib-js/stdlib/commit/ae93ffdb56d57bce3ebbe8564269cff5a461ef03) - add float16 dtype support to `ndarray/zeros-like` [(#15280)](https://github.com/stdlib-js/stdlib/pull/15280)
 -   [`c278d13`](https://github.com/stdlib-js/stdlib/commit/c278d135f0b97e37321d9c7ff4e65421029670e5) - add float16 dtype support to `ndarray/base/empty` [(#15282)](https://github.com/stdlib-js/stdlib/pull/15282)
@@ -113,6 +114,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`51a1812`](https://github.com/stdlib-js/stdlib/commit/51a1812de06d6c40a104be53b92515c8e6fb9809) - **feat:** add float16 dtype support to `ndarray/ones-like` [(#15277)](https://github.com/stdlib-js/stdlib/pull/15277) _(by Samarth Kolarkar)_
 -   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - **feat:** add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278) _(by Samarth Kolarkar)_
 -   [`ae93ffd`](https://github.com/stdlib-js/stdlib/commit/ae93ffdb56d57bce3ebbe8564269cff5a461ef03) - **feat:** add float16 dtype support to `ndarray/zeros-like` [(#15280)](https://github.com/stdlib-js/stdlib/pull/15280) _(by Samarth Kolarkar)_
 -   [`c278d13`](https://github.com/stdlib-js/stdlib/commit/c278d135f0b97e37321d9c7ff4e65421029670e5) - **feat:** add float16 dtype support to `ndarray/base/empty` [(#15282)](https://github.com/stdlib-js/stdlib/pull/15282) _(by Samarth Kolarkar)_
