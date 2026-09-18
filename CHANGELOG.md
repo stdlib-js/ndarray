@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278)
 -   [`ae93ffd`](https://github.com/stdlib-js/stdlib/commit/ae93ffdb56d57bce3ebbe8564269cff5a461ef03) - add float16 dtype support to `ndarray/zeros-like` [(#15280)](https://github.com/stdlib-js/stdlib/pull/15280)
 -   [`c278d13`](https://github.com/stdlib-js/stdlib/commit/c278d135f0b97e37321d9c7ff4e65421029670e5) - add float16 dtype support to `ndarray/base/empty` [(#15282)](https://github.com/stdlib-js/stdlib/pull/15282)
 -   [`13c6723`](https://github.com/stdlib-js/stdlib/commit/13c6723b3f9f5cb9aa3169eadaeb88e03be5e23c) - add float16 dtype support to `ndarray/min-dtype` [(#15290)](https://github.com/stdlib-js/stdlib/pull/15290)
@@ -112,6 +113,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - **feat:** add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278) _(by Samarth Kolarkar)_
 -   [`ae93ffd`](https://github.com/stdlib-js/stdlib/commit/ae93ffdb56d57bce3ebbe8564269cff5a461ef03) - **feat:** add float16 dtype support to `ndarray/zeros-like` [(#15280)](https://github.com/stdlib-js/stdlib/pull/15280) _(by Samarth Kolarkar)_
 -   [`c278d13`](https://github.com/stdlib-js/stdlib/commit/c278d135f0b97e37321d9c7ff4e65421029670e5) - **feat:** add float16 dtype support to `ndarray/base/empty` [(#15282)](https://github.com/stdlib-js/stdlib/pull/15282) _(by Samarth Kolarkar)_
 -   [`13c6723`](https://github.com/stdlib-js/stdlib/commit/13c6723b3f9f5cb9aa3169eadaeb88e03be5e23c) - **feat:** add float16 dtype support to `ndarray/min-dtype` [(#15290)](https://github.com/stdlib-js/stdlib/pull/15290) _(by Samarth Kolarkar)_
