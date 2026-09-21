@@ -116,6 +116,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`71758bb`](https://github.com/stdlib-js/stdlib/commit/71758bb364a856a954baa9b7661d5d2da6172ea2) - **docs:** fix description [(#15265)](https://github.com/stdlib-js/stdlib/pull/15265) _(by Philipp Burckhardt, Athan Reines)_
 -   [`46f04eb`](https://github.com/stdlib-js/stdlib/commit/46f04ebe040918f014194ef90470f39c866ce712) - **feat:** add float16 dtype support to `ndarray/ones` [(#15276)](https://github.com/stdlib-js/stdlib/pull/15276) _(by Samarth Kolarkar)_
 -   [`920106e`](https://github.com/stdlib-js/stdlib/commit/920106e17dd93027fac9d9648bc0303c8aabfbb8) - **feat:** add support for `float16` data type [(#15340)](https://github.com/stdlib-js/stdlib/pull/15340) _(by stdlib-bot)_
 -   [`51a1812`](https://github.com/stdlib-js/stdlib/commit/51a1812de06d6c40a104be53b92515c8e6fb9809) - **feat:** add float16 dtype support to `ndarray/ones-like` [(#15277)](https://github.com/stdlib-js/stdlib/pull/15277) _(by Samarth Kolarkar)_
