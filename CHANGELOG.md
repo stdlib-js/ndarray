@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-19)
+## Unreleased (2026-09-21)
 
 <section class="features">
 
 ### Features
 
+-   [`46f04eb`](https://github.com/stdlib-js/stdlib/commit/46f04ebe040918f014194ef90470f39c866ce712) - add float16 dtype support to `ndarray/ones` [(#15276)](https://github.com/stdlib-js/stdlib/pull/15276)
 -   [`920106e`](https://github.com/stdlib-js/stdlib/commit/920106e17dd93027fac9d9648bc0303c8aabfbb8) - add support for `float16` data type [(#15340)](https://github.com/stdlib-js/stdlib/pull/15340)
 -   [`51a1812`](https://github.com/stdlib-js/stdlib/commit/51a1812de06d6c40a104be53b92515c8e6fb9809) - add float16 dtype support to `ndarray/ones-like` [(#15277)](https://github.com/stdlib-js/stdlib/pull/15277)
 -   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278)
@@ -115,6 +116,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`46f04eb`](https://github.com/stdlib-js/stdlib/commit/46f04ebe040918f014194ef90470f39c866ce712) - **feat:** add float16 dtype support to `ndarray/ones` [(#15276)](https://github.com/stdlib-js/stdlib/pull/15276) _(by Samarth Kolarkar)_
 -   [`920106e`](https://github.com/stdlib-js/stdlib/commit/920106e17dd93027fac9d9648bc0303c8aabfbb8) - **feat:** add support for `float16` data type [(#15340)](https://github.com/stdlib-js/stdlib/pull/15340) _(by stdlib-bot)_
 -   [`51a1812`](https://github.com/stdlib-js/stdlib/commit/51a1812de06d6c40a104be53b92515c8e6fb9809) - **feat:** add float16 dtype support to `ndarray/ones-like` [(#15277)](https://github.com/stdlib-js/stdlib/pull/15277) _(by Samarth Kolarkar)_
 -   [`f6e94bd`](https://github.com/stdlib-js/stdlib/commit/f6e94bdde9601a2e893feb6c30f6c07a0d97a220) - **feat:** add float16 dtype support to `ndarray/reject` [(#15278)](https://github.com/stdlib-js/stdlib/pull/15278) _(by Samarth Kolarkar)_
