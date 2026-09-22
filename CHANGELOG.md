@@ -117,6 +117,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`4e396e9`](https://github.com/stdlib-js/stdlib/commit/4e396e96156bc653142e560ce866c0d0978bdf83) - **chore:** clean-up [(#15425)](https://github.com/stdlib-js/stdlib/pull/15425) _(by Philipp Burckhardt)_
 -   [`5f6b7b3`](https://github.com/stdlib-js/stdlib/commit/5f6b7b35889c91d3183477fce13c5e15c6320d92) - **feat:** add `ndarray/base/kernels/generic/binary-strided1d/blocked` [(#14939)](https://github.com/stdlib-js/stdlib/pull/14939) _(by Kaustubh Patange)_
 -   [`71758bb`](https://github.com/stdlib-js/stdlib/commit/71758bb364a856a954baa9b7661d5d2da6172ea2) - **docs:** fix description [(#15265)](https://github.com/stdlib-js/stdlib/pull/15265) _(by Philipp Burckhardt, Athan Reines)_
 -   [`46f04eb`](https://github.com/stdlib-js/stdlib/commit/46f04ebe040918f014194ef90470f39c866ce712) - **feat:** add float16 dtype support to `ndarray/ones` [(#15276)](https://github.com/stdlib-js/stdlib/pull/15276) _(by Samarth Kolarkar)_
