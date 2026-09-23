@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2283ae0`](https://github.com/stdlib-js/stdlib/commit/2283ae09157f485a937f0aa62b91f3a56a112b9b) - add float16 dtype support to `ndarray/base/ones` [(#15432)](https://github.com/stdlib-js/stdlib/pull/15432)
 -   [`19ba44c`](https://github.com/stdlib-js/stdlib/commit/19ba44c6719287a70a9127663ed554d1493c737b) - add float16 dtype support to `ndarray/base/full-by` [(#15433)](https://github.com/stdlib-js/stdlib/pull/15433)
 -   [`2e195f2`](https://github.com/stdlib-js/stdlib/commit/2e195f2882e753e2f467ff5b0049467c70151062) - add float16 dtype support to `ndarray/base/nans` [(#15434)](https://github.com/stdlib-js/stdlib/pull/15434)
 -   [`5f6b7b3`](https://github.com/stdlib-js/stdlib/commit/5f6b7b35889c91d3183477fce13c5e15c6320d92) - add `ndarray/base/kernels/generic/binary-strided1d/blocked` [(#14939)](https://github.com/stdlib-js/stdlib/pull/14939)
@@ -119,6 +120,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`2283ae0`](https://github.com/stdlib-js/stdlib/commit/2283ae09157f485a937f0aa62b91f3a56a112b9b) - **feat:** add float16 dtype support to `ndarray/base/ones` [(#15432)](https://github.com/stdlib-js/stdlib/pull/15432) _(by Samarth Kolarkar)_
 -   [`19ba44c`](https://github.com/stdlib-js/stdlib/commit/19ba44c6719287a70a9127663ed554d1493c737b) - **feat:** add float16 dtype support to `ndarray/base/full-by` [(#15433)](https://github.com/stdlib-js/stdlib/pull/15433) _(by Samarth Kolarkar)_
 -   [`2e195f2`](https://github.com/stdlib-js/stdlib/commit/2e195f2882e753e2f467ff5b0049467c70151062) - **feat:** add float16 dtype support to `ndarray/base/nans` [(#15434)](https://github.com/stdlib-js/stdlib/pull/15434) _(by Samarth Kolarkar)_
 -   [`4e396e9`](https://github.com/stdlib-js/stdlib/commit/4e396e96156bc653142e560ce866c0d0978bdf83) - **chore:** clean-up [(#15425)](https://github.com/stdlib-js/stdlib/pull/15425) _(by Philipp Burckhardt)_
