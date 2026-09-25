@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`4d16cdd`](https://github.com/stdlib-js/stdlib/commit/4d16cdd8dbff71baa354d084f6b7a41713531141) - add float16 dtype support to `ndarray/base/slice-dimension` [(#15527)](https://github.com/stdlib-js/stdlib/pull/15527)
 -   [`af5669c`](https://github.com/stdlib-js/stdlib/commit/af5669ca33f3f6e54f761853d1ed040d24f7012c) - add float16 dtype support to `ndarray/base/slice-assign` [(#15525)](https://github.com/stdlib-js/stdlib/pull/15525)
 -   [`e08bfd5`](https://github.com/stdlib-js/stdlib/commit/e08bfd50feecb0c5eef906ed97405b5b47cbce03) - add float16 dtype support to `ndarray/base/slice-from` [(#15524)](https://github.com/stdlib-js/stdlib/pull/15524)
 -   [`c97de20`](https://github.com/stdlib-js/stdlib/commit/c97de2026feb870549fec4a547af9889583b9e99) - add float16 dtype support to `ndarray/base/slice` [(#15522)](https://github.com/stdlib-js/stdlib/pull/15522)
@@ -128,6 +129,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`4d16cdd`](https://github.com/stdlib-js/stdlib/commit/4d16cdd8dbff71baa354d084f6b7a41713531141) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension` [(#15527)](https://github.com/stdlib-js/stdlib/pull/15527) _(by Samarth Kolarkar)_
 -   [`af5669c`](https://github.com/stdlib-js/stdlib/commit/af5669ca33f3f6e54f761853d1ed040d24f7012c) - **feat:** add float16 dtype support to `ndarray/base/slice-assign` [(#15525)](https://github.com/stdlib-js/stdlib/pull/15525) _(by Samarth Kolarkar)_
 -   [`e08bfd5`](https://github.com/stdlib-js/stdlib/commit/e08bfd50feecb0c5eef906ed97405b5b47cbce03) - **feat:** add float16 dtype support to `ndarray/base/slice-from` [(#15524)](https://github.com/stdlib-js/stdlib/pull/15524) _(by Samarth Kolarkar)_
 -   [`8da0d15`](https://github.com/stdlib-js/stdlib/commit/8da0d154e408d6cd6b3381341173e8c41eac7e59) - **chore:** clean-up [(#15455)](https://github.com/stdlib-js/stdlib/pull/15455) _(by Philipp Burckhardt)_
