@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-24)
+## Unreleased (2026-09-25)
 
 <section class="features">
 
 ### Features
 
+-   [`c97de20`](https://github.com/stdlib-js/stdlib/commit/c97de2026feb870549fec4a547af9889583b9e99) - add float16 dtype support to `ndarray/base/slice` [(#15522)](https://github.com/stdlib-js/stdlib/pull/15522)
 -   [`048df54`](https://github.com/stdlib-js/stdlib/commit/048df548cefa6a5c9e2330cf542e9b8169b73ffc) - add float16 dtype support to `ndarray/base/zeros-like` [(#15495)](https://github.com/stdlib-js/stdlib/pull/15495)
 -   [`9d3c25e`](https://github.com/stdlib-js/stdlib/commit/9d3c25e472f5a38d2cb39182b3ccd306802a0276) - add float16 dtype support to `ndarray/base/transpose` [(#15496)](https://github.com/stdlib-js/stdlib/pull/15496)
 -   [`13dd490`](https://github.com/stdlib-js/stdlib/commit/13dd4907d9a897cffce419ff738b46f74708d19b) - add float16 dtype support to `ndarray/base/ones-like` [(#15494)](https://github.com/stdlib-js/stdlib/pull/15494)
@@ -125,6 +126,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`c97de20`](https://github.com/stdlib-js/stdlib/commit/c97de2026feb870549fec4a547af9889583b9e99) - **feat:** add float16 dtype support to `ndarray/base/slice` [(#15522)](https://github.com/stdlib-js/stdlib/pull/15522) _(by Samarth Kolarkar, Athan Reines)_
 -   [`048df54`](https://github.com/stdlib-js/stdlib/commit/048df548cefa6a5c9e2330cf542e9b8169b73ffc) - **feat:** add float16 dtype support to `ndarray/base/zeros-like` [(#15495)](https://github.com/stdlib-js/stdlib/pull/15495) _(by Samarth Kolarkar)_
 -   [`9d3c25e`](https://github.com/stdlib-js/stdlib/commit/9d3c25e472f5a38d2cb39182b3ccd306802a0276) - **feat:** add float16 dtype support to `ndarray/base/transpose` [(#15496)](https://github.com/stdlib-js/stdlib/pull/15496) _(by Samarth Kolarkar)_
 -   [`13dd490`](https://github.com/stdlib-js/stdlib/commit/13dd4907d9a897cffce419ff738b46f74708d19b) - **feat:** add float16 dtype support to `ndarray/base/ones-like` [(#15494)](https://github.com/stdlib-js/stdlib/pull/15494) _(by Samarth Kolarkar)_
