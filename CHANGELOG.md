@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`736ac5e`](https://github.com/stdlib-js/stdlib/commit/736ac5eb4396e350e060df6008acaffb1b8c994a) - add float16 dtype support to `ndarray/base/slice-dimension-to` [(#15530)](https://github.com/stdlib-js/stdlib/pull/15530)
 -   [`dd7e84b`](https://github.com/stdlib-js/stdlib/commit/dd7e84bf3221965bfc4a985abaed16d01a25b67b) - add float16 dtype support to `ndarray/base/slice-dimension-from` [(#15529)](https://github.com/stdlib-js/stdlib/pull/15529)
 -   [`4d16cdd`](https://github.com/stdlib-js/stdlib/commit/4d16cdd8dbff71baa354d084f6b7a41713531141) - add float16 dtype support to `ndarray/base/slice-dimension` [(#15527)](https://github.com/stdlib-js/stdlib/pull/15527)
 -   [`af5669c`](https://github.com/stdlib-js/stdlib/commit/af5669ca33f3f6e54f761853d1ed040d24f7012c) - add float16 dtype support to `ndarray/base/slice-assign` [(#15525)](https://github.com/stdlib-js/stdlib/pull/15525)
@@ -130,6 +131,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`736ac5e`](https://github.com/stdlib-js/stdlib/commit/736ac5eb4396e350e060df6008acaffb1b8c994a) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension-to` [(#15530)](https://github.com/stdlib-js/stdlib/pull/15530) _(by Samarth Kolarkar)_
 -   [`dd7e84b`](https://github.com/stdlib-js/stdlib/commit/dd7e84bf3221965bfc4a985abaed16d01a25b67b) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension-from` [(#15529)](https://github.com/stdlib-js/stdlib/pull/15529) _(by Samarth Kolarkar)_
 -   [`4d16cdd`](https://github.com/stdlib-js/stdlib/commit/4d16cdd8dbff71baa354d084f6b7a41713531141) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension` [(#15527)](https://github.com/stdlib-js/stdlib/pull/15527) _(by Samarth Kolarkar)_
 -   [`af5669c`](https://github.com/stdlib-js/stdlib/commit/af5669ca33f3f6e54f761853d1ed040d24f7012c) - **feat:** add float16 dtype support to `ndarray/base/slice-assign` [(#15525)](https://github.com/stdlib-js/stdlib/pull/15525) _(by Samarth Kolarkar)_
