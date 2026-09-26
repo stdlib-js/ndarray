@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-25)
+## Unreleased (2026-09-26)
 
 <section class="features">
 
@@ -132,6 +132,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`69c38fa`](https://github.com/stdlib-js/stdlib/commit/69c38fa9260e20a3204415f6a41638728da1ef62) - **test:** avoid out-of-memory error [(#15536)](https://github.com/stdlib-js/stdlib/pull/15536) _(by Philipp Burckhardt)_
 -   [`02791af`](https://github.com/stdlib-js/stdlib/commit/02791af708223481dfa7739251892a6e5644977b) - **feat:** add float16 dtype support to `ndarray/base/slice-to` [(#15531)](https://github.com/stdlib-js/stdlib/pull/15531) _(by Samarth Kolarkar)_
 -   [`736ac5e`](https://github.com/stdlib-js/stdlib/commit/736ac5eb4396e350e060df6008acaffb1b8c994a) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension-to` [(#15530)](https://github.com/stdlib-js/stdlib/pull/15530) _(by Samarth Kolarkar)_
 -   [`dd7e84b`](https://github.com/stdlib-js/stdlib/commit/dd7e84bf3221965bfc4a985abaed16d01a25b67b) - **feat:** add float16 dtype support to `ndarray/base/slice-dimension-from` [(#15529)](https://github.com/stdlib-js/stdlib/pull/15529) _(by Samarth Kolarkar)_
