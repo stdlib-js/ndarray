@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-26)
+## Unreleased (2026-09-28)
 
 <section class="features">
 
@@ -133,6 +133,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`0fc57ae`](https://github.com/stdlib-js/stdlib/commit/0fc57ae60dd9acfefb3dc8cc9d489a02190a4936) - **docs:** fix description [(#15322)](https://github.com/stdlib-js/stdlib/pull/15322) _(by Philipp Burckhardt)_
 -   [`25aa58a`](https://github.com/stdlib-js/stdlib/commit/25aa58ae7756fbb2460bb9f423fa9467b3f9acf2) - **feat:** add `ndarray/base/kernels/generic/ternary-strided1d/blocked` [(#15558)](https://github.com/stdlib-js/stdlib/pull/15558) _(by Kaustubh Patange)_
 -   [`69c38fa`](https://github.com/stdlib-js/stdlib/commit/69c38fa9260e20a3204415f6a41638728da1ef62) - **test:** avoid out-of-memory error [(#15536)](https://github.com/stdlib-js/stdlib/pull/15536) _(by Philipp Burckhardt)_
 -   [`02791af`](https://github.com/stdlib-js/stdlib/commit/02791af708223481dfa7739251892a6e5644977b) - **feat:** add float16 dtype support to `ndarray/base/slice-to` [(#15531)](https://github.com/stdlib-js/stdlib/pull/15531) _(by Samarth Kolarkar)_
