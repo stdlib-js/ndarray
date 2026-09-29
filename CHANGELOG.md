@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-28)
+## Unreleased (2026-09-29)
 
 <section class="features">
 
 ### Features
 
+-   [`e152ec2`](https://github.com/stdlib-js/stdlib/commit/e152ec2a7c7aa789bf3eaf483398768457930b62) - add `ndarray/base/kernels/generic/ternary-strided1d/unblocked` [(#15630)](https://github.com/stdlib-js/stdlib/pull/15630)
 -   [`25aa58a`](https://github.com/stdlib-js/stdlib/commit/25aa58ae7756fbb2460bb9f423fa9467b3f9acf2) - add `ndarray/base/kernels/generic/ternary-strided1d/blocked` [(#15558)](https://github.com/stdlib-js/stdlib/pull/15558)
 -   [`02791af`](https://github.com/stdlib-js/stdlib/commit/02791af708223481dfa7739251892a6e5644977b) - add float16 dtype support to `ndarray/base/slice-to` [(#15531)](https://github.com/stdlib-js/stdlib/pull/15531)
 -   [`736ac5e`](https://github.com/stdlib-js/stdlib/commit/736ac5eb4396e350e060df6008acaffb1b8c994a) - add float16 dtype support to `ndarray/base/slice-dimension-to` [(#15530)](https://github.com/stdlib-js/stdlib/pull/15530)
@@ -133,6 +134,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`e152ec2`](https://github.com/stdlib-js/stdlib/commit/e152ec2a7c7aa789bf3eaf483398768457930b62) - **feat:** add `ndarray/base/kernels/generic/ternary-strided1d/unblocked` [(#15630)](https://github.com/stdlib-js/stdlib/pull/15630) _(by Kaustubh Patange)_
 -   [`0fc57ae`](https://github.com/stdlib-js/stdlib/commit/0fc57ae60dd9acfefb3dc8cc9d489a02190a4936) - **docs:** fix description [(#15322)](https://github.com/stdlib-js/stdlib/pull/15322) _(by Philipp Burckhardt)_
 -   [`25aa58a`](https://github.com/stdlib-js/stdlib/commit/25aa58ae7756fbb2460bb9f423fa9467b3f9acf2) - **feat:** add `ndarray/base/kernels/generic/ternary-strided1d/blocked` [(#15558)](https://github.com/stdlib-js/stdlib/pull/15558) _(by Kaustubh Patange)_
 -   [`69c38fa`](https://github.com/stdlib-js/stdlib/commit/69c38fa9260e20a3204415f6a41638728da1ef62) - **test:** avoid out-of-memory error [(#15536)](https://github.com/stdlib-js/stdlib/pull/15536) _(by Philipp Burckhardt)_
