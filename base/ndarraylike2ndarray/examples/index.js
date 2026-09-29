@@ -1,0 +1,46 @@
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2024 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+'use strict';
+
+var getDType = require( './../../../dtype' );
+var getShape = require( './../../../shape' );
+var getStrides = require( './../../../strides' );
+var getOffset = require( './../../../offset' );
+var getOrder = require( './../../../order' );
+var array = require( './../../../array' );
+var numel = require( './../../../numel' );
+var ndims = require( './../../../ndims' );
+var join = require( '@stdlib/array/base/join' );
+var ndarraylike2ndarray = require( './../lib' );
+
+// Create an ndarray:
+var x = array( [ [ 1, 2 ], [ 3, 4 ] ] );
+
+// Convert to a "base" ndarray:
+var out = ndarraylike2ndarray( x );
+// returns <ndarray>[ [ 1, 2 ], [ 3, 4 ] ]
+
+// Print various properties:
+console.log( 'dtype: %s', getDType( out ) );
+console.log( 'ndims: %d', ndims( out ) );
+console.log( 'length: %d', numel( out ) );
+console.log( 'shape: [ %s ]', join( getShape( out ), ', ' ) );
+console.log( 'strides: [ %s ]', join( getStrides( out ), ', ' ) );
+console.log( 'offset: %d', getOffset( out ) );
+console.log( 'order: %s', getOrder( out ) );
