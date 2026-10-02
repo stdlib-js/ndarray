@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-30)
+## Unreleased (2026-10-02)
 
 <section class="features">
 
 ### Features
 
+-   [`3388e07`](https://github.com/stdlib-js/stdlib/commit/3388e077358cc0b59470c80634283489e004affa) - add float16 dtype support to `ndarray/slice-dimension-from` [(#15748)](https://github.com/stdlib-js/stdlib/pull/15748)
 -   [`e152ec2`](https://github.com/stdlib-js/stdlib/commit/e152ec2a7c7aa789bf3eaf483398768457930b62) - add `ndarray/base/kernels/generic/ternary-strided1d/unblocked` [(#15630)](https://github.com/stdlib-js/stdlib/pull/15630)
 -   [`25aa58a`](https://github.com/stdlib-js/stdlib/commit/25aa58ae7756fbb2460bb9f423fa9467b3f9acf2) - add `ndarray/base/kernels/generic/ternary-strided1d/blocked` [(#15558)](https://github.com/stdlib-js/stdlib/pull/15558)
 -   [`02791af`](https://github.com/stdlib-js/stdlib/commit/02791af708223481dfa7739251892a6e5644977b) - add float16 dtype support to `ndarray/base/slice-to` [(#15531)](https://github.com/stdlib-js/stdlib/pull/15531)
@@ -134,6 +135,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`3388e07`](https://github.com/stdlib-js/stdlib/commit/3388e077358cc0b59470c80634283489e004affa) - **feat:** add float16 dtype support to `ndarray/slice-dimension-from` [(#15748)](https://github.com/stdlib-js/stdlib/pull/15748) _(by Samarth Kolarkar)_
 -   [`0ee3933`](https://github.com/stdlib-js/stdlib/commit/0ee3933432578899483151dd85a35fc7f4f0e5f9) - **chore:** clean-up [(#15652)](https://github.com/stdlib-js/stdlib/pull/15652) _(by Philipp Burckhardt)_
 -   [`32c09fd`](https://github.com/stdlib-js/stdlib/commit/32c09fd471df83a82ff9dcb5ccf08684555c0d5e) - **refactor:** resolve consensus memory layout _(by Athan Reines)_
 -   [`100ca4c`](https://github.com/stdlib-js/stdlib/commit/100ca4c8d76ab8b40dfbb30bbbe77e86a2221a81) - **refactor:** resolve consensus order _(by Athan Reines)_
