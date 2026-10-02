@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`85f3d87`](https://github.com/stdlib-js/stdlib/commit/85f3d878b126107b24ba09fd08bea53307422087) - add float16 dtype support to `ndarray/base/empty-like` [(#15739)](https://github.com/stdlib-js/stdlib/pull/15739)
 -   [`ce01d62`](https://github.com/stdlib-js/stdlib/commit/ce01d62f42a0f04f16f413f93dea56794a601211) - add float16 dtype support to `ndarray/base/from-array` [(#15742)](https://github.com/stdlib-js/stdlib/pull/15742)
 -   [`745b7b2`](https://github.com/stdlib-js/stdlib/commit/745b7b23ad7c544eeaa33344aae3e79ba3404062) - add float16 dtype support to `ndarray/base/from-scalar` [(#15743)](https://github.com/stdlib-js/stdlib/pull/15743)
 -   [`2e4d8af`](https://github.com/stdlib-js/stdlib/commit/2e4d8af6edb78e37812c0f124cb0fda43cee720f) - add float16 dtype support to `ndarray/slice-from` [(#15744)](https://github.com/stdlib-js/stdlib/pull/15744)
@@ -140,6 +141,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`85f3d87`](https://github.com/stdlib-js/stdlib/commit/85f3d878b126107b24ba09fd08bea53307422087) - **feat:** add float16 dtype support to `ndarray/base/empty-like` [(#15739)](https://github.com/stdlib-js/stdlib/pull/15739) _(by Samarth Kolarkar)_
 -   [`ce01d62`](https://github.com/stdlib-js/stdlib/commit/ce01d62f42a0f04f16f413f93dea56794a601211) - **feat:** add float16 dtype support to `ndarray/base/from-array` [(#15742)](https://github.com/stdlib-js/stdlib/pull/15742) _(by Samarth Kolarkar)_
 -   [`745b7b2`](https://github.com/stdlib-js/stdlib/commit/745b7b23ad7c544eeaa33344aae3e79ba3404062) - **feat:** add float16 dtype support to `ndarray/base/from-scalar` [(#15743)](https://github.com/stdlib-js/stdlib/pull/15743) _(by Samarth Kolarkar)_
 -   [`2e4d8af`](https://github.com/stdlib-js/stdlib/commit/2e4d8af6edb78e37812c0f124cb0fda43cee720f) - **feat:** add float16 dtype support to `ndarray/slice-from` [(#15744)](https://github.com/stdlib-js/stdlib/pull/15744) _(by Samarth Kolarkar)_
