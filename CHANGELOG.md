@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-02)
+## Unreleased (2026-10-11)
 
 <section class="features">
 
@@ -104,6 +104,7 @@
 
 ### Bug Fixes
 
+-   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - account for \"empty\" 0d ndarrays
 -   [`96ed2fa`](https://github.com/stdlib-js/stdlib/commit/96ed2faff14d10a798f3d84d267a26e7a78b0759) - return loop permutation indices from `ndarray/base/*loop-interchange-order` packages [(#15812)](https://github.com/stdlib-js/stdlib/pull/15812)
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966)
 -   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517)
@@ -142,6 +143,11 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`8bb3f86`](https://github.com/stdlib-js/stdlib/commit/8bb3f86957c4e8455b87dc8c9fddd3979d6e811a) - **refactor:** add support for dtype objects and use accessor APIs _(by Athan Reines)_
+-   [`26b285d`](https://github.com/stdlib-js/stdlib/commit/26b285db598be2101b46d89455bf42f613c75c88) - **refactor:** add support for dtype objects and use accessor functions _(by Athan Reines)_
+-   [`34d2773`](https://github.com/stdlib-js/stdlib/commit/34d2773f7e2158200c658a8ee9a025a47aac7b44) - **refactor:** add support for dtype objects _(by Athan Reines)_
+-   [`38ed71c`](https://github.com/stdlib-js/stdlib/commit/38ed71c59a49f19f15970e304ad5c9845d02ff2f) - **refactor:** update tests and examples to use accessor APIs _(by Athan Reines)_
+-   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - **fix:** account for \"empty\" 0d ndarrays _(by Athan Reines)_
 -   [`96ed2fa`](https://github.com/stdlib-js/stdlib/commit/96ed2faff14d10a798f3d84d267a26e7a78b0759) - **fix:** return loop permutation indices from `ndarray/base/*loop-interchange-order` packages [(#15812)](https://github.com/stdlib-js/stdlib/pull/15812) _(by Kaustubh Patange)_
 -   [`85f3d87`](https://github.com/stdlib-js/stdlib/commit/85f3d878b126107b24ba09fd08bea53307422087) - **feat:** add float16 dtype support to `ndarray/base/empty-like` [(#15739)](https://github.com/stdlib-js/stdlib/pull/15739) _(by Samarth Kolarkar)_
 -   [`ce01d62`](https://github.com/stdlib-js/stdlib/commit/ce01d62f42a0f04f16f413f93dea56794a601211) - **feat:** add float16 dtype support to `ndarray/base/from-array` [(#15742)](https://github.com/stdlib-js/stdlib/pull/15742) _(by Samarth Kolarkar)_
