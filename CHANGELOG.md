@@ -148,6 +148,7 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
 -   [`2f63119`](https://github.com/stdlib-js/stdlib/commit/2f6311946a3be5d683c91f74553f3c473f8f77fb) - **feat:** add float16 dtype support to `ndarray/find` [(#15867)](https://github.com/stdlib-js/stdlib/pull/15867) _(by Samarth Kolarkar)_
 -   [`ca323e3`](https://github.com/stdlib-js/stdlib/commit/ca323e326feb01b5c07999206dab493c66f925ef) - **feat:** add float16 dtype support to `ndarray/to-locale-string` [(#15869)](https://github.com/stdlib-js/stdlib/pull/15869) _(by Samarth Kolarkar)_
 -   [`03dc637`](https://github.com/stdlib-js/stdlib/commit/03dc637c88649be394fe826eda0ca395f5698ff3) - **feat:** add float16 dtype support to `ndarray/to-string` [(#15870)](https://github.com/stdlib-js/stdlib/pull/15870) _(by Samarth Kolarkar)_
