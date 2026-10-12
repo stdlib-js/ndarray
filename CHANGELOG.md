@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`2f63119`](https://github.com/stdlib-js/stdlib/commit/2f6311946a3be5d683c91f74553f3c473f8f77fb) - add float16 dtype support to `ndarray/find` [(#15867)](https://github.com/stdlib-js/stdlib/pull/15867)
+-   [`ca323e3`](https://github.com/stdlib-js/stdlib/commit/ca323e326feb01b5c07999206dab493c66f925ef) - add float16 dtype support to `ndarray/to-locale-string` [(#15869)](https://github.com/stdlib-js/stdlib/pull/15869)
 -   [`03dc637`](https://github.com/stdlib-js/stdlib/commit/03dc637c88649be394fe826eda0ca395f5698ff3) - add float16 dtype support to `ndarray/to-string` [(#15870)](https://github.com/stdlib-js/stdlib/pull/15870)
 -   [`40e6a9e`](https://github.com/stdlib-js/stdlib/commit/40e6a9e4cc2d941aa2c62c6365c1351ff139850e) - add float16 dtype support to `ndarray/from-scalar-like` [(#15244)](https://github.com/stdlib-js/stdlib/pull/15244)
 -   [`81645db`](https://github.com/stdlib-js/stdlib/commit/81645db64e0d7a9d27a59850ae50001534edb809) - update `ndarray/base` TypeScript declarations [(#15838)](https://github.com/stdlib-js/stdlib/pull/15838)
@@ -146,6 +148,8 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`2f63119`](https://github.com/stdlib-js/stdlib/commit/2f6311946a3be5d683c91f74553f3c473f8f77fb) - **feat:** add float16 dtype support to `ndarray/find` [(#15867)](https://github.com/stdlib-js/stdlib/pull/15867) _(by Samarth Kolarkar)_
+-   [`ca323e3`](https://github.com/stdlib-js/stdlib/commit/ca323e326feb01b5c07999206dab493c66f925ef) - **feat:** add float16 dtype support to `ndarray/to-locale-string` [(#15869)](https://github.com/stdlib-js/stdlib/pull/15869) _(by Samarth Kolarkar)_
 -   [`03dc637`](https://github.com/stdlib-js/stdlib/commit/03dc637c88649be394fe826eda0ca395f5698ff3) - **feat:** add float16 dtype support to `ndarray/to-string` [(#15870)](https://github.com/stdlib-js/stdlib/pull/15870) _(by Samarth Kolarkar)_
 -   [`40e6a9e`](https://github.com/stdlib-js/stdlib/commit/40e6a9e4cc2d941aa2c62c6365c1351ff139850e) - **feat:** add float16 dtype support to `ndarray/from-scalar-like` [(#15244)](https://github.com/stdlib-js/stdlib/pull/15244) _(by Samarth Kolarkar)_
 -   [`81645db`](https://github.com/stdlib-js/stdlib/commit/81645db64e0d7a9d27a59850ae50001534edb809) - **feat:** update `ndarray/base` TypeScript declarations [(#15838)](https://github.com/stdlib-js/stdlib/pull/15838) _(by stdlib-bot)_
