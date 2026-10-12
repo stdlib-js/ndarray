@@ -3289,7 +3289,6 @@ interface Namespace {
 	* @example
 	* var Slice = require( '@stdlib/slice/ctor' );
 	* var MultiSlice = require( '@stdlib/slice/multi' );
-	* var getShape = require( './../../shape' );
 	* var ndarray = require( './../../ctor' );
 	*
 	* var buffer = [ 1, 2, 3, 4, 5, 6 ];
@@ -3300,7 +3299,7 @@ interface Namespace {
 	* var x = ndarray( 'generic', buffer, shape, strides, offset, 'row-major' );
 	* // returns <ndarray>[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ]
 	*
-	* var sh = getShape( x );
+	* var sh = x.shape;
 	* // returns [ 3, 2 ]
 	*
 	* var s0 = new Slice( null, null, -2 );
@@ -3309,7 +3308,7 @@ interface Namespace {
 	* var y = ns.slice( x, s0, s1 );
 	* // returns <ndarray>[ [ 6, 5 ], [ 2, 1 ] ]
 	*
-	* sh = getShape( y );
+	* sh = y.shape;
 	* // returns [ 2, 2 ]
 	*/
 	slice: typeof slice;
