@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`81645db`](https://github.com/stdlib-js/stdlib/commit/81645db64e0d7a9d27a59850ae50001534edb809) - update `ndarray/base` TypeScript declarations [(#15838)](https://github.com/stdlib-js/stdlib/pull/15838)
 -   [`85f3d87`](https://github.com/stdlib-js/stdlib/commit/85f3d878b126107b24ba09fd08bea53307422087) - add float16 dtype support to `ndarray/base/empty-like` [(#15739)](https://github.com/stdlib-js/stdlib/pull/15739)
 -   [`ce01d62`](https://github.com/stdlib-js/stdlib/commit/ce01d62f42a0f04f16f413f93dea56794a601211) - add float16 dtype support to `ndarray/base/from-array` [(#15742)](https://github.com/stdlib-js/stdlib/pull/15742)
 -   [`745b7b2`](https://github.com/stdlib-js/stdlib/commit/745b7b23ad7c544eeaa33344aae3e79ba3404062) - add float16 dtype support to `ndarray/base/from-scalar` [(#15743)](https://github.com/stdlib-js/stdlib/pull/15743)
@@ -143,6 +144,8 @@ A total of 4 issues were closed in this release:
 
 <details>
 
+-   [`81645db`](https://github.com/stdlib-js/stdlib/commit/81645db64e0d7a9d27a59850ae50001534edb809) - **feat:** update `ndarray/base` TypeScript declarations [(#15838)](https://github.com/stdlib-js/stdlib/pull/15838) _(by stdlib-bot)_
+-   [`ba2b826`](https://github.com/stdlib-js/stdlib/commit/ba2b8265baf1b23a75e26fc890488691501edb67) - **docs:** update example [(#16075)](https://github.com/stdlib-js/stdlib/pull/16075) _(by stdlib-bot)_
 -   [`76fd996`](https://github.com/stdlib-js/stdlib/commit/76fd996a6129ea7c663b0ac89fc65480698241c2) - **docs:** update namespace table of contents [(#16076)](https://github.com/stdlib-js/stdlib/pull/16076) _(by stdlib-bot)_
 -   [`8bb3f86`](https://github.com/stdlib-js/stdlib/commit/8bb3f86957c4e8455b87dc8c9fddd3979d6e811a) - **refactor:** add support for dtype objects and use accessor APIs _(by Athan Reines)_
 -   [`26b285d`](https://github.com/stdlib-js/stdlib/commit/26b285db598be2101b46d89455bf42f613c75c88) - **refactor:** add support for dtype objects and use accessor functions _(by Athan Reines)_
