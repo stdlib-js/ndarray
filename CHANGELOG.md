@@ -148,6 +148,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`0ce2da2`](https://github.com/stdlib-js/stdlib/commit/0ce2da2397c0bf3eedfc348cb407edb6a058d556) - **docs:** improve doctests for ndarray instances in `ndarray/slice-from` [(#16236)](https://github.com/stdlib-js/stdlib/pull/16236) _(by Yashvardhan Thanvi)_
 -   [`9d53beb`](https://github.com/stdlib-js/stdlib/commit/9d53bebc7c1108f38d715347a50a8395e2e177b6) - **chore:** fix C lint errors [(#16316)](https://github.com/stdlib-js/stdlib/pull/16316) _(by navenavelimargam)_
 -   [`99a1674`](https://github.com/stdlib-js/stdlib/commit/99a1674e90c2e3a536c8659f394ac36f617e794e) - **docs:** update examples [(#16100)](https://github.com/stdlib-js/stdlib/pull/16100) _(by stdlib-bot)_
 -   [`8f62240`](https://github.com/stdlib-js/stdlib/commit/8f622403b8f6ff3781a17dc7ceb077e341e91aa3) - **docs:** clean-up [(#16084)](https://github.com/stdlib-js/stdlib/pull/16084) _(by Philipp Burckhardt)_
@@ -372,7 +373,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 14 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
@@ -385,6 +386,7 @@ A total of 13 people contributed to this release. Thank you to the following con
 -   Samarth Kolarkar
 -   Ujjwal Verma
 -   Utsav
+-   Yashvardhan Thanvi
 -   anee3
 -   navenavelimargam
 
