@@ -82,6 +82,15 @@ setReadOnly( ns, 'Float32Matrix', require( './../../matrix/float32' ) );
 setReadOnly( ns, 'Float64Matrix', require( './../../matrix/float64' ) );
 
 /**
+* @name Int16Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/int16}
+*/
+setReadOnly( ns, 'Int16Matrix', require( './../../matrix/int16' ) );
+
+/**
 * @name Int32Matrix
 * @memberof ns
 * @readonly

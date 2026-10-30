@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`5ec3677`](https://github.com/stdlib-js/stdlib/commit/5ec3677ec638bc4b1540b2e63383db29b9176fa0) - add `Int16Matrix` to namespace
+-   [`55f408c`](https://github.com/stdlib-js/stdlib/commit/55f408c209620b8388bfce4cc589a6014bc9377d) - add `ndarray/matrix/int16`
 -   [`2f63119`](https://github.com/stdlib-js/stdlib/commit/2f6311946a3be5d683c91f74553f3c473f8f77fb) - add float16 dtype support to `ndarray/find` [(#15867)](https://github.com/stdlib-js/stdlib/pull/15867)
 -   [`ca323e3`](https://github.com/stdlib-js/stdlib/commit/ca323e326feb01b5c07999206dab493c66f925ef) - add float16 dtype support to `ndarray/to-locale-string` [(#15869)](https://github.com/stdlib-js/stdlib/pull/15869)
 -   [`03dc637`](https://github.com/stdlib-js/stdlib/commit/03dc637c88649be394fe826eda0ca395f5698ff3) - add float16 dtype support to `ndarray/to-string` [(#15870)](https://github.com/stdlib-js/stdlib/pull/15870)
@@ -148,6 +150,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`5ec3677`](https://github.com/stdlib-js/stdlib/commit/5ec3677ec638bc4b1540b2e63383db29b9176fa0) - **feat:** add `Int16Matrix` to namespace _(by Athan Reines)_
+-   [`55f408c`](https://github.com/stdlib-js/stdlib/commit/55f408c209620b8388bfce4cc589a6014bc9377d) - **feat:** add `ndarray/matrix/int16` _(by Athan Reines)_
 -   [`ba46149`](https://github.com/stdlib-js/stdlib/commit/ba46149422a16b27a335d67a06b42240f4e21828) - **docs:** update examples [(#16375)](https://github.com/stdlib-js/stdlib/pull/16375) _(by stdlib-bot)_
 -   [`0ce2da2`](https://github.com/stdlib-js/stdlib/commit/0ce2da2397c0bf3eedfc348cb407edb6a058d556) - **docs:** improve doctests for ndarray instances in `ndarray/slice-from` [(#16236)](https://github.com/stdlib-js/stdlib/pull/16236) _(by Yashvardhan Thanvi)_
 -   [`9d53beb`](https://github.com/stdlib-js/stdlib/commit/9d53bebc7c1108f38d715347a50a8395e2e177b6) - **chore:** fix C lint errors [(#16316)](https://github.com/stdlib-js/stdlib/pull/16316) _(by navenavelimargam)_
