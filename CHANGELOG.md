@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-29)
+## Unreleased (2026-10-30)
 
 <section class="features">
 
@@ -148,6 +148,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`ba46149`](https://github.com/stdlib-js/stdlib/commit/ba46149422a16b27a335d67a06b42240f4e21828) - **docs:** update examples [(#16375)](https://github.com/stdlib-js/stdlib/pull/16375) _(by stdlib-bot)_
 -   [`0ce2da2`](https://github.com/stdlib-js/stdlib/commit/0ce2da2397c0bf3eedfc348cb407edb6a058d556) - **docs:** improve doctests for ndarray instances in `ndarray/slice-from` [(#16236)](https://github.com/stdlib-js/stdlib/pull/16236) _(by Yashvardhan Thanvi)_
 -   [`9d53beb`](https://github.com/stdlib-js/stdlib/commit/9d53bebc7c1108f38d715347a50a8395e2e177b6) - **chore:** fix C lint errors [(#16316)](https://github.com/stdlib-js/stdlib/pull/16316) _(by navenavelimargam)_
 -   [`99a1674`](https://github.com/stdlib-js/stdlib/commit/99a1674e90c2e3a536c8659f394ac36f617e794e) - **docs:** update examples [(#16100)](https://github.com/stdlib-js/stdlib/pull/16100) _(by stdlib-bot)_
