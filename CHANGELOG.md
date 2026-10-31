@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`d0b1fab`](https://github.com/stdlib-js/stdlib/commit/d0b1fabb02e286febe24892faa5c96b978ff3637) - add `arraybuffer2ndarray` to namespace
+-   [`2f24c6d`](https://github.com/stdlib-js/stdlib/commit/2f24c6d5da9b65e862d9def45bc8a0cd2e2df9de) - add `ndarray/from-arraybuffer`
 -   [`c4bb8b8`](https://github.com/stdlib-js/stdlib/commit/c4bb8b8621ad88b594bc7e458c7ba89f6332689e) - add `BooleanMatrix` to namespace
 -   [`d395cea`](https://github.com/stdlib-js/stdlib/commit/d395cea8dd7f16102f633debea6c12cee9fa4d15) - add `ndarray/matrix/bool`
 -   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - add `Uint8ClampedMatrix` to namespace
@@ -163,6 +165,13 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`af38320`](https://github.com/stdlib-js/stdlib/commit/af38320f6f68ac48ee6232ef5cdc71382c582605) - **refactor:** use external utility _(by Athan Reines)_
+-   [`5f1e253`](https://github.com/stdlib-js/stdlib/commit/5f1e2532583d201353eae6288d960850a2f49cde) - **refactor:** use external utility _(by Athan Reines)_
+-   [`39c730d`](https://github.com/stdlib-js/stdlib/commit/39c730d6c760d7ff8a2d2c328cabeecac6bae9bb) - **chore:** clean-up _(by Athan Reines)_
+-   [`2d7198f`](https://github.com/stdlib-js/stdlib/commit/2d7198fb01e7deee5f53b4303762c8a350f4ee8a) - **style:** add missing space _(by Athan Reines)_
+-   [`d0b1fab`](https://github.com/stdlib-js/stdlib/commit/d0b1fabb02e286febe24892faa5c96b978ff3637) - **feat:** add `arraybuffer2ndarray` to namespace _(by Athan Reines)_
+-   [`d918587`](https://github.com/stdlib-js/stdlib/commit/d9185877385673e815d7e822c62f949bb3713b58) - **docs:** remove obsolete annotation _(by Athan Reines)_
+-   [`2f24c6d`](https://github.com/stdlib-js/stdlib/commit/2f24c6d5da9b65e862d9def45bc8a0cd2e2df9de) - **feat:** add `ndarray/from-arraybuffer` _(by Athan Reines)_
 -   [`c4bb8b8`](https://github.com/stdlib-js/stdlib/commit/c4bb8b8621ad88b594bc7e458c7ba89f6332689e) - **feat:** add `BooleanMatrix` to namespace _(by Athan Reines)_
 -   [`d395cea`](https://github.com/stdlib-js/stdlib/commit/d395cea8dd7f16102f633debea6c12cee9fa4d15) - **feat:** add `ndarray/matrix/bool` _(by Athan Reines)_
 -   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - **feat:** add `Uint8ClampedMatrix` to namespace _(by Athan Reines)_
