@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - add `Uint8ClampedMatrix` to namespace
+-   [`22a7b03`](https://github.com/stdlib-js/stdlib/commit/22a7b030c2609878957dd3faf6b0ea82047177dd) - add `ndarray/matrix/uint8c`
 -   [`9c73d47`](https://github.com/stdlib-js/stdlib/commit/9c73d474fd2c2db3dd6ed7e878d6fb7f9bc37bbb) - add `Uint8Matrix` to namespace
 -   [`2796522`](https://github.com/stdlib-js/stdlib/commit/2796522c0e92010eca67fc5777b338f053cc6949) - add `ndarray/matrix/uint8`
 -   [`076901c`](https://github.com/stdlib-js/stdlib/commit/076901c672593ebd8c51ea92d80257164ff473e7) - add `Int8Matrix` to namespace
@@ -159,6 +161,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - **feat:** add `Uint8ClampedMatrix` to namespace _(by Athan Reines)_
+-   [`22a7b03`](https://github.com/stdlib-js/stdlib/commit/22a7b030c2609878957dd3faf6b0ea82047177dd) - **feat:** add `ndarray/matrix/uint8c` _(by Athan Reines)_
 -   [`9c73d47`](https://github.com/stdlib-js/stdlib/commit/9c73d474fd2c2db3dd6ed7e878d6fb7f9bc37bbb) - **feat:** add `Uint8Matrix` to namespace _(by Athan Reines)_
 -   [`2796522`](https://github.com/stdlib-js/stdlib/commit/2796522c0e92010eca67fc5777b338f053cc6949) - **feat:** add `ndarray/matrix/uint8` _(by Athan Reines)_
 -   [`076901c`](https://github.com/stdlib-js/stdlib/commit/076901c672593ebd8c51ea92d80257164ff473e7) - **feat:** add `Int8Matrix` to namespace _(by Athan Reines)_

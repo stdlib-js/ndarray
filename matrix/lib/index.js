@@ -118,6 +118,15 @@ setReadOnly( ns, 'Int32Matrix', require( './../../matrix/int32' ) );
 setReadOnly( ns, 'Uint8Matrix', require( './../../matrix/uint8' ) );
 
 /**
+* @name Uint8ClampedMatrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/uint8c}
+*/
+setReadOnly( ns, 'Uint8ClampedMatrix', require( './../../matrix/uint8c' ) );
+
+/**
 * @name Uint16Matrix
 * @memberof ns
 * @readonly
