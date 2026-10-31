@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`c4bb8b8`](https://github.com/stdlib-js/stdlib/commit/c4bb8b8621ad88b594bc7e458c7ba89f6332689e) - add `BooleanMatrix` to namespace
+-   [`d395cea`](https://github.com/stdlib-js/stdlib/commit/d395cea8dd7f16102f633debea6c12cee9fa4d15) - add `ndarray/matrix/bool`
 -   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - add `Uint8ClampedMatrix` to namespace
 -   [`22a7b03`](https://github.com/stdlib-js/stdlib/commit/22a7b030c2609878957dd3faf6b0ea82047177dd) - add `ndarray/matrix/uint8c`
 -   [`9c73d47`](https://github.com/stdlib-js/stdlib/commit/9c73d474fd2c2db3dd6ed7e878d6fb7f9bc37bbb) - add `Uint8Matrix` to namespace
@@ -161,6 +163,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`c4bb8b8`](https://github.com/stdlib-js/stdlib/commit/c4bb8b8621ad88b594bc7e458c7ba89f6332689e) - **feat:** add `BooleanMatrix` to namespace _(by Athan Reines)_
+-   [`d395cea`](https://github.com/stdlib-js/stdlib/commit/d395cea8dd7f16102f633debea6c12cee9fa4d15) - **feat:** add `ndarray/matrix/bool` _(by Athan Reines)_
 -   [`1f53e6b`](https://github.com/stdlib-js/stdlib/commit/1f53e6b37e3190c6731a08bfafb4ad13b177ae2d) - **feat:** add `Uint8ClampedMatrix` to namespace _(by Athan Reines)_
 -   [`22a7b03`](https://github.com/stdlib-js/stdlib/commit/22a7b030c2609878957dd3faf6b0ea82047177dd) - **feat:** add `ndarray/matrix/uint8c` _(by Athan Reines)_
 -   [`9c73d47`](https://github.com/stdlib-js/stdlib/commit/9c73d474fd2c2db3dd6ed7e878d6fb7f9bc37bbb) - **feat:** add `Uint8Matrix` to namespace _(by Athan Reines)_
