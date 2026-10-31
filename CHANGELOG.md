@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`925ccb5`](https://github.com/stdlib-js/stdlib/commit/925ccb5f7f70f2de33d753bca8195bf6eda56acb) - add `Uint16Matrix` to namespace
+-   [`620f4d8`](https://github.com/stdlib-js/stdlib/commit/620f4d87c96842943e7583bfe6928228fb0a9a79) - add `ndarray/matrix/uint16`
 -   [`64e7d22`](https://github.com/stdlib-js/stdlib/commit/64e7d22e736e929315a849ba947b478577640ab2) - add `Uint32Matrix` to namespace
 -   [`22c2a39`](https://github.com/stdlib-js/stdlib/commit/22c2a397c181117aef125afc4428930bbed69f89) - add `ndarray/matrix/uint32`
 -   [`5ec3677`](https://github.com/stdlib-js/stdlib/commit/5ec3677ec638bc4b1540b2e63383db29b9176fa0) - add `Int16Matrix` to namespace
@@ -152,6 +154,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`925ccb5`](https://github.com/stdlib-js/stdlib/commit/925ccb5f7f70f2de33d753bca8195bf6eda56acb) - **feat:** add `Uint16Matrix` to namespace _(by Athan Reines)_
+-   [`620f4d8`](https://github.com/stdlib-js/stdlib/commit/620f4d87c96842943e7583bfe6928228fb0a9a79) - **feat:** add `ndarray/matrix/uint16` _(by Athan Reines)_
 -   [`64e7d22`](https://github.com/stdlib-js/stdlib/commit/64e7d22e736e929315a849ba947b478577640ab2) - **feat:** add `Uint32Matrix` to namespace _(by Athan Reines)_
 -   [`22c2a39`](https://github.com/stdlib-js/stdlib/commit/22c2a397c181117aef125afc4428930bbed69f89) - **feat:** add `ndarray/matrix/uint32` _(by Athan Reines)_
 -   [`5ec3677`](https://github.com/stdlib-js/stdlib/commit/5ec3677ec638bc4b1540b2e63383db29b9176fa0) - **feat:** add `Int16Matrix` to namespace _(by Athan Reines)_
