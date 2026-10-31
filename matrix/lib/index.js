@@ -99,6 +99,15 @@ setReadOnly( ns, 'Int16Matrix', require( './../../matrix/int16' ) );
 */
 setReadOnly( ns, 'Int32Matrix', require( './../../matrix/int32' ) );
 
+/**
+* @name Uint32Matrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/uint32}
+*/
+setReadOnly( ns, 'Uint32Matrix', require( './../../matrix/uint32' ) );
+
 
 // EXPORTS //
 
