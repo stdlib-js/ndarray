@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415)
 -   [`b14ef36`](https://github.com/stdlib-js/stdlib/commit/b14ef366ffe43bc1ff1fe26fffc842ce6d8d4448) - update `ndarray/matrix` TypeScript declarations [(#16414)](https://github.com/stdlib-js/stdlib/pull/16414)
 -   [`d0b1fab`](https://github.com/stdlib-js/stdlib/commit/d0b1fabb02e286febe24892faa5c96b978ff3637) - add `arraybuffer2ndarray` to namespace
 -   [`2f24c6d`](https://github.com/stdlib-js/stdlib/commit/2f24c6d5da9b65e862d9def45bc8a0cd2e2df9de) - add `ndarray/from-arraybuffer`
@@ -166,6 +167,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - **feat:** update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415) _(by stdlib-bot)_
 -   [`b14ef36`](https://github.com/stdlib-js/stdlib/commit/b14ef366ffe43bc1ff1fe26fffc842ce6d8d4448) - **feat:** update `ndarray/matrix` TypeScript declarations [(#16414)](https://github.com/stdlib-js/stdlib/pull/16414) _(by stdlib-bot)_
 -   [`af38320`](https://github.com/stdlib-js/stdlib/commit/af38320f6f68ac48ee6232ef5cdc71382c582605) - **refactor:** use external utility _(by Athan Reines)_
 -   [`5f1e253`](https://github.com/stdlib-js/stdlib/commit/5f1e2532583d201353eae6288d960850a2f49cde) - **refactor:** use external utility _(by Athan Reines)_
