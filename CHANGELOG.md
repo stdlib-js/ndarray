@@ -167,6 +167,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`7be6477`](https://github.com/stdlib-js/stdlib/commit/7be64773404680cd10096e9cac6b27d3a589ff94) - **docs:** update namespace table of contents [(#16417)](https://github.com/stdlib-js/stdlib/pull/16417) _(by stdlib-bot)_
 -   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - **feat:** update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415) _(by stdlib-bot)_
 -   [`b14ef36`](https://github.com/stdlib-js/stdlib/commit/b14ef366ffe43bc1ff1fe26fffc842ce6d8d4448) - **feat:** update `ndarray/matrix` TypeScript declarations [(#16414)](https://github.com/stdlib-js/stdlib/pull/16414) _(by stdlib-bot)_
 -   [`af38320`](https://github.com/stdlib-js/stdlib/commit/af38320f6f68ac48ee6232ef5cdc71382c582605) - **refactor:** use external utility _(by Athan Reines)_
