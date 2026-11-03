@@ -187,9 +187,7 @@ v = arr.get( 1, 2, 1, 2 );
 
 [@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray/tree/main/dtypes
 
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
-
-[@stdlib/ndarray/index-modes]: https://github.com/stdlib-js/ndarray/tree/main/index-modes
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 <!-- <related-links> -->
 
