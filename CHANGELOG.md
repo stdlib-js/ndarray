@@ -169,6 +169,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`b7ad899`](https://github.com/stdlib-js/stdlib/commit/b7ad8998c9f914b92976cf5c4cdc860572bd87dd) - **chore:** clean-up [(#16437)](https://github.com/stdlib-js/stdlib/pull/16437) _(by Philipp Burckhardt)_
 -   [`ac11a37`](https://github.com/stdlib-js/stdlib/commit/ac11a377e7fbdaf11c0f40687d758c020963d985) - **docs:** update related packages sections [(#16455)](https://github.com/stdlib-js/stdlib/pull/16455) _(by stdlib-bot)_
 -   [`897b63e`](https://github.com/stdlib-js/stdlib/commit/897b63e264ce221ec0afd71c2c137dc2442f4588) - **refactor:** replace explicit `for` loop _(by Athan Reines)_
 -   [`5178645`](https://github.com/stdlib-js/stdlib/commit/51786453bb62ce9732ee935cd5a9e9b16c267415) - **feat:** add `ndarraylikes2objects` to namespace _(by Athan Reines)_
