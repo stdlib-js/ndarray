@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var ndarray2object = require( './../../../base/ndarraylike2object' );
+var ndarrays2objects = require( './../../../base/ndarraylikes2objects' );
 var descriptor = require( './../../../base/descriptor' );
 var normalizeIndices = require( './../../../base/to-unique-normalized-indices' );
 var indicesComplement = require( '@stdlib/array/base/indices-complement' );
@@ -373,12 +373,11 @@ function factory( options ) {
 		} else {
 			opts = {};
 		}
-		// Standardize ndarray meta data...
 		N = arrays.length;
-		arr = [];
-		for ( i = 0; i < N; i++ ) {
-			arr.push( ndarray2object( arrays[ i ] ) );
-		}
+
+		// Standardize ndarray meta data:
+		arr = ndarrays2objects( arrays );
+
 		// Cache references to the input and output arrays:
 		x = arr[ 0 ];
 		y = arr[ 1 ];

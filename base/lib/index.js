@@ -977,6 +977,15 @@ setReadOnly( ns, 'ndarraylike2object', require( './../../base/ndarraylike2object
 setReadOnly( ns, 'ndarraylike2scalar', require( './../../base/ndarraylike2scalar' ) );
 
 /**
+* @name ndarraylikes2objects
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/base/ndarraylikes2objects}
+*/
+setReadOnly( ns, 'ndarraylikes2objects', require( './../../base/ndarraylikes2objects' ) );
+
+/**
 * @name ndims
 * @memberof ns
 * @readonly

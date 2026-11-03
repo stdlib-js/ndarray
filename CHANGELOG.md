@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-01)
+## Unreleased (2026-11-03)
 
 <section class="features">
 
 ### Features
 
+-   [`5178645`](https://github.com/stdlib-js/stdlib/commit/51786453bb62ce9732ee935cd5a9e9b16c267415) - add `ndarraylikes2objects` to namespace
+-   [`b2c3ac9`](https://github.com/stdlib-js/stdlib/commit/b2c3ac9152d0ba245aa07a9655c942ea3f1883ab) - add `ndarray/base/ndarraylikes2objects`
 -   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415)
 -   [`b14ef36`](https://github.com/stdlib-js/stdlib/commit/b14ef366ffe43bc1ff1fe26fffc842ce6d8d4448) - update `ndarray/matrix` TypeScript declarations [(#16414)](https://github.com/stdlib-js/stdlib/pull/16414)
 -   [`d0b1fab`](https://github.com/stdlib-js/stdlib/commit/d0b1fabb02e286febe24892faa5c96b978ff3637) - add `arraybuffer2ndarray` to namespace
@@ -167,6 +169,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`897b63e`](https://github.com/stdlib-js/stdlib/commit/897b63e264ce221ec0afd71c2c137dc2442f4588) - **refactor:** replace explicit `for` loop _(by Athan Reines)_
+-   [`5178645`](https://github.com/stdlib-js/stdlib/commit/51786453bb62ce9732ee935cd5a9e9b16c267415) - **feat:** add `ndarraylikes2objects` to namespace _(by Athan Reines)_
+-   [`b2c3ac9`](https://github.com/stdlib-js/stdlib/commit/b2c3ac9152d0ba245aa07a9655c942ea3f1883ab) - **feat:** add `ndarray/base/ndarraylikes2objects` _(by Athan Reines)_
 -   [`7be6477`](https://github.com/stdlib-js/stdlib/commit/7be64773404680cd10096e9cac6b27d3a589ff94) - **docs:** update namespace table of contents [(#16417)](https://github.com/stdlib-js/stdlib/pull/16417) _(by stdlib-bot)_
 -   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - **feat:** update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415) _(by stdlib-bot)_
 -   [`b14ef36`](https://github.com/stdlib-js/stdlib/commit/b14ef366ffe43bc1ff1fe26fffc842ce6d8d4448) - **feat:** update `ndarray/matrix` TypeScript declarations [(#16414)](https://github.com/stdlib-js/stdlib/pull/16414) _(by stdlib-bot)_
