@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-03)
+## Unreleased (2026-11-04)
 
 <section class="features">
 
 ### Features
 
+-   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - add `GenericVector` to namespace
+-   [`d7bef11`](https://github.com/stdlib-js/stdlib/commit/d7bef113249f11e582a5282f9ce2402129391229) - add `ndarray/vector/generic`
 -   [`5178645`](https://github.com/stdlib-js/stdlib/commit/51786453bb62ce9732ee935cd5a9e9b16c267415) - add `ndarraylikes2objects` to namespace
 -   [`b2c3ac9`](https://github.com/stdlib-js/stdlib/commit/b2c3ac9152d0ba245aa07a9655c942ea3f1883ab) - add `ndarray/base/ndarraylikes2objects`
 -   [`a5dc07d`](https://github.com/stdlib-js/stdlib/commit/a5dc07d4ab8be29e661050e3fc389936a8748423) - update `ndarray` TypeScript declarations [(#16415)](https://github.com/stdlib-js/stdlib/pull/16415)
@@ -169,6 +171,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - **feat:** add `GenericVector` to namespace _(by Athan Reines)_
+-   [`df6a746`](https://github.com/stdlib-js/stdlib/commit/df6a74632f48f3b94ccef066c3a681afd135e55e) - **style:** remove unused lint rule _(by Athan Reines)_
+-   [`d7bef11`](https://github.com/stdlib-js/stdlib/commit/d7bef113249f11e582a5282f9ce2402129391229) - **feat:** add `ndarray/vector/generic` _(by Athan Reines)_
 -   [`d0d8e26`](https://github.com/stdlib-js/stdlib/commit/d0d8e26ce806b50d11397f4bf75269b6b4adee66) - **chore:** clean-up [(#16436)](https://github.com/stdlib-js/stdlib/pull/16436) _(by Philipp Burckhardt, Athan Reines)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`b7ad899`](https://github.com/stdlib-js/stdlib/commit/b7ad8998c9f914b92976cf5c4cdc860572bd87dd) - **chore:** clean-up [(#16437)](https://github.com/stdlib-js/stdlib/pull/16437) _(by Philipp Burckhardt)_

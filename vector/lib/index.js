@@ -91,6 +91,15 @@ setReadOnly( ns, 'Float32Vector', require( './../../vector/float32' ) );
 setReadOnly( ns, 'Float64Vector', require( './../../vector/float64' ) );
 
 /**
+* @name GenericVector
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/vector/generic}
+*/
+setReadOnly( ns, 'GenericVector', require( './../../vector/generic' ) );
+
+/**
 * @name Int8Vector
 * @memberof ns
 * @readonly
