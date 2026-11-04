@@ -172,6 +172,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`7d7b621`](https://github.com/stdlib-js/stdlib/commit/7d7b6213e0d98e5f145a8848a70f6395c81d90f1) - **docs:** update `ndarray` TypeScript declarations [(#16482)](https://github.com/stdlib-js/stdlib/pull/16482) _(by stdlib-bot)_
 -   [`dc28a63`](https://github.com/stdlib-js/stdlib/commit/dc28a63a1295e33f138bafa3cf41f30168ddd198) - **feat:** update `ndarray/vector` TypeScript declarations [(#16484)](https://github.com/stdlib-js/stdlib/pull/16484) _(by stdlib-bot)_
 -   [`bb0fd7d`](https://github.com/stdlib-js/stdlib/commit/bb0fd7d3307c311d40a1707b7719a4c5234d5800) - **docs:** update namespace table of contents [(#16485)](https://github.com/stdlib-js/stdlib/pull/16485) _(by stdlib-bot)_
 -   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - **feat:** add `GenericVector` to namespace _(by Athan Reines)_
