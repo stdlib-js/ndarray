@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`dc28a63`](https://github.com/stdlib-js/stdlib/commit/dc28a63a1295e33f138bafa3cf41f30168ddd198) - update `ndarray/vector` TypeScript declarations [(#16484)](https://github.com/stdlib-js/stdlib/pull/16484)
 -   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - add `GenericVector` to namespace
 -   [`d7bef11`](https://github.com/stdlib-js/stdlib/commit/d7bef113249f11e582a5282f9ce2402129391229) - add `ndarray/vector/generic`
 -   [`5178645`](https://github.com/stdlib-js/stdlib/commit/51786453bb62ce9732ee935cd5a9e9b16c267415) - add `ndarraylikes2objects` to namespace
@@ -171,6 +172,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`dc28a63`](https://github.com/stdlib-js/stdlib/commit/dc28a63a1295e33f138bafa3cf41f30168ddd198) - **feat:** update `ndarray/vector` TypeScript declarations [(#16484)](https://github.com/stdlib-js/stdlib/pull/16484) _(by stdlib-bot)_
+-   [`bb0fd7d`](https://github.com/stdlib-js/stdlib/commit/bb0fd7d3307c311d40a1707b7719a4c5234d5800) - **docs:** update namespace table of contents [(#16485)](https://github.com/stdlib-js/stdlib/pull/16485) _(by stdlib-bot)_
 -   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - **feat:** add `GenericVector` to namespace _(by Athan Reines)_
 -   [`df6a746`](https://github.com/stdlib-js/stdlib/commit/df6a74632f48f3b94ccef066c3a681afd135e55e) - **style:** remove unused lint rule _(by Athan Reines)_
 -   [`d7bef11`](https://github.com/stdlib-js/stdlib/commit/d7bef113249f11e582a5282f9ce2402129391229) - **feat:** add `ndarray/vector/generic` _(by Athan Reines)_
