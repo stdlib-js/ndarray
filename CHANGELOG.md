@@ -173,6 +173,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`7349dff`](https://github.com/stdlib-js/stdlib/commit/7349dffeddd90289879f06e70acc1be8544af75b) - **style:** add missing whitespace [(#16507)](https://github.com/stdlib-js/stdlib/pull/16507) _(by Philipp Burckhardt)_
 -   [`7cf5642`](https://github.com/stdlib-js/stdlib/commit/7cf56423a8fe3e959bd334981a00f8428d086127) - **chore:** clean-up [(#16491)](https://github.com/stdlib-js/stdlib/pull/16491) _(by Philipp Burckhardt)_
 -   [`5ac82c2`](https://github.com/stdlib-js/stdlib/commit/5ac82c211f327c00e3872364bdb1dcad1d64f387) - **feat:** update `ndarray/base` TypeScript declarations [(#16481)](https://github.com/stdlib-js/stdlib/pull/16481) _(by stdlib-bot)_
 -   [`7d7b621`](https://github.com/stdlib-js/stdlib/commit/7d7b6213e0d98e5f145a8848a70f6395c81d90f1) - **docs:** update `ndarray` TypeScript declarations [(#16482)](https://github.com/stdlib-js/stdlib/pull/16482) _(by stdlib-bot)_
