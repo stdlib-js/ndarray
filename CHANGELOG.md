@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`19527da`](https://github.com/stdlib-js/stdlib/commit/19527da88483518e607e4d1d28999af141830090) - add `GenericMatrix` to namespace
+-   [`7680dcc`](https://github.com/stdlib-js/stdlib/commit/7680dcc7ef06b3253ad49b8fc96a46dfd4457d2b) - add `ndarray/matrix/generic`
 -   [`5ac82c2`](https://github.com/stdlib-js/stdlib/commit/5ac82c211f327c00e3872364bdb1dcad1d64f387) - update `ndarray/base` TypeScript declarations [(#16481)](https://github.com/stdlib-js/stdlib/pull/16481)
 -   [`dc28a63`](https://github.com/stdlib-js/stdlib/commit/dc28a63a1295e33f138bafa3cf41f30168ddd198) - update `ndarray/vector` TypeScript declarations [(#16484)](https://github.com/stdlib-js/stdlib/pull/16484)
 -   [`306998e`](https://github.com/stdlib-js/stdlib/commit/306998e8acf2c85c48b8277771f35bac438fc8b8) - add `GenericVector` to namespace
@@ -173,6 +175,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`d87ead6`](https://github.com/stdlib-js/stdlib/commit/d87ead6d0f8f86d8bb4b09da50c6088c34278195) - **docs:** rename variable _(by Athan Reines)_
+-   [`19527da`](https://github.com/stdlib-js/stdlib/commit/19527da88483518e607e4d1d28999af141830090) - **feat:** add `GenericMatrix` to namespace _(by Athan Reines)_
+-   [`7680dcc`](https://github.com/stdlib-js/stdlib/commit/7680dcc7ef06b3253ad49b8fc96a46dfd4457d2b) - **feat:** add `ndarray/matrix/generic` _(by Athan Reines)_
 -   [`9b0a318`](https://github.com/stdlib-js/stdlib/commit/9b0a318e484a1db9cb78380ac8fc823a2865e3ae) - **docs:** remove non-applicable buffer parameters [(#16489)](https://github.com/stdlib-js/stdlib/pull/16489) _(by Philipp Burckhardt)_
 -   [`7349dff`](https://github.com/stdlib-js/stdlib/commit/7349dffeddd90289879f06e70acc1be8544af75b) - **style:** add missing whitespace [(#16507)](https://github.com/stdlib-js/stdlib/pull/16507) _(by Philipp Burckhardt)_
 -   [`7cf5642`](https://github.com/stdlib-js/stdlib/commit/7cf56423a8fe3e959bd334981a00f8428d086127) - **chore:** clean-up [(#16491)](https://github.com/stdlib-js/stdlib/pull/16491) _(by Philipp Burckhardt)_

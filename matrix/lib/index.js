@@ -91,6 +91,15 @@ setReadOnly( ns, 'Float32Matrix', require( './../../matrix/float32' ) );
 setReadOnly( ns, 'Float64Matrix', require( './../../matrix/float64' ) );
 
 /**
+* @name GenericMatrix
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/ndarray/matrix/generic}
+*/
+setReadOnly( ns, 'GenericMatrix', require( './../../matrix/generic' ) );
+
+/**
 * @name Int8Matrix
 * @memberof ns
 * @readonly
