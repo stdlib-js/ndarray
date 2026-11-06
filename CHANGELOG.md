@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`d2cc6ff`](https://github.com/stdlib-js/stdlib/commit/d2cc6ff125bf0bc7a48439e12aa624eac2bbbdaf) - update `ndarray/matrix` TypeScript declarations [(#16516)](https://github.com/stdlib-js/stdlib/pull/16516)
 -   [`19527da`](https://github.com/stdlib-js/stdlib/commit/19527da88483518e607e4d1d28999af141830090) - add `GenericMatrix` to namespace
 -   [`7680dcc`](https://github.com/stdlib-js/stdlib/commit/7680dcc7ef06b3253ad49b8fc96a46dfd4457d2b) - add `ndarray/matrix/generic`
 -   [`5ac82c2`](https://github.com/stdlib-js/stdlib/commit/5ac82c211f327c00e3872364bdb1dcad1d64f387) - update `ndarray/base` TypeScript declarations [(#16481)](https://github.com/stdlib-js/stdlib/pull/16481)
@@ -175,6 +176,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`d2cc6ff`](https://github.com/stdlib-js/stdlib/commit/d2cc6ff125bf0bc7a48439e12aa624eac2bbbdaf) - **feat:** update `ndarray/matrix` TypeScript declarations [(#16516)](https://github.com/stdlib-js/stdlib/pull/16516) _(by stdlib-bot)_
 -   [`d87ead6`](https://github.com/stdlib-js/stdlib/commit/d87ead6d0f8f86d8bb4b09da50c6088c34278195) - **docs:** rename variable _(by Athan Reines)_
 -   [`19527da`](https://github.com/stdlib-js/stdlib/commit/19527da88483518e607e4d1d28999af141830090) - **feat:** add `GenericMatrix` to namespace _(by Athan Reines)_
 -   [`7680dcc`](https://github.com/stdlib-js/stdlib/commit/7680dcc7ef06b3253ad49b8fc96a46dfd4457d2b) - **feat:** add `ndarray/matrix/generic` _(by Athan Reines)_

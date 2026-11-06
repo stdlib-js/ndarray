@@ -26,6 +26,7 @@ import Complex128Matrix = require( './../../../matrix/complex128' );
 import matrix = require( './../../../matrix/ctor' );
 import Float32Matrix = require( './../../../matrix/float32' );
 import Float64Matrix = require( './../../../matrix/float64' );
+import GenericMatrix = require( './../../../matrix/generic' );
 import Int8Matrix = require( './../../../matrix/int8' );
 import Int16Matrix = require( './../../../matrix/int16' );
 import Int32Matrix = require( './../../../matrix/int32' );
@@ -521,6 +522,56 @@ interface Namespace {
 	* // returns [ 2, 1 ]
 	*/
 	Float64Matrix: typeof Float64Matrix;
+
+	/**
+	* Creates a "generic" matrix (i.e., a two-dimensional ndarray).
+	*
+	* @param arg0 - shape, number of rows, array-like object, or iterable
+	* @param arg1 - number of columns
+	* @param options - function options
+	* @param options.readonly - boolean indicating whether to return a read-only matrix
+	* @param options.mode - specifies how to handle indices which exceed matrix dimensions
+	* @param options.submode - specifies how to handle subscripts which exceed array dimensions on a per dimension basis
+	* @param options.order - memory layout (either row-major or column-major)
+	* @returns two-dimensional ndarray
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	*
+	* var arr = new ns.GenericMatrix();
+	* // returns <ndarray>
+	*
+	* var sh = getShape( arr );
+	* // returns [ 0, 0 ]
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	*
+	* var arr = new ns.GenericMatrix( [ 2, 2 ] );
+	* // returns <ndarray>
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	*
+	* var arr = new ns.GenericMatrix( 2, 2 );
+	* // returns <ndarray>
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*
+	* @example
+	* var getShape = require( './../../../shape' );
+	*
+	* var arr = new ns.GenericMatrix( [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ] );
+	* // returns <ndarray>
+	*
+	* var sh = getShape( arr );
+	* // returns [ 2, 2 ]
+	*/
+	GenericMatrix: typeof GenericMatrix;
 
 	/**
 	* Creates an 8-bit signed integer matrix (i.e., a two-dimensional ndarray).
