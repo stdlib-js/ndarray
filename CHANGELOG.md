@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-05)
+## Unreleased (2026-11-06)
 
 <section class="features">
 
@@ -173,6 +173,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`9b0a318`](https://github.com/stdlib-js/stdlib/commit/9b0a318e484a1db9cb78380ac8fc823a2865e3ae) - **docs:** remove non-applicable buffer parameters [(#16489)](https://github.com/stdlib-js/stdlib/pull/16489) _(by Philipp Burckhardt)_
 -   [`7349dff`](https://github.com/stdlib-js/stdlib/commit/7349dffeddd90289879f06e70acc1be8544af75b) - **style:** add missing whitespace [(#16507)](https://github.com/stdlib-js/stdlib/pull/16507) _(by Philipp Burckhardt)_
 -   [`7cf5642`](https://github.com/stdlib-js/stdlib/commit/7cf56423a8fe3e959bd334981a00f8428d086127) - **chore:** clean-up [(#16491)](https://github.com/stdlib-js/stdlib/pull/16491) _(by Philipp Burckhardt)_
 -   [`5ac82c2`](https://github.com/stdlib-js/stdlib/commit/5ac82c211f327c00e3872364bdb1dcad1d64f387) - **feat:** update `ndarray/base` TypeScript declarations [(#16481)](https://github.com/stdlib-js/stdlib/pull/16481) _(by stdlib-bot)_
