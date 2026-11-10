@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-08)
+## Unreleased (2026-11-10)
 
 <section class="features">
 
@@ -176,6 +176,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`c53f49c`](https://github.com/stdlib-js/stdlib/commit/c53f49c75348870ded7499e59cd10d5d3cc8db78) - **chore:** clean-up [(#16551)](https://github.com/stdlib-js/stdlib/pull/16551) _(by Philipp Burckhardt)_
 -   [`bafbcb6`](https://github.com/stdlib-js/stdlib/commit/bafbcb6e7dc530cd56d9d8bada7e56a3d52f6ea9) - **docs:** update related packages sections [(#16542)](https://github.com/stdlib-js/stdlib/pull/16542) _(by stdlib-bot)_
 -   [`737b1e3`](https://github.com/stdlib-js/stdlib/commit/737b1e35c49adc276baa4fef67bc7c7d5e6af21d) - **docs:** remove stray parenthesis [(#16521)](https://github.com/stdlib-js/stdlib/pull/16521) _(by Philipp Burckhardt)_
 -   [`5b4cd9e`](https://github.com/stdlib-js/stdlib/commit/5b4cd9e37f7c7af8f89c75942e5128fa808043d5) - **docs:** update namespace table of contents [(#16517)](https://github.com/stdlib-js/stdlib/pull/16517) _(by stdlib-bot)_
