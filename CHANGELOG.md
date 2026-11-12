@@ -138,6 +138,7 @@
 
 ### Bug Fixes
 
+-   [`2ab87b3`](https://github.com/stdlib-js/stdlib/commit/2ab87b34f5d8e2877f1840846e6912d261ca234b) - ensure correct type signatures and clarify calling conventions
 -   [`a008980`](https://github.com/stdlib-js/stdlib/commit/a0089803c3f7275dcb16153e7ef53f0f2ab277c7) - ensure support for zero-dimensional ndarrays
 -   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - account for \"empty\" 0d ndarrays
 -   [`96ed2fa`](https://github.com/stdlib-js/stdlib/commit/96ed2faff14d10a798f3d84d267a26e7a78b0759) - return loop permutation indices from `ndarray/base/*loop-interchange-order` packages [(#15812)](https://github.com/stdlib-js/stdlib/pull/15812)
@@ -178,6 +179,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`2ab87b3`](https://github.com/stdlib-js/stdlib/commit/2ab87b34f5d8e2877f1840846e6912d261ca234b) - **fix:** ensure correct type signatures and clarify calling conventions _(by Athan Reines)_
+-   [`f61ba13`](https://github.com/stdlib-js/stdlib/commit/f61ba134d7c13aacce9b4767b40bd47a5b8f46f6) - **test:** remove uncommon use case _(by Athan Reines)_
+-   [`2bf2cdb`](https://github.com/stdlib-js/stdlib/commit/2bf2cdbca4b101d079c1b98dee6fd2ae2cf9f862) - **test:** remove uncommon test case _(by Athan Reines)_
 -   [`40613b0`](https://github.com/stdlib-js/stdlib/commit/40613b0942edea1eba56f4b64b48b484b3aa03cd) - **feat:** add `ndarray/tensor0d/ctor` _(by Athan Reines)_
 -   [`a5ddb0f`](https://github.com/stdlib-js/stdlib/commit/a5ddb0f1f03b1d4f071106e42e32ed1bdb879e9e) - **bench:** fix descriptions _(by Athan Reines)_
 -   [`33a1445`](https://github.com/stdlib-js/stdlib/commit/33a14455673bc84bcea929e922ea4cd25535144a) - **bench:** fix descriptions _(by Athan Reines)_

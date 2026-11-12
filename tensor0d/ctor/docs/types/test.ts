@@ -25,7 +25,6 @@ import tensor0d = require( './index' );
 // The function returns an ndarray...
 {
 	tensor0d(); // $ExpectType float64ndarray
-	tensor0d( {} ); // $ExpectType float64ndarray
 
 	tensor0d( 10 ); // $ExpectType float64ndarray
 	tensor0d( 10, {} ); // $ExpectType float64ndarray
@@ -82,9 +81,6 @@ import tensor0d = require( './index' );
 
 	f2( 10 ); // $ExpectType float32ndarray
 	f2( 10, {} ); // $ExpectType float32ndarray
-
-	f2( [ 1, 2, 3 ] ); // $ExpectType float32ndarray
-	f2( [ 1, 2, 3 ], {} ); // $ExpectType float32ndarray
 
 	f2( new ArrayBuffer( 10 ) ); // $ExpectType float32ndarray
 	f2( new ArrayBuffer( 10 ), {} ); // $ExpectType float32ndarray
