@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-11)
+## Unreleased (2026-11-12)
 
 <section class="features">
 
 ### Features
 
+-   [`40613b0`](https://github.com/stdlib-js/stdlib/commit/40613b0942edea1eba56f4b64b48b484b3aa03cd) - add `ndarray/tensor0d/ctor`
 -   [`d2cc6ff`](https://github.com/stdlib-js/stdlib/commit/d2cc6ff125bf0bc7a48439e12aa624eac2bbbdaf) - update `ndarray/matrix` TypeScript declarations [(#16516)](https://github.com/stdlib-js/stdlib/pull/16516)
 -   [`19527da`](https://github.com/stdlib-js/stdlib/commit/19527da88483518e607e4d1d28999af141830090) - add `GenericMatrix` to namespace
 -   [`7680dcc`](https://github.com/stdlib-js/stdlib/commit/7680dcc7ef06b3253ad49b8fc96a46dfd4457d2b) - add `ndarray/matrix/generic`
@@ -137,6 +138,7 @@
 
 ### Bug Fixes
 
+-   [`a008980`](https://github.com/stdlib-js/stdlib/commit/a0089803c3f7275dcb16153e7ef53f0f2ab277c7) - ensure support for zero-dimensional ndarrays
 -   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - account for \"empty\" 0d ndarrays
 -   [`96ed2fa`](https://github.com/stdlib-js/stdlib/commit/96ed2faff14d10a798f3d84d267a26e7a78b0759) - return loop permutation indices from `ndarray/base/*loop-interchange-order` packages [(#15812)](https://github.com/stdlib-js/stdlib/pull/15812)
 -   [`c21221c`](https://github.com/stdlib-js/stdlib/commit/c21221c1a4ec8709eaca86aa5acc984e4aafda6d) - add missing option validation [(#14966)](https://github.com/stdlib-js/stdlib/pull/14966)
@@ -176,6 +178,12 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`40613b0`](https://github.com/stdlib-js/stdlib/commit/40613b0942edea1eba56f4b64b48b484b3aa03cd) - **feat:** add `ndarray/tensor0d/ctor` _(by Athan Reines)_
+-   [`a5ddb0f`](https://github.com/stdlib-js/stdlib/commit/a5ddb0f1f03b1d4f071106e42e32ed1bdb879e9e) - **bench:** fix descriptions _(by Athan Reines)_
+-   [`33a1445`](https://github.com/stdlib-js/stdlib/commit/33a14455673bc84bcea929e922ea4cd25535144a) - **bench:** fix descriptions _(by Athan Reines)_
+-   [`8c62aac`](https://github.com/stdlib-js/stdlib/commit/8c62aac9b0454456b97b4c72d5a063bd9c029a16) - **docs:** add missing option _(by Athan Reines)_
+-   [`69bd527`](https://github.com/stdlib-js/stdlib/commit/69bd5273f5c84a6a383262289bb30c63038f7b4d) - **docs:** add missing option _(by Athan Reines)_
+-   [`a008980`](https://github.com/stdlib-js/stdlib/commit/a0089803c3f7275dcb16153e7ef53f0f2ab277c7) - **fix:** ensure support for zero-dimensional ndarrays _(by Athan Reines)_
 -   [`5f8dbe2`](https://github.com/stdlib-js/stdlib/commit/5f8dbe264e7f17b1a2193786ce116b1e06c688be) - **docs:** update related packages sections [(#16591)](https://github.com/stdlib-js/stdlib/pull/16591) _(by stdlib-bot)_
 -   [`c53f49c`](https://github.com/stdlib-js/stdlib/commit/c53f49c75348870ded7499e59cd10d5d3cc8db78) - **chore:** clean-up [(#16551)](https://github.com/stdlib-js/stdlib/pull/16551) _(by Philipp Burckhardt)_
 -   [`bafbcb6`](https://github.com/stdlib-js/stdlib/commit/bafbcb6e7dc530cd56d9d8bada7e56a3d52f6ea9) - **docs:** update related packages sections [(#16542)](https://github.com/stdlib-js/stdlib/pull/16542) _(by stdlib-bot)_
