@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`03f4b2a`](https://github.com/stdlib-js/stdlib/commit/03f4b2a0740bf11da329b5239352e8f7a1090d1d) - add `ndarray/tensor0d/int32`
 -   [`41baa32`](https://github.com/stdlib-js/stdlib/commit/41baa3254676a8ff1b3f7e407a1e7593cefe131c) - add `ndarray/tensor0d/float32`
 -   [`1621270`](https://github.com/stdlib-js/stdlib/commit/162127080cd86985ce4a9a60187ccf16d6084ca2) - add `ndarray/tensor0d/float64`
 -   [`5687475`](https://github.com/stdlib-js/stdlib/commit/5687475d0d8d3e28445bbd0d94a3cdde85994f33) - add `ndarray/tensor0d/ctor-factory`
@@ -182,6 +183,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`de2bf24`](https://github.com/stdlib-js/stdlib/commit/de2bf241adef6bb07d32909211b2c766ac2f6ffb) - **docs:** add note _(by Athan Reines)_
+-   [`03f4b2a`](https://github.com/stdlib-js/stdlib/commit/03f4b2a0740bf11da329b5239352e8f7a1090d1d) - **feat:** add `ndarray/tensor0d/int32` _(by Athan Reines)_
 -   [`41baa32`](https://github.com/stdlib-js/stdlib/commit/41baa3254676a8ff1b3f7e407a1e7593cefe131c) - **feat:** add `ndarray/tensor0d/float32` _(by Athan Reines)_
 -   [`1621270`](https://github.com/stdlib-js/stdlib/commit/162127080cd86985ce4a9a60187ccf16d6084ca2) - **feat:** add `ndarray/tensor0d/float64` _(by Athan Reines)_
 -   [`5687475`](https://github.com/stdlib-js/stdlib/commit/5687475d0d8d3e28445bbd0d94a3cdde85994f33) - **feat:** add `ndarray/tensor0d/ctor-factory` _(by Athan Reines)_
