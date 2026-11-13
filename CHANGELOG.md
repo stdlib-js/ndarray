@@ -191,6 +191,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`85c48dd`](https://github.com/stdlib-js/stdlib/commit/85c48ddd6e29dfb09cc226ee0153d538887abba5) - **docs:** fix invalid options argument [(#16617)](https://github.com/stdlib-js/stdlib/pull/16617) _(by Philipp Burckhardt)_
 -   [`c4d7f3c`](https://github.com/stdlib-js/stdlib/commit/c4d7f3c4f755409c050c5134679a426490822528) - **docs:** fix note [(#16615)](https://github.com/stdlib-js/stdlib/pull/16615) _(by Philipp Burckhardt)_
 -   [`38bf4b0`](https://github.com/stdlib-js/stdlib/commit/38bf4b047336d7f8ea5f2e7e2c35833cb9e2801d) - **style:** re-enable lint rule _(by Athan Reines)_
 -   [`8fdfc05`](https://github.com/stdlib-js/stdlib/commit/8fdfc055836accd006230bc256e10050cac1a791) - **feat:** add `ndarray/tensor0d/generic` _(by Athan Reines)_
