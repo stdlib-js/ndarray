@@ -150,6 +150,7 @@
 
 ### Bug Fixes
 
+-   [`0319376`](https://github.com/stdlib-js/stdlib/commit/03193764064c422b0ace35f3f089fd49c1aec152) - avoid object mutation [(#16605)](https://github.com/stdlib-js/stdlib/pull/16605)
 -   [`2ab87b3`](https://github.com/stdlib-js/stdlib/commit/2ab87b34f5d8e2877f1840846e6912d261ca234b) - ensure correct type signatures and clarify calling conventions
 -   [`a008980`](https://github.com/stdlib-js/stdlib/commit/a0089803c3f7275dcb16153e7ef53f0f2ab277c7) - ensure support for zero-dimensional ndarrays
 -   [`489e3ab`](https://github.com/stdlib-js/stdlib/commit/489e3ab218cb5c6da7ade17cddd942303ab5585f) - account for \"empty\" 0d ndarrays
@@ -191,6 +192,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`0319376`](https://github.com/stdlib-js/stdlib/commit/03193764064c422b0ace35f3f089fd49c1aec152) - **fix:** avoid object mutation [(#16605)](https://github.com/stdlib-js/stdlib/pull/16605) _(by Philipp Burckhardt)_
 -   [`22880c8`](https://github.com/stdlib-js/stdlib/commit/22880c8d011ac4501b5865f7e585ce90edca397c) - **docs:** update related packages sections [(#16603)](https://github.com/stdlib-js/stdlib/pull/16603) _(by stdlib-bot)_
 -   [`85c48dd`](https://github.com/stdlib-js/stdlib/commit/85c48ddd6e29dfb09cc226ee0153d538887abba5) - **docs:** fix invalid options argument [(#16617)](https://github.com/stdlib-js/stdlib/pull/16617) _(by Philipp Burckhardt)_
 -   [`c4d7f3c`](https://github.com/stdlib-js/stdlib/commit/c4d7f3c4f755409c050c5134679a426490822528) - **docs:** fix note [(#16615)](https://github.com/stdlib-js/stdlib/pull/16615) _(by Philipp Burckhardt)_
