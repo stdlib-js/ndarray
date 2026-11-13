@@ -190,6 +190,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`275a44f`](https://github.com/stdlib-js/stdlib/commit/275a44f333680cbe55c2c0e9e6fed1e8e145c4b6) - **docs:** update ToC _(by Athan Reines)_
 -   [`65ff481`](https://github.com/stdlib-js/stdlib/commit/65ff481a01f761a7b48f0c3cc8520e6969923832) - **feat:** add `ndarray/tensor0d/bool` _(by Athan Reines)_
 -   [`9802722`](https://github.com/stdlib-js/stdlib/commit/9802722baf05354cc3b66de292154536d80e0a93) - **feat:** add `ndarray/tensor0d/uint8c` _(by Athan Reines)_
 -   [`b081db7`](https://github.com/stdlib-js/stdlib/commit/b081db7f6dbf53a2e5bf34da305e5881e0db8bdb) - **feat:** add `ndarray/tensor0d/uint8` _(by Athan Reines)_
