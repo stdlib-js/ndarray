@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8fdfc05`](https://github.com/stdlib-js/stdlib/commit/8fdfc055836accd006230bc256e10050cac1a791) - add `ndarray/tensor0d/generic`
 -   [`65ff481`](https://github.com/stdlib-js/stdlib/commit/65ff481a01f761a7b48f0c3cc8520e6969923832) - add `ndarray/tensor0d/bool`
 -   [`9802722`](https://github.com/stdlib-js/stdlib/commit/9802722baf05354cc3b66de292154536d80e0a93) - add `ndarray/tensor0d/uint8c`
 -   [`b081db7`](https://github.com/stdlib-js/stdlib/commit/b081db7f6dbf53a2e5bf34da305e5881e0db8bdb) - add `ndarray/tensor0d/uint8`
@@ -190,6 +191,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`38bf4b0`](https://github.com/stdlib-js/stdlib/commit/38bf4b047336d7f8ea5f2e7e2c35833cb9e2801d) - **style:** re-enable lint rule _(by Athan Reines)_
+-   [`8fdfc05`](https://github.com/stdlib-js/stdlib/commit/8fdfc055836accd006230bc256e10050cac1a791) - **feat:** add `ndarray/tensor0d/generic` _(by Athan Reines)_
 -   [`6f65743`](https://github.com/stdlib-js/stdlib/commit/6f65743249f66fdf7d82a8d648d83c55823deec2) - **docs:** update ToC _(by Athan Reines)_
 -   [`275a44f`](https://github.com/stdlib-js/stdlib/commit/275a44f333680cbe55c2c0e9e6fed1e8e145c4b6) - **docs:** update ToC _(by Athan Reines)_
 -   [`65ff481`](https://github.com/stdlib-js/stdlib/commit/65ff481a01f761a7b48f0c3cc8520e6969923832) - **feat:** add `ndarray/tensor0d/bool` _(by Athan Reines)_
