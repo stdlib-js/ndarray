@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`00a9659`](https://github.com/stdlib-js/stdlib/commit/00a96597dc2873ca436de2cd8980defa42f75eb3) - add `ndarray/tensor0d/int8`
 -   [`237afe4`](https://github.com/stdlib-js/stdlib/commit/237afe446eb242edbb14db96d40c5989ac11253f) - add `ndarray/tensor0d/uint16`
 -   [`96c32d8`](https://github.com/stdlib-js/stdlib/commit/96c32d8950936f81982432d03c5d086c57e8129b) - add `ndarray/tensor0d/int16`
 -   [`91cf90c`](https://github.com/stdlib-js/stdlib/commit/91cf90c2eeb9a00f43eedc715764775993efebfd) - add `ndarray/tensor0d/uint32`
@@ -186,6 +187,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`00a9659`](https://github.com/stdlib-js/stdlib/commit/00a96597dc2873ca436de2cd8980defa42f75eb3) - **feat:** add `ndarray/tensor0d/int8` _(by Athan Reines)_
 -   [`237afe4`](https://github.com/stdlib-js/stdlib/commit/237afe446eb242edbb14db96d40c5989ac11253f) - **feat:** add `ndarray/tensor0d/uint16` _(by Athan Reines)_
 -   [`96c32d8`](https://github.com/stdlib-js/stdlib/commit/96c32d8950936f81982432d03c5d086c57e8129b) - **feat:** add `ndarray/tensor0d/int16` _(by Athan Reines)_
 -   [`91cf90c`](https://github.com/stdlib-js/stdlib/commit/91cf90c2eeb9a00f43eedc715764775993efebfd) - **feat:** add `ndarray/tensor0d/uint32` _(by Athan Reines)_
