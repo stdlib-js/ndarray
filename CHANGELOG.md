@@ -192,6 +192,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`ee5f1ef`](https://github.com/stdlib-js/stdlib/commit/ee5f1ef4d20cdcd27b422482317a520dee1133e2) - **docs:** improve doctests for ndarray instances [(#16595)](https://github.com/stdlib-js/stdlib/pull/16595) _(by Mustansir-06)_
 -   [`0319376`](https://github.com/stdlib-js/stdlib/commit/03193764064c422b0ace35f3f089fd49c1aec152) - **fix:** avoid object mutation [(#16605)](https://github.com/stdlib-js/stdlib/pull/16605) _(by Philipp Burckhardt)_
 -   [`22880c8`](https://github.com/stdlib-js/stdlib/commit/22880c8d011ac4501b5865f7e585ce90edca397c) - **docs:** update related packages sections [(#16603)](https://github.com/stdlib-js/stdlib/pull/16603) _(by stdlib-bot)_
 -   [`85c48dd`](https://github.com/stdlib-js/stdlib/commit/85c48ddd6e29dfb09cc226ee0153d538887abba5) - **docs:** fix invalid options argument [(#16617)](https://github.com/stdlib-js/stdlib/pull/16617) _(by Philipp Burckhardt)_
@@ -500,7 +501,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 14 people contributed to this release. Thank you to the following contributors:
+A total of 15 people contributed to this release. Thank you to the following contributors:
 
 -   Aryan Sharma
 -   Ashutosh Choubey
@@ -509,6 +510,7 @@ A total of 14 people contributed to this release. Thank you to the following con
 -   JoyBoy
 -   Kaustubh Patange
 -   Muhammad Haris
+-   Mustansir-06
 -   Philipp Burckhardt
 -   Samarth Kolarkar
 -   Ujjwal Verma
