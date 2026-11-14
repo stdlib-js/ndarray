@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`5ba84ab`](https://github.com/stdlib-js/stdlib/commit/5ba84ab16f4569c2b04b4b78c226f117095b04e8) - add `ndarray/tensor0d/complex128`
+-   [`18f8b36`](https://github.com/stdlib-js/stdlib/commit/18f8b361aea512caf30db01aceb7ad5a064e7826) - add `ndarray/tensor0d/complex-ctor-factory`
 -   [`8fdfc05`](https://github.com/stdlib-js/stdlib/commit/8fdfc055836accd006230bc256e10050cac1a791) - add `ndarray/tensor0d/generic`
 -   [`65ff481`](https://github.com/stdlib-js/stdlib/commit/65ff481a01f761a7b48f0c3cc8520e6969923832) - add `ndarray/tensor0d/bool`
 -   [`9802722`](https://github.com/stdlib-js/stdlib/commit/9802722baf05354cc3b66de292154536d80e0a93) - add `ndarray/tensor0d/uint8c`
@@ -192,6 +194,8 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`5ba84ab`](https://github.com/stdlib-js/stdlib/commit/5ba84ab16f4569c2b04b4b78c226f117095b04e8) - **feat:** add `ndarray/tensor0d/complex128` _(by Athan Reines)_
+-   [`18f8b36`](https://github.com/stdlib-js/stdlib/commit/18f8b361aea512caf30db01aceb7ad5a064e7826) - **feat:** add `ndarray/tensor0d/complex-ctor-factory` _(by Athan Reines)_
 -   [`c6d6ec7`](https://github.com/stdlib-js/stdlib/commit/c6d6ec7d0b07b172c5c8979ab2afe549c1defce9) - **docs:** update examples [(#16621)](https://github.com/stdlib-js/stdlib/pull/16621) _(by stdlib-bot)_
 -   [`2ce3f05`](https://github.com/stdlib-js/stdlib/commit/2ce3f051d209438e0bf3fe18d687e9512c7d97a2) - **docs:** update namespace table of contents [(#16622)](https://github.com/stdlib-js/stdlib/pull/16622) _(by stdlib-bot)_
 -   [`4773c5e`](https://github.com/stdlib-js/stdlib/commit/4773c5ec48446ddd3d28ed950431fdf090d21167) - **chore:** fix C lint errors [(#16302)](https://github.com/stdlib-js/stdlib/pull/16302) _(by Abhist)_
