@@ -192,6 +192,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`2ce3f05`](https://github.com/stdlib-js/stdlib/commit/2ce3f051d209438e0bf3fe18d687e9512c7d97a2) - **docs:** update namespace table of contents [(#16622)](https://github.com/stdlib-js/stdlib/pull/16622) _(by stdlib-bot)_
 -   [`4773c5e`](https://github.com/stdlib-js/stdlib/commit/4773c5ec48446ddd3d28ed950431fdf090d21167) - **chore:** fix C lint errors [(#16302)](https://github.com/stdlib-js/stdlib/pull/16302) _(by Abhist)_
 -   [`ee5f1ef`](https://github.com/stdlib-js/stdlib/commit/ee5f1ef4d20cdcd27b422482317a520dee1133e2) - **docs:** improve doctests for ndarray instances [(#16595)](https://github.com/stdlib-js/stdlib/pull/16595) _(by Mustansir-06)_
 -   [`0319376`](https://github.com/stdlib-js/stdlib/commit/03193764064c422b0ace35f3f089fd49c1aec152) - **fix:** avoid object mutation [(#16605)](https://github.com/stdlib-js/stdlib/pull/16605) _(by Philipp Burckhardt)_

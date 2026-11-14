@@ -88,6 +88,7 @@ The namespace exports the following functions to create multidimensional arrays:
 -   <span class="signature">[`falsesLike( x[, options] )`][@stdlib/ndarray/falses-like]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having the same shape and data type as a provided ndarray.</span>
 -   <span class="signature">[`falses( shape[, options] )`][@stdlib/ndarray/falses]</span><span class="delimiter">: </span><span class="description">create an ndarray filled with `false` values and having a specified shape and data type.</span>
 -   <span class="signature">[`FancyArray( dtype, buffer, shape, strides, offset, order[, options] )`][@stdlib/ndarray/fancy]</span><span class="delimiter">: </span><span class="description">fancy multidimensional array constructor.</span>
+-   <span class="signature">[`arraybuffer2ndarray( dtype, buffer, shape, strides, byteOffset, order[, options] )`][@stdlib/ndarray/from-arraybuffer]</span><span class="delimiter">: </span><span class="description">create an ndarray from an ArrayBuffer.</span>
 -   <span class="signature">[`scalar2ndarrayLike( x, value[, options] )`][@stdlib/ndarray/from-scalar-like]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray having the same data-type as a provided ndarray.</span>
 -   <span class="signature">[`scalar2ndarray( value[, options] )`][@stdlib/ndarray/from-scalar]</span><span class="delimiter">: </span><span class="description">convert a scalar value to a zero-dimensional ndarray.</span>
 -   <span class="signature">[`nansLike( x[, options] )`][@stdlib/ndarray/nans-like]</span><span class="delimiter">: </span><span class="description">create a NaN-filled ndarray having the same shape and data type as a provided ndarray.</span>
@@ -301,6 +302,7 @@ The namespace contains the following sub-namespaces:
 
 -   <span class="signature">[`base`][@stdlib/ndarray/base]</span><span class="delimiter">: </span><span class="description">base ndarray.</span>
 -   <span class="signature">[`iter`][@stdlib/ndarray/iter]</span><span class="delimiter">: </span><span class="description">multidimensional array iterators.</span>
+-   <span class="signature">[`matrix`][@stdlib/ndarray/matrix]</span><span class="delimiter">: </span><span class="description">matrix constructors and associated utilities.</span>
 -   <span class="signature">[`vector`][@stdlib/ndarray/vector]</span><span class="delimiter">: </span><span class="description">vector constructors and associated utilities.</span>
 
 </div>
@@ -318,8 +320,6 @@ The namespace contains the following multidimensional array utility functions:
 -   <span class="signature">[`defaults()`][@stdlib/ndarray/defaults]</span><span class="delimiter">: </span><span class="description">default ndarray settings.</span>
 -   <span class="signature">[`dispatch( fcns, types, data, nargs, nin, nout )`][@stdlib/ndarray/dispatch]</span><span class="delimiter">: </span><span class="description">create an ndarray function interface which performs multiple dispatch.</span>
 -   <span class="signature">[`forEach( x, fcn[, thisArg] )`][@stdlib/ndarray/for-each]</span><span class="delimiter">: </span><span class="description">invoke a callback function once for each ndarray element.</span>
--   <span class="signature">[`arraybuffer2ndarray( dtype, buffer, shape, strides, byteOffset, order[, options] )`][@stdlib/ndarray/from-arraybuffer]</span><span class="delimiter">: </span><span class="description">create an ndarray from an ArrayBuffer.</span>
--   <span class="signature">[`matrix`][@stdlib/ndarray/matrix]</span><span class="delimiter">: </span><span class="description">matrix constructors and associated utilities.</span>
 -   <span class="signature">[`orders()`][@stdlib/ndarray/orders]</span><span class="delimiter">: </span><span class="description">list of ndarray orders.</span>
 
 </div>
@@ -437,15 +437,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/ndarray/for-each]: https://github.com/stdlib-js/ndarray/tree/main/for-each
 
-[@stdlib/ndarray/from-arraybuffer]: https://github.com/stdlib-js/ndarray/tree/main/from-arraybuffer
-
-[@stdlib/ndarray/matrix]: https://github.com/stdlib-js/ndarray/tree/main/matrix
-
 [@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray/tree/main/orders
 
 [@stdlib/ndarray/base]: https://github.com/stdlib-js/ndarray/tree/main/base
 
 [@stdlib/ndarray/iter]: https://github.com/stdlib-js/ndarray/tree/main/iter
+
+[@stdlib/ndarray/matrix]: https://github.com/stdlib-js/ndarray/tree/main/matrix
 
 [@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
 
@@ -680,6 +678,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/falses]: https://github.com/stdlib-js/ndarray/tree/main/falses
 
 [@stdlib/ndarray/fancy]: https://github.com/stdlib-js/ndarray/tree/main/fancy
+
+[@stdlib/ndarray/from-arraybuffer]: https://github.com/stdlib-js/ndarray/tree/main/from-arraybuffer
 
 [@stdlib/ndarray/from-scalar-like]: https://github.com/stdlib-js/ndarray/tree/main/from-scalar-like
 
