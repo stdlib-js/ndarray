@@ -4,12 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-14)
+## Unreleased (2026-11-15)
 
 <section class="features">
 
 ### Features
 
+-   [`d722907`](https://github.com/stdlib-js/stdlib/commit/d72290787e2a51cf49a7d43291511ab9a29cad45) - add `tensor0d` to namespace
+-   [`a3ad26b`](https://github.com/stdlib-js/stdlib/commit/a3ad26b5be1c7c0d0216e69965ce2771e0f971c0) - add `ndarray/tensor0d` namespace
+-   [`d5bf322`](https://github.com/stdlib-js/stdlib/commit/d5bf3221f8e6f11678eee433e472e09865b5b69a) - add `ndarray/tensor0d/complex64`
 -   [`5ba84ab`](https://github.com/stdlib-js/stdlib/commit/5ba84ab16f4569c2b04b4b78c226f117095b04e8) - add `ndarray/tensor0d/complex128`
 -   [`18f8b36`](https://github.com/stdlib-js/stdlib/commit/18f8b361aea512caf30db01aceb7ad5a064e7826) - add `ndarray/tensor0d/complex-ctor-factory`
 -   [`8fdfc05`](https://github.com/stdlib-js/stdlib/commit/8fdfc055836accd006230bc256e10050cac1a791) - add `ndarray/tensor0d/generic`
@@ -194,6 +197,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`d722907`](https://github.com/stdlib-js/stdlib/commit/d72290787e2a51cf49a7d43291511ab9a29cad45) - **feat:** add `tensor0d` to namespace _(by Athan Reines)_
+-   [`a3ad26b`](https://github.com/stdlib-js/stdlib/commit/a3ad26b5be1c7c0d0216e69965ce2771e0f971c0) - **feat:** add `ndarray/tensor0d` namespace _(by Athan Reines)_
+-   [`d5bf322`](https://github.com/stdlib-js/stdlib/commit/d5bf3221f8e6f11678eee433e472e09865b5b69a) - **feat:** add `ndarray/tensor0d/complex64` _(by Athan Reines)_
 -   [`5ba84ab`](https://github.com/stdlib-js/stdlib/commit/5ba84ab16f4569c2b04b4b78c226f117095b04e8) - **feat:** add `ndarray/tensor0d/complex128` _(by Athan Reines)_
 -   [`18f8b36`](https://github.com/stdlib-js/stdlib/commit/18f8b361aea512caf30db01aceb7ad5a064e7826) - **feat:** add `ndarray/tensor0d/complex-ctor-factory` _(by Athan Reines)_
 -   [`c6d6ec7`](https://github.com/stdlib-js/stdlib/commit/c6d6ec7d0b07b172c5c8979ab2afe549c1defce9) - **docs:** update examples [(#16621)](https://github.com/stdlib-js/stdlib/pull/16621) _(by stdlib-bot)_
