@@ -131,6 +131,7 @@ import spreadDimensions = require( './../../spread-dimensions' );
 import stride = require( './../../stride' );
 import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
+import tensor0d = require( './../../tensor0d' );
 import ndarray2array = require( './../../to-array' );
 import toFlippedlr = require( './../../to-flippedlr' );
 import toFlippedud = require( './../../to-flippedud' );
@@ -3870,6 +3871,11 @@ interface Namespace {
 	* // returns 17
 	*/
 	sub2ind: typeof sub2ind;
+
+	/**
+	* Zero-dimensional ndarray constructors and associated utilities.
+	*/
+	tensor0d: typeof tensor0d;
 
 	/**
 	* Converts an ndarray to a generic array (which may include nested arrays).

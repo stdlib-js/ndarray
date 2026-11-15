@@ -303,6 +303,7 @@ The namespace contains the following sub-namespaces:
 -   <span class="signature">[`base`][@stdlib/ndarray/base]</span><span class="delimiter">: </span><span class="description">base ndarray.</span>
 -   <span class="signature">[`iter`][@stdlib/ndarray/iter]</span><span class="delimiter">: </span><span class="description">multidimensional array iterators.</span>
 -   <span class="signature">[`matrix`][@stdlib/ndarray/matrix]</span><span class="delimiter">: </span><span class="description">matrix constructors and associated utilities.</span>
+-   <span class="signature">[`tensor0d`][@stdlib/ndarray/tensor0d]</span><span class="delimiter">: </span><span class="description">zero-dimensional ndarray constructors and associated utilities.</span>
 -   <span class="signature">[`vector`][@stdlib/ndarray/vector]</span><span class="delimiter">: </span><span class="description">vector constructors and associated utilities.</span>
 
 </div>
@@ -444,6 +445,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/iter]: https://github.com/stdlib-js/ndarray/tree/main/iter
 
 [@stdlib/ndarray/matrix]: https://github.com/stdlib-js/ndarray/tree/main/matrix
+
+[@stdlib/ndarray/tensor0d]: https://github.com/stdlib-js/ndarray/tree/main/tensor0d
 
 [@stdlib/ndarray/vector]: https://github.com/stdlib-js/ndarray/tree/main/vector
 
