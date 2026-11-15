@@ -10,6 +10,8 @@
 
 ### Features
 
+-   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - add `tensor3d` to namespace
+-   [`b97b41a`](https://github.com/stdlib-js/stdlib/commit/b97b41a0b9f08772d2f363b6eb8b602874da1ebe) - add `ndarray/tensor3d` namespace
 -   [`a689981`](https://github.com/stdlib-js/stdlib/commit/a689981649c29481176007abf6ce818dff53a10d) - add `ndarray/tensor3d/ctor` [(#14960)](https://github.com/stdlib-js/stdlib/pull/14960)
 -   [`ce981c2`](https://github.com/stdlib-js/stdlib/commit/ce981c228d1aa2c2da9106b4bce116433e817eac) - update `ndarray/tensor0d` TypeScript declarations [(#16634)](https://github.com/stdlib-js/stdlib/pull/16634)
 -   [`8532612`](https://github.com/stdlib-js/stdlib/commit/8532612665e25b12626b5b4fee18aa396ba95502) - update `ndarray` TypeScript declarations [(#16633)](https://github.com/stdlib-js/stdlib/pull/16633)
@@ -200,6 +202,9 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - **feat:** add `tensor3d` to namespace _(by Athan Reines)_
+-   [`b97b41a`](https://github.com/stdlib-js/stdlib/commit/b97b41a0b9f08772d2f363b6eb8b602874da1ebe) - **feat:** add `ndarray/tensor3d` namespace _(by Athan Reines)_
+-   [`83e5d93`](https://github.com/stdlib-js/stdlib/commit/83e5d93d53aa2188c13ba93038773c74b56ff06e) - **test:** update message _(by Athan Reines)_
 -   [`a689981`](https://github.com/stdlib-js/stdlib/commit/a689981649c29481176007abf6ce818dff53a10d) - **feat:** add `ndarray/tensor3d/ctor` [(#14960)](https://github.com/stdlib-js/stdlib/pull/14960) _(by Prashant Kumar Yadav, Athan Reines)_
 -   [`ce981c2`](https://github.com/stdlib-js/stdlib/commit/ce981c228d1aa2c2da9106b4bce116433e817eac) - **feat:** update `ndarray/tensor0d` TypeScript declarations [(#16634)](https://github.com/stdlib-js/stdlib/pull/16634) _(by stdlib-bot)_
 -   [`8532612`](https://github.com/stdlib-js/stdlib/commit/8532612665e25b12626b5b4fee18aa396ba95502) - **feat:** update `ndarray` TypeScript declarations [(#16633)](https://github.com/stdlib-js/stdlib/pull/16633) _(by stdlib-bot)_
