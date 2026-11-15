@@ -10,6 +10,9 @@
 
 ### Features
 
+-   [`a689981`](https://github.com/stdlib-js/stdlib/commit/a689981649c29481176007abf6ce818dff53a10d) - add `ndarray/tensor3d/ctor` [(#14960)](https://github.com/stdlib-js/stdlib/pull/14960)
+-   [`ce981c2`](https://github.com/stdlib-js/stdlib/commit/ce981c228d1aa2c2da9106b4bce116433e817eac) - update `ndarray/tensor0d` TypeScript declarations [(#16634)](https://github.com/stdlib-js/stdlib/pull/16634)
+-   [`8532612`](https://github.com/stdlib-js/stdlib/commit/8532612665e25b12626b5b4fee18aa396ba95502) - update `ndarray` TypeScript declarations [(#16633)](https://github.com/stdlib-js/stdlib/pull/16633)
 -   [`d722907`](https://github.com/stdlib-js/stdlib/commit/d72290787e2a51cf49a7d43291511ab9a29cad45) - add `tensor0d` to namespace
 -   [`a3ad26b`](https://github.com/stdlib-js/stdlib/commit/a3ad26b5be1c7c0d0216e69965ce2771e0f971c0) - add `ndarray/tensor0d` namespace
 -   [`d5bf322`](https://github.com/stdlib-js/stdlib/commit/d5bf3221f8e6f11678eee433e472e09865b5b69a) - add `ndarray/tensor0d/complex64`
@@ -183,9 +186,9 @@
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574), [#14963](https://github.com/stdlib-js/stdlib/issues/14963), [#16308](https://github.com/stdlib-js/stdlib/issues/16308)
+[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574), [#14959](https://github.com/stdlib-js/stdlib/issues/14959), [#14963](https://github.com/stdlib-js/stdlib/issues/14963), [#16308](https://github.com/stdlib-js/stdlib/issues/16308)
 
 </section>
 
@@ -197,6 +200,9 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`a689981`](https://github.com/stdlib-js/stdlib/commit/a689981649c29481176007abf6ce818dff53a10d) - **feat:** add `ndarray/tensor3d/ctor` [(#14960)](https://github.com/stdlib-js/stdlib/pull/14960) _(by Prashant Kumar Yadav, Athan Reines)_
+-   [`ce981c2`](https://github.com/stdlib-js/stdlib/commit/ce981c228d1aa2c2da9106b4bce116433e817eac) - **feat:** update `ndarray/tensor0d` TypeScript declarations [(#16634)](https://github.com/stdlib-js/stdlib/pull/16634) _(by stdlib-bot)_
+-   [`8532612`](https://github.com/stdlib-js/stdlib/commit/8532612665e25b12626b5b4fee18aa396ba95502) - **feat:** update `ndarray` TypeScript declarations [(#16633)](https://github.com/stdlib-js/stdlib/pull/16633) _(by stdlib-bot)_
 -   [`f91b31b`](https://github.com/stdlib-js/stdlib/commit/f91b31b6f7b190b4929ec93cd691416e5db67db3) - **docs:** update namespace table of contents [(#16635)](https://github.com/stdlib-js/stdlib/pull/16635) _(by stdlib-bot)_
 -   [`d722907`](https://github.com/stdlib-js/stdlib/commit/d72290787e2a51cf49a7d43291511ab9a29cad45) - **feat:** add `tensor0d` to namespace _(by Athan Reines)_
 -   [`a3ad26b`](https://github.com/stdlib-js/stdlib/commit/a3ad26b5be1c7c0d0216e69965ce2771e0f971c0) - **feat:** add `ndarray/tensor0d` namespace _(by Athan Reines)_
@@ -515,7 +521,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 16 people contributed to this release. Thank you to the following contributors:
+A total of 17 people contributed to this release. Thank you to the following contributors:
 
 -   Abhist
 -   Aryan Sharma
@@ -527,6 +533,7 @@ A total of 16 people contributed to this release. Thank you to the following con
 -   Muhammad Haris
 -   Mustansir-06
 -   Philipp Burckhardt
+-   Prashant Kumar Yadav
 -   Samarth Kolarkar
 -   Ujjwal Verma
 -   Utsav
