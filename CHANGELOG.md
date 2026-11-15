@@ -202,6 +202,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`3c78e19`](https://github.com/stdlib-js/stdlib/commit/3c78e1903e9cb9199a2a2848c405b2d1bede1222) - **chore:** clean-up [(#16641)](https://github.com/stdlib-js/stdlib/pull/16641) _(by Philipp Burckhardt)_
 -   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - **feat:** add `tensor3d` to namespace _(by Athan Reines)_
 -   [`b97b41a`](https://github.com/stdlib-js/stdlib/commit/b97b41a0b9f08772d2f363b6eb8b602874da1ebe) - **feat:** add `ndarray/tensor3d` namespace _(by Athan Reines)_
 -   [`83e5d93`](https://github.com/stdlib-js/stdlib/commit/83e5d93d53aa2188c13ba93038773c74b56ff06e) - **test:** update message _(by Athan Reines)_
