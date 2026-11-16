@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`9c9b170`](https://github.com/stdlib-js/stdlib/commit/9c9b1705cb6c6a445c2a013d652999dab5aaedbc) - update `ndarray` TypeScript declarations [(#16652)](https://github.com/stdlib-js/stdlib/pull/16652)
 -   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - add `tensor3d` to namespace
 -   [`b97b41a`](https://github.com/stdlib-js/stdlib/commit/b97b41a0b9f08772d2f363b6eb8b602874da1ebe) - add `ndarray/tensor3d` namespace
 -   [`a689981`](https://github.com/stdlib-js/stdlib/commit/a689981649c29481176007abf6ce818dff53a10d) - add `ndarray/tensor3d/ctor` [(#14960)](https://github.com/stdlib-js/stdlib/pull/14960)
@@ -202,6 +203,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`9c9b170`](https://github.com/stdlib-js/stdlib/commit/9c9b1705cb6c6a445c2a013d652999dab5aaedbc) - **feat:** update `ndarray` TypeScript declarations [(#16652)](https://github.com/stdlib-js/stdlib/pull/16652) _(by stdlib-bot)_
 -   [`c206a48`](https://github.com/stdlib-js/stdlib/commit/c206a48d66681f9d6a5b9dab0c02fbc2288d77fc) - **docs:** update namespace table of contents [(#16653)](https://github.com/stdlib-js/stdlib/pull/16653) _(by stdlib-bot)_
 -   [`3c78e19`](https://github.com/stdlib-js/stdlib/commit/3c78e1903e9cb9199a2a2848c405b2d1bede1222) - **chore:** clean-up [(#16641)](https://github.com/stdlib-js/stdlib/pull/16641) _(by Philipp Burckhardt)_
 -   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - **feat:** add `tensor3d` to namespace _(by Athan Reines)_

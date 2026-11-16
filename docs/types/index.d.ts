@@ -132,6 +132,7 @@ import stride = require( './../../stride' );
 import strides = require( './../../strides' );
 import sub2ind = require( './../../sub2ind' );
 import tensor0d = require( './../../tensor0d' );
+import tensor3d = require( './../../tensor3d' );
 import ndarray2array = require( './../../to-array' );
 import toFlippedlr = require( './../../to-flippedlr' );
 import toFlippedud = require( './../../to-flippedud' );
@@ -3876,6 +3877,11 @@ interface Namespace {
 	* Zero-dimensional ndarray constructors and associated utilities.
 	*/
 	tensor0d: typeof tensor0d;
+
+	/**
+	* Three-dimensional ndarray constructors and associated utilities.
+	*/
+	tensor3d: typeof tensor3d;
 
 	/**
 	* Converts an ndarray to a generic array (which may include nested arrays).
