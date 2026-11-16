@@ -203,6 +203,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`d5434ac`](https://github.com/stdlib-js/stdlib/commit/d5434ac9b601cb01e221fa4826d564e8fa1bd8c7) - **chore:** clean-up [(#16657)](https://github.com/stdlib-js/stdlib/pull/16657) _(by Philipp Burckhardt)_
 -   [`9c9b170`](https://github.com/stdlib-js/stdlib/commit/9c9b1705cb6c6a445c2a013d652999dab5aaedbc) - **feat:** update `ndarray` TypeScript declarations [(#16652)](https://github.com/stdlib-js/stdlib/pull/16652) _(by stdlib-bot)_
 -   [`c206a48`](https://github.com/stdlib-js/stdlib/commit/c206a48d66681f9d6a5b9dab0c02fbc2288d77fc) - **docs:** update namespace table of contents [(#16653)](https://github.com/stdlib-js/stdlib/pull/16653) _(by stdlib-bot)_
 -   [`3c78e19`](https://github.com/stdlib-js/stdlib/commit/3c78e1903e9cb9199a2a2848c405b2d1bede1222) - **chore:** clean-up [(#16641)](https://github.com/stdlib-js/stdlib/pull/16641) _(by Philipp Burckhardt)_
