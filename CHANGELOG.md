@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-15)
+## Unreleased (2026-11-16)
 
 <section class="features">
 
@@ -202,6 +202,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`c206a48`](https://github.com/stdlib-js/stdlib/commit/c206a48d66681f9d6a5b9dab0c02fbc2288d77fc) - **docs:** update namespace table of contents [(#16653)](https://github.com/stdlib-js/stdlib/pull/16653) _(by stdlib-bot)_
 -   [`3c78e19`](https://github.com/stdlib-js/stdlib/commit/3c78e1903e9cb9199a2a2848c405b2d1bede1222) - **chore:** clean-up [(#16641)](https://github.com/stdlib-js/stdlib/pull/16641) _(by Philipp Burckhardt)_
 -   [`65ec04e`](https://github.com/stdlib-js/stdlib/commit/65ec04e4966521d0c1e6027dba83b15c46a683c3) - **feat:** add `tensor3d` to namespace _(by Athan Reines)_
 -   [`b97b41a`](https://github.com/stdlib-js/stdlib/commit/b97b41a0b9f08772d2f363b6eb8b602874da1ebe) - **feat:** add `ndarray/tensor3d` namespace _(by Athan Reines)_
