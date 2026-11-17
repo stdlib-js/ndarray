@@ -385,10 +385,10 @@ interface Namespace {
 	* @returns output ndarray
 	*
 	* @example
-	* var scalar2ndarray = require( './../../../from-scalar' );
+	* var Float64Tensor0D = require( './../../../tensor0d/float64' );
 	* var zeros = require( './../../../zeros' );
 	*
-	* var x = scalar2ndarray( 1.0 );
+	* var x = new Float64Tensor0D( 1.0 );
 	* // returns <ndarray>
 	*
 	* var y = zeros( [ 3, 3 ] );
