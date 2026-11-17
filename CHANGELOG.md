@@ -203,6 +203,9 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`04df932`](https://github.com/stdlib-js/stdlib/commit/04df93287fb44ab4c5c0d9adf6a840067aa3da47) - **docs:** update Markdown equation elements _(by stdlib-bot)_
+-   [`3361449`](https://github.com/stdlib-js/stdlib/commit/33614496a0eb06b7e87b906296815f606b3e3df7) - **docs:** update Markdown equation SVGs _(by stdlib-bot)_
+-   [`9762912`](https://github.com/stdlib-js/stdlib/commit/9762912fe45c974b627d541f35f95be4b5551296) - **docs:** update related packages sections [(#16666)](https://github.com/stdlib-js/stdlib/pull/16666) _(by stdlib-bot)_
 -   [`7d91d9e`](https://github.com/stdlib-js/stdlib/commit/7d91d9e30b91232fc38e80efa2058405069296bc) - **docs:** update example [(#16670)](https://github.com/stdlib-js/stdlib/pull/16670) _(by stdlib-bot)_
 -   [`da42829`](https://github.com/stdlib-js/stdlib/commit/da42829a85a53e5778d5b18121d5e1a693fb4817) - **docs:** use dedicated zero-dimensional tensor constructor in `ndarray/base/assign-diagonal` [(#16656)](https://github.com/stdlib-js/stdlib/pull/16656) _(by Yug Bhatia)_
 -   [`d5434ac`](https://github.com/stdlib-js/stdlib/commit/d5434ac9b601cb01e221fa4826d564e8fa1bd8c7) - **chore:** clean-up [(#16657)](https://github.com/stdlib-js/stdlib/pull/16657) _(by Philipp Burckhardt)_
