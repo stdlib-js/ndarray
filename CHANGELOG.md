@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-19)
+## Unreleased (2026-11-20)
 
 <section class="features">
 
@@ -203,6 +203,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`5edc9dd`](https://github.com/stdlib-js/stdlib/commit/5edc9dd5fef62c060c71f880745c3aa0f936fb21) - **docs:** update related packages sections [(#16731)](https://github.com/stdlib-js/stdlib/pull/16731) _(by stdlib-bot)_
 -   [`54bdd06`](https://github.com/stdlib-js/stdlib/commit/54bdd06c4ea2c4ff401cbfa40ca953d13ebb8184) - **docs:** update related packages sections [(#16699)](https://github.com/stdlib-js/stdlib/pull/16699) _(by stdlib-bot)_
 -   [`1664e13`](https://github.com/stdlib-js/stdlib/commit/1664e13a3939bd3baefc43fd0a84a4a30998044f) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/fliplr` [(#16692)](https://github.com/stdlib-js/stdlib/pull/16692) _(by Kartik)_
 -   [`5f2fd5a`](https://github.com/stdlib-js/stdlib/commit/5f2fd5ad621095b8b7dd65434f6090d9b042a3cb) - **docs:** update Markdown equation elements _(by stdlib-bot)_
