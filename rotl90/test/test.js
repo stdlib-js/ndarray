@@ -29,7 +29,7 @@ var ndarray = require( './../../ctor' );
 var getShape = require( './../../shape' );
 var getData = require( './../../data-buffer' );
 var getDType = require( './../../dtype' );
-var scalar2ndarray = require( './../../from-scalar' );
+var Float64Tensor0D = require( './../../tensor0d/float64' );
 var ndarray2array = require( './../../to-array' );
 var rotl90 = require( './../lib' );
 
@@ -107,10 +107,7 @@ tape( 'the function returns a read-only view of a zero-dimensional input ndarray
 	var actual;
 	var x;
 
-	x = scalar2ndarray( 10.0, {
-		'dtype': 'float64',
-		'order': 'row-major'
-	});
+	x = new Float64Tensor0D( 10.0 );
 
 	actual = rotl90( x, 1 );
 
