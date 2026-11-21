@@ -203,6 +203,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`72c8d20`](https://github.com/stdlib-js/stdlib/commit/72c8d20cfe2826cb4655262f366f67ff5e9244d2) - **docs:** update related packages sections [(#16738)](https://github.com/stdlib-js/stdlib/pull/16738) _(by stdlib-bot)_
 -   [`8590cdf`](https://github.com/stdlib-js/stdlib/commit/8590cdf9c8367c2a310e8c54af00d1473dceafd1) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/flipud` [(#16747)](https://github.com/stdlib-js/stdlib/pull/16747) _(by Kartik)_
 -   [`9706bb4`](https://github.com/stdlib-js/stdlib/commit/9706bb4910e1076db787d97793d931b21c6d6844) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/rotl90` [(#16726)](https://github.com/stdlib-js/stdlib/pull/16726) _(by Kartik)_
 -   [`c81c256`](https://github.com/stdlib-js/stdlib/commit/c81c256207c0084057c4bea529489a2ba94339b5) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/to-reversed` [(#16727)](https://github.com/stdlib-js/stdlib/pull/16727) _(by Kartik)_
