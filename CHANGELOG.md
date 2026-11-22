@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-21)
+## Unreleased (2026-11-22)
 
 <section class="features">
 
@@ -189,9 +189,9 @@
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 7 issues were closed in this release:
 
-[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574), [#14959](https://github.com/stdlib-js/stdlib/issues/14959), [#14963](https://github.com/stdlib-js/stdlib/issues/14963), [#16308](https://github.com/stdlib-js/stdlib/issues/16308)
+[#13237](https://github.com/stdlib-js/stdlib/issues/13237), [#13963](https://github.com/stdlib-js/stdlib/issues/13963), [#14574](https://github.com/stdlib-js/stdlib/issues/14574), [#14959](https://github.com/stdlib-js/stdlib/issues/14959), [#14963](https://github.com/stdlib-js/stdlib/issues/14963), [#16308](https://github.com/stdlib-js/stdlib/issues/16308), [#16454](https://github.com/stdlib-js/stdlib/issues/16454)
 
 </section>
 
@@ -203,6 +203,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`b67b566`](https://github.com/stdlib-js/stdlib/commit/b67b5668ac082fccf229d76d02f61b3da2696b30) - **chore:** fix C lint errors [(#16464)](https://github.com/stdlib-js/stdlib/pull/16464) _(by raus7n, Athan Reines)_
 -   [`72c8d20`](https://github.com/stdlib-js/stdlib/commit/72c8d20cfe2826cb4655262f366f67ff5e9244d2) - **docs:** update related packages sections [(#16738)](https://github.com/stdlib-js/stdlib/pull/16738) _(by stdlib-bot)_
 -   [`8590cdf`](https://github.com/stdlib-js/stdlib/commit/8590cdf9c8367c2a310e8c54af00d1473dceafd1) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/flipud` [(#16747)](https://github.com/stdlib-js/stdlib/pull/16747) _(by Kartik)_
 -   [`9706bb4`](https://github.com/stdlib-js/stdlib/commit/9706bb4910e1076db787d97793d931b21c6d6844) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/rotl90` [(#16726)](https://github.com/stdlib-js/stdlib/pull/16726) _(by Kartik)_
@@ -545,7 +546,7 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 19 people contributed to this release. Thank you to the following contributors:
+A total of 20 people contributed to this release. Thank you to the following contributors:
 
 -   Abhist
 -   Aryan Sharma
@@ -566,6 +567,7 @@ A total of 19 people contributed to this release. Thank you to the following con
 -   Yug Bhatia
 -   anee3
 -   navenavelimargam
+-   raus7n
 
 </section>
 
