@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-22)
+## Unreleased (2026-11-25)
 
 <section class="features">
 
@@ -203,6 +203,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`144b822`](https://github.com/stdlib-js/stdlib/commit/144b822bdbd692ce36bfa7aade68875b9e977a82) - **docs:** update related packages sections [(#16773)](https://github.com/stdlib-js/stdlib/pull/16773) _(by stdlib-bot)_
 -   [`b67b566`](https://github.com/stdlib-js/stdlib/commit/b67b5668ac082fccf229d76d02f61b3da2696b30) - **chore:** fix C lint errors [(#16464)](https://github.com/stdlib-js/stdlib/pull/16464) _(by raus7n, Athan Reines)_
 -   [`72c8d20`](https://github.com/stdlib-js/stdlib/commit/72c8d20cfe2826cb4655262f366f67ff5e9244d2) - **docs:** update related packages sections [(#16738)](https://github.com/stdlib-js/stdlib/pull/16738) _(by stdlib-bot)_
 -   [`8590cdf`](https://github.com/stdlib-js/stdlib/commit/8590cdf9c8367c2a310e8c54af00d1473dceafd1) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/flipud` [(#16747)](https://github.com/stdlib-js/stdlib/pull/16747) _(by Kartik)_
