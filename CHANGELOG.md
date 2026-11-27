@@ -203,6 +203,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`b4c4d47`](https://github.com/stdlib-js/stdlib/commit/b4c4d47fa9cf2a46290970782f367c624b67f95c) - **docs:** improve doctests for ndarray instances in `ndarray/count-truthy` [(#16862)](https://github.com/stdlib-js/stdlib/pull/16862) _(by Tanu Saini)_
 -   [`9c7467e`](https://github.com/stdlib-js/stdlib/commit/9c7467e627f9c1e94424730d8639b72d31a43200) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/reverse` [(#16876)](https://github.com/stdlib-js/stdlib/pull/16876) _(by Anshu Raj Bisoyi)_
 -   [`2169d31`](https://github.com/stdlib-js/stdlib/commit/2169d31b2cee31f34fd752625d5547d9b4b8b867) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/transpose` [(#16877)](https://github.com/stdlib-js/stdlib/pull/16877) _(by Anshu Raj Bisoyi)_
 -   [`6ed241e`](https://github.com/stdlib-js/stdlib/commit/6ed241e3c6efe0650b8ceaa02ee7af84200caa06) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/rotr90` [(#16878)](https://github.com/stdlib-js/stdlib/pull/16878) _(by Anshu Raj Bisoyi)_
@@ -559,7 +560,7 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 21 people contributed to this release. Thank you to the following contributors:
+A total of 22 people contributed to this release. Thank you to the following contributors:
 
 -   Abhist
 -   Anshu Raj Bisoyi
@@ -575,6 +576,7 @@ A total of 21 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Prashant Kumar Yadav
 -   Samarth Kolarkar
+-   Tanu Saini
 -   Ujjwal Verma
 -   Utsav
 -   Yashvardhan Thanvi
