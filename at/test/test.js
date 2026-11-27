@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var array = require( './../../array' );
 var zeros = require( './../../zeros' );
-var scalar2ndarray = require( './../../from-scalar' );
+var Float64Tensor0D = require( './../../tensor0d/float64' );
 var at = require( './../lib' );
 
 
@@ -330,7 +330,7 @@ tape( 'the function returns an ndarray element (ndims=0)', function test( t ) {
 	x = zeros( [] );
 	t.strictEqual( at( x ), 0.0, 'returns expected value' );
 
-	x = scalar2ndarray( 3.0 );
+	x = new Float64Tensor0D( 3.0 );
 	t.strictEqual( at( x ), 3.0, 'returns expected value' );
 
 	t.end();

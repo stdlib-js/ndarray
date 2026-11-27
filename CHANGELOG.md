@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-25)
+## Unreleased (2026-11-27)
 
 <section class="features">
 
@@ -203,6 +203,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`283d0b4`](https://github.com/stdlib-js/stdlib/commit/283d0b4f2f4645f184c8de5bd535259f6be9336c) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/at` [(#16850)](https://github.com/stdlib-js/stdlib/pull/16850) _(by Anshu Raj Bisoyi)_
 -   [`144b822`](https://github.com/stdlib-js/stdlib/commit/144b822bdbd692ce36bfa7aade68875b9e977a82) - **docs:** update related packages sections [(#16773)](https://github.com/stdlib-js/stdlib/pull/16773) _(by stdlib-bot)_
 -   [`b67b566`](https://github.com/stdlib-js/stdlib/commit/b67b5668ac082fccf229d76d02f61b3da2696b30) - **chore:** fix C lint errors [(#16464)](https://github.com/stdlib-js/stdlib/pull/16464) _(by raus7n, Athan Reines)_
 -   [`72c8d20`](https://github.com/stdlib-js/stdlib/commit/72c8d20cfe2826cb4655262f366f67ff5e9244d2) - **docs:** update related packages sections [(#16738)](https://github.com/stdlib-js/stdlib/pull/16738) _(by stdlib-bot)_
@@ -547,9 +548,10 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 20 people contributed to this release. Thank you to the following contributors:
+A total of 21 people contributed to this release. Thank you to the following contributors:
 
 -   Abhist
+-   Anshu Raj Bisoyi
 -   Aryan Sharma
 -   Ashutosh Choubey
 -   Athan Reines
