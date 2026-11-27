@@ -203,6 +203,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`554abf2`](https://github.com/stdlib-js/stdlib/commit/554abf2839e5f142a8c14dbd61725a4c08951684) - **docs:** improve doctests for ndarray instances in `ndarray/base/from-scalar` [(#16906)](https://github.com/stdlib-js/stdlib/pull/16906) _(by Tanu Saini, Athan Reines)_
 -   [`48ab300`](https://github.com/stdlib-js/stdlib/commit/48ab300334d4b4275a2af7a26ac490d0fcb2abbc) - **docs:** improve doctests for ndarray instances in `ndarray/count-if` [(#16905)](https://github.com/stdlib-js/stdlib/pull/16905) _(by Tanu Saini)_
 -   [`166a24a`](https://github.com/stdlib-js/stdlib/commit/166a24a18c739cd5e0f1eb23271158fd26e33170) - **chore:** fix C lint errors [(#16797)](https://github.com/stdlib-js/stdlib/pull/16797) _(by Kartik, Athan Reines)_
 -   [`934bf95`](https://github.com/stdlib-js/stdlib/commit/934bf95fa3e7ec1755d77a79778b2dec68729d28) - **docs:** improve doctests for ndarray instances in `ndarray/any` [(#16861)](https://github.com/stdlib-js/stdlib/pull/16861) _(by Tanu Saini)_
