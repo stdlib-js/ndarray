@@ -203,6 +203,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`991f143`](https://github.com/stdlib-js/stdlib/commit/991f1436b29d5952349dcbe85c0aa07ee8ee0714) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/fill` [(#16864)](https://github.com/stdlib-js/stdlib/pull/16864) _(by Anshu Raj Bisoyi)_
 -   [`2c0dbf0`](https://github.com/stdlib-js/stdlib/commit/2c0dbf0d2b788bff40bd946a6369e6d41ec95b1a) - **docs:** update related packages sections [(#16865)](https://github.com/stdlib-js/stdlib/pull/16865) _(by stdlib-bot)_
 -   [`39b1b9d`](https://github.com/stdlib-js/stdlib/commit/39b1b9da52f879e7f52e0fbc39637ff9eca2f474) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/last` [(#16873)](https://github.com/stdlib-js/stdlib/pull/16873) _(by Anshu Raj Bisoyi)_
 -   [`31c547d`](https://github.com/stdlib-js/stdlib/commit/31c547d4a71638a711a603041a617a2d798d0e5b) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/fill-by` [(#16874)](https://github.com/stdlib-js/stdlib/pull/16874) _(by Anshu Raj Bisoyi)_
