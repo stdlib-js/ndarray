@@ -30,7 +30,7 @@ var array = require( './../../array' );
 var getShape = require( './../../shape' );
 var getData = require( './../../data-buffer' );
 var getDType = require( './../../dtype' );
-var scalar2ndarray = require( './../../from-scalar' );
+var Float64Tensor0D = require( './../../tensor0d/float64' );
 var ndarray2array = require( './../../to-array' );
 var transpose = require( './../lib' );
 
@@ -77,7 +77,7 @@ tape( 'the function throws an error if provided an input ndarray having fewer th
 	var i;
 
 	values = [
-		scalar2ndarray( 5.0 ),
+		new Float64Tensor0D( 5.0 ),
 		array( [ 1.0, 2.0, 3.0 ] )
 	];
 
