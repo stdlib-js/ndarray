@@ -29,7 +29,7 @@ var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isReadOnly = require( './../../base/assert/is-read-only' );
 var isEqualDataType = require( './../../base/assert/is-equal-data-type' );
 var zeroTo = require( '@stdlib/array/zero-to' );
-var scalar2ndarray = require( './../../from-scalar' );
+var Float64Tensor0D = require( './../../tensor0d/float64' );
 var getShape = require( './../../shape' );
 var getData = require( './../../data-buffer' );
 var getDType = require( './../../dtype' );
@@ -217,10 +217,7 @@ tape( 'the function throws an error if provided a `dims` option for a zero-dimen
 	var opts;
 	var x;
 
-	x = scalar2ndarray( 3.14, {
-		'dtype': 'float64',
-		'order': 'row-major'
-	});
+	x = new Float64Tensor0D( 3.14 );
 
 	t.throws( badValue( [ 0 ] ), RangeError, 'throws an error when provided [0]' );
 	t.throws( badValue( [ -1 ] ), RangeError, 'throws an error when provided [-1]' );
@@ -240,10 +237,7 @@ tape( 'the function returns a read-only view of a zero-dimensional input ndarray
 	var actual;
 	var x;
 
-	x = scalar2ndarray( 3.14, {
-		'dtype': 'float64',
-		'order': 'row-major'
-	});
+	x = new Float64Tensor0D( 3.14 );
 
 	actual = last( x );
 
