@@ -20,7 +20,7 @@
 
 var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var ndarray2array = require( './../../to-array' );
-var scalar2ndarray = require( './../../from-scalar' );
+var Int8Tensor0D = require( './../../tensor0d/int8' );
 var fillBy = require( './../../fill-by' );
 var zeros = require( './../../zeros' );
 var some = require( './../lib' );
@@ -31,8 +31,6 @@ var x = zeros( [ 2, 4, 5 ], {
 x = fillBy( x, discreteUniform( 0, 10 ) );
 console.log( ndarray2array( x ) );
 
-var n = scalar2ndarray( 4, {
-	'dtype': 'int8'
-});
+var n = new Int8Tensor0D( 4 );
 var y = some( x, n );
 console.log( y.get() );
