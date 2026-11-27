@@ -203,6 +203,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`934bf95`](https://github.com/stdlib-js/stdlib/commit/934bf95fa3e7ec1755d77a79778b2dec68729d28) - **docs:** improve doctests for ndarray instances in `ndarray/any` [(#16861)](https://github.com/stdlib-js/stdlib/pull/16861) _(by Tanu Saini)_
 -   [`b4c4d47`](https://github.com/stdlib-js/stdlib/commit/b4c4d47fa9cf2a46290970782f367c624b67f95c) - **docs:** improve doctests for ndarray instances in `ndarray/count-truthy` [(#16862)](https://github.com/stdlib-js/stdlib/pull/16862) _(by Tanu Saini)_
 -   [`9c7467e`](https://github.com/stdlib-js/stdlib/commit/9c7467e627f9c1e94424730d8639b72d31a43200) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/reverse` [(#16876)](https://github.com/stdlib-js/stdlib/pull/16876) _(by Anshu Raj Bisoyi)_
 -   [`2169d31`](https://github.com/stdlib-js/stdlib/commit/2169d31b2cee31f34fd752625d5547d9b4b8b867) - **test:** use dedicated zero-dimensional tensor constructor in `ndarray/transpose` [(#16877)](https://github.com/stdlib-js/stdlib/pull/16877) _(by Anshu Raj Bisoyi)_
