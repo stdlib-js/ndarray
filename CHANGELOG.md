@@ -203,6 +203,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`2fed713`](https://github.com/stdlib-js/stdlib/commit/2fed713a78e525fc5af8c335a93a63e52860ad60) - **docs:** update related packages sections [(#16912)](https://github.com/stdlib-js/stdlib/pull/16912) _(by stdlib-bot)_
 -   [`3ecdfe3`](https://github.com/stdlib-js/stdlib/commit/3ecdfe39090275f99e4c4f66b3867cb104065312) - **docs:** update examples [(#16916)](https://github.com/stdlib-js/stdlib/pull/16916) _(by stdlib-bot)_
 -   [`f8092f9`](https://github.com/stdlib-js/stdlib/commit/f8092f9549829fc21dc67604e36448e581b95643) - **docs:** use dedicated zero-dimensional tensor constructor in `ndarray/base/atleast1d` [(#16908)](https://github.com/stdlib-js/stdlib/pull/16908) _(by Aryan Sachin, Athan Reines)_
 -   [`78e0d9b`](https://github.com/stdlib-js/stdlib/commit/78e0d9bb304030d2ef3c4437b42b859b1372a233) - **docs:** use dedicated zero-dimensional tensor constructor in `ndarray/base/atleast2d` [(#16909)](https://github.com/stdlib-js/stdlib/pull/16909) _(by Aryan Sachin, Athan Reines)_
